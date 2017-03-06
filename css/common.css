@@ -356,10 +356,16 @@ button {outline:0;vertical-align:top;}
 	/* on */
 	.menu-layer .lnb-item.on {
 		position:relative;
+		margin-top:-1px;
 		border-color: #fff;
+		border-top:1px solid #60b015;
 		border-bottom:1px solid #60b015;
 		box-shadow:0px 5px 0px rgba(0,0,0,.1);
 		background:#fff url(../img/icon/icon_lnb.png) no-repeat 100% 50%;
+	}
+	.menu-layer .lnb-item:first-child.on {
+		margin-top:0;
+		border-top:0;
 	}
 		.menu-layer .lnb-item.on .text {
 			border-bottom:0;
