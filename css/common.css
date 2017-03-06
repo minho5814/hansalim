@@ -3,14 +3,24 @@
 	Font
 ========================================================================================================= */
 @font-face {
-	font-family:NanumBarunGothic;
+	font-family:NanumSquare;
 	font-style:normal;
 	font-weight:normal;
-	src:url(font/NanumBarunGothic.eot);
+	src:url(font/NanumSquareR.eot);
 	src:local(※),
-	url(font/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
-	url(font/NanumBarunGothic.woff) format('woff'),
-	url(font/NanumBarunGothic.ttf) format('truetype');
+	url(font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+	url(font/NanumSquareR.woff) format('woff'),
+	url(font/NanumSquareR.ttf) format('truetype');
+}
+@font-face {
+	font-family:NanumSquare;
+	font-style:normal;
+	font-weight:bold;
+	src:url(font/NanumSquareB.eot);
+	src:local(※),
+	url(font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+	url(font/NanumSquareB.woff) format('woff'),
+	url(font/NanumSquareB.ttf) format('truetype');
 }
 
 /* =========================================================================================================
@@ -23,7 +33,7 @@ blockquote, q {quotes:none}
 blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
 input,select,textarea,button {vertical-align:middle;outline:0;}
 button {border:0 none;background-color:transparent;cursor:pointer}
-body,th,td,input,select,textarea,button,select {font-family:'NanumBarunGothic';font-size:15px;line-height:1.3;color:#444;}
+body,th,td,input,select,textarea,button,select {font-family:'NanumSquare';font-size:15px;line-height:1.3;color:#444;}
 body {width:100%;-webkit-user-select:none}
 input[type=text],
 input[type=number],
