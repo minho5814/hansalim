@@ -22,6 +22,16 @@
 	url(font/NanumSquareB.woff) format('woff'),
 	url(font/NanumSquareB.ttf) format('truetype');
 }
+@font-face {
+	font-family:NanumSquare;
+	font-style:normal;
+	font-weight:900;
+	src:url(font/NanumSquareEB.eot);
+	src:local(※),
+	url(font/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+	url(font/NanumSquareEB.woff) format('woff'),
+	url(font/NanumSquareEB.ttf) format('truetype');
+}
 
 /* =========================================================================================================
 	Reset
@@ -268,15 +278,142 @@ button {outline:0;vertical-align:top;}
 	background-color:#555;
 	border-bottom:1px solid #555;
 }
-	.down .head-btm .gnb {
-		border-color:#555;
-	}
+	.down .head-btm .gnb {border-color:#555;}
 	.down .head-btm .btn-menu {
 		border-color:#000;
 		background:#000 url(../img/sprite/button.png) no-repeat 0 -84px;
 	}
 	.down .head-btm .gnb-item .link {color:#fff;}
-
 .down .head-btm .my-menu {display:none;}
-
 .down .head-btm .search-area {display:block;}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	메뉴 레이어
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.menu-layer {
+	position:absolute;
+	left:0;top:0;
+	width:1120px;
+	border-bottom:3px solid #333;
+	background-color:#fff;
+}
+.menu-layer .lnb {
+	position:relative;
+	width:180px;
+}
+.menu-layer .lnb:before {
+	content:'';
+	position:absolute;
+	right:1px;
+	top:0;
+	bottom:0;
+	width:5px;
+	background-color:rgba(0,0,0,.1);
+}
+	.menu-layer .lnb .btn-close {
+		position:relative;
+		width:100%;
+		height:50px;
+		padding-left:54px;
+		background-color:#000;
+		color:#fff;
+		font-size:17px;
+		font-weight:900;
+		text-align:left;
+		line-height:50px;
+	}
+	.menu-layer .lnb .btn-close:before {
+		content:'';
+		position:absolute;
+		left:20px;top:50%;
+		width:20px;
+		height:20px;
+		margin-top:-10px;
+		background:url(../img/sprite/button.png) no-repeat 0 -134px;
+	}
+
+	.menu-layer .lnb-list {
+		border-left:3px solid #333;
+		background-color:#eee;
+	}
+	.menu-layer .lnb-item {
+		padding:0 30px 0 17px;
+		border-right:1px solid #60b015;
+		cursor:pointer;
+	}
+		.menu-layer .lnb-item .text {
+			display:block;
+			height:49px;
+			padding:0 5px;
+			border-bottom:1px solid #ccc;
+			font-size:17px;
+			font-weight:bold;
+			line-height:49px;
+		}
+		.menu-layer .lnb-item:last-child .text {border-bottom:0;}
+
+	/* on */
+	.menu-layer .lnb-item.on {
+		position:relative;
+		border-color: #fff;
+		border-bottom:1px solid #60b015;
+		box-shadow:0px 5px 0px rgba(0,0,0,.1);
+		background:#fff url(../img/icon/icon_lnb.png) no-repeat 100% 50%;
+	}
+		.menu-layer .lnb-item.on .text {
+			border-bottom:0;
+			color:#60b015;
+		}
+
+.menu-layer .lnb .mune-list {
+	padding:23px 0;
+	border-left:3px solid #333;
+	border-right:1px solid #60b015;
+	background-color:#ddd;
+}
+.menu-layer .lnb .menu-item {padding:0 20px;}
+	.menu-layer .lnb .menu-item .link {
+		display:block;
+		height:35px;
+		color:#555;
+		font-size:14px;
+		font-weight:bold;
+		line-height:35px;
+	}
+.menu-layer .lnb .add-area {
+	border-left:3px solid #333;
+	border-right:1px solid #60b015;
+}
+	.menu-layer .lnb .add-area a {
+		display:block;
+		overflow:hidden;
+		height:194px;
+	}
+
+.menu-layer .gnb-list {
+	position:absolute;
+	left:180px;
+	right:0;
+	top:0;
+	margin-left:0;
+	background-color:#555;
+}
+.menu-layer .gnb-item {width:14%;}
+.menu-layer .gnb-item:last-child {width:16%;}
+.menu-layer .gnb-item .link {
+	height:50px;
+	padding:0;
+	color:#fff;
+	text-align:center;
+	line-height:50px;
+}
+
+.menu-layer .menu-area {
+	position:absolute;
+	left:180px;
+	right:0;
+	top:50px;
+	bottom:0;
+	background-color:#fff;
+	border-right:3px solid #333;
+}
