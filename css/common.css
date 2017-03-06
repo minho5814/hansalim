@@ -296,6 +296,7 @@ button {outline:0;vertical-align:top;}
 	width:1120px;
 	border-bottom:3px solid #333;
 	background-color:#fff;
+	z-index:1;
 }
 .menu-layer .lnb {
 	position:relative;
