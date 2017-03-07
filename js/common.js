@@ -5,6 +5,13 @@
 */
 
 $(window).load(function(){
+	// 상단 배너 닫기
+	$('.top-banner .btn-close').click(function(){
+		$(this).parents('.top-banner').slideUp(300, function(){
+			$(this).remove();
+		});
+	});
+
 	/* =============================================================================
 		해더
 	============================================================================= */
@@ -12,6 +19,21 @@ $(window).load(function(){
 	var search = $('.head-top .search-area').html();
 	$('.head-btm .gnb').append('<div class="search-area">');
 	$('.head-btm .search-area').html(search);
+
+	// gnb 메뉴 오픈
+	$('.btn-menu').click(function(){
+		$('.head-btm').prepend('<div class="modal-white">');
+		$('.menu-layer').fadeIn(200);
+	});
+	$('.head-btm').on('click', '.menu-layer .btn-close, .modal-white', function(){
+		$('.modal-white').remove();
+		$('.menu-layer').fadeOut(100);
+	});
+
+	// gnb 레이어에 gnb 리스트 복사
+	var gnbList = $('.gnb-list').html();
+	$('.menu-layer .gnb-copy').append('<ul class="gnb-list">');
+	$('.menu-layer .gnb-copy .gnb-list').html(gnbList);
 
 	/* =============================================================================
 		스크롤 이벤트

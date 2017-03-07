@@ -131,7 +131,33 @@ button {outline:0;vertical-align:top;}
 /* =========================================================================================================
 	공통
 ========================================================================================================= */
+/* 모달 배경 */
+.modal-white {
+	position:fixed;
+	left:0;right:0;top:0;bottom:0;
+	background-color:rgba(255,255,255,.8);
+}
 
+/* =========================================================================================================
+	상단 배너
+========================================================================================================= */
+.top-banner {
+	background-color:#8bc838;
+}
+	.top-banner .inner {
+		position:relative;
+		width:1120px;
+		margin:0 auto;
+	}
+	.top-banner .btn-close {
+		position:absolute;
+		right:-6px;top:4px;
+		width:40px;
+		height:40px;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+	}
 
 /* =========================================================================================================
 	해더
@@ -291,12 +317,14 @@ button {outline:0;vertical-align:top;}
 	메뉴 레이어
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 .menu-layer {
+	display:none;
 	position:absolute;
-	left:0;top:0;
-	width:1120px;
+	left:-1px;top:0;
+	width:1122px;
 	border-bottom:3px solid #333;
 	background-color:#fff;
 	z-index:1;
+	box-shadow:0px 2px 19px rgba(0,0,0,.3);
 }
 .menu-layer .lnb {
 	position:relative;
@@ -334,6 +362,7 @@ button {outline:0;vertical-align:top;}
 	}
 
 	.menu-layer .lnb-list {
+		overflow:hidden;
 		border-left:3px solid #333;
 		background-color:#eee;
 	}
@@ -360,7 +389,7 @@ button {outline:0;vertical-align:top;}
 		border-color: #fff;
 		border-top:1px solid #60b015;
 		border-bottom:1px solid #60b015;
-		box-shadow:0px 5px 0px rgba(0,0,0,.1);
+		box-shadow:-6px 5px 0px rgba(0,0,0,.1);
 		background:#fff url(../img/icon/icon_lnb.png) no-repeat 100% 50%;
 	}
 	.menu-layer .lnb-item:first-child.on {
@@ -416,11 +445,81 @@ button {outline:0;vertical-align:top;}
 }
 
 .menu-layer .menu-area {
+	overflow:hidden;
 	position:absolute;
-	left:180px;
+	left:185px;
 	right:0;
 	top:50px;
 	bottom:0;
 	background-color:#fff;
 	border-right:3px solid #333;
 }
+
+.menu-layer .menu-depth {
+	overflow:hidden;
+	float:left;
+	position:relative;
+	width:16%;
+	height:100%;
+}
+.menu-layer .menu-depth:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	width:1px;
+	background-color:#8bc838;
+}
+.menu-layer .menu-depth:first-child:before {display:none;}
+.menu-layer .menu-depth.wide {width:34%;}
+	.menu-layer .menu-depth .depth-title {}
+		.menu-layer .menu-depth .depth-title .text {
+			display:block;
+			height:50px;
+			padding-left:20px;
+			color:#60b015;
+			font-size:17px;
+			font-weight:bold;
+			line-height:50px;
+		}
+	.menu-layer .menu-depth .depth-box {
+		float:left;
+		position:relative;
+		width:50%;
+		height:100%;
+	}
+	.menu-layer .menu-depth .depth-box:last-child:before {
+		content:'';
+		position:absolute;
+		left:0;
+		top:0;
+		bottom:0;
+		width:1px;
+		background-color:#eee;
+	}
+
+.menu-layer .menu-depth .depth2 {margin-top:30px;}
+.menu-layer .menu-depth .depth2:first-child {margin-top:0;}
+	.menu-layer .menu-depth .depth2 .title .text {
+		display:block;
+		padding-left:20px;
+		height:30px;
+		color:#000;
+		font-size:15px;
+		font-weight:bold;
+		line-height:30px;
+	}
+	.menu-layer .menu-depth .depth2 .depth-list {}
+		.menu-layer .menu-depth .depth2 .depth-item {
+			margin-top:8px;
+		}
+			.menu-layer .menu-depth .depth2 .depth-item .text {
+				display:block;
+				padding-left:20px;
+				color:#888;
+				font-size:14px;
+				line-height:20px;
+			}
+
+.menu-layer .menu-area {}
