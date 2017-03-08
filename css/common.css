@@ -151,7 +151,7 @@ button {outline:0;vertical-align:top;}
 	}
 	.top-banner .btn-close {
 		position:absolute;
-		right:-6px;top:4px;
+		right:-7px;top:14px;
 		width:40px;
 		height:40px;
 		font-size:0;
@@ -454,7 +454,8 @@ button {outline:0;vertical-align:top;}
 	background-color:#fff;
 	border-right:3px solid #333;
 }
-
+.menu-category {display:none;}
+.menu-category.on {display:block;}/* on */
 .menu-layer .menu-depth {
 	overflow:hidden;
 	float:left;
@@ -473,8 +474,8 @@ button {outline:0;vertical-align:top;}
 }
 .menu-layer .menu-depth:first-child:before {display:none;}
 .menu-layer .menu-depth.wide {width:34%;}
-	.menu-layer .menu-depth .depth-title {}
-		.menu-layer .menu-depth .depth-title .text {
+	.menu-layer .depth-title {}
+		.menu-layer .depth-title .text {
 			display:block;
 			height:50px;
 			padding-left:20px;
@@ -523,3 +524,45 @@ button {outline:0;vertical-align:top;}
 			}
 
 .menu-layer .menu-area {}
+
+/* 카테고리별 */
+.menu-area .recommendation {
+	overflow:hidden;
+}
+.menu-area .recommendation .goods-list {
+	width:60%;
+}
+.menu-area .recommendation .thumb-list {
+	overflow:hidden;
+}
+.menu-area .recommendation .thumb-item {
+	float:left;
+	width:33.3333333%;
+}
+	.menu-area .recommendation .thumb-item .link {
+		display:block;
+		height:176px;
+		text-align:center;
+	}
+	.menu-area .recommendation .thumb-item .img-area {
+		font-size:0;
+		line-height:0;
+	}
+		.menu-area .recommendation .thumb-item .img-area img {}
+
+	.menu-area .recommendation .thumb-item .text-area {}
+		.menu-area .recommendation .thumb-item .text-area .name {
+			height:40px;
+			color:#666;
+			font-size:14px;
+			line-height:20px;
+		}
+		.menu-area .recommendation .thumb-item .text-area .price {
+			color:#333;
+			font-size:14px;
+			line-height:23px;
+		}
+			.menu-area .recommendation .thumb-item .text-area .price .number {
+				font-size:18px;
+				font-weight:bold;
+			}
