@@ -20,20 +20,31 @@ $(window).load(function(){
 	$('.head-btm .gnb').append('<div class="search-area">');
 	$('.head-btm .search-area').html(search);
 
-	// gnb 메뉴 오픈
+	// gnb 메뉴 열기
 	$('.btn-menu').click(function(){
 		$('.head-btm').prepend('<div class="modal-white">');
 		$('.menu-layer').fadeIn(200);
 	});
+	// gnb 메뉴 닫기
 	$('.head-btm').on('click', '.menu-layer .btn-close, .modal-white', function(){
 		$('.modal-white').remove();
 		$('.menu-layer').fadeOut(100);
+		$('.lnb-item').removeClass('on');
+		$('.lnb-item:first-child').addClass('on');
+		$('.menu-category').removeClass('on');
+		$('.menu-category:first-child').addClass('on');
 	});
 
 	// gnb 레이어에 gnb 리스트 복사
 	var gnbList = $('.gnb-list').html();
 	$('.menu-layer .gnb-copy').append('<ul class="gnb-list">');
 	$('.menu-layer .gnb-copy .gnb-list').html(gnbList);
+
+	$('.lnb-item').mouseenter(function(){
+		var idx = $(this).index();
+		$('.lnb-item').removeClass('on').eq(idx).addClass('on');
+		$('.menu-category').removeClass('on').eq(idx).addClass('on');
+	});
 
 	/* =============================================================================
 		스크롤 이벤트
@@ -50,6 +61,9 @@ $(window).load(function(){
 			$('html').removeClass('down');
 			$('.head-btm .gnb').css({'left':'0'});
 		}
+
+		// 스크롤시 열러 있는 메뉴 닫음
+		$('.modal-white').click();
 	});
 	$(window).scroll();
 });

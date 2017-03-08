@@ -141,9 +141,7 @@ button {outline:0;vertical-align:top;}
 /* =========================================================================================================
 	상단 배너
 ========================================================================================================= */
-.top-banner {
-	background-color:#8bc838;
-}
+.top-banner {background-color:#8bc838;}
 	.top-banner .inner {
 		position:relative;
 		width:1120px;
@@ -362,7 +360,7 @@ button {outline:0;vertical-align:top;}
 	}
 
 	.menu-layer .lnb-list {
-		overflow:hidden;
+		height:249px;
 		border-left:3px solid #333;
 		background-color:#eee;
 	}
@@ -389,7 +387,7 @@ button {outline:0;vertical-align:top;}
 		border-color: #fff;
 		border-top:1px solid #60b015;
 		border-bottom:1px solid #60b015;
-		box-shadow:-6px 5px 0px rgba(0,0,0,.1);
+		box-shadow:0 5px 0px rgba(0,0,0,.1);
 		background:#fff url(../img/icon/icon_lnb.png) no-repeat 100% 50%;
 	}
 	.menu-layer .lnb-item:first-child.on {
@@ -454,7 +452,11 @@ button {outline:0;vertical-align:top;}
 	background-color:#fff;
 	border-right:3px solid #333;
 }
-.menu-category {display:none;}
+.menu-category {
+	display:none;
+	position:relative;
+	height:100%;
+}
 .menu-category.on {display:block;}/* on */
 .menu-layer .menu-depth {
 	overflow:hidden;
@@ -528,20 +530,26 @@ button {outline:0;vertical-align:top;}
 /* 카테고리별 */
 .menu-area .recommendation {
 	overflow:hidden;
+	position:relative;
+	height:100%;
+	border-left:1px solid #60b015;
 }
 .menu-area .recommendation .goods-list {
 	width:60%;
 }
 .menu-area .recommendation .thumb-list {
 	overflow:hidden;
+	margin:-30px 0 0 -1px;
 }
 .menu-area .recommendation .thumb-item {
 	float:left;
 	width:33.3333333%;
+	margin-top:30px;
 }
 	.menu-area .recommendation .thumb-item .link {
 		display:block;
-		height:176px;
+		height:170px;
+		border-left:1px solid #eee;
 		text-align:center;
 	}
 	.menu-area .recommendation .thumb-item .img-area {
