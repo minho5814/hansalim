@@ -530,13 +530,21 @@ button {outline:0;vertical-align:top;}
 /* 카테고리별 */
 .menu-area .recommendation {
 	overflow:hidden;
-	position:relative;
+	position:absolute;
+	left:0;right:0;top:0;
 	height:100%;
-	border-left:1px solid #60b015;
+}
+.menu-area .recommendation:before {
+	content:'';
+	position:absolute;
+	left:16%;top:0;bottom:0;
+	width:1px;
+	background-color:#60b015;
 }
 .menu-area .recommendation .goods-list {
 	float:left;
-	width:60%;
+	width:50%;
+	padding-left:16%;
 }
 .menu-area .recommendation .thumb-list {
 	overflow:hidden;
@@ -579,7 +587,7 @@ button {outline:0;vertical-align:top;}
 .menu-area .exhibition-list {
 	float:left;
 	position:relative;
-	width:40%;
+	width:34%;
 	height:100%;
 }
 .menu-area .exhibition-list:before {
