@@ -1714,6 +1714,37 @@ label.check-radio .radiobox {margin-right:8px;}
 	margin:15px auto 0;
 }
 
+/* 아이디 만들기 완료 (lo/IM-LOO402.html) */
+.login-wrap .id-complete {
+	padding-top:155px;
+	background:url(../img/bg/bg_login.gif) no-repeat 50% 35px;
+}
+	.login-wrap .id-complete .text-green {
+		color:#60b015;
+		font-size:24px;
+		text-align:center;
+		line-height:63px;
+	}
+	.login-wrap .id-complete .box-area {
+		width:380px;
+		margin:0 auto;
+		padding:23px 40px;
+		box-sizing:border-box;
+		border:2px solid #ddd;
+	}
+		.login-wrap .id-complete .box-area .text-area {
+			color:#666;
+			font-size:15px;
+			line-height:34px;
+		}
+			.login-wrap .id-complete .box-area .text-area .title {
+				display:inline-block;
+				width:95px;
+				color:#000;
+			}
+		.login-wrap .id-complete .box-area {}
+	.login-wrap .id-complete {}
+
 /* 콜센타 하단 배너 */
 .callcenter-banner {
 	min-height:143px;
