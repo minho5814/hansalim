@@ -396,6 +396,7 @@ button {outline:0;vertical-align:top;}
 	마진/패딩
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 .pdT0 {padding-top:0 !important;}
+.pdT20 {padding-top:20px !important;}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	텍스트
@@ -1691,10 +1692,34 @@ label.check-radio .radiobox {margin-right:8px;}
 		border-top:1px solid #bbb;
 	}
 
+/* 아이디 만들기 (lo/IM-LOO401.html) */
+.login-wrap .id-make {
+	text-align:center;
+}
+	.login-wrap .id-make input {
+		width:430px;
+		height:40px;
+		line-height:40px;
+	}
+	.login-wrap .id-make .btn-center {margin-top:18px;}
+	.login-wrap .id-make .btn-center .btn-icon-text {padding:0 35px 0 68px;}
+	.login-wrap .id-make .text1 {
+		color:#666;
+		font-size:14px;
+		line-height:37px;
+	}
+
+.login-page .borad-write1 {
+	width:830px;
+	margin:15px auto 0;
+}
+
 /* 콜센타 하단 배너 */
 .callcenter-banner {
+	min-height:143px;
 	margin-top:60px;
 	padding:27px 20px 27px 156px;
+	box-sizing:border-box;
 	border:1px solid #e3e3e3;
 	background:url(../img/bg/bg_callcenter.png) no-repeat 32px 50%;
 }
@@ -1711,8 +1736,8 @@ label.check-radio .radiobox {margin-right:8px;}
 		letter-spacing:2px;
 	}
 	.callcenter-banner .text {
-		margin-top:8px;
 		color:#666;
 		font-size:14px;
-		line-height:19px;
+		line-height:28px;
 	}
+		.callcenter-banner .text .btn-mini-text {margin-left:20px;}
