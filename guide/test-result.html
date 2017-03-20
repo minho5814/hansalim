@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+	<title>버튼 가이드</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<style>
+		h1 {position:fixed;left:0;right:0;top:0;z-index:500;height:86px;padding-left:70px;background-color:rgba(255,255,255,.9);border-top:3px solid #8dc63f;border-bottom:2px solid #d1d1d1;color:#000;font-size:32px;font-weight:900;line-height:86px;}
+		h2 {color:#000;font-size:24px;font-weight:bold;}
+		.title-wrap {width:1000px; margin:50px auto 9px;}
+	</style>
+</head>
+
+<body>
+<div style="padding-top:90px;">
+
+
+<h1>BUTTON GUIDE</h1>
+
+
+
+<div style="padding:0 70px;">
+
+	<div class="content">
+		<div class="title-wrap">
+			<h2 style="float:left;">방사성물질 검사 결과</h2>
+			<div class="standard">
+				<span class="h-standard">한살림 기준치
+					<span class="box">
+						<span class="kids">영/유아</span>
+						<span class="adult">성인/청소년</span>
+					</span>
+				</span>
+				<span class="d-standard">국가 표준 기준치</span>
+			</div>
+		</div>
+		<div class="test-result">
+			<div class="test-term">
+				<ul class="year">
+					<li class="on">2017년
+						<ul class="month">
+							<li class="on"><span>6월</span></li>
+							<li><span>4월</span></li>
+							<li><span>2월</span></li>
+							<li><span>1월</span></li>
+						</ul>
+					</li>
+					<li>2016년
+						<ul class="month">
+							<li><span>12월</span></li>
+							<li><span>9월</span></li>
+							<li><span>6월</span></li>
+							<li><span>3월</span></li>
+						</ul>
+					</li>
+					<li>2015년
+						<ul class="month">
+							<li><span>10월</span></li>
+							<li><span>7월</span></li>
+							<li><span>4월</span></li>
+							<li><span>1월</span></li>
+						</ul>
+					</li>
+					<li>2014년
+						<ul class="month">
+							<li><span>6월</span></li>
+							<li><span>4월</span></li>
+							<li><span>2월</span></li>
+							<li><span>1월</span></li>
+						</ul>
+					</li>
+					<li>2013년
+						<ul class="month">
+							<li><span>12월</span></li>
+							<li><span>9월</span></li>
+							<li><span>6월</span></li>
+							<li><span>3월</span></li>
+						</ul>
+					</li>
+					<li>2012년
+						<ul class="month">
+							<li><span>6월</span></li>
+							<li><span>4월</span></li>
+							<li><span>2월</span></li>
+							<li><span>1월</span></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="test">
+				<ul>
+					<li>
+						<span class="item">I-131</span>
+						<span class="percent">
+							<span class="result">불검출</span>
+							<img src="../img/img/img_per_bar.jpg" alt="퍼센트">
+							<span class="num">
+								<span style="left:0">0</span>
+								<span style="left:12%">4</span>
+								<span style="left:24%">8</span>
+								<span style="right:0">100</span>
+							</span>
+						</span>
+					</li>
+					<li>
+						<span class="item">CS-134</span>
+						<span class="percent">
+							<span class="result">불검출</span>
+							<img src="../img/img/img_per_bar.jpg" alt="퍼센트">
+							<span class="num">
+								<span style="left:0">0</span>
+								<span style="left:12%">4</span>
+								<span style="left:24%">8</span>
+								<span style="right:0">100</span>
+							</span>
+						</span>
+					</li>
+					<li>
+						<span class="item">CS-137</span>
+						<span class="percent">
+							<span class="result" style="left:2%;">검출 : <span>0.2012</span>Bq/kg</span>
+							<img src="../img/img/img_per_bar.jpg" alt="퍼센트">
+							<span class="num">
+								<span style="left:0">0</span>
+								<span style="left:12%">4</span>
+								<span style="left:24%">8</span>
+								<span style="right:0">100</span>
+							</span>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+</div>
+
+
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.1.12.1.js"></script>
+<script>
+	$(window).load(function(){
+		$('.test-term .year > li').on('click', function(){
+			if($(this).hasClass('on')){
+				$(this).addClass('on').children('.month').show();
+			}else{
+				$('.test-term .year > li').removeClass('on').children('.month').hide().find('li').removeClass('on');
+				$(this).addClass('on').children('.month').show();
+			}
+		});
+
+		$('.month li').on('click', function(){
+			$(this).addClass('on').siblings('li').removeClass('on');
+		});
+	});
+</script>
+</body>
+
+</html>
