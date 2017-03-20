@@ -1745,6 +1745,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	width:830px;
 	margin:15px auto 0;
 }
+	.login-page .center-cont .borad-write1 {width:100%;}
 
 /* 아이디 만들기 완료 (lo/IM-LOO402.html) */
 .login-wrap .id-complete {
