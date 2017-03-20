@@ -1841,7 +1841,7 @@ label.check-radio .radiobox {margin-right:8px;}
 				padding:20px 40px 40px 40px;
 				box-sizing: border-box;
 			}
-		.content .title-area {position:relative; height:75px; line-height:75px;}
+		.content .title-area {position:relative; height:75px; /*line-height:75px;*/}
 		.content .title-area:after {
 			content: '';
 		    display: block;
@@ -1974,6 +1974,8 @@ label.check-radio .radiobox {margin-right:8px;}
 
 		.product-info .info-text {padding:30px 0 30px 10px; font-size:18px; line-height:18px;}
 			.product-info .info-text .orange {color:#f56d24;}
+
+		.product-info .info-text + .btn-center {margin-top:0}
 
 /* 상세 페이지 - 방사성물질 검사 결과 */
 .title-wrap {
