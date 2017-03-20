@@ -398,6 +398,7 @@ button {outline:0;vertical-align:top;}
 .pdT0 {padding-top:0 !important;}
 .pdT20 {padding-top:20px !important;}
 
+.mgR30 {margin-right:30px !important;}
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	텍스트
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -750,6 +751,37 @@ button {outline:0;vertical-align:top;}
 	width:17px;
 	height:18px;
 	background-position:0 -364px;
+}
+
+.btn-image.minus,
+.btn-image.plus {
+	background-color:#fff;
+	border:1px solid #bbb;
+	border-radius: 0;
+}
+.btn-image.minus:before {
+	width:30px;
+	height:30px;
+	background-position:0 -655px;
+}
+.btn-image.plus:before {
+	width:30px;
+	height:30px;
+	background-position:0 -687px;
+}
+
+.btn-question {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+	margin-top: 2px;
+    font-size: 0;
+    text-indent: -9999px;
+    line-height: 0;
+    cursor: pointer;
+	background-image:url(../img/btn/btn_question.png);
+	background-repeat:no-repeat;
+
 }
 
 /* 화살표 링크 버튼 */
@@ -1769,9 +1801,181 @@ label.check-radio .radiobox {margin-right:8px;}
 	.callcenter-banner .text {
 		color:#666;
 		font-size:14px;
-		line-height:28px;
+		line-height:19px;
 	}
 		.callcenter-banner .text .btn-mini-text {margin-left:20px;}
+
+		/* 상품상세 pd/IM-PD1001.html */
+		.container.sub {background-color:#eee;}
+			.container.sub .location  {padding:20px 0;}
+			.container.sub .location .inner{
+				height:28px;
+				line-height: 28px;
+			}
+				.container.sub .item,
+				.container.sub .arrow {
+					height:28px;
+					line-height: 27px;
+				}
+				.container.sub .location select{
+					width:120px;
+					height:28px;
+					border:1px solid #ccc;
+					font-size: 13px;
+					color:#000;
+					line-height: 28px;
+					box-sizing: border-box;
+				}
+		.content {
+			background-color:#fff;
+		}
+		.content.gray {
+			background-color:#eee;
+		}
+			.content .inner {
+				width:1120px;
+				margin:0 auto;
+				background-color:#fff;
+			}
+			.content .inner:first-child {
+				padding:20px 40px 40px 40px;
+				box-sizing: border-box;
+			}
+		.content .title-area {position:relative; height:75px; /*line-height:75px;*/}
+		.content .title-area:after {
+			content: '';
+		    display: block;
+		    clear: both;
+		}
+		.content .title-area .cTitle1 {
+			position:absolute;
+			left:0;
+			height:28px;
+			line-height:28px;
+			padding:20px 0 28px 0;
+		}
+		.content .title-area .flag {
+			display: block;
+			position:absolute;
+			right:0;
+			top:15px;
+			padding:13px 6px 12px 6px;
+			background-color:#ff9c00;
+			color:#fff;
+			font-size:13px;
+			border-radius: 16px;
+			font-weight: bold;
+			line-height: initial;
+		}
+
+		.product-area:after {
+			content: '';
+		    display: block;
+		    clear: both;
+		}
+
+		.product-slide {
+			float:left;
+			width:440px;
+			height:440px;
+			border:1px solid #e3e3e3;
+			box-sizing: border-box;
+		}
+
+		.product-info {
+			float:right;
+			width:550px;
+		}
+			.product-info .info-box {
+				padding:30px 0;
+				border-bottom:1px solid #e3e3e3;
+			}
+			.product-info .info-box:first-child {
+				border-top:1px solid #666;
+				padding:30px 0 25px;
+
+			}
+			.product-info .info-box:last-child {
+				border-bottom:1px solid #666;
+				padding:30px 0 25px;
+
+			}
+				.product-info .info-box dl:after {
+					content: '';
+					display: block;
+					clear: both;
+				}
+				.product-info .info-box dt {
+					float:left;
+
+					width:130px;
+					padding-left:10px;
+					font-size: 15px;
+					font-weight: bold;
+					box-sizing: border-box;
+				}
+				.product-info .info-box dd {
+					width:420px;
+					padding-left:130px;
+					font-size:15px;
+					color:#666;
+				}
+
+				.product-info .info-box .info dt,
+				.product-info .info-box .info dd {margin-bottom:15px;}
+				.product-info .info-box .info .last {margin-bottom:0}
+				.product-info .info-box .info .link {position: relative; padding-right:20px;}
+					.product-info .info-box .info .link:after{
+						content:'';
+						position:absolute;
+						top:50%; right:0;
+						width:13px;
+						height:15px;
+						margin-top:-10px;
+						background:url(../img/icon/icon_arrow_4x7.png) no-repeat center;
+						border:1px solid #bbb;
+					}
+				.product-info .info-box .info .link img {vertical-align: middle; margin-right:7px;}
+
+
+				.product-info .price dd {font-size:28px; line-height:28px; color:#000;}
+				.product-info .price dt {height:28px; line-height:28px;}
+				.product-info .price dd em {font-size: 18px;}
+				.product-info .total dt {height:36px; line-height: 36px; font-size: 18px;}
+				.product-info .total dd{
+					color:#f56d24;
+					font-size:36px;
+					line-height:36px;
+					font-weight: 900;;
+					text-align: right;
+					letter-spacing: -1px;
+				}
+				.product-info .total dd em{	font-size: 24px;}
+
+			.product-info .count-wrap {position:relative; margin-top:20px;}
+			.product-info .count-wrap:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			.product-info .count {position:relative; width:140px; float:left;}
+			.product-info .count-wrap span {
+				display:block;
+				height:32px;
+				line-height: 32px;
+				float:right;
+			}
+			.product-info .count input {text-align: center; padding:0 32px;}
+			.product-info .count button {position:absolute;top:0;}
+				.product-info .count .minus{left:0;}
+				.product-info .count .plus{right:0;}
+
+		.product-info .info-box .orange {color:#f56d24;}
+
+		.product-info .info-text {padding:30px 0 30px 10px; font-size:18px; line-height:18px;}
+			.product-info .info-text .orange {color:#f56d24;}
+
+		.product-info .info-text + .btn-center {margin-top:0}
 
 /* 상세 페이지 - 방사성물질 검사 결과 */
 .title-wrap {
