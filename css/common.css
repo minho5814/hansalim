@@ -382,6 +382,47 @@ button {outline:0;vertical-align:top;}
 		.thumb-slide1 .bx-pager .bx-pager-link.active {background-color:#000;}
 	.thumb-slide1 .thumb-list1 {border:0;}
 
+/* 스텝리스트 */
+.step-list {
+	overflow:hidden;
+}
+	.step-list .step-item {
+		float:left;
+		box-sizing:border-box;
+		border-top:2px solid #ddd;
+		border-bottom:2px solid #ddd;
+		text-align:center;
+	}
+	.step-list .step-item.item1 {width:29%;}
+	.step-list .step-item.item2 {width:17%;}
+	.step-list .step-item.item3 {width:18%;}
+	.step-list .step-item.item4 {width:18%;}
+	.step-list .step-item.item5 {width:18%;}
+		.step-list .step-item .text {
+			display:inline-block;
+			position:relative;
+			padding:20px;
+			color:#999;
+			font-size:18px;
+			font-weight:bold;
+			line-height:27px;
+		}
+		.step-list .step-item.item1 .text {margin-left:-10px;}
+		.step-list .step-item.item5 .text {margin-right:-10px;}
+			.step-list .step-item .text .step {
+				display:block;
+				font-size:13px;
+				line-height:20px;
+			}
+		.step-list .step-item.on .text {color:#60b015;}/* on */
+			.step-list .step-item.on .text:before {
+				content:'';
+				position:absolute;
+				left:0;right:0;top:-2px;
+				height:2px;
+				background-color:#60b015;
+			}/* on */
+
 /* =========================================================================================================
 	공통
 ========================================================================================================= */
@@ -1806,6 +1847,18 @@ label.check-radio .radiobox {margin-right:8px;}
 	}
 		.callcenter-banner .text .btn-mini-text {margin-left:20px;}
 
+/* =========================================================================================================
+	회원가입
+========================================================================================================= */
+.content-w830 {
+	width:830px;
+	margin:15px auto 0;
+}
+
+
+/* =========================================================================================================
+	물품전시
+========================================================================================================= */
 		/* 상품상세 pd/IM-PD1001.html */
 		.container.sub {background-color:#eee;}
 			.container.sub .location  {padding:20px 0;}
