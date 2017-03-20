@@ -249,6 +249,139 @@ button {outline:0;vertical-align:top;}
 	}
 	.borad-data1 .bdL0 {border-left:0;}
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	리스트
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* 썸네일 */
+.thumb-list1 {
+	overflow:hidden;
+	width:1120px;
+	margin:0 auto;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	box-sizing:border-box;
+}
+.thumb-item1 {
+	float:left;
+	position:relative;
+	width:25%;
+	padding-bottom:90px;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+}
+.thumb-list1 .thumb-item1 {border-right:0;}
+.thumb-list1 .thumb-item1:first-child {border-left:0;}
+	.thumb-item1 .link {
+		display:block;
+	}
+	.thumb-item1 .img-area {
+		width:265px;
+		height:265px;
+		margin:0 auto;
+		font-size:0;
+		line-height:0;
+	}
+		.thumb-item1 .img-area img {
+			width:265px;
+			height:265px;
+		}
+	.thumb-item1 .name {
+		margin-top:-10px;
+		padding-left:30px;
+		color:#555;
+		font-size:15px;
+		line-height:21px;
+	}
+	.thumb-item1 .price-btn {
+		overflow:hidden;
+		position:absolute;
+		left:30px;right:30px;bottom:30px;
+	}
+		.thumb-item1 .price-btn .price {
+			float:left;
+			color:#333;
+			font-size:14px;
+			line-height:32px;
+		}
+			.thumb-item1 .price-btn .price .number {
+				font-size:24px;
+				font-weight:900;
+				vertical-align:top;
+				letter-spacing:-1px;
+			}
+		.thumb-item1 .price-btn .btn-area {
+			float:right;
+		}
+
+/* 슬라이드 */
+.bxslider {opacity:0;}
+.thumb-slide1 {
+	position:relative;
+	width:1120px;
+	margin:0 auto;
+}
+	.thumb-slide1 .thumb-title {
+		color:#000;
+		font-size:24px;
+		font-weight:bold;
+		line-height:50px;
+	}
+		.thumb-slide1 .thumb-title .number {color:#f56d24;}
+	.thumb-slide1 .slide-area {position:relative;}
+	.thumb-slide1 .bx-viewport {
+		overflow:hidden;
+		width:1120px;
+		box-sizing:border-box;
+		border-left:1px solid #ddd;
+		border-right:1px solid #ddd;
+	}
+	.thumb-slide1 .bx-controls-direction {}
+		.thumb-slide1 .bx-controls-direction a {
+			display:block;
+			position:absolute;
+			top:158px;
+			width:30px;
+			height:50px;
+			background-color:#ddd;
+			background-repeat:no-repeat;
+			background-position:50% 50%;
+			font-size:0;
+			text-indent:-9999px;
+			line-height:0;
+		}
+		.thumb-slide1 .bx-prev {
+			left:0;
+			background-image:url(../img/btn/btn_bx_prev01.png);
+		}
+		.thumb-slide1 .bx-next {
+			right:0;
+			background-image:url(../img/btn/btn_bx_next01.png);
+		}
+		.thumb-slide1 .bx-controls-direction .disabled {display:none;}
+	.thumb-slide1 .bx-pager {
+		overflow:hidden;
+		height:10px;
+		margin-top:20px;
+		font-size:0;
+		text-align:center;
+		line-height:0;
+	}
+		.thumb-slide1 .bx-pager .bx-pager-item {
+			display:inline-block;
+			margin-left:6px;
+		}
+		.thumb-slide1 .bx-pager .bx-pager-link {
+			display:inline-block;
+			width:10px;
+			height:10px;
+			border-radius:50%;
+			background-color:#8a8a8a;
+			text-indent:-9999px;
+		}
+		.thumb-slide1 .bx-pager .bx-pager-item:first-child {margin-left:0;}
+		.thumb-slide1 .bx-pager .bx-pager-link.active {background-color:#000;}
+	.thumb-slide1 .thumb-list1 {border:0;}
+
 /* =========================================================================================================
 	공통
 ========================================================================================================= */
