@@ -1772,3 +1772,183 @@ label.check-radio .radiobox {margin-right:8px;}
 		line-height:28px;
 	}
 		.callcenter-banner .text .btn-mini-text {margin-left:20px;}
+
+/* 상세 페이지 - 방사성물질 검사 결과 */
+.title-wrap {
+	overflow:hidden;
+	margin-bottom:9px;
+}
+.standard {
+	float: right;
+}
+.standard span {
+	display:inline-block;
+	font-size: 14px;
+	font-weight:bold;
+	line-height: 32px;
+}
+.standard .box {
+	margin-left:15px;
+	padding:0 14px;
+	border:1px solid #ddd;
+}
+.standard .box span {
+	position:relative;
+	padding-left:17px;
+	font-weight: normal;
+	line-height: 32px;
+}
+.standard .box span:first-child {
+	margin-right:15px;
+}
+.standard .box .kids:before {
+	content:'';
+	position:absolute;
+	top:50%; left:0;
+	width:10px; height:10px;
+	margin-top:-5px;
+	background-color:#8dc919;
+}
+.standard .box .adult:before {
+	content:'';
+	position:absolute;
+	top:50%; left:0;
+	width:10px; height:10px;
+	margin-top:-5px;
+	background-color:#f6ce05;
+}
+.standard .d-standard {
+	position:relative;
+	margin-left:15px;
+	padding-left:17px;
+}
+.standard .d-standard:before {
+	content:'';
+	position:absolute;
+	top:50%; left:0;
+	width:10px; height:10px;
+	margin-top:-5px;
+	background-color:#f56d24;
+}
+
+.test-result {
+	overflow:hidden;
+	width:998px;
+	height:433px;
+	margin:0 auto;
+	border:1px solid #e3e3e3;
+	border-top:1px solid #666;
+}
+	.test-result .test-term {
+		float:left;
+		position:relative;
+		width:280px;
+		height:100%;
+		border-right:1px dashed #ddd;
+	}
+		.test-result .test-term .year {
+			position: absolute;
+			top: 0; left: 0;
+			width:140px;
+			height:100%;
+			background-color:#f0f2ef;
+		}
+		.test-result .test-term .year li {
+			width:100%;
+			height:57px;
+			line-height:57px;
+			text-align:center;
+			font-size:18px;
+			color:#666;
+			border-bottom:1px dotted #ddd;
+			box-sizing: border-box;
+			cursor: pointer;
+		}
+		.test-result .test-term .year li.on {
+			color:#000;
+			font-weight: bold;
+			background-color:#fff;
+			border-bottom:0;
+		}
+
+		.test-result .test-term .year .month {
+			display:none;
+			position:absolute;
+			top:0; left:140px;
+			width:140px;
+			height:100%;
+		}
+		.test-result .test-term .year li:first-child .month {
+			display:block;
+		}
+		.test-result .test-term .year .month li {
+			padding:10px 0;
+			border-bottom:0;
+		}
+		.test-result .test-term .year .month li span {
+			display:block;
+			width:98px;
+			height:37px;
+			margin:0 auto;
+			font-size:16px;
+			line-height:37px;
+		}
+		.test-result .test-term .year .month li.on span {
+			background-color:#f6f6f6;
+			border:1px solid #bbb;
+			box-sizing:border-box;
+		}
+
+.test-result .test {
+	float:right;
+	width: 637px;
+	padding:0 40px;
+}
+.test-result .test ul li {
+	position:relative;
+	height:144px;
+	border-top:1px solid #ddd;
+}
+.test-result .test ul li:first-child {
+	border-top:0;
+}
+.test-result .test ul li .item {
+	display:inline-block;
+	width:120px;
+	line-height:144px;
+	font-size:20px;
+	font-weight: bold;
+	color:#000;
+}
+.test-result .test ul li .percent {
+	position:absolute;
+	top:70px; right:0;
+	padding:0 4px;
+}
+.test-result .test ul li .percent img {
+	vertical-align: top;
+}
+.test-result .test ul li .percent .result {
+	position:absolute;
+	top:-39px;
+	padding:0 10px;
+	line-height:25px;
+	font-size:13px;
+	color:#60b015;
+	font-weight: 900;
+	border:1px solid #60b015;
+	border-radius: 3px 3px 3px 0;
+}
+.test-result .test ul li .percent .result:before {
+	content:'';
+	display:block;
+	position:absolute;
+	top:25px; left:-1px;
+	width:8px; height:9px;
+	background:url(../img/img/img_bubble.png) 0 0 no-repeat;
+}
+.test-result .test ul li .percent .num span {
+	position:absolute;
+	font-size:14px;
+	color:#000;
+}
