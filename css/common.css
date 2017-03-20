@@ -227,6 +227,28 @@ button {outline:0;vertical-align:top;}
 		.borad-write1 .btn-styled a,
 		.borad-write1 .btn-styled button {margin-left:4px;}
 
+/* 데이터 */
+.borad-data1 {border-top:1px solid #666;}
+	.borad-data1 table {border-bottom:1px solid #bbb;}
+	.borad-data1 th,
+	.borad-data1 td {
+		padding:17px 20px;
+		border-top:1px solid #ddd;
+		border-left:1px solid #e3e3e3;
+		font-size:16px;
+		line-height:22px;
+		text-align:center;
+	}
+	.borad-data1 th {color:#000;}
+	.borad-data1 tr:first-child th {border-top:0;}
+	.borad-data1 td {color:#666;}
+	.borad-data1 .gray {
+		border-left:0;
+		background-color:#f0f2ef;
+		text-align:left;
+	}
+	.borad-data1 .bdL0 {border-left:0;}
+
 /* =========================================================================================================
 	공통
 ========================================================================================================= */
@@ -278,7 +300,10 @@ button {outline:0;vertical-align:top;}
 	font-size:0;
 	line-height:0;
 }
-.btn-center {text-align:center;}
+.btn-center {
+	margin-top:40px;
+	text-align:center;
+}
 .btn-right {text-align:right;}
 
 .btn-left a,
@@ -286,7 +311,7 @@ button {outline:0;vertical-align:top;}
 .btn-right a,
 .btn-right button,
 .btn-center a,
-.btn-center button {margin-left:8px;}
+.btn-center button {margin-left:10px;}
 .btn-right a:first-child,
 .btn-right button:first-child,
 .btn-left a:first-child,
