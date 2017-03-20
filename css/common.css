@@ -404,6 +404,9 @@ button {outline:0;vertical-align:top;}
 .fEbold {font-weight:900 !important;}
 .fstyled1 {color:#666 !important;font-size:13px !important;}
 
+/* 폰트 컬러 */
+.fColor1 {color:#60b015 !important;}
+
 /* 타이틀 */
 .cTitle1 {
 	color:#000;
@@ -492,6 +495,11 @@ button {outline:0;vertical-align:top;}
 .btn-text.btn-green {
 	border-color:#7eb533;
 	background-color:#91c90b;
+	color:#fff;
+}
+.btn-text.btn-green2 {
+	border-color:#57a30f;
+	background-color:#60b015;
 	color:#fff;
 }
 
@@ -1585,6 +1593,10 @@ label.check-radio .radiobox {margin-right:8px;}
 		font-size:13px;
 		line-height:37px;
 	}
+	.login-wrap .center-cont .btn-center .btn-text {
+		width:auto;
+		margin-top:0;
+	}
 
 /* 아이디 찾기 (lo/IM-LO0201.html) */
 .login-wrap .center-cont {
@@ -1634,7 +1646,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		width:100%;
 	}
 
-/* 비밀번호 찾기 (lo/IM-LO0301.html) */
+/* 비밀번호 찾기 (lo/IM-LO0301.html, lo/IM-LO0302.html) */
 .login-wrap .search-id-link {
 	overflow:hidden;
 	margin-top:15px;
@@ -1646,6 +1658,38 @@ label.check-radio .radiobox {margin-right:8px;}
 		line-height:28px;
 	}
 	.login-wrap .search-id-link .btn-mini-text {float:right;}
+
+.login-wrap .pw-cont {
+	margin-top:36px;
+	text-align:center;
+}
+	.login-wrap .pw-cont .pw-title {
+		color:#60b015;
+		font-size:24px;
+		font-weight:bold;
+		line-height:31px;
+	}
+	.login-wrap .pw-cont .text {
+		margin-top:12px;
+		color:#333;
+		font-size:15px;
+		line-height:21px;
+	}
+	.login-wrap .pw-cont .radi-area {
+		display:inline-block;
+		width:344px;
+		margin-top:27px;
+		padding:20px 30px;
+		background-color:#f7f7f7;
+		font-size:0;
+		line-height:0;
+	}
+		.login-wrap .pw-cont .radi-area .radio {padding-left:30px;}
+		.login-wrap .pw-cont .radi-area .radio:first-child {padding-left:0;}
+	.login-wrap .pw-cont .btn-center {
+		padding-top:40px;
+		border-top:1px solid #bbb;
+	}
 
 /* 콜센타 하단 배너 */
 .callcenter-banner {

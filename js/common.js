@@ -46,19 +46,22 @@ $(window).load(function(){
 		슬라이더
 	============================================================================= */
 	/* 관련물품 */
-	$('.thumb-slide1 .bxslider').bxSlider({
-		//infiniteLoop:false,
-		speed:400
-	});
+	var bxsliderLen = $('.bxslider').length;
+	if(bxsliderLen >= 1){
+		$('.thumb-slide1 .bxslider').bxSlider({
+			//infiniteLoop:false,
+			speed:400
+		});
 
-	$('.bx-pager').each(function(){
-		var len = $(this).find('.bx-pager-item').length;
-		if(len <= 1){
-			$(this).hide();
-		}
-	});
+		$('.bx-pager').each(function(){
+			var len = $(this).find('.bx-pager-item').length;
+			if(len <= 1){
+				$(this).hide();
+			}
+		});
 
-	$('.bxslider').animate({'opacity':'1'}, 200);
+		$('.bxslider').animate({'opacity':'1'}, 200);
+	}
 
 	/* =============================================================================
 		스크롤 이벤트
