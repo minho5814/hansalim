@@ -65,6 +65,15 @@ $(window).load(function(){
 	}
 
 	/* ===========================================================================================================
+		탭메뉴
+	=========================================================================================================== */
+		$('.tab-item').click(function(){
+			var idx = $(this).index();
+			$('.tab-item').removeClass('on').eq(idx).addClass('on');
+			$('.tab-content').removeClass('on').eq(idx).addClass('on');
+		});
+
+	/* ===========================================================================================================
 		스크롤 이벤트
 	=========================================================================================================== */
 	$(window).scroll(function(){
@@ -220,7 +229,7 @@ $(window).load(function(){
 	/* ===========================================================================================================
 		회원가입 (jo/)
 	=========================================================================================================== */
-	/* 약관 전체 동의 체크박스 */
+	/* 약관 전체 동의 체크박스 (IM-JO0301.html) */
 	$('.all-check input[type=checkbox]').change(function(){
 		if(this.checked){
 			$(this).parents('.terms-wrap').find('input[type=checkbox]').prop('checked', true);
@@ -242,4 +251,14 @@ $(window).load(function(){
 		}
 	});
 
+
+	/* 이메일 셀렉트박스 (IM-JO0401.html) */
+	$('.e-mail-form .select-list .item').click(function(){
+		var mailTxt = $(this).html();
+		if($(this).index() <= 0){
+			$(this).parents('.e-mail-form').find('.transTxt').val('').focus();
+		}else{
+			$(this).parents('.e-mail-form').find('.transTxt').val(mailTxt);
+		}
+	});
 });

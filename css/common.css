@@ -233,6 +233,12 @@ button {outline:0;vertical-align:top;}
 	}
 		.borad-write1 .btn-styled a,
 		.borad-write1 .btn-styled button {margin-left:4px;}
+	.borad-write1 .gray-text {
+		margin-top:5px;
+		color:#999;
+		font-size:14px;
+		line-height:16px;
+	}
 
 .borad-write2 {border-top:1px solid #666;}
 	.borad-write2 table {border-bottom:1px solid #bbb;}
@@ -260,6 +266,46 @@ button {outline:0;vertical-align:top;}
 		.borad-write2 .btn-styled a,
 		.borad-write2 .btn-styled button {margin-left:4px;}
 
+/* 휴대폰 번호 입력 */
+td.phone-area {
+	font-size:0;
+	line-height:0;
+}
+	td.phone-area select {width:100px;}
+	td.phone-area input {width:100px;margin-left:4px;}
+
+/* 라디오, 체크박스 그룹 */
+td .radio-check {
+	padding:5px 0 4px;
+	font-size:0;
+	line-height:0;
+}
+	td .radio-check .item {margin-left:30px;}
+	td .radio-check .item:first-child {margin-left:0;}
+
+/* e-mail 입력란 */
+td.e-mail-form {
+	font-size:0;
+	line-height:0;
+}
+	td.e-mail-form input {
+		width:130px;
+	}
+	td.e-mail-form select,
+	td.e-mail-form .select-box {
+		width:150px;
+		margin-left:4px;
+	}
+	td.e-mail-form .text-at {
+		display:inline-block;
+		width:30px;
+		height:32px;
+		color:#999;
+		font-size:15px;
+		text-align:center;
+		line-height:32px;
+	}
+
 /* 데이터 */
 .borad-data1 {border-top:1px solid #666;}
 	.borad-data1 table {border-bottom:1px solid #bbb;}
@@ -285,6 +331,54 @@ button {outline:0;vertical-align:top;}
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	리스트
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* 불릿 */
+.bullet-list1 {}
+	.bullet-list1 .item {
+		position:relative;
+		padding-left:11px;
+		color:#999;
+		font-size:14px;
+		line-height:27px;
+	}
+	.bullet-list1 .item:before {
+		content:'';
+		position:absolute;
+		left:0;top:50%;
+		width:3px;
+		height:3px;
+		margin-top:-2px;
+		background-color:#676767;
+	}
+
+/* 박스링크 리스트 */
+.box-link-list {
+	border:1px solid #bbb;
+}
+	.box-link-list .link {
+		display:block;
+		position:relative;
+		padding:20px 40px;
+		border-top:1px solid #ddd;
+	}
+	.box-link-list .link:before {
+		content:'';
+		position:absolute;
+		right:50px;top:0;bottom:0;
+		width:10px;
+		background:url(../img/icon/icon_arrow_10x17.png) no-repeat 0 50%;
+	}
+		.box-link-list .link .title {
+			color:#000;
+			font-size:18px;
+			font-weight:bold;
+			line-height:30px;
+		}
+		.box-link-list .link .text {
+			color:#666;
+			font-size:14px;
+			line-height:22px;
+		}
+
 /* 썸네일 */
 .thumb-list1 {
 	overflow:hidden;
@@ -346,6 +440,41 @@ button {outline:0;vertical-align:top;}
 		.thumb-item1 .price-btn .btn-area {
 			float:right;
 		}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	탭메뉴
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.tab-styled1 {
+	overflow:hidden;
+}
+	.tab-styled1 .tab-item {
+		float:left;
+		width:240px;
+		height:60px;
+		line-height:60px;
+		border-right:1px solid #fff;
+		box-sizing:border-box;
+	}
+		.tab-styled1 .tab-item .inner {
+			display:block;
+			height:60px;
+			line-height:60px;
+			background-color:#e3e3e3;
+			color:#333;
+			font-size:18px;
+			text-align:center;
+			cursor:pointer;
+		}
+		.tab-styled1 .tab-item:hover .inner,
+		.tab-styled1 .tab-item.on .inner,
+		.tab-styled1 .tab-item.active .inner {
+			background-color:#666;
+			color: #fff;
+		}
+
+.tab-content {display:none;}
+.tab-content.on {display:block;}
+.tab-content.active {display:block;}
 
 /* 슬라이드 */
 .bxslider {opacity:0;}
@@ -470,7 +599,13 @@ button {outline:0;vertical-align:top;}
 		right:0;
 		background-image:url(../img/btn/btn_bx_next02.png);
 	}
-	.thumb-slide2 .bx-pager {display: block !important;}
+	.thumb-slide2 .bx-pager {
+		display: block !important;
+		position: absolute;
+		right:65px;
+		top:5px;
+		width:35px;
+	}
 
 .thumb-slide2 .link.big-img {display: block; float:left; width:559px; height:200px;}
 .thumb-slide2 .img-area img {width: 100%;}
@@ -480,16 +615,85 @@ button {outline:0;vertical-align:top;}
 		content:'';display:block;clear:both;
 	}
 	.item-list li {
+		position:relative;
 		float:left;
 		width:186px;
 		height:200px;
+
+		border-left:1px solid #ddd;
+		box-sizing: border-box;
+	}
+	.item-list li:first-child {border-left: 0;}
+	.item-list li a {display: block; padding:23px 0;  box-sizing: border-box;}
+	.item-list li .flag {
+		display: block;
+		position:absolute;
+		right:24px;
+		top:22px;
+		width:48px;
+		height:42px;
+		background-color:#f4f4f4;
+		border:1px solid #dcdcdc;
+		color:#ff7e1f;
+		font-size:13px;
+		border-radius: 18px;
+		text-align: center;
+		line-height:42px;
+		font-weight: bold;
 	}
 	.item-list .img-area {
-		width:130px;
-		height:130px;
+		width:85px;
+		height:85px;
+		margin:10px auto 10px;
 
 	}
-	.item-list .img-area img {width: 100%;}
+	.item-list .img-area img {width: 100%; vertical-align: middle;}
+	.item-list p {text-align: center;}
+	.item-list .name {font-size:14px; color:#666;}
+	.item-list .price {font-size:18px; color:#000; font-weight: 900; letter-spacing: -1px;}
+	.item-list .price em {font-size:14px}
+
+/*sub-캠페인*/
+.thumb-slide2.campaign {}
+	.thumb-slide2.campaign .slide-area{border:1px solid #ddd; box-sizing: border-box;}
+	.thumb-slide2.campaign:after {content:'';display:block;clear:both;}
+	.thumb-slide2.campaign .img-area {
+		float:left;
+		width:745px;
+		height:198px;
+	}
+	.thumb-slide2.campaign .slide-item .img-area img {width:100%}
+	.thumb-slide2.campaign .campaign-info {
+		position:relative;
+		float:right;
+		width:372px;
+		height:158px;
+		margin:20px 0;
+		padding:25px 51px 19px 51px;
+		border-left:1px solid #ddd;
+		font-size:15px;
+		box-sizing: border-box;
+	}
+		.thumb-slide2.campaign .campaign-info dl:after {content:'';display:block;clear:both;}
+		.thumb-slide2.campaign .campaign-info dl > * {margin-bottom:5px;}
+		.thumb-slide2.campaign .campaign-info dt {
+			width:40%;
+			font-weight: bold;
+			float:left;
+		}
+		.thumb-slide2.campaign .campaign-info dd {
+			float:left;
+			width:60%;
+			letter-spacing: -1px;
+		}
+		.thumb-slide2.campaign .btn-green3 {
+			position:absolute;
+			left:50%;
+			bottom:20px;
+			margin-left:-135px;
+		}
+
+
 
 /* 스텝리스트 */
 .step-list {
@@ -499,7 +703,7 @@ button {outline:0;vertical-align:top;}
 		float:left;
 		box-sizing:border-box;
 		border-top:2px solid #ddd;
-		border-bottom:2px solid #ddd;
+		border-bottom:1px solid #ddd;
 		text-align:center;
 	}
 	.step-list .step-item.item1 {width:29%;}
@@ -546,8 +750,11 @@ button {outline:0;vertical-align:top;}
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	마진/패딩
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.mgT5 {margin-top:5px !important;}
 .mgT10 {margin-top:10px !important;}
+.mgT25 {margin-top:25px !important;}
 .mgT60 {margin-top:60px !important;}
+.mgT65 {margin-top:65px !important;}
 
 .pdT0 {padding-top:0 !important;}
 .pdT20 {padding-top:20px !important;}
@@ -976,6 +1183,25 @@ button {outline:0;vertical-align:top;}
 	background:url(../img/sprite/button.png) no-repeat 0 -593px;
 }
 
+.btn-green3 {
+	display:inline-block;
+	position:relative;
+	width:270px;
+	height:46px;
+	box-sizing:border-box;
+	border-radius:4px;
+	border-width:1px;
+	border-style:solid;
+	font-size:18px;
+	line-height:46px;
+	cursor:pointer;
+	border-color:#7eb533;
+	background-color:#fff;
+	color:#60b015;
+	font-size:18px;
+	text-align: center;
+}
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	폼요소
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -1013,6 +1239,7 @@ button {outline:0;vertical-align:top;}
 		position:relative;
 		height:32px;
 		padding-left:13px;
+		box-sizing:border-box;
 		border:1px solid #bbb;
 		background-color:#fff;
 		color:#666;
@@ -1036,7 +1263,7 @@ button {outline:0;vertical-align:top;}
 		.select-box .select-list {
 			display:none;
 			position:absolute;
-			left:0;right:0;top:32px;
+			left:0;right:0;top:31px;
 			z-index:1;
 			padding:10px 0;
 			border:1px solid #91c90b;
@@ -1993,8 +2220,9 @@ label.check-radio .radiobox {margin-right:8px;}
 /* 조합원 가입 > step 01 (jo/IM-JO0201.html) */
 .join-page {
 	margin-top:65px;
+	padding-bottom:40px;
 }
-	.join-page .board-wrap {margin-top:25px;}
+	.join-page .board-wrap {margin-top:65px;}
 	.join-page .board-wrap:first-child {margin-top:0;}
 	.join-page .area-data-box {
 		position:relative;
@@ -2048,7 +2276,42 @@ label.check-radio .radiobox {margin-right:8px;}
 
 /* 조합원 가입 > step 02 (jo/IM-JO0301.html) */
 
-/* 조합원 가입 > step 03 (jo/IM-JO0401.html) */
+/* 조합원 가입 > step 04 (jo/IM-JO0501.html) */
+.join-page .box-area {
+	margin-top:65px;
+}
+	.join-page .box-area .box {
+		padding:16px 20px 15px;
+		border:1px solid #bbb;
+	}
+		.join-page .box-area .box .title {
+			color:#000;
+			font-size:18px;
+			font-weight:bold;
+			line-height:25px;
+		}
+	.join-page .box-area .bullet-list1 {margin-top:11px;}
+		.join-page .box-area .bullet-list1 .item {line-height:24px;}
+		.join-page .box-area .bullet-list1 .item.fColor1 {font-weight:bold;}
+
+/* 조합원 가입 > step 05 (IM-JO0601.html) */
+.complete-area {
+	padding-top:150px;
+	background:url(../img/bg/bg_login.gif) no-repeat 50% 15px;
+	text-align:center;
+}
+	.complete-area .title {
+		color:#60b015;
+		font-size:24px;
+		line-height:32px;
+	}
+	.complete-area .text {
+		margin-top:10px;
+		color:#666;
+		font-size:14px;
+		line-height:22px;
+	}
+	.complete-area .btn-center {margin-top:35px;}
 
 /* =========================================================================================================
 	물품전시
