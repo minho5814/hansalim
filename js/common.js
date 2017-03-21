@@ -261,4 +261,17 @@ $(window).load(function(){
 			$(this).parents('.e-mail-form').find('.transTxt').val(mailTxt);
 		}
 	});
+
+	/* ===========================================================================================================
+		레이어 팝업
+	=========================================================================================================== */
+	$('.btn-popup').click(function(){
+		var zIdx = $('.layer-popup').css('z-index');
+		$('body').append('<div class="popup-close">');
+		$('.popup-close').css({'z-index':zIdx-1});
+	});
+	$(document).on('click', '.layer-popup .btn-close, .popup-close', function(){
+		$('.layer-popup').fadeOut(200);
+		$('.popup-close').remove();
+	});
 });
