@@ -234,7 +234,7 @@ button {outline:0;vertical-align:top;}
 		.borad-write1 .btn-styled a,
 		.borad-write1 .btn-styled button {margin-left:4px;}
 	.borad-write1 .gray-text {
-		margin-top:10px;
+		margin-top:5px;
 		color:#999;
 		font-size:14px;
 		line-height:16px;
@@ -276,7 +276,7 @@ td.phone-area {
 
 /* 라디오, 체크박스 그룹 */
 td .radio-check {
-	padding:2px 0;
+	padding:5px 0 4px;
 	font-size:0;
 	line-height:0;
 }
@@ -645,6 +645,7 @@ td.e-mail-form {
 	마진/패딩
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 .mgT10 {margin-top:10px !important;}
+.mgT25 {margin-top:25px !important;}
 .mgT60 {margin-top:60px !important;}
 .mgT65 {margin-top:65px !important;}
 
@@ -2088,8 +2089,9 @@ label.check-radio .radiobox {margin-right:8px;}
 /* 조합원 가입 > step 01 (jo/IM-JO0201.html) */
 .join-page {
 	margin-top:65px;
+	padding-bottom:40px;
 }
-	.join-page .board-wrap {margin-top:25px;}
+	.join-page .board-wrap {margin-top:65px;}
 	.join-page .board-wrap:first-child {margin-top:0;}
 	.join-page .area-data-box {
 		position:relative;
@@ -2143,7 +2145,23 @@ label.check-radio .radiobox {margin-right:8px;}
 
 /* 조합원 가입 > step 02 (jo/IM-JO0301.html) */
 
-/* 조합원 가입 > step 03 (jo/IM-JO0401.html) */
+/* 조합원 가입 > step 04 (jo/IM-JO0501.html) */
+.join-page .box-area {
+	margin-top:65px;
+}
+	.join-page .box-area .box {
+		padding:16px 20px 15px;
+		border:1px solid #bbb;
+	}
+		.join-page .box-area .box .title {
+			color:#000;
+			font-size:18px;
+			font-weight:bold;
+			line-height:25px;
+		}
+	.join-page .box-area .bullet-list1 {margin-top:11px;}
+		.join-page .box-area .bullet-list1 .item {line-height:24px;}
+		.join-page .box-area .bullet-list1 .item.fColor1 {font-weight:bold;}
 
 /* =========================================================================================================
 	물품전시
