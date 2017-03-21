@@ -2093,6 +2093,12 @@ label.check-radio .radiobox {margin-right:8px;}
 		.box-content1 .box-cont .item:first-child {margin-top:0;}
 			.box-content1 .box-cont .item .btn-mini-text {margin-left:14px;}
 
+		.box-content1 .btn-link {
+			position: absolute;
+			top:15px; right:20px;
+			padding-right:15px;
+		}
+
 .login-wrap .box-content1 {margin-top:60px;}
 
 /* 조합원번호 찾기 (lo/IM-LO0501.html) */
@@ -3427,14 +3433,14 @@ label.check-radio .radiobox {margin-right:8px;}
 	height:466px;
 }
 .video-area .info-text {
-	margin-top:14px;
+	margin:14px 0 40px;
 	color:#666;
 	font-size:15px;
 }
 .video-area .info-text label {
 	float:right;
 }
-=======
+
 /* 우편번호찾기 (IM-JO0201.html) */
 .pop-post {width:600px;display:block;}
 	.pop-post .post-search table {}
