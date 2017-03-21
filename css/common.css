@@ -350,6 +350,35 @@ td.e-mail-form {
 		background-color:#676767;
 	}
 
+/* 박스링크 리스트 */
+.box-link-list {
+	border:1px solid #bbb;
+}
+	.box-link-list .link {
+		display:block;
+		position:relative;
+		padding:20px 40px;
+		border-top:1px solid #ddd;
+	}
+	.box-link-list .link:before {
+		content:'';
+		position:absolute;
+		right:50px;top:0;bottom:0;
+		width:10px;
+		background:url(../img/icon/icon_arrow_10x17.png) no-repeat 0 50%;
+	}
+		.box-link-list .link .title {
+			color:#000;
+			font-size:18px;
+			font-weight:bold;
+			line-height:30px;
+		}
+		.box-link-list .link .text {
+			color:#666;
+			font-size:14px;
+			line-height:22px;
+		}
+
 /* 썸네일 */
 .thumb-list1 {
 	overflow:hidden;
@@ -644,6 +673,7 @@ td.e-mail-form {
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	마진/패딩
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.mgT5 {margin-top:5px !important;}
 .mgT10 {margin-top:10px !important;}
 .mgT25 {margin-top:25px !important;}
 .mgT60 {margin-top:60px !important;}
@@ -2162,6 +2192,25 @@ label.check-radio .radiobox {margin-right:8px;}
 	.join-page .box-area .bullet-list1 {margin-top:11px;}
 		.join-page .box-area .bullet-list1 .item {line-height:24px;}
 		.join-page .box-area .bullet-list1 .item.fColor1 {font-weight:bold;}
+
+/* 조합원 가입 > step 05 (IM-JO0601.html) */
+.complete-area {
+	padding-top:150px;
+	background:url(../img/bg/bg_login.gif) no-repeat 50% 15px;
+	text-align:center;
+}
+	.complete-area .title {
+		color:#60b015;
+		font-size:24px;
+		line-height:32px;
+	}
+	.complete-area .text {
+		margin-top:10px;
+		color:#666;
+		font-size:14px;
+		line-height:22px;
+	}
+	.complete-area .btn-center {margin-top:35px;}
 
 /* =========================================================================================================
 	물품전시
