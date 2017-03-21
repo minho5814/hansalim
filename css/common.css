@@ -800,6 +800,7 @@ td.e-mail-form {
 .mgT15 {margin-top:15px !important;}
 .mgT20 {margin-top:20px !important;}
 .mgT25 {margin-top:25px !important;}
+.mgT40 {margin-top:40px !important;}
 .mgT60 {margin-top:60px !important;}
 .mgT65 {margin-top:65px !important;}
 
@@ -2378,12 +2379,13 @@ label.check-radio .radiobox {margin-right:8px;}
 		}
 
 /* 조합원 가입 > step 02 (jo/IM-JO0301.html) */
-.join-page .query-wrap {margin-top:25px;}
+.join-page .query-wrap {margin-top:28px;}
 .query-title-area {overflow:hidden;}
-	.query-title-area .cTitle3 {float:left;}
+	.query-title-area .cTitle3,
+	.query-title-area .cTitle4 {float:left;}
 	.query-title-area .btn-mini-text {
 		float:left;
-		margin:10px 0 0 9px;
+		margin:7px 0 0 9px;
 	}
 
 .query-wrap .hint-layer {
@@ -2421,12 +2423,16 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 	.query-wrap .box-query .bullet-list1 {}
 	.query-wrap .box-query .bullet-list1 .item {
-		margin-top:10px;
 		color:#666;
 		line-height:32px;
 	}
 		.query-wrap .box-query .bullet-list1 .item:before {top:18px;}
-		.query-wrap .box-query .bullet-list1 .item input[type=text]{width:160px;margin:0 5px;}
+		.query-wrap .box-query .bullet-list1 .item input[type=text],
+		.query-wrap .box-query .bullet-list1 .item input[type=number] {
+			width:60px;
+			margin:0 5px;
+			text-align:center;
+		}
 
 .query-wrap .gray-box {
 	padding:25px 30px;
@@ -2435,11 +2441,23 @@ label.check-radio .radiobox {margin-right:8px;}
 	font-size:15px;
 	line-height:24px;
 }
+.query-wrap .gray-box .bullet {
+	position:relative;
+	padding-left:11px;
+}
+	.query-wrap .gray-box .bullet:before {
+		content:'';
+		position:absolute;
+		left:0;top:10px;
+		width:3px;
+		height:3px;
+		background-color:#676767;
+	}
 
 .query-wrap .query-list {}
 	.query-wrap .query-list {}
 		.query-wrap .query-list .item {margin-top:30px;}
-		.query-wrap .query-list .item:first-child {margin-top:0;}
+		.query-wrap .query-list .item:first-child {margin-top:20px;}
 			.query-wrap .query-list .item .title-area {
 				overflow:hidden;
 				margin-bottom:8px;
@@ -2465,7 +2483,30 @@ label.check-radio .radiobox {margin-right:8px;}
 			font-size:15px;
 			line-height:21px;
 		}
-	.query-wrap .query-list {}
+
+
+.query-wrap .title-text {
+	margin-top:27px;
+	color:#000;
+	font-size:16px;
+	font-weight:bold;
+	line-height:43px;
+}
+.query-wrap .borad-write1 th,
+.query-wrap .borad-write1 td {text-align:center;}
+.query-wrap .borad-write1 td:nth-child(2) {border-right:1px solid #e3e3e3;}
+.query-wrap .borad-write1 td:last-child {text-align:left;}
+.query-wrap .borad-write1 .bullet-list1 .item {
+	color:#666;
+	font-size:15px;
+}
+.query-wrap .gray-text {
+	margin-top:10px;
+	color:#999;
+	font-size:14px;
+	line-height:21px;
+}
+
 
 /* 조합원 가입 > step 04 (jo/IM-JO0501.html) */
 .join-page .box-area {
