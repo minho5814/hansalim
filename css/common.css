@@ -655,13 +655,17 @@ td.e-mail-form {
 		position:relative;
 		float:left;
 		width:186px;
-		height:200px;
-
+		height:198px;
 		border-left:1px solid #ddd;
 		box-sizing: border-box;
 	}
 	.item-list li:first-child {border-left: 0;}
-	.item-list li a {display: block; padding:23px 0;  box-sizing: border-box;}
+	.item-list li > .item-info {display: block; height:198px; padding:23px 0;  box-sizing: border-box;}
+	.item-list li:hover .btn-center{
+		display: block;
+	}
+	.item-list .btn-center {display:none; width:186px; height:198px; margin-top:0; position:absolute; left:0; top:0; background-color:rgba(255,255,255,.8); }
+	.item-list .btn-center a {margin-left:5px; top:43%;}
 	.item-list li .flag {
 		display: block;
 		position:absolute;
