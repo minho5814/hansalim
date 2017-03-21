@@ -233,6 +233,12 @@ button {outline:0;vertical-align:top;}
 	}
 		.borad-write1 .btn-styled a,
 		.borad-write1 .btn-styled button {margin-left:4px;}
+	.borad-write1 .gray-text {
+		margin-top:10px;
+		color:#999;
+		font-size:14px;
+		line-height:16px;
+	}
 
 .borad-write2 {border-top:1px solid #666;}
 	.borad-write2 table {border-bottom:1px solid #bbb;}
@@ -259,6 +265,46 @@ button {outline:0;vertical-align:top;}
 	}
 		.borad-write2 .btn-styled a,
 		.borad-write2 .btn-styled button {margin-left:4px;}
+
+/* 휴대폰 번호 입력 */
+td.phone-area {
+	font-size:0;
+	line-height:0;
+}
+	td.phone-area select {width:100px;}
+	td.phone-area input {width:100px;margin-left:4px;}
+
+/* 라디오, 체크박스 그룹 */
+td .radio-check {
+	padding:2px 0;
+	font-size:0;
+	line-height:0;
+}
+	td .radio-check .item {margin-left:30px;}
+	td .radio-check .item:first-child {margin-left:0;}
+
+/* e-mail 입력란 */
+td.e-mail-form {
+	font-size:0;
+	line-height:0;
+}
+	td.e-mail-form input {
+		width:130px;
+	}
+	td.e-mail-form select,
+	td.e-mail-form .select-box {
+		width:150px;
+		margin-left:4px;
+	}
+	td.e-mail-form .text-at {
+		display:inline-block;
+		width:30px;
+		height:32px;
+		color:#999;
+		font-size:15px;
+		text-align:center;
+		line-height:32px;
+	}
 
 /* 데이터 */
 .borad-data1 {border-top:1px solid #666;}
@@ -548,6 +594,7 @@ button {outline:0;vertical-align:top;}
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 .mgT10 {margin-top:10px !important;}
 .mgT60 {margin-top:60px !important;}
+.mgT65 {margin-top:65px !important;}
 
 .pdT0 {padding-top:0 !important;}
 .pdT20 {padding-top:20px !important;}
@@ -1008,6 +1055,7 @@ button {outline:0;vertical-align:top;}
 		position:relative;
 		height:32px;
 		padding-left:13px;
+		box-sizing:border-box;
 		border:1px solid #bbb;
 		background-color:#fff;
 		color:#666;
@@ -1031,7 +1079,7 @@ button {outline:0;vertical-align:top;}
 		.select-box .select-list {
 			display:none;
 			position:absolute;
-			left:0;right:0;top:32px;
+			left:0;right:0;top:31px;
 			z-index:1;
 			padding:10px 0;
 			border:1px solid #91c90b;
