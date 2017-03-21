@@ -998,6 +998,7 @@ button {outline:0;vertical-align:top;}
 
 /* 셀렉트박스 */
 .select-box {
+	display:inline-block;
 	position:relative;
 	height:32px;
 	cursor:default;
@@ -1985,19 +1986,19 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 
 /* 조합원 가입 > step 01 (jo/IM-JO0201.html) */
-.join-page .area-choice {
+.join-page {
 	margin-top:65px;
 }
-	.join-page .area-choice .board-wrap {margin-top:25px;}
-	.join-page .area-choice .board-wrap:first-child {margin-top:0;}
-	.join-page .area-choice .area-data-box {
+	.join-page .board-wrap {margin-top:25px;}
+	.join-page .board-wrap:first-child {margin-top:0;}
+	.join-page .area-data-box {
 		position:relative;
 		height:120px;
 		margin-top:10px;
 		box-sizing:border-box;
 		border:1px solid #ddd;
 	}
-		.join-page .area-choice .area-data-box .text {
+		.join-page .area-data-box .text {
 			position:absolute;
 			left:0;right:0;top:50%;
 			-webkit-transform:translateY(-50%);
@@ -2039,10 +2040,10 @@ label.check-radio .radiobox {margin-right:8px;}
 			font-size:14px;
 			line-height:22px;
 		}
-		.terms-wrap .terms-box {}
-		.terms-wrap .terms-box {}
-	.terms-wrap {}
-	.terms-wrap {}
+
+/* 조합원 가입 > step 02 (jo/IM-JO0301.html) */
+
+/* 조합원 가입 > step 03 (jo/IM-JO0401.html) */
 
 /* =========================================================================================================
 	물품전시
