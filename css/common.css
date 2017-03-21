@@ -3365,3 +3365,22 @@ label.check-radio .radiobox {margin-right:8px;}
 
 /* 조합원 기회원 알림 (IM-JO0101.html) */
 .pop-existing {width:600px;}
+
+
+/* 한살림서울 소개 안내 동영상 */
+.video-area {
+	width:830px;
+	margin:0 auto;
+}
+.video-area .video {
+	width:830px;
+	height:466px;
+}
+.video-area .info-text {
+	margin-top:14px;
+	color:#666;
+	font-size:15px;
+}
+.video-area .info-text label {
+	float:right;
+}
