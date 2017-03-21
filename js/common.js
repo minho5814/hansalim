@@ -75,8 +75,12 @@ $(window).load(function(){
 		/*상세 탭*/
 		$('.tab-item').click(function(){
 			var idx = $(this).index();
+			var cont_height = $('.cont-wrap').offset().top - $('.tab-wrap').outerHeight() - $('.head-btm').outerHeight() ;
+					
 			$('.tab-item').removeClass('on').eq(idx).addClass('on');
 			$('.tab-content').removeClass('on').eq(idx).addClass('on');
+			$('html, body').animate({scrollTop:cont_height});
+
 		});
 
 		/*방사성물질 검사 탭*/
@@ -101,6 +105,7 @@ $(window).load(function(){
 		var winLeft = $(window).scrollLeft();
 		/* 스크롤 다운시 해더 변경 */
 		var gnbTop = $('.head-top').offset().top + $('.head-top').outerHeight();
+
 		if(winTop >= gnbTop){
 			$('html').addClass('down');
 			$('.head-btm .gnb').css({'left':-winLeft});
@@ -113,6 +118,14 @@ $(window).load(function(){
 			$('.head-btm .gnb').css({'left':'0'});
 			$('.head-top .search-box').css({'right':'0'});
 		}
+
+		var tabTop = $('.tab-wrap').offset().top;
+		if(winTop >= tabTop){
+			$('html').addClass('tab');
+		}else{
+			$('html').removeClass('tab');
+		}
+
 	});
 	$(window).scroll();
 
