@@ -583,6 +583,7 @@ td.e-mail-form {
 .product-area .bx-viewport {border:1px solid #e3e3e3; box-sizing: border-box;}
 .product-slide .slide-item { height:440px;}
 .product-slide .img-area {width:440px; height:440px;}
+	.product-slide .img-area img {width:100%;}
 
 .product-slide .thumb-slide1 .bx-controls-direction a {
     top: 50%;

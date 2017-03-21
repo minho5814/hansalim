@@ -72,10 +72,25 @@ $(window).load(function(){
 	/* ===========================================================================================================
 		탭메뉴
 	=========================================================================================================== */
+		/*상세 탭*/
 		$('.tab-item').click(function(){
 			var idx = $(this).index();
 			$('.tab-item').removeClass('on').eq(idx).addClass('on');
 			$('.tab-content').removeClass('on').eq(idx).addClass('on');
+		});
+
+		/*방사성물질 검사 탭*/
+		$('.test-term .year > li').click(function(){
+			if($(this).hasClass('on')){
+				$(this).addClass('on').children('.month').show();
+			}else{
+				$('.test-term .year > li').removeClass('on').children('.month').hide().find('li').removeClass('on');
+				$(this).addClass('on').children('.month').show();
+			}
+		});
+
+		$('.month li').click(function(){
+			$(this).addClass('on').siblings('li').removeClass('on');
 		});
 
 	/* ===========================================================================================================
