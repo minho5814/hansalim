@@ -506,6 +506,13 @@ button {outline:0;vertical-align:top;}
 	line-height:50px;
 }
 
+.cTitle4 {
+	color:#000;
+	font-size:18px;
+	font-weight:bold;
+	line-height:45px;
+}
+
 /* 정렬 */
 .align-center {text-align:center !important;}
 .align-left {text-align:left !important;}
@@ -1925,12 +1932,40 @@ label.check-radio .radiobox {margin-right:8px;}
 			text-align:center;
 			line-height:24px;
 		}
-	.join-page .area-choice {}
-	.join-page .area-choice {}
-	.join-page .area-choice {}
-	.join-page .area-choice {}
-	.join-page .area-choice {}
 
+.terms-wrap {margin-top:65px;}
+	.terms-wrap .check-area {
+		display:block;
+		padding:15px 0;
+	}
+	.terms-wrap .all-check {border-top:1px solid #666;}
+	.terms-wrap .all-check:after {
+		content:'';
+		display:block;
+		clear:both;
+	}
+		.terms-wrap .all-check .check-area {float:left;}
+		.terms-wrap .all-check .text {
+			float:right;
+			color:#999;
+			font-size:14px;
+			line-height:48px;
+		}
+	.terms-wrap .terms-box {margin-top:10px;}
+		.terms-wrap .terms-box .scroll-box {
+			overflow-y:auto;
+			height:130px;
+			padding:15px 20px;
+			box-sizing:border-box;
+			border:1px solid #bbb;
+			color:#666;
+			font-size:14px;
+			line-height:22px;
+		}
+		.terms-wrap .terms-box {}
+		.terms-wrap .terms-box {}
+	.terms-wrap {}
+	.terms-wrap {}
 
 /* =========================================================================================================
 	물품전시
