@@ -242,7 +242,7 @@ $(window).load(function(){
 		}
 	});
 
-<<<<<<< HEAD
+
 	/* 이메일 셀렉트박스 (IM-JO0401.html) */
 	$('.e-mail-form .select-list .item').click(function(){
 		var mailTxt = $(this).html();
@@ -252,6 +252,4 @@ $(window).load(function(){
 			$(this).parents('.e-mail-form').find('.transTxt').val(mailTxt);
 		}
 	});
-=======
->>>>>>> 0fdaf68802e41ff13ce4437de0c590a5e1598d3a
 });
