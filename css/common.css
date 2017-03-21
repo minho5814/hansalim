@@ -196,6 +196,8 @@ button {outline:0;vertical-align:top;}
 		line-height:0;
 	}
 
+.fRight {float:right !important;}
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	테이블
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -335,11 +337,11 @@ td.e-mail-form {
 .bullet-list1 {}
 	.bullet-list1 .item {
 		position:relative;
-		padding-left:11px;
+		padding:4px 0 4px 11px;
 		color:#999;
 		font-size:14px;
 		text-align:left;
-		line-height:27px;
+		line-height:19px;
 	}
 	.bullet-list1 .item:before {
 		content:'';
@@ -2370,6 +2372,94 @@ label.check-radio .radiobox {margin-right:8px;}
 		}
 
 /* 조합원 가입 > step 02 (jo/IM-JO0301.html) */
+.join-page .query-wrap {margin-top:25px;}
+.query-title-area {overflow:hidden;}
+	.query-title-area .cTitle3 {float:left;}
+	.query-title-area .btn-mini-text {
+		float:left;
+		margin:10px 0 0 9px;
+	}
+
+.query-wrap .hint-layer {
+	display:none;
+	position:relative;
+	margin-bottom:20px;
+	padding:13px 20px 30px;
+	border:1px solid #ddd;
+}
+	.query-wrap .hint-layer .hint-title {
+		margin-top:5px;
+		color:#000;
+		font-size:14px;
+		font-weight:bold;
+		line-height:27px;
+	}
+	.query-wrap .hint-layer .hint-title:first-child {margin-top:0;}
+	.query-wrap .hint-layer .bullet-list1 {}
+		.query-wrap .hint-layer .bullet-list1 .item {color:#666;}
+	.query-wrap .hint-layer .btn-close {
+		position:absolute;
+		right:0;bottom:0;
+		width:27px;
+		height:27px;
+		border-top:1px solid #ddd;
+		border-left:1px solid #ddd;
+		background:url(../img/btn/btn_x_11x11.png) no-repeat 50% 50%;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+	}
+.query-wrap .box-query {
+	padding:20px;
+	border:1px solid #ddd;
+}
+	.query-wrap .box-query .bullet-list1 {}
+	.query-wrap .box-query .bullet-list1 .item {
+		margin-top:10px;
+		color:#666;
+		line-height:32px;
+	}
+		.query-wrap .box-query .bullet-list1 .item:before {top:18px;}
+		.query-wrap .box-query .bullet-list1 .item input[type=text]{width:160px;margin:0 5px;}
+
+.query-wrap .gray-box {
+	padding:25px 30px;
+	background-color:#f7f7f7;
+	color:#666;
+	font-size:15px;
+	line-height:24px;
+}
+
+.query-wrap .query-list {}
+	.query-wrap .query-list {}
+		.query-wrap .query-list .item {margin-top:30px;}
+		.query-wrap .query-list .item:first-child {margin-top:0;}
+			.query-wrap .query-list .item .title-area {
+				overflow:hidden;
+				margin-bottom:8px;
+			}
+			.query-wrap .query-list .item .title {
+				float:left;
+				color:#000;
+				font-size:16px;
+				font-weight:bold;
+				line-height:28px;
+			}
+			.query-wrap .query-list .item .btn-mini-text {
+				float:left;
+				margin-left:10px ;
+			}
+		.query-wrap .query-list .item textarea {
+			overflow-y:auto;
+			height:150px;
+			padding:17px 20px;
+			border-radius:0;
+			border:1px solid #bbb;
+			color:#666;
+			font-size:15px;
+			line-height:21px;
+		}
+	.query-wrap .query-list {}
 
 /* 조합원 가입 > step 04 (jo/IM-JO0501.html) */
 .join-page .box-area {
