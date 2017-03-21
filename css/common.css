@@ -268,6 +268,7 @@ button {outline:0;vertical-align:top;}
 	padding-bottom:90px;
 	box-sizing:border-box;
 	border:1px solid #ddd;
+	background-color:#fff;
 }
 .thumb-list1 .thumb-item1 {border-right:0;}
 .thumb-list1 .thumb-item1:first-child {border-left:0;}
@@ -381,6 +382,80 @@ button {outline:0;vertical-align:top;}
 		.thumb-slide1 .bx-pager .bx-pager-item:first-child {margin-left:0;}
 		.thumb-slide1 .bx-pager .bx-pager-link.active {background-color:#000;}
 	.thumb-slide1 .thumb-list1 {border:0;}
+
+/*sub-메인슬라이드*/
+.product-slide .thumb-slide1 {width:440px;}
+.product-slide .thumb-slide1 .bx-viewport {border-left:0; border-right: 0;}
+.product-slide .slide-item { height:440px;}
+.product-slide .img-area {width:440px; height:440px;}
+
+
+/*sub-관련기획전*/
+.thumb-slide2 {
+	position:relative;
+	width:1120px;
+	margin:0 auto;
+}
+.thumb-slide2:after {content:'';display:block;clear:both;}
+.thumb-slide2 .slide-area {
+	height:200px;
+	border:1px solid #ddd;
+	box-sizing: border-box;
+}
+
+.thumb-slide2 .bx-controls-direction {
+	position:absolute;
+	top:0;
+	right:0;
+	width:60px;
+	height:30px;
+
+}
+	.thumb-slide2 .bx-controls-direction a {
+		display:block;
+		position:absolute;
+		/*top:158px;*/
+		width:28px;
+		height:28px;
+		border:1px solid #e3e3e3;
+		background-color:#fff;
+		background-repeat:no-repeat;
+		background-position:50% 50%;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+		border-radius:2px;
+
+	}
+	.thumb-slide2 .bx-prev {
+		left:0;
+		background-image:url(../img/btn/btn_bx_prev02.png);
+		border-right:0;
+	}
+	.thumb-slide2 .bx-next {
+		right:0;
+		background-image:url(../img/btn/btn_bx_next02.png);
+	}
+	.thumb-slide2 .bx-pager {display: block !important;}
+
+.thumb-slide2 .link.big-img {display: block; float:left; width:559px; height:200px;}
+.thumb-slide2 .img-area img {width: 100%;}
+
+.item-list {width:559px; float:right;}
+	.item-list:after {
+		content:'';display:block;clear:both;
+	}
+	.item-list li {
+		float:left;
+		width:186px;
+		height:200px;
+	}
+	.item-list .img-area {
+		width:130px;
+		height:130px;
+
+	}
+	.item-list .img-area img {width: 100%;}
 
 /* =========================================================================================================
 	공통
@@ -1828,16 +1903,18 @@ label.check-radio .radiobox {margin-right:8px;}
 				}
 		.content {
 			background-color:#fff;
+			padding-top:80px;
 		}
+		.content.first {padding-top:0;}
 		.content.gray {
 			background-color:#eee;
 		}
-			.content .inner {
+			.content .sub-inner {
 				width:1120px;
 				margin:0 auto;
 				background-color:#fff;
 			}
-			.content .inner:first-child {
+			.content.first .sub-inner {
 				padding:20px 40px 40px 40px;
 				box-sizing: border-box;
 			}
@@ -1867,13 +1944,11 @@ label.check-radio .radiobox {margin-right:8px;}
 			font-weight: bold;
 			line-height: initial;
 		}
-
 		.product-area:after {
 			content: '';
 		    display: block;
 		    clear: both;
 		}
-
 		.product-slide {
 			float:left;
 			width:440px;
@@ -1881,7 +1956,6 @@ label.check-radio .radiobox {margin-right:8px;}
 			border:1px solid #e3e3e3;
 			box-sizing: border-box;
 		}
-
 		.product-info {
 			float:right;
 			width:550px;
@@ -1975,7 +2049,21 @@ label.check-radio .radiobox {margin-right:8px;}
 		.product-info .info-text {padding:30px 0 30px 10px; font-size:18px; line-height:18px;}
 			.product-info .info-text .orange {color:#f56d24;}
 
-		.product-info .info-text + .btn-center {margin-top:0}
+		.product-info .btn-center.sub {margin-top:0}
+		.product-info .btn-center.sub a {width:270px}
+
+.content .title-area.ty02 {
+	height:50px;
+}
+.content .title-area.ty02 .cTitle1 {
+	position:absolute;
+	left:0;
+	font-size:24px;
+	padding:0;
+	height:50px;
+	line-height:50px;
+
+}
 
 /* 상세 페이지 - 방사성물질 검사 결과 */
 .title-wrap {
