@@ -209,64 +209,64 @@ button {outline:0;vertical-align:top;}
 		font-size:14px;
 	}
 /* 입력 스타일 */
-.borad-write1 {border-top:1px solid #666;}
-	.borad-write1 table {border-bottom:1px solid #bbb;}
-	.borad-write1 th,
-	.borad-write1 td {
+.board-write1 {border-top:1px solid #666;}
+	.board-write1 table {border-bottom:1px solid #bbb;}
+	.board-write1 th,
+	.board-write1 td {
 		padding:12px 20px;
 		border-top:1px solid #ddd;
 		text-align:left;
 	}
-	.borad-write1 tr:first-child th,
-	.borad-write1 tr:first-child td {border-top:0;}
-		.borad-write1 .text {
+	.board-write1 tr:first-child th,
+	.board-write1 tr:first-child td {border-top:0;}
+		.board-write1 .text {
 			padding:5px 0;
 			font-size:15px;
 			line-height:22px;
 		}
-	.borad-write1 th {
+	.board-write1 th {
 		background-color:#f0f2ef;
 		color:#000;
 	}
-	.borad-write1 td {color:#666;}
-	.borad-write1 .btn-styled {
+	.board-write1 td {color:#666;}
+	.board-write1 .btn-styled {
 		font-size:0;
 		line-height:0;
 	}
-		.borad-write1 .btn-styled a,
-		.borad-write1 .btn-styled button {margin-left:4px;}
-	.borad-write1 .gray-text {
+		.board-write1 .btn-styled a,
+		.board-write1 .btn-styled button {margin-left:4px;}
+	.board-write1 .gray-text {
 		margin-top:5px;
 		color:#999;
 		font-size:14px;
 		line-height:16px;
 	}
 
-.borad-write2 {border-top:1px solid #666;}
-	.borad-write2 table {border-bottom:1px solid #bbb;}
-	.borad-write2 th,
-	.borad-write2 td {
+.board-write2 {border-top:1px solid #666;}
+	.board-write2 table {border-bottom:1px solid #bbb;}
+	.board-write2 th,
+	.board-write2 td {
 		padding:20px;
 		border-top:1px solid #ddd;
 	}
-	.borad-write2 tr:first-child th,
-	.borad-write2 tr:first-child td {border-top:0;}
-		.borad-write2 .text {
+	.board-write2 tr:first-child th,
+	.board-write2 tr:first-child td {border-top:0;}
+		.board-write2 .text {
 			padding:5px 0;
 			font-size:15px;
 			line-height:22px;
 		}
-	.borad-write2 th {
+	.board-write2 th {
 		background-color:#f0f2ef;
 		color:#000;
 	}
-	.borad-write2 td {color:#666;}
-	.borad-write2 .btn-styled {
+	.board-write2 td {color:#666;}
+	.board-write2 .btn-styled {
 		font-size:0;
 		line-height:0;
 	}
-		.borad-write2 .btn-styled a,
-		.borad-write2 .btn-styled button {margin-left:4px;}
+		.board-write2 .btn-styled a,
+		.board-write2 .btn-styled button {margin-left:4px;}
 
 /* 휴대폰 번호 입력 */
 td.phone-area {
@@ -2243,11 +2243,11 @@ label.check-radio .radiobox {margin-right:8px;}
 		line-height:37px;
 	}
 
-.login-page .borad-write1 {
+.login-page .board-write1 {
 	width:830px;
 	margin:15px auto 0;
 }
-	.login-page .center-cont .borad-write1 {width:100%;}
+	.login-page .center-cont .board-write1 {width:100%;}
 
 /* 아이디 만들기 완료 (lo/IM-LOO402.html) */
 .login-wrap .id-complete {
@@ -2492,11 +2492,11 @@ label.check-radio .radiobox {margin-right:8px;}
 	font-weight:bold;
 	line-height:43px;
 }
-.query-wrap .borad-write1 th,
-.query-wrap .borad-write1 td {text-align:center;}
-.query-wrap .borad-write1 td:nth-child(2) {border-right:1px solid #e3e3e3;}
-.query-wrap .borad-write1 td:last-child {text-align:left;}
-.query-wrap .borad-write1 .bullet-list1 .item {
+.query-wrap .board-write1 th,
+.query-wrap .board-write1 td {text-align:center;}
+.query-wrap .board-write1 td:nth-child(2) {border-right:1px solid #e3e3e3;}
+.query-wrap .board-write1 td:last-child {text-align:left;}
+.query-wrap .board-write1 .bullet-list1 .item {
 	color:#666;
 	font-size:15px;
 }
@@ -3503,8 +3503,8 @@ label.check-radio .radiobox {margin-right:8px;}
 		padding:0 20px;
 	}
 
-.layer-popup .borad-write1 th,
-.layer-popup .borad-write1 td {
+.layer-popup .board-write1 th,
+.layer-popup .board-write1 td {
 	padding:10px 15px;
 	font-size:14px;
 }
