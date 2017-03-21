@@ -759,6 +759,7 @@ td.e-mail-form {
 
 .pdT0 {padding-top:0 !important;}
 .pdT20 {padding-top:20px !important;}
+.pdT25 {padding-top:25px !important;}
 
 .mgR30 {margin-right:30px !important;}
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1980,17 +1981,22 @@ label.check-radio .radiobox {margin-right:8px;}
 			}
 		.login-wrap .login-mid .btn-mini-text {margin-top:12px;}
 
-.box-content1 {border:1px solid #e3e3e3;}
+.box-content1 {
+	position:relative;
+	border:1px solid #e3e3e3;
+}
 	.box-content1 .box-title {
 		padding:15px 20px 15px 46px;
-		border-bottom:1px solid #e3e3e3;
 		color:#60b015;
 		font-size:16px;
 		font-weight:bold;
 		line-height:20px;
 		background:url(../img/icon/icon_exclamation.png) no-repeat 20px 15px;
 	}
-	.box-content1 .box-cont {padding:12px 20px 12px 20px;}
+	.box-content1 .box-cont {
+		padding:12px 20px 12px 20px;
+		border-top:1px solid #e3e3e3;
+	}
 		.box-content1 .box-cont .item {
 			position:relative;
 			margin-top:5px;
@@ -3109,7 +3115,10 @@ label.check-radio .radiobox {margin-right:8px;}
 	}
 
 .layer-popup .borad-write1 th,
-.layer-popup .borad-write1 td {padding:10px 15px;}
+.layer-popup .borad-write1 td {
+	padding:10px 15px;
+	font-size:14px;
+}
 
 /* ---------------------------------------------------------------------------------------------------------
 	회원가입 (jo)
@@ -3135,3 +3144,99 @@ label.check-radio .radiobox {margin-right:8px;}
 
 /* 조합원 기회원 알림 (IM-JO0101.html) */
 .pop-existing {width:600px;}
+
+/* 우편번호찾기 (IM-JO0201.html) */
+.pop-post {width:600px;display:block;}
+	.pop-post .post-search table {}
+		.pop-post .post-search table th,
+		.pop-post .post-search table td {
+			color:#000;
+			font-size:15px;
+			padding:6px 0;
+		}
+		.pop-post .post-search table .btn-type {
+			position:relative;
+			padding-right:56px;
+		}
+			.pop-post .post-search table .btn-round-text {
+				position:absolute;
+				right:0;top:0;
+				width:52px;
+			}
+
+	.pop-post .text1 {
+		margin-top:10px;
+		color:#999;
+		font-size:14px;
+		line-height:20px;
+	}
+	.pop-post .post-search select {width:120px;}
+
+	.pop-post .post-result {
+		display:none;
+		margin:25px -30px 0;
+		padding:30px 30px 0;
+		border-top:1px solid #e3e3e3;
+	}
+	.pop-post .post-result .scroll-box {
+		overflow-y:auto;
+		max-height:303px;
+		border-top:1px solid #666;
+		border-bottom:1px solid #bbb;
+	}
+		.pop-post .post-result .result-title {
+			overflow:hidden;
+			padding-left:85px;
+			border-bottom:1px solid #bbb;
+			background-color:#f7f7f7;
+		}
+			.pop-post .post-result .result-title .title {
+				float:left;
+				height:43px;
+				margin-left:170px;
+				color:#000;
+				font-size:14px;
+				line-height:43px;
+			}
+			.pop-post .post-result .result-title .title:first-child {margin-left:0;}
+		.pop-post .post-result .result-list .item {
+			display:block;
+			position:relative;
+			min-height:65px;
+			padding-left:138px;
+			box-sizing:border-box;
+			border-top:1px solid #ddd;
+		}
+		.pop-post .post-result .result-list .item:first-child {border-top:0;}
+			.pop-post .post-result .result-list .radio-area {
+				position:absolute;
+				left:0;top:50%;
+				-webkit-transform:translateY(-50%);
+				-ms-transform:translateY(-50%);
+				transform:translateY(-50%);
+				width:84px;
+				text-align:center;
+			}
+			.pop-post .post-result .result-list .post-number {
+				position:absolute;
+				left:84px;top:0;
+				width:54px;
+				color:#666;
+				font-size:14px;
+				text-align:center;
+				line-height:65px;
+			}
+		.pop-post .post-result .result-list .address-area {
+			padding:10px 20px 10px 50px;
+		}
+			.pop-post .post-result .result-list .address-area .address {
+				color:#666;
+				font-size:14px;
+				line-height:22px;
+			}
+		.pop-post .post-result .result-list {}
+		.pop-post .post-result .result-list {}
+		.pop-post .post-result .result-list {}
+		.pop-post .post-result .result-list {}
+		.pop-post .post-result {}
+		.pop-post .post-result {}
