@@ -3012,6 +3012,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		color:#000;
 		font-weight:bold;
 		line-height:58px;
+		cursor: pointer;
 	}
 	.pd-faq .faq-list li .answer {
 		display:none;
