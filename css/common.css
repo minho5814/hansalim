@@ -199,6 +199,13 @@ button {outline:0;vertical-align:top;}
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	테이블
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.board-wrap {position:relative;}
+	.board-wrap .top-text {
+		position:absolute;
+		right:0;top:19px;
+		color:#999;
+		font-size:14px;
+	}
 /* 입력 스타일 */
 .borad-write1 {border-top:1px solid #666;}
 	.borad-write1 table {border-bottom:1px solid #bbb;}
@@ -226,6 +233,32 @@ button {outline:0;vertical-align:top;}
 	}
 		.borad-write1 .btn-styled a,
 		.borad-write1 .btn-styled button {margin-left:4px;}
+
+.borad-write2 {border-top:1px solid #666;}
+	.borad-write2 table {border-bottom:1px solid #bbb;}
+	.borad-write2 th,
+	.borad-write2 td {
+		padding:20px;
+		border-top:1px solid #ddd;
+	}
+	.borad-write2 tr:first-child th,
+	.borad-write2 tr:first-child td {border-top:0;}
+		.borad-write2 .text {
+			padding:5px 0;
+			font-size:15px;
+			line-height:22px;
+		}
+	.borad-write2 th {
+		background-color:#f0f2ef;
+		color:#000;
+	}
+	.borad-write2 td {color:#666;}
+	.borad-write2 .btn-styled {
+		font-size:0;
+		line-height:0;
+	}
+		.borad-write2 .btn-styled a,
+		.borad-write2 .btn-styled button {margin-left:4px;}
 
 /* 데이터 */
 .borad-data1 {border-top:1px solid #666;}
@@ -268,6 +301,7 @@ button {outline:0;vertical-align:top;}
 	padding-bottom:90px;
 	box-sizing:border-box;
 	border:1px solid #ddd;
+	background-color:#fff;
 }
 .thumb-list1 .thumb-item1 {border-right:0;}
 .thumb-list1 .thumb-item1:first-child {border-left:0;}
@@ -382,6 +416,81 @@ button {outline:0;vertical-align:top;}
 		.thumb-slide1 .bx-pager .bx-pager-link.active {background-color:#000;}
 	.thumb-slide1 .thumb-list1 {border:0;}
 
+
+/*sub-메인슬라이드*/
+.product-slide .thumb-slide1 {width:440px;}
+.product-slide .thumb-slide1 .bx-viewport {border-left:0; border-right: 0;}
+.product-slide .slide-item { height:440px;}
+.product-slide .img-area {width:440px; height:440px;}
+
+
+/*sub-관련기획전*/
+.thumb-slide2 {
+	position:relative;
+	width:1120px;
+	margin:0 auto;
+}
+.thumb-slide2:after {content:'';display:block;clear:both;}
+.thumb-slide2 .slide-area {
+	height:200px;
+	border:1px solid #ddd;
+	box-sizing: border-box;
+}
+
+.thumb-slide2 .bx-controls-direction {
+	position:absolute;
+	top:0;
+	right:0;
+	width:60px;
+	height:30px;
+
+}
+	.thumb-slide2 .bx-controls-direction a {
+		display:block;
+		position:absolute;
+		/*top:158px;*/
+		width:28px;
+		height:28px;
+		border:1px solid #e3e3e3;
+		background-color:#fff;
+		background-repeat:no-repeat;
+		background-position:50% 50%;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+		border-radius:2px;
+
+	}
+	.thumb-slide2 .bx-prev {
+		left:0;
+		background-image:url(../img/btn/btn_bx_prev02.png);
+		border-right:0;
+	}
+	.thumb-slide2 .bx-next {
+		right:0;
+		background-image:url(../img/btn/btn_bx_next02.png);
+	}
+	.thumb-slide2 .bx-pager {display: block !important;}
+
+.thumb-slide2 .link.big-img {display: block; float:left; width:559px; height:200px;}
+.thumb-slide2 .img-area img {width: 100%;}
+
+.item-list {width:559px; float:right;}
+	.item-list:after {
+		content:'';display:block;clear:both;
+	}
+	.item-list li {
+		float:left;
+		width:186px;
+		height:200px;
+	}
+	.item-list .img-area {
+		width:130px;
+		height:130px;
+
+	}
+	.item-list .img-area img {width: 100%;}
+
 /* 스텝리스트 */
 .step-list {
 	overflow:hidden;
@@ -423,6 +532,7 @@ button {outline:0;vertical-align:top;}
 				background-color:#60b015;
 			}/* on */
 
+
 /* =========================================================================================================
 	공통
 ========================================================================================================= */
@@ -436,6 +546,9 @@ button {outline:0;vertical-align:top;}
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	마진/패딩
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.mgT10 {margin-top:10px !important;}
+.mgT60 {margin-top:60px !important;}
+
 .pdT0 {padding-top:0 !important;}
 .pdT20 {padding-top:20px !important;}
 
@@ -462,6 +575,19 @@ button {outline:0;vertical-align:top;}
 	font-size:24px;
 	font-weight:bold;
 	line-height:35px;
+}
+.cTitle3 {
+	color:#000;
+	font-size:24px;
+	font-weight:bold;
+	line-height:50px;
+}
+
+.cTitle4 {
+	color:#000;
+	font-size:18px;
+	font-weight:bold;
+	line-height:45px;
 }
 
 /* 정렬 */
@@ -872,6 +998,7 @@ button {outline:0;vertical-align:top;}
 
 /* 셀렉트박스 */
 .select-box {
+	display:inline-block;
 	position:relative;
 	height:32px;
 	cursor:default;
@@ -1630,16 +1757,14 @@ label.check-radio .radiobox {margin-right:8px;}
 		line-height:20px;
 		background:url(../img/icon/icon_exclamation.png) no-repeat 20px 15px;
 	}
-	.box-content1 .box-cont {
-		padding:12px 20px 20px 20px;
-	}
+	.box-content1 .box-cont {padding:12px 20px 12px 20px;}
 		.box-content1 .box-cont .item {
 			position:relative;
 			margin-top:5px;
 			padding-left:11px;
 			color:#666;
 			font-size:14px;
-			line-height:28px;
+			line-height:26px;
 		}
 		.box-content1 .box-cont .item:before {
 			content:'';
@@ -1854,7 +1979,71 @@ label.check-radio .radiobox {margin-right:8px;}
 	width:830px;
 	margin:15px auto 0;
 }
+.join-line-box {
+	width:830px;
+	margin:15px auto 0;
+	border-top:1px solid #666;
+}
 
+/* 조합원 가입 > step 01 (jo/IM-JO0201.html) */
+.join-page {
+	margin-top:65px;
+}
+	.join-page .board-wrap {margin-top:25px;}
+	.join-page .board-wrap:first-child {margin-top:0;}
+	.join-page .area-data-box {
+		position:relative;
+		height:120px;
+		margin-top:10px;
+		box-sizing:border-box;
+		border:1px solid #ddd;
+	}
+		.join-page .area-data-box .text {
+			position:absolute;
+			left:0;right:0;top:50%;
+			-webkit-transform:translateY(-50%);
+			-ms-transform:translateY(-50%);
+			transform:translateY(-50%);
+			color:#63a607;
+			font-size:18px;
+			font-weight:bold;
+			text-align:center;
+			line-height:24px;
+		}
+
+.terms-wrap {margin-top:65px;}
+	.terms-wrap .check-area {
+		display:block;
+		padding:15px 0;
+	}
+	.terms-wrap .all-check {border-top:1px solid #666;}
+	.terms-wrap .all-check:after {
+		content:'';
+		display:block;
+		clear:both;
+	}
+		.terms-wrap .all-check .check-area {float:left;}
+		.terms-wrap .all-check .text {
+			float:right;
+			color:#999;
+			font-size:14px;
+			line-height:48px;
+		}
+	.terms-wrap .terms-box {margin-top:10px;}
+		.terms-wrap .terms-box .scroll-box {
+			overflow-y:auto;
+			height:130px;
+			padding:15px 20px;
+			box-sizing:border-box;
+			border:1px solid #bbb;
+			color:#666;
+			font-size:14px;
+			line-height:22px;
+		}
+
+/* 조합원 가입 > step 02 (jo/IM-JO0301.html) */
+
+/* 조합원 가입 > step 03 (jo/IM-JO0401.html) */
 
 /* =========================================================================================================
 	물품전시
@@ -1882,16 +2071,18 @@ label.check-radio .radiobox {margin-right:8px;}
 				}
 		.content {
 			background-color:#fff;
+			padding-top:80px;
 		}
+		.content.first {padding-top:0;}
 		.content.gray {
 			background-color:#eee;
 		}
-			.content .inner {
+			.content .sub-inner {
 				width:1120px;
 				margin:0 auto;
 				background-color:#fff;
 			}
-			.content .inner:first-child {
+			.content.first .sub-inner {
 				padding:20px 40px 40px 40px;
 				box-sizing: border-box;
 			}
@@ -1921,13 +2112,11 @@ label.check-radio .radiobox {margin-right:8px;}
 			font-weight: bold;
 			line-height: initial;
 		}
-
 		.product-area:after {
 			content: '';
 		    display: block;
 		    clear: both;
 		}
-
 		.product-slide {
 			float:left;
 			width:440px;
@@ -1935,7 +2124,6 @@ label.check-radio .radiobox {margin-right:8px;}
 			border:1px solid #e3e3e3;
 			box-sizing: border-box;
 		}
-
 		.product-info {
 			float:right;
 			width:550px;
@@ -2029,7 +2217,21 @@ label.check-radio .radiobox {margin-right:8px;}
 		.product-info .info-text {padding:30px 0 30px 10px; font-size:18px; line-height:18px;}
 			.product-info .info-text .orange {color:#f56d24;}
 
-		.product-info .info-text + .btn-center {margin-top:0}
+		.product-info .btn-center.sub {margin-top:0}
+		.product-info .btn-center.sub a {width:270px}
+
+.content .title-area.ty02 {
+	height:50px;
+}
+.content .title-area.ty02 .cTitle1 {
+	position:absolute;
+	left:0;
+	font-size:24px;
+	padding:0;
+	height:50px;
+	line-height:50px;
+
+}
 
 /* 상세 페이지 - 방사성물질 검사 결과 */
 .title-wrap {
