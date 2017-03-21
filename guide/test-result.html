@@ -153,7 +153,7 @@
 <script type="text/javascript" src="../js/jquery-ui.1.12.1.js"></script>
 <script>
 	$(window).load(function(){
-		$('.test-term .year > li').on('click', function(){
+		$('.test-term .year > li').click(function(){
 			if($(this).hasClass('on')){
 				$(this).addClass('on').children('.month').show();
 			}else{
@@ -162,7 +162,7 @@
 			}
 		});
 
-		$('.month li').on('click', function(){
+		$('.month li').click(function(){
 			$(this).addClass('on').siblings('li').removeClass('on');
 		});
 	});
