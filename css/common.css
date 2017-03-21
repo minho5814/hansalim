@@ -441,6 +441,41 @@ td.e-mail-form {
 			float:right;
 		}
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	탭메뉴
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.tab-styled1 {
+	overflow:hidden;
+}
+	.tab-styled1 .tab-item {
+		float:left;
+		width:240px;
+		height:60px;
+		line-height:60px;
+		border-right:1px solid #fff;
+		box-sizing:border-box;
+	}
+		.tab-styled1 .tab-item .inner {
+			display:block;
+			height:60px;
+			line-height:60px;
+			background-color:#e3e3e3;
+			color:#333;
+			font-size:18px;
+			text-align:center;
+			cursor:pointer;
+		}
+		.tab-styled1 .tab-item:hover .inner,
+		.tab-styled1 .tab-item.on .inner,
+		.tab-styled1 .tab-item.active .inner {
+			background-color:#666;
+			color: #fff;
+		}
+
+.tab-content {display:none;}
+.tab-content.on {display:block;}
+.tab-content.active {display:block;}
+
 /* 슬라이드 */
 .bxslider {opacity:0;}
 .thumb-slide1 {
@@ -589,7 +624,7 @@ td.e-mail-form {
 		box-sizing: border-box;
 	}
 	.item-list li:first-child {border-left: 0;}
-	.item-list li a {display: block;padding:23px 0;  box-sizing: border-box;}
+	.item-list li a {display: block; padding:23px 0;  box-sizing: border-box;}
 	.item-list li .flag {
 		display: block;
 		position:absolute;
@@ -601,7 +636,7 @@ td.e-mail-form {
 		border:1px solid #dcdcdc;
 		color:#ff7e1f;
 		font-size:13px;
-		border-radius: 15px;
+		border-radius: 18px;
 		text-align: center;
 		line-height:42px;
 		font-weight: bold;
@@ -609,7 +644,7 @@ td.e-mail-form {
 	.item-list .img-area {
 		width:85px;
 		height:85px;
-		margin:0 auto 20px;
+		margin:10px auto 10px;
 
 	}
 	.item-list .img-area img {width: 100%; vertical-align: middle;}
@@ -617,6 +652,48 @@ td.e-mail-form {
 	.item-list .name {font-size:14px; color:#666;}
 	.item-list .price {font-size:18px; color:#000; font-weight: 900; letter-spacing: -1px;}
 	.item-list .price em {font-size:14px}
+
+/*sub-캠페인*/
+.thumb-slide2.campaign {}
+	.thumb-slide2.campaign .slide-area{border:1px solid #ddd; box-sizing: border-box;}
+	.thumb-slide2.campaign:after {content:'';display:block;clear:both;}
+	.thumb-slide2.campaign .img-area {
+		float:left;
+		width:745px;
+		height:198px;
+	}
+	.thumb-slide2.campaign .slide-item .img-area img {width:100%}
+	.thumb-slide2.campaign .campaign-info {
+		position:relative;
+		float:right;
+		width:372px;
+		height:158px;
+		margin:20px 0;
+		padding:25px 51px 19px 51px;
+		border-left:1px solid #ddd;
+		font-size:15px;
+		box-sizing: border-box;
+	}
+		.thumb-slide2.campaign .campaign-info dl:after {content:'';display:block;clear:both;}
+		.thumb-slide2.campaign .campaign-info dl > * {margin-bottom:5px;}
+		.thumb-slide2.campaign .campaign-info dt {
+			width:40%;
+			font-weight: bold;
+			float:left;
+		}
+		.thumb-slide2.campaign .campaign-info dd {
+			float:left;
+			width:60%;
+			letter-spacing: -1px;
+		}
+		.thumb-slide2.campaign .btn-green3 {
+			position:absolute;
+			left:50%;
+			bottom:20px;
+			margin-left:-135px;
+		}
+
+
 
 /* 스텝리스트 */
 .step-list {
@@ -1099,6 +1176,25 @@ td.e-mail-form {
 	height:13px;
 	margin-top:-7px;
 	background:url(../img/sprite/button.png) no-repeat 0 -593px;
+}
+
+.btn-green3 {
+	display:inline-block;
+	position:relative;
+	width:270px;
+	height:46px;
+	box-sizing:border-box;
+	border-radius:4px;
+	border-width:1px;
+	border-style:solid;
+	font-size:18px;
+	line-height:46px;
+	cursor:pointer;
+	border-color:#7eb533;
+	background-color:#fff;
+	color:#60b015;
+	font-size:18px;
+	text-align: center;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
