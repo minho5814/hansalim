@@ -360,6 +360,7 @@ td.e-mail-form {
 		padding:20px 40px;
 		border-top:1px solid #ddd;
 	}
+	.box-link-list .link:first-child {border-top:0;}
 	.box-link-list .link:before {
 		content:'';
 		position:absolute;
@@ -2103,6 +2104,12 @@ label.check-radio .radiobox {margin-right:8px;}
 		.box-content1 .box-cont .item:first-child {margin-top:0;}
 			.box-content1 .box-cont .item .btn-mini-text {margin-left:14px;}
 
+		.box-content1 .btn-link {
+			position: absolute;
+			top:15px; right:20px;
+			padding-right:15px;
+		}
+
 .login-wrap .box-content1 {margin-top:60px;}
 
 /* 조합원번호 찾기 (lo/IM-LO0501.html) */
@@ -3011,6 +3018,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		color:#000;
 		font-weight:bold;
 		line-height:58px;
+		cursor: pointer;
 	}
 	.pd-faq .faq-list li .answer {
 		display:none;
@@ -3150,39 +3158,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	width:1000px;
 	margin:0 auto;
 }
-.reviews .info-box {
-	width:1000px;
-	margin-bottom:53px;
-	border:1px solid #ddd;
-}
-.reviews .info-box .title {
-	display:block;
-	margin-left:20px;
-	padding-left:27px;
-	background:url(../img/icon/icon_exclamation.png) 0 50% no-repeat;
-	color:#63a607;
-	font-size:16px;
-	font-weight: bold;
-	line-height:50px;
-}
-.reviews .info-box .info-list {
-	padding:9px 20px;
-	border-top:1px solid #ddd;
-}
-.reviews .info-box .info-list li {
-	position: relative;
-	padding-left:11px;
-	color:#666;
-	font-size:14px;
-	line-height: 26px;
-}
-.reviews .info-box .info-list li:before {
-	content: '';
-	position: absolute;
-	top:11px; left: 0;
-	width:3px; height: 3px;
-	background-color:#666;
-}
+.reviews .box-content1 {margin-bottom:53px;}
 
 .pd-reviews {
 	overflow: hidden;
@@ -3437,16 +3413,16 @@ label.check-radio .radiobox {margin-right:8px;}
 	height:466px;
 }
 .video-area .info-text {
-	margin-top:14px;
+	margin:14px 0 40px;
 	color:#666;
 	font-size:15px;
 }
 .video-area .info-text label {
 	float:right;
 }
-=======
+
 /* 우편번호찾기 (IM-JO0201.html) */
-.pop-post {width:600px;display:block;}
+.pop-post {width:600px;}
 	.pop-post .post-search table {}
 		.pop-post .post-search table th,
 		.pop-post .post-search table td {
