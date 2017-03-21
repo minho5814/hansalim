@@ -2857,97 +2857,6 @@ label.check-radio .radiobox {margin-right:8px;}
 	background-position:-33px -32px;
 }
 
-/* =========================================================================================================
-	레이어 팝업
-========================================================================================================= */
-/* ---------------------------------------------------------------------------------------------------------
-	공통
---------------------------------------------------------------------------------------------------------- */
-.popup-close {
-	position:fixed;
-	left:0;right:0;top:0;bottom:0;
-}
-.pop-text1 {
-	color:#000;
-	font-size:15px;
-	font-weight:bold;
-	line-height:44px;
-}
-
-.layer-popup {
-	display:none;
-	position:fixed;
-	left:50%;top:50%;
-	z-index:500;
-	-webkit-transform:translate(-50%,-50%);
-	-ms-transform:translate(-50%,-50%);
-	transform:translate(-50%,-50%);
-	border:1px solid #60b015;
-	box-shadow:4px 4px 0 rgba(0,0,0,.2);
-	background-color:#fff;
-}
-	.layer-popup .pop-head {
-		position:relative;
-		height:48px;
-		border-bottom:1px solid #60b015;
-	}
-		.layer-popup .pop-head .pop-title {
-			padding-left:20px;
-			color:#60b015;
-			font-size:18px;
-			font-weight:bold;
-			line-height:48px;
-		}
-		.layer-popup .pop-head .btn-close {
-			position:absolute;
-			right:0;top:0;bottom:0;
-			width:54px;
-			background:url(../img/btn/btn_pop_close.png) no-repeat 50% 50%;
-			font-size:0;
-			line-height:0;
-		}
-	.layer-popup .pop-content {padding:20px 30px;}
-		.layer-popup .pop-content .cTitle4 {line-height:30px;}
-	.layer-popup .btn-bottom {
-		padding:40px 0 10px;
-		font-size:0;
-		text-align:center;
-		line-height:0;
-	}
-	.layer-popup .btn-text {
-		height:40px;
-		line-height:38px;
-		padding:0 20px;
-	}
-
-.layer-popup .borad-write1 th,
-.layer-popup .borad-write1 td {padding:10px 15px;}
-
-/* ---------------------------------------------------------------------------------------------------------
-	회원가입 (jo)
---------------------------------------------------------------------------------------------------------- */
-/* 조합원가입안내 (IM-JO0101.html) */
-.pop-join-check {width:600px;}
-	.pop-join-check .confirm-box {
-		overflow:hidden;
-		margin-top:25px;
-	}
-		.pop-join-check .confirm-box .confirm {
-			float:left;
-			width:50%;
-			padding:140px 0 20px;
-			box-sizing:border-box;
-			border-left:1px solid #ddd;
-			background-repeat:no-repeat;
-			background-position:50% 20px;
-		}
-		.pop-join-check .confirm-box .confirm:first-child {border-left:0;}
-		.pop-join-check .confirm-box .confirm.phone {background-image:url(../img/bg/bg_phone.png);}
-		.pop-join-check .confirm-box .confirm.ipin {background-image:url(../img/bg/bg_ipin.png);}
-
-/* 조합원 기회원 알림 (IM-JO0101.html) */
-.pop-existing {width:600px;}
-=======
 /* 상품상세 이용후기 */
 .reviews {
 	width:1000px;
@@ -3135,3 +3044,94 @@ label.check-radio .radiobox {margin-right:8px;}
 	font-size: 14px;
 	color:#666;
 }
+
+/* =========================================================================================================
+	레이어 팝업
+========================================================================================================= */
+/* ---------------------------------------------------------------------------------------------------------
+	공통
+--------------------------------------------------------------------------------------------------------- */
+.popup-close {
+	position:fixed;
+	left:0;right:0;top:0;bottom:0;
+}
+.pop-text1 {
+	color:#000;
+	font-size:15px;
+	font-weight:bold;
+	line-height:44px;
+}
+
+.layer-popup {
+	display:none;
+	position:fixed;
+	left:50%;top:50%;
+	z-index:500;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	border:1px solid #60b015;
+	box-shadow:4px 4px 0 rgba(0,0,0,.2);
+	background-color:#fff;
+}
+	.layer-popup .pop-head {
+		position:relative;
+		height:48px;
+		border-bottom:1px solid #60b015;
+	}
+		.layer-popup .pop-head .pop-title {
+			padding-left:20px;
+			color:#60b015;
+			font-size:18px;
+			font-weight:bold;
+			line-height:48px;
+		}
+		.layer-popup .pop-head .btn-close {
+			position:absolute;
+			right:0;top:0;bottom:0;
+			width:54px;
+			background:url(../img/btn/btn_pop_close.png) no-repeat 50% 50%;
+			font-size:0;
+			line-height:0;
+		}
+	.layer-popup .pop-content {padding:20px 30px;}
+		.layer-popup .pop-content .cTitle4 {line-height:30px;}
+	.layer-popup .btn-bottom {
+		padding:40px 0 10px;
+		font-size:0;
+		text-align:center;
+		line-height:0;
+	}
+	.layer-popup .btn-text {
+		height:40px;
+		line-height:38px;
+		padding:0 20px;
+	}
+
+.layer-popup .borad-write1 th,
+.layer-popup .borad-write1 td {padding:10px 15px;}
+
+/* ---------------------------------------------------------------------------------------------------------
+	회원가입 (jo)
+--------------------------------------------------------------------------------------------------------- */
+/* 조합원가입안내 (IM-JO0101.html) */
+.pop-join-check {width:600px;}
+	.pop-join-check .confirm-box {
+		overflow:hidden;
+		margin-top:25px;
+	}
+		.pop-join-check .confirm-box .confirm {
+			float:left;
+			width:50%;
+			padding:140px 0 20px;
+			box-sizing:border-box;
+			border-left:1px solid #ddd;
+			background-repeat:no-repeat;
+			background-position:50% 20px;
+		}
+		.pop-join-check .confirm-box .confirm:first-child {border-left:0;}
+		.pop-join-check .confirm-box .confirm.phone {background-image:url(../img/bg/bg_phone.png);}
+		.pop-join-check .confirm-box .confirm.ipin {background-image:url(../img/bg/bg_ipin.png);}
+
+/* 조합원 기회원 알림 (IM-JO0101.html) */
+.pop-existing {width:600px;}
