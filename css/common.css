@@ -470,7 +470,13 @@ button {outline:0;vertical-align:top;}
 		right:0;
 		background-image:url(../img/btn/btn_bx_next02.png);
 	}
-	.thumb-slide2 .bx-pager {display: block !important;}
+	.thumb-slide2 .bx-pager {
+		display: block !important;
+		position: absolute;
+		right:65px;
+		top:5px;
+		width:35px;
+	}
 
 .thumb-slide2 .link.big-img {display: block; float:left; width:559px; height:200px;}
 .thumb-slide2 .img-area img {width: 100%;}
@@ -480,16 +486,43 @@ button {outline:0;vertical-align:top;}
 		content:'';display:block;clear:both;
 	}
 	.item-list li {
+		position:relative;
 		float:left;
 		width:186px;
 		height:200px;
+
+		border-left:1px solid #ddd;
+		box-sizing: border-box;
+	}
+	.item-list li:first-child {border-left: 0;}
+	.item-list li a {display: block;padding:23px 0;  box-sizing: border-box;}
+	.item-list li .flag {
+		display: block;
+		position:absolute;
+		right:24px;
+		top:22px;
+		width:48px;
+		height:42px;
+		background-color:#f4f4f4;
+		border:1px solid #dcdcdc;
+		color:#ff7e1f;
+		font-size:13px;
+		border-radius: 15px;
+		text-align: center;
+		line-height:42px;
+		font-weight: bold;
 	}
 	.item-list .img-area {
-		width:130px;
-		height:130px;
+		width:85px;
+		height:85px;
+		margin:0 auto 20px;
 
 	}
-	.item-list .img-area img {width: 100%;}
+	.item-list .img-area img {width: 100%; vertical-align: middle;}
+	.item-list p {text-align: center;}
+	.item-list .name {font-size:14px; color:#666;}
+	.item-list .price {font-size:18px; color:#000; font-weight: 900; letter-spacing: -1px;}
+	.item-list .price em {font-size:14px}
 
 /* 스텝리스트 */
 .step-list {
