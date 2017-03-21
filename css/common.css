@@ -3418,7 +3418,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .pop-existing {width:600px;}
 
 /* 우편번호찾기 (IM-JO0201.html) */
-.pop-post {width:600px;display:block;}
+.pop-post {width:600px;}
 	.pop-post .post-search table {}
 		.pop-post .post-search table th,
 		.pop-post .post-search table td {

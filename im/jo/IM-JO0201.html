@@ -551,7 +551,7 @@
 						<td colspan="3">
 							<div class="btn-type">
 								<input type="text" placeholder="도로명 + 건물번호, 동+건물명, 동+ 지번 등">
-								<button type="button" class="btn-round-text btn-gray">검색</button>
+								<button type="button" class="btn-round-text btn-gray btn-search">검색</button>
 							</div>
 						</td>
 					</tr>
@@ -654,9 +654,15 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-	/* 우편번호 찾기 */
+	/* 우편번호 찾기 팝업 호출 */
 	$('.btn-post').click(function(){
+		$('.pop-post .post-result').hide();
 		$('.pop-post').fadeIn(200);
+	});
+
+	/* 우편번호 찾기 팝업 내 검색 버튼 */
+	$('.pop-post .btn-search').click(function(){
+		$(this).parents('.pop-post').find('.post-result').show();
 	});
 });
 </script>
