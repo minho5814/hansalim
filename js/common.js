@@ -48,7 +48,12 @@ $(window).load(function(){
 	/* 관련물품 */
 	var bxsliderLen = $('.bxslider').length;
 	if(bxsliderLen >= 1){
-		$('.thumb-slide1 .bxslider, .thumb-slide2 .bxslider').bxSlider({
+		$('.thumb-slide1 .bxslider').bxSlider({
+			//infiniteLoop:false,
+			speed:400
+		});
+
+		$('.thumb-slide2 .bxslider').bxSlider({
 			//infiniteLoop:false,
 			speed:400,
 			pagerType:'short'

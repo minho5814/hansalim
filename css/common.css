@@ -573,11 +573,21 @@ td.e-mail-form {
 
 
 /*sub-메인슬라이드*/
+.product-slide {
+	float:left;
+	width:440px;
+	height:440px;
+	box-sizing: border-box;
+}
 .product-slide .thumb-slide1 {width:440px;}
-.product-slide .thumb-slide1 .bx-viewport {border-left:0; border-right: 0;}
+.product-area .bx-viewport {border:1px solid #e3e3e3; box-sizing: border-box;}
 .product-slide .slide-item { height:440px;}
 .product-slide .img-area {width:440px; height:440px;}
 
+.product-slide .thumb-slide1 .bx-controls-direction a {
+    top: 50%;
+    margin-top: -45px;
+}
 
 /*sub-관련기획전*/
 .thumb-slide2 {
@@ -778,10 +788,13 @@ td.e-mail-form {
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 .mgT5 {margin-top:5px !important;}
 .mgT10 {margin-top:10px !important;}
+.mgT15 {margin-top:15px !important;}
 .mgT20 {margin-top:20px !important;}
 .mgT25 {margin-top:25px !important;}
 .mgT60 {margin-top:60px !important;}
 .mgT65 {margin-top:65px !important;}
+
+.mgL10 {margin-left:10px !important;}
 
 .pdT0 {padding-top:0 !important;}
 .pdT20 {padding-top:20px !important;}
@@ -1867,6 +1880,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	padding-top:196px;
 	background:url(../img/bg/bg_footer.png) no-repeat 50% 45px;
 }
+.footer.gray {background:url(../img/bg/bg_footer.png) #f7f7f7 no-repeat 50% 45px;}
 .footer .utill {
 	background-color:rgba(36,31,30,.6);
 	font-size:0;
@@ -2572,8 +2586,9 @@ label.check-radio .radiobox {margin-right:8px;}
 	padding-top:80px;
 }
 .content.first {padding-top:0;}
+.content.last {padding-top:0;}
 .content.gray {
-	background-color:#eee;
+	background-color:#f7f7f7;
 }
 	.content .sub-inner {
 		width:1120px;
@@ -2610,18 +2625,13 @@ label.check-radio .radiobox {margin-right:8px;}
 	font-weight: bold;
 	line-height: initial;
 }
+
 .product-area:after {
 	content: '';
     display: block;
     clear: both;
 }
-.product-slide {
-	float:left;
-	width:440px;
-	height:440px;
-	border:1px solid #e3e3e3;
-	box-sizing: border-box;
-}
+
 .product-info {
 	float:right;
 	width:550px;
@@ -2731,6 +2741,36 @@ label.check-radio .radiobox {margin-right:8px;}
 
 }
 
+/* 상세 페이지 - 물품기본정보, 영양성분, 한살림물품 안심하세요 */
+.supplay-return {padding:118px 60px 80px;}
+.stress-txt {height:28px; font-size:16px; color:#666; line-height:27px;}
+.f-style01 {font-size:16px !important; color:#666 !important;}
+.consu-list {margin-top:27px;}
+.consu-list li {height:28px; font-size:16px; color:#666; line-height:27px;}
+
+.quality-area {}
+.quality-box {padding:0 60px 80px;}
+.quality-list {overflow:hidden; border-top:1px solid #666; }
+.quality-list li {position:relative; float:left; width:333px; height:279px; padding-top:140px;  border:1px solid #ddd; box-sizing:border-box; text-align:center;}
+.quality-list li.item-quality01 {border-right:0; border-bottom:0; border-top:0;}
+.quality-list li.item-quality02 {border-right:0; border-bottom:0; border-top:0;}
+.quality-list li.item-quality03 {border-bottom:0; border-top:0;}
+.quality-list li.item-quality04 {height:307px; border-right:0;}
+.quality-list li.item-quality05 {height:307px; border-right:0;}
+.quality-list li.item-quality06 {height:307px;}
+.quality-list li.item-quality01:before {content:''; display:inline-block; position:absolute; left:50%; top:48px; width:63px; height:58px; margin-left:-31.5px; background:url(../img/icon/icon_quality01.gif) no-repeat center 0;}
+.quality-list li.item-quality02:before {content:''; display:inline-block; position:absolute; left:50%; top:52px; width:51px; height:49px; margin-left:-25.5px; background:url(../img/icon/icon_quality02.gif) no-repeat 0 0;}
+.quality-list li.item-quality03:before {content:''; display:inline-block; position:absolute; left:50%; top:47px; width:49px; height:59px; margin-left:-24.5px; background:url(../img/icon/icon_quality03.gif) no-repeat 0 0;}
+.quality-list li.item-quality04:before {content:''; display:inline-block; position:absolute; left:50%; top:60px; width:43px; height:31px; margin-left:-21.5px; background:url(../img/icon/icon_quality04.gif) no-repeat 0 0;}
+.quality-list li.item-quality05:before {content:''; display:inline-block; position:absolute; left:50%; top:50px; width:53px; height:50px; margin-left:-26.5px; background:url(../img/icon/icon_quality05.gif) no-repeat 0 0;}
+.quality-list li.item-quality06:before {content:''; display:inline-block; position:absolute; left:50%; top:50px; width:52px; height:50px; margin-left:-26px; background:url(../img/icon/icon_quality06.gif) no-repeat 0 0;}
+.quality-list li .quality-tit{display:block; font-size:20px; color:#000; line-height:28px; font-weight:bold;}
+.quality-list li .quality-txt{display:block; margin-top:9px; font-size:14px; color:#666; line-height:22px;}
+/*물품기본정보*/
+.article-infor {padding:0 60px 80px;}
+.small-tit {font-size:14px; color:#666; line-height:26px; vertical-align:middle;}
+/*영양성분*/
+.nutrient-area {padding:0 60px 80px;}
 
 /* 상세 페이지 - 방사성물질 검사 결과 */
 .title-wrap {
@@ -2738,7 +2778,8 @@ label.check-radio .radiobox {margin-right:8px;}
 	margin-bottom:9px;
 }
 .standard {
-	float: right;
+	position:absolute;
+	right:0; top:5px;
 }
 .standard span {
 	display:inline-block;
