@@ -360,6 +360,7 @@ td.e-mail-form {
 		padding:20px 40px;
 		border-top:1px solid #ddd;
 	}
+	.box-link-list .link:first-child {border-top:0;}
 	.box-link-list .link:before {
 		content:'';
 		position:absolute;
