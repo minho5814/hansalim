@@ -3086,19 +3086,14 @@ label.check-radio .radiobox {margin-right:8px;}
 		clear: both;
 	}
 	.product-info .count-wrap .tit {margin-bottom:10px; color:#000;}
-	.product-info .count {position:relative; width:140px; float:left;}
-	.product-info .count-wrap span {
+	.product-info .count-wrap .volume-box{float:left;}
+	.product-info .count-wrap .price {
 		display:block;
 		float:right;
 		height:32px;
 		line-height: 32px;
 		color:#000;
 	}
-	.product-info .count input {text-align: center; padding:0 32px;}
-	.product-info .count button {position:absolute;top:0; width:32px;}
-		.product-info .count .minus{left:0;}
-		.product-info .count .plus{right:0;}
-
 .product-info .info-box .orange {color:#f56d24;}
 
 /*type2*/
@@ -3109,7 +3104,6 @@ label.check-radio .radiobox {margin-right:8px;}
 	position:relative;
 	margin-top:0;
 	padding:20px 30px;
-	/*border-top:1px solid #e3e3e3;*/
 	background-color: #f7f7f7;
 	box-sizing: border-box;
 }
