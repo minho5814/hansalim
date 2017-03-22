@@ -465,25 +465,6 @@
 
 <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
-<script>
-	$(window).load(function(){
-			$('.faq-list .question').click(function(){
-				if($(this).parents('li').hasClass('on')){
-					$(this).parents('li').removeClass('on').find('.answer').slideUp();
-				}else{
-					$('.faq-list .question').parents('li').removeClass('on').find('.answer').slideUp();
-					$(this).parents('li').addClass('on').find('.answer').slideDown();
-				}
-			});
-
-			$('#text-write').keyup(function (e){
-          var content = $(this).val();
-          //$(this).height(((content.split('\n').length + 1) * 1.5) + 'em');
-          $('.text-leng').html(content.length + '/500자');
-      });
-      $('#text-write').keyup();
-	});
-</script>
 </body>
 
 </html>

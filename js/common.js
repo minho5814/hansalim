@@ -73,32 +73,33 @@ $(window).load(function(){
 	=========================================================================================================== */
 	/* 관련물품 */
 	var bxsliderLen = $('.bxslider').length;
-	if(bxsliderLen >= 1){
-		$('.thumb-slide1 .bxslider').bxSlider({
+
+	$('.thumb-slide1 .bxslider').each(function(){
+		$(this).bxSlider({
 			//infiniteLoop:false,
 			speed:400
 		});
+	});
 
-		$('.thumb-slide2 .bxslider').bxSlider({
+	$('.thumb-slide2 .bxslider').each(function(){
+		$(this).bxSlider({
 			//infiniteLoop:false,
 			speed:400,
 			pagerType:'short'
 		});
+	});
 
-		$('.bx-pager').each(function(){
-			var len = $(this).find('.bx-pager-item').length;
-			if(len <= 1){
-				$(this).hide();
-			}
-		});
-
-		$('.bxslider').animate({'opacity':'1'}, 200);
-	}
+	$('.bx-pager').each(function(){
+		var len = $(this).find('.bx-pager-item').length;
+		if(len <= 1){
+			$(this).hide();
+		}
+	});
+	$('.bxslider').animate({'opacity':'1'}, 200);
 
 	/* ===========================================================================================================
 		탭메뉴
 	=========================================================================================================== */
-
 	/*상세 탭*/
 	$('.tab-item').click(function(){
 		var idx = $(this).index();
@@ -130,20 +131,19 @@ $(window).load(function(){
 	//아코디언
 	$('.faq-list .question').click(function(){
 		if($(this).parents('li').hasClass('on')){
-			$(this).parents('li').removeClass('on').find('.answer').slideUp();
+			$(this).parents('li').removeClass('on').find('.answer').slideUp(100);
 		}else{
-			$('.faq-list .question').parents('li').removeClass('on').find('.answer').slideUp();
-			$(this).parents('li').addClass('on').find('.answer').slideDown();
+			$('.faq-list .question').parents('li').removeClass('on').find('.answer').slideUp(100);
+			$(this).parents('li').addClass('on').find('.answer').slideDown(200);
 		}
 	});
 
 	//글자수
 	$('#text-write').keyup(function (e){
-	  var content = $(this).val();
-	  //$(this).height(((content.split('\n').length + 1) * 1.5) + 'em');
-	  $('.text-leng').html(content.length + '/500자');
+		var content = $(this).val();
+		//$(this).height(((content.split('\n').length + 1) * 1.5) + 'em');
+		$('.text-leng').html(content.length + '/500자');
 	});
-	$('#text-write').keyup();
 
 	/* ===========================================================================================================
 		스크롤 이벤트
@@ -296,6 +296,36 @@ $(window).load(function(){
 			$('.radiobox input[name='+name+']').parents('.radiobox').removeClass('checked');
 			$(this).parents('.radiobox').addClass('checked');
 		}
+	});
+
+	/* 수량체크 */
+	$('body').click(function(){
+		$('.volume-box').removeClass('on');
+	});
+	$('.volume-box').click(function(){
+		$('.volume-box').removeClass('on');
+		$(this).addClass('on');
+		return false;
+	});
+	$('.volume-box .btn').each(function(){
+		if($(this).parents('.volume-box').hasClass('disabled')){
+			$(this).parents('.volume-box').find('.volume').prop('disabled', true).val('0');
+		}
+		$(this).click(function(){
+			if($(this).parents('.volume-box').hasClass('disabled') == false){
+				if($(this).hasClass('btn-plus')){
+					var defaultN = $(this).parents('.volume-box').find('.volume').val()*1;
+					$(this).parents('.volume-box').find('.volume').val(defaultN+1);
+				}else{
+					var defaultN = $(this).parents('.volume-box').find('.volume').val()*1;
+					if(defaultN <= 1){
+						$(this).parents('.volume-box').find('.volume').val('1');
+					}else{
+						$(this).parents('.volume-box').find('.volume').val(defaultN-1);
+					}
+				}
+			}
+		});
 	});
 
 	/* ===========================================================================================================
