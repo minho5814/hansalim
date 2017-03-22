@@ -2859,6 +2859,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		position:absolute;
 		left:0; top:0;
 	}
+		.detail-box .cont-area .bg-area img {width: 100%;}
 	.detail-box .cont-area .recipe-area {
 		position:absolute;
 		left:50px;top:50px;
