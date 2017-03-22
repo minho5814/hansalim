@@ -1151,6 +1151,22 @@ td.e-mail-form {
 	background-position:0 -520px;
 }
 
+.btn-icon-text.btn-notice {
+	height:65px;
+	padding:0 66px 0 102px;
+	border-color:#666;
+	background-color:#666;
+	color:#fff;
+	font-size:24px;
+	line-height:65px;
+}
+.btn-icon-text.btn-notice:before {
+	left:66px;
+	width:25px;
+	height:26px;
+	background-position:0 -767px;
+}
+
 
 /* 이미지 버튼 */
 .btn-image {
