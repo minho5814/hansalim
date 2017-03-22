@@ -793,6 +793,7 @@ td.e-mail-form {
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	마진/패딩
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.mgT0 {margin-top:0 !important;}
 .mgT5 {margin-top:5px !important;}
 .mgT10 {margin-top:10px !important;}
 .mgT15 {margin-top:15px !important;}
@@ -1418,11 +1419,12 @@ label.check-radio .radiobox {margin-right:8px;}
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	탭
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
-.tab .tab-area {position: fixed;
-
-    top: 50px;
+.tab .tab-area {
+	position: fixed;
+    top: 49px;
     z-index: 10;
-    background-color: #555;}
+    background-color: #555;
+}
 .tab-list1 {
 	overflow:hidden;
 	margin:0 -2px 0 -1px;
@@ -2487,6 +2489,8 @@ label.check-radio .radiobox {margin-right:8px;}
 
 /*요리,관련 소식지*/
 .detail-box {margin-top:80px;}
+.detail-box.ty02 {margin-top:60px;}
+
 .detail-box .cont-area {
 	position:relative;
 	width:100%;
@@ -2593,7 +2597,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	}
 		.container.sub .item,
 		.container.sub .arrow {
-			height:28px;
+			/*height:28px;*/
 			line-height: 27px;
 		}
 		.container.sub .location select{
@@ -2724,7 +2728,7 @@ label.check-radio .radiobox {margin-right:8px;}
 			text-align: right;
 			letter-spacing: -1px;
 		}
-		.product-info .total dd em{	font-size: 24px;}
+		.product-info .total dd em {font-size: 24px;}
 
 	.product-info .count-wrap {position:relative; margin-top:20px;}
 	.product-info .count-wrap:after {
@@ -2982,12 +2986,13 @@ label.check-radio .radiobox {margin-right:8px;}
 	font-size:24px;
 	color:#000;
 }
-.sub-title .num {
+.title-area .cTitle3 .num {
 	color:#f56d24;
-	font-weight: bold;
 }
 
 /* 상품 상세 FAQ */
+.detail-box.pd-faq {margin-top:0}
+.detail-box.pd-faq .cTitle3 {font-weight: normal;}
 .pd-faq .faq-list {
 	margin-top:23px;
 	border-top:1px solid #666;
@@ -3162,7 +3167,7 @@ label.check-radio .radiobox {margin-right:8px;}
 
 .pd-reviews {
 	overflow: hidden;
-	margin:10px 0 40px;
+	margin:0 0 40px;
 }
 .pd-reviews .review-box{
 	width:495px;
