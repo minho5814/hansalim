@@ -26,8 +26,18 @@ $(window).load(function(){
 	});
 	$(document).on('click', '.btn-close, .gnb-close', function(){
 		$('.head-btm').css({'z-index':'10'});
-		$('.gnb-layer').fadeOut(100);
 		$('.gnb-close').hide();
+		$('.gnb-layer').fadeOut(100, function(){
+			$('.lnb-item, .menu-box .gnb-depth').removeClass('on');
+			$('.lnb-item:first-child, .menu-box .gnb-depth:first-child').addClass('on');
+		});
+	});
+
+	/* gnb 레이어 LNB 오버 */
+	$('.lnb-item').mouseenter(function(){
+		var idx = $(this).index();
+		$('.lnb-item').removeClass('on').eq(idx).addClass('on');
+		$('.menu-box .gnb-depth').removeClass('on').eq(idx).addClass('on');
 	});
 
 	/* 달력 (datepicker) */

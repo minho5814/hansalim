@@ -56,6 +56,18 @@
 	url(font/NexaBold.ttf) format('truetype');
 }
 
+/* 장바구니 상단 스텝 숫자 */
+@font-face {
+	font-family:FuturaBTBold;
+	font-style:normal;
+	font-weight:normal;
+	src:url(font/FuturaBTBold.eot);
+	src:local(※),
+	url(font/FuturaBTBold.eot?#iefix) format('embedded-opentype'),
+	url(font/FuturaBTBold.woff) format('woff'),
+	url(font/FuturaBTBold.ttf) format('truetype');
+}
+
 /* =========================================================================================================
 	Reset
 ========================================================================================================= */
@@ -165,7 +177,7 @@ button {outline:0;vertical-align:top;}
 	레이아웃
 ========================================================================================================= */
 .wrapper {}
-.header {min-height:146px;}
+.header {min-height:145px;}
 
 /* 로케이션 */
 .location {
@@ -1834,10 +1846,12 @@ label.check-radio .radiobox {margin-right:8px;}
 	}
 
 .gnb-layer .gnb-depth {
+	display:none;
 	overflow:hidden;
 	position:relative;
 	height:100%;
 }
+.gnb-layer .gnb-depth.on {display:block;}
 	.gnb-layer .gnb-depth .depth-item {
 		overflow:hidden;
 		float:left;
@@ -1888,6 +1902,61 @@ label.check-radio .radiobox {margin-right:8px;}
 				line-height:28px;
 			}
 
+/* 추천물품 */
+.depth-thumb-list {
+	overflow:hidden;
+	max-width:468px;
+	margin-top:-12px;
+}
+.type2 .depth-thumb-list {width:312px;}
+	.depth-thumb-list .item {
+		float:left;
+		width:156px;
+		height:170px;
+		margin:30px 0 0 -1px;
+		box-sizing:border-box;
+		border-left:1px solid #eee;
+		text-align:center;
+	}
+	.depth-thumb-list .item .link {display:block;}
+		.depth-thumb-list .item .img-area {
+			width:100px;
+			height:100px;
+			margin:0 auto;
+			font-size:0;
+			line-height:0;
+		}
+			.depth-thumb-list .item .img-area img {width:100%;height:100%;}
+		.depth-thumb-list .item .text-area {
+			font-size:14px;
+		}
+			.depth-thumb-list .item .text-area .name {
+				height:40px;
+				color:#666;
+				line-height:20px;
+			}
+			.depth-thumb-list .item .text-area .price {
+				color:#333;
+				line-height:24px;
+			}
+			.depth-thumb-list .item .text-area .price .number {
+				font-size:18px;
+				font-weight:900;
+			}
+
+.depth-add-list {
+	width:312px;
+	margin-top:13px;
+	text-align:center;
+}
+	.depth-add-list .link {
+		display:block;
+		margin-top:18px;
+		font-size:0;
+		line-height:0;
+	}
+	.depth-add-list .link:first-child {margin-top:0;}
+	.depth-add-list {}
 
 /* =========================================================================================================
 	푸터
@@ -3439,6 +3508,92 @@ label.check-radio .radiobox {margin-right:8px;}
 	font-size: 14px;
 	color:#666;
 }
+
+
+/* =========================================================================================================
+	장바구니 (sh/)
+========================================================================================================= */
+/* 공통 */
+.cart-wrap {
+	width:1120px;
+	margin:60px auto 0;
+}
+.cart-step-list {
+	position:relative;
+}
+	.cart-step-list .title-area {
+		overflow:hidden;
+		height:78px;
+		padding-left:35px;
+		border:1px solid #bbb;
+	}
+		.cart-step-list .title-area .title {
+			background-repeat:no-repeat;
+			background-position:0 50%;
+			color:#61b016;
+			font-size:28px;
+			line-height:78px;
+		}
+		.step1.cart-step-list .title-area .title {padding-left:52px;background-image:url(../img/icon/icon_cart01.png);}/* stop1 */
+		.step2.cart-step-list .title-area .title {padding-left:50px;background-image:url(../img/icon/icon_cart02.png);}/* stop2 */
+		.step3.cart-step-list .title-area .title {padding-left:60px;background-image:url(../img/icon/icon_cart03.png);}/* stop3 */
+		.cart-step-list .title-area .text {
+			position:relative;
+			margin:35px 0 0 15px;
+			padding-left:16px;
+			color:#999;
+			font-size:13px;
+			line-height:20px;
+		}
+		.cart-step-list .title-area .text:before {
+			content:'';
+			position:absolute;
+			left:0;top:50%;
+			width:1px;
+			height:12px;
+			margin-top:-5px;
+			background-color:#ddd;
+		}
+	.cart-step-list .list {
+		overflow:hidden;
+		position:absolute;
+		right:0;top:0;bottom:0;
+	}
+		.cart-step-list .list .item {
+			float:left;
+			position:relative;
+			width:170px;
+			height:80px;
+			padding-top:14px;
+			box-sizing:border-box;
+			color:#999;
+			text-align:center;
+		}
+		.cart-step-list .list .item:before {
+			content:'';
+			position:absolute;
+			left:0;top:1px;bottom:1px;
+			width:1px;
+			background-color:#ddd;
+		}
+		.step1.cart-step-list .list .item:first-child {background-color:#60b015;color:#fff;}/* step1 */
+		.step2.cart-step-list .list .item:nth-child(2) {background-color:#60b015;color:#fff;}/* step2 */
+		.step3.cart-step-list .list .item:nth-child(3) {background-color:#60b015;color:#fff;}/* step3 */
+			.cart-step-list .list .item .number {
+				font-family:FuturaBTBold;
+				font-size:28px;
+				line-height:32px;
+			}
+			.cart-step-list .list .item .text {
+				font-size:15px;
+				line-height:18px;
+				font-weight:bold;
+			}
+		.cart-step-list .list {}
+	.cart-step-list {}
+	.cart-step-list {}
+
+/* 장바구니 (IM-SH01.html) */
 
 /* =========================================================================================================
 	레이어 팝업
