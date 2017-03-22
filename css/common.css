@@ -2896,21 +2896,64 @@ label.check-radio .radiobox {margin-right:8px;}
 	.container.sub .location .inner{
 		height:28px;
 		line-height: 28px;
+		overflow: inherit;
 	}
-		.container.sub .item,
-		.container.sub .arrow {
-			/*height:28px;*/
-			line-height: 27px;
-		}
-		.container.sub .location select{
-			width:120px;
-			height:28px;
-			border:1px solid #ccc;
-			font-size: 13px;
-			color:#000;
-			line-height: 28px;
-			box-sizing: border-box;
-		}
+	.container.sub .location .home {font-size:13px;}
+	.container.sub .location .item {
+		float: inherit;
+	}
+	.container.sub .location .inner:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.container.sub .location .home,
+	.container.sub .location .sel-box,
+	.container.sub .location .arrow {
+		float:left;
+		height:28px;
+		line-height:28px;
+	}
+.container.sub .location .sel-box {
+	width:120px;
+	height:28px;
+	line-height:28px;
+}
+.container.sub .location .select-box .select-title {
+	width:120px;
+	height:28px;
+	border:1px solid #ccc;
+	font-size: 13px;
+	color:#000;
+	line-height: 28px;
+	box-sizing: border-box;
+}
+	.container.sub .location .select-box .select-title:before {
+		right:8px;
+		width:7px;
+		height:4px;
+		margin-top:-2px;
+		background-position: 0 -8px;
+	}
+	.container.sub .location .select-box .select-list {
+		top:27px;
+	}
+	.container.sub .location .select-box .select-list .item {
+		margin-top: 1px;
+		height: 24px;
+		padding-left: 12px;
+		color: #666;
+		font-size: 13px;
+		line-height: 24px
+	}
+	.container.sub .location .select-box .item.on,
+	.container.sub .location .select-box .item:hover {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
 .content {
 	background-color:#fff;
 	padding-top:80px;
@@ -3049,19 +3092,14 @@ label.check-radio .radiobox {margin-right:8px;}
 		clear: both;
 	}
 	.product-info .count-wrap .tit {margin-bottom:10px; color:#000;}
-	.product-info .count {position:relative; width:140px; float:left;}
-	.product-info .count-wrap span {
+	.product-info .count-wrap .volume-box{float:left;}
+	.product-info .count-wrap .price {
 		display:block;
 		float:right;
 		height:32px;
 		line-height: 32px;
 		color:#000;
 	}
-	.product-info .count input {text-align: center; padding:0 32px;}
-	.product-info .count button {position:absolute;top:0; width:32px;}
-		.product-info .count .minus{left:0;}
-		.product-info .count .plus{right:0;}
-
 .product-info .info-box .orange {color:#f56d24;}
 
 /*type2*/
@@ -3072,7 +3110,6 @@ label.check-radio .radiobox {margin-right:8px;}
 	position:relative;
 	margin-top:0;
 	padding:20px 30px;
-	/*border-top:1px solid #e3e3e3;*/
 	background-color: #f7f7f7;
 	box-sizing: border-box;
 }
