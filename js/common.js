@@ -72,6 +72,7 @@ $(window).load(function(){
 	/* ===========================================================================================================
 		탭메뉴
 	=========================================================================================================== */
+
 	/*상세 탭*/
 	$('.tab-item').click(function(){
 		var idx = $(this).index();
@@ -140,11 +141,13 @@ $(window).load(function(){
 			$('.head-top .search-box').css({'right':'0'});
 		}
 
-		var tabTop = $('.tab-wrap').offset().top;
-		if(winTop >= tabTop){
-			$('html').addClass('tab');
-		}else{
-			$('html').removeClass('tab');
+		if($('.tab-wrap').length >= 1){
+			var tabTop = $('.tab-wrap').offset().top;
+			if(winTop >= tabTop){
+				$('html').addClass('tab');
+			}else{
+				$('html').removeClass('tab');
+			}
 		}
 
 	});
@@ -314,6 +317,19 @@ $(window).load(function(){
 		}else{
 			$(this).parents('.e-mail-form').find('.transTxt').val(mailTxt);
 		}
+	});
+
+	/* 도움말 보기 (IM-JO0301.html) */
+	$('.btn-hint').click(function(){
+		if($(this).parents('.btn-layer').hasClass('on')){
+			$('.btn-layer').removeClass('on').find('.hint-layer').slideUp(100);
+		}else{
+			$('.btn-layer').removeClass('on').find('.hint-layer').slideUp(100);
+			$(this).parents('.btn-layer').addClass('on').find('.hint-layer').slideDown(200);
+		}
+	})
+	$('.btn-layer .btn-close').click(function(){
+		$('.btn-layer').removeClass('on').find('.hint-layer').slideUp(100);
 	});
 
 	/* ===========================================================================================================
