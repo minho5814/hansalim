@@ -70,6 +70,10 @@ $(window).load(function(){
 
 		var dateVal = year + '/' + mon + '/' + day + '(' + week[now.getDay()] + ')';
 		$(this).val(dateVal);
+
+		$(this).keyup(function(){
+			$(this).val(dateVal);
+		});
 	});
 
 	/* ===========================================================================================================

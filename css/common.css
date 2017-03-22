@@ -145,6 +145,7 @@ textarea {
 	-webkit-appearance:none;-moz-appearance:none;appearance:none;
 	word-break:keep-all;
 	word-wrap:break-word;
+	resize:none;
 }
 .placeholder {color:#999}
 :-ms-input-placeholder {color:#999;}
