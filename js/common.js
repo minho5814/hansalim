@@ -82,30 +82,52 @@ $(window).load(function(){
 	/* ===========================================================================================================
 		탭메뉴
 	=========================================================================================================== */
-		/*상세 탭*/
-		$('.tab-item').click(function(){
-			var idx = $(this).index();
-			var cont_height = $('.cont-wrap').offset().top - $('.tab-wrap').outerHeight() - $('.head-btm').outerHeight() ;
 
-			$('.tab-item').removeClass('on').eq(idx).addClass('on');
-			$('.tab-content').removeClass('on').eq(idx).addClass('on');
-			$('html, body').animate({scrollTop:cont_height});
+	/*상세 탭*/
+	$('.tab-item').click(function(){
+		var idx = $(this).index();
+		var cont_height = $('.cont-wrap').offset().top - $('.tab-wrap').outerHeight() - $('.head-btm').outerHeight() ;
 
-		});
+		$('.tab-item').removeClass('on').eq(idx).addClass('on');
+		$('.tab-content').removeClass('on').eq(idx).addClass('on');
+		$('html, body').animate({scrollTop:cont_height});
 
-		/*방사성물질 검사 탭*/
-		$('.test-term .year > li').click(function(){
-			if($(this).hasClass('on')){
-				$(this).addClass('on').children('.month').show();
-			}else{
-				$('.test-term .year > li').removeClass('on').children('.month').hide().find('li').removeClass('on');
-				$(this).addClass('on').children('.month').show();
-			}
-		});
+	});
 
-		$('.month li').click(function(){
-			$(this).addClass('on').siblings('li').removeClass('on');
-		});
+	/*방사성물질 검사 탭*/
+	$('.test-term .year > li').click(function(){
+		if($(this).hasClass('on')){
+			$(this).addClass('on').children('.month').show();
+		}else{
+			$('.test-term .year > li').removeClass('on').children('.month').hide().find('li').removeClass('on');
+			$(this).addClass('on').children('.month').show();
+		}
+	});
+
+	$('.month li').click(function(){
+		$(this).addClass('on').siblings('li').removeClass('on');
+	});
+
+	/* ===========================================================================================================
+		상품상세 faq
+	=========================================================================================================== */
+	//아코디언
+	$('.faq-list .question').click(function(){
+		if($(this).parents('li').hasClass('on')){
+			$(this).parents('li').removeClass('on').find('.answer').slideUp();
+		}else{
+			$('.faq-list .question').parents('li').removeClass('on').find('.answer').slideUp();
+			$(this).parents('li').addClass('on').find('.answer').slideDown();
+		}
+	});
+
+	//글자수
+	$('#text-write').keyup(function (e){
+	  var content = $(this).val();
+	  //$(this).height(((content.split('\n').length + 1) * 1.5) + 'em');
+	  $('.text-leng').html(content.length + '/500자');
+	});
+	$('#text-write').keyup();
 
 	/* ===========================================================================================================
 		스크롤 이벤트
