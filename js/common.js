@@ -26,76 +26,132 @@ $(window).load(function(){
 	});
 	$(document).on('click', '.btn-close, .gnb-close', function(){
 		$('.head-btm').css({'z-index':'10'});
-		$('.gnb-layer').fadeOut(100);
 		$('.gnb-close').hide();
+		$('.gnb-layer').fadeOut(100, function(){
+			$('.lnb-item, .menu-box .gnb-depth').removeClass('on');
+			$('.lnb-item:first-child, .menu-box .gnb-depth:first-child').addClass('on');
+		});
+	});
+
+	/* gnb 레이어 LNB 오버 */
+	$('.lnb-item').mouseenter(function(){
+		var idx = $(this).index();
+		$('.lnb-item').removeClass('on').eq(idx).addClass('on');
+		$('.menu-box .gnb-depth').removeClass('on').eq(idx).addClass('on');
 	});
 
 	/* 달력 (datepicker) */
-	if($('.datepicker').length >= 1){
-		$('.datepicker').datepicker({
+	$('.datepicker').each(function(){
+		$(this).datepicker({
 			showOn:'button',
 			dateFormat:'yy/mm/dd',
 			monthNames :['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
 			showMonthAfterYear:true,
-			dayNamesMin:['월', '화', '수', '목', '금', '토', '일'],
-			firstDay: -1
+			dayNamesMin:['일', '월', '화', '수', '목', '금', '토'],
+			firstDay: 0,
+			onSelect: function(e){
+				var date = new Date($(this).datepicker({ dateFormat:'yy/mm/dd'}).val()),
+				week = new Array('일', '월', '화', '수', '목', '금', '토');
+				if (week[date.getDay()]!= undefined){
+					$(this).val($(this).val() + '(' + (week[date.getDay()]) + ')');
+				}
+				var dateSel = $(this).val();
+				$(this).keyup(function(){
+					$(this).val(dateSel);
+				});
+			}
 		});
-	}
+
+		var now = new Date();
+		var year= now.getFullYear();
+		var mon = (now.getMonth()+1)>9 ? ''+(now.getMonth()+1) : '0'+(now.getMonth()+1);
+		var day = now.getDate()>9 ? ''+now.getDate() : '0'+now.getDate();
+		var week = new Array('일', '월', '화', '수', '목', '금', '토');
+
+		var dateVal = year + '/' + mon + '/' + day + '(' + week[now.getDay()] + ')';
+		$(this).val(dateVal);
+
+		$(this).keyup(function(){
+			$(this).val(dateVal);
+		});
+	});
 
 	/* ===========================================================================================================
 		슬라이더
 	=========================================================================================================== */
 	/* 관련물품 */
 	var bxsliderLen = $('.bxslider').length;
-	if(bxsliderLen >= 1){
-		$('.thumb-slide1 .bxslider').bxSlider({
+
+	$('.thumb-slide1 .bxslider').each(function(){
+		$(this).bxSlider({
 			//infiniteLoop:false,
 			speed:400
 		});
+	});
 
-		$('.thumb-slide2 .bxslider').bxSlider({
+	$('.thumb-slide2 .bxslider').each(function(){
+		$(this).bxSlider({
 			//infiniteLoop:false,
 			speed:400,
 			pagerType:'short'
 		});
+	});
 
-		$('.bx-pager').each(function(){
-			var len = $(this).find('.bx-pager-item').length;
-			if(len <= 1){
-				$(this).hide();
-			}
-		});
-
-		$('.bxslider').animate({'opacity':'1'}, 200);
-	}
+	$('.bx-pager').each(function(){
+		var len = $(this).find('.bx-pager-item').length;
+		if(len <= 1){
+			$(this).hide();
+		}
+	});
+	$('.bxslider').animate({'opacity':'1'}, 200);
 
 	/* ===========================================================================================================
 		탭메뉴
 	=========================================================================================================== */
-		/*상세 탭*/
-		$('.tab-item').click(function(){
-			var idx = $(this).index();
-			var cont_height = $('.cont-wrap').offset().top - $('.tab-wrap').outerHeight() - $('.head-btm').outerHeight() ;
+	/*상세 탭*/
+	$('.tab-item').click(function(){
+		var idx = $(this).index();
+		var cont_height = $('.cont-wrap').offset().top - $('.tab-wrap').outerHeight() - $('.head-btm').outerHeight() ;
 
-			$('.tab-item').removeClass('on').eq(idx).addClass('on');
-			$('.tab-content').removeClass('on').eq(idx).addClass('on');
-			$('html, body').animate({scrollTop:cont_height});
+		$('.tab-item').removeClass('on').eq(idx).addClass('on');
+		$('.tab-content').removeClass('on').eq(idx).addClass('on');
+		$('html, body').animate({scrollTop:cont_height});
 
-		});
+	});
 
-		/*방사성물질 검사 탭*/
-		$('.test-term .year > li').click(function(){
-			if($(this).hasClass('on')){
-				$(this).addClass('on').children('.month').show();
-			}else{
-				$('.test-term .year > li').removeClass('on').children('.month').hide().find('li').removeClass('on');
-				$(this).addClass('on').children('.month').show();
-			}
-		});
+	/*방사성물질 검사 탭*/
+	$('.test-term .year > li').click(function(){
+		if($(this).hasClass('on')){
+			$(this).addClass('on').children('.month').show();
+		}else{
+			$('.test-term .year > li').removeClass('on').children('.month').hide().find('li').removeClass('on');
+			$(this).addClass('on').children('.month').show();
+		}
+	});
 
-		$('.month li').click(function(){
-			$(this).addClass('on').siblings('li').removeClass('on');
-		});
+	$('.month li').click(function(){
+		$(this).addClass('on').siblings('li').removeClass('on');
+	});
+
+	/* ===========================================================================================================
+		상품상세 faq
+	=========================================================================================================== */
+	//아코디언
+	$('.faq-list .question').click(function(){
+		if($(this).parents('li').hasClass('on')){
+			$(this).parents('li').removeClass('on').find('.answer').slideUp(100);
+		}else{
+			$('.faq-list .question').parents('li').removeClass('on').find('.answer').slideUp(100);
+			$(this).parents('li').addClass('on').find('.answer').slideDown(200);
+		}
+	});
+
+	//글자수
+	$('#text-write').keyup(function (e){
+		var content = $(this).val();
+		//$(this).height(((content.split('\n').length + 1) * 1.5) + 'em');
+		$('.text-leng').html(content.length + '/500자');
+	});
 
 	/* ===========================================================================================================
 		스크롤 이벤트
@@ -248,6 +304,36 @@ $(window).load(function(){
 			$('.radiobox input[name='+name+']').parents('.radiobox').removeClass('checked');
 			$(this).parents('.radiobox').addClass('checked');
 		}
+	});
+
+	/* 수량체크 */
+	$('body').click(function(){
+		$('.volume-box').removeClass('on');
+	});
+	$('.volume-box').click(function(){
+		$('.volume-box').removeClass('on');
+		$(this).addClass('on');
+		return false;
+	});
+	$('.volume-box .btn').each(function(){
+		if($(this).parents('.volume-box').hasClass('disabled')){
+			$(this).parents('.volume-box').find('.volume').prop('disabled', true).val('0');
+		}
+		$(this).click(function(){
+			if($(this).parents('.volume-box').hasClass('disabled') == false){
+				if($(this).hasClass('btn-plus')){
+					var defaultN = $(this).parents('.volume-box').find('.volume').val()*1;
+					$(this).parents('.volume-box').find('.volume').val(defaultN+1);
+				}else{
+					var defaultN = $(this).parents('.volume-box').find('.volume').val()*1;
+					if(defaultN <= 1){
+						$(this).parents('.volume-box').find('.volume').val('1');
+					}else{
+						$(this).parents('.volume-box').find('.volume').val(defaultN-1);
+					}
+				}
+			}
+		});
 	});
 
 	/* ===========================================================================================================
