@@ -41,8 +41,8 @@ $(window).load(function(){
 	});
 
 	/* 달력 (datepicker) */
-	if($('.datepicker').length >= 1){
-		$('.datepicker').datepicker({
+	$('.datepicker').each(function(){
+		$(this).datepicker({
 			showOn:'button',
 			dateFormat:'yy/mm/dd',
 			monthNames :['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
@@ -50,10 +50,10 @@ $(window).load(function(){
 			dayNamesMin:['일', '월', '화', '수', '목', '금', '토'],
 			firstDay: 0,
 			onClose: function(e){
-				var date = new Date($('.datepicker').datepicker({ dateFormat:'yy/mm/dd'}).val()),
+				var date = new Date($(this).datepicker({ dateFormat:'yy/mm/dd'}).val()),
 				week = new Array('일', '월', '화', '수', '목', '금', '토');
 				if (week[date.getDay()]!= undefined){
-					$('.datepicker').val($('.datepicker').val() + '(' + (week[date.getDay()]) + ')');
+					$(this).val($(this).val() + '(' + (week[date.getDay()]) + ')');
 				}
 			}
 		});
@@ -64,9 +64,9 @@ $(window).load(function(){
 		var day = now.getDate()>9 ? ''+now.getDate() : '0'+now.getDate();
 		var week = new Array('일', '월', '화', '수', '목', '금', '토');
 
-		var chan_val = year + '/' + mon + '/' + day + '(' + week[now.getDay()] + ')';
-		$('.calendar .datepicker').val(chan_val);
-	}
+		var dateVal = year + '/' + mon + '/' + day + '(' + week[now.getDay()] + ')';
+		$(this).val(dateVal);
+	});
 
 	/* ===========================================================================================================
 		슬라이더
