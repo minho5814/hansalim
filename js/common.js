@@ -116,7 +116,6 @@ $(window).load(function(){
 		$('.tab-item').removeClass('on').eq(idx).addClass('on');
 		$('.tab-content').removeClass('on').eq(idx).addClass('on');
 		$('html, body').animate({scrollTop:cont_height});
-
 	});
 
 	/*방사성물질 검사 탭*/
