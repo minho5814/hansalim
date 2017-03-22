@@ -512,6 +512,9 @@ td.e-mail-form {
 		.tab-styled1 .tab-item.active .inner {
 			background-color:#666;
 			color: #fff;
+			-webkit-transition:all .3s;
+			-ms-transition:all .3s;
+			transition:all .3s;
 		}
 
 .tab-content {display:none; padding:80px 60px; box-sizing: border-box;}
@@ -942,6 +945,13 @@ td.e-mail-form {
 	background-color:#60b015;
 	color:#fff;
 }
+.btn-green3 {
+	width:270px;
+	height:46px;
+	line-height:46px;
+	border-color:#7eb533;
+	color:#60b015;
+}
 .btn-text.btn-orange {
 	border-color:#e15f1a;
 	background-color:#f56d24;
@@ -1310,25 +1320,6 @@ td.e-mail-form {
 	height:13px;
 	margin-top:-7px;
 	background:url(../img/sprite/button.png) no-repeat 0 -593px;
-}
-
-.btn-green3 {
-	display:inline-block;
-	position:relative;
-	width:270px;
-	height:46px;
-	box-sizing:border-box;
-	border-radius:4px;
-	border-width:1px;
-	border-style:solid;
-	font-size:18px;
-	line-height:46px;
-	cursor:pointer;
-	border-color:#7eb533;
-	background-color:#fff;
-	color:#60b015;
-	font-size:18px;
-	text-align: center;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -3505,12 +3496,8 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 
 /* board-lsit 리스트 게시판 */
-.board-lsit {
-	border-top:1px solid #666;
-}
-.board-lsit table {
-	border-bottom:1px solid #bbb;
-}
+.board-lsit {border-top:1px solid #666;}
+.board-lsit table {border-bottom:1px solid #bbb;}
 .board-lsit table thead th {
 	height:54px;
 	font-size:15px;
@@ -3524,12 +3511,8 @@ label.check-radio .radiobox {margin-right:8px;}
 	text-align: center;
 	border-top:1px solid #e3e3e3;
 }
-.board-lsit table tbody tr:first-child td {
-	border-top:0;
-}
-.board-lsit table tbody td.title {
-	text-align: left;
-}
+.board-lsit table tbody tr:first-child td {border-top:0;}
+.board-lsit table tbody td.title {text-align: left;}
 .board-lsit table tbody td.title a {
 	overflow: hidden;
 	display:block;
@@ -3537,13 +3520,10 @@ label.check-radio .radiobox {margin-right:8px;}
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
+.board-lsit table tbody td img {vertical-align:middle;}
 
-.review-write {
-	border-top:1px solid #666;
-}
-.review-write .review-radio {
-	padding:20px 0;
-}
+.review-write {border-top:1px solid #666;}
+.review-write .review-radio {padding:20px 0;}
 .review-write .review-radio .title {
 	display:inline-block;
 	margin-right:40px;
@@ -3555,9 +3535,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	line-height:27px;
 	cursor: pointer;
 }
-.review-write .review-radio .check-radio .radiobox {
-	vertical-align: middle !important;
-}
+.review-write .review-radio .check-radio .radiobox {vertical-align: middle !important;}
 .review-write .review-radio .icon-img {
 	display: inline-block;
 	color: #000;
@@ -3575,15 +3553,14 @@ label.check-radio .radiobox {margin-right:8px;}
 	position:relative;
 	width:100%;
 	height:128px;
-	padding:20px;
 	border:1px solid #bbb;
 	box-sizing: border-box;
 }
 .review-write .write-box textarea {
 	width:100%;
-	height: 100%;
-	padding:0;
-	resize: none;
+	height:100%;
+	padding:20px;
+	resize:none;
 	border:0;
 }
 .review-write .write-box .text-leng {
