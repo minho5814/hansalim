@@ -308,16 +308,21 @@ $(window).load(function(){
 		return false;
 	});
 	$('.volume-box .btn').each(function(){
+		if($(this).parents('.volume-box').hasClass('disabled')){
+			$(this).parents('.volume-box').find('.volume').prop('disabled', true).val('0');
+		}
 		$(this).click(function(){
-			if($(this).hasClass('btn-plus')){
-				var defaultN = $(this).parents('.volume-box').find('.volume').val()*1;
-				$(this).parents('.volume-box').find('.volume').val(defaultN+1);
-			}else{
-				var defaultN = $(this).parents('.volume-box').find('.volume').val()*1;
-				if(defaultN <= 1){
-					$(this).parents('.volume-box').find('.volume').val('1');
+			if($(this).parents('.volume-box').hasClass('disabled') == false){
+				if($(this).hasClass('btn-plus')){
+					var defaultN = $(this).parents('.volume-box').find('.volume').val()*1;
+					$(this).parents('.volume-box').find('.volume').val(defaultN+1);
 				}else{
-					$(this).parents('.volume-box').find('.volume').val(defaultN-1);
+					var defaultN = $(this).parents('.volume-box').find('.volume').val()*1;
+					if(defaultN <= 1){
+						$(this).parents('.volume-box').find('.volume').val('1');
+					}else{
+						$(this).parents('.volume-box').find('.volume').val(defaultN-1);
+					}
 				}
 			}
 		});

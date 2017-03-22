@@ -1380,6 +1380,14 @@ td.e-mail-form {
 		}
 		.volume-box .btn-minus:after {display:none;}
 
+.disabled.volume-box {
+	border-color:#ccc;
+	background-color:#e3e3e3;
+}
+.disabled.volume-box .volume {background-color:#e3e3e3;color:#999;cursor:default;}
+.disabled.volume-box .btn {background-color:#e3e3e3;cursor:default;}
+.disabled.volume-box {}
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	폼요소
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
