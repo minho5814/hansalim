@@ -73,27 +73,29 @@ $(window).load(function(){
 	=========================================================================================================== */
 	/* 관련물품 */
 	var bxsliderLen = $('.bxslider').length;
-	if(bxsliderLen >= 1){
-		$('.thumb-slide1 .bxslider').bxSlider({
+
+	$('.thumb-slide1 .bxslider').each(function(){
+		$(this).bxSlider({
 			//infiniteLoop:false,
 			speed:400
 		});
+	});
 
-		$('.thumb-slide2 .bxslider').bxSlider({
+	$('.thumb-slide2 .bxslider').each(function(){
+		$(this).bxSlider({
 			//infiniteLoop:false,
 			speed:400,
 			pagerType:'short'
 		});
+	});
 
-		$('.bx-pager').each(function(){
-			var len = $(this).find('.bx-pager-item').length;
-			if(len <= 1){
-				$(this).hide();
-			}
-		});
-
-		$('.bxslider').animate({'opacity':'1'}, 200);
-	}
+	$('.bx-pager').each(function(){
+		var len = $(this).find('.bx-pager-item').length;
+		if(len <= 1){
+			$(this).hide();
+		}
+	});
+	$('.bxslider').animate({'opacity':'1'}, 200);
 
 	/* ===========================================================================================================
 		탭메뉴
@@ -130,20 +132,19 @@ $(window).load(function(){
 	//아코디언
 	$('.faq-list .question').click(function(){
 		if($(this).parents('li').hasClass('on')){
-			$(this).parents('li').removeClass('on').find('.answer').slideUp();
+			$(this).parents('li').removeClass('on').find('.answer').slideUp(100);
 		}else{
-			$('.faq-list .question').parents('li').removeClass('on').find('.answer').slideUp();
-			$(this).parents('li').addClass('on').find('.answer').slideDown();
+			$('.faq-list .question').parents('li').removeClass('on').find('.answer').slideUp(100);
+			$(this).parents('li').addClass('on').find('.answer').slideDown(200);
 		}
 	});
 
 	//글자수
 	$('#text-write').keyup(function (e){
-	  var content = $(this).val();
-	  //$(this).height(((content.split('\n').length + 1) * 1.5) + 'em');
-	  $('.text-leng').html(content.length + '/500자');
+		var content = $(this).val();
+		//$(this).height(((content.split('\n').length + 1) * 1.5) + 'em');
+		$('.text-leng').html(content.length + '/500자');
 	});
-	$('#text-write').keyup();
 
 	/* ===========================================================================================================
 		스크롤 이벤트
