@@ -176,7 +176,11 @@ button {outline:0;vertical-align:top;}
 /* =========================================================================================================
 	레이아웃
 ========================================================================================================= */
-.wrapper {}
+html {
+	height:100%;
+	background-color:#0e0b0a;
+}
+.wrapper {background-color:#fff;}
 .header {min-height:145px;}
 
 /* 로케이션 */
@@ -2054,6 +2058,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	푸터
 ========================================================================================================= */
 .footer {
+	position:relative;
 	padding-top:196px;
 	background:url(../img/bg/bg_footer.png) no-repeat 50% 45px;
 }
@@ -2592,6 +2597,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		.query-wrap .box-query .bullet-list1 .item input[type=number] {
 			width:60px;
 			margin:0 5px;
+			padding:0;
 			text-align:center;
 		}
 
