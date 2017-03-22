@@ -1450,7 +1450,7 @@ td.e-mail-form {
 		margin-top:-3px;
 		background:url(../img/sprite/form.png) no-repeat 0 0;
 	}
-	.select-box.focus .select-title {border-color:#91c90b;}/* focus */
+	.select-box.focus .select-title {border-color:#91c90b !important;}/* focus */
 		.select-box .select-list {
 			display:none;
 			position:absolute;
@@ -1905,11 +1905,9 @@ label.check-radio .radiobox {margin-right:8px;}
 		}
 		.gnb-layer .layer-cont .lnb .lnb-item:first-child.on .text:before {display:none;}
 		/* /on */
-		.gnb-layer .layer-cont .lnb .lnb-menu {}
-			.gnb-layer .layer-cont .lnb .lnb-menu .link {}
-		.gnb-layer .layer-cont .lnb .add-area {}
 
 	.gnb-layer .layer-cont .menu-box {
+		overflow:hidden;
 		position:absolute;
 		left:176px;top:0;
 		width:100%;
@@ -1947,6 +1945,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	overflow:hidden;
 	position:relative;
 	height:100%;
+	margin-left:-1px;
 }
 .gnb-layer .gnb-depth.on {display:block;}
 	.gnb-layer .gnb-depth .depth-item {
