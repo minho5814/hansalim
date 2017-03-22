@@ -1946,7 +1946,7 @@ label.check-radio .radiobox {margin-right:8px;}
 			height:1px;
 			background-color:#60b015;
 		}
-		.gnb-layer .layer-cont .lnb .lnb-item.on .text {border-top:0;}/* on */
+		.gnb-layer .layer-cont .lnb .lnb-item.on .text {border-color:transparent;}/* on */
 		.gnb-layer .layer-cont .lnb .lnb-item.on .text:after {
 			content:'';
 			position:absolute;
