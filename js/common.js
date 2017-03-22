@@ -100,7 +100,6 @@ $(window).load(function(){
 	/* ===========================================================================================================
 		탭메뉴
 	=========================================================================================================== */
-
 	/*상세 탭*/
 	$('.tab-item').click(function(){
 		var idx = $(this).index();
@@ -297,6 +296,31 @@ $(window).load(function(){
 			$('.radiobox input[name='+name+']').parents('.radiobox').removeClass('checked');
 			$(this).parents('.radiobox').addClass('checked');
 		}
+	});
+
+	/* 수량체크 */
+	$('body').click(function(){
+		$('.volume-box').removeClass('on');
+	});
+	$('.volume-box').click(function(){
+		$('.volume-box').removeClass('on');
+		$(this).addClass('on');
+		return false;
+	});
+	$('.volume-box .btn').each(function(){
+		$(this).click(function(){
+			if($(this).hasClass('btn-plus')){
+				var defaultN = $(this).parents('.volume-box').find('.volume').val()*1;
+				$(this).parents('.volume-box').find('.volume').val(defaultN+1);
+			}else{
+				var defaultN = $(this).parents('.volume-box').find('.volume').val()*1;
+				if(defaultN <= 1){
+					$(this).parents('.volume-box').find('.volume').val('1');
+				}else{
+					$(this).parents('.volume-box').find('.volume').val(defaultN-1);
+				}
+			}
+		});
 	});
 
 	/* ===========================================================================================================

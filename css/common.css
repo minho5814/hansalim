@@ -680,10 +680,14 @@ td.e-mail-form {
 	}
 	.item-list li:first-child {border-left: 0;}
 	.item-list li > .item-info {display: block; height:198px; padding:23px 0;  box-sizing: border-box;}
-	.item-list li:hover .btn-center{
-		display: block;
+	.item-list .btn-center {display:none; width:186px; height:198px; margin-top:0; position:absolute; left:0; top:0; background-color:rgba(255,255,255,.8);opacity:0;}
+	.item-list li:hover .btn-center {display:block;}
+	.item-list li .btn-center:hover {
+		opacity:1;
+		-webkit-transition:opacity .3s;
+		-ms-transition:opacity .3s;
+		transition:opacity .3s;
 	}
-	.item-list .btn-center {display:none; width:186px; height:198px; margin-top:0; position:absolute; left:0; top:0; background-color:rgba(255,255,255,.8); }
 	.item-list .btn-center a {margin-left:5px; top:43%;}
 	.item-list li .flag {
 		display: block;
@@ -1321,6 +1325,60 @@ td.e-mail-form {
 	margin-top:-7px;
 	background:url(../img/sprite/button.png) no-repeat 0 -593px;
 }
+
+/* 수량체크 */
+.volume-box {
+	position:relative;
+	width:140px;
+	height:32px;
+	box-sizing:border-box;
+	border:1px solid #bbb;
+	background-color:#fff;
+}
+.volume-box.on {border-color:#91c90b;}
+	.volume-box .volume {
+		height:30px;
+		border:0;
+		color:#666;
+		font-size:14px;
+		text-align:center;
+		line-height:30px;
+	}
+		.volume-box .btn {
+			position:absolute;
+			top:0;bottom:0;
+			width:30px;
+			background-color:#fff;
+			font-size:0;
+			text-indent:-9999px;
+			line-height:0;
+		}
+		.volume-box .btn-plus {
+			right:0;
+			border-left:1px solid #ddd;
+		}
+		.volume-box .btn-minus {
+			left:0;
+			border-right:1px solid #ddd;
+		}
+		.volume-box .btn:before,
+		.volume-box .btn:after {
+			content:'';
+			position:absolute;
+			left:50%;top:50%;
+			background-color:#333;
+		}
+		.volume-box .btn:before {
+			margin:-1px 0 0 -5px;
+			width:10px;
+			height:2px;
+		}
+		.volume-box .btn:after {
+			margin:-5px 0 0 -1px;
+			width:2px;
+			height:10px;
+		}
+		.volume-box .btn-minus:after {display:none;}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	폼요소
