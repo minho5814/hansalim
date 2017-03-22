@@ -1576,16 +1576,22 @@ label.check-radio .radiobox {margin-right:8px;}
 			.header .user-info .date-area dd input {
 				width:156px;
 				height:32px;
+				padding:0 10px;
+				border-radius:2px;
 				border:1px solid #8dc63f;
+				background-color:#f3f3f3;
+				font-size:14px;
 			}
 /* 데이트피커 */
 .calendar {
 	position:relative;
 }
 	.calendar .ui-datepicker-trigger {
+		overflow:hidden;
 		position:absolute;
 		left:0;right:0;top:0;bottom:0;
 		width:100%;
+		border-radius:2px;
 		background:url(../img/btn/btn_calendar.gif) no-repeat 100% 0;
 		font-size:0;
 		text-indent:-9999px;
@@ -1604,9 +1610,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		.head-top .search-box .search-text {background-color:#f3f3f3;}
 
 /* gnb 영역 */
-.head-btm {
-	height:49px;
-}
+.head-btm {height:49px;}
 .gnb {
 	position:relative;
 	width:1120px;
