@@ -322,24 +322,87 @@
 								<dd class="last">3,000원 (30,000원 이상 주문 시, 공급부담금 없음)</dd>
 							</dl>
 						</div>
+						<!--type1-->
 						<div class="info-box">
 							<dl>
 								<dt>수량선택</dt>
 								<dd>
-									<span class="mgR30">총수량: <em class="orange">1</em>개</span>
-									<span>주문가능수량: <em class="orange">1</em>개</span>
+									<div class="amount">
+										<span class="mgR30">총수량: <em class="orange">1</em>개</span>
+										<span>주문가능수량: <em class="orange">1</em>개</span>
+									</div>
 									<div class="count-wrap">
 										<div class="count">
 											<button type="button" class="btn-image minus"></button>
 											<input type="text" value="1" readonly>
 											<button type="button" class="btn-image plus"></button>
 										</div>
-										<span>10,500원</span>
+										<span class="price">10,500원</span>
 									</div>
 								</dd>
 							</dl>
 						</div>
+						<!--//type1-->
+						<!--type2-->
+						<div class="info-box ty02">
+							<dl>
+								<dt>수량선택</dt>
+								<dd>
+									<div class="amount">
+										<span>물품을 선택해 주세요 (주문가능수량: <em class="orange">1</em>개)</span>
+										<span class="selbox">
+											<select class="styled1">
+												<option>구이갈비(500g/우리보리살림돼지)</option>
+												<option>구이갈비(800g/우리보리살림돼지)</option>
+												<option>구이갈비(1000g/우리보리살림돼지)</option>
+											</select>
+										</span>
+									</div>
+								</dd>
+							</dl>
+							<div class="choice-area">
+								<div class="count-wrap">
+									<p class="tit">[선택1] 구이갈비(500g)/우리보리살림돼지)</p>
+									<div class="count">
+										<button type="button" class="btn-image minus"></button>
+										<input type="text" value="1" readonly>
+										<button type="button" class="btn-image plus"></button>
+									</div>
+									<span class="price">10,500원 <button type="button" class="btn-delete">삭제</button></span>
+								</div>
+								<div class="count-wrap">
+									<p class="tit">[선택2] 구이갈비(800g)/우리보리살림돼지)</p>
+									<div class="count">
+										<button type="button" class="btn-image minus"></button>
+										<input type="text" value="1" readonly>
+										<button type="button" class="btn-image plus"></button>
+									</div>
+									<span class="price">10,500원 <button type="button" class="btn-delete">삭제</button></span>
+								</div>
+							</div>
+						</div>
+						<!--//type2-->
+						<!--type3-->
 						<div class="info-box">
+							<dl>
+								<dt>수량선택</dt>
+								<dd>
+									<div class="amount">
+										<span><em class="orange">공급이 중단된 물품입니다.</em></span>
+									</div>
+									<div class="count-wrap">
+										<div class="count">
+											<button type="button" class="btn-image minus"></button>
+											<input type="text" value="0" readonly>
+											<button type="button" class="btn-image plus"></button>
+										</div>
+										<span class="price">0원</span>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<!--//type3-->
+						<div class="info-box last">
 							<dl class="total">
 								<dt>합계</dt>
 								<dd>38,300<em>원</em></dd>
@@ -347,6 +410,9 @@
 						</div>
 						<div class="info-text">
 							<p>최근 한달 간 <em class="orange">7</em>번 주문하셨습니다.</p>
+							<div class="check-area">
+								<label class="check-radio"><span class="checkbox checked"><input type="checkbox" class="styled1" checked=""></span>정기배송 <em>(주문을 간편하게! 정기배송을 신청하세요!)</em></label>
+							</div>
 						</div>
 						<div class="btn-center sub">
 							<a href="#" class="btn-icon-text btn-cart2">장바구니</a>
