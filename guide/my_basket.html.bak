@@ -74,7 +74,7 @@
 										<span class="checkbox checked"><input type="checkbox" class="styled1" checked=""></span>모두사용 <em class="c-style01">(적립금 사용단위 : 1,000원)</em>
 									</label>
 								</li>
-								<li class="item">사용 가능 적립금 : <input type="text" placeholder="1,000" style="width:137px;">원</li>
+								<li class="item fColor2">사용 가능 적립금 : <input type="text" placeholder="1,000" style="width:137px;">원</li>
 							</ul>
 							<p class="gray-text">※ 사용 가능 적립금 = 현 사용가능 적립금 + 이전주문 사용적립금</p>
 							<p class="gray-text">※ 공급포인트 적립은 회원생협별로 다를 수 있습니다.</p>
