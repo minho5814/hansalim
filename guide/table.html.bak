@@ -22,6 +22,7 @@
 <h1>TABLE GUIDE</h1>
 
 
+
 <div style="padding:0 70px;">
 
 <h2>입력 스타일</h2>
@@ -97,10 +98,6 @@
 						</select>
 						<div class="radio-check">
 							<label class="item"><input type="checkbox" class="styled1" checked>마을모임</label>
-							<label class="item"><input type="checkbox" class="styled1">소모임</label>
-							<label class="item"><input type="checkbox" class="styled1">매장 조합원 모임</label>
-							<label class="item"><input type="checkbox" class="styled1">분과 모임</label>
-							<label class="item"><input type="checkbox" class="styled1">생명학교</label>
 						</div>
 					</td>
 				</tr>
@@ -335,22 +332,6 @@
 		</div>
 	</div>
 
-	<div class="board-top">
-		<div class="fl">
-			<select class="styled1" style="width:130px;">
-				<option>전체</option>
-				<option>일반품</option>
-				<option>특별품</option>
-				<option>선물택배</option>
-				<option>김장채소</option>
-				<option>천연벽지</option>
-			</select>
-		</div>
-		<div class="fr">
-			<span class="text">환불가능금액 <strong class="fColor1">2,000원</strong></span>
-			<button type="button" class="btn-round-text btn-gray">환불신청</button>
-		</div>
-	</div>
 	<div class="board-lsit">
 		<table>
 			<colgroup>
