@@ -441,6 +441,30 @@ td.e-mail-form {
 		background-color:#676767;
 	}
 
+.bullet-list3 {}
+	.bullet-list3 .item {
+		position:relative;
+		padding:4px 0 4px 11px;
+		color:#666;
+		font-size:14px;
+		text-align:left;
+		line-height:32px;
+	}
+	.bullet-list3 .item:before {
+		content:'';
+		position:absolute;
+		left:0;top:18px;
+		width:3px;
+		height:3px;
+		background-color:#676767;
+	}
+	.bullet-list3 .item input[type=text],
+	.bullet-list3 .item input[type=number] {margin:0 5px;}
+	.bullet-list3.center .item input[type=text],
+	.bullet-list3.center .item input[type=number] {padding:0; text-align:center;}
+	.bullet-list3.right .item input[type=text],
+	.bullet-list3.right .item input[type=number] {text-align:right;}
+
 /* 박스링크 리스트 */
 .box-link-list {
 	border:1px solid #bbb;
