@@ -984,6 +984,11 @@ td.e-mail-form {
 	margin-bottom:9px;
 }
 
+.title-wrap .flag-wrap {
+	position:absolute;
+	top:8px; right:0;
+}
+
 /* 타이틀 */
 .cTitle1 {
 	color:#000;
