@@ -67,16 +67,34 @@ $(window).load(function(){
 		var mon = (now.getMonth()+1)>9 ? ''+(now.getMonth()+1) : '0'+(now.getMonth()+1);
 		var day = now.getDate()>9 ? ''+now.getDate() : '0'+now.getDate();
 		var week = new Array('일', '월', '화', '수', '목', '금', '토');
-
 		var dateVal = year + '/' + mon + '/' + day + '(' + week[now.getDay()] + ')';
-		$(this).val(dateVal);
 
-		$(this).keyup(function(){
+		var newDay = new Date( year, mon, "");
+		var lastDay = newDay.getDate();
+		var firstVal = year + '/' + mon + '/' + '1'; // 이번달 시작일
+		var lastVal = year + '/' + mon + '/' + lastDay; // 이번달 마지막일
+
+		if($(this).parents('.calendar').hasClass('term')){
+			if($(this).hasClass('start')){
+				// 이번달 시작일 호출
+				$(this).val(firstVal);
+			}else{
+				// 이번달 마지막일 호출
+				$(this).val(lastVal);
+			}
+		}else{
+			// 오늘 날짜 호출
 			$(this).val(dateVal);
-		});
+		}
 	});
 	$('.datepicker').focus(function(){
 		$(this).parents('.calendar').find('.ui-datepicker-trigger').click();
+	});
+
+	// 캘린더 개월 설정
+	$('.btn-term').click(function(){
+		$(this).parents('.btn-area').find('.btn-term').removeClass('on');
+		$(this).addClass('on');
 	});
 
 	/* ===========================================================================================================
