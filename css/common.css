@@ -1386,6 +1386,18 @@ td.e-mail-form {
 	background-position:0 -655px;
 }
 
+.btn-image.btn-list-close {
+	width:54px;
+	height:54px;
+	background-color:#61b016;
+	border-radius: 0;
+}
+.btn-image.btn-list-close:before {
+	width:26px;
+	height:15px;
+	background-position:0 -821px;
+}
+
 .btn-image2 {
 	display:inline-block;
 	position:relative;
@@ -3956,6 +3968,65 @@ label.check-radio .radiobox {margin-right:8px;}
 	.cart-step-list {}
 
 /* 장바구니 (IM-SH01.html) */
+.order-cart-list {}
+
+.list-group {margin-top:80px;}
+.list-group:first-child {margin-top:40px;}
+	.list-group .title {
+		overflow: hidden;
+		border-top:2px solid #61b016;
+	}
+		.list-group .title .left-area {
+			overflow: hidden;
+			float: left;
+		}
+		.list-group .title .bullet-type {
+			display:inline-block;
+			float:left;
+			position:relative;
+			height:32px;
+			padding-left:5px;
+			color:#000;
+			font-size:16px;
+			font-weight:bold;
+			line-height:32px;
+		}
+		.list-group .title .bullet-type:before {
+			content:'';
+			position:absolute;
+			left:0;top:50%;
+			width:2px;
+			height:2px;
+			margin-top:-1px;
+			background-color:#7d7d7d;
+		}
+		.list-group .title .left-area p {
+			display: inline-block;
+			height:56px;
+			padding-left:20px;
+			line-height: 56px;
+			font-size: 24px;
+			color:#61b016;
+			vertical-align: middle;
+			box-sizing: border-box;
+		}
+		.list-group .title .date-area {
+			overflow:hidden;
+			display: inline-block;
+			margin-left:50px;
+			vertical-align: middle;
+		}
+			.list-group .title .date-area dt {
+				float:left;
+			}
+			.list-group .title .date-area dd {
+				float:left;
+				margin-left:7px;
+			}
+
+		.list-group .title .right-area {float:right}
+
+
 
 
 /* 장바구니 (IM-SH0202.html) */
