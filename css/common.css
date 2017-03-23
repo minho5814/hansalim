@@ -976,6 +976,7 @@ td.e-mail-form {
 .fColor2 {color:#666 !important;} /* 진한회색 */
 .fColor3 {color:#ec7015 !important;} /* 오렌지 */
 .fColor4 {color:#09babc !important;} /* 하늘색 */
+.fColor5 {color:#766253 !important;} /* 갈색 */
 
 /* 타이틀 박스 */
 .title-wrap {
@@ -3981,15 +3982,15 @@ label.check-radio .radiobox {margin-right:8px;}
 
 .list-group {margin-top:80px;}
 .list-group:first-child {margin-top:40px;}
-	.list-group .title {
+	.list-group .list-title {
 		overflow: hidden;
 		border-top:2px solid #61b016;
 	}
-		.list-group .title .left-area {
+		.list-group .list-title .left-area {
 			overflow: hidden;
 			float: left;
 		}
-		.list-group .title .bullet-type {
+		.list-group .list-title .bullet-type {
 			display:inline-block;
 			float:left;
 			position:relative;
@@ -4000,7 +4001,7 @@ label.check-radio .radiobox {margin-right:8px;}
 			font-weight:bold;
 			line-height:32px;
 		}
-		.list-group .title .bullet-type:before {
+		.list-group .list-title .bullet-type:before {
 			content:'';
 			position:absolute;
 			left:0;top:50%;
@@ -4009,9 +4010,9 @@ label.check-radio .radiobox {margin-right:8px;}
 			margin-top:-1px;
 			background-color:#7d7d7d;
 		}
-		.list-group .title .left-area p {
+		.list-group .list-title .left-area p {
 			display: inline-block;
-			height:56px;
+			height:54px;
 			padding-left:20px;
 			line-height: 56px;
 			font-size: 24px;
@@ -4019,21 +4020,42 @@ label.check-radio .radiobox {margin-right:8px;}
 			vertical-align: middle;
 			box-sizing: border-box;
 		}
-		.list-group .title .date-area {
+		.list-group .list-title .date-area {
 			overflow:hidden;
 			display: inline-block;
 			margin-left:50px;
 			vertical-align: middle;
 		}
-			.list-group .title .date-area dt {
+			.list-group .list-title .date-area dt {
 				float:left;
 			}
-			.list-group .title .date-area dd {
+			.list-group .list-title .date-area dd {
 				float:left;
 				margin-left:7px;
 			}
 
-		.list-group .title .right-area {float:right}
+		.list-group .list-title .right-area {float:right}
+
+	.list-group .list-content {
+
+	}
+	.list-group .list-content .good-table tbody tr.bg {background-color:#f7f7f7; }
+	.list-group .list-content .good-table tbody td {height:150px; box-sizing: border-box;}
+	.list-group .list-content .good-table tbody td:first-child {vertical-align: top; padding-top:25px;}
+	.list-group .list-content .good-table tbody td:nth-child(2) {padding-left: 0;}
+		.list-group .list-content .goods .goods-img {float: left; }
+		.list-group .list-content .goods .txt-box {
+			/*margin-top:10px;
+			padding-left:115px;
+			display: inline-block;
+			vertical-align: middle;
+			*/
+			padding-left:115px;
+		}
+		.list-group .list-content .goods .goods-name {margin-left:0; margin-bottom:5px; }
+		.list-group .list-content .goods .goods-txt,
+		.list-group .list-content .goods .goods-amount {display: block;}
+		.list-group .list-content .goods .goods-amount {margin-top:15px;}
 
 
 
