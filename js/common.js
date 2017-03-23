@@ -170,6 +170,22 @@ $(window).load(function(){
 		$('.text-leng').html(content.length + '/500자');
 	});
 
+
+
+	// $('.list-title .btn-list-close').each(function(){
+	// 	$(this).click(function(){
+	// 		if($(this).parents('.list-title').hasClass('on')){
+	// 			$(this).parents('.list-title').removeClass('on');
+	//
+	//
+	// 		}else{
+	// 			$(this).parents('.list-title').addClass('on');
+	//
+	// 		}
+	// 	});
+	//
+	// });
+
 	/* ===========================================================================================================
 		스크롤 이벤트
 	=========================================================================================================== */

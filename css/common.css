@@ -1394,6 +1394,23 @@ td.e-mail-form {
 	background-position:0 -767px;
 }
 
+.btn-icon-text.btn-like2 {
+	width:128px;
+	height: 32px;
+	padding:0 0 0 25px;
+	border-color: #7eb533;
+	background-color: #fff;
+	color: #60b015;
+	font-size: 14px;
+	line-height: 31px;
+	font-weight: bold;
+}
+.btn-icon-text.btn-like2:before {
+	left:10px;
+	width:20px;
+	height:18px;
+	background-position:0 -867px;
+}
 
 /* 이미지 버튼 */
 .btn-image {
@@ -4148,7 +4165,9 @@ label.check-radio .radiobox {margin-right:8px;}
 .order-cart-list {}
 
 .list-group {margin-top:80px;}
+
 .list-group:first-child {margin-top:40px;}
+	.list-group .total-count {margin:20px 0;}
 	.list-group .list-title {
 		overflow: hidden;
 		border-top:2px solid #61b016;
@@ -4203,9 +4222,7 @@ label.check-radio .radiobox {margin-right:8px;}
 
 		.list-group .list-title .right-area {float:right}
 
-	.list-group .list-content {
 
-	}
 	.list-group .list-content .good-table tbody tr.bg {background-color:#f7f7f7; }
 
 	.list-group .list-content .good-table tbody td {height:150px; box-sizing: border-box;}
@@ -4242,7 +4259,34 @@ label.check-radio .radiobox {margin-right:8px;}
 			.list-group .content-wrap .goods .txt-box span {display: block;}
 			.list-group .content-wrap  .goods .goods-name {margin-left:0; margin-bottom:5px; }
 
+.total-count {
+	overflow: hidden;
+	width: 100%;
+	height: 100px;
+	padding:0 28px;
+	background-color: #f0f2ef;
+	border:1px solid #bbb;
+	text-align: right;
+	font-weight: bold;
+	box-sizing: border-box;
+	line-height: 100px;
+}
+	.total-count .cont {float: right;}
+	.total-count span {d isplay: block; float: left;}
+	.total-count .text {
+		margin-right:20px;
+		font-size:14px;
+	}
+	.total-count .price {
+		color:#ec7015;
+		font-size: 36px;
+		font-weight: 900;
+		letter-spacing: -1px;
+	}
+		.total-count .price em {font-size: 24px; font-weight: normal;}
 
+
+	.total-count + .btn-area .btn-like2 {float: right;}
 
 /* 장바구니 (IM-SH0202.html) */
 .order-complete {
