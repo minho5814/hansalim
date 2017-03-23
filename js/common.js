@@ -87,9 +87,6 @@ $(window).load(function(){
 			$(this).val(dateVal);
 		}
 	});
-	$('.datepicker').focus(function(){
-		$(this).parents('.calendar').find('.ui-datepicker-trigger').click();
-	});
 
 	// 캘린더 개월 설정
 	$('.btn-term').click(function(){
