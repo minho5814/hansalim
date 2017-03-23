@@ -4466,7 +4466,7 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 .total-price .price-sign {
 	position:absolute;
-	top:50%; right:-13px;
+	top:50%; right:-16px;
 	z-index: 1;
 	margin-top:-13px;
 }
