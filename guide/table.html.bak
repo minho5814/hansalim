@@ -98,10 +98,6 @@
 						</select>
 						<div class="radio-check">
 							<label class="item"><input type="checkbox" class="styled1" checked>마을모임</label>
-							<label class="item"><input type="checkbox" class="styled1">소모임</label>
-							<label class="item"><input type="checkbox" class="styled1">매장 조합원 모임</label>
-							<label class="item"><input type="checkbox" class="styled1">분과 모임</label>
-							<label class="item"><input type="checkbox" class="styled1">생명학교</label>
 						</div>
 					</td>
 				</tr>
