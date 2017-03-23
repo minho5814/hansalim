@@ -74,6 +74,10 @@ $(window).load(function(){
 		$(this).keyup(function(){
 			$(this).val(dateVal);
 		});
+
+		$('.datepicker').focus(function(){
+			$(this).parents('.calendar').find('.ui-datepicker-trigger').click();
+		});
 	});
 
 	/* ===========================================================================================================
