@@ -347,6 +347,67 @@ td.e-mail-form {
 	}
 	.borad-data1 .bdL0 {border-left:0;}
 
+/* 상품 구매 테이블 */
+.good-table {
+	border-top:1px solid #bbb;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+}
+.good-table table th {
+	height:40px;
+	background-color:#f0f2ef;
+	font-weight: normal;
+	border-bottom:1px solid #ddd;
+}
+.good-table table td {
+	text-align:center;
+	vertical-align: middle;
+	border-bottom:1px solid #ddd;
+}
+.good-table table td.goods {
+	padding:25px 20px;
+	text-align:left;
+}
+.good-table table td.goods .goods-img{
+	position: relative;
+	display: inline-block;
+	border:1px solid #ddd;
+}
+.good-table table td.goods .goods-img img {
+	vertical-align: middle;
+}
+.good-table table td.goods .goods-img .goods-type {
+	position: absolute;
+	top:-12px; right:-12px;
+	width:48px; height:42px;
+	text-align: center;
+	background-color: #f4f4f4;
+	border:1px solid #dadada;
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+.good-table table td.goods .goods-img .goods-type span {
+	position:absolute;;
+	top:50%; left:0;
+	width:100%;
+	transform: translateY(-50%);
+	font-size:13px;
+	font-weight: 900;
+	line-height: 15px;
+}
+.good-table table td.goods .goods-name {
+	display: inline-block;
+	margin-left:14px;
+	color:#666;
+	font-size: 15px;
+}
+.good-table table td .price {
+	margin-right:3px;
+	font-size:18px;
+	color:#000;
+	font-weight: 900;
+	letter-spacing: -1px;
+}
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	리스트
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -905,6 +966,8 @@ td.e-mail-form {
 
 /* 폰트 컬러 */
 .fColor1 {color:#60b015 !important;}
+.fColor2 {color:#ec7015 !important;}
+.fColor3 {color:#09babc !important;}
 
 /* 타이틀 */
 .cTitle1 {
@@ -931,6 +994,13 @@ td.e-mail-form {
 	font-size:18px;
 	font-weight:bold;
 	line-height:45px;
+}
+
+.info-text {
+	padding-left:28px;
+	color:#999;
+	line-height: 26px;
+	background:url(../img/icon/ico_notice02.png) 0 2px no-repeat;
 }
 
 /* 정렬 */
@@ -4298,3 +4368,53 @@ label.check-radio .radiobox {margin-right:8px;}
 		line-height:19px;
 	}
 		.pdf-banner .text .btn-mini-text {margin-left:20px;}
+
+/* 장바구니 및 나의 한살림 가격 표 */
+.total-price {
+	overflow:hidden;
+	margin-top:20px;
+	background-color:#f0f2ef;
+	border:1px solid #bbb;
+}
+.total-price dl {
+	float: left;
+	position: relative;
+	width:16.6%;
+	padding:20px 0;
+	border-left:1px solid #ddd;
+	box-sizing: border-box;
+}
+.total-price dl:first-child {border-left:0;}
+.total-price dl dt {
+	font-size:14px;
+	color:#666;
+	text-align: center;
+}
+.total-price dl dt .tip {
+	display: inline-block;
+	width:18px; height:18px;
+	margin-left:3px;
+	background:url(../img/btn/btn_question.png) 0 0 no-repeat;
+}
+.total-price dl dd {
+	text-align: center;
+}
+.total-price dl dd .price {
+	font-size:15px;
+	color:#000;
+}
+.total-price dl dd span {
+	margin-right:3px;
+	font-size:24px;
+	font-weight: 600;
+}
+.total-price dl dd span .total {
+	font-weight: 900;
+	letter-spacing: -1px;
+}
+.total-price .price-sign {
+	position:absolute;
+	top:50%; right:-13px;
+	z-index: 1;
+	margin-top:-13px;
+}
