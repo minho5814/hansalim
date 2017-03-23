@@ -268,7 +268,7 @@ html {
 }
 .board-write1 td .addr-box .gift-addr {
 	position:absolute;
-	top: 4px; right:0;
+	top: 0; right:0;
 }
 
 .board-write2 {border-top:1px solid #666;}
