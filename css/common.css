@@ -1608,38 +1608,80 @@ td.e-mail-form {
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 /* 조회 영역 */
 .search-form {
-	width:100%;
+	position:relative;
 	padding:20px 40px;
 	background-color:#f3f3f3;
 	box-sizing: border-box;
 }
-.search-form dl dt {
-	display: inline-block;
-	width:100px;
-	color:#000;
-	font-size:16px;
-	font-weight: bold;
-}
-.search-form dl dd {
-	display:inline-block;
-}
-.search-form dl dd .term-group {display:inline-block;}
-.search-form dl dd .term-group .btn-term {
-	width:70px;
-	height:32px;
-	background-color:#fff;
-	color:#666;
-	font-size:15px;
-	border:1px solid #999;
-}
-.search-form dl dd .term-group .btn-term.on {
-	color:#60b015;
-	border:1px solid #91c90b;
-}
-
-.search-form dl dd .calendar {
-
-}
+	.search-form .title {
+		height:32px;
+		color:#000;
+		font-size:16px;
+		font-weight:bold;
+		line-height:32px;
+	}
+	.search-form .cont {
+		overflow:hidden;
+		position:absolute;
+		right:40px;top:20px;
+	}
+		.search-form .cont .btn-area {
+			overflow:hidden;
+			float:left;
+		}
+			.search-form .cont .btn-area .btn-term {
+				float:left;
+				width:70px;
+				height:32px;
+				margin-left:4px;
+				box-sizing:border-box;
+				border:1px solid #999;
+				background-color:#fff;
+				color:#666;
+				font-size:15px;
+				font-weight:bold;
+				text-align:center;
+				line-height:30px;
+			}
+			.search-form .cont .btn-area .btn-term:first-child {margin-left:0;}
+			.search-form .cont .btn-area .btn-term.on {border-color:#91c90b;color:#60b015;}
+		.search-form .cont .calendar-area {
+			overflow:hidden;
+			float:left;
+			margin-left:20px;
+		}
+			.search-form .cont .calendar-area .calendar {
+				float:left;
+			}
+			.search-form .cont .calendar-area .calendar .datepicker {
+				width:140px;
+				border-radius:0;
+				border:1px solid #bbb;
+				background-color:#fff;
+				text-align:center;
+			}
+			.search-form .cont .calendar-area .calendar .ui-datepicker-trigger {
+				margin-left:4px;
+				border-radius:2px;
+				background-color:#666;
+			}
+			.search-form .cont .calendar-area .swung-dash {
+				float:left;
+				margin:0 8px;
+				line-height:32px;
+			}
+		.search-form .cont .btn-search {
+			float:left;
+			width:100px;
+			height:32px;
+			margin-left:20px;
+			box-sizing:border-box;
+			border-radius:2px;
+			background-color:#60b015;
+			color:#fff;
+			font-size:15px;
+			font-weight:bold;
+		}
 
 /* 검색 영역 */
 .search-box {position:relative;}
@@ -1981,7 +2023,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		width:35px;
 		height:32px;
 		border-radius:0 2px 2px 0;
-		background:url(../img/btn/btn_calendar.gif) no-repeat 0 0;
+		background:#8dc63f url(../img/btn/btn_calendar.png) no-repeat 50% 50%;
 		font-size:0;
 		text-indent:-9999px;
 		line-height:0;
