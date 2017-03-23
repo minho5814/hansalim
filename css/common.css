@@ -977,6 +977,13 @@ td.e-mail-form {
 .fColor3 {color:#ec7015 !important;} /* 오렌지 */
 .fColor4 {color:#09babc !important;} /* 하늘색 */
 
+/* 타이틀 박스 */
+.title-wrap {
+	overflow:hidden;
+	position:relative;
+	margin-bottom:9px;
+}
+
 /* 타이틀 */
 .cTitle1 {
 	color:#000;
@@ -3378,10 +3385,6 @@ label.check-radio .radiobox {margin-right:8px;}
 .nutrient-area {padding:0 60px 80px;}
 
 /* 상세 페이지 - 방사성물질 검사 결과 */
-.title-wrap {
-	overflow:hidden;
-	margin-bottom:9px;
-}
 .standard {
 	position:absolute;
 	right:0; top:5px;
