@@ -69,7 +69,7 @@ $(window).load(function(){
 
 		var newDay = new Date( year, mon, "");
 		var lastDay = newDay.getDate();
-		var firstVal = year + '/' + mon + '/' + '1'; // 이번달 시작일
+		var firstVal = year + '/' + mon + '/' + '01'; // 이번달 시작일
 		var lastVal = year + '/' + mon + '/' + lastDay; // 이번달 마지막일
 
 		if($(this).parents('.calendar').hasClass('term')){
