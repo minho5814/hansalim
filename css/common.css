@@ -259,6 +259,10 @@ html {
 		line-height:16px;
 	}
 
+.board-write1 td.inner-table {
+	padding:20px;
+}
+
 .board-write2 {border-top:1px solid #666;}
 	.board-write2 table {border-bottom:1px solid #bbb;}
 	.board-write2 th,
@@ -357,6 +361,7 @@ td.e-mail-form {
     height:40px;
     background-color:#f0f2ef;
     font-weight: normal;
+		text-align: center;
     border-bottom:1px solid #ddd;
 }
 .good-table table td {
@@ -947,6 +952,7 @@ td.e-mail-form {
 .mgT20 {margin-top:20px !important;}
 .mgT25 {margin-top:25px !important;}
 .mgT40 {margin-top:40px !important;}
+.mgT45 {margin-top:45px !important;}
 .mgT50 {margin-top:50px !important;}
 .mgT60 {margin-top:60px !important;}
 .mgT65 {margin-top:65px !important;}
@@ -4506,4 +4512,11 @@ label.check-radio .radiobox {margin-right:8px;}
   top:50%; right:-16px;
   z-index: 1;
   margin-top:-13px;
+}
+
+.total-price.total-price2 dl {
+	width:33%;
+}
+.total-price.total-price2 dl:first-child {
+	width:34%;
 }
