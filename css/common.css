@@ -1033,7 +1033,6 @@ td.e-mail-form {
 .title-wrap {
 	overflow:hidden;
 	position:relative;
-	margin-bottom:9px;
 }
 
 .title-wrap .flag-wrap {
@@ -1069,10 +1068,11 @@ td.e-mail-form {
 }
 
 .info-text {
-  padding-left:28px;
-  color:#999;
-  line-height: 26px;
-  background:url(../img/icon/ico_notice02.png) 0 2px no-repeat;
+	margin-bottom:9px;
+	padding-left:28px;
+	color:#999;
+	line-height: 26px;
+background:url(../img/icon/ico_notice02.png) 0 2px no-repeat;
 }
 
 /* 정렬 */
@@ -4143,6 +4143,27 @@ label.check-radio .radiobox {margin-right:8px;}
 		.cart-step-list .list {}
 	.cart-step-list {}
 	.cart-step-list {}
+
+/* 장바구니 희망배송일 */
+.delivery-date {
+	margin-top:40px;
+	padding:15px 22px;
+	background-color:#f4fcea;
+	border-top:1px solid #60b015;
+}
+.delivery-date dl dt,
+.delivery-date dl dd {
+	display:inline-block;
+	font-size: 16px;
+	font-weight: bold;
+}
+.delivery-date dl dt {
+	margin-right:23px;
+	color:#000;
+}
+.delivery-date dl dd {
+	color:#63a607;
+}
 
 /* 장바구니 (IM-SH01.html) */
 .order-cart-list {}
