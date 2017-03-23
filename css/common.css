@@ -441,6 +441,25 @@ td.e-mail-form {
 		background-color:#676767;
 	}
 
+.bullet-list2 {}
+		.bullet-list2 .item {
+			position:relative;
+			padding:4px 0 4px 11px;
+			color:#999;
+			font-size:14px;
+			text-align:left;
+			line-height:19px;
+		}
+		.bullet-list2 .item:before {
+			content:'';
+			position:absolute;
+			left:0;
+			top:12px;
+			width:5px;
+			height:2px;
+			background-color:#a9a9a9;
+		}
+
 .bullet-list3 {}
 	.bullet-list3 .item {
 		position:relative;
@@ -2866,19 +2885,8 @@ label.check-radio .radiobox {margin-right:8px;}
 	padding:20px;
 	border:1px solid #ddd;
 }
-	.query-wrap .box-query .bullet-list1 {}
-	.query-wrap .box-query .bullet-list1 .item {
-		color:#666;
-		line-height:32px;
-	}
-		.query-wrap .box-query .bullet-list1 .item:before {top:18px;}
-		.query-wrap .box-query .bullet-list1 .item input[type=text],
-		.query-wrap .box-query .bullet-list1 .item input[type=number] {
-			width:60px;
-			margin:0 5px;
-			padding:0;
-			text-align:center;
-		}
+	.query-wrap .box-query .bullet-list3 .item input[type=text],
+	.query-wrap .box-query .bullet-list3 .item input[type=number] {width:60px;}
 
 .query-wrap .gray-box {
 	padding:25px 30px;
