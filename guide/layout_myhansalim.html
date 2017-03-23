@@ -274,12 +274,20 @@
         <dl>
           <dt>조회기간</dt>
           <dd>
-            <button type="button">1개월</button>
-            <button type="button">3개월</button>
-            <button type="button">6개월</button>
-            <input type="text" class="datepicker">
-            <span>~</span>
-            <input type="text" class="datepicker">
+            <span class="term-group">
+              <button type="button" class="btn-term">1개월</button>
+              <button type="button" class="btn-term on">3개월</button>
+              <button type="button" class="btn-term">6개월</button>
+            </span>
+            <span class="calendar-wrap">
+              <span class="calendar">
+                <input type="text" class="datepicker">
+              </span>
+              <span>~</span>
+              <span class="calendar">
+                <input type="text" class="datepicker">
+              </span>
+            </span>
             <button type="button">조회</button>
           </dd>
         </dl>

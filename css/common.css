@@ -1594,6 +1594,33 @@ td.e-mail-form {
 	background-color:#f3f3f3;
 	box-sizing: border-box;
 }
+.search-form dl dt {
+	display: inline-block;
+	width:100px;
+	color:#000;
+	font-size:16px;
+	font-weight: bold;
+}
+.search-form dl dd {
+	display:inline-block;
+}
+.search-form dl dd .term-group {display:inline-block;}
+.search-form dl dd .term-group .btn-term {
+	width:70px;
+	height:32px;
+	background-color:#fff;
+	color:#666;
+	font-size:15px;
+	border:1px solid #999;
+}
+.search-form dl dd .term-group .btn-term.on {
+	color:#60b015;
+	border:1px solid #91c90b;
+}
+
+.search-form dl dd .calendar {
+
+}
 
 /* 검색 영역 */
 .search-box {position:relative;}
