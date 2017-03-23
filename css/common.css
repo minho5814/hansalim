@@ -1543,6 +1543,33 @@ td.e-mail-form {
 	background:url(../img/sprite/button.png) no-repeat 0 -593px;
 }
 
+/*수정버튼*/
+.btn-modify {
+	display:inline-block;
+	position:relative;
+	height:22px;
+	line-height: 22px;
+	color:#666;
+	padding-left:18px;
+}
+.btn-modify:hover {
+	color:#7faf52;
+
+}
+.btn-modify:before {
+	content:'';
+	position:absolute;
+	width:13px;
+	height:14px;
+	left:0;top:2px;
+	background-image:url(../img/sprite/button.png);
+	background-repeat:no-repeat;
+	background-position: 0 -837px;
+}
+.btn-modify:hover:before {
+	background-position: 0 -852px;
+}
+
 /* 수량체크 */
 .volume-box {
 	position:relative;
@@ -4128,23 +4155,40 @@ label.check-radio .radiobox {margin-right:8px;}
 
 	}
 	.list-group .list-content .good-table tbody tr.bg {background-color:#f7f7f7; }
+
 	.list-group .list-content .good-table tbody td {height:150px; box-sizing: border-box;}
 	.list-group .list-content .good-table tbody td:first-child {vertical-align: top; padding-top:25px;}
-	.list-group .list-content .good-table tbody td:nth-child(2) {padding-left: 0;}
+	.list-group .list-content .good-table tbody td:nth-child(2) {padding-left: 0; position: relative;}
 		.list-group .list-content .goods .goods-img {float: left; }
 		.list-group .list-content .goods .txt-box {
-			/*margin-top:10px;
 			padding-left:115px;
-			display: inline-block;
-			vertical-align: middle;
-			*/
-			padding-left:115px;
+			position:absolute;
+			left:0;
+			top:50%;
+			-webkit-transform:translateY(-50%);
+			-ms-transform:translateY(-50%);
+			transform:translateY(-50%);
 		}
 		.list-group .list-content .goods .goods-name {margin-left:0; margin-bottom:5px; }
 		.list-group .list-content .goods .goods-txt,
-		.list-group .list-content .goods .goods-amount {display: block;}
-		.list-group .list-content .goods .goods-amount {margin-top:15px;}
+		.list-group .list-content .goods .goods-amount {display: block; font-size: 14px;}
+		.list-group .list-content .goods .goods-amount {margin-top:13px;}
 
+		.fixed-list {margin-top:40px;}
+		.fixed-list .title-wrap {margin-bottom:0;}
+			.list-group .content-wrap .good-table {border-color:#ddd;}
+			.list-group .content-wrap .good-table tbody td:nth-child(1) { position: relative;}
+			.list-group .content-wrap .goods .txt-box {
+				padding-left:135px;
+				position:absolute;
+				left:0;
+				top:50%;
+				-webkit-transform:translateY(-50%);
+				-ms-transform:translateY(-50%);
+				transform:translateY(-50%);
+			}
+			.list-group .content-wrap .goods .txt-box span {display: block;}
+			.list-group .content-wrap  .goods .goods-name {margin-left:0; margin-bottom:5px; }
 
 
 
