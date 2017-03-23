@@ -50,15 +50,13 @@ $(window).load(function(){
 			dayNamesMin:['일', '월', '화', '수', '목', '금', '토'],
 			firstDay: 0,
 			onSelect: function(e){
-				var date = new Date($(this).datepicker({ dateFormat:'yy/mm/dd'}).val()),
-				week = new Array('일', '월', '화', '수', '목', '금', '토');
-				if (week[date.getDay()]!= undefined){
-					$(this).val($(this).val() + '(' + (week[date.getDay()]) + ')');
+				if($(this).parents('.calendar').hasClass('term') == false){
+					var date = new Date($(this).datepicker({ dateFormat:'yy/mm/dd'}).val()),
+					week = new Array('일', '월', '화', '수', '목', '금', '토');
+					if (week[date.getDay()]!= undefined){
+						$(this).val($(this).val() + '(' + (week[date.getDay()]) + ')');
+					}
 				}
-				var dateSel = $(this).val();
-				$(this).keyup(function(){
-					$(this).val(dateSel);
-				});
 			}
 		});
 
@@ -71,7 +69,7 @@ $(window).load(function(){
 
 		var newDay = new Date( year, mon, "");
 		var lastDay = newDay.getDate();
-		var firstVal = year + '/' + mon + '/' + '1'; // 이번달 시작일
+		var firstVal = year + '/' + mon + '/' + '01'; // 이번달 시작일
 		var lastVal = year + '/' + mon + '/' + lastDay; // 이번달 마지막일
 
 		if($(this).parents('.calendar').hasClass('term')){
