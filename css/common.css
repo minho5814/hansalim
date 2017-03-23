@@ -245,6 +245,11 @@ html {
 		background-color:#f0f2ef;
 		color:#000;
 	}
+	.board-write1 th .ico-star {
+		display:inline-block;
+		color:#ec7015;
+		vertical-align:top;
+	}
 	.board-write1 td {color:#666;}
 	.board-write1 .btn-styled {
 		font-size:0;
@@ -270,6 +275,17 @@ html {
 	position:absolute;
 	top: 4px; right:0;
 }
+
+.board-write1 td .byte-text {display:inline-block; font-size:14px; color:#666;}
+.board-write1 td .byte-text em {color:#96c06e; font-weight:600;}
+
+.board-write1 td .row-wrap dt,
+.board-write1 td .row-wrap dd {display:inline-block;}
+.board-write1 td .row-wrap dt {color:#000;}
+
+.board-write1 td .coupon-box {margin-top:10px;}
+.board-write1 td .coupon-box:first-child {margin-top:0px;}
+.board-write1 td .coupon-box label {display:inline-block;width:134px;}
 
 .board-write2 {border-top:1px solid #666;}
 	.board-write2 table {border-bottom:1px solid #bbb;}
@@ -1019,6 +1035,7 @@ td.e-mail-form {
 /* 폰트 스타일 */
 .fEbold {font-weight:900 !important;}
 .fstyled1 {color:#666 !important; font-size:13px !important;}
+.num-style01 {font-weight:600; letter-spacing:-1px;}
 
 /* 폰트 컬러 */
 .fColor1 {color:#60b015 !important;} /* 녹색 */
@@ -4067,7 +4084,7 @@ label.check-radio .radiobox {margin-right:8px;}
 /* 공통 */
 .cart-wrap {
 	width:1120px;
-	margin:60px auto 0;
+	margin:60px auto 80px;
 }
 .cart-step-list {
 	position:relative;
