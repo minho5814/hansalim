@@ -931,8 +931,6 @@ td.e-mail-form {
 			margin-left:-135px;
 		}
 
-
-
 /* 스텝리스트 */
 .step-list {
 	overflow:hidden;
@@ -1019,6 +1017,7 @@ td.e-mail-form {
 .fColor2 {color:#666 !important;} /* 진한회색 */
 .fColor3 {color:#ec7015 !important;} /* 오렌지 */
 .fColor4 {color:#09babc !important;} /* 하늘색 */
+.fColor5 {color:#999 !important;} /* 연한회색 */
 
 /* 타이틀 박스 */
 .title-wrap {
@@ -1607,6 +1606,14 @@ td.e-mail-form {
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	폼요소
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* 조회 영역 */
+.search-form {
+	width:100%;
+	padding:20px 40px;
+	background-color:#f3f3f3;
+	box-sizing: border-box;
+}
+
 /* 검색 영역 */
 .search-box {position:relative;}
 	.search-box input[type=text] {
