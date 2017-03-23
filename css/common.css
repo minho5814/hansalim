@@ -3889,6 +3889,22 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 
 /* board-lsit 리스트 게시판 */
+.board-top {
+	overflow:hidden;
+	margin:40px 0 10px;
+}
+.board-top .fl {
+	float:left;
+}
+.board-top .fr {
+	float:right;
+}
+.board-top .text {
+	display: inline-block;
+	margin-right:7px;
+	line-height: 32px;
+}
+
 .board-lsit {border-top:1px solid #666;}
 .board-lsit table {border-bottom:1px solid #bbb;}
 .board-lsit table thead th {
