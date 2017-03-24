@@ -1907,6 +1907,31 @@ label.check-radio .radiobox {margin-right:8px;}
 	background-color:#e3e3e3;
 }
 
+/* 인풋 셀렉트 레이어 타입 */
+.input-select {}
+	.input-select .text-form {}
+		.input-select .text-form input {}
+		.input-select .text-form .byte-text {}
+		.input-select .text-form .byte-text .byte {}
+	.input-select .list {
+		padding:10px 0;
+		border:1px solid #91c90b;
+		background-color:#fff;
+	}
+		.input-select .list .item {
+			margin-top:1px;
+			height:24px;
+			padding-left:13px;
+			color:#666;
+			font-size:14px;
+			line-height:24px;
+			cursor:default;
+		}
+		.input-select .list .item:first-dhild {margin-top:0;}
+		.input-select .list .item:hover,
+		.input-select .list .item.on {background-color: #d1ef8a;}/* on */
+	.input-select {}
+	.input-select {}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	탭
