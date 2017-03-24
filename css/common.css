@@ -1046,6 +1046,7 @@ td.e-mail-form {
 .mgT20 {margin-top:20px !important;}
 .mgT25 {margin-top:25px !important;}
 .mgT30 {margin-top:30px !important;}
+.mgT35 {margin-top:35px !important;}
 .mgT40 {margin-top:40px !important;}
 .mgT45 {margin-top:45px !important;}
 .mgT50 {margin-top:50px !important;}
@@ -1065,6 +1066,7 @@ td.e-mail-form {
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 /* 폰트 스타일 */
 .fEbold {font-weight:900 !important;}
+.fbold {font-weight:bold !important;}
 .fstyled1 {color:#666 !important; font-size:13px !important;}
 .num-style01 {font-weight:600; letter-spacing:-1px;}
 
@@ -1075,8 +1077,10 @@ td.e-mail-form {
 .fColor4 {color:#09babc !important;} /* 하늘색 */
 .fColor5 {color:#999 !important;} /* 연한회색 */
 .fColor6 {color:#766253 !important;} /* 갈색 */
+.fColor7 {color:#000 !important;} /* 검정 */
 
-.
+/*width*/
+.wid80 {width:80% !important;}
 
 /* 타이틀 박스 */
 .title-wrap {
@@ -4680,6 +4684,9 @@ label.check-radio .radiobox {margin-right:8px;}
 
 /* 출자금 의무증자 제도 안내 (IM-SH0401.html) */
 .pop-invest-inst {width:400px;}
+
+/* 운송장조회 (IM-MY030202.html) */
+.pop-way-look {width:600px;}
 
 /* 한살림서울 소개 안내 동영상 */
 .video-area {
