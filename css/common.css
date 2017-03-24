@@ -263,6 +263,8 @@ html {
 		font-size:14px;
 		line-height:16px;
 	}
+	.board-write1 .price-black {display:block; margin-top:5px; font-size:18px; color:#000; font-weight:600; letter-spacing:-1px; }
+	.board-write1 .price-black span {font-size:14px; color:#666;vertical-align:top;}
 
 .board-write1 td.inner-table {
 	padding:20px;
@@ -535,6 +537,21 @@ td.e-mail-form {
 	.bullet-list3.right .item input[type=text],
 	.bullet-list3.right .item input[type=number] {text-align:right;}
 
+.bullet-list4 {}
+		.bullet-list4 .item {
+			position:relative;
+			padding:2px 0 2px 15px;
+			color:#999;
+			font-size:14px;
+			text-align:left;
+			line-height:19px;
+		}
+		.bullet-list4 .item:before {
+			content:'※';
+			position:absolute;
+			left:0;
+			top:2px;
+		}
 /* 박스링크 리스트 */
 .box-link-list {
 	border:1px solid #bbb;
@@ -1054,6 +1071,7 @@ td.e-mail-form {
 .mgT80 {margin-top:80px !important;}
 
 .mgL10 {margin-left:10px !important;}
+.mgL30 {margin-left:30px !important;}
 
 .pdT0 {padding-top:0 !important;}
 .pdT20 {padding-top:20px !important;}
@@ -2673,6 +2691,12 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 	.lnb-container .content .cont-box {margin-top:14px;}
 
+	.lnb-container .content .cont-box .exhibitions-banner {
+		margin:60px auto 20px;
+	}
+	.lnb-container .content .cont-box .exhibitions-banner img {
+		vertical-align: middle;
+	}
 /* =========================================================================================================
 	푸터
 ========================================================================================================= */
@@ -4246,11 +4270,12 @@ label.check-radio .radiobox {margin-right:8px;}
 .board-lsit table tbody td {
 	padding:14px 0;
 	color:#666;
-	font-size:16px;
+	font-size:15px;
 	text-align: center;
 	line-height:24px;
 	border-top:1px solid #e3e3e3;
 }
+.board-lsit table tbody td.align-left {padding-left:10px;}
 .board-lsit table tbody tr:first-child td {border-top:0;}
 .board-lsit table tbody td.title {text-align: left;}
 .board-lsit table tbody td.title a {
@@ -4261,6 +4286,51 @@ label.check-radio .radiobox {margin-right:8px;}
 	text-overflow: ellipsis;
 }
 .board-lsit table tbody td img {vertical-align:middle;}
+.board-lsit table .checkbox {vertical-align: middle;}
+.board-lsit table .btn-wrap .waybill{
+	position:relative;
+	display: inline-block;
+}
+.board-lsit table .btn-wrap .search-waybill {
+	display: inline-block;
+}
+
+.board-lsit table .waybill-box {
+	display: none;
+	position:absolute;
+	top:32px; right: 0;
+	width: 210px;
+	padding:15px 20px 13px;
+	background-color: #fff;
+	border:1px solid #60b015;
+}
+.board-lsit table .waybill-box .btn-close {
+	position: absolute;
+	top:14px; right:14px;
+	width:24px; height:24px;
+	background:url(../img/btn/btn_pop_close.png) 50% 50% no-repeat;
+	font-size: 0;
+	line-height: 0;
+}
+.board-lsit table .waybill-box dt {
+	margin-bottom: 9px;
+	font-size:14px;
+	color:#000;
+	text-align: left;
+}
+.board-lsit table .waybill-box dd ul li {
+	position: relative;
+	padding-left: 11px;
+	line-height: 26px;
+	text-align: left;
+}
+.board-lsit table .waybill-box dd ul li:before {
+	content: '';
+	position: absolute;
+	top:11px; left:0;
+	width:3px; height: 3px;
+	background-color: #676767;
+}
 
 .board-lsit.type2 table thead th {background-color:#f0f2ef;}
 
@@ -4634,6 +4704,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		}
 	.layer-popup .pop-content {padding:20px 30px;}
 		.layer-popup .pop-content .cTitle4 {line-height:30px;}
+		.layer-popup .pop-content .cTitle4.ty02 {margin-bottom:10px;}
 	.layer-popup .btn-bottom {
 		padding:40px 0 10px;
 		font-size:0;
@@ -4849,6 +4920,39 @@ label.check-radio .radiobox {margin-right:8px;}
 	line-height:24px;
 	letter-spacing:-1px;
 }
+
+/*외상결제 팝업 */
+.pop-credit,
+.pop-supply-change {width: 600px; box-sizing: border-box}
+
+/*공급변동내역 팝업 */
+ .pop-supply-change .board-lsit th:first-child,
+ .pop-supply-change .board-lsit td:first-child {padding-left:20px; text-align: left;}
+
+ .pop-supply-change .board-lsit th,
+ .pop-supply-change .board-lsit td {font-size: 15px;}
+ .pop-supply-change .board-lsit th {padding:10px 0;}
+ .pop-supply-change .board-lsit td {padding:18px 0; line-height: 20px;}
+
+ /*공급내역 인쇄하기 팝업 */
+.pop-supply-print {width:900px;}
+.pop-supply-print .pop-content .cTitle4 {margin-bottom:10px;}
+.pop-supply-print .top-area {position: relative; margin-top:15px;}
+.pop-supply-print .top-area .date {position:absolute; right:0; bottom:10px; color:#000; font-weight: bold}
+.pop-supply-print .top-area .date em {margin-left:5px; font-weight: normal; color:#666;}
+.pop-supply-print .cTitle1 {letter-spacing: 5px; text-align: center;}
+.pop-supply-print .table-area {overflow: hidden; margin-top:30px;}
+.pop-supply-print .table-area > div {width: 410px;}
+.pop-supply-print .table-area .left {float:left; width:54}
+.pop-supply-print .table-area .right {float:right;}
+.pop-supply-print .board-wrap {margin-top: 15px;}
+.pop-supply-print .board-lsit th,
+.pop-supply-print .board-lsit td {font-size: 15px;}
+.pop-supply-print .board-lsit td:nth-child(2) {text-align: left; padding-left:10px;}
+.pop-supply-print .price-text .price {font-size: 18px}
+
+.pop-supply-print .bullet-list4 {margin-top:15px;}
+.pop-supply-print .btn-bottom {padding:50px 0 10px}
 
 /* Foot Utill */
 .content-w1120 {
