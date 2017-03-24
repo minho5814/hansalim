@@ -2558,7 +2558,82 @@ label.check-radio .radiobox {margin-right:8px;}
 		line-height:0;
 	}
 	.depth-add-list .link:first-child {margin-top:0;}
-	.depth-add-list {}
+
+/* =========================================================================================================
+	LNB
+========================================================================================================= */
+.lnb {
+	width:180px;
+	box-sizing:border-box;
+	border:1px solid #505050;
+}
+.lnb-title {
+	position:relative;
+	width:100%;
+	height:90px;
+	background-color:#505050;
+	text-align:center;
+}
+	.lnb-title .title {
+		position:absolute;
+		left:0;right:0;top:50%;
+		-webkit-transform:translateY(-50%);
+		transform:translateY(-50%);
+		transform:translateY(-50%);
+		color:#fff;
+		font-size:22px;
+		font-weight:bold;
+		line-height:28px;
+	}
+
+.lnb-list {}
+.lnb-item {
+	padding:10px 0 14px;
+	border-top:1px solid #ddd;
+}
+.lnb-item:first-child {border-top:0;}
+	.lnb-item .link {
+		display:block;
+		padding:0 24px;
+	}
+	.lnb-item .title {}
+		.lnb-item .title .link {
+			color:#000;
+			font-size:15px;
+			font-weight:bold;
+			line-height:35px;
+		}
+	.lnb-item .list {}
+		.lnb-item .list .item {}
+			.lnb-item .list .item .link {
+				color:#666;
+				font-size:14px;
+				line-height:26px;
+			}
+			.lnb-item .list .item:hover .link,
+			.lnb-item .list .item.on .link {color:#60b015;}/* on */
+			.lnb-item .list .item .link .text {
+				display:inline-block;
+				position:relative;
+			}
+			.lnb-item .list .item .link .text:before,
+			.lnb-item .list .item .link .text:before {
+				content:'';
+				position:absolute;
+				left:0;bottom:3px;
+				width:0;
+				height:1px;
+				background-color:#60b015;
+				opacity:0;
+			}
+			.lnb-item .list .item:hover .link .text:before,
+			.lnb-item .list .item.on .link .text:before {
+				width:100%;
+				opacity:1;
+				-webkit-transition:width .2s;
+				-ms-transition:width .2s;
+				transition:width .2s;
+			}/* on */
 
 /* =========================================================================================================
 	푸터
