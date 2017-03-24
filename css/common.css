@@ -2691,6 +2691,12 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 	.lnb-container .content .cont-box {margin-top:14px;}
 
+	.lnb-container .content .cont-box .exhibitions-banner {
+		margin:60px auto 20px;
+	}
+	.lnb-container .content .cont-box .exhibitions-banner img {
+		vertical-align: middle;
+	}
 /* =========================================================================================================
 	푸터
 ========================================================================================================= */
@@ -4264,7 +4270,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .board-lsit table tbody td {
 	padding:14px 0;
 	color:#666;
-	font-size:16px;
+	font-size:15px;
 	text-align: center;
 	line-height:24px;
 	border-top:1px solid #e3e3e3;
@@ -4279,6 +4285,51 @@ label.check-radio .radiobox {margin-right:8px;}
 	text-overflow: ellipsis;
 }
 .board-lsit table tbody td img {vertical-align:middle;}
+.board-lsit table .checkbox {vertical-align: middle;}
+.board-lsit table .btn-wrap .waybill{
+	position:relative;
+	display: inline-block;
+}
+.board-lsit table .btn-wrap .search-waybill {
+	display: inline-block;
+}
+
+.board-lsit table .waybill-box {
+	display: none;
+	position:absolute;
+	top:32px; right: 0;
+	width: 210px;
+	padding:15px 20px 13px;
+	background-color: #fff;
+	border:1px solid #60b015;
+}
+.board-lsit table .waybill-box .btn-close {
+	position: absolute;
+	top:14px; right:14px;
+	width:24px; height:24px;
+	background:url(../img/btn/btn_pop_close.png) 50% 50% no-repeat;
+	font-size: 0;
+	line-height: 0;
+}
+.board-lsit table .waybill-box dt {
+	margin-bottom: 9px;
+	font-size:14px;
+	color:#000;
+	text-align: left;
+}
+.board-lsit table .waybill-box dd ul li {
+	position: relative;
+	padding-left: 11px;
+	line-height: 26px;
+	text-align: left;
+}
+.board-lsit table .waybill-box dd ul li:before {
+	content: '';
+	position: absolute;
+	top:11px; left:0;
+	width:3px; height: 3px;
+	background-color: #676767;
+}
 
 .board-lsit.type2 table thead th {background-color:#f0f2ef;}
 
