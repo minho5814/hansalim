@@ -210,16 +210,6 @@ $(window).load(function(){
 		$('.text-leng').html(content.length + '/500자');
 	});
 
-
-
-	$('.list-title .btn-list-close').each(function(){
-		$(this).click(function(){
-			//$(this).parents('.list-title')
-			$(this).parents('.list-title').toggleClass('close').next().slideToggle();
-		});
-
-	});
-
 	/* ===========================================================================================================
 		스크롤 이벤트
 	=========================================================================================================== */
@@ -373,17 +363,6 @@ $(window).load(function(){
 		}
 	});
 
-	/* 테이블 안 체크박스 전체 선택 */
-	$('th input[type=checkbox]').change(function(){
-		if(this.checked){
-			$(this).parents('table').find('input[type=checkbox]').prop('checked', true);
-			$(this).parents('table').find('.checkbox').addClass('checked');
-		}else{
-			$(this).parents('table').find('input[type=checkbox]').prop('checked', false);
-			$(this).parents('table').find('.checkbox').removeClass('checked');
-		}
-	});
-
 	/* 수량체크 */
 	$('body').click(function(){
 		$('.volume-box').removeClass('on');
@@ -491,6 +470,42 @@ $(window).load(function(){
 	})
 	$('.btn-layer .btn-close').click(function(){
 		$('.btn-layer').removeClass('on').find('.hint-layer').slideUp(100);
+	});
+
+	/* ===========================================================================================================
+		장바구니 (sh/)
+	=========================================================================================================== */
+	/* 장바구니 (IM-SH01.html) */
+	// 아코디언
+	$('.list-group.on .list-content').slideDown(200);
+	$('.list-title .btn-list-close').click(function(){
+		if($(this).parents('.list-group').hasClass('on')){
+			$(this).parents('.list-group').removeClass('on').find('.list-content').slideUp(100);
+		}else{
+			$(this).parents('.list-group').addClass('on').find('.list-content').slideDown(200);
+		}
+	});
+	// 테이블 안 체크박스 전체 선택
+	$('th input[type=checkbox]').change(function(){
+		if(this.checked){
+			$(this).parents('table').find('tr').not('.bg').find('input[type=checkbox]').prop('checked', true).parents('.checkbox').addClass('checked');
+			$(this).parents('table').find('input[type=checkbox]:disabled').prop('checked', false).parents('.checkbox').removeClass('checked');
+		}else{
+			$(this).parents('table').find('tr').not('.bg').find('input[type=checkbox]').prop('checked', false).parents('.checkbox').removeClass('checked');
+		}
+	});
+	$('td input[type=checkbox]').change(function(){
+		var boxLen = $(this).parents('table').find('td input[type=checkbox]').length;
+		var disLen = $(this).parents('table').find('td input[type=checkbox]:disabled').length;
+		var bgLen = $(this).parents('table').find('.bg td input[type=checkbox]').length;
+		var len = boxLen - (disLen + bgLen);
+		var checkLen = $(this).parents('table').find('td input[type=checkbox]:checked').length;
+		var bgCheckLen = $(this).parents('table').find('.bg td input[type=checkbox]:checked').length;
+		if(checkLen - bgCheckLen >= len){
+			$(this).parents('table').find('th input[type=checkbox]').prop('checked', true).parents('.checkbox').addClass('checked');
+		}else{
+			$(this).parents('table').find('th input[type=checkbox]').prop('checked', false).parents('.checkbox').removeClass('checked');
+		}
 	});
 
 	/* ===========================================================================================================

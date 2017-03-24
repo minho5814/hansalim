@@ -824,7 +824,7 @@
 				<span class="arrow">&gt;</span>
 				<a href="#" class="item">거래정보</a>
 				<span class="arrow">&gt;</span>
-				<span class="item">주문조회</span>
+				<span class="item">공급내역조회</span>
 			</div>
 		</div>
 
@@ -854,8 +854,8 @@
 					<li class="lnb-item">
 						<h3 class="title"><a href="#" class="link">거래정보</a></h3>
 						<ul class="list">
-							<li class="item on"><a href="#" class="link"><span class="text">주문조회</span></a></li>
-							<li class="item"><a href="#" class="link"><span class="text">공급내역조회</span></a></li>
+							<li class="item"><a href="#" class="link"><span class="text">주문조회</span></a></li>
+							<li class="item on"><a href="#" class="link"><span class="text">공급내역조회</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">매장이용내역조회</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">거래내역조회</span></a></li>
 						</ul>
@@ -891,10 +891,31 @@
 			</div>
 			<!-- /LNB -->
 			<div class="content">
-				<h3 class="cTitle1">주문조회</h3>
+				<h3 class="cTitle1">공급내역조회</h3>
 				<div class="cont-box">
+					<dl class="search-form">
+						<dt class="title">조회기간</dt>
+						<dd class="cont">
+							<div class="btn-area">
+								<button type="button" class="btn-term month1 on">1개월</button>
+								<button type="button" class="btn-term month3">3개월</button>
+								<button type="button" class="btn-term month6">6개월</button>
+							</div>
+							<div class="calendar-area">
+								<span class="calendar term">
+									<input type="text" class="datepicker start" readonly>
+								</span>
+								<span class="swung-dash">~</span>
+								<span class="calendar term">
+									<input type="text" class="datepicker end" readonly>
+								</span>
+							</div>
+							<button type="button" class="btn-search">조회</button>
+						</dd>
+					</dl>
+
 					<div class="board-wrap">
-						<div class="board-top mgT0">
+						<div class="board-top">
 							<div class="fl">
 								<select class="styled1" style="width:130px;">
 									<option>전체</option>
@@ -905,54 +926,52 @@
 									<option>천연벽지</option>
 								</select>
 							</div>
+							<div class="fr">
+								<span class="text">환불가능금액 <strong class="fColor1">2,000원</strong></span>
+								<button type="button" class="btn-round-text btn-gray">환불신청</button>
+							</div>
 						</div>
 
 						<div class="board-lsit type2">
 							<table>
 								<colgroup>
-									<col style="width:5%;">
-									<col style="width:10%;">
+									<col style="width:6%;">
+									<col style="width:13%;">
 									<col style="*">
-									<col style="width:13%;">
-									<col style="width:13%;">
+									<col style="width:10%;">
 									<col style="width:12%;">
 									<col style="width:10%;">
 									<col style="width:14%;">
 								</colgroup>
 								<thead>
 									<tr>
-										<th>
-											<input type="checkbox" class="styled1">
-										</th>
+										<th>번호</th>
+										<th>공급/배송일</th>
+										<th>내역</th>
 										<th>구분</th>
-										<th>주문내역</th>
-										<th>주문일</th>
-										<th>공급일</th>
-										<th>합계금액</th>
+										<th>공급합계금액</th>
 										<th>결제방법</th>
-										<th>상태</th>
+										<th>공급상태</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td><input type="checkbox" class="styled1"></td>
-										<td>일반품</td>
+										<td>10</td>
+										<td><a href="#none">2017.02.27(월)</a></td>
 										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
-										<td>2017.02.27(월)</td>
-										<td>2017.02.27(월)</td>
+										<td>일반품</td>
 										<td>9,700원</td>
 										<td>CMS</td>
-										<td>주문완료</td>
+										<td>정상</td>
 									</tr>
 									<tr>
-										<td><input type="checkbox" class="styled1"></td>
-										<td>선물택배</td>
+										<td>9</td>
+										<td><a href="#none">2017.02.27(월)</a></td>
 										<td class="align-left"><a href="#none">유기농면침구커버세트(슈퍼싱글/하늘색) 외 2건</a></td>
-										<td>2017.02.27(월)</td>
-										<td>2017.02.27(월)</td>
+										<td>일반품</td>
 										<td>50,000원</td>
 										<td>카드</td>
-										<td>주문완료
+										<td>정상
 											<div class="btn-wrap">
 												<div class="waybill">
 													<span class="search-waybill">
@@ -976,45 +995,99 @@
 										</td>
 									</tr>
 									<tr>
-										<td><input type="checkbox" class="styled1"></td>
-										<td>특별품</td>
-										<td class="align-left"><a href="#none">유기 연엽식기세트 외 1건</a></td>
-										<td>2017.02.27(월)</td>
-										<td>2017.02.27(월)</td>
-										<td>9,700원</td>
-										<td>무통장입금</td>
-										<td>주문완료</td>
-									</tr>
-									<tr>
-										<td><input type="checkbox" class="styled1" disabled="disabled"></td>
-										<td>김장채소</td>
+										<td>8</td>
+										<td><a href="#none">2017.02.27(월)</a></td>
 										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
-										<td>2017.02.27(월)</td>
-										<td>2017.02.27(월)</td>
+										<td>일반품</td>
 										<td>9,700원</td>
 										<td>CMS</td>
-										<td>주문완료</td>
+										<td><a href="#none" class="btn-supply-change">변동</a></td>
 									</tr>
 									<tr>
-										<td><input type="checkbox" class="styled1" disabled="disabled"></td>
-										<td>천연벽지</td>
-										<td class="align-left"><a href="#none">유기 연엽식기세트 외 1건</a></td>
-										<td>2017.02.27(월)</td>
-										<td>2017.02.27(월)</td>
+										<td>7</td>
+										<td><a href="#none">2017.02.27(월)</a></td>
+										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
+										<td>일반품</td>
 										<td>9,700원</td>
 										<td>CMS</td>
-										<td>주문완료</td>
+										<td>정상</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td><a href="#none">2017.02.27(월)</a></td>
+										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
+										<td>일반품</td>
+										<td>9,700원</td>
+										<td>CMS</td>
+										<td>정상</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td><a href="#none">2017.02.27(월)</a></td>
+										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
+										<td>일반품</td>
+										<td>9,700원</td>
+										<td>CMS</td>
+										<td>정상</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td><a href="#none">2017.02.27(월)</a></td>
+										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
+										<td>일반품</td>
+										<td>9,700원</td>
+										<td>CMS</td>
+										<td>정상</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td><a href="#none">2017.02.27(월)</a></td>
+										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
+										<td>일반품</td>
+										<td>9,700원</td>
+										<td>CMS</td>
+										<td>정상</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td><a href="#none">2017.02.27(월)</a></td>
+										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
+										<td>일반품</td>
+										<td>9,700원</td>
+										<td>CMS</td>
+										<td>정상</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td><a href="#none">2017.02.27(월)</a></td>
+										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
+										<td>일반품</td>
+										<td>9,700원</td>
+										<td>CMS</td>
+										<td>정상</td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
 
-						<div class="btn-center mgT60">
-							<a href="#" class="btn-text btn-gray">주문삭제</a>
+						<div class="pagenation">
+							<div class="page-list">
+								<a href="#none" class="button btn-first">맨앞</a>
+								<a href="#none" class="button btn-prev">이전</a>
+								<span class="number on">1</span>
+								<a href="#none" class="number">2</a>
+								<a href="#none" class="number">3</a>
+								<a href="#none" class="number">4</a>
+								<a href="#none" class="number">5</a>
+								<a href="#none" class="number">6</a>
+								<a href="#none" class="number">7</a>
+								<a href="#none" class="number">8</a>
+								<a href="#none" class="number">9</a>
+								<a href="#none" class="number">10</a>
+								<a href="#none" class="button btn-next">다음</a>
+								<a href="#none" class="button btn-last">맨뒤</a>
+							</div>
 						</div>
-					</div>
-					<div class="exhibitions-banner">
-						<img src="../../img/temp/@temp_exhibitions01.jpg" alt="가격인하!! 알찬 사과의 특별한 변신 - 아삭, 향긋한 사과">
 					</div>
 
 					<div class="box-content1">
@@ -1186,18 +1259,75 @@
 	</div>
 </div>
 
+<!-- 공급변동 -->
+<div class="layer-popup pop-supply-change">
+	<div class="pop-head">
+		<h1 class="pop-title">공급변동내역</h1>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<p class="pop-text1">공급 변동 내역을 확인할 수 있습니다.</p>
+		<div class="board-lsit type2">
+			<table>
+				<colgroup>
+					<col style="*">
+					<col style="width:14%;">
+					<col style="width:14%;">
+					<col style="width:14%;">
+					<col style="width:25%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>물품명</th>
+						<th>주문단가<br>(수량)</th>
+						<th>공급단가<br>(수량)</th>
+						<th>소계</th>
+						<th>변동사유</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>세발나물(200g) 세발나세발나</td>
+						<td>2,000원<br>(3개)</td>
+						<td>2,000원<br>(3개)</td>
+						<td>4,000원</td>
+						<td>공급단가 변경</td>
+					</tr>
+					<tr>
+						<td>자연산홍합(1.5kg)</td>
+						<td>2,000원<br>(3개)</td>
+						<td>2,000원<br>(3개)</td>
+						<td>4,000원</td>
+						<td>공급가능수량 부족</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="btn-bottom">
+			<a href="#" class="btn-text btn-green">확인</a>
+		</div>
+	</div>
+</div>
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 	$(window).load(function(){
+		/* 운송장조회 버튼 */
 		$('.waybill .search-waybill').click(function(){
 			$(this).next('.waybill-box').show();
 		});
 
+		/* 운송장조회 닫기 버튼 */
 		$('.waybill-box .btn-close').click(function(){
 			$(this).parents('.waybill-box').hide();
+		});
+
+		/* 공급변동내역 */
+		$('.btn-supply-change').click(function(){
+			$('.pop-supply-change').fadeIn(200);
 		});
 	});
 </script>
