@@ -424,12 +424,16 @@ td.e-mail-form {
     font-weight: 900;
     line-height: 15px;
 }
+.good-table table td.goods .txt-box span {display: block;}
 .good-table table td.goods .goods-name {
-    display: inline-block;
-    margin-left:14px;
-    color:#666;
+	margin-bottom:5px;
+	color:#666;
     font-size: 15px;
 }
+.good-table table td.goods .goods-txt,
+.good-table table td.goods .goods-amount {display: block; font-size: 14px;}
+.good-table table td.goods .goods-amount {margin-top:13px;}
+
 .good-table table td .price {
     margin-right:3px;
     font-size:18px;
@@ -440,7 +444,6 @@ td.e-mail-form {
 .good-table table td.goods .goods-area {
 	position: relative;
 }
-
 .good-table table td.goods .txt-box {
 	padding-left:115px;
 	position:absolute;
@@ -450,10 +453,6 @@ td.e-mail-form {
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
 }
-.good-table table td.goods .goods-name {margin-left:0; margin-bottom:5px; }
-.good-table table td.goods .goods-txt,
-.good-table table td.goods .goods-amount {display: block; font-size: 14px;}
-.good-table table td.goods .goods-amount {margin-top:13px;}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	리스트
@@ -1752,6 +1751,7 @@ td.e-mail-form {
 		}
 			.search-form .cont .calendar-area .calendar {
 				float:left;
+				width:179px;
 			}
 			.search-form .cont .calendar-area .calendar .datepicker {
 				width:140px;
@@ -1760,8 +1760,7 @@ td.e-mail-form {
 				background-color:#fff;
 				text-align:center;
 			}
-			.search-form .cont .calendar-area .calendar .ui-datepicker-trigger {
-				margin-left:4px;
+			.search-form .cont .calendar-area .calendar .ui-datepicker-trigger:before {
 				border-radius:2px;
 				background-color:#666;
 			}
@@ -2105,28 +2104,37 @@ label.check-radio .radiobox {margin-right:8px;}
 				margin-left:7px;
 			}
 /* 데이트피커 */
-.calendar {overflow:hidden;}
+.calendar {
+	overflow:hidden;
+	position:relative;
+	width:156px;
+	height:32px;
+}
 .calendar .datepicker {
-	float:left;
-	width:121px;
+	width:100%;
 	height:32px;
 	padding:0 10px;
-	border-radius:2px 0 0 2px;
 	border:1px solid #8dc63f;
-	border-right:0;
 	background-color:#f3f3f3;
 	font-size:14px;
 }
 	.calendar .ui-datepicker-trigger {
 		overflow:hidden;
-		float:left;
-		width:35px;
+		position:absolute;
+		left:0;top:0;
+		width:100%;
 		height:32px;
-		border-radius:0 2px 2px 0;
-		background:#8dc63f url(../img/btn/btn_calendar.png) no-repeat 50% 50%;
 		font-size:0;
 		text-indent:-9999px;
 		line-height:0;
+	}
+	.calendar .ui-datepicker-trigger:before {
+		content:'';
+		position:absolute;
+		right:0;top:0;
+		width:35px;
+		height:32px;
+		background:#8dc63f url(../img/btn/btn_calendar.png) no-repeat 50% 50%;
 	}
 
 	.header .search-box {
@@ -4308,17 +4316,6 @@ label.check-radio .radiobox {margin-right:8px;}
 		.fixed-list {margin-top:40px;}
 		.fixed-list .title-wrap {margin-bottom:0;}
 			.list-group .content-wrap .good-table {border-color:#ddd;}
-			.list-group .content-wrap .goods .txt-box {
-				padding-left:135px;
-				position:absolute;
-				left:0;
-				top:50%;
-				-webkit-transform:translateY(-50%);
-				-ms-transform:translateY(-50%);
-				transform:translateY(-50%);
-			}
-			.list-group .content-wrap .goods .txt-box span {display: block;}
-			.list-group .content-wrap  .goods .goods-name {margin-left:0; margin-bottom:5px; }
 
 .total-count {
 	overflow: hidden;
