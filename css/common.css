@@ -4827,6 +4827,26 @@ label.check-radio .radiobox {margin-right:8px;}
 
 .pop-like .btn-center {margin:30px 0;}
 
+/*선물택배 배송지 */
+.layer-popup.pop-gift-ship .gift-ship-area {margin-bottom:10px;}
+.layer-popup.pop-gift-ship .gift-ship-area .gift-ship-box {
+	overflow:hidden;
+	height:385px;
+	overflow:auto;
+	border-bottom:1px solid #bbb;
+}
+.layer-popup.pop-gift-ship .gift-ship-area .btn-text {min-width:120px;}
+
+/*출자금 의무증자 제도 안내 */
+.layer-popup.pop-invest-inst .invest-area {margin-bottom:10px;}
+.layer-popup.pop-invest-inst .invest-area .invest-box p {
+	margin-top:10px;
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+	letter-spacing:-1px;
+}
+
 /* Foot Utill */
 .content-w1120 {
 	width: 1120px;
