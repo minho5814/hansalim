@@ -433,6 +433,10 @@ td.e-mail-form {
 .good-table table td.goods .goods-txt,
 .good-table table td.goods .goods-amount {display: block; font-size: 14px;}
 .good-table table td.goods .goods-amount {margin-top:13px;}
+.good-table table td.goods .supply-date {
+	color:#999;
+	font-size:14px;
+}
 
 .good-table table td .price {
     margin-right:3px;
