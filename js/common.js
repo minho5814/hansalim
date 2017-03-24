@@ -373,6 +373,17 @@ $(window).load(function(){
 		}
 	});
 
+	/* 테이블 안 체크박스 전체 선택 */
+	$('th input[type=checkbox]').change(function(){
+		if(this.checked){
+			$(this).parents('table').find('input[type=checkbox]').prop('checked', true);
+			$(this).parents('table').find('.checkbox').addClass('checked');
+		}else{
+			$(this).parents('table').find('input[type=checkbox]').prop('checked', false);
+			$(this).parents('table').find('.checkbox').removeClass('checked');
+		}
+	});
+
 	/* 수량체크 */
 	$('body').click(function(){
 		$('.volume-box').removeClass('on');
