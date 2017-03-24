@@ -1045,11 +1045,13 @@ td.e-mail-form {
 .mgT15 {margin-top:15px !important;}
 .mgT20 {margin-top:20px !important;}
 .mgT25 {margin-top:25px !important;}
+.mgT30 {margin-top:30px !important;}
 .mgT40 {margin-top:40px !important;}
 .mgT45 {margin-top:45px !important;}
 .mgT50 {margin-top:50px !important;}
 .mgT60 {margin-top:60px !important;}
 .mgT65 {margin-top:65px !important;}
+.mgT80 {margin-top:80px !important;}
 
 .mgL10 {margin-left:10px !important;}
 
@@ -1074,6 +1076,7 @@ td.e-mail-form {
 .fColor5 {color:#999 !important;} /* 연한회색 */
 .fColor6 {color:#766253 !important;} /* 갈색 */
 
+.
 
 /* 타이틀 박스 */
 .title-wrap {
@@ -1120,13 +1123,20 @@ td.e-mail-form {
 	line-height:26px;
 }
 
+.cTitle6 {
+	color:#000;
+	font-size:15px;
+	font-weight:bold;
+	line-height:25px;
+}
+
 .info-text {
-	margin-bottom:9px;
 	padding-left:28px;
 	color:#999;
 	line-height: 26px;
 	background:url(../img/icon/ico_notice02.png) 0 2px no-repeat;
 }
+.title-wrap .info-text {margin-bottom:9px;}
 
 /* 정렬 */
 .align-center {text-align:center !important;}
@@ -1921,30 +1931,50 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 
 /* 인풋 셀렉트 레이어 타입 */
-.input-select {}
-	.input-select .text-form {}
-		.input-select .text-form input {}
-		.input-select .text-form .byte-text {}
-		.input-select .text-form .byte-text .byte {}
-	.input-select .list {
-		padding:10px 0;
-		border:1px solid #91c90b;
-		background-color:#fff;
+.input-select {
+	height:32px;
+}
+.input-select:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+	.input-select .text-form {
+		float:left;
+		position:relative;
+		width:820px;
 	}
-		.input-select .list .item {
-			margin-top:1px;
-			height:24px;
-			padding-left:13px;
+		.input-select .text-form input {}
+
+		.input-select .list {
+			display:none;
+			position:absolute;
+			left:0;right:0;top:31px;
+			padding:10px 0;
+			border:1px solid #91c90b;
+			background-color:#fff;
+		}
+			.input-select .list .item {
+				margin-top:1px;
+				height:24px;
+				padding-left:13px;
+				color:#666;
+				font-size:14px;
+				line-height:24px;
+				cursor:default;
+			}
+			.input-select .list .item:first-dhild {margin-top:0;}
+			.input-select .list .item:hover,
+			.input-select .list .item.on {background-color: #d1ef8a;}/* on */
+		.input-select .byte-text {
+			float:left;
+			height:32px;
+			margin-left:10px;
 			color:#666;
 			font-size:14px;
-			line-height:24px;
-			cursor:default;
+			line-height:32px;
 		}
-		.input-select .list .item:first-dhild {margin-top:0;}
-		.input-select .list .item:hover,
-		.input-select .list .item.on {background-color: #d1ef8a;}/* on */
-	.input-select {}
-	.input-select {}
+		.input-select .byte-text .byte {color:#63a607;}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	탭
@@ -2553,7 +2583,95 @@ label.check-radio .radiobox {margin-right:8px;}
 		line-height:0;
 	}
 	.depth-add-list .link:first-child {margin-top:0;}
-	.depth-add-list {}
+
+/* =========================================================================================================
+	LNB 타입
+========================================================================================================= */
+.lnb-container {
+	overflow:hidden;
+	width:1120px;
+	margin:20px auto 0;
+}
+.lnb-container .lnb {
+	width:180px;
+	float:left;
+	box-sizing:border-box;
+	border:1px solid #505050;
+}
+.lnb-container .lnb-title {
+	position:relative;
+	width:100%;
+	height:90px;
+	background-color:#505050;
+	text-align:center;
+}
+	.lnb-container .lnb-title .title {
+		position:absolute;
+		left:0;right:0;top:50%;
+		-webkit-transform:translateY(-50%);
+		transform:translateY(-50%);
+		transform:translateY(-50%);
+		color:#fff;
+		font-size:22px;
+		font-weight:bold;
+		line-height:28px;
+	}
+
+.lnb-container .lnb-list {}
+.lnb-container .lnb-item {
+	padding:10px 0 14px;
+	border-top:1px solid #ddd;
+}
+.lnb-container .lnb-item:first-child {border-top:0;}
+	.lnb-container .lnb-item .link {
+		display:block;
+		padding:0 24px;
+	}
+	.lnb-container .lnb-item .title {}
+		.lnb-container .lnb-item .title .link {
+			color:#000;
+			font-size:15px;
+			font-weight:bold;
+			line-height:35px;
+		}
+	.lnb-container .lnb-item .list {}
+		.lnb-container .lnb-item .list .item {}
+			.lnb-container .lnb-item .list .item .link {
+				color:#666;
+				font-size:14px;
+				line-height:26px;
+			}
+			.lnb-container .lnb-item .list .item:hover .link,
+			.lnb-container .lnb-item .list .item.on .link {color:#60b015;}/* on */
+			.lnb-container .lnb-item .list .item .link .text {
+				display:inline-block;
+				position:relative;
+			}
+			.lnb-container .lnb-item .list .item .link .text:before,
+			.lnb-container .lnb-item .list .item .link .text:before {
+				content:'';
+				position:absolute;
+				left:0;bottom:3px;
+				width:0;
+				height:1px;
+				background-color:#60b015;
+				opacity:0;
+			}
+			.lnb-container .lnb-item .list .item:hover .link .text:before,
+			.lnb-container .lnb-item .list .item.on .link .text:before {
+				width:100%;
+				opacity:1;
+				-webkit-transition:width .2s;
+				-ms-transition:width .2s;
+				transition:width .2s;
+			}/* on */
+
+.lnb-container .content {
+	float:right;
+	width:900px;
+	padding-top:20px;
+}
+	.lnb-container .content .cont-box {margin-top:14px;}
 
 /* =========================================================================================================
 	푸터
@@ -4415,6 +4533,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .cart-box-content h4 {margin-bottom:5px;}
 .cart-box-content .box-content1 .box-cont p {overflow:hidden; margin-top:0; letter-spacing: -0.5px;}
 .cart-box-content .box-content1 .box-cont p .btn-mini-text.btn-icon {float:right;}
+.cart-box-content .box-content1 .box-cont p .line {text-decoration:underline;}
 
 
 /* 장바구니 (IM-SH0202.html) */
@@ -4442,6 +4561,23 @@ label.check-radio .radiobox {margin-right:8px;}
 		box-sizing: border-box;
 	}
 		.cart-wrap .order-banner .bullet-list1 .item {color: #666;}
+
+/* =========================================================================================================
+	나의 한살림 (my/)
+========================================================================================================= */
+.content-banner {
+	width:1120px;
+	height:240px;
+	margin:15px auto 0;
+	background-color:#f8f3eb;
+}
+.content-banner:before {/* 추 후 삭제 */
+	content:'고객 주요 정보 노출 영역 (기획설계 중)';
+	display:block;
+	height:240px;
+	text-align:center;
+	line-height:240px;
+}
 
 /* =========================================================================================================
 	레이어 팝업
@@ -4537,6 +4673,12 @@ label.check-radio .radiobox {margin-right:8px;}
 
 /* 조합원 기회원 알림 (IM-JO0101.html) */
 .pop-existing {width:600px;}
+
+/* 선물택배 배송지 (IM-SH0401.html) */
+.pop-gift-ship {width:900px;}
+
+/* 출자금 의무증자 제도 안내 (IM-SH0401.html) */
+.pop-invest-inst {width:400px;}
 
 /* 한살림서울 소개 안내 동영상 */
 .video-area {
@@ -5007,4 +5149,7 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 .total-price.total-price3 dl {
 	width:25%;
+}
+.total-price.total-price4 dl {
+	width:20%;
 }
