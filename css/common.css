@@ -2568,21 +2568,27 @@ label.check-radio .radiobox {margin-right:8px;}
 	.depth-add-list .link:first-child {margin-top:0;}
 
 /* =========================================================================================================
-	LNB
+	LNB 타입
 ========================================================================================================= */
-.lnb {
+.lnb-container {
+	overflow:hidden;
+	width:1120px;
+	margin:20px auto 0;
+}
+.lnb-container .lnb {
 	width:180px;
+	float:left;
 	box-sizing:border-box;
 	border:1px solid #505050;
 }
-.lnb-title {
+.lnb-container .lnb-title {
 	position:relative;
 	width:100%;
 	height:90px;
 	background-color:#505050;
 	text-align:center;
 }
-	.lnb-title .title {
+	.lnb-container .lnb-title .title {
 		position:absolute;
 		left:0;right:0;top:50%;
 		-webkit-transform:translateY(-50%);
@@ -2594,38 +2600,38 @@ label.check-radio .radiobox {margin-right:8px;}
 		line-height:28px;
 	}
 
-.lnb-list {}
-.lnb-item {
+.lnb-container .lnb-list {}
+.lnb-container .lnb-item {
 	padding:10px 0 14px;
 	border-top:1px solid #ddd;
 }
-.lnb-item:first-child {border-top:0;}
-	.lnb-item .link {
+.lnb-container .lnb-item:first-child {border-top:0;}
+	.lnb-container .lnb-item .link {
 		display:block;
 		padding:0 24px;
 	}
-	.lnb-item .title {}
-		.lnb-item .title .link {
+	.lnb-container .lnb-item .title {}
+		.lnb-container .lnb-item .title .link {
 			color:#000;
 			font-size:15px;
 			font-weight:bold;
 			line-height:35px;
 		}
-	.lnb-item .list {}
-		.lnb-item .list .item {}
-			.lnb-item .list .item .link {
+	.lnb-container .lnb-item .list {}
+		.lnb-container .lnb-item .list .item {}
+			.lnb-container .lnb-item .list .item .link {
 				color:#666;
 				font-size:14px;
 				line-height:26px;
 			}
-			.lnb-item .list .item:hover .link,
-			.lnb-item .list .item.on .link {color:#60b015;}/* on */
-			.lnb-item .list .item .link .text {
+			.lnb-container .lnb-item .list .item:hover .link,
+			.lnb-container .lnb-item .list .item.on .link {color:#60b015;}/* on */
+			.lnb-container .lnb-item .list .item .link .text {
 				display:inline-block;
 				position:relative;
 			}
-			.lnb-item .list .item .link .text:before,
-			.lnb-item .list .item .link .text:before {
+			.lnb-container .lnb-item .list .item .link .text:before,
+			.lnb-container .lnb-item .list .item .link .text:before {
 				content:'';
 				position:absolute;
 				left:0;bottom:3px;
@@ -2634,14 +2640,21 @@ label.check-radio .radiobox {margin-right:8px;}
 				background-color:#60b015;
 				opacity:0;
 			}
-			.lnb-item .list .item:hover .link .text:before,
-			.lnb-item .list .item.on .link .text:before {
+			.lnb-container .lnb-item .list .item:hover .link .text:before,
+			.lnb-container .lnb-item .list .item.on .link .text:before {
 				width:100%;
 				opacity:1;
 				-webkit-transition:width .2s;
 				-ms-transition:width .2s;
 				transition:width .2s;
 			}/* on */
+
+.lnb-container .content {
+	float:right;
+	width:900px;
+	padding-top:20px;
+}
+	.lnb-container .content .cont-box {margin-top:14px;}
 
 /* =========================================================================================================
 	푸터
@@ -4531,6 +4544,23 @@ label.check-radio .radiobox {margin-right:8px;}
 		box-sizing: border-box;
 	}
 		.cart-wrap .order-banner .bullet-list1 .item {color: #666;}
+
+/* =========================================================================================================
+	나의 한살림 (my/)
+========================================================================================================= */
+.content-banner {
+	width:1120px;
+	height:240px;
+	margin:15px auto 0;
+	background-color:#f8f3eb;
+}
+.content-banner:before {/* 추 후 삭제 */
+	content:'고객 주요 정보 노출 영역 (기획설계 중)';
+	display:block;
+	height:240px;
+	text-align:center;
+	line-height:240px;
+}
 
 /* =========================================================================================================
 	레이어 팝업
