@@ -2560,10 +2560,16 @@ label.check-radio .radiobox {margin-right:8px;}
 	.depth-add-list .link:first-child {margin-top:0;}
 
 /* =========================================================================================================
-	LNB
+	LNB 타입
 ========================================================================================================= */
+.lnb-container {
+	overflow:hidden;
+	width:1120px;
+	margin:20px auto 0;
+}
 .lnb {
 	width:180px;
+	float:left;
 	box-sizing:border-box;
 	border:1px solid #505050;
 }
@@ -2634,6 +2640,15 @@ label.check-radio .radiobox {margin-right:8px;}
 				-ms-transition:width .2s;
 				transition:width .2s;
 			}/* on */
+
+.lnb-container .content {
+	float:right;
+	width:900px;
+	padding-top:20px;
+}
+	.lnb-container .content .cont-box {
+		margin-top:14px;
+	}
 
 /* =========================================================================================================
 	푸터
@@ -4523,6 +4538,23 @@ label.check-radio .radiobox {margin-right:8px;}
 		box-sizing: border-box;
 	}
 		.cart-wrap .order-banner .bullet-list1 .item {color: #666;}
+
+/* =========================================================================================================
+	나의 한살림 (my/)
+========================================================================================================= */
+.content-banner {
+	width:1120px;
+	height:240px;
+	margin:15px auto 0;
+	background-color:#f8f3eb;
+}
+.content-banner:before {
+	content:'고객 주요 정보 노출 영역 (기획설계 중)';
+	display:block;
+	height:240px;
+	text-align:center;
+	line-height:240px;
+}
 
 /* =========================================================================================================
 	레이어 팝업
