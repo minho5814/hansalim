@@ -2654,9 +2654,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	width:900px;
 	padding-top:20px;
 }
-	.lnb-container .content .cont-box {
-		margin-top:14px;
-	}
+	.lnb-container .content .cont-box {margin-top:14px;}
 
 /* =========================================================================================================
 	푸터
@@ -4556,7 +4554,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	margin:15px auto 0;
 	background-color:#f8f3eb;
 }
-.content-banner:before {
+.content-banner:before {/* 추 후 삭제 */
 	content:'고객 주요 정보 노출 영역 (기획설계 중)';
 	display:block;
 	height:240px;
