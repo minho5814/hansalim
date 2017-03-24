@@ -8,6 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="../../css/common.css">
 	<link rel="stylesheet" type="text/css" href="../../css/main.css">
 </head>
+<style>
+	.gift-ship-area {margin-bottom:10px;}
+	.gift-ship-area .gift-ship-box {overflow:hidden; height:385px; overflow:auto; border-bottom:1px solid #bbb;}
+	.layer-popup .gift-ship-area .btn-text {min-width:120px;}
+</style>
 
 <body>
 <div class="top-banner">
@@ -898,7 +903,7 @@
 							<tr>
 								<td>
 									<div class="addr-box">
-										<span class="gift-addr"><a href="#" class="btn-mini-text btn-icon">선물택배 주소록</a></span>
+										<span class="gift-addr"><a href="#" class="btn-mini-text btn-icon btn-popup btn-gift-ship">선물택배 주소록</a></span>
 										<div class="btn-styled">
 											<input type="number" id="Add" value="15320" class="align-center" style="width:90px;" disabled>
 											<button type="button" class="btn-round-text btn-gray">주소검색</button>
@@ -1503,76 +1508,212 @@
 </div>
 
 <!-- 레이어 팝업 영역 -->
-<!-- 조합원가입여부 확인 -->
-<div class="layer-popup pop-join-check">
+<!-- 선물택배 배송지 -->
+<div class="layer-popup pop-gift-ship">
 	<div class="pop-head">
-		<h1 class="pop-title">조합원가입여부 확인</h1>
+		<h1 class="pop-title">선물택배 배송지</h1>
 		<button type="button" class="btn-close">닫기</button>
 	</div>
 	<div class="pop-content align-center">
-		<h2 class="cTitle4">본인인증</h2>
-		<p class="text1">원하시는 본인인증 방법을 선택해주세요.</p>
-		<div class="confirm-box">
-			<div class="confirm phone">
-				<a href="#" class="btn-text btn-green btn-popup">휴대폰 본인 인증</a>
-			</div>
-			<div class="confirm ipin">
-				<a href="#" class="btn-text btn-green btn-popup">아이핀 인증</a>
-			</div>
+		<div class="title-wrap align-left">
+			<h3 class="cTitle6">배송지 목록</h3>
 		</div>
-		<ul class="bullet-list1 mgT25">
-			<li class="item">개정된 정보통신망법에 따라 한살림에서는 아이핀 인증 또는 휴대폰 인증을 통해 본인 확인을 시행합니다.</li>
-			<li class="item">본인 명의의 휴대폰 번호가 아닐 경우 실명확인에 제한을 받을 수 있습니다.</li>
-			<li class="item">실명 확인 시 입력한 정보는 실명확인 이외의 용도로 사용하지 않습니다.</li>
-		</ul>
-	</div>
-</div>
-
-<!-- 조합원 기회원 알림 -->
-<div class="layer-popup pop-existing">
-	<div class="pop-head">
-		<h1 class="pop-title">조합원 기회원 알림</h1>
-		<button type="button" class="btn-close">닫기</button>
-	</div>
-	<div class="pop-content">
-		<p class="pop-text1">홍길동 님은 이미 한살림 조합원입니다.</p>
-		<div class="board-write1">
+		<div class="board-lsit type2 mgT10">
 			<table>
 				<colgroup>
-					<col style="width:150px;">
-					<col style="*">
+					<col style="width:6%;">
+					<col style="width:8%;">
+					<col style="width:14%;">
+					<col>
+					<col style="width:18%;">
 				</colgroup>
-				<tbody>
+				<thead>
 					<tr>
-						<th scope="row">조합원이름</th>
-						<td>홍길동</td>
+						<th>
+							<label class="check-radio">
+								<span class="checkbox checked"><input type="checkbox" class="styled1" checked=""></span>
+							</label>
+						</th>
+						<th>받는이</th>
+						<th>별칭</th>
+						<th>주소</th>
+						<th>연락처</th>
 					</tr>
-					<tr>
-						<th scope="row">소속</th>
-						<td>한살림서울 ☎ 02-3498-3600</td>
-					</tr>
-					<tr>
-						<th scope="row">조합원번호</th>
-						<td>123456</td>
-					</tr>
-					<tr>
-						<th scope="row">가입일</th>
-						<td>2017년 8월 24일</td>
-					</tr>
-				<tbody>
+				</thead>
 			</table>
 		</div>
-
-		<div class="btn-bottom">
-			<a href="#" class="btn-text btn-green">확인</a>
+		<div class="gift-ship-area">
+			<div class="gift-ship-box">
+				<div class="board-lsit type2">
+					<table>
+						<colgroup>
+							<col style="width:6%;">
+							<col style="width:8%;">
+							<col style="width:14%;">
+							<col>
+							<col style="width:18%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<td>
+									<label class="check-radio">
+										<span class="checkbox checked"><input type="checkbox" class="styled1" checked=""></span>
+									</label>
+								</td>
+								<td>홍길순</td>
+								<td>울엄마</td>
+								<td class="align-left">(12345)서울 송파구 잠실동 123-45번지</td>
+								<td>010-1234-5678</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="check-radio">
+										<span class="checkbox checked"><input type="checkbox" class="styled1" checked=""></span>
+									</label>
+								</td>
+								<td>홍길동</td>
+								<td>사무실</td>
+								<td class="align-left">(67891)서울 강남구 삼성동 67-1번지 ab빌라 101호</td>
+								<td>010-1234-5678</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="check-radio">
+										<span class="checkbox checked"><input type="checkbox" class="styled1" checked=""></span>
+									</label>
+								</td>
+								<td>이혜영</td>
+								<td>베프집</td>
+								<td class="align-left">(12345)서울 양천구 신월동 890-11번지</td>
+								<td>010-1234-5678</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="check-radio">
+										<span class="checkbox checked"><input type="checkbox" class="styled1" checked=""></span>
+									</label>
+								</td>
+								<td>신성우</td>
+								<td>성우오빠</td>
+								<td class="align-left">(67891)서울 서대문구 홍제동 123번지 xx아파트 301동 1201호</td>
+								<td>010-1234-5678</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="check-radio">
+										<span class="checkbox checked"><input type="checkbox" class="styled1" checked=""></span>
+									</label>
+								</td>
+								<td>현빈</td>
+								<td>빈이오빠</td>
+								<td class="align-left">(67891)서울 서대문구 홍제동 123번지 xx아파트 301동 1201호</td>
+								<td>010-1234-5678</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="check-radio">
+										<span class="checkbox checked"><input type="checkbox" class="styled1" checked=""></span>
+									</label>
+								</td>
+								<td>홍길순</td>
+								<td>울엄마</td>
+								<td class="align-left">(23456)서울 구로구 구로동 189-10번지</td>
+								<td>010-1234-5678</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="check-radio">
+										<span class="checkbox checked"><input type="checkbox" class="styled1" checked=""></span>
+									</label>
+								</td>
+								<td>홍길동</td>
+								<td>사무실</td>
+								<td class="align-left">(12345)서울 송파구 잠실동 123-45번지</td>
+								<td>010-1234-5678</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="check-radio">
+										<span class="checkbox checked"><input type="checkbox" class="styled1" checked=""></span>
+									</label>
+								</td>
+								<td>신성우</td>
+								<td>사무실</td>
+								<td class="align-left">(67891)서울 강남구 삼성동 67-1번지 ab빌라 101호</td>
+								<td>010-1234-5678</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="check-radio">
+										<span class="checkbox checked"><input type="checkbox" class="styled1" checked=""></span>
+									</label>
+								</td>
+								<td>홍길순</td>
+								<td>울엄마</td>
+								<td class="align-left">(67891)서울 서대문구 홍제동 123번지 xx아파트 301동 1201호</td>
+								<td>010-1234-5678</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="check-radio">
+										<span class="checkbox checked"><input type="checkbox" class="styled1" checked=""></span>
+									</label>
+								</td>
+								<td>현빈</td>
+								<td>빈이오빠</td>
+								<td class="align-left">(67891)서울 서대문구 홍제동 123번지 xx아파트 301동 1201호</td>
+								<td>010-1234-5678</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="check-radio">
+										<span class="checkbox checked"><input type="checkbox" class="styled1" checked=""></span>
+									</label>
+								</td>
+								<td>신성우</td>
+								<td>성우오빠</td>
+								<td class="align-left">(67891)서울 서대문구 홍제동 123번지 xx아파트 301동 1201호</td>
+								<td>010-1234-5678</td>
+							</tr>
+							<tr>
+								<td>
+									<label class="check-radio">
+										<span class="checkbox checked"><input type="checkbox" class="styled1" checked=""></span>
+									</label>
+								</td>
+								<td>홍길동</td>
+								<td>사무실</td>
+								<td class="align-left">(67891)서울 서대문구 홍제동 123번지 xx아파트 301동 1201호</td>
+								<td>010-1234-5678</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="btn-center mgT30">
+				<a href="#" class="btn-text btn-green">확인</a>
+				<a href="#" class="btn-text btn-gray">취소</a>
+			</div>
 		</div>
 	</div>
 </div>
+
+
+
 
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	/* 조합원가입여부 확인 팝업 호출 */
+	$('.btn-gift-ship').click(function(){
+		$('.pop-gift-ship').fadeIn(200);
+	});
+
+});
+</script>
 </body>
 
 </html>
