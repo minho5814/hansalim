@@ -437,6 +437,23 @@ td.e-mail-form {
     font-weight: 900;
     letter-spacing: -1px;
 }
+.good-table table td.goods .goods-area {
+	position: relative;
+}
+
+.good-table table td.goods .txt-box {
+	padding-left:115px;
+	position:absolute;
+	left:0;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+.good-table table td.goods .goods-name {margin-left:0; margin-bottom:5px; }
+.good-table table td.goods .goods-txt,
+.good-table table td.goods .goods-amount {display: block; font-size: 14px;}
+.good-table table td.goods .goods-amount {margin-top:13px;}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	리스트
@@ -4265,26 +4282,11 @@ label.check-radio .radiobox {margin-right:8px;}
 
 	.list-group .list-content .good-table tbody td {height:150px; box-sizing: border-box;}
 	.list-group .list-content .good-table tbody td:first-child {vertical-align: top; padding-top:25px;}
-	.list-group .list-content .good-table tbody td:nth-child(2) {padding-left: 0; position: relative;}
-		.list-group .list-content .goods .goods-img {float: left; }
-		.list-group .list-content .goods .txt-box {
-			padding-left:115px;
-			position:absolute;
-			left:0;
-			top:50%;
-			-webkit-transform:translateY(-50%);
-			-ms-transform:translateY(-50%);
-			transform:translateY(-50%);
-		}
-		.list-group .list-content .goods .goods-name {margin-left:0; margin-bottom:5px; }
-		.list-group .list-content .goods .goods-txt,
-		.list-group .list-content .goods .goods-amount {display: block; font-size: 14px;}
-		.list-group .list-content .goods .goods-amount {margin-top:13px;}
+	.list-group .list-content .good-table tbody td:nth-child(2) {padding-left: 0;}
 
 		.fixed-list {margin-top:40px;}
 		.fixed-list .title-wrap {margin-bottom:0;}
 			.list-group .content-wrap .good-table {border-color:#ddd;}
-			.list-group .content-wrap .good-table tbody td:nth-child(1) { position: relative;}
 			.list-group .content-wrap .goods .txt-box {
 				padding-left:135px;
 				position:absolute;
@@ -4881,4 +4883,7 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 .total-price.total-price2 dl:first-child {
 	width:34%;
+}
+.total-price.total-price3 dl {
+	width:25%;
 }
