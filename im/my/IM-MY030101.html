@@ -909,18 +909,19 @@
 					<div class="board-lsit type2">
 						<table>
 							<colgroup>
-								<col style="width:10%;">
+								<col style="width:5%;">
 								<col style="width:10%;">
 								<col style="*">
+								<col style="width:13%;">
+								<col style="width:13%;">
+								<col style="width:12%;">
 								<col style="width:10%;">
-								<col style="width:10%;">
-								<col style="width:8%;">
-								<col style="width:8%;">
+								<col style="width:14%;">
 							</colgroup>
 							<thead>
 								<tr>
 									<th>
-										<label><input type="checkbox" class="styled1"></label>
+										<input type="checkbox" class="styled1">
 									</th>
 									<th>구분</th>
 									<th>주문내역</th>
@@ -933,9 +934,9 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td><label><input type="checkbox" class="styled1"></label></td>
+									<td><input type="checkbox" class="styled1"></td>
 									<td>일반품</td>
-									<td class="title"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
+									<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
 									<td>2017.02.27(월)</td>
 									<td>2017.02.27(월)</td>
 									<td>9,700원</td>
@@ -943,19 +944,40 @@
 									<td>주문완료</td>
 								</tr>
 								<tr>
-									<td><label><input type="checkbox" class="styled1"></label></td>
+									<td><input type="checkbox" class="styled1"></td>
 									<td>선물택배</td>
-									<td class="title"><a href="#none">유기농면침구커버세트(슈퍼싱글/하늘색) 외 2건</a></td>
+									<td class="align-left"><a href="#none">유기농면침구커버세트(슈퍼싱글/하늘색) 외 2건</a></td>
 									<td>2017.02.27(월)</td>
 									<td>2017.02.27(월)</td>
 									<td>50,000원</td>
 									<td>카드</td>
-									<td>주문완료<a href="#none">운송장조회</a></td>
+									<td>주문완료
+										<div class="btn-wrap">
+											<div class="waybill">
+												<span class="search-waybill">
+													<a href="#none" class="btn-mini-text btn-icon">운송장조회</a>
+												</span>
+												<div class="waybill-box">
+													<button type="button" class="btn-close">닫기</button>
+													<dl>
+														<dt>운송장 번호를 선택해주세요.</dt>
+														<dd>
+															<ul>
+																<li><a href="#none">홍길동 : 12345678912</a></li>
+																<li><a href="#none">홍길순 : 12345678913</a></li>
+																<li><a href="#none">김아무개 : 12345678914</a></li>
+															</ul>
+														</dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</td>
 								</tr>
 								<tr>
-									<td><label><input type="checkbox" class="styled1"></label></td>
+									<td><input type="checkbox" class="styled1"></td>
 									<td>특별품</td>
-									<td class="title"><a href="#none">유기 연엽식기세트 외 1건</a></td>
+									<td class="align-left"><a href="#none">유기 연엽식기세트 외 1건</a></td>
 									<td>2017.02.27(월)</td>
 									<td>2017.02.27(월)</td>
 									<td>9,700원</td>
@@ -963,9 +985,9 @@
 									<td>주문완료</td>
 								</tr>
 								<tr>
-									<td><label><input type="checkbox" class="styled1"></label></td>
+									<td><input type="checkbox" class="styled1" disabled="disabled"></td>
 									<td>김장채소</td>
-									<td class="title"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
+									<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
 									<td>2017.02.27(월)</td>
 									<td>2017.02.27(월)</td>
 									<td>9,700원</td>
@@ -973,9 +995,9 @@
 									<td>주문완료</td>
 								</tr>
 								<tr>
-									<td><label><input type="checkbox" class="styled1"></label></td>
+									<td><input type="checkbox" class="styled1" disabled="disabled"></td>
 									<td>천연벽지</td>
-									<td class="title"><a href="#none">유기 연엽식기세트 외 1건</a></td>
+									<td class="align-left"><a href="#none">유기 연엽식기세트 외 1건</a></td>
 									<td>2017.02.27(월)</td>
 									<td>2017.02.27(월)</td>
 									<td>9,700원</td>
@@ -984,6 +1006,22 @@
 								</tr>
 							</tbody>
 						</table>
+					</div>
+
+					<div class="btn-center mgT60">
+						<a href="#" class="btn-text btn-gray">주문삭제</a>
+					</div>
+
+					<div class="exhibitions-banner">
+						<img src="../../img/temp/@temp_exhibitions01.jpg" alt="가격인하!! 알찬 사과의 특별한 변신 - 아삭, 향긋한 사과">
+					</div>
+
+					<div class="box-content1">
+						<h3 class="box-title">주문조회 안내</h3>
+						<div class="box-cont dot-line">
+							<p class="item">‘주문완료’ 상태의주문은 공급준비중 전까지 주문삭제 또는 수정이 가능합니다.</p>
+							<p class="item">‘공급준비중’ 상태의 주문은 주문삭제가 불가합니다.</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1151,7 +1189,17 @@
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+	$(window).load(function(){
+		$('.waybill .search-waybill').click(function(){
+			$(this).next('.waybill-box').show();
+		});
 
+		$('.waybill-box .btn-close').click(function(){
+			$(this).parents('.waybill-box').hide();
+		});
+	});
+</script>
 </body>
 
 </html>
