@@ -4630,6 +4630,9 @@ label.check-radio .radiobox {margin-right:8px;}
 /* 선물택배 배송지 (IM-SH0401.html) */
 .pop-gift-ship {width:900px;}
 
+/* 출자금 의무증자 제도 안내 (IM-SH0401.html) */
+.pop-invest-inst {width:400px;}
+
 /* 한살림서울 소개 안내 동영상 */
 .video-area {
 	width:830px;
