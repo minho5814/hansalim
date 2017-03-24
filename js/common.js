@@ -93,7 +93,9 @@ $(window).load(function(){
 
 		var now = new Date();
 		var year= now.getFullYear();
+		var mon1 = (now.getMonth()+1)>9 ? ''+(now.getMonth()+1) : '0'+(now.getMonth()+1);
 		var mon3 = (now.getMonth()+3)>9 ? ''+(now.getMonth()+3) : '0'+(now.getMonth()+3);
+		var mon6 = (now.getMonth()+6)>9 ? ''+(now.getMonth()+6) : '0'+(now.getMonth()+6);
 		var day = now.getDate()>9 ? ''+now.getDate() : '0'+now.getDate();
 
 		var newDay = new Date( year, mon3, "");
@@ -102,12 +104,26 @@ $(window).load(function(){
 		var lastVal = year + '/' + mon3 + '/' + lastDay; // 이번달 마지막일
 
 		var endMon3 = '0' + (mon3 - 12);
+		var endMon3 = '0' + (mon6 - 12);
+		if($(this).hasClass('month1')){
+			var lastVal = year + '/' + mon1 + '/' + lastDay;
+			$(this).parents('.search-form').find('.datepicker.end').val(lastVal);
+		}
 		if($(this).hasClass('month3')){
 			if(mon3 >= 13){
 				var lastVal = (year+1) + '/' + endMon3 + '/' + lastDay;
 				$(this).parents('.search-form').find('.datepicker.end').val(lastVal);
 			}else{
 				var lastVal = year + '/' + mon3 + '/' + lastDay;
+				$(this).parents('.search-form').find('.datepicker.end').val(lastVal);
+			}
+		}
+		if($(this).hasClass('month6')){
+			if(mon3 >= 13){
+				var lastVal = (year+1) + '/' + endMon6 + '/' + lastDay;
+				$(this).parents('.search-form').find('.datepicker.end').val(lastVal);
+			}else{
+				var lastVal = year + '/' + mon6 + '/' + lastDay;
 				$(this).parents('.search-form').find('.datepicker.end').val(lastVal);
 			}
 		}
