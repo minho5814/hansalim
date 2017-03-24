@@ -100,15 +100,19 @@ $(window).load(function(){
 
 		var newDay = new Date( year, mon3, "");
 		var lastDay = newDay.getDate();
-		var firstVal = year + '/' + mon3 + '/' + '01'; // 이번달 시작일
+		var firstVal = year + '/' + mon1 + '/' + '01'; // 이번달 시작일
 		var lastVal = year + '/' + mon3 + '/' + lastDay; // 이번달 마지막일
 
 		var endMon3 = '0' + (mon3 - 12);
 		var endMon3 = '0' + (mon6 - 12);
+
+		$(this).parents('.search-form').find('.datepicker.start').val(firstVal);
+		// 1개월
 		if($(this).hasClass('month1')){
 			var lastVal = year + '/' + mon1 + '/' + lastDay;
 			$(this).parents('.search-form').find('.datepicker.end').val(lastVal);
 		}
+		// 3개월
 		if($(this).hasClass('month3')){
 			if(mon3 >= 13){
 				var lastVal = (year+1) + '/' + endMon3 + '/' + lastDay;
@@ -118,6 +122,7 @@ $(window).load(function(){
 				$(this).parents('.search-form').find('.datepicker.end').val(lastVal);
 			}
 		}
+		// 6개월
 		if($(this).hasClass('month6')){
 			if(mon3 >= 13){
 				var lastVal = (year+1) + '/' + endMon6 + '/' + lastDay;
