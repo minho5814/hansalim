@@ -627,6 +627,8 @@ td.e-mail-form {
 			float:right;
 		}
 
+
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	div box 스타일
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -2046,6 +2048,21 @@ label.check-radio .radiobox {margin-right:8px;}
 .ico-round.type3 {background-color:#9c7141;}
 .ico-round.type4 {background-color:#ff9c00;}
 .ico-round.type5 {background-color:#6bc31c;}
+
+.ico-round2 {
+	display:inline-block;
+	width:48px;
+	height:42px;
+	/*padding:0 20px;*/
+	box-sizing:border-box;
+	border-radius:20px;
+	color:#fff;
+	font-size:13px;
+	font-weight:900;
+	line-height:42px;
+}
+.ico-round2.type1 {background-color:#f56d24;}
+
 
 /* 가격 */
 .price-text {
@@ -4227,10 +4244,11 @@ label.check-radio .radiobox {margin-right:8px;}
 	border-bottom:1px solid #bbb;
 }
 .board-lsit table tbody td {
-	height: 54px;
+	padding:14px 0;
 	color:#666;
 	font-size:16px;
 	text-align: center;
+	line-height:24px;
 	border-top:1px solid #e3e3e3;
 }
 .board-lsit table tbody tr:first-child td {border-top:0;}
@@ -4777,6 +4795,38 @@ label.check-radio .radiobox {margin-right:8px;}
 		.pop-post .post-result {}
 		.pop-post .post-result {}
 
+/* ---------------------------------------------------------------------------------------------------------
+	관심물품 팝업
+--------------------------------------------------------------------------------------------------------- */
+.pop-like {
+
+}
+
+.pop-like .pop-content {
+	padding:0
+}
+
+.like-wrap {
+	width:900px;
+	height:666px;
+	overflow: auto;
+}
+
+.like-wrap .like-list {
+	width: 100%;
+}
+.like-wrap .like-list li {overflow:hidden; padding:30px; border-bottom:1px solid #ddd; box-sizing: border-box;}
+.like-wrap .like-list li .thumb-item1 {width: 25%; padding-bottom:0; border:0; }
+.like-wrap .like-list li .thumb-item1 .name {height:45px; padding-left: 0; margin-top:0;}
+.like-wrap .like-list li .thumb-item1 .img-area {position:relative; width: 175px; height:175px;}
+.like-wrap .like-list li .thumb-item1 .img-area .checkbox {position:absolute; left:0; top:0;}
+.like-wrap .like-list li .thumb-item1 .img-area .ico-round2 {position:absolute; right:0; top:-5px;}
+.like-wrap .like-list li .thumb-item1 .img-area img {width:100%; height: 100%;}
+.like-wrap .like-list li .thumb-item1 .price-btn {position:initial; margin-top:20px;}
+.like-wrap .like-list li .thumb-item1 .price-btn .price {float: inherit;}
+.like-wrap .like-list li .thumb-item1 .price-btn .price button {margin-left:5px;}
+
+.pop-like .btn-center {margin:30px 0;}
 
 /* Foot Utill */
 .content-w1120 {
