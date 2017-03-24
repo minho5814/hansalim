@@ -504,5 +504,9 @@ $(window).load(function(){
 	$(document).on('click', '.layer-popup .btn-close, .popup-close', function(){
 		$('.layer-popup').fadeOut(200);
 		$('.popup-close').remove();
+		if($(this).parents().hasClass('long')){		
+			$('body').css('overflow-y','inherit');
+		}
+
 	});
 });

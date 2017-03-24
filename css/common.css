@@ -4679,6 +4679,19 @@ label.check-radio .radiobox {margin-right:8px;}
 	box-shadow:4px 4px 0 rgba(0,0,0,.2);
 	background-color:#fff;
 }
+.layer-popup.long{
+	overflow: auto;
+	left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+	margin:0 auto;
+	-webkit-transform:none;
+	-ms-transform:none;
+	transform:none;
+}
 	.layer-popup .pop-head {
 		position:relative;
 		height:48px;
@@ -4933,7 +4946,7 @@ label.check-radio .radiobox {margin-right:8px;}
  .pop-supply-change .board-lsit td {padding:18px 0; line-height: 20px;}
 
  /*공급내역 인쇄하기 팝업 */
-.pop-supply-print {width:900px;}
+.pop-supply-print {width:900px !important;}
 .pop-supply-print .pop-content .cTitle4 {margin-bottom:10px;}
 .pop-supply-print .top-area {position: relative; margin-top:15px;}
 .pop-supply-print .top-area .date {position:absolute; right:0; bottom:10px; color:#000; font-weight: bold}
