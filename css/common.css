@@ -1921,30 +1921,50 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 
 /* 인풋 셀렉트 레이어 타입 */
-.input-select {}
-	.input-select .text-form {}
-		.input-select .text-form input {}
-		.input-select .text-form .byte-text {}
-		.input-select .text-form .byte-text .byte {}
-	.input-select .list {
-		padding:10px 0;
-		border:1px solid #91c90b;
-		background-color:#fff;
+.input-select {
+	height:32px;
+}
+.input-select:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+	.input-select .text-form {
+		float:left;
+		position:relative;
+		width:820px;
 	}
-		.input-select .list .item {
-			margin-top:1px;
-			height:24px;
-			padding-left:13px;
+		.input-select .text-form input {}
+
+		.input-select .list {
+			display:none;
+			position:absolute;
+			left:0;right:0;top:31px;
+			padding:10px 0;
+			border:1px solid #91c90b;
+			background-color:#fff;
+		}
+			.input-select .list .item {
+				margin-top:1px;
+				height:24px;
+				padding-left:13px;
+				color:#666;
+				font-size:14px;
+				line-height:24px;
+				cursor:default;
+			}
+			.input-select .list .item:first-dhild {margin-top:0;}
+			.input-select .list .item:hover,
+			.input-select .list .item.on {background-color: #d1ef8a;}/* on */
+		.input-select .byte-text {
+			float:left;
+			height:32px;
+			margin-left:10px;
 			color:#666;
 			font-size:14px;
-			line-height:24px;
-			cursor:default;
+			line-height:32px;
 		}
-		.input-select .list .item:first-dhild {margin-top:0;}
-		.input-select .list .item:hover,
-		.input-select .list .item.on {background-color: #d1ef8a;}/* on */
-	.input-select {}
-	.input-select {}
+		.input-select .byte-text .byte {color:#63a607;}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	탭
