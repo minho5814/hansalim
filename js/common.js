@@ -403,6 +403,25 @@ $(window).load(function(){
 		});
 	});
 
+	/* 인풋 셀렉트 레이어 타입 */
+	$('.input-select input').mouseenter(function(){
+		$(this).parents('.input-select').find('.list').show();
+	});
+	$('.input-select input').keyup(function(){
+		var byte = $(this).val().length;
+		$(this).parents('.input-select').find('.byte-text .byte').html(byte);
+	});
+	$('.input-select .list .item').click(function(){
+		var txt = $(this).html();
+		var byte = $(this).text().length;
+		$(this).parents('.input-select').find('input').val(txt);
+		$(this).parents('.input-select').find('.list').hide();
+		$(this).parents('.input-select').find('.byte-text .byte').html(byte);
+	});
+	$('.input-select').mouseleave(function(){
+		$(this).find('.list').hide();
+	});
+
 	/* ===========================================================================================================
 		로그인 (lo/)
 	=========================================================================================================== */
