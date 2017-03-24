@@ -1065,6 +1065,7 @@ td.e-mail-form {
 .fColor5 {color:#999 !important;} /* 연한회색 */
 .fColor6 {color:#766253 !important;} /* 갈색 */
 
+.
 
 /* 타이틀 박스 */
 .title-wrap {
@@ -4354,6 +4355,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .cart-box-content h4 {margin-bottom:5px;}
 .cart-box-content .box-content1 .box-cont p {overflow:hidden; margin-top:0; letter-spacing: -0.5px;}
 .cart-box-content .box-content1 .box-cont p .btn-mini-text.btn-icon {float:right;}
+.cart-box-content .box-content1 .box-cont p .line {text-decoration:underline;}
 
 
 /* 장바구니 (IM-SH0202.html) */
@@ -4914,4 +4916,7 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 .total-price.total-price3 dl {
 	width:25%;
+}
+.total-price.total-price4 dl {
+	width:20%;
 }
