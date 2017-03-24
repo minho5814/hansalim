@@ -1121,12 +1121,12 @@ td.e-mail-form {
 }
 
 .info-text {
-	margin-bottom:9px;
 	padding-left:28px;
 	color:#999;
 	line-height: 26px;
 	background:url(../img/icon/ico_notice02.png) 0 2px no-repeat;
 }
+.title-wrap .info-text {margin-bottom:9px;}
 
 /* 정렬 */
 .align-center {text-align:center !important;}
