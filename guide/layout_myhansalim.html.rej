@@ -1,9 +1,0 @@
-diff a/guide/layout_myhansalim.html b/guide/layout_myhansalim.html	(rejected hunks)
-@@ -356,6 +356,7 @@
-         </dl>
-       </div>
- 		</div>
-+<<<<<<< HEAD
- 
-     <div class="content-w1120 mgT45">
-       <div class="title-wrap">
