@@ -4491,6 +4491,7 @@ label.check-radio .radiobox {margin-right:8px;}
 
 	.list-group .fixed-list .good-table table td:nth-child(2),
 	.list-group .fixed-list .good-table table td:nth-child(4) {text-align: right;padding-right:20px;}
+	.list-group .list-content {display:none;}
 	.list-group .list-content .good-table.first {border-top:0;}
 	.list-group .list-content .good-table tbody tr.bg {background-color:#f7f7f7; }
 
