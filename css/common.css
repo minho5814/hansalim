@@ -1519,6 +1519,11 @@ td.e-mail-form {
 	background-position:0 -821px;
 }
 
+.list-title.close .btn-image.btn-list-close:before {
+	width:26px;
+	height:15px;
+	background-position:0 -886px;
+}
 .btn-image2 {
 	display:inline-block;
 	position:relative;

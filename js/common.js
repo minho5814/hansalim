@@ -191,19 +191,13 @@ $(window).load(function(){
 
 
 
-	// $('.list-title .btn-list-close').each(function(){
-	// 	$(this).click(function(){
-	// 		if($(this).parents('.list-title').hasClass('on')){
-	// 			$(this).parents('.list-title').removeClass('on');
-	//
-	//
-	// 		}else{
-	// 			$(this).parents('.list-title').addClass('on');
-	//
-	// 		}
-	// 	});
-	//
-	// });
+	$('.list-title .btn-list-close').each(function(){
+		$(this).click(function(){
+			//$(this).parents('.list-title')
+			$(this).parents('.list-title').toggleClass('close').next().slideToggle();
+		});
+
+	});
 
 	/* ===========================================================================================================
 		스크롤 이벤트
