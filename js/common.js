@@ -90,6 +90,27 @@ $(window).load(function(){
 	$('.btn-term').click(function(){
 		$(this).parents('.btn-area').find('.btn-term').removeClass('on');
 		$(this).addClass('on');
+
+		var now = new Date();
+		var year= now.getFullYear();
+		var mon3 = (now.getMonth()+3)>9 ? ''+(now.getMonth()+3) : '0'+(now.getMonth()+3);
+		var day = now.getDate()>9 ? ''+now.getDate() : '0'+now.getDate();
+
+		var newDay = new Date( year, mon3, "");
+		var lastDay = newDay.getDate();
+		var firstVal = year + '/' + mon3 + '/' + '01'; // 이번달 시작일
+		var lastVal = year + '/' + mon3 + '/' + lastDay; // 이번달 마지막일
+
+		var endMon3 = '0' + (mon3 - 12);
+		if($(this).hasClass('month3')){
+			if(mon3 >= 13){
+				var lastVal = (year+1) + '/' + endMon3 + '/' + lastDay;
+				$(this).parents('.search-form').find('.datepicker.end').val(lastVal);
+			}else{
+				var lastVal = year + '/' + mon3 + '/' + lastDay;
+				$(this).parents('.search-form').find('.datepicker.end').val(lastVal);
+			}
+		}
 	});
 
 	/* ===========================================================================================================
