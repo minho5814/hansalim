@@ -263,6 +263,8 @@ html {
 		font-size:14px;
 		line-height:16px;
 	}
+	.board-write1 .price-black {display:block; margin-top:5px; font-size:18px; color:#000; font-weight:600; letter-spacing:-1px; }
+	.board-write1 .price-black span {font-size:14px; color:#666;vertical-align:top;}
 
 .board-write1 td.inner-table {
 	padding:20px;
@@ -535,6 +537,21 @@ td.e-mail-form {
 	.bullet-list3.right .item input[type=text],
 	.bullet-list3.right .item input[type=number] {text-align:right;}
 
+.bullet-list4 {}
+		.bullet-list4 .item {
+			position:relative;
+			padding:2px 0 2px 15px;
+			color:#999;
+			font-size:14px;
+			text-align:left;
+			line-height:19px;
+		}
+		.bullet-list4 .item:before {
+			content:'※';
+			position:absolute;
+			left:0;
+			top:2px;
+		}
 /* 박스링크 리스트 */
 .box-link-list {
 	border:1px solid #bbb;
@@ -4862,7 +4879,27 @@ label.check-radio .radiobox {margin-right:8px;}
  .pop-supply-change .board-lsit th,
  .pop-supply-change .board-lsit td {font-size: 15px;}
  .pop-supply-change .board-lsit th {padding:10px 0;}
-  .pop-supply-change .board-lsit td {padding:18px 0; line-height: 20px;}
+ .pop-supply-change .board-lsit td {padding:18px 0; line-height: 20px;}
+
+ /*공급내역 인쇄하기 팝업 */
+.pop-supply-print {width:900px;}
+.pop-supply-print .pop-content .cTitle4 {margin-bottom:10px;}
+.pop-supply-print .top-area {position: relative; margin-top:15px;}
+.pop-supply-print .top-area .date {position:absolute; right:0; bottom:10px; color:#000; font-weight: bold}
+.pop-supply-print .top-area .date em {margin-left:5px; font-weight: normal; color:#666;}
+.pop-supply-print .cTitle1 {letter-spacing: 5px; text-align: center;}
+.pop-supply-print .table-area {overflow: hidden; margin-top:30px;}
+.pop-supply-print .table-area > div {width: 410px;}
+.pop-supply-print .table-area .left {float:left; width:54}
+.pop-supply-print .table-area .right {float:right;}
+.pop-supply-print .board-wrap {margin-top: 15px;}
+.pop-supply-print .board-lsit th,
+.pop-supply-print .board-lsit td {font-size: 15px;}
+.pop-supply-print .board-lsit td:nth-child(2) {text-align: left; padding-left:10px;}
+.pop-supply-print .price-text .price {font-size: 18px}
+
+.pop-supply-print .bullet-list4 {margin-top:15px;}
+.pop-supply-print .btn-bottom {padding:50px 0 10px}
 
 /* Foot Utill */
 .content-w1120 {
