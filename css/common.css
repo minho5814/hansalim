@@ -4244,10 +4244,11 @@ label.check-radio .radiobox {margin-right:8px;}
 	border-bottom:1px solid #bbb;
 }
 .board-lsit table tbody td {
-	height: 54px;
+	padding:14px 0;
 	color:#666;
 	font-size:16px;
 	text-align: center;
+	line-height:24px;
 	border-top:1px solid #e3e3e3;
 }
 .board-lsit table tbody tr:first-child td {border-top:0;}
