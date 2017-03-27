@@ -1169,6 +1169,20 @@ td.e-mail-form {
 .align-left {text-align:left !important;}
 .align-right {text-align:right !important;}
 
+/* link underline */
+.text-link {
+	position:relative;
+}
+.text-link:before {
+	content:'';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #60b015;
+}
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	버튼
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -4344,6 +4358,19 @@ label.check-radio .radiobox {margin-right:8px;}
 	width:3px; height: 3px;
 	background-color: #676767;
 }
+.board-lsit table td .regular {
+	display:block;
+	width:38px; height:22px;
+	margin:0 auto;
+	color:#09babc;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 22px;
+	text-align: center;
+	border:1px solid #09babc;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
 
 .board-lsit.type2 table thead th {background-color:#f0f2ef;}
 
@@ -4664,6 +4691,15 @@ label.check-radio .radiobox {margin-right:8px;}
 	text-align:center;
 	line-height:240px;
 }
+
+/*MY030107.html*/
+.layer-popup.pop-way-look .way-look-box {margin-bottom:10px;}
+.search-form.supply-select {overflow:hidden; padding:20px 0; background:none;}
+.supply-select dt {float:left; font-size:18px; color:#000; line-height:32px; font-weight:bold;}
+.search-form.supply-select dd {position:absolute; left:80px; top:20px;}
+
+/*MY030105.html*/
+td .radish-bank-box span {display:block;}
 
 /* =========================================================================================================
 	레이어 팝업
