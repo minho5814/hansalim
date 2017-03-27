@@ -1180,7 +1180,6 @@ td.e-mail-form {
 .fColor5 {color:#999 !important;} /* 연한회색 */
 .fColor6 {color:#766253 !important;} /* 갈색 */
 .fColor7 {color:#000 !important;} /* 검정 */
-.fColor8 {color:#fff !important;} /* 흰색 */
 
 /*width*/
 .wid80 {width:80% !important;}
@@ -2234,10 +2233,6 @@ label.check-radio .radiobox {margin-right:8px;}
 	font-weight:900;
 	/*line-height:42px;*/
 	text-align: center;
-}
-.ico-round3 {
-	background-color:#f56d24 !important;
-	border:1px solid #f56d24;
 }
 .ico-round2.type1 {background-color:#f56d24; border:0;}
 .ico-round2 span {
