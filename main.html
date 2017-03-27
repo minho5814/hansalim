@@ -18,11 +18,18 @@
 </div>
 
 
-<div class="wrapper main">
+<div class="wrapper">
 	<div class="header">
 		<div class="head-top">
 			<h1 class="s-logo"><a href="#">한살림</a></h1>
-			<div class="search-area">
+			<div class="user-info">
+				<p class="greeting"><span class="bullet-type">홍길동</span> 조합원님 안녕하세요</p>
+				<dl class="date-area">
+					<dt class="bullet-type">공급일</dt>
+					<dd class="calendar"><input type="text" class="datepicker" readonly></dd>
+				</dl>
+			</div>
+			<div class="search-box">
 				<input type="text" placeholder="검색어를 입력하세요" class="search-text">
 				<button type="button" class="btn-search">검색</button>
 			</div>
@@ -37,7 +44,6 @@
 					<li class="gnb-item item3"><a href="#" class="link">매장</a></li>
 					<li class="gnb-item item4"><a href="#" class="link">캠페인</a></li>
 					<li class="gnb-item item5"><a href="#" class="link">물품소식</a></li>
-					<li class="gnb-item item6"><a href="#" class="link">브랜드관</a></li>
 					<li class="gnb-item item7"><a href="#" class="link">선물택배</a></li>
 				</ul>
 				<ul class="my-menu">
@@ -45,325 +51,314 @@
 					<li class="my-item"><a href="#" class="link">장바구니</a></li>
 					<li class="my-item"><a href="#" class="link">나의 한살림</a></li>
 					<li class="my-item"><a href="#" class="link">알림<span class="number">15</span></a></li>
-					<li class="my-item"><a href="#" class="link">1:1상담</a></li>
 				</ul>
 				<!-- 메뉴 레이어 -->
-				<div class="menu-layer">
-					<div class="lnb">
+				<div class="gnb-layer">
+					<div class="layer-top">
 						<button type="button" class="btn-close">전체보기 닫기</button>
-						<ul class="lnb-list">
-							<li class="lnb-item on"><span class="text">전체 카테고리</span></li>
-							<li class="lnb-item"><span class="text">농산</span></li>
-							<li class="lnb-item"><span class="text">축수산</span></li>
-							<li class="lnb-item"><span class="text">가공</span></li>
-							<li class="lnb-item"><span class="text">생활</span></li>
-						</ul>
-						<ul class="mune-list">
-							<li class="menu-item"><a href="#" class="link">새로 공급하는 물품</a></li>
-							<li class="menu-item"><a href="#" class="link">맞춤형 추천물품</a></li>
-							<li class="menu-item"><a href="#" class="link">기획전</a></li>
-							<li class="menu-item"><a href="#" class="link">특별품 올해의 주문일정</a></li>
-							<li class="menu-item"><a href="#" class="link">한살림 소식</a></li>
-						</ul>
-						<div class="add-area">
-							<a href="#"><img src="img/temp/img_add.jpg" alt="광고영역"></a>
-						</div>
+						<!-- gnb 영역 : 자동복사 -->
 					</div>
-					<div class="gnb-copy"></div>
-					<div class="menu-area">
-						<!-- 전체 카테고리 -->
-						<div class="menu-category on">
-							<!-- 농산 -->
-							<div class="menu-depth">
-								<h2 class="depth-title"><a href="#" class="text">농산</a></h2>
-								<div>
-									<div class="depth2">
-										<h3 class="title"><a href="#" class="text">쌀/잡곡</a></h3>
-										<ul class="depth-list">
-											<li class="depth-item"><a href="#" class="text">멥쌀/찹쌀</a></li>
-											<li class="depth-item"><a href="#" class="text">잡곡/깨</a></li>
-											<li class="depth-item"><a href="#" class="text">콩류</a></li>
-											<li class="depth-item"><a href="#" class="text">혼합곡/보리/유색미</a></li>
-										</ul>
-									</div>
-									<div class="depth2">
-										<h3 class="title"><a href="#" class="text">채소/버섯</a></h3>
-										<ul class="depth-list">
-											<li class="depth-item"><a href="#" class="text">콩나물/숙주</a></li>
-											<li class="depth-item"><a href="#" class="text">잎/줄기채소</a></li>
-											<li class="depth-item"><a href="#" class="text">열매채소</a></li>
-											<li class="depth-item"><a href="#" class="text">뿌리채소</a></li>
-											<li class="depth-item"><a href="#" class="text">버섯류</a></li>
-											<li class="depth-item"><a href="#" class="text">말린나물류</a></li>
-											<li class="depth-item"><a href="#" class="text">손질한채소</a></li>
-											<li class="depth-item"><a href="#" class="text">양념/조미채소</a></li>
-										</ul>
-									</div>
-									<div class="depth2">
-										<h3 class="title"><a href="#" class="text">과일/견과</a></h3>
-										<ul class="depth-list">
-											<li class="depth-item"><a href="#" class="text">건조/냉동과일</a></li>
-											<li class="depth-item"><a href="#" class="text">견과류</a></li>
-											<li class="depth-item"><a href="#" class="text">과일/과채</a></li>
-										</ul>
-									</div>
-								</div>
+					<div class="layer-cont">
+						<div class="lnb">
+							<ul class="lnb-list">
+								<li class="lnb-item on"><a href="#" class="text">전체 카테고리</a></li>
+								<li class="lnb-item"><a href="#" class="text">농산</a></li>
+								<li class="lnb-item"><a href="#" class="text">축수산</a></li>
+								<li class="lnb-item"><a href="#" class="text">가공</a></li>
+								<li class="lnb-item"><a href="#" class="text">생활</a></li>
+							</ul>
+							<div class="lnb-menu">
+								<a href="#" class="link">새로 공급하는 물품</a>
+								<a href="#" class="link">맞춤형 추천물품</a>
+								<a href="#" class="link">기획전</a>
+								<a href="#" class="link">특별품 올해의 주문일정</a>
+								<a href="#" class="link">한살림 소식</a>
 							</div>
-							<!-- 축수산 -->
-							<div class="menu-depth">
-								<h2 class="depth-title"><a href="#" class="text">축수산</a></h2>
-								<div>
-									<div class="depth2">
-										<h3 class="title"><a href="#" class="text">축산/축산가공</a></h3>
-										<ul class="depth-list">
-											<li class="depth-item"><a href="#" class="text">유정란</a></li>
-											<li class="depth-item"><a href="#" class="text">한우</a></li>
-											<li class="depth-item"><a href="#" class="text">돼지</a></li>
-											<li class="depth-item"><a href="#" class="text">닭/오리</a></li>
-											<li class="depth-item"><a href="#" class="text">햄/소시지</a></li>
-											<li class="depth-item"><a href="#" class="text">육가공</a></li>
-										</ul>
-									</div>
-									<div class="depth2">
-										<h3 class="title"><a href="#" class="text">수산/수산가공</a></h3>
-										<ul class="depth-list">
-											<li class="depth-item"><a href="#" class="text">생선/손질생선</a></li>
-											<li class="depth-item"><a href="#" class="text">멸치/황태/건어</a></li>
-											<li class="depth-item"><a href="#" class="text">패류/오징어/새우</a></li>
-											<li class="depth-item"><a href="#" class="text">미역/다시마/해조</a></li>
-											<li class="depth-item"><a href="#" class="text">김/조미김</a></li>
-											<li class="depth-item"><a href="#" class="text">젓갈/게장</a></li>
-											<li class="depth-item"><a href="#" class="text">말린오징어/어포</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- 가공 -->
-							<div class="menu-depth wide">
-								<h2 class="depth-title"><a href="#" class="text">가공</a></h2>
-								<div class="depth-box">
-									<div class="depth2">
-										<h3 class="title"><a href="#" class="text">반찬/양념/가루</a></h3>
-										<ul class="depth-list">
-											<li class="depth-item"><a href="#" class="text">두부/어묵/묵</a></li>
-											<li class="depth-item"><a href="#" class="text">김치/밑반찬</a></li>
-											<li class="depth-item"><a href="#" class="text">된장/고추장/간장</a></li>
-											<li class="depth-item"><a href="#" class="text">기름/식초/소금</a></li>
-											<li class="depth-item"><a href="#" class="text">소스/양념/조청</a></li>
-											<li class="depth-item"><a href="#" class="text">곡식가루/혼합가루</a></li>
-											<li class="depth-item"><a href="#" class="text">과채/고춧가루</a></li>
-										</ul>
-									</div>
-									<div class="depth2">
-										<h3 class="title"><a href="#" class="text">식사대용/간편식</a></h3>
-										<ul class="depth-list">
-											<li class="depth-item"><a href="#" class="text">라면/간편조리면</a></li>
-											<li class="depth-item"><a href="#" class="text">국수/면</a></li>
-											<li class="depth-item"><a href="#" class="text">만두/피자/핫도그</a></li>
-											<li class="depth-item"><a href="#" class="text">씨리얼/생식/선식</a></li>
-											<li class="depth-item"><a href="#" class="text">국/탕/요리</a></li>
-											<li class="depth-item"><a href="#" class="text">죽/간편밥/밥양념</a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="depth-box">
-									<div class="depth2">
-										<h3 class="title"><a href="#" class="text">간식/음료/유제품</a></h3>
-										<ul class="depth-list">
-											<li class="depth-item"><a href="#" class="text">우리밀빵</a></li>
-											<li class="depth-item"><a href="#" class="text">떡/한과</a></li>
-											<li class="depth-item"><a href="#" class="text">과자</a></li>
-											<li class="depth-item"><a href="#" class="text">우유/두유/유제품</a></li>
-											<li class="depth-item"><a href="#" class="text">과즙/발효/전통/<br>음용식초</a></li>
-											<li class="depth-item"><a href="#" class="text">잼/푸딩</a></li>
-										</ul>
-									</div>
-									<div class="depth2">
-										<h3 class="title"><a href="#" class="text">건강/차</a></h3>
-										<ul class="depth-list">
-											<li class="depth-item"><a href="#" class="text">홍삼/녹용/산양삼</a></li>
-											<li class="depth-item"><a href="#" class="text">건강즙/농축액</a></li>
-											<li class="depth-item"><a href="#" class="text">분말/환/절편</a></li>
-											<li class="depth-item"><a href="#" class="text">꿀/화분/로얄젤리</a></li>
-											<li class="depth-item"><a href="#" class="text">건강차</a></li>
-											<li class="depth-item"><a href="#" class="text">일반차</a></li>
-										</ul>
-									</div>
-									<div class="depth2">
-										<h3 class="title"><a href="#" class="text">대용량/어린이집</a></h3>
-										<ul class="depth-list">
-											<li class="depth-item"><a href="#" class="text">대용량/어린이집</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- 생활 -->
-							<div class="menu-depth wide">
-								<h2 class="depth-title"><a href="#" class="text">생활</a></h2>
-								<div class="depth-box">
-									<div class="depth2">
-										<h3 class="title"><a href="#" class="text">화장품</a></h3>
-										<ul class="depth-list">
-											<li class="depth-item"><a href="#" class="text">기초화장</a></li>
-											<li class="depth-item"><a href="#" class="text">색조화장품</a></li>
-											<li class="depth-item"><a href="#" class="text">세안제/팩</a></li>
-											<li class="depth-item"><a href="#" class="text">유아/썬크림</a></li>
-											<li class="depth-item"><a href="#" class="text">바디/핸드</a></li>
-											<li class="depth-item"><a href="#" class="text">남성화장품</a></li>
-										</ul>
-									</div>
-									<div class="depth2">
-										<h3 class="title"><a href="#" class="text">주방/욕실/세정</a></h3>
-										<ul class="depth-list">
-											<li class="depth-item"><a href="#" class="text">주방세제/세정</a></li>
-											<li class="depth-item"><a href="#" class="text">세제/세탁비누</a></li>
-											<li class="depth-item"><a href="#" class="text">샴푸/린스/헤어용품</a></li>
-											<li class="depth-item"><a href="#" class="text">세안비누/온몸세정</a></li>
-											<li class="depth-item"><a href="#" class="text">치약/칫솔</a></li>
-											<li class="depth-item"><a href="#" class="text">주방소품</a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="depth-box">
-									<div class="depth2">
-										<h3 class="title"><a href="#" class="text">휴지/위생/환경</a></h3>
-										<ul class="depth-list">
-											<li class="depth-item"><a href="#" class="text">휴지/티슈</a></li>
-											<li class="depth-item"><a href="#" class="text">도서</a></li>
-											<li class="depth-item"><a href="#" class="text">생리대/기저귀</a></li>
-											<li class="depth-item"><a href="#" class="text">숯/원예</a></li>
-											<li class="depth-item"><a href="#" class="text">위생/환경용품</a></li>
-											<li class="depth-item"><a href="#" class="text">생활소품</a></li>
-											<li class="depth-item"><a href="#" class="text">선물포장</a></li>
-											<li class="depth-item"><a href="#" class="text">천연벽지</a></li>
-											<li class="depth-item"><a href="#" class="text">기금(웹)</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
+							<a href="#" class="add-area"><img src="img/temp/add_177x194.jpg" alt="광고 이미지"></a>
 						</div>
-						<!-- /전체 카테고리 -->
-
-						<!-- 농산 -->
-						<div class="menu-category">
-							<!-- 농산 -->
-							<div class="menu-depth">
-								<h2 class="depth-title"><a href="#" class="text">농산</a></h2>
-								<div>
-									<div class="depth2">
-										<h3 class="title"><a href="#" class="text">쌀/잡곡</a></h3>
-										<ul class="depth-list">
-											<li class="depth-item"><a href="#" class="text">멥쌀/찹쌀</a></li>
-											<li class="depth-item"><a href="#" class="text">잡곡/깨</a></li>
-											<li class="depth-item"><a href="#" class="text">콩류</a></li>
-											<li class="depth-item"><a href="#" class="text">혼합곡/보리/유색미</a></li>
-										</ul>
-									</div>
-									<div class="depth2">
-										<h3 class="title"><a href="#" class="text">채소/버섯</a></h3>
-										<ul class="depth-list">
-											<li class="depth-item"><a href="#" class="text">콩나물/숙주</a></li>
-											<li class="depth-item"><a href="#" class="text">잎/줄기채소</a></li>
-											<li class="depth-item"><a href="#" class="text">열매채소</a></li>
-											<li class="depth-item"><a href="#" class="text">뿌리채소</a></li>
-											<li class="depth-item"><a href="#" class="text">버섯류</a></li>
-											<li class="depth-item"><a href="#" class="text">말린나물류</a></li>
-											<li class="depth-item"><a href="#" class="text">손질한채소</a></li>
-											<li class="depth-item"><a href="#" class="text">양념/조미채소</a></li>
-										</ul>
-									</div>
-									<div class="depth2">
-										<h3 class="title"><a href="#" class="text">과일/견과</a></h3>
-										<ul class="depth-list">
-											<li class="depth-item"><a href="#" class="text">건조/냉동과일</a></li>
-											<li class="depth-item"><a href="#" class="text">견과류</a></li>
-											<li class="depth-item"><a href="#" class="text">과일/과채</a></li>
-										</ul>
-									</div>
+						<div class="menu-box">
+							<div class="gnb-depth on"><!-- 01 -->
+								<div class="depth-item">
+									<h3 class="depth-title">농산</h3>
+									<ul class="depth-list">
+										<li class="item">
+											<h4 class="title">쌀/잡곡</h4>
+											<ul>
+												<li><a href="#">멥쌀/찹쌀</a></li>
+												<li><a href="#">잡곡/깨</a></li>
+												<li><a href="#">콩류</a></li>
+												<li><a href="#">혼합곡/보리/유색미</a></li>
+											</ul>
+										</li>
+										<li class="item">
+											<h4 class="title">채소/버섯</h4>
+											<ul>
+												<li><a href="#">콩나물/숙주</a></li>
+												<li><a href="#">잎/줄기채소</a></li>
+												<li><a href="#">열매채소</a></li>
+												<li><a href="#">뿌리채소</a></li>
+												<li><a href="#">버섯류</a></li>
+												<li><a href="#">말린나물류</a></li>
+												<li><a href="#">손질한채소</a></li>
+												<li><a href="#">양념/조미채소</a></li>
+											</ul>
+										</li>
+										<li class="item">
+											<h4 class="title">과일/견과</h4>
+											<ul>
+												<li><a href="#">건조/냉동과일</a></li>
+												<li><a href="#">견과류</a></li>
+												<li><a href="#">과일/과채</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="depth-item">
+									<h3 class="depth-title">축수산</h3>
+									<ul class="depth-list">
+										<li class="item">
+											<h4 class="title">축산/축산가공</h4>
+											<ul>
+												<li><a href="#">유정란</a></li>
+												<li><a href="#">한우</a></li>
+												<li><a href="#">돼지</a></li>
+												<li><a href="#">닭/오리</a></li>
+												<li><a href="#">햄/소시지</a></li>
+												<li><a href="#">육가공</a></li>
+											</ul>
+										</li>
+										<li class="item">
+											<h4 class="title">수산/수산가공</h4>
+											<ul>
+												<li><a href="#">생선/손질생선</a></li>
+												<li><a href="#">멸치/황태/건어</a></li>
+												<li><a href="#">패류/오징어/새우</a></li>
+												<li><a href="#">미역/다시마/해조</a></li>
+												<li><a href="#">김/조미김</a></li>
+												<li><a href="#">젓갈/게장</a></li>
+												<li><a href="#">말린오징어/어포</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="depth-item">
+									<h3 class="depth-title">가공</h3>
+									<ul class="depth-list">
+										<li class="item">
+											<h4 class="title">반찬/양념/가루</h4>
+											<ul>
+												<li><a href="#">두부/어묵/묵</a></li>
+												<li><a href="#">김치/밑반찬</a></li>
+												<li><a href="#">된장/고추장/간장</a></li>
+												<li><a href="#">기름/식초/소금</a></li>
+												<li><a href="#">소스/양념/조청</a></li>
+												<li><a href="#">곡식가루/혼합가루</a></li>
+												<li><a href="#">과채/고춧가루</a></li>
+											</ul>
+										</li>
+										<li class="item">
+											<h4 class="title">식사대용/간편식</h4>
+											<ul>
+												<li><a href="#">라면/간편조리면</a></li>
+												<li><a href="#">국수/면</a></li>
+												<li><a href="#">만두/피자/핫도그</a></li>
+												<li><a href="#">씨리얼/생식/선식</a></li>
+												<li><a href="#">국/탕/요리</a></li>
+												<li><a href="#">죽/간편밥/밥양념</a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="depth-list">
+										<li class="item">
+											<h4 class="title">간식/음료/유제품</h4>
+											<ul>
+												<li><a href="#">우리밀빵</a></li>
+												<li><a href="#">떡/한과</a></li>
+												<li><a href="#">과자</a></li>
+												<li><a href="#">우유/두유/유제품</a></li>
+												<li><a href="#">과즙/발효/전통/<br>음용식초</a></li>
+												<li><a href="#">잼/푸딩</a></li>
+											</ul>
+										</li>
+										<li class="item">
+											<h4 class="title">건강/차</h4>
+											<ul>
+												<li><a href="#">홍삼/녹용/산양삼</a></li>
+												<li><a href="#">건강즙/농축액</a></li>
+												<li><a href="#">분말/환/절편</a></li>
+												<li><a href="#">꿀/화분/로얄젤리</a></li>
+												<li><a href="#">건강차</a></li>
+												<li><a href="#">일반차</a></li>
+											</ul>
+										</li>
+										<li class="item">
+											<h4 class="title">대용량/어린이집</h4>
+											<ul>
+												<li><a href="#">대용량/어린이집</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="depth-item">
+									<h3 class="depth-title">생활</h3>
+									<ul class="depth-list">
+										<li class="item">
+											<h4 class="title">화장품</h4>
+											<ul>
+												<li><a href="#">기초화장</a></li>
+												<li><a href="#">색조화장품</a></li>
+												<li><a href="#">세안제/팩</a></li>
+												<li><a href="#">유아/썬크림</a></li>
+												<li><a href="#">바디/핸드</a></li>
+												<li><a href="#">남성화장품</a></li>
+											</ul>
+										</li>
+										<li class="item">
+											<h4 class="title">주방/욕실/세정</h4>
+											<ul>
+												<li><a href="#">주방세제/세정</a></li>
+												<li><a href="#">세제/세탁비누</a></li>
+												<li><a href="#">샴푸/린스/헤어용품</a></li>
+												<li><a href="#">세안비누/온몸세정</a></li>
+												<li><a href="#">치약/칫솔</a></li>
+												<li><a href="#">주방소품</a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="depth-list">
+										<li class="item">
+											<h4 class="title">휴지/위생/환경</h4>
+											<ul>
+												<li><a href="#">휴지/티슈</a></li>
+												<li><a href="#">도서</a></li>
+												<li><a href="#">생리대/기저귀</a></li>
+												<li><a href="#">숯/원예</a></li>
+												<li><a href="#">위생/환경용품</a></li>
+												<li><a href="#">생활소품</a></li>
+												<li><a href="#">선물포장</a></li>
+												<li><a href="#">천연벽지</a></li>
+												<li><a href="#">기금(웹)</a></li>
+											</ul>
+										</li>
+									</ul>
 								</div>
 							</div>
 
-							<!-- 추천 -->
-							<div class="recommendation">
-								<!-- 추천 물품 -->
-								<div class="goods-list">
-									<h2 class="depth-title"><a href="#" class="text">추천물품</a></h2>
-									<ul class="thumb-list">
-										<li class="thumb-item">
+							<div class="gnb-depth"><!-- 02 -->
+								<div class="depth-item">
+									<h3 class="depth-title">농산</h3>
+									<ul class="depth-list">
+										<li class="item">
+											<h4 class="title">쌀/잡곡</h4>
+											<ul>
+												<li><a href="#">멥쌀/찹쌀</a></li>
+												<li><a href="#">잡곡/깨</a></li>
+												<li><a href="#">콩류</a></li>
+												<li><a href="#">혼합곡/보리/유색미</a></li>
+											</ul>
+										</li>
+										<li class="item">
+											<h4 class="title">채소/버섯</h4>
+											<ul>
+												<li><a href="#">콩나물/숙주</a></li>
+												<li><a href="#">잎/줄기채소</a></li>
+												<li><a href="#">열매채소</a></li>
+												<li><a href="#">뿌리채소</a></li>
+												<li><a href="#">버섯류</a></li>
+												<li><a href="#">말린나물류</a></li>
+												<li><a href="#">손질한채소</a></li>
+												<li><a href="#">양념/조미채소</a></li>
+											</ul>
+										</li>
+										<li class="item">
+											<h4 class="title">과일/견과</h4>
+											<ul>
+												<li><a href="#">건조/냉동과일</a></li>
+												<li><a href="#">견과류</a></li>
+												<li><a href="#">과일/과채</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+
+								<div class="depth-item">
+									<h3 class="depth-title">추천물품</h3>
+									<ul class="depth-thumb-list">
+										<li class="item">
 											<a href="#" class="link">
-												<div class="img-area"><img src="img/temp/thumb_136x102.jpg" alt="상품 이미지"></div>
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
 												<div class="text-area">
 													<p class="name">대봉감말랭이<br>(200g)</p>
 													<p class="price"><span class="number">7,500</span>원</p>
 												</div>
 											</a>
 										</li>
-										<li class="thumb-item">
+										<li class="item">
 											<a href="#" class="link">
-												<div class="img-area"><img src="img/temp/thumb_136x102.jpg" alt="상품 이미지"></div>
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
 												<div class="text-area">
-													<p class="name">땅콩나물(200g)</p>
+													<p class="name">대봉감 (200g)</p>
 													<p class="price"><span class="number">7,500</span>원</p>
 												</div>
 											</a>
 										</li>
-										<li class="thumb-item">
+										<li class="item">
 											<a href="#" class="link">
-												<div class="img-area"><img src="img/temp/thumb_136x102.jpg" alt="상품 이미지"></div>
-												<div class="text-area">
-													<p class="name">베타쌈배추(150g)</p>
-													<p class="price"><span class="number">7,500</span>원</p>
-												</div>
-											</a>
-										</li>
-										<li class="thumb-item">
-											<a href="#" class="link">
-												<div class="img-area"><img src="img/temp/thumb_136x102.jpg" alt="상품 이미지"></div>
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
 												<div class="text-area">
 													<p class="name">대봉감말랭이<br>(200g)</p>
 													<p class="price"><span class="number">7,500</span>원</p>
 												</div>
 											</a>
 										</li>
-										<li class="thumb-item">
+										<li class="item">
 											<a href="#" class="link">
-												<div class="img-area"><img src="img/temp/thumb_136x102.jpg" alt="상품 이미지"></div>
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
 												<div class="text-area">
 													<p class="name">대봉감말랭이<br>(200g)</p>
 													<p class="price"><span class="number">7,500</span>원</p>
 												</div>
 											</a>
 										</li>
-										<li class="thumb-item">
+										<li class="item">
 											<a href="#" class="link">
-												<div class="img-area"><img src="img/temp/thumb_136x102.jpg" alt="상품 이미지"></div>
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
 												<div class="text-area">
 													<p class="name">대봉감말랭이<br>(200g)</p>
 													<p class="price"><span class="number">7,500</span>원</p>
 												</div>
 											</a>
 										</li>
-										<li class="thumb-item">
+										<li class="item">
 											<a href="#" class="link">
-												<div class="img-area"><img src="img/temp/thumb_136x102.jpg" alt="상품 이미지"></div>
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
 												<div class="text-area">
 													<p class="name">대봉감말랭이<br>(200g)</p>
 													<p class="price"><span class="number">7,500</span>원</p>
 												</div>
 											</a>
 										</li>
-										<li class="thumb-item">
+										<li class="item">
 											<a href="#" class="link">
-												<div class="img-area"><img src="img/temp/thumb_136x102.jpg" alt="상품 이미지"></div>
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
 												<div class="text-area">
 													<p class="name">대봉감말랭이<br>(200g)</p>
 													<p class="price"><span class="number">7,500</span>원</p>
 												</div>
 											</a>
 										</li>
-										<li class="thumb-item">
+										<li class="item">
 											<a href="#" class="link">
-												<div class="img-area"><img src="img/temp/thumb_136x102.jpg" alt="상품 이미지"></div>
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
 												<div class="text-area">
 													<p class="name">대봉감말랭이<br>(200g)</p>
 													<p class="price"><span class="number">7,500</span>원</p>
@@ -372,20 +367,450 @@
 										</li>
 									</ul>
 								</div>
-								<!-- 추천 기획전 -->
-								<div class="exhibition-list">
-									<h2 class="depth-title"><a href="#" class="text">추천기획전</a></h2>
-									<div class="list">
-										<a class="item"><img src="img/temp/img_add02.jpg" alt="기획전"></a>
-										<a class="item"><img src="img/temp/img_add03.jpg" alt="기획전"></a>
-										<a class="item"><img src="img/temp/img_add04.jpg" alt="기획전"></a>
+
+								<div class="depth-item">
+									<h3 class="depth-title">추천기획전</h3>
+									<div class="depth-add-list">
+										<a href="#" class="link"><img src="img/temp/img_add03.jpg" alt="광고 이미지"></a>
+										<a href="#" class="link"><img src="img/temp/img_add04.jpg" alt="광고 이미지"></a>
+										<a href="#" class="link"><img src="img/temp/img_add03.jpg" alt="광고 이미지"></a>
+										<a href="#" class="link"><img src="img/temp/img_add04.jpg" alt="광고 이미지"></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="gnb-depth"><!-- 03 -->
+								<div class="depth-item">
+									<h3 class="depth-title">축수산</h3>
+									<ul class="depth-list">
+										<li class="item">
+											<h4 class="title">축산/축산가공</h4>
+											<ul>
+												<li><a href="#">유정란</a></li>
+												<li><a href="#">한우</a></li>
+												<li><a href="#">돼지</a></li>
+												<li><a href="#">닭/오리</a></li>
+												<li><a href="#">햄/소시지</a></li>
+												<li><a href="#">육가공</a></li>
+											</ul>
+										</li>
+										<li class="item">
+											<h4 class="title">수산/수산가공</h4>
+											<ul>
+												<li><a href="#">생선/손질생선</a></li>
+												<li><a href="#">멸치/황태/건어</a></li>
+												<li><a href="#">패류/오징어/새우</a></li>
+												<li><a href="#">미역/다시마/해조</a></li>
+												<li><a href="#">김/조미김</a></li>
+												<li><a href="#">젓갈/게장</a></li>
+												<li><a href="#">말린오징어/어포</a></li>
+											</ul>
+										</li>
 									</ul>
+								</div>
+
+								<div class="depth-item">
+									<h3 class="depth-title">추천물품</h3>
+									<ul class="depth-thumb-list">
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="depth-item">
+									<h3 class="depth-title">추천기획전</h3>
+									<div class="depth-add-list">
+										<a href="#" class="link"><img src="img/temp/img_add03.jpg" alt="광고 이미지"></a>
+										<a href="#" class="link"><img src="img/temp/img_add04.jpg" alt="광고 이미지"></a>
+										<a href="#" class="link"><img src="img/temp/img_add03.jpg" alt="광고 이미지"></a>
+										<a href="#" class="link"><img src="img/temp/img_add04.jpg" alt="광고 이미지"></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="gnb-depth"><!-- 04 -->
+								<div class="depth-item">
+									<h3 class="depth-title">가공</h3>
+									<ul class="depth-list">
+										<li class="item">
+											<h4 class="title">반찬/양념/가루</h4>
+											<ul>
+												<li><a href="#">두부/어묵/묵</a></li>
+												<li><a href="#">김치/밑반찬</a></li>
+												<li><a href="#">된장/고추장/간장</a></li>
+												<li><a href="#">기름/식초/소금</a></li>
+												<li><a href="#">소스/양념/조청</a></li>
+												<li><a href="#">곡식가루/혼합가루</a></li>
+												<li><a href="#">과채/고춧가루</a></li>
+											</ul>
+										</li>
+										<li class="item">
+											<h4 class="title">식사대용/간편식</h4>
+											<ul>
+												<li><a href="#">라면/간편조리면</a></li>
+												<li><a href="#">국수/면</a></li>
+												<li><a href="#">만두/피자/핫도그</a></li>
+												<li><a href="#">씨리얼/생식/선식</a></li>
+												<li><a href="#">국/탕/요리</a></li>
+												<li><a href="#">죽/간편밥/밥양념</a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="depth-list">
+										<li class="item">
+											<h4 class="title">간식/음료/유제품</h4>
+											<ul>
+												<li><a href="#">우리밀빵</a></li>
+												<li><a href="#">떡/한과</a></li>
+												<li><a href="#">과자</a></li>
+												<li><a href="#">우유/두유/유제품</a></li>
+												<li><a href="#">과즙/발효/전통/<br>음용식초</a></li>
+												<li><a href="#">잼/푸딩</a></li>
+											</ul>
+										</li>
+										<li class="item">
+											<h4 class="title">건강/차</h4>
+											<ul>
+												<li><a href="#">홍삼/녹용/산양삼</a></li>
+												<li><a href="#">건강즙/농축액</a></li>
+												<li><a href="#">분말/환/절편</a></li>
+												<li><a href="#">꿀/화분/로얄젤리</a></li>
+												<li><a href="#">건강차</a></li>
+												<li><a href="#">일반차</a></li>
+											</ul>
+										</li>
+										<li class="item">
+											<h4 class="title">대용량/어린이집</h4>
+											<ul>
+												<li><a href="#">대용량/어린이집</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+
+								<div class="depth-item type2">
+									<h3 class="depth-title">추천물품</h3>
+									<ul class="depth-thumb-list">
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="depth-item">
+									<h3 class="depth-title">추천기획전</h3>
+									<div class="depth-add-list">
+										<a href="#" class="link"><img src="img/temp/img_add03.jpg" alt="광고 이미지"></a>
+										<a href="#" class="link"><img src="img/temp/img_add04.jpg" alt="광고 이미지"></a>
+										<a href="#" class="link"><img src="img/temp/img_add03.jpg" alt="광고 이미지"></a>
+										<a href="#" class="link"><img src="img/temp/img_add04.jpg" alt="광고 이미지"></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="gnb-depth"><!-- 05 -->
+								<div class="depth-item">
+									<h3 class="depth-title">생활</h3>
+									<ul class="depth-list">
+										<li class="item">
+											<h4 class="title">화장품</h4>
+											<ul>
+												<li><a href="#">기초화장</a></li>
+												<li><a href="#">색조화장품</a></li>
+												<li><a href="#">세안제/팩</a></li>
+												<li><a href="#">유아/썬크림</a></li>
+												<li><a href="#">바디/핸드</a></li>
+												<li><a href="#">남성화장품</a></li>
+											</ul>
+										</li>
+										<li class="item">
+											<h4 class="title">주방/욕실/세정</h4>
+											<ul>
+												<li><a href="#">주방세제/세정</a></li>
+												<li><a href="#">세제/세탁비누</a></li>
+												<li><a href="#">샴푸/린스/헤어용품</a></li>
+												<li><a href="#">세안비누/온몸세정</a></li>
+												<li><a href="#">치약/칫솔</a></li>
+												<li><a href="#">주방소품</a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="depth-list">
+										<li class="item">
+											<h4 class="title">휴지/위생/환경</h4>
+											<ul>
+												<li><a href="#">휴지/티슈</a></li>
+												<li><a href="#">도서</a></li>
+												<li><a href="#">생리대/기저귀</a></li>
+												<li><a href="#">숯/원예</a></li>
+												<li><a href="#">위생/환경용품</a></li>
+												<li><a href="#">생활소품</a></li>
+												<li><a href="#">선물포장</a></li>
+												<li><a href="#">천연벽지</a></li>
+												<li><a href="#">기금(웹)</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+
+								<div class="depth-item type2">
+									<h3 class="depth-title">추천물품</h3>
+									<ul class="depth-thumb-list">
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+										<li class="item">
+											<a href="#" class="link">
+												<div class="img-area"><img src="img/temp/@thumb_95x95.jpg" alt="상품 이미지"></div>
+												<div class="text-area">
+													<p class="name">대봉감말랭이<br>(200g)</p>
+													<p class="price"><span class="number">7,500</span>원</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="depth-item">
+									<h3 class="depth-title">추천기획전</h3>
+									<div class="depth-add-list">
+										<a href="#" class="link"><img src="img/temp/img_add03.jpg" alt="광고 이미지"></a>
+										<a href="#" class="link"><img src="img/temp/img_add04.jpg" alt="광고 이미지"></a>
+										<a href="#" class="link"><img src="img/temp/img_add03.jpg" alt="광고 이미지"></a>
+										<a href="#" class="link"><img src="img/temp/img_add04.jpg" alt="광고 이미지"></a>
+									</div>
 								</div>
 							</div>
 						</div>
-						<!-- /농산 -->
 					</div>
 				</div>
+				<!-- /메뉴 레이어 -->
 			</div><!-- /.gnb -->
 		</div><!-- /.head-btm -->
 	</div>
@@ -415,1486 +840,179 @@
 			</div>
 		</div><!-- /.visual-banner -->
 
-		<div class="content">
-			<div class="title-area">
-				<h2 class="cTitle">새로 공급하는 물품</h2>
-				<p class="text"><span>따끈따끈한 한살림 신규 공급 물품</span></p>
-				<a href="#" class="btn-more">더보기</a>
-			</div>
-			<div class="thumb-box">
-				<ul class="bxslider">
-					<li class="slide-item">
-						<ul class="thumb-list2">
-							<li class="thumb-item2">
-								<div class="img-area">
-									<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-									<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-								</div>
-								<div class="text-area">
-									<p class="title">찹쌀탕수육(30g)</p>
-									<p class="price"><span class="number">7,000</span>원</p>
-									<div class="volume-btn">
-										<div class="volume">
-											<button type="button" class="btn-minus">-</button>
-											<input type="number" value="1" class="text-box">
-											<button type="button" class="btn-plus">+</button>
-										</div>
-										<a href="#" class="btn-image btn-cart">장바구니</a>
-										<a href="#" class="btn-image btn-like">관심상품</a>
-									</div>
-								</div>
-							</li>
-							<li class="thumb-item2">
-								<div class="img-area">
-									<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-									<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-								</div>
-								<div class="text-area">
-									<p class="title">유기농면목화솜이불속통(봄가을용/슈퍼싱글)</p>
-									<p class="price"><span class="number">7,000</span>원</p>
-									<div class="volume-btn">
-										<div class="volume">
-											<button type="button" class="btn-minus">-</button>
-											<input type="number" value="1" class="text-box">
-											<button type="button" class="btn-plus">+</button>
-										</div>
-										<a href="#" class="btn-image btn-cart">장바구니</a>
-										<a href="#" class="btn-image btn-like">관심상품</a>
-									</div>
-								</div>
-							</li>
-							<li class="thumb-item2">
-								<div class="img-area">
-									<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-									<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-								</div>
-								<div class="text-area">
-									<p class="title">찹쌀탕수육(30g)</p>
-									<p class="price"><span class="number">7,000</span>원</p>
-									<div class="volume-btn">
-										<div class="volume">
-											<button type="button" class="btn-minus">-</button>
-											<input type="number" value="1" class="text-box">
-											<button type="button" class="btn-plus">+</button>
-										</div>
-										<a href="#" class="btn-image btn-cart">장바구니</a>
-										<a href="#" class="btn-image btn-like">관심상품</a>
-									</div>
-								</div>
-							</li>
-							<li class="thumb-item2">
-								<div class="img-area">
-									<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-									<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-								</div>
-								<div class="text-area">
-									<p class="title">찹쌀탕수육(30g)</p>
-									<p class="price"><span class="number">7,000</span>원</p>
-									<div class="volume-btn">
-										<div class="volume">
-											<button type="button" class="btn-minus">-</button>
-											<input type="number" value="1" class="text-box">
-											<button type="button" class="btn-plus">+</button>
-										</div>
-										<a href="#" class="btn-image btn-cart">장바구니</a>
-										<a href="#" class="btn-image btn-like">관심상품</a>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</li>
-					<li class="slide-item">
-						<ul class="thumb-list2">
-							<li class="thumb-item2">
-								<div class="img-area">
-									<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-									<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-								</div>
-								<div class="text-area">
-									<p class="title">찹쌀탕수육(30g)</p>
-									<p class="price"><span class="number">7,000</span>원</p>
-									<div class="volume-btn">
-										<div class="volume">
-											<button type="button" class="btn-minus">-</button>
-											<input type="number" value="1" class="text-box">
-											<button type="button" class="btn-plus">+</button>
-										</div>
-										<a href="#" class="btn-image btn-cart">장바구니</a>
-										<a href="#" class="btn-image btn-like">관심상품</a>
-									</div>
-								</div>
-							</li>
-							<li class="thumb-item2">
-								<div class="img-area">
-									<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-									<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-								</div>
-								<div class="text-area">
-									<p class="title">유기농면목화솜이불속통(봄가을용/슈퍼싱글)</p>
-									<p class="price"><span class="number">7,000</span>원</p>
-									<div class="volume-btn">
-										<div class="volume">
-											<button type="button" class="btn-minus">-</button>
-											<input type="number" value="1" class="text-box">
-											<button type="button" class="btn-plus">+</button>
-										</div>
-										<a href="#" class="btn-image btn-cart">장바구니</a>
-										<a href="#" class="btn-image btn-like">관심상품</a>
-									</div>
-								</div>
-							</li>
-							<li class="thumb-item2">
-								<div class="img-area">
-									<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-									<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-								</div>
-								<div class="text-area">
-									<p class="title">찹쌀탕수육(30g)</p>
-									<p class="price"><span class="number">7,000</span>원</p>
-									<div class="volume-btn">
-										<div class="volume">
-											<button type="button" class="btn-minus">-</button>
-											<input type="number" value="1" class="text-box">
-											<button type="button" class="btn-plus">+</button>
-										</div>
-										<a href="#" class="btn-image btn-cart">장바구니</a>
-										<a href="#" class="btn-image btn-like">관심상품</a>
-									</div>
-								</div>
-							</li>
-							<li class="thumb-item2">
-								<div class="img-area">
-									<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-									<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-								</div>
-								<div class="text-area">
-									<p class="title">찹쌀탕수육(30g)</p>
-									<p class="price"><span class="number">7,000</span>원</p>
-									<div class="volume-btn">
-										<div class="volume">
-											<button type="button" class="btn-minus">-</button>
-											<input type="number" value="1" class="text-box">
-											<button type="button" class="btn-plus">+</button>
-										</div>
-										<a href="#" class="btn-image btn-cart">장바구니</a>
-										<a href="#" class="btn-image btn-like">관심상품</a>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div><!-- /.content -->
-
-		<div class="slide-banner">
-			<ul class="bxslider">
-				<li class="slide-item item1"><img src="img/temp/line-banner01.jpg" alt="광고 배너"></li>
-				<li class="slide-item item2"><img src="img/temp/line-banner02.jpg" alt="광고 배너"></li>
-				<li class="slide-item item3"><img src="img/temp/line-banner03.jpg" alt="광고 배너"></li>
+		<!-- 주요카테고리/테마관/서브브랜드 -->
+		<div class="category-wrap">
+			<ul class="category-tab">
+				<li class="item on">주요카테고리</li>
+				<li class="item">테마관</li>
+				<li class="item">서브브랜드</li>
 			</ul>
-		</div><!-- /.slide-banner -->
-
-		<div class="content">
-			<div class="title-area">
-				<h2 class="cTitle">맞춤형 추천 물품</h2>
-				<p class="text"><span>어머~ 이건 꼭 사야해! 꼼꼼한 조합원의 이유 있는 선택</span></p>
-				<a href="#" class="btn-more">더보기</a>
-			</div>
-			<div class="tab-content">
-				<div class="tab-left">
-					<ul class="tab-list">
-						<li class="tab-item on"><span class="text">매장 이용 조합원의 선택</span></li>
-						<li class="tab-item"><span class="text">이 땅의 농부사랑 물품</span></li>
-						<li class="tab-item"><span class="text">우리 아이 안심 밥상</span></li>
-						<li class="tab-item"><span class="text">비타민! 과일로 챙기기</span></li>
-						<li class="tab-item"><span class="text">미세먼지 예방하는 건강식</span></li>
-						<li class="tab-item"><span class="text">입맛돋우는 봄 요리 물품</span></li>
-						<li class="tab-item"><span class="text">계란이 없는 물품 모음</span></li>
-					</ul>
-					<div class="img-area">
-						<img src="img/temp/photo01.jpg" alt="">
-					</div>
-				</div>
-				<div class="tab-right">
-					<!-- tab 01 -->
-					<ul class="thumb-list2 on">
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">유기농면목화솜이불속통(봄가을용/슈퍼싱글)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-					<!-- tab 02 -->
-					<ul class="thumb-list2">
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육 2222(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">유기농면목화솜이불속통(봄가을용/슈퍼싱글)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-					<!-- tab 03 -->
-					<ul class="thumb-list2">
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육 3333(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">유기농면목화솜이불속통(봄가을용/슈퍼싱글)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-					<!-- tab 04 -->
-					<ul class="thumb-list2">
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육 4444(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">유기농면목화솜이불속통(봄가을용/슈퍼싱글)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-					<!-- tab 05 -->
-					<ul class="thumb-list2">
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육 5555(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">유기농면목화솜이불속통(봄가을용/슈퍼싱글)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-					<!-- tab 06 -->
-					<ul class="thumb-list2">
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육 6666(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">유기농면목화솜이불속통(봄가을용/슈퍼싱글)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-					<!-- tab 07 -->
-					<ul class="thumb-list2">
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육 7777(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">유기농면목화솜이불속통(봄가을용/슈퍼싱글)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-						<li class="thumb-item2">
-							<div class="img-area">
-								<img src="img/temp/thumb_265x265.jpg" alt="제품 이미지">
-								<a href="#" class="over-area"><img src="img/temp/thumb_280x290_over.jpg" alt="제품 이미지"></a>
-							</div>
-							<div class="text-area">
-								<p class="title">찹쌀탕수육(30g)</p>
-								<p class="price"><span class="number">7,000</span>원</p>
-								<div class="volume-btn">
-									<div class="volume">
-										<button type="button" class="btn-minus">-</button>
-										<input type="number" value="1" class="text-box">
-										<button type="button" class="btn-plus">+</button>
-									</div>
-									<a href="#" class="btn-image btn-cart">장바구니</a>
-									<a href="#" class="btn-image btn-like">관심상품</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div><!-- /.content -->
-
-		<div class="content bg-type">
-			<div class="title-area">
-				<h2 class="cTitle">이즈음 밥상</h2>
-				<p class="text"><span>요리 보고~ 장보고~ 한살림 요리 따라잡기!</span></p>
-				<a href="#" class="btn-more">더보기</a>
-			</div>
-
-			<div class="slide-cont">
-				<ul class="bxslider">
-					<li class="slide-item">
-						<div class="recipe-area">
+			<div class="category-content">
+				<!-- 주요카테고리 -->
+				<div class="category-slide on">
+					<ul class="bxslider">
+						<li class="slide-item">
 							<a href="#" class="link">
-								<div class="img-area"><img src="img/temp/recipe01.jpg" alt="레시피"></div>
+								<img src="img/temp/img_category01.jpg" alt="배경이미지">
+								<p class="text">농산</p>
 							</a>
-							<div class="hashtag-area">
-								<a href="#" class="tag"># 해물탕</a>
-								<a href="#" class="tag"># 동태채소진밥</a>
-								<a href="#" class="tag"># 오징어동태버섯탕</a>
-								<a href="#" class="tag"># 귤소스탕수어</a>
-							</div>
-						</div>
-						<div class="relation-area">
-							<h3 class="title">관련물품</h3>
-							<ul class="relation-list">
-								<li class="relation-item">
-									<div class="img-area">
-										<img src="img/temp/thumb_265x265.jpg" alt="상품 이미지">
-									</div>
-									<div class="text-area">
-										<p class="name">감자(2kg)</p>
-										<p class="price"><span class="number">4,300</span>원</p>
-									</div>
-									<div class="over-area">
-										<div class="volume-btn">
-											<div class="volume">
-												<button type="button" class="btn-minus">-</button>
-												<input type="number" value="1" class="text-box">
-												<button type="button" class="btn-plus">+</button>
-											</div>
-											<a href="#" class="btn-image btn-cart">장바구니</a>
-											<a href="#" class="btn-image btn-like">관심상품</a>
-										</div>
-									</div>
-								</li>
-								<li class="relation-item">
-									<div class="img-area">
-										<img src="img/temp/thumb_265x265.jpg" alt="상품 이미지">
-										<div class="label"><img src="img/icon/icon_label01.png" alt="유기"></div>
-									</div>
-									<div class="text-area">
-										<p class="name">햇살담은고추가루/유(500g)</p>
-										<p class="price"><span class="number">4,300</span>원</p>
-									</div>
-									<div class="over-area">
-										<div class="volume-btn">
-											<div class="volume">
-												<button type="button" class="btn-minus">-</button>
-												<input type="number" value="1" class="text-box">
-												<button type="button" class="btn-plus">+</button>
-											</div>
-											<a href="#" class="btn-image btn-cart">장바구니</a>
-											<a href="#" class="btn-image btn-like">관심상품</a>
-										</div>
-									</div>
-								</li>
-								<li class="relation-item">
-									<div class="img-area">
-										<img src="img/temp/thumb_265x265.jpg" alt="상품 이미지">
-									</div>
-									<div class="text-area">
-										<p class="name">감자(2kg)</p>
-										<p class="price"><span class="number">4,300</span>원</p>
-									</div>
-									<div class="over-area">
-										<div class="volume-btn">
-											<div class="volume">
-												<button type="button" class="btn-minus">-</button>
-												<input type="number" value="1" class="text-box">
-												<button type="button" class="btn-plus">+</button>
-											</div>
-											<a href="#" class="btn-image btn-cart">장바구니</a>
-											<a href="#" class="btn-image btn-like">관심상품</a>
-										</div>
-									</div>
-								</li>
-								<li class="relation-item">
-									<div class="img-area">
-										<img src="img/temp/thumb_265x265.jpg" alt="상품 이미지">
-									</div>
-									<div class="text-area">
-										<p class="name">감자(2kg)</p>
-										<p class="price"><span class="number">4,300</span>원</p>
-									</div>
-									<div class="over-area">
-										<div class="volume-btn">
-											<div class="volume">
-												<button type="button" class="btn-minus">-</button>
-												<input type="number" value="1" class="text-box">
-												<button type="button" class="btn-plus">+</button>
-											</div>
-											<a href="#" class="btn-image btn-cart">장바구니</a>
-											<a href="#" class="btn-image btn-like">관심상품</a>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<div class="relation-more">
-								<!-- 더보기 상품 디자인 수급 후 진행 예정 -->
-							</div>
-							<div class="btn-area">
-								<button type="button" class="btn-more"><span>물품 더 보기</span></button>
-							</div>
-						</div>
-					</li>
-					<li class="slide-item">
-						<div class="recipe-area">
+						</li>
+						<li class="slide-item">
 							<a href="#" class="link">
-								<div class="img-area"><img src="img/temp/recipe02.jpg" alt="레시피"></div>
+								<img src="img/temp/img_category02.jpg" alt="배경이미지">
+								<p class="text">축수산</p>
 							</a>
-							<div class="hashtag-area">
-								<a href="#" class="tag"># 해물탕</a>
-								<a href="#" class="tag"># 동태채소진밥</a>
-								<a href="#" class="tag"># 오징어동태버섯탕</a>
-								<a href="#" class="tag"># 귤소스탕수어</a>
-							</div>
-						</div>
-						<div class="relation-area">
-							<h3 class="title">관련물품</h3>
-							<ul class="relation-list">
-								<li class="relation-item">
-									<div class="img-area">
-										<img src="img/temp/thumb_265x265.jpg" alt="상품 이미지">
-									</div>
-									<div class="text-area">
-										<p class="name">감자(2kg)</p>
-										<p class="price"><span class="number">4,300</span>원</p>
-									</div>
-									<div class="over-area">
-										<div class="volume-btn">
-											<div class="volume">
-												<button type="button" class="btn-minus">-</button>
-												<input type="number" value="1" class="text-box">
-												<button type="button" class="btn-plus">+</button>
-											</div>
-											<a href="#" class="btn-image btn-cart">장바구니</a>
-											<a href="#" class="btn-image btn-like">관심상품</a>
-										</div>
-									</div>
-								</li>
-								<li class="relation-item">
-									<div class="img-area">
-										<img src="img/temp/thumb_265x265.jpg" alt="상품 이미지">
-										<div class="label"><img src="img/icon/icon_label01.png" alt="유기"></div>
-									</div>
-									<div class="text-area">
-										<p class="name">햇살담은고추가루/유(500g)</p>
-										<p class="price"><span class="number">4,300</span>원</p>
-									</div>
-									<div class="over-area">
-										<div class="volume-btn">
-											<div class="volume">
-												<button type="button" class="btn-minus">-</button>
-												<input type="number" value="1" class="text-box">
-												<button type="button" class="btn-plus">+</button>
-											</div>
-											<a href="#" class="btn-image btn-cart">장바구니</a>
-											<a href="#" class="btn-image btn-like">관심상품</a>
-										</div>
-									</div>
-								</li>
-								<li class="relation-item">
-									<div class="img-area">
-										<img src="img/temp/thumb_265x265.jpg" alt="상품 이미지">
-									</div>
-									<div class="text-area">
-										<p class="name">감자(2kg)</p>
-										<p class="price"><span class="number">4,300</span>원</p>
-									</div>
-									<div class="over-area">
-										<div class="volume-btn">
-											<div class="volume">
-												<button type="button" class="btn-minus">-</button>
-												<input type="number" value="1" class="text-box">
-												<button type="button" class="btn-plus">+</button>
-											</div>
-											<a href="#" class="btn-image btn-cart">장바구니</a>
-											<a href="#" class="btn-image btn-like">관심상품</a>
-										</div>
-									</div>
-								</li>
-								<li class="relation-item">
-									<div class="img-area">
-										<img src="img/temp/thumb_265x265.jpg" alt="상품 이미지">
-									</div>
-									<div class="text-area">
-										<p class="name">감자(2kg)</p>
-										<p class="price"><span class="number">4,300</span>원</p>
-									</div>
-									<div class="over-area">
-										<div class="volume-btn">
-											<div class="volume">
-												<button type="button" class="btn-minus">-</button>
-												<input type="number" value="1" class="text-box">
-												<button type="button" class="btn-plus">+</button>
-											</div>
-											<a href="#" class="btn-image btn-cart">장바구니</a>
-											<a href="#" class="btn-image btn-like">관심상품</a>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<div class="relation-more">
-								<!-- 더보기 상품 디자인 수급 후 진행 예정 -->
-							</div>
-							<div class="btn-area">
-								<button type="button" class="btn-more"><span>물품 더 보기</span></button>
-							</div>
-						</div>
-					</li>
-					<li class="slide-item">
-						<div class="recipe-area">
+						</li>
+						<li class="slide-item">
 							<a href="#" class="link">
-								<div class="img-area"><img src="img/temp/recipe03.jpg" alt="레시피"></div>
+								<img src="img/temp/img_category03.jpg" alt="배경이미지">
+								<p class="text">가공</p>
 							</a>
-							<div class="hashtag-area">
-								<a href="#" class="tag"># 해물탕</a>
-								<a href="#" class="tag"># 동태채소진밥</a>
-								<a href="#" class="tag"># 오징어동태버섯탕</a>
-								<a href="#" class="tag"># 귤소스탕수어</a>
-							</div>
-						</div>
-						<div class="relation-area">
-							<h3 class="title">관련물품</h3>
-							<ul class="relation-list">
-								<li class="relation-item">
-									<div class="img-area">
-										<img src="img/temp/thumb_265x265.jpg" alt="상품 이미지">
-									</div>
-									<div class="text-area">
-										<p class="name">감자(2kg)</p>
-										<p class="price"><span class="number">4,300</span>원</p>
-									</div>
-									<div class="over-area">
-										<div class="volume-btn">
-											<div class="volume">
-												<button type="button" class="btn-minus">-</button>
-												<input type="number" value="1" class="text-box">
-												<button type="button" class="btn-plus">+</button>
-											</div>
-											<a href="#" class="btn-image btn-cart">장바구니</a>
-											<a href="#" class="btn-image btn-like">관심상품</a>
-										</div>
-									</div>
-								</li>
-								<li class="relation-item">
-									<div class="img-area">
-										<img src="img/temp/thumb_265x265.jpg" alt="상품 이미지">
-										<div class="label"><img src="img/icon/icon_label01.png" alt="유기"></div>
-									</div>
-									<div class="text-area">
-										<p class="name">햇살담은고추가루/유(500g)</p>
-										<p class="price"><span class="number">4,300</span>원</p>
-									</div>
-									<div class="over-area">
-										<div class="volume-btn">
-											<div class="volume">
-												<button type="button" class="btn-minus">-</button>
-												<input type="number" value="1" class="text-box">
-												<button type="button" class="btn-plus">+</button>
-											</div>
-											<a href="#" class="btn-image btn-cart">장바구니</a>
-											<a href="#" class="btn-image btn-like">관심상품</a>
-										</div>
-									</div>
-								</li>
-								<li class="relation-item">
-									<div class="img-area">
-										<img src="img/temp/thumb_265x265.jpg" alt="상품 이미지">
-									</div>
-									<div class="text-area">
-										<p class="name">감자(2kg)</p>
-										<p class="price"><span class="number">4,300</span>원</p>
-									</div>
-									<div class="over-area">
-										<div class="volume-btn">
-											<div class="volume">
-												<button type="button" class="btn-minus">-</button>
-												<input type="number" value="1" class="text-box">
-												<button type="button" class="btn-plus">+</button>
-											</div>
-											<a href="#" class="btn-image btn-cart">장바구니</a>
-											<a href="#" class="btn-image btn-like">관심상품</a>
-										</div>
-									</div>
-								</li>
-								<li class="relation-item">
-									<div class="img-area">
-										<img src="img/temp/thumb_265x265.jpg" alt="상품 이미지">
-									</div>
-									<div class="text-area">
-										<p class="name">감자(2kg)</p>
-										<p class="price"><span class="number">4,300</span>원</p>
-									</div>
-									<div class="over-area">
-										<div class="volume-btn">
-											<div class="volume">
-												<button type="button" class="btn-minus">-</button>
-												<input type="number" value="1" class="text-box">
-												<button type="button" class="btn-plus">+</button>
-											</div>
-											<a href="#" class="btn-image btn-cart">장바구니</a>
-											<a href="#" class="btn-image btn-like">관심상품</a>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<div class="relation-more">
-								<!-- 더보기 상품 디자인 수급 후 진행 예정 -->
-							</div>
-							<div class="btn-area">
-								<button type="button" class="btn-more"><span>물품 더 보기</span></button>
-							</div>
-						</div>
-					</li>
-				</ul>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_category04.jpg" alt="배경이미지">
+								<p class="text">생활</p>
+							</a>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_category05.jpg" alt="배경이미지">
+								<p class="text">대용량/<br>어린이집</p>
+							</a>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_category06.jpg" alt="배경이미지">
+								<p class="text">천연벽지</p>
+							</a>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_category04.jpg" alt="배경이미지">
+								<p class="text">생활</p>
+							</a>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_category05.jpg" alt="배경이미지">
+								<p class="text">대용량/<br>어린이집</p>
+							</a>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_category06.jpg" alt="배경이미지">
+								<p class="text">천연벽지</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 테마관 -->
+				<div class="category-slide">
+					<ul class="bxslider">
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_theme01.jpg" alt="배경이미지">
+								<p class="text">1인가구</p>
+							</a>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_theme02.jpg" alt="배경이미지">
+								<p class="text">유아</p>
+							</a>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_theme03.jpg" alt="배경이미지">
+								<p class="text">채식</p>
+							</a>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_theme04.jpg" alt="배경이미지">
+								<p class="text">건강식</p>
+							</a>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_theme05.jpg" alt="배경이미지">
+								<p class="text">재철물품</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 서브브랜드 -->
+				<div class="category-slide">
+					<ul class="bxslider">
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_brand01.jpg" alt="배경이미지">
+								<p class="text">Non-gmo</p>
+							</a>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_brand02.jpg" alt="배경이미지">
+								<p class="text">토박이<br>씨앗살림</p>
+							</a>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_brand03.jpg" alt="배경이미지">
+								<p class="text">가까이<br>愛</p>
+							</a>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_brand04.jpg" alt="배경이미지">
+								<p class="text">우리보리살림</p>
+							</a>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_brand05.jpg" alt="배경이미지">
+								<p class="text">가까운<br>먹을거리</p>
+							</a>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_brand06.jpg" alt="배경이미지">
+								<p class="text">병재사용</p>
+							</a>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_brand07.jpg" alt="배경이미지">
+								<p class="text">농지살림</p>
+							</a>
+						</li>
+						<li class="slide-item">
+							<a href="#" class="link">
+								<img src="img/temp/img_brand08.jpg" alt="배경이미지">
+								<p class="text">우리밀<br>살리기</p>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div><!-- /.content -->
+		</div>
 
-		<div class="content">
-			<div class="title-area">
-				<h2 class="cTitle">맞춤형 추천 물품</h2>
-				<p class="text"><span>어머~ 이건 꼭 사야해! 꼼꼼한 조합원의 이유 있는 선택</span></p>
-				<a href="#" class="btn-more">더보기</a>
+		<!-- 새로 공급하는 물품 -->
+		<div class="main-cont">
+			<div class="main-title">
+				<h2 class="title"></h2>
+				<p class="text"></p>
 			</div>
+		</div>
 
-			<div class="news-list">
-				<div class="news-item">
-					<div class="inner">
-						<a href="#" class="link">
-							<div class="title-box">
-								<p class="text">함께 보는 영농일지</p>
-								<h3 class="title">오복수 생산자의 양파 일지</h3>
-							</div>
-							<div class="img-area"><img src="img/temp/news01.jpg" alt="이미지"></div>
-							<div class="text-area">
-								양파밭 부직포 피복 저온창고 짓느라 양파밭에 부직포를 아직까지 피복해 주지 못했다.평년 같았으면 지금쯤 땅이 양파밭 부직포 피복 저온창고 짓느라 양파밭에 부직포를 아직까지 피복해 주지 못했다.
-							</div>
-						</a>
-						<div class="hashtag-area">
-							<a href="#" class="tag">#한살림과함께</a>
-							<a href="#" class="tag">#자주점검활동</a>
-							<a href="#" class="tag">#우리매장최고</a>
-							<a href="#" class="tag">#생활실천</a>
-							<a href="#" class="tag">#생산자의 창</a>
-						</div>
-					</div>
-				</div>
-				<div class="news-item">
-					<div class="inner">
-						<a href="#" class="link">
-							<div class="title-box">
-								<p class="text">공지사항</p>
-								<h3 class="title">한살림 30주년 기념 대화마당</h3>
-							</div>
-							<div class="text-area">
-								한살림이 1986년 12월 4일, 작은 쌀가게로 출발한 지 올해로 30년이 되었습니다.한살림은 다시 첫마음으로 돌아가 국내외 전문가들을 모시어 급변하는 시대상황을 진단하고 새로운 시대 정신을 모색하고자 합니다.<br>
-								모쪼록 한살림 30주년 기념 대화마당에 참여하시여 지혜를 보태주시면 감사하겠습니다.
-							</div>
-						</a>
-						<div class="hashtag-area">
-							<a href="#" class="tag">#한살림과함께</a>
-							<a href="#" class="tag">#자주점검활동</a>
-						</div>
-					</div>
-				</div>
-				<div class="news-item">
-					<div class="inner">
-						<a href="#" class="link">
-							<div class="title-box">
-								<p class="text">생산지는 지금</p>
-								<h3 class="title">[괴산연합회] 다시 토마토를 심습니다.</h3>
-							</div>
-							<div class="img-area"><img src="img/temp/news02.jpg" alt="이미지"></div>
-							<div class="text-area">
-								토마토 씨앗 피해 때문에 많은 어려움을 겪고 있는 솔뫼 농장 생산자들이 다시 기운을 내 토마토 농사를 재개 했습니다. 토마토 씨앗 피해로 어려움을 겪고 있습니다.
-							</div>
-						</a>
-						<div class="hashtag-area">
-							<a href="#" class="tag">#한살림과함께</a>
-							<a href="#" class="tag">#자주점검활동</a>
-						</div>
-					</div>
-				</div>
-				<div class="news-item">
-					<div class="inner">
-						<a href="#" class="link">
-							<div class="title-box">
-								<p class="text">조합원 자주점검활동</p>
-								<h3 class="title">한살림서울 - 공근공동체</h3>
-							</div>
-							<div class="img-area"><img src="img/temp/news03.jpg" alt="이미지"></div>
-							<div class="text-area">
-								한살림 조합원이라면 낯설지 않을 강원도 횡성 공근공동체. 한살림 최초의 생산지로 한살림이 1986년 서울 제기동에서 쌀과 잡곡, 계란, 참기름, 들기름 등을 구비하고 한살림농산이라는 작은 쌀가게로 시작했을 때부터 한살림에 유정란을 공급한 곳이다.묵묵히 일하는 정흥환 생산자를 만났다
-							</div>
-						</a>
-						<div class="hashtag-area">
-							<a href="#" class="tag">#한살림과함께</a>
-							<a href="#" class="tag">#자주점검활동</a>
-						</div>
-					</div>
-				</div>
-				<div class="news-item">
-					<div class="inner">
-						<a href="#" class="link">
-							<div class="title-box">
-								<p class="text">함께 보는 영농일지</p>
-								<h3 class="title">[공급재개] 배추김치(5kg)...</h3>
-							</div>
-							<div class="img-area"><img src="img/temp/news04.jpg" alt="이미지"></div>
-							<div class="text-area">
-								<p class="fEbold">배추김치(5kg), 맛김치(5kg)</p>
-								- 재개일 : 1/23(월)
-								<p class="fEbold">감귤/비가림(3kg, 1.5kg)</p>
-								- 재개일 : 1/23(월)
-							</div>
-						</a>
-						<div class="hashtag-area">
-							<a href="#" class="tag">#한살림과함께</a>
-							<a href="#" class="tag">#자주점검활동</a>
-						</div>
-					</div>
-				</div>
-				<div class="news-item">
-					<div class="inner">
-						<a href="#" class="link">
-							<div class="title-box">
-								<p class="text">조합원 자주점검활동</p>
-								<h3 class="title">한살림 서울 – ㈜ 우리밀</h3>
-							</div>
-							<div class="text-area">
-								한살림은 멸종위기에 처했던 우리밀을 되살리기 위해 1988년 우리밀살리기운동을 시작했습니다.<br>
-								(주)우리밀은 되살린 우리밀을 농가에서 직접 계약매수 하여 제분한 밀가루, 과자류프리믹스 등으로 가공하고 있습니다. 우리밀제과 빵의 가장 큰 특징은 당연히 우리밀이 주원료로 하고 있습니다. 우리밀빵이라는 말이 생겨나게 한 것도 한살림이 최초였다고 해도 틀린 말이 아니다. 한살림우리밀제과 자체가 한살림이 멸종 직전까지 갔던 우리밀을 어렵게 되살린 뒤 꾸준한 소비를 통해 생산을 이어가게 하려고 시작한 일이었습니다.
-							</div>
-						</a>
-						<div class="hashtag-area">
-							<a href="#" class="tag">#한살림과함께</a>
-							<a href="#" class="tag">#자주점검활동</a>
-							<a href="#" class="tag">#우리매장최고</a>
-							<a href="#" class="tag">#생활실천</a>
-							<a href="#" class="tag">#생산자의 창</a>
-						</div>
-					</div>
-				</div>
+		<!--  -->
+		<div class="main-cont">
+			<div class="main-title">
+				<h2 class="title"></h2>
+				<p class="text"></p>
 			</div>
-		</div><!-- /.content -->
+		</div>
 	</div>
 
 	<div class="footer">
@@ -1987,12 +1105,151 @@
 	</div>
 </div>
 
+<!-- 레이어 팝업 영역 -->
+<!-- 우편번호 찾기 -->
+<div class="layer-popup pop-post">
+	<div class="pop-head">
+		<h1 class="pop-title">우편번호 찾기</h1>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="post-search">
+			<table>
+				<colgroup>
+					<col style="width:60px;">
+					<col style="width:150px;">
+					<col style="width:70px;">
+					<col style="*">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">시/도</th>
+						<td>
+							<select class="styled1">
+								<option>시/도</option>
+								<option>서울</option>
+								<option>대전</option>
+								<option>대구</option>
+							</select>
+						</td>
+						<th scope="row">시/군/구</th>
+						<td>
+							<select class="styled1">
+								<option>시/군/구</option>
+								<option>강동구</option>
+								<option>서대문구</option>
+								<option>송파구</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="Address">주소</label></th>
+						<td colspan="3">
+							<div class="btn-type">
+								<input type="text" placeholder="도로명 + 건물번호, 동+건물명, 동+ 지번 등">
+								<button type="button" class="btn-round-text btn-gray btn-search">검색</button>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="text1">주소조회결과가 100건 이내만 조회 가능합니다.</p>
+		</div>
+
+		<div class="post-result">
+			<div class="scroll-box">
+				<div class="result-title">
+					<p class="title">우편번호</p>
+					<p class="title">주소</p>
+				</div>
+				<div class="result-list">
+					<label class="item">
+						<div class="radio-area">
+							<input type="radio" name="Post" class="radio">
+						</div>
+						<div class="post-number">13542</div>
+						<div class="address-area">
+							<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+							<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+						</div>
+					</label>
+					<label class="item">
+						<div class="radio-area">
+							<input type="radio" name="Post" class="radio">
+						</div>
+						<div class="post-number">13542</div>
+						<div class="address-area">
+							<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+							<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+						</div>
+					</label>
+					<label class="item">
+						<div class="radio-area">
+							<input type="radio" name="Post" class="radio">
+						</div>
+						<div class="post-number">13542</div>
+						<div class="address-area">
+							<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+							<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+						</div>
+					</label>
+					<label class="item">
+						<div class="radio-area">
+							<input type="radio" name="Post" class="radio">
+						</div>
+						<div class="post-number">13542</div>
+						<div class="address-area">
+							<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+							<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+						</div>
+					</label>
+					<label class="item">
+						<div class="radio-area">
+							<input type="radio" name="Post" class="radio">
+						</div>
+						<div class="post-number">13542</div>
+						<div class="address-area">
+							<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+							<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+						</div>
+					</label>
+					<label class="item">
+						<div class="radio-area">
+							<input type="radio" name="Post" class="radio">
+						</div>
+						<div class="post-number">13542</div>
+						<div class="address-area">
+							<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+							<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+						</div>
+					</label>
+					<label class="item">
+						<div class="radio-area">
+							<input type="radio" name="Post" class="radio">
+						</div>
+						<div class="post-number">13542</div>
+						<div class="address-area">
+							<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+							<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+						</div>
+					</label>
+				</div>
+			</div>
+			<p class="text1">주소조회결과가 100건 이내만 조회 가능합니다.</p>
+		</div>
+
+		<div class="btn-bottom pdT25">
+			<a href="#" class="btn-text btn-green">확인</a>
+		</div>
+	</div>
+</div>
+
 
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.1.12.1.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 </body>
 
 </html>
