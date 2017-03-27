@@ -182,7 +182,11 @@ html {
 	background-color:#0e0b0a;
 }
 .wrapper {background-color:#fff;}
-.header {min-height:145px;}
+.header {
+	position:relative;
+	z-index:15;
+	min-height:145px;
+}
 
 /* 로케이션 */
 .location {
@@ -4687,6 +4691,15 @@ label.check-radio .radiobox {margin-right:8px;}
 	text-align:center;
 	line-height:240px;
 }
+
+/*MY030107.html*/
+.layer-popup.pop-way-look .way-look-box {margin-bottom:10px;}
+.search-form.supply-select {overflow:hidden; padding:20px 0; background:none;}
+.supply-select dt {float:left; font-size:18px; color:#000; line-height:32px; font-weight:bold;}
+.search-form.supply-select dd {position:absolute; left:80px; top:20px;}
+
+/*MY030105.html*/
+td .radish-bank-box span {display:block;}
 
 /* =========================================================================================================
 	레이어 팝업
