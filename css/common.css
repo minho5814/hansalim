@@ -610,6 +610,9 @@ td.e-mail-form {
 	border:1px solid #ddd;
 	background-color:#fff;
 }
+.thumb-item2 {
+	padding-bottom:195px;
+}
 .thumb-list1 .thumb-item1 {border-right:0;}
 .thumb-list1 .thumb-item1:first-child {border-left:0;}
 	.thumb-item1 .link {
@@ -638,6 +641,11 @@ td.e-mail-form {
 		position:absolute;
 		left:30px;right:30px;bottom:30px;
 	}
+	.thumb-item2 .price-btn {
+		overflow:hidden;
+		position:absolute;
+		left:30px;right:30px;bottom:130px;
+	}
 		.thumb-item1 .price-btn .price {
 			float:left;
 			color:#333;
@@ -653,6 +661,15 @@ td.e-mail-form {
 		.thumb-item1 .price-btn .btn-area {
 			float:right;
 		}
+	.thumb-item2 .result-txt {
+		position:absolute;
+		left:29px; right:29px; bottom:6px;
+		padding:19px 0;
+		border-top:1px solid #ddd;
+		font-size:14px;
+		color:#999;
+		letter-spacing:-0.5px;
+	}
 
 
 
@@ -1137,6 +1154,8 @@ td.e-mail-form {
 .mgL10 {margin-left:10px !important;}
 .mgL30 {margin-left:30px !important;}
 
+.mgB30 {margin-bottom:30px !important;}
+
 .pdT0 {padding-top:0 !important;}
 .pdT20 {padding-top:20px !important;}
 .pdT25 {padding-top:25px !important;}
@@ -1161,6 +1180,7 @@ td.e-mail-form {
 .fColor5 {color:#999 !important;} /* 연한회색 */
 .fColor6 {color:#766253 !important;} /* 갈색 */
 .fColor7 {color:#000 !important;} /* 검정 */
+.fColor8 {color:#fff !important;} /* 흰색 */
 
 /*width*/
 .wid80 {width:80% !important;}
@@ -2215,6 +2235,10 @@ label.check-radio .radiobox {margin-right:8px;}
 	/*line-height:42px;*/
 	text-align: center;
 }
+.ico-round3 {
+	background-color:#f56d24 !important;
+	border:1px solid #f56d24;
+}
 .ico-round2.type1 {background-color:#f56d24; border:0;}
 .ico-round2 span {
 	position: absolute;
@@ -2248,6 +2272,9 @@ label.check-radio .radiobox {margin-right:8px;}
 	box-sizing:border-box;
 	border:1px solid #ddd;
 	text-align:center;
+}
+.no-result.no-result02 {
+	height:300px !important;
 }
 	.no-result .text {
 		position:absolute;
@@ -4977,6 +5004,7 @@ td .radish-bank-box span {display:block;}
 
 .result-bottom {display: none;}
 .result-bottom.on {display: block;}
+.result-bottom.result-block {display:block;}
 
 .result-bottom .thumb-list1:first-child {border-top:1px solid #ddd;}
 .result-bottom .thumb-item1 {border-top: 0;}
@@ -5015,9 +5043,7 @@ td .radish-bank-box span {display:block;}
 	font-weight:bold;
 	line-height:44px;
 }
-
 .layer-popup {
-	display:none;
 	position:fixed;
 	left:50%;top:50%;
 	z-index:500;
@@ -5027,19 +5053,14 @@ td .radish-bank-box span {display:block;}
 	border:1px solid #60b015;
 	box-shadow:4px 4px 0 rgba(0,0,0,.2);
 	background-color:#fff;
+	opacity:0;
 }
-.layer-popup.long{
-	overflow: auto;
-	left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-	margin:0 auto;
-	-webkit-transform:none;
-	-ms-transform:none;
-	transform:none;
+.layer-popup.scroll {
+	overflow-y:auto;
+	top:40px;bottom:40px;
+	-webkit-transform:translate(-50%,0);
+	-ms-transform:translate(-50%,0);
+	transform:translate(-50%,0);
 }
 	.layer-popup .pop-head {
 		position:relative;
@@ -5298,7 +5319,7 @@ td .radish-bank-box span {display:block;}
  .pop-supply-change .board-lsit td {padding:18px 0; line-height: 20px;}
 
  /*공급내역 인쇄하기 팝업 */
-.pop-supply-print {width:900px !important;}
+.pop-supply-print {width:900px;}
 .pop-supply-print .pop-content .cTitle4 {margin-bottom:10px;}
 .pop-supply-print .top-area {position: relative; margin-top:15px;}
 .pop-supply-print .top-area .date {position:absolute; right:0; bottom:10px; color:#000; font-weight: bold}
