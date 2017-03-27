@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" style="background-color:#fff">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -816,9 +816,9 @@
 
 	<div class="container">
 		<div class="button-area" style="width:1120px; margin:0 auto">
-			<button type="button" class="btn-text btn-credit">외상결제</button><br>
-			<button type="button" class="btn-text btn-supply-change">공급변동내역</button><br>
-			<button type="button" class="btn-text btn-supply-print">공급장 인쇄하기</button><br>
+			<button type="button" class="btn-text btn-credit btn-popup">외상결제</button><br>
+			<button type="button" class="btn-text btn-supply-change btn-popup">공급변동내역</button><br>
+			<button type="button" class="btn-text btn-supply-print btn-popup">공급장 인쇄하기</button><br>
 
 
 	</div>
@@ -1212,13 +1212,7 @@ $(window).load(function(){
 	/* 공급내역 인쇄하기 */
 	$('.btn-supply-print').click(function(){
 		$('.pop-supply-print').fadeIn(200);
-		$('body').css('overflow-y','hidden');
 	});
-
-
-
-
-
 });
 </script>
 
