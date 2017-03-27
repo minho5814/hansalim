@@ -138,6 +138,8 @@ $(window).load(function(){
 		슬라이더
 	=========================================================================================================== */
 	/* 관련물품 */
+	var bxsliderLen = $('.bxslider').length;
+
 	$('.thumb-slide1 .bxslider').each(function(){
 		$(this).bxSlider({
 			//infiniteLoop:false,
@@ -509,17 +511,27 @@ $(window).load(function(){
 	/* ===========================================================================================================
 		레이어 팝업
 	=========================================================================================================== */
+	$('.layer-popup').hide().css({'opacity':'1'});
+	$('.layer-popup').each(function(){
+		var winH = $(window).height();
+		var popH = $(this).outerHeight();
+
+		if(popH >= winH){
+			$(this).addClass('scroll');
+		}else{
+			$(this).removeClass('scroll');
+		}
+	});
+
 	$('.btn-popup').click(function(){
 		var zIdx = $('.layer-popup').css('z-index');
 		$('body').append('<div class="popup-close">');
 		$('.popup-close').css({'z-index':zIdx-1});
+		$('body').css({'overflow':'hidden'});
 	});
 	$(document).on('click', '.layer-popup .btn-close, .popup-close', function(){
 		$('.layer-popup').fadeOut(200);
 		$('.popup-close').remove();
-		if($(this).parents().hasClass('long')){
-			$('body').css('overflow-y','inherit');
-		}
-
+		$('body').css({'overflow-y':'inherit'});
 	});
 });
