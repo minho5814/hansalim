@@ -1556,6 +1556,13 @@ td.e-mail-form {
 	background-position:0 -344px;
 }
 
+.btn-image.btn-like2 {background-color:#fff;border:1px solid #60b015;}
+.btn-image.btn-like2:before {
+	width:20px;
+	height:18px;
+	background-position:0 -867px;
+}
+
 .btn-image.btn-notice {background-color:#666;}
 .btn-image.btn-notice:before {
 	width:17px;
@@ -2117,17 +2124,32 @@ label.check-radio .radiobox {margin-right:8px;}
 
 .ico-round2 {
 	display:inline-block;
+	position:relative;
 	width:48px;
 	height:42px;
 	/*padding:0 20px;*/
+	background-color: #f3f3f3;
+	border: 1px solid #dadada;
 	box-sizing:border-box;
-	border-radius:20px;
+	border-radius:15px;
 	color:#fff;
 	font-size:13px;
 	font-weight:900;
-	line-height:42px;
+	/*line-height:42px;*/
+	text-align: center;
 }
-.ico-round2.type1 {background-color:#f56d24;}
+.ico-round2.type1 {background-color:#f56d24; border:0;}
+.ico-round2 span {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	transform: translateY(-50%);
+	font-size: 13px;
+	font-weight: 900;
+	line-height: 15px;
+}
+
 
 
 /* 가격 */
@@ -4794,6 +4816,7 @@ td .radish-bank-box span {display:block;}
 .filter-wrap .reset-area .btn-reset {height:32px; line-height: 32px; }
 .filter-wrap .reset-area .btn-reset:before {top:8px;}
 
+.btn-more {width: 100%;}
 
 .toggle-area .btn-area .btn-toggle {
 	float:left;
@@ -4813,6 +4836,70 @@ td .radish-bank-box span {display:block;}
 .toggle-area .btn-area .btn-toggle:first-child {margin-left:0;}
 .toggle-area .btn-area .btn-toggle.on {border-color:#91c90b;color:#60b015;}
 
+.order-list button {
+	position:relative;
+	font-size: 15px;
+	color:#999;
+	padding-left:10px;
+	margin-right:10px;
+}
+.order-list button.on {color:#000;}
+.order-list button:before {
+	content: '';
+	position: absolute;
+	top:4px;
+	left:0;
+	width:1px;
+	height:13px;
+	background-color: #d9d9d9;
+}
+.result-top {overflow: hidden; margin:60px 0 15px}
+.result-top .order-list {float:left;}
+.order-list button:first-child:before {content: none;}
+
+.result-top .view-area {position: relative; float:right;}
+.result-top .view-area:before {
+	content: '';
+	position: absolute;
+	left:50%;
+	top:0;
+	width:1px;
+	height:18px;
+	background-color: #ddd;
+}
+.result-top .view-area button {
+	position:relative;
+	width: 18px;
+	height: 18px;
+
+}
+.result-top .view-area button span {text-indent: : -9999px;font-size: 0; line-height: 0;}
+.result-top .view-area button:before {
+	display: block;
+	content: '';
+	position: relative;
+	left:0;
+	top:0;
+	width:18px;
+	height:18px;
+	background:url(../img/sprite/button.png) no-repeat 0 0;
+
+}
+
+.result-top .view-area .btn-thumbnail {margin-right:10px;}
+.result-top .view-area .btn-list {margin-left: 10px;}
+.result-top .view-area .btn-thumbnail:before {background-position: 0 -917px;}
+.result-top .view-area .btn-thumbnail.on:before {background-position: 0 -936px;}
+.result-top .view-area .btn-list:before {background-position: 0 -955px; top:1px;}
+.result-top .view-area .btn-list.on:before {background-position: 0 -973px;}
+
+.result-bottom {display: none;}
+.result-bottom.on {display: block;}
+
+.result-bottom .thumb-list1:first-child {border-top:1px solid #ddd;}
+.result-bottom .thumb-item1 {border-top: 0;}
+.result-bottom .thumb-item1 .link {position: relative;}
+.result-bottom .thumb-item1 .ico-round2 {position: absolute;right:15px; top:15px;}
 /* =========================================================================================================
 	레이어 팝업
 ========================================================================================================= */
