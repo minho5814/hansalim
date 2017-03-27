@@ -138,8 +138,6 @@ $(window).load(function(){
 		슬라이더
 	=========================================================================================================== */
 	/* 관련물품 */
-	var bxsliderLen = $('.bxslider').length;
-
 	$('.thumb-slide1 .bxslider').each(function(){
 		$(this).bxSlider({
 			//infiniteLoop:false,

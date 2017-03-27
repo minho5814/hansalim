@@ -1060,28 +1060,6 @@
 <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
-<script>
-$(window).load(function(){
-	/* 우편번호 찾기 팝업 호출 */
-	$('.btn-post').click(function(){
-		$('.pop-post .post-result').hide();
-		$('.pop-post').fadeIn(200);
-	});
-
-	/* 우편번호 찾기 팝업 내 검색 버튼 */
-	$('.pop-post .btn-search').click(function(){
-		$(this).parents('.pop-post').find('.post-result').show();
-	});
-
-	/* 탭 추가 */
-	$('.tab-styled2 .item').click(function(){
-		var idx = $(this).index();
-
-		$('.tab-styled2 .item').removeClass('on').eq(idx).addClass('on');
-		$('.tab-content2').removeClass('on').eq(idx).addClass('on');
-	});
-});
-</script>
 </body>
 
 </html>
