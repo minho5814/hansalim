@@ -26,7 +26,7 @@ $(window).load(function(){
 	});
 	$(document).on('click', '.btn-close, .gnb-close', function(){
 		$('.head-btm').css({'z-index':'10'});
-		$('.gnb-close').hide();
+		$('.gnb-close').remove();
 		$('.gnb-layer').fadeOut(100, function(){
 			$('.lnb-item, .menu-box .gnb-depth').removeClass('on');
 			$('.lnb-item:first-child, .menu-box .gnb-depth:first-child').addClass('on');
@@ -519,7 +519,7 @@ $(window).load(function(){
 	$(document).on('click', '.layer-popup .btn-close, .popup-close', function(){
 		$('.layer-popup').fadeOut(200);
 		$('.popup-close').remove();
-		if($(this).parents().hasClass('long')){		
+		if($(this).parents().hasClass('long')){
 			$('body').css('overflow-y','inherit');
 		}
 
