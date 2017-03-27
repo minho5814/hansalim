@@ -1875,13 +1875,12 @@ $(window).load(function(){
 	// 	$('.result-bottom').removeClass('on').eq(idx).addClass('on');
 	// });
 
-	$('.btn-view').each(function(){
-		$(this).click(function(){
+	$('.view-area .btn-view').click(function(){
+		$(this).each(function(i) {
 			var idx = $(this).index();
-		//alert(idx);
-			$(this).removeClass('on').eq(idx).addClass('on');
+
+			$(this).addClass('on').siblings('.btn-view').removeClass('on');
 			$(this).parents('.result-wrap').find('.result-bottom').removeClass('on').eq(idx).addClass('on');
-			//$('.result-bottom').removeClass('on').eq(idx).addClass('on');
 		});
 	});
 
