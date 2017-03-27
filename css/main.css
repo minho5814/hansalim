@@ -90,11 +90,9 @@
 	}
 		.category-wrap .category-tab .item {
 			display:inline-block;
-			overflow:hidden;
 			position:relative;
 			height:46px;
 			margin-left:44px;
-			border-radius:50%;
 			color:#999;
 			font-size:16px;
 			font-weight:bold;
@@ -140,6 +138,13 @@
 		font-size:0;
 		line-height:0;
 	}
+		.category-slide .link .img-area {
+			overflow:hidden;
+			width:140px;
+			height:140px;
+			margin:0 auto;
+			border-radius:50%;
+		}
 		.category-slide .link .text {
 			position:absolute;
 			left:0;right:0;top:50%;
@@ -171,24 +176,21 @@
 	.category-slide .bx-controls-direction .bx-next {right:-52px;background-image:url(../img/btn/btn_bx_next_12x21.png);}
 	.category-slide .bx-controls-direction .disabled {display:none;}
 
-
-/*  */
-.main-cont {
-	padding:50px 0 60px;
-}
+/* 컨텐츠 공통 영역 */
+.main-cont {padding:50px 0 60px;}
 	.main-cont .main-title {
 		position:relative;
-		margin-bottom:20px;
+		width:1120px;
+		margin:0 auto 20px;
 		text-align:center;
 	}
 	.main-cont .main-title:before {
 		content:'';
 		position:absolute;
-		left:50%;bottom:10px;
+		left:0;bottom:10px;
 		width:1120px;
 		height:1px;
-		margin-left:-560px;
-		background-color:#ebe5d9;
+		background-color:#666;
 	}
 		.main-cont .main-title .title {
 			color:#000;
@@ -206,7 +208,57 @@
 			line-height:22px;
 		}
 		.gray.main-cont .main-title .text {background-color:#f7f7f7;}
+		.main-cont .main-title .btn-link {
+			position:absolute;
+			right:0;bottom:22px;
+		}
 
 .main-cont.gray {background-color:#f7f7f7;}
+
+/* 조합원 추천 물품 */
 .thumb-slide1 .bx-viewport,
 .thumb-list1 .thumb-item1 {border:0;}
+.thumb-slide1 .bx-controls-direction {display:none;}
+.thumb-slide1 .bx-pager {height:14px;}
+	.thumb-slide1 .bx-pager .bx-pager-link {
+		width:14px;
+		height:14px;
+	}
+
+/* 띠 배너 */
+.line-banner {position:relative;}
+	.line-banner .bxslider .slide-item {
+		background-color:#ffde00;
+		font-size:0;
+		text-align:center;
+		line-height:0;
+	}
+	.line-banner .bx-pager {
+		position:absolute;
+		left:50%;top:11px;
+		width:1120px;
+		height:0;
+		margin-left:-560px;
+		font-size:0;
+		text-align:right;
+		line-height:0;
+	}
+		.line-banner .bx-pager .bx-pager-item {
+			display:inline-block;
+			margin-left:6px;
+		}
+		.line-banner .bx-pager .bx-pager-item:first-child {margin-left:0;}
+			.line-banner .bx-pager .bx-pager-link {
+				display:block;
+				width:14px;
+				height:14px;
+				border-radius:25px;
+				background-color:#878787;
+				-webkit-transition:all .3s;
+				-ms-transition:all .3s;
+				transition:all .3s;
+			}
+			.line-banner .bx-pager .bx-pager-link.active {
+				width:34px;
+				background-color:#4e4e4e;
+			}
