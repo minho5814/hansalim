@@ -7,6 +7,7 @@
 
 	<link rel="stylesheet" type="text/css" href="../../css/common.css">
 	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+
 </head>
 
 <body>
@@ -824,7 +825,7 @@
 				<span class="arrow">&gt;</span>
 				<a href="#" class="item">거래정보</a>
 				<span class="arrow">&gt;</span>
-				<span class="item">공급내역조회</span>
+				<span class="item">주문조회</span>
 			</div>
 		</div>
 
@@ -854,8 +855,8 @@
 					<li class="lnb-item">
 						<h3 class="title"><a href="#" class="link">거래정보</a></h3>
 						<ul class="list">
-							<li class="item"><a href="#" class="link"><span class="text">주문조회</span></a></li>
-							<li class="item on"><a href="#" class="link"><span class="text">공급내역조회</span></a></li>
+							<li class="item on"><a href="#" class="link"><span class="text">주문조회</span></a></li>
+							<li class="item"><a href="#" class="link"><span class="text">공급내역조회</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">매장이용내역조회</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">거래내역조회</span></a></li>
 						</ul>
@@ -891,207 +892,250 @@
 			</div>
 			<!-- /LNB -->
 			<div class="content">
-				<h3 class="cTitle1">공급내역조회</h3>
+				<h3 class="cTitle1">주문조회</h3>
 				<div class="cont-box">
-					<dl class="search-form">
-						<dt class="title">조회기간</dt>
-						<dd class="cont">
-							<div class="btn-area">
-								<button type="button" class="btn-term month1 on">1개월</button>
-								<button type="button" class="btn-term month3">3개월</button>
-								<button type="button" class="btn-term month6">6개월</button>
-							</div>
-							<div class="calendar-area">
-								<span class="calendar term">
-									<input type="text" class="datepicker start" readonly>
-								</span>
-								<span class="swung-dash">~</span>
-								<span class="calendar term">
-									<input type="text" class="datepicker end" readonly>
-								</span>
-							</div>
-							<button type="button" class="btn-search">조회</button>
-						</dd>
-					</dl>
-
 					<div class="board-wrap">
-						<div class="board-top">
-							<div class="fl">
-								<select class="styled1" style="width:130px;">
-									<option>전체</option>
-									<option>일반품</option>
-									<option>특별품</option>
-									<option>선물택배</option>
-									<option>김장채소</option>
-									<option>천연벽지</option>
-								</select>
-							</div>
-							<div class="fr">
-								<span class="text">환불가능금액 <strong class="fColor1">2,000원</strong></span>
-								<button type="button" class="btn-round-text btn-gray">환불신청</button>
-							</div>
+						<div class="title-wrap">
+							<h3 class="cTitle4">주문정보</h3>
+							<span class="flag-wrap">
+								<span class="ico-round type1">일반품</span>
+							</span>
 						</div>
-
-						<div class="board-lsit type2">
+						<div class="board-write1">
 							<table>
 								<colgroup>
-									<col style="width:6%;">
-									<col style="width:13%;">
+									<col style="width:150px;">
 									<col style="*">
-									<col style="width:10%;">
-									<col style="width:12%;">
-									<col style="width:10%;">
-									<col style="width:14%;">
 								</colgroup>
-								<thead>
-									<tr>
-										<th>번호</th>
-										<th>공급/배송일</th>
-										<th>내역</th>
-										<th>구분</th>
-										<th>공급합계금액</th>
-										<th>결제방법</th>
-										<th>공급상태</th>
-									</tr>
-								</thead>
 								<tbody>
 									<tr>
-										<td>10</td>
-										<td><a href="#none" class="btn-supply-print">2017.02.27(월)</a></td> <!-- 선물택배의 경우 공급장 없음 -->
-										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
-										<td>일반품</td>
-										<td>9,700원</td>
-										<td>CMS</td>
-										<td>정상</td>
+										<th scope="row"><div class="text">주문번호</div></th>
+										<td><div class="text">20170227134121797</div></td>
 									</tr>
 									<tr>
-										<td>9</td>
-										<td><a href="#none" class="btn-supply-print">2017.02.27(월)</a></td> <!-- 선물택배의 경우 공급장 없음 -->
-										<td class="align-left"><a href="#none">유기농면침구커버세트(슈퍼싱글/하늘색) 외 2건</a></td>
-										<td>일반품</td>
-										<td>50,000원</td>
-										<td>카드</td>
-										<td>정상
-											<div class="btn-wrap">
-												<div class="waybill">
-													<span class="search-waybill">
-														<a href="#none" class="btn-mini-text btn-icon">운송장조회</a>
-													</span>
-													<div class="waybill-box">
-														<button type="button" class="btn-close">닫기</button>
-														<dl>
-															<dt>운송장 번호를 선택해주세요.</dt>
-															<dd>
-																<ul>
-																	<li><a href="#none" class="btn-way-look">홍길동 : 12345678912</a></li>
-																	<li><a href="#none" class="btn-way-look">홍길순 : 12345678913</a></li>
-																	<li><a href="#none" class="btn-way-look">김아무개 : 12345678914</a></li>
-																</ul>
-															</dd>
-														</dl>
-													</div>
-												</div>
-											</div>
-										</td>
+										<th scope="row"><div class="text">주문일</div></th>
+										<td><div class="text">2017년 02월 27일 (월) 13:41</div></td>
 									</tr>
 									<tr>
-										<td>8</td>
-										<td><a href="#none" class="btn-supply-print">2017.02.27(월)</a></td> <!-- 선물택배의 경우 공급장 없음 -->
-										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
-										<td>일반품</td>
-										<td>9,700원</td>
-										<td>CMS</td>
-										<td><a href="#none" class="btn-supply-change">변동</a></td>
+										<th scope="row"><div class="text">공급일</div></th>
+										<td><div class="text fColor1">2017년 03월 20일 (월) ~ 2017년 03월 24일 (금)</div></td>
 									</tr>
 									<tr>
-										<td>7</td>
-										<td>2017.02.27(월)</td> <!-- 선물택배의 경우 공급장 없음 -->
-										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
-										<td>선물택배</td>
-										<td>9,700원</td>
-										<td>CMS</td>
-										<td>정상</td>
+										<th scope="row"><div class="text">상태</div></th>
+										<td><div class="text">2017년 03월 20일 (월)</div></td>
 									</tr>
 									<tr>
-										<td>6</td>
-										<td><a href="#none" class="btn-supply-print">2017.02.27(월)</a></td> <!-- 선물택배의 경우 공급장 없음 -->
-										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
-										<td>일반품</td>
-										<td>9,700원</td>
-										<td>CMS</td>
-										<td>정상</td>
-									</tr>
-									<tr>
-										<td>5</td>
-										<td><a href="#none" class="btn-supply-print">2017.02.27(월)</a></td> <!-- 선물택배의 경우 공급장 없음 -->
-										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
-										<td>일반품</td>
-										<td>9,700원</td>
-										<td>CMS</td>
-										<td>정상</td>
-									</tr>
-									<tr>
-										<td>4</td>
-										<td><a href="#none" class="btn-supply-print">2017.02.27(월)</a></td> <!-- 선물택배의 경우 공급장 없음 -->
-										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
-										<td>일반품</td>
-										<td>9,700원</td>
-										<td>CMS</td>
-										<td>정상</td>
-									</tr>
-									<tr>
-										<td>3</td>
-										<td><a href="#none" class="btn-supply-print">2017.02.27(월)</a></td> <!-- 선물택배의 경우 공급장 없음 -->
-										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
-										<td>일반품</td>
-										<td>9,700원</td>
-										<td>CMS</td>
-										<td>정상</td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td><a href="#none" class="btn-supply-print">2017.02.27(월)</a></td> <!-- 선물택배의 경우 공급장 없음 -->
-										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
-										<td>일반품</td>
-										<td>9,700원</td>
-										<td>CMS</td>
-										<td>정상</td>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td><a href="#none" class="btn-supply-print">2017.02.27(월)</a></td> <!-- 선물택배의 경우 공급장 없음 -->
-										<td class="align-left"><a href="#none">유정란(10알/국내산) 외 5건</a></td>
-										<td>일반품</td>
-										<td>9,700원</td>
-										<td>CMS</td>
-										<td>정상</td>
+										<th scope="row"><div class="text">공급자</div></th>
+										<td><div class="text"><em class="fColor1">한살림서울</em> : 이인균(실무자) 010-1234-5678</div></td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
+					</div>
+					<div class="board-wrap mgT35">
+						<div class="title-wrap">
+							<h3 class="cTitle4">주문물품 및 결제금액</h3>
+							<p class="info-text"><span class="fColor7 fbold">기후 및 산지 사정</span> 등으로 인해 주문한 물품이 <span class="fColor7 fbold">결품</span> 또는 <span class="fColor7 fbold">가격</span>이 <span class="fColor7 fbold">예고 없이 변경</span>될 수 있습니다.</p>
+						</div>
+						<div class="good-table">
+							<table>
+								<colgroup>
+									<col style="*">
+									<col style="width:20%">
+									<col style="width:10%">
+									<col style="width:20%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>물품명</th>
+										<th>공급액</th>
+										<th>수량</th>
+										<th>소계</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="goods">
+											<div class="goods-area">
+												<span class="goods-img">
+													<img src="../../img/temp/@temp_goods01.jpg" alt="유정란(10알/국내산)">
+													<span class="goods-type fColor3"><span>유기</span></span>
+												</span>
+												<div class="txt-box">
+													<span class="goods-name">유정란(10알/국내산)</span>
+												</div>
+											</div>
+										</td>
+										<td><span class="price">3,700</span>원</td>
+										<td>1</td>
+										<td><span class="price">3,700</span>원</td>
+									</tr>
+									<tr>
+										<td class="goods">
+											<div class="goods-area">
+												<span class="goods-img">
+													<img src="../../img/temp/@temp_goods01.jpg" alt="유정란(10알/국내산)">
+													<span class="goods-type fColor1"><span>무농약 이상</span></span>
+												</span>
+												<div class="txt-box">
+													<span class="goods-name">유정란(10알/국내산)</span>
+												</div>
+											</div>
+										</td>
+										<td><span class="price">3,700</span>원</td>
+										<td>1</td>
+										<td><span class="price">3,700</span>원</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- 일반품 -->
+						<div class="total-price total-price4">
+							<dl>
+								<dt>합계금액(2종)</dt>
+								<dd>
+									<span class="price"><span>6,700</span>원</span>
+									<span class="price-sign"><img src="../../img/img/img_add.png" alt="+"></span>
+								</dd>
+							</dl>
+							<dl>
+								<dt>기타(0종)</dt>
+								<dd>
+									<span class="price"><span>0</span>원</span>
+									<span class="price-sign"><img src="../../img/img/img_add.png" alt="+"></span>
+								</dd>
+							</dl>
+							<dl>
+								<dt>출자금 자동증자금 <button type="button" class="tip"><span class="hide">도움말</span></button></dt>
+								<dd>
+									<span class="price"><span>1,000</span>원</span>
+									<span class="price-sign"><img src="../../img/img/img_add.png" alt="+"></span>
+								</dd>
+							</dl>
+							<dl>
+								<dt class="fColor4">공급부담금 <button type="button" class="tip"><span class="hide">도움말</span></button></dt>
+								<dd>
+									<span class="price fColor4"><span>3,000</span>원</span>
+									<span class="price-sign"><img src="../../img/img/img_equal.png" alt="="></span>
+								</dd>
+							</dl>
+							<dl>
+								<dt class="fColor3">총액</dt>
+								<dd>
+									<span class="price fColor3"><span class="total">8,400</span>원</span>
+								</dd>
+							</dl>
+						</div>
+						<!-- //일반품 -->
 
-						<div class="pagenation">
-							<div class="page-list">
-								<a href="#none" class="button btn-first">맨앞</a>
-								<a href="#none" class="button btn-prev">이전</a>
-								<span class="number on">1</span>
-								<a href="#none" class="number">2</a>
-								<a href="#none" class="number">3</a>
-								<a href="#none" class="number">4</a>
-								<a href="#none" class="number">5</a>
-								<a href="#none" class="number">6</a>
-								<a href="#none" class="number">7</a>
-								<a href="#none" class="number">8</a>
-								<a href="#none" class="number">9</a>
-								<a href="#none" class="number">10</a>
-								<a href="#none" class="button btn-next">다음</a>
-								<a href="#none" class="button btn-last">맨뒤</a>
-							</div>
+						<div class="board-write1 mgT20">
+							<table>
+								<colgroup>
+									<col style="width:150px;">
+									<col style="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><div class="text">적립금사용</div></th>
+										<td><div class="text">1,000원</div></td>
+									</tr>
+									<tr>
+										<th scope="row"><div class="text">쿠폰할인</div></th>
+										<td><div class="text">0원</div></td>
+									</tr>
+									<tr>
+										<th scope="row"><div class="text">최종 결제금액</div></th>
+										<td><div class="text"><span class="price-text"><em class="price">18,400</em>원</span></div></td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
+					<div class="board-wrap mgT45">
+						<h3 class="cTitle4">결제정보</h3>
+						<div class="board-write1">
+							<table>
+								<colgroup>
+									<col style="width:100%;">
+								</colgroup>
+								<tbody>
+									<!-- CMS 결제 시 노출 -->
+									<tr>
+										<td>
+											<div class="text"><span class="fbold fColor7">CMS</span></div>
+										</td>
+									</tr>
+									<!-- //CMS 결제 시 노출 -->
+									<!-- 카드 결제 시 노출 -->
+									<tr>
+										<td>
+											<div class="text">
+												<span class="fbold fColor7">카드</span>
+												<a href="#" class="btn-mini-text btn-icon mgL10">카드영수증 보기</a>
+											</div>
+										</td>
+									</tr>
+									<!-- //카드 결제 시 노출 -->
+									<!-- 무통장입금 결제 시 노출 -->
+									<tr>
+										<td>
+											<div class="text radish-bank-box">
+												<span class="fbold fColor7">무통장입금</span>
+												<span>농협은행(예금주:한살림) 12345-02-678910</span>
+											</div>
+										</td>
+									</tr>
+									<!-- //무통장입금 결제 시 노출 -->
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="board-wrap mgT45">
+						<div class="title-wrap">
+							<h3 class="cTitle4">공급주소</h3>
+						</div>
+						<div class="board-write1">
+							<table>
+								<colgroup>
+									<col style="width:160px;">
+									<col style="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><div class="text">구분</div></th>
+										<td><div class="text">공급주소(주소변경신청은 공급준비중당일 오후 5시 30 분까지 해주세요)</div></td>
+									</tr>
+									<tr>
+										<th scope="row"><div class="text">조합원이름</div></th>
+										<td><div class="text">홍길동</div></td>
+									</tr>
+									<tr>
+										<th scope="row"><div class="text">주소</div></th>
+										<td><div class="text">(123-45) 서울 송파구 잠실동 123-456번지 ABC아파트 120동 1501호</div></td>
+									</tr>
+									<tr>
+										<th scope="row"><div class="text">연락처1</div></th>
+										<td><div class="text">010-1234-5678</div></td>
+									</tr>
+									<tr>
+										<th scope="row"><div class="text">연락처2</div></th>
+										<td><div class="text">02-1234-5678</div></td>
+									</tr>
+									<tr>
+										<th scope="row"><div class="text">공급자에게 전할 말</div></th>
+										<td><div class="text">문 앞에 놓아주세요.<p class="gray-text">※ 공급시간은 유동적이므로 시간약속이 어렵습니다.(대략 오전 10시부터 오후 5시 안에 공급됩니다.)</p></div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="btn-center mgT60">
+						<a href="#" class="btn-text btn-gray">주문삭제</a>
+						<a href="#" class="btn-text">목록</a>
+					</div>
 
-					<div class="box-content1">
-						<h3 class="box-title">공급내역조회 안내</h3>
+					<div class="box-content1 mgT60">
+						<h3 class="box-title">일반품 주문조회 안내</h3>
 						<div class="box-cont dot-line">
 							<p class="item">컨텐츠 수급 중</p>
 							<p class="item">컨텐츠 수급 중</p>
@@ -1192,365 +1236,13 @@
 	</div>
 </div>
 
-<!-- 레이어 팝업 영역 -->
-<!-- 공급변동 -->
-<div class="layer-popup pop-supply-change">
-	<div class="pop-head">
-		<h1 class="pop-title">공급변동내역</h1>
-		<button type="button" class="btn-close">닫기</button>
-	</div>
-	<div class="pop-content">
-		<p class="pop-text1">공급 변동 내역을 확인할 수 있습니다.</p>
-		<div class="board-lsit type2">
-			<table>
-				<colgroup>
-					<col style="*">
-					<col style="width:14%;">
-					<col style="width:14%;">
-					<col style="width:14%;">
-					<col style="width:25%;">
-				</colgroup>
-				<thead>
-					<tr>
-						<th>물품명</th>
-						<th>주문단가<br>(수량)</th>
-						<th>공급단가<br>(수량)</th>
-						<th>소계</th>
-						<th>변동사유</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>세발나물(200g) 세발나세발나</td>
-						<td>2,000원<br>(3개)</td>
-						<td>2,000원<br>(3개)</td>
-						<td>4,000원</td>
-						<td>공급단가 변경</td>
-					</tr>
-					<tr>
-						<td>자연산홍합(1.5kg)</td>
-						<td>2,000원<br>(3개)</td>
-						<td>2,000원<br>(3개)</td>
-						<td>4,000원</td>
-						<td>공급가능수량 부족</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
 
-		<div class="btn-bottom">
-			<a href="#" class="btn-text btn-green">확인</a>
-		</div>
-	</div>
-</div>
 
-<!-- 공급내역 인쇄하기 -->
-<div class="layer-popup pop-supply-print">
-	<div class="pop-head">
-		<h1 class="pop-title">공급내역 인쇄하기</h1>
-		<button type="button" class="btn-close">닫기</button>
-	</div>
-	<div class="pop-content">
-		<div class="top-area">
-			<p class="cTitle1">공 급 장</p>
-			<span class="date">공급일<em>2017년 03월 02일 (목)</em></span>
-		</div>
-		<div class="table-area">
-			<!-- 구매자 -->
-			<div class="board-wrap left">
-				<div class="title-wrap">
-					<h3 class="cTitle4">구매자</h3>
-				</div>
-				<div class="board-write1">
-					<table>
-						<colgroup>
-							<col style="width:120px;">
-							<col style="*">
-						</colgroup>
-						<tbody>
-							<tr>
-								<th scope="row"><div class="text">조합원이름</div></th>
-								<td><div class="text">홍길동</div></td>
-							</tr>
-							<tr>
-								<th scope="row"><div class="text">조합원번호</div></th>
-								<td><div class="text">123456</div></td>
-							</tr>
-							<tr>
-								<th scope="row"><div class="text">주소</div></th>
-								<td><div class="text">(123-456) 서울 송파구 잠실동 123-45번지 abc아파트 120동 1101호</div></td>
-							</tr>
-							<tr>
-								<th scope="row"><div class="text">결제방법</div></th>
-								<td><div class="text">카드</div></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<!-- //구매자 -->
-
-			<!-- 공급자 -->
-			<div class="board-wrap right">
-				<div class="title-wrap">
-					<h3 class="cTitle4">공급자</h3>
-				</div>
-				<div class="board-write1">
-					<table>
-						<colgroup>
-							<col style="width:120px;">
-							<col style="*">
-						</colgroup>
-						<tbody>
-							<tr>
-								<th scope="row"><div class="text">소속</div></th>
-								<td><div class="text">한살림서울</div></td>
-							</tr>
-							<tr>
-								<th scope="row"><div class="text">ARS</div></th>
-								<td><div class="text">02-1234-5687</div></td>
-							</tr>
-							<tr>
-								<th scope="row"><div class="text">팩스</div></th>
-								<td><div class="text">02-1234-5688</div></td>
-							</tr>
-							<tr>
-								<th scope="row"><div class="text">주소 </div></th>
-								<td><div class="text">(123-456) 서울 송파구 잠실동 123-45번지 abc아파트 120동 1101호</div></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<!-- //공급자 -->
-		</div>
-		<div class="board-wrap">
-			<div class="board-lsit type2">
-				<table>
-					<colgroup>
-						<col style="width:22%;">
-						<col style="*">
-						<col style="width:11%;">
-						<col style="width:11%;">
-						<col style="width:11%;">
-						<col style="width:11%;">
-						<col style="width:11%;">
-					</colgroup>
-					<thead>
-						<tr>
-							<th scope="col">주문번호</th>
-							<th scope="col">물품명</th>
-							<th scope="col">주문수량(개)</th>
-							<th scope="col">공급수량(개)</th>
-							<th scope="col">공급액(원)</th>
-							<th scope="col">쿠폰할인</th>
-							<th scope="col">합계금액(원)</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>20170227134121797</td>
-							<td>유정란(10알/국내산)</td>
-							<td>1</td>
-							<td>1</td>
-							<td>3,000</td>
-							<td>0</td>
-							<td>3,000</td>
-						</tr>
-						<tr>
-							<td>20170227134121797</td>
-							<td>세발나물(200g)</td>
-							<td>3</td>
-							<td>3</td>
-							<td>2,000</td>
-							<td>-1,000</td>
-							<td>1,000</td>
-						</tr>
-						<tr>
-							<td>20170227134121797</td>
-							<td>유정란(10알/국내산)</td>
-							<td>1</td>
-							<td>1</td>
-							<td>3,000</td>
-							<td>0</td>
-							<td>3,000</td>
-						</tr>
-						<tr>
-							<td>20170227134121797</td>
-							<td>세발나물(200g)</td>
-							<td>3</td>
-							<td>3</td>
-							<td>2,000</td>
-							<td>-1,000</td>
-							<td>1,000</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-		<!-- 거래정보 공급내역조회_상세 공급장(팝업) -->
-		<div class="board-wrap">
-			<div class="board-write1">
-				<table>
-					<colgroup>
-						<col style="width:150px;">
-						<col style="*">
-					</colgroup>
-					<tbody>
-						<tr>
-							<th scope="row"><div class="text">합계</div></th>
-							<td>
-								<div class="text">
-									<p class="gray-text">물품 5종(13,000원) + 기타 2종(0원) + 출자금 자동증자금(1,000원) + 공급부담금(3,000원) + 택배비(3,000원)</p>
-									<span class="price-black">20,000<span>원</span></span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><div class="text">적립금 사용</div></th>
-							<td><div class="text">1,000원</div></td>
-						</tr>
-						<tr>
-							<th scope="row"><div class="text">쿠폰 할인</div></th>
-							<td><div class="text">0원</div></td>
-						</tr>
-						<tr>
-							<th scope="row"><div class="text">최종 결제금액</div></th>
-							<td><span class="price-text"><em class="price">19,000</em>원</span></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-
-		<ul class="bullet-list4">
-			<li class="item">모든 물품은 공급 즉시 확인해 주세요. 단순히 구매의사가 바뀐 경우는 반품 사유가 되지 않습니다.</li>
-			<li class="item">출어린이집/대용량이용 조합원의 증빙자료용 출력 시, 법적 효력이 없습니다.</li>
-			<li class="item">반품접수 기한 : 신선품은 공급일 다음날까지, 그 외 물품은 공급 후 7일 까지입니다.</li>
-		</ul>
-
-		<div class="btn-bottom">
-			<a href="#" class="btn-text btn-green">인쇄하기</a>
-		</div>
-	</div>
-</div>
-
-<!-- 운송장조회 -->
-<div class="layer-popup pop-way-look">
-	<div class="pop-head">
-		<h1 class="pop-title">운송장조회</h1>
-		<button type="button" class="btn-close">닫기</button>
-	</div>
-	<div class="pop-content align-center">
-		<div class="way-look-box">
-			<div class="board-wrap">
-				<div class="title-wrap align-left">
-					<h3 class="cTitle4">주문정보</h3>
-				</div>
-				<div class="board-write1">
-					<table>
-						<colgroup>
-							<col style="width:120px;">
-							<col style="*">
-						</colgroup>
-						<tbody>
-							<tr>
-								<th scope="row"><div class="text">운송장번호</div></th>
-								<td><div class="text">12345678912</div></td>
-							</tr>
-							<tr>
-								<th scope="row"><div class="text">받는분</div></th>
-								<td><div class="text">홍길*</div></td>
-							</tr>
-							<tr>
-								<th scope="row"><div class="text">주소</div></th>
-								<td><div class="text">서울 송파구 잠실동</div></td>
-							</tr>
-							<tr>
-								<th scope="row"><div class="text">주문물품</div></th>
-								<td><div class="text">유기 연엽식기세트</div></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-
-			</div>
-			<div class="board-wrap mgT35">
-				<div class="title-wrap align-left">
-					<h3 class="cTitle4">배송상태</h3>
-				</div>
-				<div class="board-lsit type2">
-					<table>
-						<colgroup>
-							<col>
-							<col style="width:31%;">
-							<col style="width:31%;">
-						</colgroup>
-						<thead>
-							<tr>
-								<th>시간</th>
-								<th>현재위치</th>
-								<th>배송상태</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>2017-03-14 22:54:00</td>
-								<td>잠실</td>
-								<td>배송출고</td>
-							</tr>
-							<tr>
-								<td>2017-03-14 22:54:00</td>
-								<td>잠실</td>
-								<td>배송출고</td>
-							</tr>
-							<tr>
-								<td>2017-03-14 22:54:00</td>
-								<td>송파센터</td>
-								<td>터미널출고</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<div class="btn-center mgT30">
-				<a href="#" class="btn-text btn-green">확인</a>
-			</div>
-		</div>
-	</div>
-</div>
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
-<script>
-	$(window).load(function(){
-		/* 운송장조회 */
-		$('.btn-way-look').click(function(){
-			$('.pop-way-look').fadeIn(200);
-		});
 
-		/* 운송장조회 버튼 */
-		$('.waybill .search-waybill').click(function(){
-			$(this).next('.waybill-box').show();
-		});
-
-		/* 운송장조회 닫기 버튼 */
-		$('.waybill-box .btn-close').click(function(){
-			$(this).parents('.waybill-box').hide();
-		});
-
-		/* 공급변동내역 */
-		$('.btn-supply-change').click(function(){
-			$('.pop-supply-change').fadeIn(200);
-		});
-
-		/* 공급내역 인쇄하기 */
-		$('.btn-supply-print').click(function(){
-			$('.pop-supply-print').fadeIn(200);
-		});
-	});
-</script>
 </body>
 
 </html>
