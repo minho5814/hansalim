@@ -170,7 +170,43 @@
 	.category-slide .bx-controls-direction .bx-prev {left:-52px;background-image:url(../img/btn/btn_bx_prev_12x21.png);}
 	.category-slide .bx-controls-direction .bx-next {right:-52px;background-image:url(../img/btn/btn_bx_next_12x21.png);}
 	.category-slide .bx-controls-direction .disabled {display:none;}
-.category-slide {}
-.category-slide {}
-.category-slide {}
-.category-slide {}
+
+
+/*  */
+.main-cont {
+	padding:50px 0 60px;
+}
+	.main-cont .main-title {
+		position:relative;
+		margin-bottom:20px;
+		text-align:center;
+	}
+	.main-cont .main-title:before {
+		content:'';
+		position:absolute;
+		left:50%;bottom:10px;
+		width:1120px;
+		height:1px;
+		margin-left:-560px;
+		background-color:#ebe5d9;
+	}
+		.main-cont .main-title .title {
+			color:#000;
+			font-size:28px;
+			font-weight:bold;
+			line-height:46px;
+		}
+		.main-cont .main-title .text {
+			position:relative;
+			display:inline-block;
+			padding:0 10px;
+			color:#666;
+			background-color:#fff;
+			font-size:14px;
+			line-height:22px;
+		}
+		.gray.main-cont .main-title .text {background-color:#f7f7f7;}
+
+.main-cont.gray {background-color:#f7f7f7;}
+.thumb-slide1 .bx-viewport,
+.thumb-list1 .thumb-item1 {border:0;}
