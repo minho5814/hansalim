@@ -5085,7 +5085,7 @@ td .radish-bank-box span {display:block;}
   float: left;
   width: 366px;
   padding:30px;
-  /*height: 60px;*/
+  margin-bottom: 11px;
   border: 1px solid #ddd;
   box-sizing: border-box;
 }

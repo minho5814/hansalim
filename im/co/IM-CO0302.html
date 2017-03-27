@@ -1869,12 +1869,6 @@ $(window).load(function(){
 		$(this).toggleClass('on');
 	});
 
-	// $('.btn-view').click(function(){
-	// 	var idx = $(this).index();
-	// 	$('.view-area button').removeClass('on').eq(idx).addClass('on');
-	// 	$('.result-bottom').removeClass('on').eq(idx).addClass('on');
-	// });
-
 	$('.view-area .btn-view').click(function(){
 		$(this).each(function(i) {
 			var idx = $(this).index();
@@ -1894,7 +1888,8 @@ $(window).load(function(){
 	// external js: masonry.pkgd.js
 	$('.grid').masonry({
 	  itemSelector: '.grid-item',
-	  columnWidth: 366
+	  columnWidth: 366,
+	  gutter: 11
 });
 
 });
