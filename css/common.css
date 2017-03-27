@@ -4248,8 +4248,13 @@ label.check-radio .radiobox {margin-right:8px;}
 
 /* board-lsit 리스트 게시판 */
 .board-top {
-	overflow:hidden;
+	position: relative;
 	margin:40px 0 10px;
+}
+.board-top:after {
+	content:'';
+	display: block;
+	clear: both;
 }
 .board-top .fl {
 	float:left;
