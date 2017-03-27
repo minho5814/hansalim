@@ -182,7 +182,11 @@ html {
 	background-color:#0e0b0a;
 }
 .wrapper {background-color:#fff;}
-.header {min-height:145px;}
+.header {
+	position:relative;
+	z-index:15;
+	min-height:145px;
+}
 
 /* 로케이션 */
 .location {
