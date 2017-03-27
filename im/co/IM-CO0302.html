@@ -1486,6 +1486,7 @@ $(window).load(function(){
 	$('.btn-view').each(function(){
 		$(this).click(function(){
 			var idx = $(this).index();
+		//alert(idx);
 			$(this).removeClass('on').eq(idx).addClass('on');
 			$(this).parents('.result-wrap').find('.result-bottom').removeClass('on').eq(idx).addClass('on');
 			//$('.result-bottom').removeClass('on').eq(idx).addClass('on');
