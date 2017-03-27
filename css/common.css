@@ -471,6 +471,12 @@ td.e-mail-form {
 	transform:translateY(-50%);
 }
 
+.good-table table td .btn-wrap {
+	display: block;
+	margin-top: 5px;
+	text-align: center;
+}
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	리스트
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -770,6 +776,7 @@ td.e-mail-form {
 .tab-content2.active {display:block;}
 
 .tab-styled3 .item:first-child {border-left:1px solid #ddd}
+.tab-styled3 .item:last-child {margin-left:-2px;}
 .tab-content3 {display: none; margin-top:40px;}
 .tab-content3.on {display: block;}
 
@@ -1085,6 +1092,8 @@ td.e-mail-form {
 .pdT0 {padding-top:0 !important;}
 .pdT20 {padding-top:20px !important;}
 .pdT25 {padding-top:25px !important;}
+
+.pdL0 {padding-left:0 !important;}
 
 .mgR30 {margin-right:30px !important;}
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1517,6 +1526,24 @@ td.e-mail-form {
 	width:20px;
 	height:18px;
 	background-position:0 -867px;
+}
+
+.btn-icon-text.btn-cart3 {
+	width:128px;
+	height: 32px;
+	padding:0 0 0 25px;
+	border-color: #91c90b;
+	background-color: #91c90b;
+	color: #fff;
+	font-size: 14px;
+	line-height: 31px;
+	font-weight: bold;
+}
+.btn-icon-text.btn-cart3:before {
+	left:10px;
+	width:20px;
+	height:18px;
+	background-position:0 -324px;
 }
 
 /* 이미지 버튼 */
@@ -2016,6 +2043,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		float:left;
 		position:relative;
 		width:820px;
+		z-index:10;
 	}
 		.input-select .text-form input {}
 
@@ -2023,6 +2051,7 @@ label.check-radio .radiobox {margin-right:8px;}
 			display:none;
 			position:absolute;
 			left:0;right:0;top:31px;
+			z-index: 1;
 			padding:10px 0;
 			border:1px solid #91c90b;
 			background-color:#fff;
@@ -4362,50 +4391,7 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 .board-lsit table tbody td img {vertical-align:middle;}
 .board-lsit table .checkbox {vertical-align: middle;}
-.board-lsit table .btn-wrap .waybill{
-	position:relative;
-	display: inline-block;
-}
-.board-lsit table .btn-wrap .search-waybill {
-	display: inline-block;
-}
 
-.board-lsit table .waybill-box {
-	display: none;
-	position:absolute;
-	top:32px; right: 0;
-	width: 210px;
-	padding:15px 20px 13px;
-	background-color: #fff;
-	border:1px solid #60b015;
-}
-.board-lsit table .waybill-box .btn-close {
-	position: absolute;
-	top:14px; right:14px;
-	width:24px; height:24px;
-	background:url(../img/btn/btn_pop_close.png) 50% 50% no-repeat;
-	font-size: 0;
-	line-height: 0;
-}
-.board-lsit table .waybill-box dt {
-	margin-bottom: 9px;
-	font-size:14px;
-	color:#000;
-	text-align: left;
-}
-.board-lsit table .waybill-box dd ul li {
-	position: relative;
-	padding-left: 11px;
-	line-height: 26px;
-	text-align: left;
-}
-.board-lsit table .waybill-box dd ul li:before {
-	content: '';
-	position: absolute;
-	top:11px; left:0;
-	width:3px; height: 3px;
-	background-color: #676767;
-}
 .board-lsit table td .regular {
 	display:block;
 	width:38px; height:22px;
@@ -4421,6 +4407,53 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 
 .board-lsit.type2 table thead th {background-color:#f0f2ef;}
+
+
+.waybill{
+	position:relative;
+	display: inline-block;
+}
+.waybill .search-waybill {
+	display: inline-block;
+}
+
+.waybill .waybill-box {
+	display: none;
+	position:absolute;
+	top:32px; right: 0;
+	width: 210px;
+	padding:15px 20px 13px;
+	background-color: #fff;
+	border:1px solid #60b015;
+}
+.waybill .waybill-box .btn-close {
+	position: absolute;
+	top:14px; right:14px;
+	width:24px; height:24px;
+	background:url(../img/btn/btn_pop_close.png) 50% 50% no-repeat;
+	font-size: 0;
+	line-height: 0;
+}
+.waybill .waybill-box dt {
+	margin-bottom: 9px;
+	font-size:14px;
+	color:#000;
+	text-align: left;
+}
+.waybill .waybill-box dd ul li {
+	position: relative;
+	padding-left: 11px;
+	line-height: 26px;
+	text-align: left;
+}
+.waybill .waybill-box dd ul li:before {
+	content: '';
+	position: absolute;
+	top:11px; left:0;
+	width:3px; height: 3px;
+	background-color: #676767;
+}
+
 
 .review-write {border-top:1px solid #666;}
 .review-write .review-radio {padding:20px 0;}
@@ -4900,6 +4933,19 @@ td .radish-bank-box span {display:block;}
 .result-bottom .thumb-item1 {border-top: 0;}
 .result-bottom .thumb-item1 .link {position: relative;}
 .result-bottom .thumb-item1 .ico-round2 {position: absolute;right:15px; top:15px;}
+
+.result-wrap .result-bottom .good-table {border-top-color:#ddd; border-left:0; border-right:0;}
+.result-wrap .result-bottom td:first-child {border-left:0;}
+.result-wrap .result-bottom td:last-child {border-right:0;}
+
+.result-wrap .result-bottom .good-table .goods-img .ico-round2 {position: absolute;right:-12px; top:-12px;}
+.result-wrap .result-bottom .good-table .location {padding:0; font-size: 14px; color:#666}
+.result-wrap .result-bottom .good-table .goods-name {font-size:16px; color:#000;}
+.result-wrap .result-bottom .good-table td:nth-child(2),
+.result-wrap .result-bottom .good-table td:nth-child(3) {text-align: right; padding-right:20px;}
+.result-wrap .result-bottom .good-table table td.goods .txt-box {width:100%; padding-left: 135px;}
+.result-wrap .result-bottom .good-table table td button {width: 110px;}
+.result-wrap .result-bottom .good-table table td button:first-child {margin-bottom:5px;}
 /* =========================================================================================================
 	레이어 팝업
 ========================================================================================================= */
@@ -5536,4 +5582,132 @@ td .radish-bank-box span {display:block;}
 }
 .total-price.total-price4 dl {
 	width:20%;
+}
+
+/* 사이트이용약관 */
+.useterms-infor-area {
+	width:1120px;
+	margin:15px auto 0;
+	border-top:3px solid #666;
+}
+.useterms-infor-area .text-box  {
+	padding:20px;
+	border:1px solid  #ddd;
+}
+.useterms-infor-area .use-infor-txt {
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+	letter-spacing:-0.5px;
+}
+.useterms-infor-area .text-box .text-list .item-text {
+	position:relative;
+	margin-top:6px;
+	padding-left:20px;
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+	letter-spacing:-0.5px;
+}
+.useterms-infor-area .text-box .text-list .item-text:first-child {
+	margin-top:0;
+}
+.useterms-infor-area .text-box .text-list .item-text .ico-number {
+	position:absolute;
+	left:2px; top:0;
+}
+.useterms-infor-area .text-box .text-list .item-text .depth-list01 li {
+	position:relative;
+	margin-top:3px;
+	padding-left:12px;
+}
+.useterms-infor-area .text-box .text-list .item-text .depth-list01 li:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:1px; top:8px;
+	width:5px;
+	height:2px;
+	background-color:#adadad;
+}
+.useterms-infor-area .text-box .text-list .item-text .depth-list02 li,
+.useterms-infor-area .text-box .text-list .item-text .depth-list03 li {
+	position:relative;
+	margin-top:3px;
+	padding-left:18px;
+}
+.useterms-infor-area .text-box .text-list .item-text .depth-list02 li .ico-number,
+.useterms-infor-area .text-box .text-list .item-text .depth-list03 li .ico-number {
+	position:absolute;
+	left:0; top:0;
+}
+.useterms-infor-area .text-box .text-list .item-text dl dt,
+.useterms-infor-area .text-box .text-list .item-text dl dd {
+	font-size:15px;
+	color:#666;
+	line-height:25px;
+}
+/* 개인정보처리방침 */
+.useterms-infor-area .text-box .infor-list .item-infor {
+	position:relative;
+	margin-top:10px;
+	padding-left:20px;
+	font-size:15px;
+	color:#000;
+	line-height:24px;
+	letter-spacing:-0.5px;
+}
+.useterms-infor-area .text-box .infor-list.infot01 .item-infor {
+	color:#666;
+}
+.useterms-infor-area .text-box .infor-list .item-infor:first-child {
+	margin-top:0;
+}
+.useterms-infor-area .text-box .infor-list .item-infor .ico-number {
+	position:absolute;
+	left:0;top:0;
+}
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor {margin-left:-17px;}
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor li {
+	position:relative;
+	margin-top:5px;
+	padding-left:21px;
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+	letter-spacing:-0.5px;
+}
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor li .ico-number {
+	position:absolute;
+	left:0; top:0;
+}
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor02,
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor03 {margin-left:-15px;}
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor02 li,
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor03 li {
+	position:relative;
+	margin-top:5px;
+	padding-left:12px;
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+	letter-spacing:-0.5px;
+}
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor02 li:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; top:9px;
+	width:6px;
+	height:2px;
+	background-color:#adadad;
+}
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor03 li:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; top:8px;
+	width:3px;
+	height:3px;
+	background-color:#676767;
 }
