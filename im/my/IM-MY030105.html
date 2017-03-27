@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" type="text/css" href="../../css/common.css">
 	<link rel="stylesheet" type="text/css" href="../../css/main.css">
-	
+
 </head>
 
 <body>
@@ -844,7 +844,7 @@
 					<li class="lnb-item">
 						<h3 class="title"><a href="#" class="link">개인정보</a></h3>
 						<ul class="list">
-							<li class="item on"><a href="#" class="link"><span class="text">개인정보 조회/수정</span></a></li>
+							<li class="item"><a href="#" class="link"><span class="text">개인정보 조회/수정</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">주소록관리</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">결제정보관리</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">나의 알림</span></a></li>
@@ -855,7 +855,7 @@
 					<li class="lnb-item">
 						<h3 class="title"><a href="#" class="link">거래정보</a></h3>
 						<ul class="list">
-							<li class="item"><a href="#" class="link"><span class="text">주문조회</span></a></li>
+							<li class="item on"><a href="#" class="link"><span class="text">주문조회</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">공급내역조회</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">매장이용내역조회</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">거래내역조회</span></a></li>
@@ -910,7 +910,28 @@
 								<tbody>
 									<tr>
 										<th scope="row"><div class="text">주문번호</div></th>
-										<td><div class="text">20170227134121797</div></td>
+										<td>
+											<div class="text">20170227134121797
+												<div class="waybill mgL10">
+													<span class="search-waybill">
+														<a href="#none" class="btn-mini-text btn-icon">운송장조회</a>
+													</span>
+													<div class="waybill-box">
+														<button type="button" class="btn-close">닫기</button>
+														<dl>
+															<dt>운송장 번호를 선택해주세요.</dt>
+															<dd>
+																<ul>
+																	<li><a href="#none" class="btn-way-look">홍길동 : 12345678912</a></li>
+																	<li><a href="#none" class="btn-way-look">홍길순 : 12345678913</a></li>
+																	<li><a href="#none" class="btn-way-look">김아무개 : 12345678914</a></li>
+																</ul>
+															</dd>
+														</dl>
+													</div>
+												</div>
+											</div>
+										</td>
 									</tr>
 									<tr>
 										<th scope="row"><div class="text">주문일</div></th>
@@ -934,7 +955,7 @@
 					</div>
 					<div class="board-wrap mgT45">
 						<div class="title-wrap">
-							<h3 class="cTitle4">받는분(2)</h3>
+							<h3 class="cTitle4">받는분(<span class="fColor3">2</span>)</h3>
 						</div>
 						<div class="board-write1">
 							<table>
@@ -1018,7 +1039,7 @@
 													</dd>
 												</dl>
 												<dl>
-													<dt class="fColor3">장바구니 총액</dt>
+													<dt class="fColor3">합계</dt>
 													<dd>
 														<span class="price fColor3"><span class="total">9,200</span>원</span>
 													</dd>
@@ -1113,7 +1134,7 @@
 													</dd>
 												</dl>
 												<dl>
-													<dt class="fColor3">장바구니 총액</dt>
+													<dt class="fColor3">합계</dt>
 													<dd>
 														<span class="price fColor3"><span class="total">9,200</span>원</span>
 													</dd>
@@ -1198,9 +1219,7 @@
 								<tbody>
 									<tr>
 										<td>
-											<div class="text">
-												CMS
-											</div>
+											<div class="text"><span class="fbold fColor7">CMS</span></div>
 										</td>
 									</tr>
 								</tbody>
@@ -1243,9 +1262,16 @@
 						</div>
 					</div>
 					<div class="btn-center mgT60">
-						<a href="#" class="btn-text btn-green">주문수정</a>
 						<a href="#" class="btn-text btn-gray">주문삭제</a>
 						<a href="#" class="btn-text">목록</a>
+					</div>
+
+					<div class="box-content1 mgT60">
+						<h3 class="box-title">선물택배 주문조회 안내</h3>
+						<div class="box-cont dot-line">
+							<p class="item">컨텐츠 수급 중</p>
+							<p class="item">컨텐츠 수급 중</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1343,12 +1369,111 @@
 </div>
 
 
+<!-- 레이어 팝업 영역 -->
+<!-- 운송장조회 -->
+<div class="layer-popup pop-way-look">
+	<div class="pop-head">
+		<h1 class="pop-title">운송장조회</h1>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+	<div class="pop-content align-center">
+		<div class="way-look-box">
+			<div class="board-wrap">
+				<div class="title-wrap align-left">
+					<h3 class="cTitle4">주문정보</h3>
+				</div>
+				<div class="board-write1">
+					<table>
+						<colgroup>
+							<col style="width:120px;">
+							<col style="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row"><div class="text">운송장번호</div></th>
+								<td><div class="text">12345678912</div></td>
+							</tr>
+							<tr>
+								<th scope="row"><div class="text">받는분</div></th>
+								<td><div class="text">홍길*</div></td>
+							</tr>
+							<tr>
+								<th scope="row"><div class="text">주소</div></th>
+								<td><div class="text">서울 송파구 잠실동</div></td>
+							</tr>
+							<tr>
+								<th scope="row"><div class="text">주문물품</div></th>
+								<td><div class="text">유기 연엽식기세트</div></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 
+			</div>
+			<div class="board-wrap mgT35">
+				<div class="title-wrap align-left">
+					<h3 class="cTitle4">배송상태</h3>
+				</div>
+				<div class="board-lsit type2">
+					<table>
+						<colgroup>
+							<col>
+							<col style="width:31%;">
+							<col style="width:31%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>시간</th>
+								<th>현재위치</th>
+								<th>배송상태</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2017-03-14 22:54:00</td>
+								<td>잠실</td>
+								<td>배송출고</td>
+							</tr>
+							<tr>
+								<td>2017-03-14 22:54:00</td>
+								<td>잠실</td>
+								<td>배송출고</td>
+							</tr>
+							<tr>
+								<td>2017-03-14 22:54:00</td>
+								<td>송파센터</td>
+								<td>터미널출고</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="btn-center mgT30">
+				<a href="#" class="btn-text btn-green">확인</a>
+			</div>
+		</div>
+	</div>
+</div>
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	/* 운송장조회 */
+	$('.btn-way-look').click(function(){
+		$('.pop-way-look').fadeIn(200);
+	});
 
+	$('.waybill .search-waybill').click(function(){
+		$(this).next('.waybill-box').show();
+	});
+
+	$('.waybill-box .btn-close').click(function(){
+		$(this).parents('.waybill-box').hide();
+	});
+});
+</script>
 </body>
 
 </html>

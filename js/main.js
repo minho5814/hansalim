@@ -79,7 +79,7 @@ $(window).load(function(){
 
 	/* 주요 카테고리/테마관/서브브랜드 */
 	$('.category-slide .bxslider').each(function(){
-		slider = $(this).bxSlider({
+		$(this).bxSlider({
 			infiniteLoop:false,
 			hideControlOnEnd: true,
 			slideWidth: 174,
@@ -99,8 +99,16 @@ $(window).load(function(){
 
 	$('.category-tab .item').click(function(){
 		var idx = $(this).index();
-		$('.category-tab .item').removeClass('on').eq(idx).addClass('on');
-		$('.category-slide').removeClass('on').fadeOut(200).eq(idx).addClass('on').fadeIn(200);
+		if($(this).hasClass('on') == false){
+			$('.category-tab .item').removeClass('on').eq(idx).addClass('on');
+			$('.category-slide').removeClass('on').fadeOut(200).eq(idx).addClass('on').fadeIn(200);
+		}
+	});
+
+	/* 띠 배너 */
+	$('.line-banner .bxslider').bxSlider({
+		controls:false,
+		speed:400
 	});
 
 

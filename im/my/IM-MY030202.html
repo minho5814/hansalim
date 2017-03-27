@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" type="text/css" href="../../css/common.css">
 	<link rel="stylesheet" type="text/css" href="../../css/main.css">
-	
+
 </head>
 
 <body>
@@ -825,7 +825,7 @@
 				<span class="arrow">&gt;</span>
 				<a href="#" class="item">거래정보</a>
 				<span class="arrow">&gt;</span>
-				<span class="item">주문조회</span>
+				<span class="item">공급내역조회</span>
 			</div>
 		</div>
 
@@ -844,7 +844,7 @@
 					<li class="lnb-item">
 						<h3 class="title"><a href="#" class="link">개인정보</a></h3>
 						<ul class="list">
-							<li class="item on"><a href="#" class="link"><span class="text">개인정보 조회/수정</span></a></li>
+							<li class="item"><a href="#" class="link"><span class="text">개인정보 조회/수정</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">주소록관리</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">결제정보관리</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">나의 알림</span></a></li>
@@ -856,7 +856,7 @@
 						<h3 class="title"><a href="#" class="link">거래정보</a></h3>
 						<ul class="list">
 							<li class="item"><a href="#" class="link"><span class="text">주문조회</span></a></li>
-							<li class="item"><a href="#" class="link"><span class="text">공급내역조회</span></a></li>
+							<li class="item on"><a href="#" class="link"><span class="text">공급내역조회</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">매장이용내역조회</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">거래내역조회</span></a></li>
 						</ul>
@@ -928,15 +928,15 @@
 							<table>
 								<colgroup>
 									<col style="*">
-									<col style="width:20%">
-									<col style="width:10%">
-									<col style="width:20%">
+									<col style="width:18%">
+									<col style="width:18%">
+									<col style="width:18%">
 								</colgroup>
 								<thead>
 									<tr>
 										<th>물품명</th>
-										<th>공급액</th>
-										<th>수량</th>
+										<th>주문단가(수량)</th>
+										<th>공급단가(수량)</th>
 										<th>소계</th>
 									</tr>
 								</thead>
@@ -950,11 +950,17 @@
 												</span>
 												<div class="txt-box">
 													<span class="goods-name">유정란(10알/국내산)</span>
+													<span class="goods-amount"><em class="fColor3">공급변동 : 공급단가 변경</em></span>
 												</div>
 											</div>
 										</td>
-										<td><span class="price">3,700</span>원</td>
-										<td>1</td>
+										<td><span class="price">3,700</span>원<br>(1개)</td>
+										<td>
+											<span class="price">3,700</span>원<br>(1개)
+											<span class="btn-wrap">
+												<a href="#" class="btn-mini-text btn-icon">물품문의</a>
+											</span>
+										</td>
 										<td><span class="price">3,700</span>원</td>
 									</tr>
 									<tr>
@@ -969,8 +975,8 @@
 												</div>
 											</div>
 										</td>
-										<td><span class="price">3,700</span>원</td>
-										<td>1</td>
+										<td><span class="price">3,700</span>원<br>(1개)</td>
+										<td><span class="price">3,700</span>원<br>(1개)</td>
 										<td><span class="price">3,700</span>원</td>
 									</tr>
 								</tbody>
@@ -1006,7 +1012,7 @@
 								</dd>
 							</dl>
 							<dl>
-								<dt class="fColor3">장바구니 총액</dt>
+								<dt class="fColor3">총액</dt>
 								<dd>
 									<span class="price fColor3"><span class="total">8,400</span>원</span>
 								</dd>
@@ -1043,13 +1049,33 @@
 									<col style="width:100%;">
 								</colgroup>
 								<tbody>
+									<!-- CMS 결제 시 노출 -->
 									<tr>
 										<td>
-											<div class="radio-check">
-												<label class="item"><input type="radio" name="Pay" class="styled1" checked>CMS</label>
+											<div class="text"><span class="fbold fColor7">CMS</span></div>
+										</td>
+									</tr>
+									<!-- //CMS 결제 시 노출 -->
+									<!-- 카드 결제 시 노출 -->
+									<tr>
+										<td>
+											<div class="text">
+												<span class="fbold fColor7">카드</span>
+												<a href="#" class="btn-mini-text btn-icon mgL10">카드영수증 보기</a>
 											</div>
 										</td>
 									</tr>
+									<!-- //카드 결제 시 노출 -->
+									<!-- 무통장입금 결제 시 노출 -->
+									<tr>
+										<td>
+											<div class="text radish-bank-box">
+												<span class="fbold fColor7">무통장입금</span>
+												<span>농협은행(예금주:한살림) 12345-02-678910</span>
+											</div>
+										</td>
+									</tr>
+									<!-- //무통장입금 결제 시 노출 -->
 								</tbody>
 							</table>
 						</div>
@@ -1071,7 +1097,7 @@
 									</tr>
 									<tr>
 										<th scope="row"><div class="text">주소</div></th>
-										<td><div class="text">(123-45) 서울 송파구 잠실동 123-456번지 ABC아파트 120동 1501호 <a href="#" class="btn-mini-text btn-icon btn-popup btn-way-look mgL10">공급지주소변경</a></div></td>
+										<td><div class="text">(123-45) 서울 송파구 잠실동 123-456번지 ABC아파트 120동 1501호 <a href="#none" class="btn-mini-text btn-icon btn-popup mgL10">공급지주소변경</a></div></td>
 									</tr>
 									<tr>
 										<th scope="row"><div class="text">연락처1</div></th>
@@ -1185,107 +1211,9 @@
 	</div>
 </div>
 
-<!-- 레이어 팝업 영역 -->
-<!-- 운송장조회 -->
-<div class="layer-popup pop-way-look">
-	<div class="pop-head">
-		<h1 class="pop-title">운송장조회</h1>
-		<button type="button" class="btn-close">닫기</button>
-	</div>
-	<div class="pop-content align-center">
-		<div class="way-look-box">
-			<div class="board-wrap">
-				<div class="title-wrap align-left">
-					<h3 class="cTitle4">주문정보</h3>
-				</div>
-				<div class="board-write1">
-					<table>
-						<colgroup>
-							<col style="width:120px;">
-							<col style="*">
-						</colgroup>
-						<tbody>
-							<tr>
-								<th scope="row"><div class="text">운송장번호</div></th>
-								<td><div class="text">12345678912</div></td>
-							</tr>
-							<tr>
-								<th scope="row"><div class="text">받는분</div></th>
-								<td><div class="text">홍길*</div></td>
-							</tr>
-							<tr>
-								<th scope="row"><div class="text">주소</div></th>
-								<td><div class="text">서울 송파구 잠실동</div></td>
-							</tr>
-							<tr>
-								<th scope="row"><div class="text">주문물품</div></th>
-								<td><div class="text">유기 연엽식기세트</div></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-
-			</div>
-			<div class="board-wrap mgT35">
-				<div class="title-wrap align-left">
-					<h3 class="cTitle4">배송상태</h3>
-				</div>
-				<div class="board-lsit type2">
-					<table>
-						<colgroup>
-							<col>
-							<col style="width:31%;">
-							<col style="width:31%;">
-						</colgroup>
-						<thead>
-							<tr>
-								<th>시간</th>
-								<th>현재위치</th>
-								<th>배송상태</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>2017-03-14 22:54:00</td>
-								<td>잠실</td>
-								<td>배송출고</td>
-							</tr>
-							<tr>
-								<td>2017-03-14 22:54:00</td>
-								<td>잠실</td>
-								<td>배송출고</td>
-							</tr>
-							<tr>
-								<td>2017-03-14 22:54:00</td>
-								<td>송파센터</td>
-								<td>터미널출고</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<div class="btn-center mgT30">
-				<a href="#" class="btn-text btn-green">확인</a>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
-<script>
-$(window).load(function(){
-	/* 운송장조회 */
-	$('.btn-way-look').click(function(){
-		$('.pop-way-look').fadeIn(200);
-	});
-
-
-});
-</script>
 
 </body>
 
