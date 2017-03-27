@@ -5555,3 +5555,119 @@ td .radish-bank-box span {display:block;}
 .total-price.total-price4 dl {
 	width:20%;
 }
+
+/* 스토어 리스트 */
+.store-list ul {
+	overflow:hidden;
+	margin-left:-6px;
+}
+	.store-list li {
+		float:left;
+		width:368px;
+		height:418px;
+		margin:0 0 7px 7px;
+		padding:25px 30px;
+		border:1px solid #ddd;
+		box-sizing: border-box;
+	}
+	.store-list li dl {
+		position: relative;
+	}
+	.store-list li .title {
+		margin-bottom:7px;
+		color:#000;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.store-list li .operate {
+		position: absolute;
+		top:0; right: 0;
+	}
+	.store-list li .operate span {
+		display:inline-block;
+		padding:0 6px;
+		font-size:13px;
+		font-weight: bold;
+		line-height: 20px;
+		border-radius:10px;
+	}
+	.store-list li .operate .type01 {
+		color:#09babc;
+		border:1px solid #09babc;
+	}
+	.store-list li .operate .type02 {
+		color:#ec7015;
+		border:1px solid #ec7015;
+	}
+	.store-list li .operate .type03 {
+		color:#666;
+		border:1px solid #666666;
+	}
+	.store-list li .img-wrap span {
+		display:block;
+		width:306px;
+		height:150px;
+		margin: 0 auto;
+		text-align:center;
+	}
+	.store-list li .img-wrap span img {vertical-align: top;}
+
+	.store-list li .item {
+		overflow:hidden;
+		margin-top:19px;
+	}
+	.store-list li .item span {
+		position: relative;
+		float:left;
+		width:25%;
+		padding-left:24px;
+		font-size:13px;
+		color:#666;
+		line-height: 15px;
+		box-sizing: border-box;
+	}
+	.store-list li .item span:before {
+		content:'';
+		position: absolute;
+		top:50%; left:0;
+		width:19px;
+		background:url(../img/icon/store_icon.png) 0 0 no-repeat;
+	}
+	.store-list li .item span.type01:before {
+		height:19px;
+		margin-top:-10px;
+		background-position: 0 0;
+	}
+	.store-list li .item span.type02:before {
+		height:17px;
+		margin-top:-9px;
+		background-position: 0 -29px;
+	}
+	.store-list li .item span.type03:before {
+		height:17px;
+		margin-top:-9px;
+		background-position: 0 -56px;
+	}
+	.store-list li .item span.type04:before {
+		height:19px;
+		margin-top:-10px;
+		background-position: 0 -83px;
+	}
+	.store-list li .text {
+		margin-top:17px;
+		padding-top:16px;
+		border-top:1px solid #ddd;
+	}
+	.store-list li .text p {
+		margin-bottom:12px;
+		color:#666;
+		font-size:14px;
+		line-height: 22px;
+		letter-spacing: -0.5px;
+	}
+	.store-list li .text p:first-child {
+		margin-top:0;
+	}
+	.store-list li .text p .call {
+		display: block;
+	}
