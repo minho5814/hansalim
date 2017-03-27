@@ -9,7 +9,7 @@ $(window).load(function(){
 		상단 비주얼 슬라이드
 	================================================================= */
 	// 마우스 오버시 탭 변환
-	$('.title-item .text').mouseenter(function(){
+	$('.title-item .text').click(function(){
 		var idx = $(this).parents('.title-item').index();
 		$(this).parents('.visual-banner').find('.title-item').removeClass('on').eq(idx).addClass('on');
 		$(this).parents('.visual-banner').find('.img-item').removeClass('on').eq(idx).addClass('on');
@@ -43,7 +43,7 @@ $(window).load(function(){
 	});
 
 	// 자동 슬라이드
-	var sSpeed = 4000;// 슬라이드 속도
+	var sSpeed = 3000;// 슬라이드 속도
 	visualTimer = setInterval(function(){
 		$('.btn-next').click();
 	}, sSpeed);
@@ -77,70 +77,39 @@ $(window).load(function(){
 		}
 	});
 
-	/* =================================================================
-		새로 공급하는 물품
-	================================================================= */
-	// 슬라이드
-	$('.thumb-box .bxslider').bxSlider({
-		controls:false,
-		speed:400
+	/* 주요 카테고리/테마관/서브브랜드 */
+	$('.category-slide .bxslider').each(function(){
+		$(this).bxSlider({
+			infiniteLoop:false,
+			hideControlOnEnd: true,
+			slideWidth: 174,
+			minSlides: 1,
+			maxSlides: 6,
+			moveSlides: 6,
+			speed:400
+		});
 	});
-
-	// 상품갯수 버튼
-	$('.btn-plus').click(function(){
-		var defaultN = $(this).parents('.volume').find('.text-box').val()*1;
-		$(this).parents('.volume').find('.text-box').val(defaultN+1);
-	});
-	$('.btn-minus').click(function(){
-		var defaultN = $(this).parents('.volume').find('.text-box').val()*1;
-		if(defaultN <= 1){
-			$(this).parents('.volume').find('.text-box').val('1');
+	$('.category-slide').each(function(){
+		if($(this).hasClass('on')){
+			$(this).css({'opacity':'1'}).show()
 		}else{
-			$(this).parents('.volume').find('.text-box').val(defaultN-1);
+			$(this).hide().css({'opacity':'1'});
 		}
 	});
 
-	/* =================================================================
-		슬라이드 띠배너
-	================================================================= */
-	$('.slide-banner .bxslider').bxSlider({
+	$('.category-tab .item').click(function(){
+		var idx = $(this).index();
+		if($(this).hasClass('on') == false){
+			$('.category-tab .item').removeClass('on').eq(idx).addClass('on');
+			$('.category-slide').removeClass('on').fadeOut(200).eq(idx).addClass('on').fadeIn(200);
+		}
+	});
+
+	/* 띠 배너 */
+	$('.line-banner .bxslider').bxSlider({
 		controls:false,
 		speed:400
 	});
 
-	/* =================================================================
-		맞춤형 추천 물품
-	================================================================= */
-	$('.tab-item').click(function(){
-		var idx = $(this).index();
-		$(this).parents('.tab-content').find('.tab-item').removeClass('on').eq(idx).addClass('on');
-		$(this).parents('.tab-content').find('.thumb-list2').removeClass('on').eq(idx).addClass('on');
-	});
 
-	/* =================================================================
-		이즈음 밥상
-	================================================================= */
-	$('.slide-cont .bxslider').bxSlider({
-		//infiniteLoop:false,
-		speed:400
-	});
-
-	/* =================================================================
-		한살림 소식
-	================================================================= */
-	$('.news-list').masonry({
-		itemSelector: '.news-item'
-	});
-
-
-	/* =================================================================
-		공통
-	================================================================= */
-	/* 슬라이드가 하나일 경우 페이저 히든처리 */
-	$('.bx-pager').each(function(){
-		var len = $(this).find('.bx-pager-item').length;
-		if(len <= 1){
-			$(this).parents('.bx-controls').hide();
-		}
-	});
 });
