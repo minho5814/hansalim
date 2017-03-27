@@ -1082,6 +1082,8 @@ td.e-mail-form {
 .pdT20 {padding-top:20px !important;}
 .pdT25 {padding-top:25px !important;}
 
+.pdL0 {padding-left:0 !important;}
+
 .mgR30 {margin-right:30px !important;}
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	텍스트
@@ -1969,6 +1971,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		float:left;
 		position:relative;
 		width:820px;
+		z-index:10;
 	}
 		.input-select .text-form input {}
 
@@ -5317,4 +5320,132 @@ td .radish-bank-box span {display:block;}
 }
 .total-price.total-price4 dl {
 	width:20%;
+}
+
+/* 사이트이용약관 */
+.useterms-infor-area {
+	width:1120px;
+	margin:15px auto 0;
+	border-top:3px solid #666;
+}
+.useterms-infor-area .text-box  {
+	padding:20px;
+	border:1px solid  #ddd;
+}
+.useterms-infor-area .use-infor-txt {
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+	letter-spacing:-0.5px;
+}
+.useterms-infor-area .text-box .text-list .item-text {
+	position:relative;
+	margin-top:6px;
+	padding-left:20px;
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+	letter-spacing:-0.5px;
+}
+.useterms-infor-area .text-box .text-list .item-text:first-child {
+	margin-top:0;
+}
+.useterms-infor-area .text-box .text-list .item-text .ico-number {
+	position:absolute;
+	left:2px; top:0;
+}
+.useterms-infor-area .text-box .text-list .item-text .depth-list01 li {
+	position:relative;
+	margin-top:3px;
+	padding-left:12px;
+}
+.useterms-infor-area .text-box .text-list .item-text .depth-list01 li:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:1px; top:8px;
+	width:5px;
+	height:2px;
+	background-color:#adadad;
+}
+.useterms-infor-area .text-box .text-list .item-text .depth-list02 li,
+.useterms-infor-area .text-box .text-list .item-text .depth-list03 li {
+	position:relative;
+	margin-top:3px;
+	padding-left:18px;
+}
+.useterms-infor-area .text-box .text-list .item-text .depth-list02 li .ico-number,
+.useterms-infor-area .text-box .text-list .item-text .depth-list03 li .ico-number {
+	position:absolute;
+	left:0; top:0;
+}
+.useterms-infor-area .text-box .text-list .item-text dl dt,
+.useterms-infor-area .text-box .text-list .item-text dl dd {
+	font-size:15px;
+	color:#666;
+	line-height:25px;
+}
+/* 개인정보처리방침 */
+.useterms-infor-area .text-box .infor-list .item-infor {
+	position:relative;
+	margin-top:10px;
+	padding-left:20px;
+	font-size:15px;
+	color:#000;
+	line-height:24px;
+	letter-spacing:-0.5px;
+}
+.useterms-infor-area .text-box .infor-list.infot01 .item-infor {
+	color:#666;
+}
+.useterms-infor-area .text-box .infor-list .item-infor:first-child {
+	margin-top:0;
+}
+.useterms-infor-area .text-box .infor-list .item-infor .ico-number {
+	position:absolute;
+	left:0;top:0;
+}
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor {margin-left:-17px;}
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor li {
+	position:relative;
+	margin-top:5px;
+	padding-left:21px;
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+	letter-spacing:-0.5px;
+}
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor li .ico-number {
+	position:absolute;
+	left:0; top:0;
+}
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor02,
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor03 {margin-left:-15px;}
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor02 li,
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor03 li {
+	position:relative;
+	margin-top:5px;
+	padding-left:12px;
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+	letter-spacing:-0.5px;
+}
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor02 li:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; top:9px;
+	width:6px;
+	height:2px;
+	background-color:#adadad;
+}
+.useterms-infor-area .text-box .infor-list .item-infor .depth-infor03 li:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; top:8px;
+	width:3px;
+	height:3px;
+	background-color:#676767;
 }
