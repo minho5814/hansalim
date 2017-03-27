@@ -770,6 +770,7 @@ td.e-mail-form {
 .tab-content2.active {display:block;}
 
 .tab-styled3 .item:first-child {border-left:1px solid #ddd}
+.tab-styled3 .item:last-child {margin-left:-2px;}
 .tab-content3 {display: none; margin-top:40px;}
 .tab-content3.on {display: block;}
 
@@ -1517,6 +1518,24 @@ td.e-mail-form {
 	width:20px;
 	height:18px;
 	background-position:0 -867px;
+}
+
+.btn-icon-text.btn-cart3 {
+	width:128px;
+	height: 32px;
+	padding:0 0 0 25px;
+	border-color: #91c90b;
+	background-color: #91c90b;
+	color: #fff;
+	font-size: 14px;
+	line-height: 31px;
+	font-weight: bold;
+}
+.btn-icon-text.btn-cart3:before {
+	left:10px;
+	width:20px;
+	height:18px;
+	background-position:0 -324px;
 }
 
 /* 이미지 버튼 */
@@ -4900,6 +4919,19 @@ td .radish-bank-box span {display:block;}
 .result-bottom .thumb-item1 {border-top: 0;}
 .result-bottom .thumb-item1 .link {position: relative;}
 .result-bottom .thumb-item1 .ico-round2 {position: absolute;right:15px; top:15px;}
+
+.result-wrap .result-bottom .good-table {border-top-color:#ddd; border-left:0; border-right:0;}
+.result-wrap .result-bottom td:first-child {border-left:0;}
+.result-wrap .result-bottom td:last-child {border-right:0;}
+
+.result-wrap .result-bottom .good-table .goods-img .ico-round2 {position: absolute;right:-12px; top:-12px;}
+.result-wrap .result-bottom .good-table .location {padding:0; font-size: 14px; color:#666}
+.result-wrap .result-bottom .good-table .goods-name {font-size:16px; color:#000;}
+.result-wrap .result-bottom .good-table td:nth-child(2),
+.result-wrap .result-bottom .good-table td:nth-child(3) {text-align: right; padding-right:20px;}
+.result-wrap .result-bottom .good-table table td.goods .txt-box {width:100%; padding-left: 135px;}
+.result-wrap .result-bottom .good-table table td button {width: 110px;}
+.result-wrap .result-bottom .good-table table td button:first-child {margin-bottom:5px;}
 /* =========================================================================================================
 	레이어 팝업
 ========================================================================================================= */
