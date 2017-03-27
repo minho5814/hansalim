@@ -769,6 +769,10 @@ td.e-mail-form {
 .tab-content2.on {display:block;}
 .tab-content2.active {display:block;}
 
+.tab-styled3 .item:first-child {border-left:1px solid #ddd}
+.tab-content3 {display: none; margin-top:40px;}
+.tab-content3.on {display: block;}
+
 /* 슬라이드 */
 .bxslider {opacity:0;}
 .thumb-slide1 {
@@ -1688,6 +1692,28 @@ td.e-mail-form {
 .btn-modify:hover:before {
 	background-position: 0 -852px;
 }
+
+/*초기화버튼*/
+.btn-reset {
+	display:inline-block;
+	position:relative;
+	height:22px;
+	line-height: 22px;
+	color:#666;
+	padding-left:20px;
+}
+
+.btn-reset:before {
+	content:'';
+	position:absolute;
+	width:14px;
+	height:14px;
+	left:0;top:3px;
+	background-image:url(../img/sprite/button.png);
+	background-repeat:no-repeat;
+	background-position: 0 -902px;
+}
+
 
 /* 수량체크 */
 .volume-box {
@@ -4673,6 +4699,92 @@ label.check-radio .radiobox {margin-right:8px;}
 
 /*MY030105.html*/
 td .radish-bank-box span {display:block;}
+
+
+/* =========================================================================================================
+	통합검색 (co/)
+========================================================================================================= */
+.all-search {margin-bottom:40px;}
+.all-search p {font-size: 18px;}
+.filter-wrap {border:1px solid #ddd;}
+.filter-wrap:first-child {margin-bottom:10px;}
+	.filter-wrap > div {position:relative; padding:13px 0; }
+	.filter-wrap p {
+		/*float:left;*/
+		position: absolute;
+		left:0;
+		top:19px;
+
+		/*width:250px;*/
+		padding-left:10px;
+		font-size:15px;
+		font-weight: bold;
+		color:#000;
+		box-sizing: border-box;
+	}
+	.category-area {border-bottom:1px solid #ddd;}
+.category-area,
+.supply-area { margin:0 28px;}
+.category-area ul,
+.supply-area ul {width:812px; padding-left:210px;}
+.category-area ul:after,
+.supply-area ul:after {
+	content:'';
+	display:block;
+	clear: both;
+}
+.category-area ul li,
+.supply-area ul li {float: left; width:25%; height:33px; line-height: 33px; }
+
+
+.select-area {border-top:1px solid #ddd;}
+.select-area, .allergy-area {
+	padding:25px 28px !important;
+	background-color: #f7f7f7;
+}
+.filter-wrap .list-area {padding-left:210px;}
+.filter-wrap .list-area:after {content:''; display: block; clear: both;}
+.select-area .list-area li {float: left; height:32px; line-height: 32px; margin-right:30px; color:#60b015;}
+.select-area .list-area li:last-child {margin-right: 0;}
+.select-area p ,
+.allergy-area p {
+	top:30px;
+	padding-left:38px;
+	letter-spacing: -1px;
+}
+
+.filter-wrap .reset-area {display: inline-block;position:relative; padding-left:30px;  margin-left:30px;}
+	.filter-wrap .reset-area:before {
+		content: '';
+		position:absolute;
+		left:0;
+		top:0;
+		width:1px;
+		height:32px;
+		background-color: #ddd;
+
+	}
+.filter-wrap .reset-area .btn-reset {height:32px; line-height: 32px; }
+.filter-wrap .reset-area .btn-reset:before {top:8px;}
+
+
+.toggle-area .btn-area .btn-toggle {
+	float:left;
+
+	height:32px;
+	margin-left:4px;
+	padding:0 15px;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+	background-color:#fff;
+	color:#666;
+	font-size:15px;
+	font-weight:bold;
+	text-align:center;
+	line-height:30px;
+}
+.toggle-area .btn-area .btn-toggle:first-child {margin-left:0;}
+.toggle-area .btn-area .btn-toggle.on {border-color:#91c90b;color:#60b015;}
 
 /* =========================================================================================================
 	레이어 팝업

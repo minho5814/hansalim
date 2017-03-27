@@ -824,7 +824,7 @@
 			</div>
 		</div>
 
-		<div class="align-center">
+		<div class="align-center all-search">
 			<h2 class="cTitle1">통합검색</h2>
 			<p><span class="fColor1">'감자'</span>에 대해 총 <span class="fColor3">14</span> 건이 검색되었습니다.</p>
 		</div>
@@ -832,19 +832,88 @@
 		<div class="content-w1120">
 			<div class="tab-wrap">
 				<div class="tab-area">
-					<ul class="tab-list1">
+					<ul class="tab-list1 tab-styled3">
 						<li class="item on"><span class="text">물품검색 (8)</span></li>
 						<li class="item"><span class="text">원재료검색 (3)</span></li>
 						<li class="item"><span class="text">전체검색</span></li>
 					</ul>
 				</div>
-				<div class="tab-content on">
-					123123
+				<div class="tab-content3 on">
+					<div class="filter-wrap">
+						<div class="category-area">
+							<p class="title">카테고리</p>
+							<ul>
+								<li><label><input type="checkbox" class="styled1">뿌리채소(6)</label></li>
+								<li><label><input type="checkbox" class="styled1" checked>라면/간편조리(5)</label></li>
+								<li><label><input type="checkbox" class="styled1" checked>국수/면(4)</label></li>
+								<li><label><input type="checkbox" class="styled1">우리밀빵(3)</label></li>
+								<li><label><input type="checkbox" class="styled1">과자(2)</label></li>
+								<li><label><input type="checkbox" class="styled1">과채/고춧가루(1)</label></li>
+							</ul>
+						</div>
+						<div class="supply-area">
+							<p class="title">공급유형</p>
+							<ul>
+								<li><label><input type="radio" name="group" class="styled1" checked>일반공급(8)</label></li>
+								<li><label><input type="radio" name="group" class="styled1">선물공급(8)</label></li>
+								<li><label><input type="radio" name="group" class="styled1">사전예약(8)</label></li>
+								<li><label><input type="radio" name="group" class="styled1">특별품(8)</label></li>
+							</ul>
+						</div>
+						<div class="select-area">
+							<p class="title">선택조건 <span class="fColor3">3</span>개</p>
+							<div class="list-area">
+								<ul>
+									<li>라면/간편조리 <button type="button" class="btn-delete">삭제</button></span></li>
+									<li>국수/면 <button type="button" class="btn-delete">삭제</button></span></li>
+									<li>일반공급 <button type="button" class="btn-delete">삭제</button></span></li>
+								</ul>
+								<div class="reset-area">
+									<button type="button" class="btn-reset">초기화</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="filter-wrap">
+						<div class="allergy-area toggle-area">
+							<p class="title">알레르기성분 제외조건 <span class="fColor3">3</span>개</p>
+							<div class="list-area">
+								<div class="btn-area">
+									<button type="button" class="btn-toggle on">난류</button>
+									<button type="button" class="btn-toggle">우유</button>
+									<button type="button" class="btn-toggle">메밀</button>
+									<button type="button" class="btn-toggle">땅콩</button>
+									<button type="button" class="btn-toggle on">복숭아</button>
+									<button type="button" class="btn-toggle on">돼지고기</button>
+								</div>
+								<div class="reset-area">
+									<button type="button" class="btn-reset">초기화</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="result-wrap">
+						<div class="result-top">
+							<div class="order-list">
+								<button type="button">전체</button>
+								<button type="button">인기물품</button>
+								<button type="button">낮은공급가</button>
+								<button type="button">높은공급바</button>
+								<button type="button">가나다순</button>
+								<button type="button">상품후기 많은 순</button>
+							</div>
+							<div class="view-area">
+								<button type="button" class="btn-thumbnail"><span>썸네일</span></button>
+								<button type="button" class="btn-list"><span>리스트</span></button>
+							</div>
+						</div>
+						<div class="result-bottom"></div>
+					</div>
 				</div>
-				<div class="tab-content">
+				<div class="tab-content3">
 					111
 				</div>
-				<div class="tab-content">
+				<div class="tab-content3">
 					222
 				</div>
 			</div>
@@ -1086,23 +1155,16 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-	/* 우편번호 찾기 팝업 호출 */
-	$('.btn-post').click(function(){
-		$('.pop-post .post-result').hide();
-		$('.pop-post').fadeIn(200);
-	});
-
-	/* 우편번호 찾기 팝업 내 검색 버튼 */
-	$('.pop-post .btn-search').click(function(){
-		$(this).parents('.pop-post').find('.post-result').show();
-	});
 
 	/* 탭 추가 */
-	$('.tab-styled2 .item').click(function(){
+	$('.tab-styled3 .item').click(function(){
 		var idx = $(this).index();
+		$('.tab-styled3 .item').removeClass('on').eq(idx).addClass('on');
+		$('.tab-content3').removeClass('on').eq(idx).addClass('on');
+	});
 
-		$('.tab-styled2 .item').removeClass('on').eq(idx).addClass('on');
-		$('.tab-content2').removeClass('on').eq(idx).addClass('on');
+	$('.btn-toggle').click(function(){
+		$(this).toggleClass('on');
 	});
 });
 </script>
