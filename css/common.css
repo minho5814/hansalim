@@ -1143,6 +1143,10 @@ td.e-mail-form {
 	background-color:rgba(255,255,255,.8);
 }
 
+/*회색 배경*/
+.container.gray {background-color:#eee;}
+/*회색 배경의 로케이션*/
+.container.gray .location {padding:22px 0;}
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	마진/패딩
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -1704,6 +1708,12 @@ td.e-mail-form {
 	width:26px;
 	height:15px;
 	background-position:0 -821px;
+}
+.btn-image.btn-use {background-color:#fff; border:1px solid #ddd;}
+.btn-image.btn-use:before {
+	width:14px;
+	height:16px;
+	background-position:0 -1053px;
 }
 
 .list-title.close .btn-image.btn-list-close:before {
@@ -2932,7 +2942,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	padding-top:196px;
 	background:url(../img/bg/bg_footer.png) no-repeat 50% 45px;
 }
-.footer.gray {background:url(../img/bg/bg_footer.png) #f7f7f7 no-repeat 50% 45px;}
+.footer.gray {background:url(../img/bg/bg_footer.png) #eee no-repeat 50% 45px;}
 .footer .utill {
 	background-color:rgba(36,31,30,.6);
 	font-size:0;
@@ -5254,6 +5264,7 @@ td .radish-bank-box span {display:block;}
 	position: absolute;
 	right: 30px;
 	top:30px;
+	color:#999;
 }
 .tag-wrap + .btn-center .btn-open,
 .tag-wrap + .btn-center .btn-close {
@@ -5321,7 +5332,60 @@ td .radish-bank-box span {display:block;}
 	transition:opacity .3s;
 }
 
+/*나의한살림 상세*/
+.sub-cont {overflow: hidden;}
+.sub-cont .left-area {
+	float: left;
+	width:710px;
+	padding:40px 40px 60px 40px;
+	background-color: #fff;
+	box-sizing: border-box;
+}
 
+.sub-cont .left-area .cTitle1  {line-height: inherit;}
+.sub-cont .left-area .cTitle1 span {
+	display: block;
+	color:#60b015;
+	font-size: 18px;
+	line-height: 18px;
+}
+.sub-cont .left-area .util {overflow: hidden; margin:20px 0 15px}
+.sub-cont .left-area .util .date { float:left; height:32px; color:#999; font-size: 14px; line-height: 32px;}
+.sub-cont .left-area .util ul {overflow: hidden; float:right;}
+.sub-cont .left-area .util ul li {position: relative; float: left;  font-size: 14px; color:#999; height:32px; line-height: 32px; padding-right:11px; margin-left:11px;}
+.sub-cont .left-area .util ul li:last-child {padding-right: 0;}
+.sub-cont .left-area .util ul li:last-child:before{content: none;}
+.sub-cont .left-area .util ul li:before {
+	content: '';
+	position: absolute;
+	right:0;
+	top:10px;
+	width:1px;
+	height:13px;
+	background-color: #d9d9d9;
+
+
+}
+.sub-cont .left-area .util ul li.search-count {background:url(../img/icon/ico_search.png) no-repeat left 50%; padding-left:17px;}
+.sub-cont .left-area .util ul li.like-count {background:url(../img/icon/ico_like.png) no-repeat left 50%; padding-left:17px;}
+.sub-cont .left-area .util ul li em {color: #000;}
+
+.sub-cont .left-area .text-area {margin-top:30px; word-break:keep-all;}
+.sub-cont .tag-area {overflow: hidden; margin:15px 0 30px;}
+.sub-cont  .tag-area a {float: left; height:24px; margin:0 5px 5px 0; padding:0 5px; font-size: 14px; color:#333; background-color:#eee; line-height: 24px; box-sizing: border-box;}
+.sub-cont  .tag-area a:last-child {margin-right:0}
+
+.sub-cont .right-area {
+	float: right;
+	width:370px;
+}
+.sub-cont .right-area .top-area {overflow: hidden;margin:7px 0 20px;}
+.sub-cont .right-area .top-area p {float: left; line-height:26px;}
+.sub-cont .right-area .top-area .btn-green {float:right; height: 32px; padding:0 13px; line-height: 32px; min-width: inherit; font-size: 14px; box-sizing: border-box;}
+
+.sub-cont .right-area .item-area .item-list {width: 100%; }
+.sub-cont .right-area .item-area .item-list li {width:50%; background-color:#fff; border:1px solid #ddd; box-sizing: border-box; margin-top:-1px; margin-left:-1px;}
+.sub-cont .right-area .item-list .btn-center {width:100%; height: 100%;}
 /* =========================================================================================================
 	레이어 팝업
 ========================================================================================================= */
