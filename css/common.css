@@ -2645,6 +2645,7 @@ label.check-radio .radiobox {margin-right:8px;}
 			font-size:14px;
 			font-weight:bold;
 			line-height:35px;
+			white-space: nowrap;
 		}
 
 	.gnb-layer .layer-cont .lnb .add-area {
@@ -2715,6 +2716,7 @@ label.check-radio .radiobox {margin-right:8px;}
 				font-size:14px;
 				line-height:28px;
 			}
+			.gnb-layer .gnb-depth .depth-list .item ul li a:hover{color:#60b015;}
 
 /* 추천물품 */
 .depth-thumb-list {
