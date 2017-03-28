@@ -1149,7 +1149,9 @@ td.e-mail-form {
 .mgT50 {margin-top:50px !important;}
 .mgT60 {margin-top:60px !important;}
 .mgT65 {margin-top:65px !important;}
+.mgT70 {margin-top:70px !important;}
 .mgT80 {margin-top:80px !important;}
+.mgT85 {margin-top:85px !important;}
 
 .mgL10 {margin-left:10px !important;}
 .mgL30 {margin-left:30px !important;}
@@ -1161,6 +1163,7 @@ td.e-mail-form {
 .pdT25 {padding-top:25px !important;}
 
 .pdL0 {padding-left:0 !important;}
+.pdT50 {padding-top:50px !important;}
 
 .mgR30 {margin-right:30px !important;}
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2156,13 +2159,16 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 .tab-list1 {
 	overflow:hidden;
-	margin:0 -2px 0 -1px;
+	margin:0 -1px 0 -1px;
 }
 	.tab-list1 .item {
 		float:left;
 		position:relative;
 		width:33%;
 		margin-left:-1px;
+	}
+	.tab-list1.wid50 .item {
+		width:50% !important;
 	}
 	.tab-list1 .item:first-child {
 		width:34%;
