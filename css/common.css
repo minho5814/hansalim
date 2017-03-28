@@ -842,7 +842,7 @@ td.e-mail-form {
 			background-color:#fff;
 			color:#000;
 		}/* on */
-.tab-content4 {display: none; margin-top:40px;}
+.tab-content4 {display: none; }
 .tab-content4.on {display: block;}
 
 /* 슬라이드 */
@@ -4856,6 +4856,7 @@ td .radish-bank-box span {display:block;}
 /* =========================================================================================================
 	통합검색 (co/)
 ========================================================================================================= */
+.result-wrap .btn-center {margin-top:25px;}
 .all-search {margin-bottom:40px;}
 .all-search p {font-size: 18px;}
 .filter-wrap {border:1px solid #ddd;}
@@ -5022,6 +5023,82 @@ td .radish-bank-box span {display:block;}
 
 .tab-content4 .cTitle3 {font-weight: normal}
 .tab-content4  .result-top {margin-top:0}
+
+.tab-content4 .group {margin-top:80px;}
+/*요리검색결과*/
+.recipe-list .item-recipe {
+	overflow:hidden;
+	padding:30px;
+	border-bottom:1px solid #ddd;
+}
+.recipe-list .item-recipe:first-child {
+	border-top:1px solid #ddd;
+}
+.recipe-list .item-recipe .img-wrap {
+	float:left;
+}
+.recipe-list .item-recipe .img-wrap img {
+	vertical-align:middle;
+}
+.recipe-list .item-recipe .text-wrap {
+	float:left;
+	margin-left:30px;
+}
+.recipe-list .item-recipe .text-wrap .text {
+	font-size:20px;
+	color:#000;
+	font-weight:bold;
+}
+.recipe-list .item-recipe .text-wrap .text span {
+	display:block;
+	font-size:14px;
+	color:#666;
+	font-weight:normal;
+}
+.recipe-list .item-recipe .text-wrap dl dt {
+	margin-top:10px;
+	font-size:15px;
+	color:#000;
+	line-height:24px;
+	font-weight:bold;
+}
+.recipe-list .item-recipe .text-wrap dl dd {
+	font-size:14px;
+	color:#666;
+	line-height:24px;
+}
+
+
+/*한살림소식 검색결과*/
+.grid {
+  max-width: 1200px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  float: left;
+  width: 366px;
+  padding:30px;
+  margin-bottom: 11px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+/*.grid-item:nth-child(1+3n) {margin-left:0;}*/
+.grid-item .title {font-size: 18px; color:#000; font-weight: bold;}
+.grid-item .title span {font-size:14px; display: block; font-weight: normal;}
+.grid-item .tag-area {overflow: hidden; margin:15px 0 30px;}
+.grid-item .tag-area a {float: left; height:24px; margin:0 5px 5px 0; padding:0 5px; font-size: 14px; color:#333; background-color:#eee; line-height: 24px; box-sizing: border-box;}
+.grid-item .tag-area a:last-child {margin-right:0}
+.grid-item .img-area {width:100%; height:150px; overflow: hidden;}
+.grid-item .img-area img {width: 100%;}
+.grid-item .text-area {font-size:15px; color:#666; line-height:24px; margin-top:30px; }
+
 /* =========================================================================================================
 	레이어 팝업
 ========================================================================================================= */
@@ -5775,7 +5852,7 @@ td .radish-bank-box span {display:block;}
 	.store-list li .text p .call {
 		display: block;
 	}
-	
+
 /* 사이트이용약관 */
 .useterms-infor-area {
 	width:1120px;
