@@ -5686,6 +5686,7 @@ td .radish-bank-box span {display:block;}
 	color:#666;
 	line-height: 24px;
 	text-align: center;
+	letter-spacing: -0.5px;
 }
 .qr-list {
 	overflow:hidden;
@@ -5899,52 +5900,95 @@ td .radish-bank-box span {display:block;}
 
 /* 장바구니 및 나의 한살림 가격 표 */
 .total-price {
-  overflow:hidden;
-  margin-top:20px;
-  background-color:#f0f2ef;
-  border:1px solid #bbb;
+	position: relative;
+	margin-top:20px;
+	background-color:#f0f2ef;
+	border:1px solid #bbb;
+}
+.total-price:after {
+	content: '';
+	display: block;
+	clear: both;
 }
 .total-price dl {
-  float: left;
-  position: relative;
-  width:16.6%;
-  padding:20px 0;
-  border-left:1px solid #ddd;
-  box-sizing: border-box;
+	float: left;
+	position: relative;
+	width:16.6%;
+	padding:20px 0;
+	border-left:1px solid #ddd;
+	box-sizing: border-box;
 }
 .total-price dl:first-child {border-left:0;}
 .total-price dl dt {
-  font-size:14px;
-  color:#666;
-  text-align: center;
+	font-size:14px;
+	color:#666;
+	text-align: center;
 }
 .total-price dl dt .tip {
-  display: inline-block;
-  width:18px; height:18px;
-  margin-left:3px;
-  background:url(../img/btn/btn_question.png) 0 0 no-repeat;
+	position: relative;
+	display: inline-block;
+	width:18px; height:18px;
+	margin-left:3px;
+	background:url(../img/btn/btn_question.png) 0 0 no-repeat;
 }
+.total-price dl dt .tip:hover .inner-box {
+	display: block;
+}
+.total-price dl dt .tip .inner-box {
+	display: none;
+	position: absolute;
+	top:20px; left:-200px;
+	z-index:10;
+	transform: translateX(100px);
+	padding-top:4px;
+}
+.total-price dl dt .tip .inner-box:before {
+	content: '';
+	position: absolute;
+	top:0; left:50%;
+	width:5px; height:4px;
+	margin-left:-2px;
+	background:url(../img/img/img_bubble02.png) 0 0 no-repeat;
+
+}
+.total-price dl dt .tip .inner-box div {
+	padding:11px 15px;
+	font-size:13px;
+	color:#666;
+	line-height: 19px;
+	text-align: left;
+	background-color: #fff;
+	border:1px solid #60b015;
+}
+
+.total-price dl dt .tip .inner-box div p {
+	margin-top:10px;
+}
+.total-price dl dt .tip .inner-box div p:first-child {
+	margin-top:0;
+}
+
 .total-price dl dd {
-  text-align: center;
+	text-align: center;
 }
 .total-price dl dd .price {
-  font-size:15px;
-  color:#000;
+	font-size:15px;
+	color:#000;
 }
 .total-price dl dd span {
-  margin-right:3px;
-  font-size:24px;
-  font-weight: 600;
+	margin-right:3px;
+	font-size:24px;
+	font-weight: 600;
 }
 .total-price dl dd span .total {
-  font-weight: 900;
-  letter-spacing: -1px;
+	font-weight: 900;
+	letter-spacing: -1px;
 }
 .total-price .price-sign {
-  position:absolute;
-  top:50%; right:-16px;
-  z-index: 1;
-  margin-top:-13px;
+	position:absolute;
+	top:50%; right:-16px;
+	z-index: 1;
+	margin-top:-13px;
 }
 
 .total-price.total-price2 dl {
