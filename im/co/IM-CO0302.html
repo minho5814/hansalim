@@ -837,6 +837,7 @@
 						<li class="item"><span class="text">전체검색 (14)</span></li>
 					</ul>
 				</div>
+				<!-- 물품검색 -->
 				<div class="tab-content3  on">
 					<div class="filter-wrap">
 						<div class="category-area">
@@ -879,9 +880,9 @@
 							<div class="list-area">
 								<div class="btn-area">
 									<button type="button" class="btn-toggle on">난류</button>
-									<button type="button" class="btn-toggle">우유</button>
-									<button type="button" class="btn-toggle">메밀</button>
-									<button type="button" class="btn-toggle">땅콩</button>
+									<button type="button" class="btn-toggle on">우유</button>
+									<button type="button" class="btn-toggle on">메밀</button>
+									<button type="button" class="btn-toggle on">땅콩</button>
 									<button type="button" class="btn-toggle on">복숭아</button>
 									<button type="button" class="btn-toggle on">돼지고기</button>
 								</div>
@@ -1117,9 +1118,11 @@
 						</div>
 					</div>
 				</div>
+				<!-- 원재료검색 -->
 				<div class="tab-content3">
-
+					
 				</div>
+				<!-- 전체검색 -->
 				<div class="tab-content3">
 					<div class="tab-area">
 						<ul class="tab-styled4">
@@ -1851,7 +1854,6 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-
 	/* 탭 추가 */
 	$('.tab-styled3 .item').click(function(){
 		var idx = $(this).index();
@@ -1879,11 +1881,49 @@ $(window).load(function(){
 		});
 	});
 
-
 	$('.order-list button').click(function(){
 		$(this).parents('.order-list').find('button').removeClass('on');
 		$(this).addClass('on');
+	});
 
+	/* 선택조건 */
+	// 갯수 출력
+	$('.select-area').each(function(){
+		var len = $(this).find('.list-area li').length;
+		$(this).find('.title span').html(len);
+	});
+	// 삭제
+	$('.select-area .btn-delete').click(function(){
+		var dLen = $(this).parents('.select-area').find('.list-area li').length - 1;
+		$(this).parents('.select-area').find('.title span').html(dLen);
+		if(dLen <= 0){
+			$(this).parents('.select-area').find('.reset-area').hide();
+			$(this).parents('.select-area').find('.list-area ul').remove();
+		}
+		$(this).parents('li').remove();
+	});
+	// 초기화
+	$('.select-area .btn-reset').click(function(){
+		$(this).parents('.select-area').find('.title span').html('0');
+		$(this).parents('.select-area').find('.list-area').remove();
+	});
+
+	/* 알레르기성분 제외조건 */
+	// 갯수 출력
+	$('.allergy-area').each(function(){
+		var len = $(this).find('.btn-toggle.on').length;
+		$(this).find('.title span').html(len);
+	});
+	// 버튼 선택
+	$('.allergy-area .btn-toggle').click(function(){
+		var len = $(this).parents('.allergy-area').find('.btn-toggle.on').length;
+		$(this).parents('.allergy-area').find('.title span').html(len);
+	});
+	// 초기화
+	$('.allergy-area .btn-reset').click(function(){
+		$(this).parents('.allergy-area').find('.btn-toggle').addClass('on');
+		var len = $(this).parents('.allergy-area').find('.btn-toggle.on').length;
+		$(this).parents('.allergy-area').find('.title span').html(len);
 	});
 
 	// external js: masonry.pkgd.js
@@ -1892,7 +1932,6 @@ $(window).load(function(){
 		columnWidth:366,
 		gutter:11
 	});
-
 });
 </script>
 </body>
