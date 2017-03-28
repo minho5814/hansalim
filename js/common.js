@@ -472,6 +472,23 @@ $(window).load(function(){
 		$('.btn-layer').removeClass('on').find('.hint-layer').slideUp(100);
 	});
 
+	$('.view-select').each(function(){
+		$(this).parents('.select-box').find('.select-list .item').append('<span class="data">');
+
+		// 물품상세 셀렉트 박스
+		var option = $(this).find('option');
+		$(option).each(function(){
+			var data = $(this).attr('data');
+			var idx = $(this).index();
+			$(this).parents('.select-box').find('.select-list .item').eq(idx).find('.data').html(data);
+		});
+		var item = $(this).parents('.select-box').find('.select-list .item');
+		$(item).click(function(){
+			$(this).parents('.select-box').find('.select-title .data').remove();
+			console.log(0);
+		});
+	});
+
 	/* ===========================================================================================================
 		장바구니 (sh/)
 	=========================================================================================================== */

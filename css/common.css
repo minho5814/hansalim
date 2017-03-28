@@ -3,34 +3,34 @@
 	Font
 ========================================================================================================= */
 @font-face {
-	font-family:NanumSquare;
+	font-family:notokr;
 	font-style:normal;
 	font-weight:normal;
-	src:url(font/NanumSquareR.eot);
+	src:url(font/notokr-regular.eot);
 	src:local(※),
-	url(font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
-	url(font/NanumSquareR.woff) format('woff'),
-	url(font/NanumSquareR.ttf) format('truetype');
+	url(font/notokr-regular.eot?#iefix) format('embedded-opentype'),
+	url(font/notokr-regular.woff) format('woff'),
+	url(font/notokr-regular.ttf) format('truetype');
 }
 @font-face {
-	font-family:NanumSquare;
+	font-family:notokr;
 	font-style:normal;
 	font-weight:bold;
-	src:url(font/NanumSquareB.eot);
+	src:url(font/notokr-medium.eot);
 	src:local(※),
-	url(font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
-	url(font/NanumSquareB.woff) format('woff'),
-	url(font/NanumSquareB.ttf) format('truetype');
+	url(font/notokr-medium.eot?#iefix) format('embedded-opentype'),
+	url(font/notokr-medium.woff) format('woff'),
+	url(font/notokr-medium.ttf) format('truetype');
 }
 @font-face {
-	font-family:NanumSquare;
+	font-family:notokr;
 	font-style:normal;
 	font-weight:900;
-	src:url(font/NanumSquareEB.eot);
+	src:url(font/notokr-bold.eot);
 	src:local(※),
-	url(font/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
-	url(font/NanumSquareEB.woff) format('woff'),
-	url(font/NanumSquareEB.ttf) format('truetype');
+	url(font/notokr-bold.eot?#iefix) format('embedded-opentype'),
+	url(font/notokr-bold.woff) format('woff'),
+	url(font/notokr-bold.ttf) format('truetype');
 }
 
 @font-face {
@@ -42,6 +42,16 @@
 	url(font/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
 	url(font/NanumBarunGothic.woff) format('woff'),
 	url(font/NanumBarunGothic.ttf) format('truetype');
+}
+@font-face {
+	font-family:NanumBarunGothic;
+	font-style:normal;
+	font-weight:bold;
+	src:url(font/NanumBarunGothicBold.eot);
+	src:local(※),
+	url(font/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
+	url(font/NanumBarunGothicBold.woff) format('woff'),
+	url(font/NanumBarunGothicBold.ttf) format('truetype');
 }
 
 /* 콜센터 배너 전화번호 */
@@ -78,7 +88,7 @@ blockquote, q {quotes:none}
 blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
 input,select,textarea,button {vertical-align:middle;outline:0;}
 button {border:0 none;background-color:transparent;cursor:pointer}
-body,th,td,input,select,textarea,button,select {font-family:'NanumSquare';font-size:15px;line-height:1.5;color:#333;}
+body,th,td,input,select,textarea,button,select {font-family:'notokr';font-size:15px;line-height:1.5;color:#333;}
 body {width:100%;-webkit-user-select:none}
 input[type=text],
 input[type=number],
@@ -2041,15 +2051,19 @@ td.e-mail-form {
 		}
 			.select-box .select-list .item {
 				margin-top:1px;
-				height:24px;
-				padding-left:13px;
+				padding:2px 0 2px 13px;
 				color:#666;
 				font-size:14px;
-				line-height:24px;
+				line-height:20px;
 			}
 			.select-box .select-list .item:hover,
 			.select-box .select-list .item.on {background-color:#d1ef8a;}
 			.select-box .select-list .item:first-child {margin-top:0;}
+			.select-box .select-list .item .data {
+				margin-left:5px;
+				color:#666;
+				font-weight:normal;
+			}
 
 .select-box select {
 	position:fixed;
@@ -2503,13 +2517,13 @@ label.check-radio .radiobox {margin-right:8px;}
 	position:fixed;
 	left:0;right:0;top:0;
 	z-index:10;
-	background-color:#555;
+	background-color:#91c90b;
 }
 	.down .head-btm .gnb {border:0;}
 	.down .head-btm .btn-menu {
 		height:49px;
-		border-color:#000;
-		background:#000 url(../img/sprite/button.png) no-repeat 0 -84px;
+		border-color:#60b015;
+		background:#60b015 url(../img/sprite/button.png) no-repeat 0 -84px;
 	}
 	.down .head-btm .gnb-item .link {color:#fff;}
 .down .head-btm .my-menu {display:none;}
@@ -2537,7 +2551,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .gnb-layer .layer-top {
 	overflow:hidden;
 	height:49px;
-	background-color:#555555;
+	background-color:#91c90b;
 }
 	.gnb-layer .layer-top .btn-close {
 		float:left;
@@ -2545,7 +2559,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		width:180px;
 		height:49px;
 		padding-left:48px;
-		background:#000;
+		background:#60b015;
 		color:#fff;
 		font-size:18px;
 		text-align:left;
@@ -2571,7 +2585,7 @@ label.check-radio .radiobox {margin-right:8px;}
 
 .gnb-layer .layer-cont {
 	position:relative;
-	border:3px solid #555;
+	border:3px solid #60b015;
 	border-top:0;
 }
 	.gnb-layer .layer-cont .lnb {width:177px;}
@@ -2651,6 +2665,7 @@ label.check-radio .radiobox {margin-right:8px;}
 			font-size:14px;
 			font-weight:bold;
 			line-height:35px;
+			white-space: nowrap;
 		}
 
 	.gnb-layer .layer-cont .lnb .add-area {
@@ -2721,6 +2736,7 @@ label.check-radio .radiobox {margin-right:8px;}
 				font-size:14px;
 				line-height:28px;
 			}
+			.gnb-layer .gnb-depth .depth-list .item ul li a:hover{color:#60b015;}
 
 /* 추천물품 */
 .depth-thumb-list {
@@ -3743,7 +3759,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	border:1px solid #ccc;
 	font-size: 13px;
 	color:#000;
-	line-height: 28px;
+	line-height:26px;
 	box-sizing: border-box;
 }
 	.container.sub .location .select-box .select-title:before {
@@ -3778,7 +3794,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .content.first {padding-top:0;}
 .content.last {padding-top:0;}
 .content.gray {
-	background-color:#f7f7f7;
+	background-color:#eee;
 }
 	.content .sub-inner {
 		width:1120px;
@@ -3944,7 +3960,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		content: none;
 	}
 
-.product-info .info-text {padding:30px 0 30px 10px; font-size:18px; line-height:18px;}
+.product-info .info-text {padding:30px 0 30px 10px; font-size:18px; line-height:18px; background: inherit;}
 	.product-info .info-text .orange {color:#f56d24; font-weight: bold;}
 	.product-info .info-text .check-area {margin-top:10px;}
 	.product-info .info-text .check-area label {font-weight: bold; color:#000;}
@@ -4896,15 +4912,24 @@ td .radish-bank-box span {display:block;}
 .supply-area ul li {float: left; width:25%; height:33px; line-height: 33px; }
 
 
-.select-area {border-top:1px solid #ddd;}
+.select-area {min-height:83px; box-sizing:border-box; border-top:1px solid #ddd;}
 .select-area, .allergy-area {
 	padding:25px 28px !important;
 	background-color: #f7f7f7;
 }
 .filter-wrap .list-area {padding-left:210px;}
 .filter-wrap .list-area:after {content:''; display: block; clear: both;}
-.select-area .list-area li {float: left; height:32px; line-height: 32px; margin-right:30px; color:#60b015;}
-.select-area .list-area li:last-child {margin-right: 0;}
+.select-area .list-area li {float: left; position:relative; height:32px; padding-right:16px; line-height: 32px; margin-left:20px; color:#60b015;}
+.select-area .list-area li:first-child {margin-left: 0;}
+.select-area .list-area li .btn-delete {
+	position:absolute;
+	right:0;top:50%;
+	width:11px;
+	height:11px;
+	margin-top:-6px;
+	background-image:url(../img/btn/btn_delete02.gif);
+	vertical-align:top;
+}
 .select-area p ,
 .allergy-area p {
 	top:30px;
@@ -4912,7 +4937,7 @@ td .radish-bank-box span {display:block;}
 	letter-spacing: -1px;
 }
 
-.filter-wrap .reset-area {display: inline-block;position:relative; padding-left:30px;  margin-left:30px;}
+.filter-wrap .reset-area {display: inline-block;position:relative; padding-left:31px;  margin-left:30px;}
 	.filter-wrap .reset-area:before {
 		content: '';
 		position:absolute;
@@ -5104,6 +5129,11 @@ td .radish-bank-box span {display:block;}
 .grid-item .img-area {width:100%; height:150px; overflow: hidden;}
 .grid-item .img-area img {width: 100%;}
 .grid-item .text-area {font-size:15px; color:#666; line-height:24px; margin-top:30px; }
+
+/* 원재료검색 */
+.search-left {}
+
+/*한살림소식*/
 
 /* =========================================================================================================
 	레이어 팝업

@@ -4,9 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 	<title>한살림 인터넷 장보기</title>
-
 	<link rel="stylesheet" type="text/css" href="../../css/common.css">
-	<link rel="stylesheet" type="text/css" href="../../css/main.css">
 </head>
 
 <body>
@@ -909,18 +907,20 @@
 						</div>
 						<!--//type1-->
 						<!--type2-->
-						<!-- <div class="info-box ty02">
+						<div class="info-box ty02">
 							<dl>
 								<dt>수량선택</dt>
 								<dd>
 									<div class="amount">
 										<span>물품을 선택해 주세요 (주문가능수량: <em class="orange">1</em>개)</span>
 										<span class="selbox">
-											<select class="styled1">
-												<option>구이갈비(500g/우리보리살림돼지)</option>
-												<option>구이갈비(800g/우리보리살림돼지)</option>
-												<option>구이갈비(1000g/우리보리살림돼지)</option>
+											<!-- 2017-03-28 수정 -->
+											<select class="styled1 view-select">
+												<option data="10,500원|총수량 1000개">구이갈비(500g/우리보리살림돼지)</option>
+												<option data="11,500원|총수량 1000개">구이갈비(800g/우리보리살림돼지)</option>
+												<option data="12,500원|총수량 1000개">구이갈비(1000g/우리보리살림돼지)</option>
 											</select>
+											<!-- //2017-03-28 수정 -->
 										</span>
 									</div>
 								</dd>
@@ -945,10 +945,10 @@
 									<span class="price">10,500원 <button type="button" class="btn-delete">삭제</button></span>
 								</div>
 							</div>
-						</div> -->
+						</div>
 						<!--//type2-->
 						<!--type3-->
-						<!-- <div class="info-box">
+						<div class="info-box">
 							<dl>
 								<dt>수량선택</dt>
 								<dd>
@@ -965,7 +965,7 @@
 									</div>
 								</dd>
 							</dl>
-						</div> -->
+						</div>
 						<!--//type3-->
 						<div class="info-box last">
 							<dl class="total">
@@ -976,7 +976,7 @@
 						<div class="info-text">
 							<p>최근 한달 간 <em class="orange">7</em>번 주문하셨습니다.</p>
 							<div class="check-area">
-								<label class="check-radio"><span class="checkbox checked"><input type="checkbox" class="styled1" checked=""></span>정기배송 <em>(주문을 간편하게! 정기배송을 신청하세요!)</em></label>
+								<label><input type="checkbox" class="styled1" checked>정기배송 <em>(주문을 간편하게! 정기배송을 신청하세요!)</em></label>
 							</div>
 						</div>
 						<div class="btn-center sub">
