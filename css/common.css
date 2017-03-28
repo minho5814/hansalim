@@ -1386,7 +1386,7 @@ td.e-mail-form {
 	font-size:14px;
 	font-weight:bold;
 	text-align:center;
-	line-height:28px;
+	line-height:26px;
 }
 .btn-mini-text.btn-box-green {
 	border-color:#7eb533;
@@ -5367,8 +5367,6 @@ td .radish-bank-box span {display:block;}
 
 .like-wrap {
 	width:900px;
-	height:666px;
-	overflow: auto;
 }
 
 .like-wrap .like-list {
@@ -5381,7 +5379,7 @@ td .radish-bank-box span {display:block;}
 .like-wrap .like-list li .thumb-item1 .img-area .checkbox {position:absolute; left:0; top:0;}
 .like-wrap .like-list li .thumb-item1 .img-area .ico-round2 {position:absolute; right:0; top:-5px;}
 .like-wrap .like-list li .thumb-item1 .img-area img {width:100%; height: 100%;}
-.like-wrap .like-list li .thumb-item1 .price-btn {position:initial; margin-top:20px;}
+.like-wrap .like-list li .thumb-item1 .price-btn {position:static; margin-top:20px;}
 .like-wrap .like-list li .thumb-item1 .price-btn .price {float: inherit;}
 .like-wrap .like-list li .thumb-item1 .price-btn .price button {margin-left:5px;}
 
