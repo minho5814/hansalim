@@ -4745,6 +4745,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	.list-group .total-count {margin:20px 0;}
 	.list-group .list-title {
 		overflow: hidden;
+		background-color:#f7feed;
 		border-top:2px solid #61b016;
 		border-bottom:1px solid #bbb;
 	}
@@ -4782,6 +4783,7 @@ label.check-radio .radiobox {margin-right:8px;}
 			vertical-align: middle;
 			box-sizing: border-box;
 		}
+		.list-group .list-title .left-area p .num {font-size:20px; color:#90c807;}
 		.list-group .list-title .date-area {
 			overflow:hidden;
 			display: inline-block;
