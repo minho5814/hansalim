@@ -1857,6 +1857,7 @@ $(window).load(function(){
 		var idx = $(this).index();
 		$('.tab-styled3 .item').removeClass('on').eq(idx).addClass('on');
 		$('.tab-content3').removeClass('on').eq(idx).addClass('on');
+		$('.grid').masonry();
 	});
 
 	$('.tab-styled4 .item').click(function(){
@@ -1887,10 +1888,10 @@ $(window).load(function(){
 
 	// external js: masonry.pkgd.js
 	$('.grid').masonry({
-	  itemSelector: '.grid-item',
-	  columnWidth: 366,
-	  gutter: 11
-});
+		itemSelector:'.grid-item',
+		columnWidth:366,
+		gutter:11
+	});
 
 });
 </script>
