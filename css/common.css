@@ -3,34 +3,34 @@
 	Font
 ========================================================================================================= */
 @font-face {
-	font-family:NanumSquare;
+	font-family:notokr;
 	font-style:normal;
 	font-weight:normal;
-	src:url(font/NanumSquareR.eot);
+	src:url(font/notokr-regular.eot);
 	src:local(※),
-	url(font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
-	url(font/NanumSquareR.woff) format('woff'),
-	url(font/NanumSquareR.ttf) format('truetype');
+	url(font/notokr-regular.eot?#iefix) format('embedded-opentype'),
+	url(font/notokr-regular.woff) format('woff'),
+	url(font/notokr-regular.ttf) format('truetype');
 }
 @font-face {
-	font-family:NanumSquare;
+	font-family:notokr;
 	font-style:normal;
 	font-weight:bold;
-	src:url(font/NanumSquareB.eot);
+	src:url(font/notokr-medium.eot);
 	src:local(※),
-	url(font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
-	url(font/NanumSquareB.woff) format('woff'),
-	url(font/NanumSquareB.ttf) format('truetype');
+	url(font/notokr-medium.eot?#iefix) format('embedded-opentype'),
+	url(font/notokr-medium.woff) format('woff'),
+	url(font/notokr-medium.ttf) format('truetype');
 }
 @font-face {
-	font-family:NanumSquare;
+	font-family:notokr;
 	font-style:normal;
 	font-weight:900;
-	src:url(font/NanumSquareEB.eot);
+	src:url(font/notokr-bold.eot);
 	src:local(※),
-	url(font/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
-	url(font/NanumSquareEB.woff) format('woff'),
-	url(font/NanumSquareEB.ttf) format('truetype');
+	url(font/notokr-bold.eot?#iefix) format('embedded-opentype'),
+	url(font/notokr-bold.woff) format('woff'),
+	url(font/notokr-bold.ttf) format('truetype');
 }
 
 @font-face {
@@ -42,6 +42,16 @@
 	url(font/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
 	url(font/NanumBarunGothic.woff) format('woff'),
 	url(font/NanumBarunGothic.ttf) format('truetype');
+}
+@font-face {
+	font-family:NanumBarunGothic;
+	font-style:normal;
+	font-weight:bold;
+	src:url(font/NanumBarunGothicBold.eot);
+	src:local(※),
+	url(font/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
+	url(font/NanumBarunGothicBold.woff) format('woff'),
+	url(font/NanumBarunGothicBold.ttf) format('truetype');
 }
 
 /* 콜센터 배너 전화번호 */
@@ -78,7 +88,7 @@ blockquote, q {quotes:none}
 blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
 input,select,textarea,button {vertical-align:middle;outline:0;}
 button {border:0 none;background-color:transparent;cursor:pointer}
-body,th,td,input,select,textarea,button,select {font-family:'NanumSquare';font-size:15px;line-height:1.5;color:#333;}
+body,th,td,input,select,textarea,button,select {font-family:'notokr';font-size:15px;line-height:1.5;color:#333;}
 body {width:100%;-webkit-user-select:none}
 input[type=text],
 input[type=number],
@@ -3739,7 +3749,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	border:1px solid #ccc;
 	font-size: 13px;
 	color:#000;
-	line-height: 28px;
+	line-height:26px;
 	box-sizing: border-box;
 }
 	.container.sub .location .select-box .select-title:before {
@@ -5109,6 +5119,9 @@ td .radish-bank-box span {display:block;}
 .grid-item .img-area {width:100%; height:150px; overflow: hidden;}
 .grid-item .img-area img {width: 100%;}
 .grid-item .text-area {font-size:15px; color:#666; line-height:24px; margin-top:30px; }
+
+/* 원재료검색 */
+.search-left {}
 
 /*한살림소식*/
 
