@@ -4579,11 +4579,22 @@ label.check-radio .radiobox {margin-right:8px;}
 	height:40px;
 	background-color:rgba(0,0,0,.3);
 }
-.goods-banner .bx-controls-auto .bx-start {display: none}
+.goods-banner .bx-controls-auto .bx-start {
+	float:right; display: inline-block; width:32px; height:40px; text-indent: -9999px; line-height:0; font-size:0;
+	background:url(../img/btn/btn_bx_play_32x40.png) no-repeat 0 0;
+}
 .goods-banner .bx-controls-auto .bx-stop {
 	float:right; display: inline-block; width:32px; height:40px; text-indent: -9999px; line-height:0; font-size:0;
 	background:url(../img/btn/btn_bx_stop_32x40.png) no-repeat 0 0;
 }
+
+.goods-banner .bx-controls-auto .bx-start.active {
+	display: none;
+}
+.goods-banner .bx-controls-auto .bx-stop.active {
+	display: none;
+}
+
 
 .goods-slide li {z-index: 0 !important; font-size: 0;}
 
