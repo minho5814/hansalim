@@ -1022,7 +1022,7 @@ td.e-mail-form {
 		-ms-transition:opacity .3s;
 		transition:opacity .3s;
 	}
-	.item-list .btn-center a {margin-left:5px; top:43%;}
+	.item-list .btn-center button {margin-left:5px; top:43%;}
 	.item-list li .flag {
 		display: block;
 		position:absolute;
@@ -1679,7 +1679,7 @@ td.e-mail-form {
 	background-position:0 -344px;
 }
 
-.btn-image.btn-like2 {background-color:#fff;border:1px solid #60b015;}
+.btn-image.btn-like2 {background-color:#fff;border:1px solid #60b015; box-sizing: border-box;}
 .btn-image.btn-like2:before {
 	width:20px;
 	height:18px;
@@ -1754,14 +1754,14 @@ td.e-mail-form {
 	background-repeat:no-repeat;
 }
 
-.btn-image2.btn-cart {background-color:#91c90b;}
+.btn-image2.btn-cart {background-color:#91c90b;border:1px solid #91c90b; box-sizing: border-box;}
 .btn-image2.btn-cart:before {
 	width:26px;
 	height:26px;
-	background-position:0 -716px;
+	background-position:0 -494px;
 }
 
-.btn-image2.btn-like {background-color:#60b015;}
+.btn-image2.btn-like {background-color:#fff; border:1px solid #91c90b; box-sizing: border-box;}
 .btn-image2.btn-like:before {
 	width:26px;
 	height:24px;
@@ -3849,7 +3849,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	background-color:#fff;
 	padding-top:80px;
 }
-.content.first {padding-top:0;}
+.content.first {padding:0 0 40px 0;}
 .content.last {padding-top:0;}
 .content.gray {
 	background-color:#eee;
@@ -5116,6 +5116,7 @@ td .radish-bank-box span {display:block;}
 .tab-content4  .result-top {margin-top:0}
 
 .tab-content4 .group {margin-top:80px;}
+.group.list-wrap .order-list {margin-bottom: 0;}
 /*요리검색결과*/
 .recipe-list .item-recipe {
 	overflow:hidden;
