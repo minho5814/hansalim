@@ -1185,6 +1185,7 @@ td.e-mail-form {
 .mgT80 {margin-top:80px !important;}
 .mgT85 {margin-top:85px !important;}
 
+.mgL5 {margin-left:5px !important;}
 .mgL10 {margin-left:10px !important;}
 .mgL15 {margin-left:15px !important;}
 .mgL25 {margin-left:25px !important;}
@@ -1196,6 +1197,7 @@ td.e-mail-form {
 .mgB30 {margin-bottom:30px !important;}
 
 .pdT0 {padding-top:0 !important;}
+.pdT5 {padding-top:5px !important;}
 .pdT20 {padding-top:20px !important;}
 .pdT25 {padding-top:25px !important;}
 .pdT30 {padding-top:30px !important;}
@@ -2258,10 +2260,9 @@ label.check-radio .radiobox {margin-right:8px;}
 		position:relative;
 		width:33%;
 		margin-left:-1px;
+		cursor:pointer;
 	}
-	.tab-list1.wid50 .item {
-		width:50% !important;
-	}
+	.tab-list1.wid50 .item {width:50% !important;}
 	.tab-list1 .item:first-child {
 		width:34%;
 		margin-left:0;
@@ -2280,6 +2281,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		}
 	.tab-list1 .item:hover,
 	.tab-list1 .item.on {z-index:1;}/* on */
+	.tab-list1 .item.on {cursor:default;}/* on */
 		.tab-list1 .item:hover .text {
 			border-color:#666;
 			background-color:#fff;
@@ -5677,33 +5679,53 @@ td .radish-bank-box span {display:block;}
 
 /* 우편번호찾기 (IM-JO0201.html) */
 .pop-post {width:600px;}
-	.pop-post .post-search table {}
-		.pop-post .post-search table th,
-		.pop-post .post-search table td {
-			color:#000;
-			font-size:15px;
-			padding:6px 0;
+	.pop-post .post-search .row {
+		position: relative;
+		margin-bottom: 10px;
+	}
+	.pop-post .post-search .row:after {
+		content:'';
+		display: block;
+		clear: both;
+	}
+	.pop-post .post-search .row .fl {float:left;}
+	.pop-post .post-search .row .fr {float:right;}
+	.pop-post .post-search .row label {
+		color:#000;
+		font-size:15px;
+		padding:6px 0;
+	}
+	.pop-post .post-search .row .styled1 {width:250px;}
+	.pop-post .post-search .row .btn-type {
+		position:relative;
+		padding-right:56px;
+	}
+		.pop-post .post-search .row .btn-round-text {
+			position:absolute;
+			right:0;top:0;
+			width:52px;
 		}
-		.pop-post .post-search table .btn-type {
-			position:relative;
-			padding-right:56px;
-		}
-			.pop-post .post-search table .btn-round-text {
-				position:absolute;
-				right:0;top:0;
-				width:52px;
-			}
 
 	.pop-post .text1 {
 		margin-top:10px;
 		color:#999;
 		font-size:14px;
 		line-height:20px;
+		letter-spacing: -0.5px;
 	}
 	.pop-post .post-search select {width:120px;}
 
+	.pop-post .post-text {
+		display: block;
+		height:365px;
+		margin-top: 25px;
+		text-align: center;
+		line-height: 305px;
+		color:#666;
+		border-top:1px solid #e3e3e3;
+	}
 	.pop-post .post-result {
-		display:none;
+		display: none;
 		margin:25px -30px 0;
 		padding:30px 30px 0;
 		border-top:1px solid #e3e3e3;
@@ -5716,7 +5738,7 @@ td .radish-bank-box span {display:block;}
 	}
 		.pop-post .post-result .result-title {
 			overflow:hidden;
-			padding-left:85px;
+			padding-left:55px;
 			border-bottom:1px solid #bbb;
 			background-color:#f7f7f7;
 		}
@@ -5733,7 +5755,7 @@ td .radish-bank-box span {display:block;}
 			display:block;
 			position:relative;
 			min-height:65px;
-			padding-left:138px;
+			padding-left:125px;
 			box-sizing:border-box;
 			border-top:1px solid #ddd;
 		}
@@ -5749,7 +5771,7 @@ td .radish-bank-box span {display:block;}
 			}
 			.pop-post .post-result .result-list .post-number {
 				position:absolute;
-				left:84px;top:0;
+				left:45px;top:0;
 				width:54px;
 				color:#666;
 				font-size:14px;
@@ -6486,3 +6508,50 @@ td .radish-bank-box span {display:block;}
 .pw-confirm input[type=password] {
 	width:240px;
 }
+/* 나의 알림 */
+.my-notice-area {}
+.my-notice-area .cTitle4 {
+	display:inline-block;
+	line-height:24px;
+	vertical-align:middle;
+}
+.mark-txt {
+	display:inline-block;
+	padding:0 6px;
+	font-size:13px;
+	font-weight:bold;
+	line-height:20px;
+	border-radius:10px;
+	color:#09babc;
+	border:1px solid #09babc;
+	vertical-align:middle;
+}
+.my-notice-area .my-notice-box {
+	border:1px solid #ddd;
+	border-top:1px solid #666;
+}
+.my-notice-area .my-notice-box .my-notice-list {}
+.my-notice-area .my-notice-box .my-notice-list li {
+	overflow:hidden;
+	position:relative;
+	min-height:75px;
+	box-sizing:border-box;
+	padding:15px 20px 15px;
+	border-bottom:1px solid #ddd;
+}
+.my-notice-area .my-notice-box .my-notice-list li:last-child {border-bottom:0;}
+.my-notice-area .my-notice-box .my-notice-list li .my-notice-text {
+	position:absolute;
+	left:20px;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+.my-notice-area .my-notice-box .my-notice-list li .my-notice-img {float:right;}
+.my-notice-area .my-notice-box .my-notice-list li .my-notice-img img {vertical-align:middle;}
+.posiR {
+	position:absolute;
+	right:0; top:5px;
+}
+.pop-notice-set {width:600px;}
+.pop-notice-set .btn-text {min-width:120px;}
