@@ -336,6 +336,39 @@ html {
 		.board-write2 .btn-styled a,
 		.board-write2 .btn-styled button {margin-left:4px;}
 
+	.board-write3 {border-top:1px solid #666;}
+		.board-write3 table {border-bottom:1px solid #bbb;}
+		.board-write3 th,
+		.board-write3 td {
+			padding:20px;
+			border-top:1px solid #ddd;
+		}
+		.board-write3 tr:first-child th,
+		.board-write3 tr:first-child td {
+			border-top:0;
+		}
+			.board-write3 .text {
+				padding:5px 0;
+				font-size:15px;
+				line-height:22px;
+			}
+		.board-write3 th {
+			background-color:#f0f2ef;
+			color:#000;
+		}
+		.board-write3 td {
+			color:#666;
+			border-left:1px solid #ddd;
+		}
+		.board-write3 .btn-styled {
+			font-size:0;
+			line-height:0;
+		}
+			.board-write3 .btn-styled a,
+			.board-write3 .btn-styled button {margin-left:4px;}
+
+
+
 /* 휴대폰 번호 입력 */
 td.phone-area {
 	font-size:0;
@@ -1179,6 +1212,7 @@ td.e-mail-form {
 .mgT40 {margin-top:40px !important;}
 .mgT45 {margin-top:45px !important;}
 .mgT50 {margin-top:50px !important;}
+.mgT55 {margin-top:55px !important;}
 .mgT60 {margin-top:60px !important;}
 .mgT65 {margin-top:65px !important;}
 .mgT70 {margin-top:70px !important;}
