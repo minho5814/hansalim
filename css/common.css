@@ -6677,6 +6677,15 @@ td .radish-bank-box span {display:block;}
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
 }
+.my-notice-area .my-notice-box .my-notice-list li .my-notice-text .tit {
+	font-size:15px;
+	color:#000;
+}
+.my-notice-area .my-notice-box .my-notice-list li .my-notice-text .txt {
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+}
 .my-notice-area .my-notice-box .my-notice-list li .my-notice-img {float:right;}
 .my-notice-area .my-notice-box .my-notice-list li .my-notice-img img {vertical-align:middle;}
 .posiR {
