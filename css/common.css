@@ -309,6 +309,13 @@ html {
 	font-size:14px;
 	line-height:16px;
 }
+.board-write1 td .notice-text02 {
+	display:inline-block;
+	margin-left:30px;
+	color:#999;
+	font-size:14px;
+	line-height:32px;
+}
 
 .board-write2 {border-top:1px solid #666;}
 	.board-write2 table {border-bottom:1px solid #bbb;}
