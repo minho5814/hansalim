@@ -1174,6 +1174,7 @@ td.e-mail-form {
 .mgT80 {margin-top:80px !important;}
 .mgT85 {margin-top:85px !important;}
 
+.mgL5 {margin-left:5px !important;}
 .mgL10 {margin-left:10px !important;}
 .mgL15 {margin-left:15px !important;}
 .mgL25 {margin-left:25px !important;}
@@ -1185,6 +1186,7 @@ td.e-mail-form {
 .mgB30 {margin-bottom:30px !important;}
 
 .pdT0 {padding-top:0 !important;}
+.pdT5 {padding-top:5px !important;}
 .pdT20 {padding-top:20px !important;}
 .pdT25 {padding-top:25px !important;}
 .pdT30 {padding-top:30px !important;}
@@ -6378,3 +6380,50 @@ td .radish-bank-box span {display:block;}
 .pw-confirm input[type=password] {
 	width:240px;
 }
+/* 나의 알림 */
+.my-notice-area {}
+.my-notice-area .cTitle4 {
+	display:inline-block;
+	line-height:24px;
+	vertical-align:middle;
+}
+.mark-txt {
+	display:inline-block;
+	padding:0 6px;
+	font-size:13px;
+	font-weight:bold;
+	line-height:20px;
+	border-radius:10px;
+	color:#09babc;
+	border:1px solid #09babc;
+	vertical-align:middle;
+}
+.my-notice-area .my-notice-box {
+	border:1px solid #ddd;
+	border-top:1px solid #666;
+}
+.my-notice-area .my-notice-box .my-notice-list {}
+.my-notice-area .my-notice-box .my-notice-list li {
+	overflow:hidden;
+	position:relative;
+	min-height:75px;
+	box-sizing:border-box;
+	padding:15px 20px 15px;
+	border-bottom:1px solid #ddd;
+}
+.my-notice-area .my-notice-box .my-notice-list li:last-child {border-bottom:0;}
+.my-notice-area .my-notice-box .my-notice-list li .my-notice-text {
+	position:absolute;
+	left:20px;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+.my-notice-area .my-notice-box .my-notice-list li .my-notice-img {float:right;}
+.my-notice-area .my-notice-box .my-notice-list li .my-notice-img img {vertical-align:middle;}
+.posiR {
+	position:absolute;
+	right:0; top:5px;
+}
+.pop-notice-set {width:600px;}
+.pop-notice-set .btn-text {min-width:120px;}
