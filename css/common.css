@@ -121,8 +121,8 @@ input[type=password].click {font-family:돋움, Dotum, Arial, Helvetica, sans-se
 
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
+	-webkit-appearance:none;
+	margin:0;
 }
 .input-price {
 	position:relative;
@@ -5200,7 +5200,97 @@ td .radish-bank-box span {display:block;}
 .grid-item .text-area {font-size:15px; color:#666; line-height:24px; margin-top:30px; }
 
 /* 원재료검색 */
-.search-left {}
+.search-content {
+	position:relative;
+	margin-top:25px;
+}
+.search-content .search-title {
+	color:#000;
+	font-size:16px;
+	font-weight:bold;
+	line-height:45px;
+}
+.search-left {
+	width:240px;
+}
+	.search-left .search-top .search-input {
+		position:relative;
+		padding-right:56px;
+	}
+		.search-left .search-top input[type=text] {}
+		.search-left .search-top .btn-round-text {
+			position:absolute;
+			right:0;top:0;
+		}
+
+.search-left .search-tree {
+	margin-top:25px;
+}
+	.search-left .search-tree .btn-area {
+		overflow:hidden;
+		margin:0 -2px;
+	}
+		.search-left .search-tree .btn-area .btn {
+			float:left;
+			width:50%;
+			padding:0 2px;
+			box-sizing:border-box;
+		}
+		.search-left .search-tree .btn-area .btn-mini-text {width:100%;}
+
+.search-left .tree-list {margin-top:13px;}
+	.search-left .tree-list .check-text {
+		padding:7px 0;
+	}
+	.search-left .tree-list .open-type {
+		position:relative;
+		padding-left:26px;
+		font-size:0;
+		line-height:0;
+	}
+	.search-left .tree-list .open-type:before {
+		content:'';
+		position:absolute;
+		left:26px;top:50%;
+		width:26px;
+		height:1px;
+		background-color:#ddd;
+	}
+	.search-left .tree-list .btn-tree-tog {
+		overflow:hidden;
+		position:relative;
+		width:18px;
+		height:18px;
+		margin:7px 0 0;
+	}
+	.search-left .tree-list .check-text {
+		padding-left:8px;
+	}
+		.search-left .tree-list .btn-tree-tog img {vertical-align:top;}
+	.search-left .tree-list ul {padding-left:26px;}
+	.search-left .tree-list ul.list {padding-left:70px;}
+
+		.search-left .tree-list .item-depth1,
+		.search-left .tree-list .item-depth2,
+		.search-left .tree-list .item-depth3 {position:relative;}
+		.search-left .tree-list .item-depth1:before,
+		.search-left .tree-list .item-depth2:before,
+		.search-left .tree-list .item-depth3:before {
+			content:'';
+			position:absolute;
+			left:35px;top:-7px;bottom:-7px;
+			width:1px;
+			background-color:#ddd;
+		}
+		.search-left .tree-list .item-depth1:first-child:before {top:7px;}
+		.search-left .tree-list .item-depth1:last-child:before {bottom:7px;}
+		.search-left .tree-list .item-depth3:before {left:60px;top:10px;bottom:10px;}
+
+.search-right {
+	position:absolute;
+	left:280px;top:0;
+}
+
 
 /*한살림소식*/
 .tag-wrap {
