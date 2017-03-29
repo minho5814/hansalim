@@ -4563,7 +4563,7 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 
 .goods-banner .bx-viewport {height: 100%;}
-.goods-banner .goods-slide-pager {overflow: hidden;position: absolute;bottom:0; width: 100%;}
+.goods-banner .goods-slide-pager {overflow: hidden;position: absolute; left:20px; bottom:20px; width: 1080px;}
 
 .goods-banner .goods-slide-pager a {
 	float: left;
@@ -4611,7 +4611,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .container.category .best .center .price-btn {bottom:65px;}
 .container.category .best .center .price {font-size: 24px;}
 .container.category .best .center .price .number {font-size: 36px;}
-.container.category .best .center .retail2 {position: inherit; display: inline; font-size:18px; color:#999; text-decoration: line-through;}
+.container.category .best .center .retail2 {position: inherit; display: inline; padding-left:10px; font-size:18px; color:#999; text-decoration: line-through;}
 .container.category .best .thumb-item1 {float: none; width: 100%; border:none;}
 .container.category .best .center .img-area {overflow: hidden; width:560px; height:560px; font-size: 0;}
 .container.category .best .center .img-area img {width: 100%; height:100%;}
@@ -4694,6 +4694,14 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 
 .board-lsit.type2 table thead th {background-color:#f0f2ef;}
+
+/* board scroll */
+.board-scroll {
+	overflow:hidden;
+	height:278px;
+	overflow:auto;
+	border-bottom:1px solid #bbb;
+}
 
 
 .waybill{
@@ -5622,6 +5630,48 @@ td .radish-bank-box span {display:block;}
 	font-size:14px;
 }
 
+.layer-popup .btn-bottom .btn-text {
+	min-width:120px;
+}
+
+/* CMS 임의해지 공통팝업 */
+.pop-abort-guid1 {width:600px;}
+.pop-abort-guid1 .abort-guid .bullet-list1 .item {
+	color:#666 !important;
+	letter-spacing:-0.5px;
+}
+.pop-abort-guid1 .abort-guid .info-box01 {
+	margin-top:15px;
+	padding:40px 0;
+	background-color:#f0f2ef;
+	text-align:center;
+}
+.pop-abort-guid1 .abort-guid .info-box01 p {
+	font-size:18px;
+	color:#000;
+	line-height:24px;
+}
+.pop-abort-guid2 .abort-guid .info-box02 {
+	margin-top:15px;
+	padding:20px 20px;
+	background-color:#f0f2ef;
+}
+.pop-abort-guid2 .abort-guid .info-box02 dl dt {
+	margin-top:9px;
+}
+.pop-abort-guid2 .abort-guid .info-box02 dl dt,
+.pop-abort-guid2 .abort-guid .info-box02 dl dd {
+	font-size:15px;
+	color:#000;
+	line-height:24px;
+}
+.pop-abort-guid2 .abort-guid .info-box02 dl dd {
+	color:#666;
+}
+.pop-abort-guid2 .abort-guid .info-box02 dl dd .gray-text {
+	font-size:14px;
+	color:#999;
+}
 /* ---------------------------------------------------------------------------------------------------------
 	회원가입 (jo)
 --------------------------------------------------------------------------------------------------------- */
