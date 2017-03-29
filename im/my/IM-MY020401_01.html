@@ -974,7 +974,7 @@
 											<tr>
 												<th scope="row"><div class="text">계좌번호</div></th>
 												<td>
-													<input type="text" placeholder="281-054523-015" style="width:225px;">
+													<input type="number" placeholder="281-054523-015" style="width:240px;">
 													<p class="gray-text mgT10">※ - 없이 입력해주세요.</p>
 													<p class="gray-text mgT5">※ 원계좌만 사용가능(가상계좌, 전화번호계좌 사용불가)</p>
 												</td>
@@ -1039,8 +1039,8 @@
 											<tr>
 												<th scope="row"><div class="text">영수증발금 선택</div></th>
 												<td>
-													<label class="item" for="pay1"><input type="radio" id="pay1" name="Pay" class="styled1" checked>발급</label>
-													<label class="item mgL25" for="pay1"><input type="radio" id="pay1" name="Pay" class="styled1" checked>미발급</label>
+													<label class="item" for="pay1"><input type="radio" id="pay1" name="Issued" class="styled1" checked>발급</label>
+													<label class="item mgL25" for="pay1"><input type="radio" id="pay1" name="Issued" class="styled1" checked>미발급</label>
 												</td>
 											</tr>
 											<tr>
@@ -1124,21 +1124,20 @@
 									<a href="#" class="btn-text btn-green">저장</a>
 								</div>
 							</div>
-						</div>
-						<div class="box-content1 mgT60">
-							<h3 class="box-title">카드등록이용 안내</h3>
-							<div class="box-cont">
-								<p class="item">카드 미등록자는 [등록]을 눌러 핸드폰 본인인증 후 신용카드 정기과금 등록절차로 진행해주십시오.</p>
-								<p class="item">핸드폰 사용자와 카드 사용자 정보가 일치할 경우 카드 등록이 가능합니다.</p>
-								<p class="item">조합원 당 하나의 카드만 등록 가능합니다. 다른 카드 등록 시 기존 정보를 삭제 후 등록해주십시오.</p>
-								<p class="item">카드로 결제 신청한 물품대금은 주문 후 물품 공급이 완료된 다음날 결제 완료됩니다.</p>
-								<p class="item">카드결제 명세서는 한살림 가입 시 등록한 이메일로 발송됩니다.</p>
-								<p class="item">법인카드 등록이 진행되지 않을 시에는 지역 한살림으로 문의 주십시오.</p>
-								<p class="item">외상대금 및 잔액 결제는 나의한살림>거래정보>거래내역조회에서 즉시 결제 방식으로 이용하실 수 있습니다.</p>
+							<div class="box-content1 mgT60">
+								<h3 class="box-title">카드등록이용 안내</h3>
+								<div class="box-cont">
+									<p class="item">카드 미등록자는 [등록]을 눌러 핸드폰 본인인증 후 신용카드 정기과금 등록절차로 진행해주십시오.</p>
+									<p class="item">핸드폰 사용자와 카드 사용자 정보가 일치할 경우 카드 등록이 가능합니다.</p>
+									<p class="item">조합원 당 하나의 카드만 등록 가능합니다. 다른 카드 등록 시 기존 정보를 삭제 후 등록해주십시오.</p>
+									<p class="item">카드로 결제 신청한 물품대금은 주문 후 물품 공급이 완료된 다음날 결제 완료됩니다.</p>
+									<p class="item">카드결제 명세서는 한살림 가입 시 등록한 이메일로 발송됩니다.</p>
+									<p class="item">법인카드 등록이 진행되지 않을 시에는 지역 한살림으로 문의 주십시오.</p>
+									<p class="item">외상대금 및 잔액 결제는 나의한살림>거래정보>거래내역조회에서 즉시 결제 방식으로 이용하실 수 있습니다.</p>
+								</div>
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -1233,143 +1232,12 @@
 		</div>
 	</div>
 </div>
-<!-- 이전 배송지 -->
-<div class="layer-popup pop-prev-shipping">
-	<div class="pop-head">
-		<h1 class="pop-title">선물택배 배송지</h1>
-		<button type="button" class="btn-close">닫기</button>
-	</div>
-	<div class="pop-content">
-		<p class="pop-text2">이전 배송지</p>
-		<div class="board-lsit type2">
-			<table>
-				<colgroup>
-					<col style="width:10%;">
-					<col style="width:10%;">
-					<col style="*">
-					<col style="width:20%;">
-				</colgroup>
-				<thead>
-					<tr>
-						<th scope="col">받는이</th>
-						<th scope="col">별칭</th>
-						<th scope="col">주소</th>
-						<th scope="col">연락처</th>
-					</tr>
-				</thead>
-			</table>
-		</div>
-		<div class="popup-scroll">
-			<div class="board-lsit type2">
-				<table>
-					<colgroup>
-						<col style="width:10%;">
-						<col style="width:10%;">
-						<col style="*">
-						<col style="width:20%;">
-					</colgroup>
-					<tbody>
-						<tr>
-							<td>홍길순</td>
-							<td>울엄마</td>
-							<td class="align-left">(12345)서울 송파구 잠실동 123-45번지</td>
-							<td>010-2345-6788</td>
-						</tr>
-						<tr>
-							<td>홍길동</td>
-							<td>사무실</td>
-							<td class="align-left">(67891)서울 강남구 삼성동 67-1번지 ab빌라 101호</td>
-							<td>010-2345-6788</td>
-						</tr>
-						<tr>
-							<td>이혜영</td>
-							<td>베프</td>
-							<td class="align-left">(12345)서울 양천구 신월동 890-11번지</td>
-							<td>010-2345-6788</td>
-						</tr>
-						<tr>
-							<td>신성우</td>
-							<td>성우오빠</td>
-							<td class="align-left">(67891)서울 서대문구 홍제동 123번지 xx아파트 301동 1201호</td>
-							<td>010-2345-6788</td>
-						</tr>
-						<tr>
-							<td>현빈</td>
-							<td>현빈오빠</td>
-							<td class="align-left">(23456)서울 구로구 구로동 189-10번지</td>
-							<td>010-2345-6788</td>
-						</tr>
-						<tr>
-							<td>홍만식</td>
-							<td>울삼촌</td>
-							<td class="align-left">(67891)서울 강남구 삼성동 67-1번지 ab빌라 101호</td>
-							<td>010-2345-6788</td>
-						</tr>
-						<tr>
-							<td>홍길순</td>
-							<td>울엄마</td>
-							<td class="align-left">(12345)서울 송파구 잠실동 123-45번지</td>
-							<td>010-2345-6788</td>
-						</tr>
-						<tr>
-							<td>홍길동</td>
-							<td>사무실</td>
-							<td class="align-left">(67891)서울 강남구 삼성동 67-1번지 ab빌라 101호</td>
-							<td>010-2345-6788</td>
-						</tr>
-						<tr>
-							<td>이혜영</td>
-							<td>베프</td>
-							<td class="align-left">(12345)서울 양천구 신월동 890-11번지</td>
-							<td>010-2345-6788</td>
-						</tr>
-						<tr>
-							<td>신성우</td>
-							<td>성우오빠</td>
-							<td class="align-left">(67891)서울 서대문구 홍제동 123번지 xx아파트 301동 1201호</td>
-							<td>010-2345-6788</td>
-						</tr>
-						<tr>
-							<td>현빈</td>
-							<td>현빈오빠</td>
-							<td class="align-left">(23456)서울 구로구 구로동 189-10번지</td>
-							<td>010-2345-6788</td>
-						</tr>
-						<tr>
-							<td>홍만식</td>
-							<td>울삼촌</td>
-							<td class="align-left">(67891)서울 강남구 삼성동 67-1번지 ab빌라 101호</td>
-							<td>010-2345-6788</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-		<div class="btn-bottom pdT30">
-			<a href="#" class="btn-text btn-green">닫기</a>
-		</div>
-	</div>
-</div>
 
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
-$(window).load(function(){
-	/* 탭 */
-	$('.tab-styled3 .item').click(function(){
-		var idx = $(this).index();
-		$('.tab-styled3 .item').removeClass('on').eq(idx).addClass('on');
-		$('.tab-content3').removeClass('on').eq(idx).addClass('on');
-	});
-
-	/* 이전 배송지 */
-	$('.btn-prev-shipping').click(function(){
-		$('.pop-prev-shipping').fadeIn(200);
-	});
-});
-</script>
 
 </body>
 
