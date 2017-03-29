@@ -121,8 +121,8 @@ input[type=password].click {font-family:돋움, Dotum, Arial, Helvetica, sans-se
 
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
+	-webkit-appearance:none;
+	margin:0;
 }
 .input-price {
 	position:relative;
@@ -934,6 +934,52 @@ td.e-mail-form {
 			background-color:#fff;
 			color:#000;
 		}/* on */
+
+.tab-styled5 {
+	overflow:hidden;
+	padding-top:1px;
+	border-left: 1px solid #bbb;
+}
+	.tab-styled5 .item {
+		float:left;
+		position:relative;
+		border: 1px solid #bbb;
+		border-left:0;
+		margin-top:-1px;
+		box-sizing:border-box;
+	}
+	.tab-styled5 .item:first-child {
+		margin-left:0;
+
+	}
+
+		.tab-styled5 .item .text {
+			display:block;
+			height:50px;
+			/*border:1px solid #bbb;*/
+			background-color:#fff;
+			color:#666;
+			font-size:16px;
+			text-align:center;
+			line-height:50px;
+
+		}
+
+.tab-styled5.one .item {
+	width:100%;
+}
+.tab-styled5.two .item {
+	width:50%;
+}
+.tab-styled5.three .item {
+	width:33%;
+}
+.tab-styled5.multi .item {
+	width:25%;
+}
+
+
+
 .tab-content4 {display: none; }
 .tab-content4.on {display: block;}
 
@@ -1732,6 +1778,21 @@ td.e-mail-form {
 	width:20px;
 	height:18px;
 	background-position:0 -324px;
+}
+.btn-icon-text.btn-top {
+	width:56px;
+	height:28px;
+	padding:0 0 0 15px;
+	border-color: #e3e3e3;
+	color: #999;
+	font-size: 14px;
+	line-height: 28px;
+}
+.btn-icon-text.btn-top:before {
+	left:5px;
+	width:11px;
+	height:7px;
+	background-position: 0 -1069px
 }
 
 /* 이미지 버튼 */
@@ -4768,6 +4829,13 @@ label.check-radio .radiobox {margin-right:8px;}
 	width: 100%;
 }
 
+.group .thumb-list1 .ico-category {position: absolute;right:20px; top:20px;}
+
+.group.event {position:relative; margin-top:80px; padding-bottom:48px;}
+.group.event .title-area {overflow: hidden; height:inherit;line-height: 24px;margin-bottom:10px;}
+.group.event .title-area p {float: left; display: inline-block}
+.group.event .btn-top {position: absolute; right:0; bottom:0;}
+
 /* board-lsit 리스트 게시판 */
 .board-top {
 	position: relative;
@@ -5479,7 +5547,97 @@ td .radish-bank-box span {display:block;}
 .grid-item .text-area {font-size:15px; color:#666; line-height:24px; margin-top:30px; }
 
 /* 원재료검색 */
-.search-left {}
+.search-content {
+	position:relative;
+	margin-top:25px;
+}
+.search-content .search-title {
+	color:#000;
+	font-size:16px;
+	font-weight:bold;
+	line-height:45px;
+}
+.search-left {
+	width:240px;
+}
+	.search-left .search-top .search-input {
+		position:relative;
+		padding-right:56px;
+	}
+		.search-left .search-top input[type=text] {}
+		.search-left .search-top .btn-round-text {
+			position:absolute;
+			right:0;top:0;
+		}
+
+.search-left .search-tree {
+	margin-top:25px;
+}
+	.search-left .search-tree .btn-area {
+		overflow:hidden;
+		margin:0 -2px;
+	}
+		.search-left .search-tree .btn-area .btn {
+			float:left;
+			width:50%;
+			padding:0 2px;
+			box-sizing:border-box;
+		}
+		.search-left .search-tree .btn-area .btn-mini-text {width:100%;}
+
+.search-left .tree-list {margin-top:13px;}
+	.search-left .tree-list .check-text {
+		padding:7px 0;
+	}
+	.search-left .tree-list .open-type {
+		position:relative;
+		padding-left:26px;
+		font-size:0;
+		line-height:0;
+	}
+	.search-left .tree-list .open-type:before {
+		content:'';
+		position:absolute;
+		left:26px;top:50%;
+		width:26px;
+		height:1px;
+		background-color:#ddd;
+	}
+	.search-left .tree-list .btn-tree-tog {
+		overflow:hidden;
+		position:relative;
+		width:18px;
+		height:18px;
+		margin:7px 0 0;
+	}
+	.search-left .tree-list .check-text {
+		padding-left:8px;
+	}
+		.search-left .tree-list .btn-tree-tog img {vertical-align:top;}
+	.search-left .tree-list ul {padding-left:26px;}
+	.search-left .tree-list ul.list {padding-left:70px;}
+
+		.search-left .tree-list .item-depth1,
+		.search-left .tree-list .item-depth2,
+		.search-left .tree-list .item-depth3 {position:relative;}
+		.search-left .tree-list .item-depth1:before,
+		.search-left .tree-list .item-depth2:before,
+		.search-left .tree-list .item-depth3:before {
+			content:'';
+			position:absolute;
+			left:35px;top:-7px;bottom:-7px;
+			width:1px;
+			background-color:#ddd;
+		}
+		.search-left .tree-list .item-depth1:first-child:before {top:7px;}
+		.search-left .tree-list .item-depth1:last-child:before {bottom:7px;}
+		.search-left .tree-list .item-depth3:before {left:60px;top:10px;bottom:10px;}
+
+.search-right {
+	position:absolute;
+	left:280px;top:0;
+}
+
 
 /*한살림소식*/
 .tag-wrap {
