@@ -1168,13 +1168,18 @@ td.e-mail-form {
 .mgT85 {margin-top:85px !important;}
 
 .mgL10 {margin-left:10px !important;}
+.mgL15 {margin-left:15px !important;}
 .mgL30 {margin-left:30px !important;}
+.mgL35 {margin-left:35px !important;}
+.mgL55 {margin-left:55px !important;}
+.mgL60 {margin-left:60px !important;}
 
 .mgB30 {margin-bottom:30px !important;}
 
 .pdT0 {padding-top:0 !important;}
 .pdT20 {padding-top:20px !important;}
 .pdT25 {padding-top:25px !important;}
+.pdT30 {padding-top:30px !important;}
 
 .pdL0 {padding-left:0 !important;}
 .pdT50 {padding-top:50px !important;}
@@ -5404,6 +5409,12 @@ td .radish-bank-box span {display:block;}
 	font-weight:bold;
 	line-height:44px;
 }
+.pop-text2 {
+	font-size:18px;
+	color:#000;
+	line-height:44px;
+	font-weight:bold;
+}
 .layer-popup {
 	position:fixed;
 	left:50%;top:50%;
@@ -5498,6 +5509,9 @@ td .radish-bank-box span {display:block;}
 
 /* 운송장조회 (IM-MY030202.html) */
 .pop-way-look {width:600px;}
+
+/* 이전 배송지 (IM-MY020302_01.html) */
+.pop-prev-shipping {width:900px;}
 
 /* 한살림서울 소개 안내 동영상 */
 .video-area {
