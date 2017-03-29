@@ -2248,10 +2248,9 @@ label.check-radio .radiobox {margin-right:8px;}
 		position:relative;
 		width:33%;
 		margin-left:-1px;
+		cursor:pointer;
 	}
-	.tab-list1.wid50 .item {
-		width:50% !important;
-	}
+	.tab-list1.wid50 .item {width:50% !important;}
 	.tab-list1 .item:first-child {
 		width:34%;
 		margin-left:0;
@@ -2270,6 +2269,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		}
 	.tab-list1 .item:hover,
 	.tab-list1 .item.on {z-index:1;}/* on */
+	.tab-list1 .item.on {cursor:default;}/* on */
 		.tab-list1 .item:hover .text {
 			border-color:#666;
 			background-color:#fff;
