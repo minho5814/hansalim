@@ -4566,6 +4566,14 @@ label.check-radio .radiobox {margin-right:8px;}
 
 .board-lsit.type2 table thead th {background-color:#f0f2ef;}
 
+/* board scroll */
+.board-scroll {
+	overflow:hidden;
+	height:278px;
+	overflow:auto;
+	border-bottom:1px solid #bbb;
+}
+
 
 .waybill{
 	position:relative;
@@ -5492,6 +5500,48 @@ td .radish-bank-box span {display:block;}
 	font-size:14px;
 }
 
+.layer-popup .btn-bottom .btn-text {
+	min-width:120px;
+}
+
+/* CMS 임의해지 공통팝업 */
+.pop-abort-guid1 {width:600px;}
+.pop-abort-guid1 .abort-guid .bullet-list1 .item {
+	color:#666 !important;
+	letter-spacing:-0.5px;
+}
+.pop-abort-guid1 .abort-guid .info-box01 {
+	margin-top:15px;
+	padding:40px 0;
+	background-color:#f0f2ef;
+	text-align:center;
+}
+.pop-abort-guid1 .abort-guid .info-box01 p {
+	font-size:18px;
+	color:#000;
+	line-height:24px;
+}
+.pop-abort-guid2 .abort-guid .info-box02 {
+	margin-top:15px;
+	padding:20px 20px;
+	background-color:#f0f2ef;
+}
+.pop-abort-guid2 .abort-guid .info-box02 dl dt {
+	margin-top:9px;
+}
+.pop-abort-guid2 .abort-guid .info-box02 dl dt,
+.pop-abort-guid2 .abort-guid .info-box02 dl dd {
+	font-size:15px;
+	color:#000;
+	line-height:24px;
+}
+.pop-abort-guid2 .abort-guid .info-box02 dl dd {
+	color:#666;
+}
+.pop-abort-guid2 .abort-guid .info-box02 dl dd .gray-text {
+	font-size:14px;
+	color:#999;
+}
 /* ---------------------------------------------------------------------------------------------------------
 	회원가입 (jo)
 --------------------------------------------------------------------------------------------------------- */
