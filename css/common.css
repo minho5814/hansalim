@@ -303,6 +303,13 @@ html {
 .board-write1 td .coupon-box:first-child {margin-top:0px;}
 .board-write1 td .coupon-box label {display:inline-block;width:134px;}
 
+.board-write1 td .notice-text {
+	display:inline-block;
+	color:#999;
+	font-size:14px;
+	line-height:16px;
+}
+
 .board-write2 {border-top:1px solid #666;}
 	.board-write2 table {border-bottom:1px solid #bbb;}
 	.board-write2 th,
@@ -1022,7 +1029,7 @@ td.e-mail-form {
 		-ms-transition:opacity .3s;
 		transition:opacity .3s;
 	}
-	.item-list .btn-center a {margin-left:5px; top:43%;}
+	.item-list .btn-center button {margin-left:5px; top:43%;}
 	.item-list li .flag {
 		display: block;
 		position:absolute;
@@ -1169,6 +1176,7 @@ td.e-mail-form {
 
 .mgL10 {margin-left:10px !important;}
 .mgL15 {margin-left:15px !important;}
+.mgL25 {margin-left:25px !important;}
 .mgL30 {margin-left:30px !important;}
 .mgL35 {margin-left:35px !important;}
 .mgL55 {margin-left:55px !important;}
@@ -1265,6 +1273,13 @@ td.e-mail-form {
 	background:url(../img/icon/ico_notice02.png) 0 3px no-repeat;
 }
 .title-wrap .info-text {margin-bottom:9px;}
+
+.sub-text {
+	margin: 3px 0 20px;
+	font-size:15px;
+	color:#666;
+	line-height: 24px;
+}
 
 /* 정렬 */
 .align-center {text-align:center !important;}
@@ -1672,7 +1687,7 @@ td.e-mail-form {
 	background-position:0 -344px;
 }
 
-.btn-image.btn-like2 {background-color:#fff;border:1px solid #60b015;}
+.btn-image.btn-like2 {background-color:#fff;border:1px solid #60b015; box-sizing: border-box;}
 .btn-image.btn-like2:before {
 	width:20px;
 	height:18px;
@@ -1747,14 +1762,14 @@ td.e-mail-form {
 	background-repeat:no-repeat;
 }
 
-.btn-image2.btn-cart {background-color:#91c90b;}
+.btn-image2.btn-cart {background-color:#91c90b;border:1px solid #91c90b; box-sizing: border-box;}
 .btn-image2.btn-cart:before {
 	width:26px;
 	height:26px;
-	background-position:0 -716px;
+	background-position:0 -494px;
 }
 
-.btn-image2.btn-like {background-color:#60b015;}
+.btn-image2.btn-like {background-color:#fff; border:1px solid #91c90b; box-sizing: border-box;}
 .btn-image2.btn-like:before {
 	width:26px;
 	height:24px;
@@ -3842,7 +3857,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	background-color:#fff;
 	padding-top:80px;
 }
-.content.first {padding-top:0;}
+.content.first {padding:0 0 40px 0;}
 .content.last {padding-top:0;}
 .content.gray {
 	background-color:#eee;
@@ -5109,6 +5124,7 @@ td .radish-bank-box span {display:block;}
 .tab-content4  .result-top {margin-top:0}
 
 .tab-content4 .group {margin-top:80px;}
+.group.list-wrap .order-list {margin-bottom: 0;}
 /*요리검색결과*/
 .recipe-list .item-recipe {
 	overflow:hidden;
@@ -5533,33 +5549,53 @@ td .radish-bank-box span {display:block;}
 
 /* 우편번호찾기 (IM-JO0201.html) */
 .pop-post {width:600px;}
-	.pop-post .post-search table {}
-		.pop-post .post-search table th,
-		.pop-post .post-search table td {
-			color:#000;
-			font-size:15px;
-			padding:6px 0;
+	.pop-post .post-search .row {
+		position: relative;
+		margin-bottom: 10px;
+	}
+	.pop-post .post-search .row:after {
+		content:'';
+		display: block;
+		clear: both;
+	}
+	.pop-post .post-search .row .fl {float:left;}
+	.pop-post .post-search .row .fr {float:right;}
+	.pop-post .post-search .row label {
+		color:#000;
+		font-size:15px;
+		padding:6px 0;
+	}
+	.pop-post .post-search .row .styled1 {width:250px;}
+	.pop-post .post-search .row .btn-type {
+		position:relative;
+		padding-right:56px;
+	}
+		.pop-post .post-search .row .btn-round-text {
+			position:absolute;
+			right:0;top:0;
+			width:52px;
 		}
-		.pop-post .post-search table .btn-type {
-			position:relative;
-			padding-right:56px;
-		}
-			.pop-post .post-search table .btn-round-text {
-				position:absolute;
-				right:0;top:0;
-				width:52px;
-			}
 
 	.pop-post .text1 {
 		margin-top:10px;
 		color:#999;
 		font-size:14px;
 		line-height:20px;
+		letter-spacing: -0.5px;
 	}
 	.pop-post .post-search select {width:120px;}
 
+	.pop-post .post-text {
+		display: block;
+		height:365px;
+		margin-top: 25px;
+		text-align: center;
+		line-height: 305px;
+		color:#666;
+		border-top:1px solid #e3e3e3;
+	}
 	.pop-post .post-result {
-		display:none;
+		display: none;
 		margin:25px -30px 0;
 		padding:30px 30px 0;
 		border-top:1px solid #e3e3e3;
@@ -5572,7 +5608,7 @@ td .radish-bank-box span {display:block;}
 	}
 		.pop-post .post-result .result-title {
 			overflow:hidden;
-			padding-left:85px;
+			padding-left:55px;
 			border-bottom:1px solid #bbb;
 			background-color:#f7f7f7;
 		}
@@ -5589,7 +5625,7 @@ td .radish-bank-box span {display:block;}
 			display:block;
 			position:relative;
 			min-height:65px;
-			padding-left:138px;
+			padding-left:125px;
 			box-sizing:border-box;
 			border-top:1px solid #ddd;
 		}
@@ -5605,7 +5641,7 @@ td .radish-bank-box span {display:block;}
 			}
 			.pop-post .post-result .result-list .post-number {
 				position:absolute;
-				left:84px;top:0;
+				left:45px;top:0;
 				width:54px;
 				color:#666;
 				font-size:14px;
@@ -6324,4 +6360,21 @@ td .radish-bank-box span {display:block;}
 	width:3px;
 	height:3px;
 	background-color:#676767;
+}
+
+
+/* 나의 한살림 - 개인정보 */
+.pw-confirm {
+	padding:50px 0;
+	background-color:#f0f2ef;
+	text-align: center;
+}
+.pw-confirm label {
+	display: inline-block;
+	margin-right:20px;
+	color:#000;
+	line-height: 32px;
+}
+.pw-confirm input[type=password] {
+	width:240px;
 }

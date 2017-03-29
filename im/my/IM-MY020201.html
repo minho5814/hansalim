@@ -7,14 +7,6 @@
 
 	<link rel="stylesheet" type="text/css" href="../../css/common.css">
 	<link rel="stylesheet" type="text/css" href="../../css/main.css">
-	<style>
-		.notice-text {
-			display:inline-block;
-		    color:#999;
-		    font-size:14px;
-		    line-height:16px;
-		}
-	</style>
 </head>
 
 <body>
@@ -851,7 +843,7 @@
 					<li class="lnb-item">
 						<h3 class="title"><a href="#" class="link">개인정보</a></h3>
 						<ul class="list">
-							<li class="item"><a href="#" class="link"><span class="text">개인정보 조회/수정</span></a></li>
+							<li class="item on"><a href="#" class="link"><span class="text">개인정보 조회/수정</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">주소록관리</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">결제정보관리</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">나의 알림</span></a></li>
@@ -863,7 +855,7 @@
 						<h3 class="title"><a href="#" class="link">거래정보</a></h3>
 						<ul class="list">
 							<li class="item"><a href="#" class="link"><span class="text">주문조회</span></a></li>
-							<li class="item on"><a href="#" class="link"><span class="text">공급내역조회</span></a></li>
+							<li class="item"><a href="#" class="link"><span class="text">공급내역조회</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">매장이용내역조회</span></a></li>
 							<li class="item"><a href="#" class="link"><span class="text">거래내역조회</span></a></li>
 						</ul>
@@ -900,7 +892,7 @@
 			<!-- /LNB -->
 			<div class="content">
 				<h3 class="cTitle1">개인정보 조회/수정</h3>
-				<p>개인 정보를 확인 및 수정할 수 있습니다.</p>
+				<p class="sub-text">개인 정보를 확인 및 수정할 수 있습니다.</p>
 				<div class="cont-box">
 					<div class="board-wrap">
 						<div class="board-write1">
@@ -944,8 +936,8 @@
 												<option>15</option>
 												<option>16</option>
 											</select>
-											<label class="item mgL35"><input type="radio" name="Sms" class="styled1" checked>양력</label>
-											<label class="item mgL15"><input type="radio" name="Sms" class="styled1">음력</label>
+											<label class="item mgL35"><input type="radio" name="check" class="styled1" checked>양력</label>
+											<label class="item mgL15"><input type="radio" name="check" class="styled1">음력</label>
 										</td>
 									</tr>
 									<tr>
@@ -956,23 +948,23 @@
 												<option>011</option>
 												<option>017</option>
 											</select>
-											<input type="number" value="123" style="width:140px;">
-											<input type="number" value="123" style="width:140px;">
+											<input type="number" value="" style="width:140px;">
+											<input type="number" value="" style="width:140px;">
 										</td>
 									</tr>
 									<tr>
 										<th scope="row"><div class="text">SMS수신동의</div></th>
 										<td>
-											<label class="item"><input type="radio" name="Sms" class="styled1" checked>동의함</label>
-											<label class="item mgL15"><input type="radio" name="Sms" class="styled1">동의하지 않음</label>
+											<label class="item"><input type="radio" name="agree01" class="styled1" checked>동의함</label>
+											<label class="item mgL15"><input type="radio" name="agree01" class="styled1">동의하지 않음</label>
 											<span class="notice-text mgL55">※ 한살림 이용시 꼭 필요한 경우 일괄 발송됩니다.</span>
 										</td>
 									</tr>
 									<tr>
 										<th scope="row"><div class="text">이메일</div></th>
 										<td>
-											<input type="number" value="" style="width:140px;"> @
-											<input type="number" value="" style="width:140px;">
+											<input type="text" value="" style="width:140px;"> @
+											<input type="text" value="" style="width:140px;">
 											<select class="styled1" style="width:140px;">
 												<option>직접입력</option>
 												<option>naver.com</option>
@@ -983,8 +975,8 @@
 									<tr>
 										<th scope="row"><div class="text">이메일정보 수신동의</div></th>
 										<td>
-											<label class="item"><input type="radio" name="Sms" class="styled1" checked>동의함</label>
-											<label class="item mgL15"><input type="radio" name="Sms" class="styled1">동의하지 않음</label>
+											<label class="item"><input type="radio" name="agree02" class="styled1" checked>동의함</label>
+											<label class="item mgL15"><input type="radio" name="agree02" class="styled1">동의하지 않음</label>
 											<span class="notice-text mgL55">※ 한살림 이용시 꼭 필요한 경우 일괄 발송됩니다.</span>
 										</td>
 									</tr>
@@ -993,7 +985,7 @@
 										<td>
 											<div class="btn-styled">
 												<input type="number" id="Add" value="15320" class="align-center" style="width:90px;">
-												<button type="button" class="btn-round-text btn-gray">주소검색</button>
+												<button type="button" class="btn-round-text btn-gray btn-post">우편번호</button>
 											</div>
 											<input type="text" placeholder="텍스트 입력" value=" 서울시 강동구 구천면로 123-12번지" class="mgT10">
 											<input type="text" value="" class="mgT10">
@@ -1002,8 +994,8 @@
 									<tr>
 										<th scope="row"><div class="text">우편물 수신동의</div></th>
 										<td>
-											<label class="item"><input type="radio" name="Sms" class="styled1" checked>동의함</label>
-											<label class="item mgL15"><input type="radio" name="Sms" class="styled1">동의하지 않음</label>
+											<label class="item"><input type="radio" name="agree03" class="styled1" checked>동의함</label>
+											<label class="item mgL15"><input type="radio" name="agree03" class="styled1">동의하지 않음</label>
 											<span class="notice-text mgL55">※ 한살림 이용시 꼭 필요한 경우 일괄 발송됩니다.</span>
 										</td>
 									</tr>
@@ -1127,11 +1119,130 @@
 	</div>
 </div>
 
+<!-- 레이어 팝업 영역 -->
+<!-- 우편번호 찾기 -->
+<div class="layer-popup pop-post">
+	<div class="pop-head">
+		<h1 class="pop-title">우편번호 찾기</h1>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="post-search">
+			<div class="row">
+				<div class="fl">
+					<label class="hide">시/도</label>
+					<select class="styled1">
+						<option>시/도</option>
+						<option>서울</option>
+						<option>대전</option>
+						<option>대구</option>
+					</select>
+				</div>
+				<div class="fr">
+					<label class="hide">시/도</label>
+					<select class="styled1">
+						<option>시/군/구</option>
+						<option>강동구</option>
+						<option>서대문구</option>
+						<option>송파구</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<label for="Address" class="hide">주소</label>
+				<div class="btn-type">
+					<input type="text" placeholder="도로명 + 건물번호, 동+건물명, 동+ 지번 등">
+					<button type="button" class="btn-round-text btn-gray btn-search">검색</button>
+				</div>
+			</div>
+			<p class="text1">(도로명 + 건물번호,동 + 건물명, 동 + 지번 등) 주소조회결과가 100건 이내만 조회 가능합니다.</p>
+		</div>
+		<!-- 주소 검색 전 및 결과가 없을 경우 -->
+		<div class="post-text"><span>검색할 주소를 입력해주세요.</span></div>
+
+		<!-- 주소 검색 후 -->
+		<div class="post-result">
+			<div class="scroll-box">
+				<div class="result-title">
+					<p class="title">우편번호</p>
+					<p class="title">주소</p>
+				</div>
+				<div class="result-list">
+					<a href="#none" class="item">
+						<div class="post-number">13542</div>
+						<div class="address-area">
+							<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+							<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+						</div>
+					</a>
+					<a href="#none" class="item">
+						<div class="post-number">13542</div>
+						<div class="address-area">
+							<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+							<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+						</div>
+					</a>
+					<a href="#none" class="item">
+						<div class="post-number">13542</div>
+						<div class="address-area">
+							<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+							<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+						</div>
+					</a>
+					<a href="#none" class="item">
+						<div class="post-number">13542</div>
+						<div class="address-area">
+							<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+							<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+						</div>
+					</a>
+					<a href="#none" class="item">
+						<div class="post-number">13542</div>
+						<div class="address-area">
+							<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+							<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+						</div>
+					</a>
+					<a href="#none" class="item">
+						<div class="post-number">13542</div>
+						<div class="address-area">
+							<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+							<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+						</div>
+					</a>
+					<a href="#none" class="item">
+						<div class="post-number">13542</div>
+						<div class="address-area">
+							<p class="address">서울 강동구 구천면로 123 (천호동, 천호아파트)</p>
+							<p class="address">서울 강동구 천호동 123-12번지 천호아파트</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<p class="text1">검색 결과 중 해당 주소를 클릭하시면 자동 입력됩니다.</p>
+		</div>
+	</div>
+</div>
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	/* 우편번호 찾기 팝업 호출 */
+	$('.btn-post').click(function(){
+		$('.pop-post .post-result').hide();
+		$('.pop-post .post-text').show();
+		$('.pop-post').fadeIn(200);
+	});
 
+	/* 우편번호 찾기 팝업 내 검색 버튼 */
+	$('.pop-post .btn-search').click(function(){
+		$(this).parents('.pop-post').find('.post-text').hide();
+		$(this).parents('.pop-post').find('.post-result').show();
+	});
+});
+</script>
 </body>
 
 </html>
