@@ -227,6 +227,26 @@ html {
 		line-height:0;
 	}
 
+/*로케이션과 같은라인 우측에 무언가 있을경우*/
+.location-wrap {
+	position: relative;
+	width:1120px;
+	margin:0 auto;
+}
+.location-wrap .location {
+	display: inline-block;
+	width: inherit;
+}
+.location-wrap .location .inner {
+	width: inherit;
+}
+
+.location-wrap .right-area {
+	position: absolute;
+	right:0;
+	top:20px;
+}
+
 .fRight {float:right !important;}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -308,6 +328,20 @@ html {
 	color:#999;
 	font-size:14px;
 	line-height:16px;
+}
+.board-write1 td .notice-text02 {
+	display:inline-block;
+	margin-left:30px;
+	color:#999;
+	font-size:14px;
+	line-height:32px;
+}
+.board-write1 td .txt-label {
+	display:inline-block;
+	margin:0 9px 0 8px;
+	color:#666;
+	font-size:14px;
+	line-height:32px;
 }
 
 .board-write2 {border-top:1px solid #666;}
@@ -1229,6 +1263,7 @@ td.e-mail-form {
 .mgL60 {margin-left:60px !important;}
 
 .mgB30 {margin-bottom:30px !important;}
+.mgB40 {margin-bottom:40px !important;}
 
 .pdT0 {padding-top:0 !important;}
 .pdT5 {padding-top:5px !important;}
@@ -4586,11 +4621,22 @@ label.check-radio .radiobox {margin-right:8px;}
 	height:40px;
 	background-color:rgba(0,0,0,.3);
 }
-.goods-banner .bx-controls-auto .bx-start {display: none}
+.goods-banner .bx-controls-auto .bx-start {
+	float:right; display: inline-block; width:32px; height:40px; text-indent: -9999px; line-height:0; font-size:0;
+	background:url(../img/btn/btn_bx_play_32x40.png) no-repeat 0 0;
+}
 .goods-banner .bx-controls-auto .bx-stop {
 	float:right; display: inline-block; width:32px; height:40px; text-indent: -9999px; line-height:0; font-size:0;
 	background:url(../img/btn/btn_bx_stop_32x40.png) no-repeat 0 0;
 }
+
+.goods-banner .bx-controls-auto .bx-start.active {
+	display: none;
+}
+.goods-banner .bx-controls-auto .bx-stop.active {
+	display: none;
+}
+
 
 .goods-slide li {z-index: 0 !important; font-size: 0;}
 
@@ -4649,18 +4695,77 @@ label.check-radio .radiobox {margin-right:8px;}
 .container.category .best .thumb-item1 {float: none; width: 100%; border:none;}
 .container.category .best .center .img-area {overflow: hidden; width:560px; height:560px; font-size: 0;}
 .container.category .best .center .img-area img {width: 100%; height:100%;}
-
-
-
 .container.category .best .price-btn,
 .container.category .group .price-btn{bottom:30px}
 .container.category .best .retail,
-.container.category .group .retail {bottom:12px}
-
+.group .retail {bottom:12px}
 .container.category .group {margin-top:45px}
 .container.category .group .result-top {margin-top:10px}
 
+/*기획전*/
+.event-list {}
+	.event-list ul {overflow: hidden;}
+		.event-list ul li {
+			float:left;
+			width:366px;
+			margin:0 0 11px 11px;
+			border:1px solid #ddd;
+			box-sizing: border-box;
+		}
+		.event-list ul li:nth-child(3n+1){
+			margin-left:0;
+		}
 
+		.event-list ul li .img-area {
+			position: relative;
+			display: block;
+			width:364px;
+			height:219px;
+			font-size: 0;
+		}
+		.event-list ul li.deadline .img-area:before {
+			content: '';
+			position:absolute;
+			left:0;right:0;top:0;bottom:0;
+			background-color:rgba(0,0,0,.5);
+			background-image:url(../img/icon/icon_deadline.png);
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+		}
+		.event-list ul li .img-area img {
+			width: 100%;
+		}
+		.event-list ul li .txt-area {padding:20px;}
+		.event-list ul li .txt-area .title {
+			font-size: 18px;
+			color:#000;
+			font-weight: bold;
+		}
+		.event-list ul li  .txt-area .title span {
+			display: block;
+			font-size: 14px;
+			font-weight: normal;
+
+		}
+		.event-list ul li .txt-area .date {
+			display: inline-block;
+			font-size: 14px;
+			color:#999;
+			margin-top:5px;
+		}
+
+.sub-cont.event .left-area {
+	width: 100%;
+	float:inherit;
+}
+
+.sub-cont.event .left-area .img-area {
+	overflow: hidden;
+	width:100%;
+}
+.sub-cont.event .left-area .img-area img {
+	width: 100%;
+}
 
 /* board-lsit 리스트 게시판 */
 .board-top {
@@ -5190,7 +5295,8 @@ td .radish-bank-box span {display:block;}
 .filter-wrap .reset-area .btn-reset {height:32px; line-height: 32px; }
 .filter-wrap .reset-area .btn-reset:before {top:8px;}
 
-.btn-more {width: 100%;}
+.btn-more {width: 100%; border:1px solid #bbb;}
+.btn-more em {color:#999;}
 
 .toggle-area .btn-area .btn-toggle {
 	float:left;
