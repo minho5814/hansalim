@@ -1238,6 +1238,16 @@
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
+$(window).load(function(){
+	/* 탭 */
+	$('.tab-styled3 .item').click(function(){
+		var idx = $(this).index();
+		$('.tab-styled3 .item').removeClass('on').eq(idx).addClass('on');
+		$('.tab-content3').removeClass('on').eq(idx).addClass('on');
+	});
+
+});
+</script>
 
 </body>
 
