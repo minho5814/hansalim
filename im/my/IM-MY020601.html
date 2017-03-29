@@ -991,8 +991,8 @@
 									<tr>
 										<th scope="row"><div class="text">환불수단</div></th>
 										<td>
-											<label class="item mgL35"><input type="radio" name="Refund" class="styled1" checked>CMS(자동이체)계좌</label>
-											<label class="item mgL35"><input type="radio" name="Refund" class="styled1" checked>타 계좌(본인명의)</label>
+											<label class="item" for="refund1"><input type="radio" id="refund1" name="Refund" class="styled1" checked>CMS(자동이체)계좌</label>
+											<label class="item mgL35" for="refund2"><input type="radio" id="refund2" name="Refund" class="styled1">타 계좌(본인명의)</label>
 										</td>
 									</tr>
 									<tr>
@@ -1007,11 +1007,13 @@
 									</tr>
 									<tr>
 										<th scope="row"><div class="text">계좌번호</div></th>
-										<td><input type="number" value="123" style="width:240px;"></td>
+										<td>
+											<input type="number" value="" style="width:240px;"><span class="notice-text02">※ - 없이 입력해주세요.</span>
+										</td>
 									</tr>
 									<tr>
 										<th scope="row"><div class="text">예금주명</div></th>
-										<td><input type="text" value="123" style="width:240px;"></td>
+										<td><input type="text" value="" style="width:240px;"></td>
 									</tr>
 									<tr>
 										<th scope="row"><div class="text">예금주 연락처</div></th>
@@ -1021,8 +1023,8 @@
 												<option>011</option>
 												<option>017</option>
 											</select>
-											<input type="number" value="123" style="width:100px;">
-											<input type="number" value="123" style="width:100px;">
+											<input type="number" value="" style="width:100px;">
+											<input type="number" value="" style="width:100px;">
 										</td>
 									</tr>
 								</tbody>
