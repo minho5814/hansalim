@@ -1187,40 +1187,6 @@
 <script>
 $(window).load(function(){
 
-	//테이블정렬
-	$('.order-list button').click(function(){
-		$(this).parents('.order-list').find('button').removeClass('on');
-		$(this).addClass('on');
-	});
-
-	// 하단리스트 그리드
-	$('.grid').masonry({
-		itemSelector:'.grid-item',
-		columnWidth:366,
-		gutter:11
-	});
-
-
-	//리스트 온오버
-	$('.grid-item').mouseenter(function(){
-		$(this).addClass('on');
-	});
-	$('.grid-item').mouseleave(function(){
-		$(this).removeClass('on');
-	});
-
-	//태그박스
-	$('.btn-open').click(function(){
-		$(this).parents().find('.tag-wrap').toggleClass('on');
-		if($(this).parents().find('.tag-wrap').hasClass('on')){
-				$(this).removeClass('btn-open').addClass('btn-close');
-				$(this).parents().find('.tag-wrap').css({'height':'100%'});
-		}else{
-			$(this).removeClass('btn-close').addClass('btn-open');
-			$(this).parents().find('.tag-wrap').css({'height':'85px'});
-		}
-	});
-
 	//링크이동
 	$('.tab-styled5 .item').click(function(){
 		var idx = $(this).index()+1;
@@ -1228,8 +1194,8 @@ $(window).load(function(){
 		$('html, body').animate({scrollTop:cont_height});
 	});
 
+	//top버튼
 	$('.event .btn-top').click(function(){
-
 		var cont_height = $(this).parents('.event').offset().top - $('.head-btm').outerHeight() ;
 		$('html, body').animate({scrollTop:cont_height});
 	});
