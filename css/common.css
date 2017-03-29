@@ -5109,6 +5109,7 @@ td .radish-bank-box span {display:block;}
 .tab-content4  .result-top {margin-top:0}
 
 .tab-content4 .group {margin-top:80px;}
+.group.list-wrap .order-list {margin-bottom: 0;}
 /*요리검색결과*/
 .recipe-list .item-recipe {
 	overflow:hidden;
