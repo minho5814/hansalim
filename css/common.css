@@ -303,6 +303,13 @@ html {
 .board-write1 td .coupon-box:first-child {margin-top:0px;}
 .board-write1 td .coupon-box label {display:inline-block;width:134px;}
 
+.board-write1 td .notice-text {
+	display:inline-block;
+	color:#999;
+	font-size:14px;
+	line-height:16px;
+}
+
 .board-write2 {border-top:1px solid #666;}
 	.board-write2 table {border-bottom:1px solid #bbb;}
 	.board-write2 th,
