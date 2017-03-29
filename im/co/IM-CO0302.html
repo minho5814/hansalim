@@ -838,7 +838,7 @@
 					</ul>
 				</div>
 				<!-- 물품검색 -->
-				<div class="tab-content3 on">
+				<div class="tab-content3">
 					<div class="filter-wrap">
 						<div class="category-area">
 							<p class="title">카테고리</p>
@@ -1127,63 +1127,92 @@
 					</div>
 				</div>
 				<!-- 원재료검색 -->
-				<div class="tab-content3">
+				<div class="tab-content3 search-content on">
 					<div class="search-left">
 						<div class="search-top">
 							<h3 class="search-title">원재료 검색</h3>
-							<input type="text" placeholder="검색어를 입력하세요">
-							<button type="button" class="btn-round-text btn-gray">검색</button>
+							<div class="search-input">
+								<input type="text" placeholder="검색어를 입력하세요">
+								<button type="button" class="btn-round-text btn-gray">검색</button>
+							</div>
 						</div>
 						<div class="search-tree">
 							<h3 class="search-title">원재료 선택</h3>
 							<div class="btn-area">
-								<button type="button" class="btn-mini-text">전체선택</button>
-								<button type="button" class="btn-mini-text">선택해제</button>
+								<div class="btn"><button type="button" class="btn-mini-text btn-all-check">전체선택</button></div>
+								<div class="btn"><button type="button" class="btn-mini-text btn-all-false">선택해제</button></div>
 							</div>
 							<ul class="tree-list">
 								<li class="item-depth1">
-									<label class="check-text"><input type="checkbox">가공(<span class="len">0</span>)</label>
+									<div class="open-type">
+										<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
+										<label class="check-text"><input type="checkbox" class="styled1" checked>가공(<span class="len">0</span>)</label>
+									</div>
 									<ul class="depth-list">
 										<li class="item-depth2">
-											<label class="check-text"><input type="checkbox">간식/음료(<span class="len"></span>)</label>
+											<div class="open-type">
+												<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
+												<label class="check-text"><input type="checkbox" class="styled1" checked>간식/음료(<span class="len"></span>)</label>
+											</div>
 											<ul class="depth-list">
 												<li class="item-depth3">
-													<label class="check-text"><input type="checkbox">우리밀빵(<span class="len"></span>)</label>
+													<div class="open-type">
+														<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
+														<label class="check-text"><input type="checkbox" class="styled1" checked>우리밀빵(<span class="len"></span>)</label>
+													</div>
 													<ul class="list">
-														<li class="item"><label class="check-text"><input type="checkbox">계피</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">계피분말</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">고구마</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">날보리가루</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">드라이이스트</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">디어바게트</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">딸기</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">땅콩분태</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">럼주</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">몰트분말</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">밀</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">발아보리</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">보리분</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">브로컬리</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">비타민C</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">삶은감자</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">삶은쑥</label></li>
-														<li class="item"><label class="check-text"><input type="checkbox">시금치</label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">계피</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">계피분말</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">고구마</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">날보리가루</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">드라이이스트</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">디어바게트</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">딸기</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">땅콩분태</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">럼주</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">몰트분말</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">밀</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">발아보리</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">보리분</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">브로컬리</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">비타민C</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">삶은감자</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">삶은쑥</span></label></li>
+														<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">시금치</span></label></li>
 													</ul>
 												</li>
 											</ul>
 										</li>
 										<li class="item-depth2">
-											<label class="check-text"><input type="checkbox">간식/음식(<span class="len"></span>)</label>
+											<div class="open-type">
+												<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
+												<label class="check-text"><input type="checkbox" class="styled1" checked>간식/음식(<span class="len"></span>)</label>
+											</div>
 										</li>
 										<li class="item-depth2">
-											<label class="check-text"><input type="checkbox">식사대용(<span class="len"></span>)</label>
+											<div class="open-type">
+												<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
+												<label class="check-text"><input type="checkbox" class="styled1" checked>식사대용(<span class="len"></span>)</label>
+											</div>
 										</li>
 									</ul>
 								</li>
 								<li class="item-depth1">
-									<label class="check-text"><input type="checkbox">대용량(<span class="len"></span>)</label>
+									<div class="open-type">
+										<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
+										<label class="check-text"><input type="checkbox" class="styled1" checked>대용량(<span class="len"></span>)</label>
+									</div>
 								</li>
 							</ul>
+						</div>
+					</div>
+
+					<div class="search-right">
+						<div class="filter-data">
+							<h3 class="search-title">선택한 필터 <span class="len"></span>개</h3>
+							<div class="filter-list-box">
+
+							</div>
 						</div>
 					</div>
 				</div>
@@ -2037,7 +2066,75 @@ $(window).load(function(){
 	$('.grid-item').mouseleave(function(){
 		$(this).removeClass('on');
 	});
-	
+
+	/* 원재료 검색 */
+	//$('.filter-list-box')
+	function dataResult(){
+		$('.tree-list .check-text .text').each(function(){
+			var data = $(this).html();
+			var filter = $(this).parents('.search-content').find('.filter-list-box');
+			$(filter).append('<div class="filter"><span class="text">' + data + '</span><button type="button" class="btn-delete">삭제');
+		});
+	}
+	dataResult();
+
+	$('.search-tree .btn-area .btn-mini-text').click(function(){
+		if($(this).hasClass('btn-all-check')){
+			$(this).parents('.search-tree').find('input[type=checkbox]').prop('checked', true);
+			$(this).parents('.search-tree').find('.checkbox').addClass('checked');
+			dataResult();
+		}else{
+			$(this).parents('.search-tree').find('input[type=checkbox]').prop('checked', false);
+			$(this).parents('.search-tree').find('.checkbox').removeClass('checked');
+			$(this).parents('.search-content').find('.filter-list-box .filter').remove();
+		}
+	});
+	$('.search-tree input[type=checkbox]').change(function(){
+		var text =  $(this).parents('.check-text').find('.text').html();
+		var filter = $(this).parents('.search-content').find('.filter-list-box .filter .text');
+		if(this.checked){
+			$(filter).each(function(){
+				if($(this).text() == text){
+					$(this).parents('.filter').show();
+				}
+			});
+		}else{
+			$(filter).each(function(){
+				if($(this).text() == text){
+					$(this).parents('.filter').hide();
+				}
+			});
+		}
+	});
+	$('.open-type input[type=checkbox]').change(function(){
+		var checkText = $('.tree-list').find('input[type=checkbox]:checked').parents('.check-text').find('.text');
+		$(checkText).each(function(){
+			var text = $(this).html();
+			console.log(text);
+			var filter = $(this).parents('.search-content').find('.filter-list-box .filter .text');
+			if(this.checked){
+				$(filter).each(function(){
+					if($(this).text() == text){
+						$(this).parents('.filter').show();
+					}
+				});
+			}else{
+				$(filter).each(function(){
+					if($(this).text() == text){
+						$(this).parents('.filter').hide();
+					}
+				});
+			}
+		});
+		if(this.checked){
+			$(this).parents('.open-type').next('ul').find('input[type=checkbox]').prop('checked', true);
+			$(this).parents('.open-type').next('ul').find('.checkbox').addClass('checked');
+		}else{
+			$(this).parents('.open-type').next('ul').find('input[type=checkbox]').prop('checked', false);
+			$(this).parents('.open-type').next('ul').find('.checkbox').removeClass('checked');
+		}
+	});
+
 });
 </script>
 </body>
