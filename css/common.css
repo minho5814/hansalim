@@ -7216,6 +7216,258 @@ td .radish-bank-box span {display:block;}
 .pop-notice-set {width:600px;}
 .pop-notice-set .btn-text {min-width:120px;}
 
+<<<<<<< HEAD
+/* 요리서브 메인 */
+.new-cooking-area {}
+.new-cooking-area .new-cooking {
+	width:100%;
+	margin-top:15px;
+}
+.new-cooking .cooking-list {
+	overflow:hidden;
+	width:1120px;
+	border-top:2px solid #91c90b;
+	border-right:1px solid #ddd;
+}
+.new-cooking .cooking-list .item-cooking {
+	float:left;
+	width:560px;
+	height:280px;
+	border:1px solid #ddd;
+	border-top:0;
+	box-sizing:border-box;
+}
+.new-cooking .cooking-list .item-cooking.last {border-right:0;}
+.new-cooking .cooking-list .item-cooking img {vertical-align:middle;}
+.new-cooking .cooking-list .item-cooking .cooking-img {
+	float:left;
+	width:279px;
+}
+.new-cooking .cooking-list .item-cooking .cooking-cont {
+	float:left;
+	width:249px;
+	padding:18px 0 17px 30px;
+}
+.new-cooking .cooking-list .item-cooking .cooking-cont .cont-top .tit {
+	font-size:18px;
+	color:#000;
+	font-weight:bold;
+}
+.new-cooking .cooking-list .item-cooking .cooking-cont .cont-top dd {
+	font-size:15px;
+	color:#666;
+}
+.new-cooking .cooking-list .item-cooking .cooking-cont .cont-top dd .cook-time {
+	display:block;
+	position:relative;
+	margin-top:10px;
+	padding-left:26px;
+}
+.new-cooking .cooking-list .item-cooking .cooking-cont .cont-top dd .cook-time::before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; top:0;
+	width:20px;
+	height:20px;
+	background:url(../img/icon/icon_time.png) no-repeat 0 0;
+}
+.new-cooking .cooking-list .item-cooking .cooking-cont .cont-top dd .week-marter {margin-top:4px; font-size:14px;}
+.new-cooking .cooking-list .item-cooking .cooking-cont .cont-top dd .week-marter em {
+	color:#333;
+	font-weight:bold;
+}
+.new-cooking .cooking-list .item-cooking .cooking-cont .cont-bot .tit {
+	display:block;
+	margin-top:15px;
+	font-size:15px;
+	color:#000;
+	font-weight:bold;
+}
+.new-cooking .cooking-list .item-cooking .cooking-cont .cont-bot .relation-list {
+	overflow:hidden;
+	margin-top:9px;
+}
+.new-cooking .cooking-list .item-cooking .cooking-cont .cont-bot .relation-list li {
+	float:left;
+	width:74px;
+	margin-left:4px;
+	text-align:center;
+}
+.new-cooking .cooking-list .item-cooking .cooking-cont .cont-bot .relation-list li:first-child {margin-left:0;}
+.new-cooking .cooking-list .item-cooking .cooking-cont .cont-bot .relation-list li .img {
+	display:block;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+}
+.new-cooking .cooking-list .item-cooking .cooking-cont .cont-bot .relation-list li .txt {
+	font-size:14px;
+	color:#666;
+	line-height:24px;
+}
+
+/* 으뜸요리 */
+.chief-cooking-area {}
+.chief-cooking-box {
+	overflow:hidden;
+	position:relative;
+	width:1120px;
+	height:420px;
+	margin-top:15px;
+	border-top:2px solid #91c90b;
+	border-bottom:1px solid #ddd;
+	box-sizing:border-box;
+}
+.chief-cooking-box .manual-area {
+	position:absolute;
+	left:0; top:0;
+	width:222px;
+	height:382px;
+	padding:19px 33px 19px 25px;
+	background-color:#ec7015;
+	z-index:10;
+}
+.chief-cooking-box .manual-area .top-txt {
+	display:block;
+	font-size:14px;
+	line-height:25px;
+	font-weight:normal;
+}
+.chief-cooking-box .manual-area .cTitle1 {line-height:25px;}
+.chief-cooking-box .manual-area .manual-more {
+	position:absolute;
+	right:45px; top:30px;
+	height:18px;
+}
+.chief-cooking-box .manual-area .manual-list{margin-top:23px;}
+.chief-cooking-box .manual-area .manual-list .item {
+	position:relative;
+	padding-left:14px;
+	font-size:14px;
+	color:#fff;
+	line-height:20px;
+	letter-spacing:-0.5px;
+}
+.chief-cooking-box .manual-area .manual-list .item .number {
+	position:absolute;
+	left:0; top:0;
+}
+.chief-cooking-box .cooking-slide .cooking-slide-list li {
+	z-index:0 !important;
+	font-size:0;
+}
+.chief-cooking-box .cooking-slide .bx-wrapper {height:100%; font-size:0;}
+.chief-cooking-box .cooking-slide img {height:100%; vertical-align:middle;}
+.chief-cooking-box .cooking-slide {
+	position:relative;
+	height:420px;
+	z-index:5;
+}
+.chief-cooking-box .cooking-slide .cooking-slide-pager {
+	position:absolute;
+	right:0; top:0;
+	width:280px;
+	height:417px;
+	background-color: rgba(70, 69, 68, .9);
+	box-sizing:border-box;
+	z-index:10;
+}
+.chief-cooking-box .cooking-slide .cooking-slide-pager a {
+	display:block;
+	height:85px;
+	padding-left:20px;
+	font-size:16px;
+	color:#fff;
+	line-height:85px;
+	font-weight:bold;
+}
+.chief-cooking-box .cooking-slide .cooking-slide-pager a.active {
+	background-color:#91c90b;
+}
+
+/* 테마식단 */
+.thumb-slide3 {width:1120px;}
+.thumb-slide3 .theme-area {position:relative;}
+.theme-area .theme-list {
+	overflow:hidden;
+	width:1120px;
+	margin:0 auto;
+	border-top:2px solid #91c90b;
+}
+.theme-area .theme-list .theme-item {
+	float:left;
+	width:280px;
+	height:390px;
+	border:1px solid #ddd;
+	border-left:0;
+	border-top:0;
+	box-sizing:border-box;
+}
+.theme-area .theme-list .theme-item a {display:block;}
+.theme-area.theme-list .theme-item:first-child {
+	border-left:1px solid #ddd;
+}
+.theme-area .theme-list .theme-item .theme-img img {
+	vertical-align:middle;
+}
+.theme-area .theme-list .theme-item span {display:block;}
+.theme-area .theme-list .theme-item .theme-box {
+	padding:15px 20px 0 20px;
+}
+.theme-area .theme-list .theme-item .theme-box .theme-tit {
+	font-size:18px;
+	color:#000;
+	font-weight:bold;
+}
+.theme-area .theme-list .theme-item .theme-box .theme-txt {
+	margin-top:7px;
+	font-size:15px;
+	color:#666;
+	line-height:22px;
+}
+.theme-area .bx-controls-direction a {
+	display:block;
+	position:absolute;
+	top:170px;
+	width:30px;
+	height:50px;
+	font-size:0;
+    text-indent:-9999px;
+    line-height:0;
+}
+.theme-area .bx-prev {
+	left:0;
+	background:url(../img/btn/btn_bx_prev30x50.png) no-repeat 0 0;
+}
+.theme-area .bx-next {
+	right:0;
+	background:url(../img/btn/btn_bx_next30x50.png) no-repeat 0 0;
+}
+
+.theme-area .bx-pager {
+	overflow:hidden;
+	height:14px;
+	margin-top:20px;
+	font-size:0;
+	line-height:0;
+	text-align:center;
+}
+.theme-area .bx-pager .bx-pager-item {
+	display:inline-block;
+	margin-left:6px;
+}
+.theme-area .bx-pager .bx-pager-link {
+	display:inline-block;
+	width:14px;
+	height:14px;
+	border-radius:50%;
+	background-color:#8a8a8a;
+	text-indent:-9999px;
+}
+.theme-area .bx-pager .bx-pager-link.active {
+	background-color:#000;
+}
+=======
 /* 천연벽지 */
 .estimate-request-area {
 	border-top:1px solid #666;
@@ -7248,3 +7500,4 @@ td .radish-bank-box span {display:block;}
 
 /* 천연벽지 -> 이전 견적내역 팝업*/
 .pop-estimate-history {width:900px;}
+>>>>>>> 823eccb7281e8197ec7baa27d2119cbba5777bd5
