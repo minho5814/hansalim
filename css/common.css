@@ -6040,7 +6040,7 @@ td .radish-bank-box span {display:block;}
 	box-sizing: border-box;
 }
 .filter-wrap2 .select-area .tag-list:after{content: ''; display: block; clear: both;}
-.filter-wrap2 .select-area .tag-list li {
+.filter-wrap2 .select-area .tag-list .box {
 	position:relative;
 	float: left;
 	height:32px;
@@ -6054,8 +6054,8 @@ td .radish-bank-box span {display:block;}
 	box-sizing: border-box;
 
 }
-.filter-wrap2 .select-area .tag-list li:last-child {margin-right:0;}
-.filter-wrap2 .select-area .tag-list li .btn-delete {
+.filter-wrap2 .select-area .tag-list .box:last-child {margin-right:0;}
+.filter-wrap2 .select-area .tag-list .box .btn-delete {
 	position: absolute;
 	right: 0;
 	top: 50%;
