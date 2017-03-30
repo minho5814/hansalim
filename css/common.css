@@ -7386,13 +7386,16 @@ td .radish-bank-box span {display:block;}
 }
 .chief-cooking-box .cooking-slide .cooking-slide-pager a {
 	display:block;
-	height:85px;
+	height:84px;
 	padding-left:20px;
 	font-size:16px;
 	color:#fff;
 	line-height:85px;
 	font-weight:bold;
+	border-bottom:1px solid #838582;
+	box-sizing:border-box;
 }
+.chief-cooking-box .cooking-slide .cooking-slide-pager a:first-child {height:83px;}
 .chief-cooking-box .cooking-slide .cooking-slide-pager a.active {
 	background-color:#91c90b;
 }
