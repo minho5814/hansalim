@@ -974,6 +974,7 @@ td.e-mail-form {
 .tab-styled5.three .item {
 	width:33%;
 }
+.tab-styled5.three .item:first-child{width:34%;}
 .tab-styled5.multi .item {
 	width:25%;
 }
@@ -1309,6 +1310,7 @@ td.e-mail-form {
 .mgL60 {margin-left:60px !important;}
 
 .mgB0 {margin-bottom:0px !important;}
+.mgB20 {margin-bottom:20px !important;}
 .mgB30 {margin-bottom:30px !important;}
 .mgB40 {margin-bottom:40px !important;}
 
@@ -1415,6 +1417,10 @@ td.e-mail-form {
 .align-center {text-align:center !important;}
 .align-left {text-align:left !important;}
 .align-right {text-align:right !important;}
+
+
+.floatL {float:left;}
+.floatR {float:right;}
 
 /* link underline */
 .text-link {
@@ -2513,6 +2519,13 @@ label.check-radio .radiobox {margin-right:8px;}
 		font-size:18px;
 		line-height:24px;
 	}
+		.no-result .text.ty02 {font-size:24px;}
+		.no-result .text .line {
+			display: block;
+			margin-top:10px;
+			color:#666;
+			font-size: 14px;
+		}
 
 /* =========================================================================================================
 	상단 배너
@@ -3089,7 +3102,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .lnb-container .content {
 	float:right;
 	width:900px;
-	padding-top:20px;
+	padding-top:4px;
 }
 	.lnb-container .content .cont-box {margin-top:14px;}
 
@@ -3938,14 +3951,11 @@ label.check-radio .radiobox {margin-right:8px;}
 .container.sub {background-color:#eee;}
 	.container.sub .location  {padding:20px 0;}
 	.container.sub .location .inner{
-		height:28px;
-		line-height: 28px;
+		height:23px;
+		line-height: 23px;
 		overflow: inherit;
 	}
 	.container.sub .location .home {font-size:13px;}
-	.container.sub .location .item {
-		float: inherit;
-	}
 	.container.sub .location .inner:after {
 		content: '';
 		display: block;
@@ -3955,6 +3965,21 @@ label.check-radio .radiobox {margin-right:8px;}
 	.container.sub .location .home,
 	.container.sub .location .sel-box,
 	.container.sub .location .arrow {
+		float:left;
+		height:23px;
+		line-height:23px;
+	}
+
+	.container.sub .location.select .inner{
+		height:28px;
+		line-height: 28px;
+		overflow: inherit;
+	}
+
+
+	.container.sub .location.select .home,
+	.container.sub .location.select .sel-box,
+	.container.sub .location.select .arrow {
 		float:left;
 		height:28px;
 		line-height:28px;
@@ -3996,6 +4021,10 @@ label.check-radio .radiobox {margin-right:8px;}
 		display: block;
 		width: 100%;
 		box-sizing: border-box;
+	}
+
+	.container.sub02 {
+		background-color:#fff;
 	}
 
 .content {
@@ -4815,19 +4844,46 @@ label.check-radio .radiobox {margin-right:8px;}
 			color:#999;
 			margin-top:5px;
 		}
-
-.sub-cont.event .left-area {
+/*view페이지 스타일*/
+.sub-cont .view-area {
 	width: 100%;
-	float:inherit;
+	padding:40px 40px 60px 40px;
+	background-color: #fff;
+	box-sizing: border-box;
 }
 
-.sub-cont.event .left-area .img-area {
-	overflow: hidden;
-	width:100%;
+.sub-cont .view-area .cTitle1  {line-height: inherit;}
+.sub-cont .view-area .cTitle1 span {
+	display: block;
+	color:#60b015;
+	font-size: 18px;
+	line-height: 18px;
 }
-.sub-cont.event .left-area .img-area img {
-	width: 100%;
+.sub-cont .view-area .util {overflow: hidden; margin:20px 0 15px}
+.sub-cont .view-area .util .date { float:left; height:32px; color:#999; font-size: 14px; line-height: 32px;}
+.sub-cont .view-area .util ul {overflow: hidden; float:right;}
+.sub-cont .view-area .util ul li {position: relative; float: left;  font-size: 14px; color:#999; height:32px; line-height: 32px; padding-right:11px; margin-left:11px;}
+.sub-cont .view-area .util ul li:last-child {padding-right: 0;}
+.sub-cont .view-area .util ul li:last-child:before{content: none;}
+.sub-cont .view-area .util ul li:before {
+	content: '';
+	position: absolute;
+	right:0;
+	top:10px;
+	width:1px;
+	height:13px;
+	background-color: #d9d9d9;
+
+
 }
+/*.sub-cont .view-area .util ul li.search-count {background:url(../img/icon/ico_search.png) no-repeat left 50%; padding-left:17px;}
+.sub-cont .view-area .util ul li.like-count {background:url(../img/icon/ico_like.png) no-repeat left 50%; padding-left:17px;}
+.sub-cont .view-area .util ul li em {color: #000;}
+.sub-cont .view-area .text-area {margin-top:30px; word-break:keep-all;}
+.sub-cont .tag-area {overflow: hidden; margin:15px 0 30px;}
+.sub-cont  .tag-area a {float: left; height:24px; margin:0 5px 5px 0; padding:0 5px; font-size: 14px; color:#333; background-color:#eee; line-height: 24px; box-sizing: border-box;}
+
+*/
 
 .group .thumb-list1 .ico-category {position: absolute;right:20px; top:20px;}
 
@@ -4856,6 +4912,12 @@ label.check-radio .radiobox {margin-right:8px;}
 	display: inline-block;
 	margin-right:7px;
 	line-height: 32px;
+}
+
+.board-bottom .text {
+	margin-top:15px;
+	font-size:14px;
+	color:#999;
 }
 
 .board-lsit {border-top:1px solid #666;}
@@ -5548,6 +5610,7 @@ td .radish-bank-box span {display:block;}
 
 /* 원재료검색 */
 .search-content {
+	overflow:hidden;
 	position:relative;
 	margin-top:25px;
 }
@@ -5557,8 +5620,14 @@ td .radish-bank-box span {display:block;}
 	font-weight:bold;
 	line-height:45px;
 }
+	.search-content .search-title .len {
+		color:#ec7015;
+		font-size:18px;
+		font-weight:bold;
+	}
 .search-left {
 	width:240px;
+	float:left;
 }
 	.search-left .search-top .search-input {
 		position:relative;
@@ -5595,10 +5664,11 @@ td .radish-bank-box span {display:block;}
 		font-size:0;
 		line-height:0;
 	}
-	.search-left .tree-list .open-type:before {
+	.search-left .tree-list .check-text {position:relative;}
+	.search-left .tree-list .check-text:before {
 		content:'';
 		position:absolute;
-		left:26px;top:50%;
+		left:-10px;top:50%;
 		width:26px;
 		height:1px;
 		background-color:#ddd;
@@ -5606,23 +5676,30 @@ td .radish-bank-box span {display:block;}
 	.search-left .tree-list .btn-tree-tog {
 		overflow:hidden;
 		position:relative;
+		z-index:5;
 		width:18px;
 		height:18px;
 		margin:7px 0 0;
 	}
-	.search-left .tree-list .check-text {
+		.search-left .tree-list .check-text {
 		padding-left:8px;
 	}
 		.search-left .tree-list .btn-tree-tog img {vertical-align:top;}
+		.search-left .tree-list .on .btn-tree-tog img {margin-top:-18px;}
 	.search-left .tree-list ul {padding-left:26px;}
-	.search-left .tree-list ul.list {padding-left:70px;}
+	.search-left .tree-list .depth-list {display:none;}
+	.search-left .tree-list ul.list {
+		display:none;
+		position:relative;
+		padding-left:70px;
+	}
 
 		.search-left .tree-list .item-depth1,
 		.search-left .tree-list .item-depth2,
 		.search-left .tree-list .item-depth3 {position:relative;}
 		.search-left .tree-list .item-depth1:before,
 		.search-left .tree-list .item-depth2:before,
-		.search-left .tree-list .item-depth3:before {
+		.search-left .tree-list ul.list:before {
 			content:'';
 			position:absolute;
 			left:35px;top:-7px;bottom:-7px;
@@ -5630,13 +5707,121 @@ td .radish-bank-box span {display:block;}
 			background-color:#ddd;
 		}
 		.search-left .tree-list .item-depth1:first-child:before {top:7px;}
-		.search-left .tree-list .item-depth1:last-child:before {bottom:7px;}
-		.search-left .tree-list .item-depth3:before {left:60px;top:10px;bottom:10px;}
+		.search-left .tree-list .item-depth1:last-child:before {display:none;}
+		.search-left .tree-list ul.list:before {left:60px;bottom:16px;}
 
 .search-right {
-	position:absolute;
-	left:280px;top:0;
+	float:right;
+	width:840px;
+	margin-top:15px;
 }
+.search-right .filter-data {
+	padding:13px 30px;
+	border:1px solid #ddd;
+}
+	.search-right .filter-data .filter-list-box {
+		overflow:hidden;
+		margin:7px 0 0 -20px;
+		padding-bottom:9px;
+	}
+		.search-right .filter-data .filter-list-box .filter {
+			float:left;
+			position:relative;
+			margin-left:20px;
+			padding-right:16px;
+			color:#666;
+			font-size:14px;
+			line-height:32px;
+		}
+			.search-right .filter-data .filter-list-box .filter .btn-delete {
+				position: absolute;
+				right: 0;
+				top: 50%;
+				width: 11px;
+				height: 11px;
+				margin-top: -6px;
+				background-image: url(../img/btn/btn_delete02.gif);
+				vertical-align: top;
+			}
+
+.search-right .goods-result {margin-top:46px;}
+	.search-right .goods-result .cTitle3 {font-weight:normal;}
+	.search-right .goods-result .order-list {margin-top:12px;}
+	.search-right .goods-result .goods-list1 {margin-top:11px;}
+
+.goods-item1 {
+	position:relative;
+	width:272px;
+	height:130px;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+	background-color:#fff;
+}
+	.goods-item1 .img-area {
+		width:128px;
+		height:128px;
+	}
+		.goods-item1 .img-area img {
+			width:128px;
+			height:128px;
+		}
+	.goods-item1 .text-area {
+		position:absolute;
+		left:138px;top:25px;
+		line-height:24px;
+	}
+		.goods-item1 .text-area .title {
+			height:48px;
+			color:#666;
+			font-size:14px;
+		}
+		.goods-item1 .text-area .price {
+			color:#333;
+			font-size:14px;
+		}
+			.goods-item1 .text-area .price .number {
+				font-size:18px;
+				font-weight:900;
+			}
+	.goods-item1 .over-layer {
+		display:none;
+		position:absolute;
+		left:0;right:0;top:0;bottom:0;
+		background-color:rgba(255,255,255,.7);
+		opacity:0;
+	}
+	.goods-item1 .over-layer .btn-area {
+		position:absolute;
+		left:0;right:0;top:50%;
+		-webkit-transform:translateY(-50%);
+		-ms-transform:translateY(-50%);
+		transform:translateY(-50%);
+		font-size:0;
+		text-align:center;
+		line-height:0;
+	}
+		.goods-item1 .over-layer .btn-area .btn-image {
+			margin-left:4px;
+			vertical-align:top;
+		}
+		.goods-item1 .over-layer .btn-area .btn-image:first-child {margin-left:0;}
+	.goods-item1:hover .over-layer {display:block;}/* hover */
+	.goods-item1 .over-layer:hover {
+		opacity:1;
+		-webkit-transition:opacity .3s;
+		-ms-transition:opacity .3s;
+		transition:opacity .3s;
+	}/* hover */
+
+.goods-list1 {
+	overflow:hidden;
+	width:104%;
+	margin:-12px 0 0 -12px;
+}
+	.goods-list1 .goods-item1 {
+		float:left;
+		margin:12px 0 0 12px;
+	}
 
 
 /*한살림소식*/
@@ -5846,6 +6031,117 @@ td .radish-bank-box span {display:block;}
 .sub-cont .right-area .item-area .item-list {width: 100%; }
 .sub-cont .right-area .item-area .item-list li {width:50%; background-color:#fff; border:1px solid #ddd; box-sizing: border-box; margin-top:-1px; margin-left:-1px;}
 .sub-cont .right-area .item-list .btn-center {width:100%; height: 100%;}
+
+/*요리*/
+.search-area {}
+.search-area .search-box {width:380px; margin:0 auto;}
+	.search-area .search-box input[type=text] {
+		width:100%;
+		height:50px;
+		padding-right:43px;
+		border-color:#bbb;
+		background-color:#fff;
+	}
+	.search-area .search-box .btn-search {
+		display:block;
+		position:absolute;
+		right:0;top:1px;
+		width:48px;
+		height:48px;
+		background-image:url(../img/sprite/button.png);
+		background-repeat:no-repeat;
+		background-position:0 -1077px;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+	}
+	/*.search-area .search-box.focus .btn-search {background-position:0 -1077px;}*/
+
+.filter-wrap2 {border:1px solid #ddd; border-top:2px solid #8dc63f; background-color: #fff;}
+.filter-wrap2:first-child {margin-bottom:10px;}
+	.filter-wrap2 > div {position:relative; padding:13px 0; }
+	.filter-wrap2 p {
+		position: absolute;
+		left:0;
+		top:19px;
+		padding-left:10px;
+		font-size:15px;
+		font-weight: bold;
+		color:#000;
+		box-sizing: border-box;
+	}
+
+.filter-wrap2 .check-area { margin:0 28px; border-top:1px solid #ddd;}
+.filter-wrap2 .check-area ul {width:1062px; padding-left:152px; box-sizing: border-box;}
+.filter-wrap2 .check-area ul:after{
+	content:'';
+	display:block;
+	clear: both;
+}
+.filter-wrap2  .check-area ul li {float: left; width:14%; height:33px; line-height: 33px; }
+.filter-wrap2  .check-area ul li:nth-child(7n+0) {width:16%;}
+
+
+.filter-wrap2 .select-area {
+	position:relative;
+	/*height:80px;*/
+	padding:25px 30px;
+	box-sizing: border-box;
+}
+.filter-wrap2 .select-area .reset-area {
+	display: inline-block;
+	position: absolute;
+	left:30px;
+	top:25px;
+	padding-right:31px;
+	color:#000;
+	font-size: 15px;
+	/*margin-right:30px;*/
+}
+	.filter-wrap2 .select-area .reset-area:before {
+		content: '';
+		position:absolute;
+		right:0;
+		top:0;
+		width:1px;
+		height:32px;
+		background-color: #ddd;
+
+	}
+.filter-wrap2 .select-area .reset-area .btn-reset {height:32px; line-height: 32px; color:#000; font-weight: bold;}
+.filter-wrap2 .select-area .reset-area .btn-reset:before {top:9px; background-position: 0 -1126px;}
+
+.filter-wrap2 .select-area .tag-list {
+	width:1062px;
+	padding-left:152px;
+	box-sizing: border-box;
+}
+.filter-wrap2 .select-area .tag-list:after{content: ''; display: block; clear: both;}
+.filter-wrap2 .select-area .tag-list li {
+	position:relative;
+	float: left;
+	height:32px;
+	margin-right:5px;
+	padding:0 30px 0 15px;
+	line-height:32px;
+	background-color: #fff;
+	border:1px solid #60b015;
+	color:#60b015;
+	font-size: 15px;
+	box-sizing: border-box;
+
+}
+.filter-wrap2 .select-area .tag-list li:last-child {margin-right:0;}
+.filter-wrap2 .select-area .tag-list li .btn-delete {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 30px;
+	height: 30px;
+	margin-top:-15px;
+	background-image: url(../img/btn/btn_tag_close.png);
+	vertical-align: top;
+}
 /* =========================================================================================================
 	레이어 팝업
 ========================================================================================================= */
@@ -5929,7 +6225,8 @@ td .radish-bank-box span {display:block;}
 	font-size:14px;
 }
 
-.layer-popup .btn-bottom .btn-text {
+.layer-popup .btn-bottom .btn-text,
+.layer-popup .btn-center .btn-text {
 	min-width:120px;
 }
 
@@ -6907,13 +7204,11 @@ td .radish-bank-box span {display:block;}
 }
 .my-notice-area .my-notice-box .my-notice-list li .my-notice-img {float:right;}
 .my-notice-area .my-notice-box .my-notice-list li .my-notice-img img {vertical-align:middle;}
-.posiR {
-	position:absolute;
-	right:0; top:5px;
-}
+
 .pop-notice-set {width:600px;}
 .pop-notice-set .btn-text {min-width:120px;}
 
+<<<<<<< HEAD
 /* 요리서브 메인 */
 .new-cooking-area {}
 .new-cooking-area .new-cooking {
@@ -7164,3 +7459,37 @@ td .radish-bank-box span {display:block;}
 .theme-area .bx-pager .bx-pager-link.active {
 	background-color:#000;
 }
+=======
+/* 천연벽지 */
+.estimate-request-area {
+	border-top:1px solid #666;
+}
+
+.estimate-request-area .board-write1 td .deliver-box {
+	border:1px solid #bbb;
+	border-radius:0;
+}
+
+.estimate-request-box {
+	margin-top:60px;
+	padding:26px 30px;
+	background-color:#f7f7f7;
+}
+.estimate-request-box dl dt {
+	font-size:16px;
+	color:#000;
+	font-weight:bold;
+}
+.estimate-request-box .txt {
+	font-size:15px;
+	color:#000;
+	text-align:left;
+}
+.estimate-request-box dl dd .item {
+	color:#666;
+	letter-spacing:-0.5px;
+}
+
+/* 천연벽지 -> 이전 견적내역 팝업*/
+.pop-estimate-history {width:900px;}
+>>>>>>> 823eccb7281e8197ec7baa27d2119cbba5777bd5

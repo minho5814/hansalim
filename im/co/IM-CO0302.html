@@ -838,7 +838,7 @@
 					</ul>
 				</div>
 				<!-- 물품검색 -->
-				<div class="tab-content3">
+				<div class="tab-content3 on">
 					<div class="filter-wrap">
 						<div class="category-area">
 							<p class="title">카테고리</p>
@@ -1121,13 +1121,13 @@
 								</table>
 							</div>
 						</div>
-						<div class="btn-center">
+						<div class="btn-center mgT20">
 							<button type="button" class="btn-text btn-more">더보기(30)</button>
 						</div>
 					</div>
 				</div>
 				<!-- 원재료검색 -->
-				<div class="tab-content3 search-content on">
+				<div class="tab-content3 search-content">
 					<div class="search-left">
 						<div class="search-top">
 							<h3 class="search-title">원재료 검색</h3>
@@ -1144,19 +1144,19 @@
 							</div>
 							<ul class="tree-list">
 								<li class="item-depth1">
-									<div class="open-type">
+									<div class="open-type on"><!-- class="on" 일시 레이어 열림 디폴트 출력 -->
 										<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
-										<label class="check-text"><input type="checkbox" class="styled1" checked>가공(<span class="len">0</span>)</label>
+										<label class="check-text"><input type="checkbox" class="styled1" checked>가공(<span class="len"></span>)</label>
 									</div>
 									<ul class="depth-list">
 										<li class="item-depth2">
-											<div class="open-type">
+											<div class="open-type on">
 												<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
 												<label class="check-text"><input type="checkbox" class="styled1" checked>간식/음료(<span class="len"></span>)</label>
 											</div>
 											<ul class="depth-list">
 												<li class="item-depth3">
-													<div class="open-type">
+													<div class="open-type on">
 														<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
 														<label class="check-text"><input type="checkbox" class="styled1" checked>우리밀빵(<span class="len"></span>)</label>
 													</div>
@@ -1188,12 +1188,20 @@
 												<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
 												<label class="check-text"><input type="checkbox" class="styled1" checked>간식/음식(<span class="len"></span>)</label>
 											</div>
+											<ul class="list">
+												<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">계피</span></label></li>
+												<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">계피분말</span></label></li>
+											</ul>
 										</li>
 										<li class="item-depth2">
 											<div class="open-type">
 												<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
 												<label class="check-text"><input type="checkbox" class="styled1" checked>식사대용(<span class="len"></span>)</label>
 											</div>
+											<ul class="list">
+												<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">계피</span></label></li>
+												<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">계피분말</span></label></li>
+											</ul>
 										</li>
 									</ul>
 								</li>
@@ -1202,6 +1210,10 @@
 										<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
 										<label class="check-text"><input type="checkbox" class="styled1" checked>대용량(<span class="len"></span>)</label>
 									</div>
+									<ul class="list">
+										<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">계피</span></label></li>
+										<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">계피분말</span></label></li>
+									</ul>
 								</li>
 							</ul>
 						</div>
@@ -1211,7 +1223,296 @@
 						<div class="filter-data">
 							<h3 class="search-title">선택한 필터 <span class="len"></span>개</h3>
 							<div class="filter-list-box">
-
+								<!-- 트리 리스트에 체크된 물품 자동 출력 -->
+							</div>
+						</div>
+						<div class="goods-result">
+							<h3 class="cTitle3">검색 결과 <span class="fColor3">21</span>건</h3>
+							<div class="order-list">
+								<button type="button" class="on">전체</button>
+								<button type="button">인기물품</button>
+								<button type="button">낮은공급가</button>
+								<button type="button">높은공급가</button>
+								<button type="button">가나다순</button>
+								<button type="button">상품후기 많은 순</button>
+							</div>
+							<div class="goods-list1">
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">햇살담은고추가루/유(500g)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+								<div class="goods-item1">
+									<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품 이미지"></div>
+									<div class="text-area">
+										<p class="title">감자(2kg)</p>
+										<p class="price"><span class="number">4,300</span>원</p>
+									</div>
+									<div class="over-layer">
+										<div class="btn-area">
+											<a href="#" class="btn-image btn-like">관심상품</a>
+											<a href="#" class="btn-image btn-cart">장바구니</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="btn-center mgT20">
+								<button type="button" class="btn-text btn-more">더보기(30)</button>
 							</div>
 						</div>
 					</div>
@@ -1554,7 +1855,7 @@
 											</li>
 										</ul>
 										</div>
-										<div class="btn-center">
+										<div class="btn-center mgT20">
 											<button type="button" class="btn-text btn-more">더보기(30)</button>
 										</div>
 								</div>
@@ -1713,7 +2014,7 @@
 											</li>
 										</ul>
 									</div>
-									<div class="btn-center">
+									<div class="btn-center mgT20">
 										<button type="button" class="btn-text btn-more">더보기(30)</button>
 									</div>
 								</div>
@@ -1867,7 +2168,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="btn-center">
+									<div class="btn-center mgT20">
 										<button type="button" class="btn-text btn-more">더보기(30)</button>
 									</div>
 								</div>
@@ -2035,6 +2336,17 @@ $(window).load(function(){
 	});
 
 	/* 알레르기성분 제외조건 */
+	// 트리 아코디언
+	$('.open-type.on').each(function(){
+		$(this).next('ul').show();
+	});
+	$('.open-type .btn-tree-tog').click(function(){
+		if($(this).parents('.open-type').hasClass('on')){
+			$(this).parents('.open-type').removeClass('on').next('ul').slideUp(100);
+		}else{
+			$(this).parents('.open-type').addClass('on').next('ul').slideDown(200);
+		}
+	});
 	// 갯수 출력
 	$('.allergy-area').each(function(){
 		var len = $(this).find('.btn-toggle.on').length;
@@ -2068,73 +2380,90 @@ $(window).load(function(){
 	});
 
 	/* 원재료 검색 */
-	//$('.filter-list-box')
+	$('.tree-list .open-type').each(function(){
+		var len = $(this).parents('li').eq(0).find('input[type=checkbox]').length;
+		var minLen = $(this).parents('li').eq(0).find('.open-type').length;
+		$(this).find('.len').html(len - minLen);
+	});
+	// 체크박스 체크/해제 시 필터 출력 및 삭제
 	function dataResult(){
-		$('.tree-list .check-text .text').each(function(){
-			var data = $(this).html();
+		$('.filter-list-box .filter').remove();
+		$('.tree-list .item .check-text input[type=checkbox]:checked').each(function(){
+			var idx = $(this).parents('li').eq(0).index();
+			var perIdx = $(this).parents('li').eq(1).index();
+			var data = $(this).parents('.check-text').find('.text').html();
 			var filter = $(this).parents('.search-content').find('.filter-list-box');
-			$(filter).append('<div class="filter"><span class="text">' + data + '</span><button type="button" class="btn-delete">삭제');
+			$(this).parents('.check-text').attr('data', 'd' + perIdx + idx);
+			$(filter).append('<div class="filter" data="d' + perIdx + idx + '"><span class="text">' + data + '</span><button type="button" class="btn-delete">삭제');
 		});
+
+		$('.tree-list input[type=checkbox]').change(function(){
+			if(this.checked){
+				var text = $(this).parents('.check-text').find('.text').html();
+			}
+		});
+		var dataLen = $('.filter-list-box .filter').length;
+		if(dataLen <= 0){
+			$('.filter-list-box').hide();
+		}else{
+			$('.filter-list-box').show();
+		}
+		$('.search-content .search-title .len').html(dataLen);
 	}
 	dataResult();
 
-	$('.search-tree .btn-area .btn-mini-text').click(function(){
-		if($(this).hasClass('btn-all-check')){
-			$(this).parents('.search-tree').find('input[type=checkbox]').prop('checked', true);
-			$(this).parents('.search-tree').find('.checkbox').addClass('checked');
-			dataResult();
-		}else{
-			$(this).parents('.search-tree').find('input[type=checkbox]').prop('checked', false);
-			$(this).parents('.search-tree').find('.checkbox').removeClass('checked');
-			$(this).parents('.search-content').find('.filter-list-box .filter').remove();
-		}
+	// 전체선택 버튼
+	$('.search-tree .btn-all-check').click(function(){
+		$(this).parents('.search-tree').find('input[type=checkbox]').prop('checked', true);
+		$(this).parents('.search-tree').find('.checkbox').addClass('checked');
+		dataResult();
 	});
-	$('.search-tree input[type=checkbox]').change(function(){
-		var text =  $(this).parents('.check-text').find('.text').html();
-		var filter = $(this).parents('.search-content').find('.filter-list-box .filter .text');
-		if(this.checked){
-			$(filter).each(function(){
-				if($(this).text() == text){
-					$(this).parents('.filter').show();
-				}
-			});
-		}else{
-			$(filter).each(function(){
-				if($(this).text() == text){
-					$(this).parents('.filter').hide();
-				}
-			});
-		}
+	// 전체해제 버튼
+	$('.search-tree .btn-all-false').click(function(){
+		$(this).parents('.search-tree').find('input[type=checkbox]').prop('checked', false);
+		$(this).parents('.search-tree').find('.checkbox').removeClass('checked');
+		dataResult();
 	});
+
+	// 체크박스 항목 하위 모두 선택/해제
 	$('.open-type input[type=checkbox]').change(function(){
-		var checkText = $('.tree-list').find('input[type=checkbox]:checked').parents('.check-text').find('.text');
-		$(checkText).each(function(){
-			var text = $(this).html();
-			console.log(text);
-			var filter = $(this).parents('.search-content').find('.filter-list-box .filter .text');
-			if(this.checked){
-				$(filter).each(function(){
-					if($(this).text() == text){
-						$(this).parents('.filter').show();
-					}
-				});
-			}else{
-				$(filter).each(function(){
-					if($(this).text() == text){
-						$(this).parents('.filter').hide();
-					}
-				});
-			}
-		});
 		if(this.checked){
-			$(this).parents('.open-type').next('ul').find('input[type=checkbox]').prop('checked', true);
-			$(this).parents('.open-type').next('ul').find('.checkbox').addClass('checked');
+			$(this).parents('li').eq(0).find('input[type=checkbox]').prop('checked', true);
+			$(this).parents('li').eq(0).find('.checkbox').addClass('checked');
 		}else{
-			$(this).parents('.open-type').next('ul').find('input[type=checkbox]').prop('checked', false);
-			$(this).parents('.open-type').next('ul').find('.checkbox').removeClass('checked');
+			$(this).parents('li').eq(0).find('input[type=checkbox]').prop('checked', false);
+			$(this).parents('li').eq(0).find('.checkbox').removeClass('checked');
 		}
 	});
 
+	// 체크 박스 선택/해제 시 상위 체크박스 체크/해제
+	$('.search-tree input[type=checkbox]').change(function(){
+		dataResult();
+		var boxLen = $(this).parents('ul').eq(0).find('input[type=checkbox]').length;
+		var checkLen = $(this).parents('ul').eq(0).find('input[type=checkbox]:checked').length;
+		if(checkLen >= boxLen){
+			$(this).parents('ul').siblings('.open-type').find('input[type=checkbox]').prop('checked', true);
+			$(this).parents('ul').siblings('.open-type').find('.checkbox').addClass('checked');
+		}else{
+			$(this).parents('ul').siblings('.open-type').find('input[type=checkbox]').prop('checked', false);
+			$(this).parents('ul').siblings('.open-type').find('.checkbox').removeClass('checked');
+		}
+	});
+
+	// 필터 삭제 시 트리 리스트에서 체크해제
+	$(document).on('click', '.filter-list-box .filter .btn-delete', function(){
+		var delData = $(this).parents('.filter').attr('data');
+		$(this).parents('.filter').remove();
+		var dataLen = $('.filter-list-box').find('.filter').length;
+		if(dataLen <= 0){
+			$('.filter-list-box').hide();
+		}
+		$('.search-content .search-title .len').html(dataLen);
+		$('.search-tree .check-text[data=' + delData + ']').find('input[type=checkbox]').prop('checked', false);
+		$('.search-tree .check-text[data=' + delData + ']').find('.checkbox').removeClass('checked');
+		$('.search-tree .check-text[data=' + delData + ']').parents('ul').siblings('.open-type').find('input[type=checkbox]').prop('checked', false);
+		$('.search-tree .check-text[data=' + delData + ']').parents('ul').siblings('.open-type').find('.checkbox').removeClass('checked');
+	});
 });
 </script>
 </body>

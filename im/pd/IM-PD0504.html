@@ -832,7 +832,7 @@
 
 		<div class="content-w1120 mgB40">
 			<div class="sub-cont event">
-				<div class="left-area">
+				<div class="view-area">
 					<p class="cTitle1"><span>특히 알찬 사과의 특별한 변신</span>아삭, 향긋한 사과 디저트 기획전</p>
 					<div class="util">
 						<span class="date">2017년 3월 20일 ~ 3월 26일</span>
@@ -848,7 +848,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="content pdT60">
+		<div class="content pdT60 top-anchor">
 			<div class="content-w1120">
 				<!--1개:one, 2개-->
 				<ul class="tab-styled5 three">
@@ -933,9 +933,7 @@
 					<button type="button" class="btn-icon-text btn-top">TOP</button>
 				</div>
 				<div class="group event">
-					<div class="title-area">
-						<p class="cTitle3">세탁세제, 주방세제</p>
-					</div>
+					<h3 class="cTitle3">세탁세제, 주방세제</h3>
 					<div class="thumb-list1">
 						<div class="thumb-item1">
 							<a href="#" class="link">
@@ -1009,9 +1007,7 @@
 					<button type="button" class="btn-icon-text btn-top">TOP</button>
 				</div>
 				<div class="group event">
-					<div class="title-area">
-						<p class="cTitle3">샴치약과 비누</p>
-					</div>
+					<h3 class="cTitle3">샴치약과 비누</h3>
 					<div class="thumb-list1">
 						<div class="thumb-item1">
 							<a href="#" class="link">
@@ -1187,40 +1183,6 @@
 <script>
 $(window).load(function(){
 
-	//테이블정렬
-	$('.order-list button').click(function(){
-		$(this).parents('.order-list').find('button').removeClass('on');
-		$(this).addClass('on');
-	});
-
-	// 하단리스트 그리드
-	$('.grid').masonry({
-		itemSelector:'.grid-item',
-		columnWidth:366,
-		gutter:11
-	});
-
-
-	//리스트 온오버
-	$('.grid-item').mouseenter(function(){
-		$(this).addClass('on');
-	});
-	$('.grid-item').mouseleave(function(){
-		$(this).removeClass('on');
-	});
-
-	//태그박스
-	$('.btn-open').click(function(){
-		$(this).parents().find('.tag-wrap').toggleClass('on');
-		if($(this).parents().find('.tag-wrap').hasClass('on')){
-				$(this).removeClass('btn-open').addClass('btn-close');
-				$(this).parents().find('.tag-wrap').css({'height':'100%'});
-		}else{
-			$(this).removeClass('btn-close').addClass('btn-open');
-			$(this).parents().find('.tag-wrap').css({'height':'85px'});
-		}
-	});
-
 	//링크이동
 	$('.tab-styled5 .item').click(function(){
 		var idx = $(this).index()+1;
@@ -1228,9 +1190,9 @@ $(window).load(function(){
 		$('html, body').animate({scrollTop:cont_height});
 	});
 
+	//top버튼
 	$('.event .btn-top').click(function(){
-
-		var cont_height = $(this).parents('.event').offset().top - $('.head-btm').outerHeight() ;
+		var cont_height = $('.top-anchor').offset().top - $('.head-btm').outerHeight() ;
 		$('html, body').animate({scrollTop:cont_height});
 	});
 });
