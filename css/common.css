@@ -1310,6 +1310,7 @@ td.e-mail-form {
 .mgL60 {margin-left:60px !important;}
 
 .mgB0 {margin-bottom:0px !important;}
+.mgB20 {margin-bottom:20px !important;}
 .mgB30 {margin-bottom:30px !important;}
 .mgB40 {margin-bottom:40px !important;}
 
@@ -3944,14 +3945,11 @@ label.check-radio .radiobox {margin-right:8px;}
 .container.sub {background-color:#eee;}
 	.container.sub .location  {padding:20px 0;}
 	.container.sub .location .inner{
-		height:28px;
-		line-height: 28px;
+		height:23px;
+		line-height: 23px;
 		overflow: inherit;
 	}
 	.container.sub .location .home {font-size:13px;}
-	.container.sub .location .item {
-		float: inherit;
-	}
 	.container.sub .location .inner:after {
 		content: '';
 		display: block;
@@ -3961,6 +3959,21 @@ label.check-radio .radiobox {margin-right:8px;}
 	.container.sub .location .home,
 	.container.sub .location .sel-box,
 	.container.sub .location .arrow {
+		float:left;
+		height:23px;
+		line-height:23px;
+	}
+
+	.container.sub .location.select .inner{
+		height:28px;
+		line-height: 28px;
+		overflow: inherit;
+	}
+
+
+	.container.sub .location.select .home,
+	.container.sub .location.select .sel-box,
+	.container.sub .location.select .arrow {
 		float:left;
 		height:28px;
 		line-height:28px;
@@ -5889,6 +5902,119 @@ td .radish-bank-box span {display:block;}
 .sub-cont .right-area .item-area .item-list {width: 100%; }
 .sub-cont .right-area .item-area .item-list li {width:50%; background-color:#fff; border:1px solid #ddd; box-sizing: border-box; margin-top:-1px; margin-left:-1px;}
 .sub-cont .right-area .item-list .btn-center {width:100%; height: 100%;}
+
+/*요리*/
+.search-area {}
+.search-area .search-box {width:380px; margin:0 auto;}
+	.search-area .search-box input[type=text] {
+		width:100%;
+		height:50px;
+		padding-right:43px;
+		border-color:#bbb;
+		background-color:#fff;
+	}
+	.search-area .search-box .btn-search {
+		display:block;
+		position:absolute;
+		right:0;top:1px;
+		width:48px;
+		height:48px;
+		background-image:url(../img/sprite/button.png);
+		background-repeat:no-repeat;
+		background-position:0 -1077px;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+	}
+	/*.search-area .search-box.focus .btn-search {background-position:0 -1077px;}*/
+
+.filter-wrap2 {border:1px solid #ddd; border-top:2px solid #8dc63f; background-color: #fff;}
+.filter-wrap2:first-child {margin-bottom:10px;}
+	.filter-wrap2 > div {position:relative; padding:13px 0; }
+	.filter-wrap2 p {
+		position: absolute;
+		left:0;
+		top:19px;
+		padding-left:10px;
+		font-size:15px;
+		font-weight: bold;
+		color:#000;
+		box-sizing: border-box;
+	}
+
+.filter-wrap2 .check-area { margin:0 28px; border-top:1px solid #ddd;}
+.filter-wrap2 .check-area ul {width:1062px; padding-left:152px; box-sizing: border-box;}
+.filter-wrap2 .check-area ul:after{
+	content:'';
+	display:block;
+	clear: both;
+}
+.filter-wrap2  .check-area ul li {float: left; width:14%; height:33px; line-height: 33px; }
+.filter-wrap2  .check-area ul li:nth-child(7n+0) {width:16%;}
+
+
+.filter-wrap2 .select-area {
+	position:relative;
+	/*height:80px;*/
+	padding:25px 30px;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	box-sizing: border-box;
+}
+.filter-wrap2 .select-area .reset-area {
+	display: inline-block;
+	position: absolute;
+	left:30px;
+	top:25px;
+	padding-right:31px;
+	color:#000;
+	font-size: 15px;
+	/*margin-right:30px;*/
+}
+	.filter-wrap2 .select-area .reset-area:before {
+		content: '';
+		position:absolute;
+		right:0;
+		top:0;
+		width:1px;
+		height:32px;
+		background-color: #ddd;
+
+	}
+.filter-wrap2 .select-area .reset-area .btn-reset {height:32px; line-height: 32px; color:#000; font-weight: bold;}
+.filter-wrap2 .select-area .reset-area .btn-reset:before {top:9px; background-position: 0 -1126px;}
+
+.filter-wrap2 .select-area .tag-list {
+	width:1062px;
+	padding-left:152px;
+	box-sizing: border-box;
+}
+.filter-wrap2 .select-area .tag-list:after{content: ''; display: block; clear: both;}
+.filter-wrap2 .select-area .tag-list li {
+	position:relative;
+	float: left;
+	height:32px;
+	margin-right:5px;
+	padding:0 30px 0 15px;
+	line-height:32px;
+	background-color: #fff;
+	border:1px solid #60b015;
+	color:#60b015;
+	font-size: 15px;
+	box-sizing: border-box;
+
+}
+.filter-wrap2 .select-area .tag-list li:last-child {margin-right:0;}
+.filter-wrap2 .select-area .tag-list li .btn-delete {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 30px;
+	height: 30px;
+	margin-top:-15px;
+	background-image: url(../img/btn/btn_tag_close.png);
+	vertical-align: top;
+}
 /* =========================================================================================================
 	레이어 팝업
 ========================================================================================================= */
