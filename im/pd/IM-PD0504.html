@@ -848,7 +848,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="content pdT60">
+		<div class="content pdT60 top-anchor">
 			<div class="content-w1120">
 				<!--1개:one, 2개-->
 				<ul class="tab-styled5 three">
@@ -1192,7 +1192,7 @@ $(window).load(function(){
 
 	//top버튼
 	$('.event .btn-top').click(function(){
-		var cont_height = $(this).parents('.event').offset().top - $('.head-btm').outerHeight() ;
+		var cont_height = $('.top-anchor').offset().top - $('.head-btm').outerHeight() ;
 		$('html, body').animate({scrollTop:cont_height});
 	});
 });

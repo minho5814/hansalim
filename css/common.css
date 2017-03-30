@@ -1418,10 +1418,9 @@ td.e-mail-form {
 .align-left {text-align:left !important;}
 .align-right {text-align:right !important;}
 
-.posiR {
-	position:absolute;
-	right:0; top:5px;
-}
+
+.floatL {float:left;}
+.floatR {float:right;}
 
 /* link underline */
 .text-link {
@@ -3103,7 +3102,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .lnb-container .content {
 	float:right;
 	width:900px;
-	padding-top:20px;
+	padding-top:4px;
 }
 	.lnb-container .content .cont-box {margin-top:14px;}
 
@@ -6148,7 +6147,8 @@ td .radish-bank-box span {display:block;}
 	font-size:14px;
 }
 
-.layer-popup .btn-bottom .btn-text {
+.layer-popup .btn-bottom .btn-text,
+.layer-popup .btn-center .btn-text {
 	min-width:120px;
 }
 
@@ -7141,13 +7141,14 @@ td .radish-bank-box span {display:block;}
 }
 
 .estimate-request-box {
-	margin-top:83px;
-	padding:0 30px;
+	margin-top:60px;
+	padding:26px 30px;
+	background-color:#f7f7f7;
 }
 .estimate-request-box dl dt {
 	font-size:16px;
 	color:#000;
-	font-weigh:bold;
+	font-weight:bold;
 }
 .estimate-request-box .txt {
 	font-size:15px;
