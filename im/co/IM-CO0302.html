@@ -1188,12 +1188,20 @@
 												<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
 												<label class="check-text"><input type="checkbox" class="styled1" checked>간식/음식(<span class="len"></span>)</label>
 											</div>
+											<ul class="list">
+												<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">계피</span></label></li>
+												<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">계피분말</span></label></li>
+											</ul>
 										</li>
 										<li class="item-depth2">
 											<div class="open-type">
 												<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
 												<label class="check-text"><input type="checkbox" class="styled1" checked>식사대용(<span class="len"></span>)</label>
 											</div>
+											<ul class="list">
+												<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">계피</span></label></li>
+												<li class="item"><label class="check-text"><input type="checkbox" class="styled1" checked><span class="text">계피분말</span></label></li>
+											</ul>
 										</li>
 									</ul>
 								</li>
@@ -2068,73 +2076,74 @@ $(window).load(function(){
 	});
 
 	/* 원재료 검색 */
-	//$('.filter-list-box')
+	// 체크박스 체크/해제 시 필터 출력 및 삭제
 	function dataResult(){
-		$('.tree-list .check-text .text').each(function(){
-			var data = $(this).html();
+		$('.filter-list-box .filter').remove();
+		$('.tree-list .item .check-text input[type=checkbox]:checked').each(function(){
+			var idx = $(this).parents('li').eq(0).index();
+			var perIdx = $(this).parents('li').eq(1).index();
+			var data = $(this).parents('.check-text').find('.text').html();
 			var filter = $(this).parents('.search-content').find('.filter-list-box');
-			$(filter).append('<div class="filter"><span class="text">' + data + '</span><button type="button" class="btn-delete">삭제');
+			$(this).parents('.check-text').attr('data', 'd' + perIdx + idx);
+			$(filter).append('<div class="filter" data="d' + perIdx + idx + '"><span class="text">' + data + '</span><button type="button" class="btn-delete">삭제');
+		});
+
+		$('.tree-list input[type=checkbox]').change(function(){
+			if(this.checked){
+				var text = $(this).parents('.check-text').find('.text').html();
+			}
 		});
 	}
 	dataResult();
 
-	$('.search-tree .btn-area .btn-mini-text').click(function(){
-		if($(this).hasClass('btn-all-check')){
-			$(this).parents('.search-tree').find('input[type=checkbox]').prop('checked', true);
-			$(this).parents('.search-tree').find('.checkbox').addClass('checked');
-			dataResult();
-		}else{
-			$(this).parents('.search-tree').find('input[type=checkbox]').prop('checked', false);
-			$(this).parents('.search-tree').find('.checkbox').removeClass('checked');
-			$(this).parents('.search-content').find('.filter-list-box .filter').remove();
-		}
+	// 전체선택 버튼
+	$('.search-tree .btn-all-check').click(function(){
+		$(this).parents('.search-tree').find('input[type=checkbox]').prop('checked', true);
+		$(this).parents('.search-tree').find('.checkbox').addClass('checked');
+		dataResult();
 	});
-	$('.search-tree input[type=checkbox]').change(function(){
-		var text =  $(this).parents('.check-text').find('.text').html();
-		var filter = $(this).parents('.search-content').find('.filter-list-box .filter .text');
-		if(this.checked){
-			$(filter).each(function(){
-				if($(this).text() == text){
-					$(this).parents('.filter').show();
-				}
-			});
-		}else{
-			$(filter).each(function(){
-				if($(this).text() == text){
-					$(this).parents('.filter').hide();
-				}
-			});
-		}
+	// 전체해제 버튼
+	$('.search-tree .btn-all-false').click(function(){
+		$(this).parents('.search-tree').find('input[type=checkbox]').prop('checked', false);
+		$(this).parents('.search-tree').find('.checkbox').removeClass('checked');
+		dataResult();
 	});
+
+	// 체크박스 항목 하위 모두 선택/해제
 	$('.open-type input[type=checkbox]').change(function(){
-		var checkText = $('.tree-list').find('input[type=checkbox]:checked').parents('.check-text').find('.text');
-		$(checkText).each(function(){
-			var text = $(this).html();
-			console.log(text);
-			var filter = $(this).parents('.search-content').find('.filter-list-box .filter .text');
-			if(this.checked){
-				$(filter).each(function(){
-					if($(this).text() == text){
-						$(this).parents('.filter').show();
-					}
-				});
-			}else{
-				$(filter).each(function(){
-					if($(this).text() == text){
-						$(this).parents('.filter').hide();
-					}
-				});
-			}
-		});
 		if(this.checked){
-			$(this).parents('.open-type').next('ul').find('input[type=checkbox]').prop('checked', true);
-			$(this).parents('.open-type').next('ul').find('.checkbox').addClass('checked');
+			$(this).parents('li').eq(0).find('input[type=checkbox]').prop('checked', true);
+			$(this).parents('li').eq(0).find('.checkbox').addClass('checked');
 		}else{
-			$(this).parents('.open-type').next('ul').find('input[type=checkbox]').prop('checked', false);
-			$(this).parents('.open-type').next('ul').find('.checkbox').removeClass('checked');
+			$(this).parents('li').eq(0).find('input[type=checkbox]').prop('checked', false);
+			$(this).parents('li').eq(0).find('.checkbox').removeClass('checked');
 		}
 	});
 
+	// 체크 박스 선택/해제 시 상위 체크박스 체크/해제
+	$('.search-tree input[type=checkbox]').change(function(){
+		dataResult();
+		var boxLen = $(this).parents('ul').eq(0).find('input[type=checkbox]').length;
+		var checkLen = $(this).parents('ul').eq(0).find('input[type=checkbox]:checked').length;
+		if(checkLen >= boxLen){
+			$(this).parents('ul').siblings('.open-type').find('input[type=checkbox]').prop('checked', true);
+			$(this).parents('ul').siblings('.open-type').find('.checkbox').addClass('checked');
+		}else{
+			$(this).parents('ul').siblings('.open-type').find('input[type=checkbox]').prop('checked', false);
+			$(this).parents('ul').siblings('.open-type').find('.checkbox').removeClass('checked');
+		}
+	});
+
+	// 필터 삭제 시 트리 리스트에서 체크해제
+	$('.filter-list-box').on('click', '.filter .btn-delete', function(){
+		var delData = $(this).parents('.filter').attr('data');
+		$(this).parents('.filter').remove();
+		console.log(delData);
+		$('.search-tree .check-text[data=' + delData + ']').find('input[type=checkbox]').prop('checked', false);
+		$('.search-tree .check-text[data=' + delData + ']').find('.checkbox').removeClass('checked');
+		$('.search-tree .check-text[data=' + delData + ']').parents('ul').siblings('.open-type').find('input[type=checkbox]').prop('checked', false);
+		$('.search-tree .check-text[data=' + delData + ']').parents('ul').siblings('.open-type').find('.checkbox').removeClass('checked');
+	});
 });
 </script>
 </body>
