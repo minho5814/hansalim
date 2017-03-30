@@ -3882,7 +3882,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		}
 		.detail-box .cont-area .recipe-area .title em {display: block;}
 		.detail-box .cont-area .recipe-area .title a {
-			/*display: inline-block;*/
+			display: inline-block;
 			position: relative;
 			padding-right:22px;
 			color:#000;
@@ -7379,29 +7379,44 @@ td .radish-bank-box span {display:block;}
 	border-bottom:1px solid #ddd;
 	box-sizing:border-box;
 }
-.chief-cooking-box .manual-area {
+.chief-cooking-box .cooking-slide .cooking-slide-list li {
+	position:relative;
+	z-index:0 !important;
+}
+.menual-area {
 	position:absolute;
 	left:0; top:0;
 	width:222px;
 	height:382px;
-	padding:19px 33px 19px 25px;
+	padding:19px 25px;
 	background-color:#ec7015;
 	z-index:10;
 }
-.chief-cooking-box .manual-area .top-txt {
+.menual-area .title {
+	display:block;
+	color:#000;
+    font-size:28px;
+    line-height:30px;
+    font-weight:bold;
+	letter-spacing: -0.5px;
+}
+.menual-area .title em {
 	display:block;
 	font-size:14px;
-	line-height:25px;
+	color:#000;
+	line-height:20px;
 	font-weight:normal;
+	letter-spacing:-0.5px;
 }
-.chief-cooking-box .manual-area .cTitle1 {line-height:25px;}
-.chief-cooking-box .manual-area .manual-more {
-	position:absolute;
-	right:45px; top:30px;
-	height:18px;
+.menual-area .title a {
+	display:inline-block;
+    width:18px;
+    height:18px;
+	margin-left: 4px;
+    background:url(../img/icon/icon_plus.png) no-repeat 0 0;
 }
-.chief-cooking-box .manual-area .manual-list{margin-top:23px;}
-.chief-cooking-box .manual-area .manual-list .item {
+.menual-area .menual-list{margin-top:22px;}
+.menual-area .menual-list .item {
 	position:relative;
 	padding-left:14px;
 	font-size:14px;
@@ -7409,14 +7424,11 @@ td .radish-bank-box span {display:block;}
 	line-height:20px;
 	letter-spacing:-0.5px;
 }
-.chief-cooking-box .manual-area .manual-list .item .number {
+.menual-area .menual-list .item .number {
 	position:absolute;
 	left:0; top:0;
 }
-.chief-cooking-box .cooking-slide .cooking-slide-list li {
-	z-index:0 !important;
-	font-size:0;
-}
+
 .chief-cooking-box .cooking-slide .bx-wrapper {height:100%; font-size:0;}
 .chief-cooking-box .cooking-slide img {height:100%; vertical-align:middle;}
 .chief-cooking-box .cooking-slide {
@@ -7561,4 +7573,3 @@ td .radish-bank-box span {display:block;}
 
 /* 천연벽지 -> 이전 견적내역 팝업*/
 .pop-estimate-history {width:900px;}
->>>>>>> 823eccb7281e8197ec7baa27d2119cbba5777bd5
