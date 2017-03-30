@@ -154,11 +154,12 @@ $(window).load(function(){
 			pagerType:'short'
 		});
 	});
-	$('.theme-diet-area .theme-diet-slide').each(function(){
+
+	/* 테마식단 */
+	$('.thumb-slide3 .bxslider').each(function(){
 		$(this).bxSlider({
 			//infiniteLoop:false,
-			speed:400,
-			pagerType:'short'
+			speed:400
 		});
 	});
 

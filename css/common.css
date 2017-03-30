@@ -1321,6 +1321,7 @@ td.e-mail-form {
 .pdT20 {padding-top:20px !important;}
 .pdT25 {padding-top:25px !important;}
 .pdT30 {padding-top:30px !important;}
+.pdT45 {padding-top:45px !important;}
 .pdT60 {padding-top:60px !important;}
 
 .pdL0 {padding-left:0 !important;}
@@ -7282,7 +7283,6 @@ td .radish-bank-box span {display:block;}
 .new-cooking-area {}
 .new-cooking-area .new-cooking {
 	width:100%;
-	margin-top:15px;
 }
 .new-cooking .cooking-list {
 	overflow:hidden;
@@ -7374,7 +7374,6 @@ td .radish-bank-box span {display:block;}
 	position:relative;
 	width:1120px;
 	height:420px;
-	margin-top:15px;
 	border-top:2px solid #91c90b;
 	border-bottom:1px solid #ddd;
 	box-sizing:border-box;
@@ -7462,7 +7461,7 @@ td .radish-bank-box span {display:block;}
 }
 
 /* 테마식단 */
-.thumb-slide3 {width:1120px;}
+.thumb-slide3 {width:100%;}
 .thumb-slide3 .theme-area {position:relative;}
 .theme-area .theme-list {
 	overflow:hidden;
@@ -7474,11 +7473,11 @@ td .radish-bank-box span {display:block;}
 	float:left;
 	width:280px;
 	height:390px;
-	border:1px solid #ddd;
-	border-left:0;
-	border-top:0;
+	border-left:1px solid #ddd;
+	border-bottom:1px solid #ddd;
 	box-sizing:border-box;
 }
+.theme-area .theme-list .theme-item:last-child {border-right:1px solid #ddd;}
 .theme-area .theme-list .theme-item a {display:block;}
 .theme-area.theme-list .theme-item:first-child {
 	border-left:1px solid #ddd;
