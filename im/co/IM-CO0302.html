@@ -1144,19 +1144,19 @@
 							</div>
 							<ul class="tree-list">
 								<li class="item-depth1">
-									<div class="open-type">
+									<div class="open-type on"><!-- class="on" 일시 레이어 열림 디폴트 출력 -->
 										<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
 										<label class="check-text"><input type="checkbox" class="styled1" checked>가공(<span class="len"></span>)</label>
 									</div>
 									<ul class="depth-list">
 										<li class="item-depth2">
-											<div class="open-type">
+											<div class="open-type on">
 												<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
 												<label class="check-text"><input type="checkbox" class="styled1" checked>간식/음료(<span class="len"></span>)</label>
 											</div>
 											<ul class="depth-list">
 												<li class="item-depth3">
-													<div class="open-type">
+													<div class="open-type on">
 														<button type="button" class="btn-tree-tog"><img src="../../img/btn/btn_tree_tog.png" alt="리스트 열고 닫기"></button>
 														<label class="check-text"><input type="checkbox" class="styled1" checked>우리밀빵(<span class="len"></span>)</label>
 													</div>
@@ -2337,6 +2337,9 @@ $(window).load(function(){
 
 	/* 알레르기성분 제외조건 */
 	// 트리 아코디언
+	$('.open-type.on').each(function(){
+		$(this).next('ul').show();
+	});
 	$('.open-type .btn-tree-tog').click(function(){
 		if($(this).parents('.open-type').hasClass('on')){
 			$(this).parents('.open-type').removeClass('on').next('ul').slideUp(100);
