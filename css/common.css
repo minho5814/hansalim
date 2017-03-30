@@ -1311,6 +1311,7 @@ td.e-mail-form {
 .mgL60 {margin-left:60px !important;}
 
 .mgB0 {margin-bottom:0px !important;}
+.mgB15 {margin-bottom:15px !important;}
 .mgB20 {margin-bottom:20px !important;}
 .mgB30 {margin-bottom:30px !important;}
 .mgB40 {margin-bottom:40px !important;}
@@ -1957,11 +1958,11 @@ td.e-mail-form {
 	background-image:url(../img/sprite/button.png);
 	background-repeat:no-repeat;
 }
-.btn-image3.btn-like {background-color:#60b015;}
+.btn-image3.btn-like {background-color:#fff; border:1px solid #60b015; box-sizing: border-box;}
 .btn-image3.btn-like:before {
 	width:28px;
 	height:26px;
-	background-position:0 -999px;
+	background-position:0 -520px;
 }
 
 .btn-image3.btn-mark {background-color:#666;}
@@ -3881,7 +3882,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		}
 		.detail-box .cont-area .recipe-area .title em {display: block;}
 		.detail-box .cont-area .recipe-area .title a {
-			/*display: inline-block;*/
+			display: inline-block;
 			position: relative;
 			padding-right:22px;
 			color:#000;
@@ -6125,7 +6126,7 @@ td .radish-bank-box span {display:block;}
 	box-sizing: border-box;
 }
 .filter-wrap2 .select-area .tag-list:after{content: ''; display: block; clear: both;}
-.filter-wrap2 .select-area .tag-list li {
+.filter-wrap2 .select-area .tag-list .box {
 	position:relative;
 	float: left;
 	height:32px;
@@ -6139,8 +6140,8 @@ td .radish-bank-box span {display:block;}
 	box-sizing: border-box;
 
 }
-.filter-wrap2 .select-area .tag-list li:last-child {margin-right:0;}
-.filter-wrap2 .select-area .tag-list li .btn-delete {
+.filter-wrap2 .select-area .tag-list .box:last-child {margin-right:0;}
+.filter-wrap2 .select-area .tag-list .box .btn-delete {
 	position: absolute;
 	right: 0;
 	top: 50%;
@@ -6150,6 +6151,66 @@ td .radish-bank-box span {display:block;}
 	background-image: url(../img/btn/btn_tag_close.png);
 	vertical-align: top;
 }
+
+/*.order-list {margin:15px 0;}*/
+.recipe-list {width:100%;}
+	.recipe-list:after {
+		content:'';display:block;clear:both;
+	}
+	.recipe-list li {
+		position:relative;
+		float:left;
+		width:25%;
+		height:340px;
+		border:1px solid #ddd;
+		box-sizing: border-box;
+		background-color: #fff;
+		margin-top: -1px;
+		margin-left: -1px;
+	}
+
+	.recipe-list .img-area {
+		position:relative;
+		width:100%;
+		height:280px;
+		overflow: hidden;
+	}
+	.recipe-list .img-area img {height: 100%;}
+	.recipe-list .img-area.over:before {
+		content: '';
+		width:100%; height:280px;
+		position:absolute; left:0; top:0; background-color:rgba(0,0,0,.8);
+		-webkit-transition:opacity .3s;
+		-ms-transition:opacity .3s;
+		transition:opacity .3s;
+
+	}
+	.recipe-list .title-area {
+		width:100%;
+		height:60px;
+		font-size: 18px;
+		color:#000;
+		font-weight: bold;
+		text-align: center;
+		line-height:60px;
+	}
+
+	.recipe-list .btn-center {opacity:0; position:absolute; left:50%; top:40%; margin:-45px -75px;}
+	.recipe-list .btn-center .btn-like {margin-left:0;}
+	.recipe-list li:hover .btn-center {
+		opacity:1;
+		-webkit-transition:opacity .3s;
+		-ms-transition:opacity .3s;
+		transition:opacity .3s;
+	}
+
+	.recipe-list .btn-center .time {display: block; height:25px; margin-bottom:15px; line-height:22px; background:url(../img/icon/ico_clock.png) no-repeat 0 0; padding-left:30px; font-size:18px; color:#fff; font-weight: bold;}
+/*
+	.recipe-list .img-area img {width: 100%; vertical-align: middle;}
+	.recipe-list p {text-align: center;}
+	.recipe-list .name {font-size:14px; color:#666;}
+	.recipe-list .price {font-size:18px; color:#000; font-weight: 900; letter-spacing: -1px;}
+	.recipe-list .price em {font-size:14px}*/
 /* =========================================================================================================
 	레이어 팝업
 ========================================================================================================= */
@@ -7318,29 +7379,44 @@ td .radish-bank-box span {display:block;}
 	border-bottom:1px solid #ddd;
 	box-sizing:border-box;
 }
-.chief-cooking-box .manual-area {
+.chief-cooking-box .cooking-slide .cooking-slide-list li {
+	position:relative;
+	z-index:0 !important;
+}
+.menual-area {
 	position:absolute;
 	left:0; top:0;
 	width:222px;
 	height:382px;
-	padding:19px 33px 19px 25px;
+	padding:19px 25px;
 	background-color:#ec7015;
 	z-index:10;
 }
-.chief-cooking-box .manual-area .top-txt {
+.menual-area .title {
+	display:block;
+	color:#000;
+    font-size:28px;
+    line-height:30px;
+    font-weight:bold;
+	letter-spacing: -0.5px;
+}
+.menual-area .title em {
 	display:block;
 	font-size:14px;
-	line-height:25px;
+	color:#000;
+	line-height:20px;
 	font-weight:normal;
+	letter-spacing:-0.5px;
 }
-.chief-cooking-box .manual-area .cTitle1 {line-height:25px;}
-.chief-cooking-box .manual-area .manual-more {
-	position:absolute;
-	right:45px; top:30px;
-	height:18px;
+.menual-area .title a {
+	display:inline-block;
+    width:18px;
+    height:18px;
+	margin-left: 4px;
+    background:url(../img/icon/icon_plus.png) no-repeat 0 0;
 }
-.chief-cooking-box .manual-area .manual-list{margin-top:23px;}
-.chief-cooking-box .manual-area .manual-list .item {
+.menual-area .menual-list{margin-top:22px;}
+.menual-area .menual-list .item {
 	position:relative;
 	padding-left:14px;
 	font-size:14px;
@@ -7348,14 +7424,11 @@ td .radish-bank-box span {display:block;}
 	line-height:20px;
 	letter-spacing:-0.5px;
 }
-.chief-cooking-box .manual-area .manual-list .item .number {
+.menual-area .menual-list .item .number {
 	position:absolute;
 	left:0; top:0;
 }
-.chief-cooking-box .cooking-slide .cooking-slide-list li {
-	z-index:0 !important;
-	font-size:0;
-}
+
 .chief-cooking-box .cooking-slide .bx-wrapper {height:100%; font-size:0;}
 .chief-cooking-box .cooking-slide img {height:100%; vertical-align:middle;}
 .chief-cooking-box .cooking-slide {
@@ -7500,4 +7573,3 @@ td .radish-bank-box span {display:block;}
 
 /* 천연벽지 -> 이전 견적내역 팝업*/
 .pop-estimate-history {width:900px;}
->>>>>>> 823eccb7281e8197ec7baa27d2119cbba5777bd5
