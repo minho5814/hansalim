@@ -418,6 +418,7 @@ td .radio-check {
 	line-height:0;
 }
 	td .radio-check .item {margin-left:30px;}
+	td .radio-check.type2 .item {margin-left:85px;}
 	td .radio-check .item:first-child {margin-left:0;}
 
 /* e-mail 입력란 */
@@ -1536,6 +1537,13 @@ td.e-mail-form {
 	line-height:32px;
 }
 .btn-round-text.btn-gray {background-color:#666;color:#fff;}
+.btn-round-text.btn-white {
+	background-color:#fff;
+	color:#666;
+	line-height:30px;
+	font-weight: bold;
+	border:1px solid #bbb;
+}
 
 .btn-mini-text {
 	display:inline-block;
@@ -2182,7 +2190,7 @@ td.e-mail-form {
 			}
 			.search-form .cont .calendar-area .calendar .ui-datepicker-trigger:before {
 				border-radius:2px;
-				background-color:#666;
+				background-color:#91c90b;
 			}
 			.search-form .cont .calendar-area .swung-dash {
 				float:left;
