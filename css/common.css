@@ -3944,14 +3944,11 @@ label.check-radio .radiobox {margin-right:8px;}
 .container.sub {background-color:#eee;}
 	.container.sub .location  {padding:20px 0;}
 	.container.sub .location .inner{
-		height:28px;
-		line-height: 28px;
+		height:23px;
+		line-height: 23px;
 		overflow: inherit;
 	}
 	.container.sub .location .home {font-size:13px;}
-	.container.sub .location .item {
-		float: inherit;
-	}
 	.container.sub .location .inner:after {
 		content: '';
 		display: block;
@@ -3961,6 +3958,21 @@ label.check-radio .radiobox {margin-right:8px;}
 	.container.sub .location .home,
 	.container.sub .location .sel-box,
 	.container.sub .location .arrow {
+		float:left;
+		height:23px;
+		line-height:23px;
+	}
+
+	.container.sub .location.select .inner{
+		height:28px;
+		line-height: 28px;
+		overflow: inherit;
+	}
+
+
+	.container.sub .location.select .home,
+	.container.sub .location.select .sel-box,
+	.container.sub .location.select .arrow {
 		float:left;
 		height:28px;
 		line-height:28px;
