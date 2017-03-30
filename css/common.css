@@ -2520,6 +2520,13 @@ label.check-radio .radiobox {margin-right:8px;}
 		font-size:18px;
 		line-height:24px;
 	}
+		.no-result .text.ty02 {font-size:24px;}
+		.no-result .text .line {
+			display: block;
+			margin-top:10px;
+			color:#666;
+			font-size: 14px;
+		}
 
 /* =========================================================================================================
 	상단 배너
@@ -5957,8 +5964,6 @@ td .radish-bank-box span {display:block;}
 	position:relative;
 	/*height:80px;*/
 	padding:25px 30px;
-	border-left:1px solid #ddd;
-	border-right:1px solid #ddd;
 	box-sizing: border-box;
 }
 .filter-wrap2 .select-area .reset-area {
