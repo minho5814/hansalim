@@ -154,6 +154,13 @@ $(window).load(function(){
 			pagerType:'short'
 		});
 	});
+	$('.theme-diet-area .theme-diet-slide').each(function(){
+		$(this).bxSlider({
+			//infiniteLoop:false,
+			speed:400,
+			pagerType:'short'
+		});
+	});
 
 	$('.bx-pager').each(function(){
 		var len = $(this).find('.bx-pager-item').length;
