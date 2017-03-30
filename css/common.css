@@ -974,6 +974,7 @@ td.e-mail-form {
 .tab-styled5.three .item {
 	width:33%;
 }
+.tab-styled5.three .item:first-child{width:34%;}
 .tab-styled5.multi .item {
 	width:25%;
 }
