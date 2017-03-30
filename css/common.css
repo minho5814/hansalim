@@ -1416,6 +1416,11 @@ td.e-mail-form {
 .align-left {text-align:left !important;}
 .align-right {text-align:right !important;}
 
+.posiR {
+	position:absolute;
+	right:0; top:5px;
+}
+
 /* link underline */
 .text-link {
 	position:relative;
@@ -3998,6 +4003,10 @@ label.check-radio .radiobox {margin-right:8px;}
 		box-sizing: border-box;
 	}
 
+	.container.sub02 {
+		background-color:#fff;
+	}
+
 .content {
 	background-color:#fff;
 	padding-top:80px;
@@ -4883,6 +4892,12 @@ label.check-radio .radiobox {margin-right:8px;}
 	display: inline-block;
 	margin-right:7px;
 	line-height: 32px;
+}
+
+.board-bottom .text {
+	margin-top:15px;
+	font-size:14px;
+	color:#999;
 }
 
 .board-lsit {border-top:1px solid #666;}
@@ -6934,9 +6949,38 @@ td .radish-bank-box span {display:block;}
 }
 .my-notice-area .my-notice-box .my-notice-list li .my-notice-img {float:right;}
 .my-notice-area .my-notice-box .my-notice-list li .my-notice-img img {vertical-align:middle;}
-.posiR {
-	position:absolute;
-	right:0; top:5px;
-}
+
 .pop-notice-set {width:600px;}
 .pop-notice-set .btn-text {min-width:120px;}
+
+/* 천연벽지 */
+.estimate-request-area {
+	border-top:1px solid #666;
+}
+
+.estimate-request-area .board-write1 td .deliver-box {
+	border:1px solid #bbb;
+	border-radius:0;
+}
+
+.estimate-request-box {
+	margin-top:83px;
+	padding:0 30px;
+}
+.estimate-request-box dl dt {
+	font-size:16px;
+	color:#000;
+	font-weigh:bold;
+}
+.estimate-request-box .txt {
+	font-size:15px;
+	color:#000;
+	text-align:left;
+}
+.estimate-request-box dl dd .item {
+	color:#666;
+	letter-spacing:-0.5px;
+}
+
+/* 천연벽지 -> 이전 견적내역 팝업*/
+.pop-estimate-history {width:900px;}
