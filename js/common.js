@@ -163,6 +163,14 @@ $(window).load(function(){
 		});
 	});
 
+	/* 새로 공급한 물품 이용후기 */
+	$('.review-area .bxslider').each(function(){
+		$(this).bxSlider({
+			//infiniteLoop:false,
+			speed:400
+		});
+	});
+
 	$('.bx-pager').each(function(){
 		var len = $(this).find('.bx-pager-item').length;
 		if(len <= 1){
