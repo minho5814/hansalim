@@ -740,6 +740,7 @@ td.e-mail-form {
 		.thumb-item1 .img-area img {
 			width:265px;
 			height:265px;
+			vertical-align:middle;
 		}
 	.thumb-item1 .name {
 		margin-top:-10px;
@@ -8087,7 +8088,6 @@ td .radish-bank-box span {display:block;}
 /* 천연벽지 -> 이전 견적내역 팝업*/
 .pop-estimate-history {width:900px;}
 
-<<<<<<< HEAD
 /* 물품 특별주문일정 */
 .title01 {
 	padding-left:28px;
@@ -8098,7 +8098,7 @@ td .radish-bank-box span {display:block;}
 	background:url(../img/icon/ico_check.png) no-repeat 0 0;
 }
 .filter-wrap.type05 .supply-area ul li {width:20% !important;}
-.filter-wrap.type05  .allergy-area {border-top:1px solid #ddd;}
+.filter-wrap.type05 .allergy-area {border-top:1px solid #ddd;}
 .bor-title  {
 	position:relative;
 	margin:55px 0 15px;
@@ -8187,6 +8187,7 @@ td .radish-bank-box span {display:block;}
 	border-right:1px solid #ddd;
 }
 .review-area .review-list .item-review .review-img span {display:block;}
+.review-area .review-list .item-review .review-img .img-box img {vertical-align:middle;}
 .review-area .review-list .item-review .review-img .img-txt {
 	margin-top:5px;
 	font-size:14px;
