@@ -1434,6 +1434,8 @@ td.e-mail-form {
 .pdT45 {padding-top:45px !important;}
 .pdT60 {padding-top:60px !important;}
 
+.pdB40 {padding-bottom:40px !important;}
+
 .pdL0 {padding-left:0 !important;}
 .pdL30 {padding-left:30px !important;}
 .pdT50 {padding-top:50px !important;}
@@ -4973,7 +4975,6 @@ label.check-radio .radiobox {margin-right:8px;}
 	background-color: #fff;
 	box-sizing: border-box;
 }
-
 .sub-cont .view-area .cTitle1  {line-height: inherit;}
 .sub-cont .view-area .cTitle1 span {
 	display: block;
