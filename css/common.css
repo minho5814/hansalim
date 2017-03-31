@@ -5045,13 +5045,11 @@ label.check-radio .radiobox {margin-right:8px;}
 	background-color: #fff;
 	box-sizing: border-box;
 }
-<<<<<<< HEAD
+
 .sub-cont .view-area.type6 {
 	padding:30px 40px 40px 40px;
 }
 
-=======
->>>>>>> d264259b3ac492ef97d3dc7721f0222ff4aadfda
 .sub-cont .view-area .cTitle1  {line-height: inherit;}
 .sub-cont .view-area .cTitle1 span {
 	display: block;
@@ -7702,7 +7700,6 @@ td .radish-bank-box span {display:block;}
 .pop-notice-set {width:600px;}
 .pop-notice-set .btn-text {min-width:120px;}
 
-<<<<<<< HEAD
 /* 요리서브 메인 */
 .new-cooking-area {}
 .new-cooking-area .new-cooking {
@@ -8053,7 +8050,7 @@ td .radish-bank-box span {display:block;}
 	left:30px; top:31px;
 	z-index:10;
 }
-=======
+
 /* 천연벽지 */
 .estimate-request-area {
 	border-top:1px solid #666;
@@ -8087,7 +8084,7 @@ td .radish-bank-box span {display:block;}
 /* 천연벽지 -> 이전 견적내역 팝업*/
 .pop-estimate-history {width:900px;}
 
-<<<<<<< HEAD
+
 /* 물품 특별주문일정 */
 .title01 {
 	padding-left:28px;
@@ -8267,7 +8264,7 @@ td .radish-bank-box span {display:block;}
 }
 .review-area .bx-pager .bx-pager-link.active {
 	background-color:#000;
-=======
+}
 
 /* store-area 매장 */
 .store-area {margin-bottom:40px;}
