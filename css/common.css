@@ -5776,61 +5776,72 @@ td .radish-bank-box span {display:block;}
 		}
 		.search-left .search-tree .btn-area .btn-mini-text {width:100%;}
 
-.search-left .tree-list {margin-top:13px;}
-	.search-left .tree-list .check-text {
-		padding:7px 0;
-	}
-	.search-left .tree-list .open-type {
+.search-left .tree-list {
+	margin:6px 0 0 -25px;
+	opacity:0;
+}
+	.tree-list ul {
 		position:relative;
-		padding-left:26px;
-		font-size:0;
-		line-height:0;
+		padding-left:25px;
 	}
-	.search-left .tree-list .check-text {position:relative;}
-	.search-left .tree-list .check-text:before {
+	.tree-list ul:before {
 		content:'';
 		position:absolute;
-		left:-10px;top:50%;
-		width:26px;
+		left:34px;top:-10px;bottom:9px;
+		width:1px;
+		background-color:#ddd;
+	}
+	.tree-list .jstree-container-ul:before {top:23px;}
+	.tree-list .jstree-anchor {
+		position:relative;
+		display:inline-block;
+		margin-top:14px;
+		color:#666;
+		font-size:14px;
+		line-height:18px;
+		outline:0;
+	}
+	.tree-list .jstree-anchor:before {
+		content:'';
+		position:absolute;
+		left:-16px;top:50%;
+		width:20px;
 		height:1px;
 		background-color:#ddd;
 	}
-	.search-left .tree-list .btn-tree-tog {
-		overflow:hidden;
-		position:relative;
-		z-index:5;
-		width:18px;
-		height:18px;
-		margin:7px 0 0;
-	}
-		.search-left .tree-list .check-text {
-		padding-left:8px;
-	}
-		.search-left .tree-list .btn-tree-tog img {vertical-align:top;}
-		.search-left .tree-list .on .btn-tree-tog img {margin-top:-18px;}
-	.search-left .tree-list ul {padding-left:26px;}
-	.search-left .tree-list .depth-list {display:none;}
-	.search-left .tree-list ul.list {
-		display:none;
-		position:relative;
-		padding-left:70px;
-	}
-
-		.search-left .tree-list .item-depth1,
-		.search-left .tree-list .item-depth2,
-		.search-left .tree-list .item-depth3 {position:relative;}
-		.search-left .tree-list .item-depth1:before,
-		.search-left .tree-list .item-depth2:before,
-		.search-left .tree-list ul.list:before {
-			content:'';
-			position:absolute;
-			left:35px;top:-7px;bottom:-7px;
-			width:1px;
-			background-color:#ddd;
+	.tree-list .jstree-container-ul > .jstree-leaf .jstree-anchor:before {display:none;}
+		.tree-list .jstree-icon {
+			display:inline-block;
+			position:relative;
+			z-index:5;
+			width:18px;
+			height:18px;
+			margin-right:8px;
+			box-sizing:border-box;
+			vertical-align:top;
 		}
-		.search-left .tree-list .item-depth1:first-child:before {top:7px;}
-		.search-left .tree-list .item-depth1:last-child:before {display:none;}
-		.search-left .tree-list ul.list:before {left:60px;bottom:16px;}
+		.tree-list .jstree-ocl {
+			margin-top:14px;
+			background:url(../img/btn/btn_tree_tog.png) no-repeat 0 0;
+		}
+		.tree-list .jstree-leaf .jstree-ocl {display:none;}
+		.tree-list .jstree-anchor .jstree-checkbox {
+			border:1px solid #ccc;
+			background-color:#fff;
+		}
+		.tree-list .jstree-anchor.jstree-clicked .jstree-checkbox {
+				border-color:#666;
+				background:#666 url(../img/icon/icon_checked.png) no-repeat 50% 50%;
+			}/* checked */
+		.tree-list .jstree-anchor .text {
+			display:inline-block;
+		}
+		.tree-list .jstree-anchor .jstree-themeicon {display:none;}
+
+	.tree-list {}
+	.tree-list {}
+	.tree-list {}
+
 
 .search-right {
 	float:right;
