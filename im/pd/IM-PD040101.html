@@ -1351,11 +1351,11 @@ $(window).load(function(){
 	//링크이동
 	$('.tab-styled5 .item').click(function(){
 		var idx = $(this).index();
-		var cont_height = $('.brand-wrap').eq(idx).offset().top - $('.head-btm').outerHeight() - $('.tab-styled5').outerHeight();
+		var cont_height = $('.brand-wrap').eq(idx).offset().top - $('.head-btm').outerHeight() - $('.tab-styled5').outerHeight()+2;
 		var wrap = $('.tab-styled5').outerHeight();
 
-		$('.tab-styled5 .item').removeClass('on');
-		$('.tab-styled5 .item').eq(idx).addClass('on');
+		// $('.tab-styled5 .item').removeClass('on');
+		// $('.tab-styled5 .item').eq(idx).addClass('on');
 		$('html, body').animate({scrollTop:cont_height});
 		$(this).parents('.tab-wrap').css('height',wrap);
 	});
