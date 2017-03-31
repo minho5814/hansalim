@@ -7333,6 +7333,12 @@ td .radish-bank-box span {display:block;}
 	float:left;
 	width:279px;
 }
+.new-cooking .cooking-list .item-cooking .cooking-img a {
+	display: block;
+}
+.new-cooking .cooking-list .item-cooking .cooking-img a img {
+	vertical-align: top;
+}
 .new-cooking .cooking-list .item-cooking .cooking-cont {
 	float:left;
 	width:249px;
@@ -7519,11 +7525,17 @@ td .radish-bank-box span {display:block;}
 	padding:15px 20px 0 20px;
 }
 .theme-area .theme-list .theme-item .theme-box .theme-tit {
+	overflow: hidden;
+	width:100%;
 	font-size:18px;
 	color:#000;
 	font-weight:bold;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .theme-area .theme-list .theme-item .theme-box .theme-txt {
+	overflow: hidden;
+	height: 44px;
 	margin-top:7px;
 	font-size:15px;
 	color:#666;
