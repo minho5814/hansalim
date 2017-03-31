@@ -798,7 +798,7 @@ td.e-mail-form {
 		float:left;
 		position:relative;
 		width:25%;
-		padding-bottom:90px;
+		padding-bottom:75px;
 		background-color:#fff;
 		border:1px solid #ddd;
 		box-sizing: border-box;
@@ -822,11 +822,17 @@ td.e-mail-form {
 			height:265px;
 		}
 	.thumb-list3 .thumb-item .name {
+		height:42px;
 		margin-top:-10px;
-		padding-left:30px;
+		padding:0 30px;
 		color:#555;
 		font-size:15px;
 		line-height:21px;
+		display: block;
+		display:-webkit-box;-webkit-line-clamp:2;
+		-webkit-box-orient:vertical;
+		overflow:hidden;
+		text-overflow:ellipsis;
 	}
 	.thumb-list3 .thumb-item .price-btn {
 		overflow:hidden;
@@ -1089,7 +1095,10 @@ td.e-mail-form {
 .tab-styled5.multi .item {
 	width:25%;
 }
-
+.tab-styled5.multi6 .item {
+	width:16.5%;
+}
+.tab-styled5.multi6 .item:nth-child(6n+1){width: 17.5%;}
 
 
 .tab-content4 {display: none; }
