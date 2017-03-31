@@ -249,7 +249,7 @@ $(window).load(function(){
 		}
 
 		if($('.tab-wrap').length >= 1){
-			var tabTop = $('.tab-wrap').offset().top;
+			var tabTop = $('.tab-wrap').offset().top - $('.gnb-list').outerHeight();			
 			if(winTop >= tabTop){
 				$('html').addClass('tab');
 			}else{
