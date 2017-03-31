@@ -1349,7 +1349,7 @@ $(window).load(function(){
 	//링크이동
 	$('.tab-styled5 .item').click(function(){
 		var idx = $(this).index();
-		var cont_height = $('.brand-wrap').eq(idx).offset().top - $('.head-btm').outerHeight() ;
+		var cont_height = $('.brand-wrap').eq(idx).offset().top - $('.head-btm').outerHeight() - $('.tab-styled5').outerHeight();
 		$('.tab-styled5 .item').removeClass('on');
 		$('.tab-styled5 .item').eq(idx).addClass('on');
 		$('html, body').animate({scrollTop:cont_height});
@@ -1357,14 +1357,10 @@ $(window).load(function(){
 
 	$(window).scroll(function(){
 		var winTop = $(window).scrollTop();
-		var winLeft = $(window).scrollLeft();
 		/* 스크롤 다운시 해더 변경 */
 
-		var idx =$('.brand-wrap').index();
-		console.log(idx);
-
 		if($('.tab-wrap').length >= 1){
-			var tabTop = $('.tab-wrap').offset().top - $('.gnb-list').outerHeight() - $('.tab-wrap').outerHeight();
+			var tabTop = $('.tab-wrap').offset().top - $('.gnb-list').outerHeight() - $('.tab-styled5').outerHeight();
 			if(winTop >= tabTop){
 				$('html').addClass('tab');
 			}else{
