@@ -830,17 +830,23 @@
 		</div>
 		<div class="content pdT60">
 			<div class="content-w1120">
-				<div class="tab-area">
-					<ul class="tab-styled4">
-						<li class="item on"><a href="#" class="text">맵쌀/찹쌀</a></li>
-						<li class="item"><a href="#" class="text">잡곡/깨</a></li>
-						<li class="item"><a href="#" class="text">콩류</a></li>
-						<li class="item"><a href="#" class="text">혼합곡/보리/유색미</a></li>
+				<div class="tab-area recomend-area">
+					<ul class="tab-styled5 multi">
+						<li class="item on"><span class="text">맵쌀/찹쌀</span></li>
+						<li class="item"><span class="text">잡곡/깨</span></li>
+						<li class="item"><span class="text">콩류</span></li>
+						<li class="item"><span class="text">혼합곡/보리/유색미</span></li>
 					</ul>
-					<div class="tab-content4 on">111</div>
-					<div class="tab-content4">222px333</div>
-					<div class="tab-content4">44</div>
-					<div class="tab-content4">33</div>
+					<ul class="tab-styled5 multi">
+						<li class="item on"><span class="text">맵쌀/찹쌀</span></li>
+						<li class="item"><span class="text">잡곡/깨</span></li>
+						<li class="item"><span class="text">콩류</span></li>
+						<li class="item"><span class="text">혼합곡/보리/유색미</span></li>
+					</ul>
+					<div class="tab-content4 on"><p>은은한 자연의 향 담아 입맛 돋우는 한살림 밥상을 위해 조합원님들께 제안드리는 추천 물품 입니다.1</p></div>
+					<div class="tab-content4"><p>은은한 자연의 향 담아 입맛 돋우는 한살림 밥상을 위해 조합원님들께 제안드리는 추천 물품 입니다.2</p></div>
+					<div class="tab-content4"><p>은은한 자연의 향 담아 입맛 돋우는 한살림 밥상을 위해 조합원님들께 제안드리는 추천 물품 입니다.3</p></div>
+					<div class="tab-content4"><p>은은한 자연의 향 담아 입맛 돋우는 한살림 밥상을 위해 조합원님들께 제안드리는 추천 물품 입니다.4</p></div>
 				</div>
 				<div class="group">
 					<h3 class="cTitle3">물품 검색 결과 <span class="fColor3">10<span>건</span></span></h3>
@@ -1175,11 +1181,9 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-	$('.tab-styled4 .item').click(function(){
+	$('.tab-styled5 .item').click(function(){
 		var idx = $(this).index();
-
-
-		$('.item').removeClass('on').eq(idx).addClass('on');
+		$('.tab-styled5 .item').removeClass('on').eq(idx).addClass('on');
 		$('.tab-content4').removeClass('on').eq(idx).addClass('on');
 
 	});
@@ -1227,17 +1231,6 @@ $(window).load(function(){
 		}
 	});
 
-	/*슬라이드 */
-	$('.goods-slide').bxSlider({
-		mode:'fade',
-		auto:true,
-		pager: true,
-		pagerCustom: '.goods-slide-pager',
-		speed:500, // Slide Speed (default:500)
-		slideWidth: 1120,
-		controls:true,
-		autoControls: true,
-	});
 
 
 });
