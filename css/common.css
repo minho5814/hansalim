@@ -8038,6 +8038,7 @@ td .radish-bank-box span {display:block;}
 
 
 /* store-area 매장 */
+.store-area {margin-bottom:40px;}
 .map-area {
 	overflow: hidden;
 	position: relative;
@@ -8483,3 +8484,58 @@ td .radish-bank-box span {display:block;}
 	position: absolute;
 	bottom:20px; left:405px;
 }
+.thumb-slide4 {position:relative;}
+.thumb-slide4 .bxslider .item {
+	width:336px;
+	padding:29px;
+	border:1px solid #ddd;
+	box-sizing: border-box;
+}
+.thumb-slide4 .bxslider .item a {
+	display: block;
+}
+.thumb-slide4 .bxslider .item dl {
+	position: relative;
+	padding-top: 165px;
+}
+.thumb-slide4 .bxslider .item dl .img-wrap {
+	position: absolute;
+	top:0; left:0;
+	width: 306px; height:150px;
+}
+.thumb-slide4 .bxslider .item dl .img-wrap .img {
+	vertical-align: top;
+}
+.thumb-slide4 .bxslider .item dl .title {
+	color:#000;
+	font-size:18px;
+	font-weight: bold;
+}
+.thumb-slide4 .bxslider .item dl .date {
+	color:#666;
+	font-size:14px;
+}
+
+.thumb-slide4 .bx-controls-direction {}
+	.thumb-slide4 .bx-controls-direction a {
+		display:block;
+		position:absolute;
+		top:50%;
+		width:30px;
+		height:50px;
+		margin-top: -25px;
+		background-color:#ddd;
+		background-repeat:no-repeat;
+		background-position:50% 50%;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+	}
+	.thumb-slide4 .bx-prev {
+		left:0;
+		background-image:url(../img/btn/btn_bx_prev01.png);
+	}
+	.thumb-slide4 .bx-next {
+		right:0;
+		background-image:url(../img/btn/btn_bx_next01.png);
+	}
