@@ -1052,6 +1052,12 @@ td.e-mail-form {
 			color:#000;
 		}/* on */
 
+	.tab-styled4.green li.on .text {
+		background-color:#60b015;
+		border:1px solid #60b015;
+		color:#fff;
+	}
+
 .tab-styled5 {
 	overflow:hidden;
 	padding-top:1px;
@@ -1101,7 +1107,7 @@ td.e-mail-form {
 .tab-styled5.multi6 .item:nth-child(6n+1){width: 17.5%;}
 
 
-.tab-content4 {display: none; }
+.tab-content4 {display: none;}
 .tab-content4.on {display: block;}
 
 /* 슬라이드 */
@@ -2024,6 +2030,19 @@ td.e-mail-form {
 	width:17px;
 	height:18px;
 	background-position:0 -364px;
+}
+.btn-image.btn-notice2 {background-color:#666;}
+.btn-image.btn-notice2:before {
+	width:18px;
+	height:20px;
+	background-position:0 -1152px;
+}
+
+.btn-image.btn-notice2.on {background-color:#60b015;}
+.btn-image.btn-notice2.on:before {
+	width:18px;
+	height:20px;
+	background-position:0 -1173px;
 }
 
 .btn-image.minus,
@@ -5026,6 +5045,13 @@ label.check-radio .radiobox {margin-right:8px;}
 	background-color: #fff;
 	box-sizing: border-box;
 }
+<<<<<<< HEAD
+.sub-cont .view-area.type6 {
+	padding:30px 40px 40px 40px;
+}
+
+=======
+>>>>>>> d264259b3ac492ef97d3dc7721f0222ff4aadfda
 .sub-cont .view-area .cTitle1  {line-height: inherit;}
 .sub-cont .view-area .cTitle1 span {
 	display: block;
@@ -6462,7 +6488,32 @@ td .radish-bank-box span {display:block;}
 	top:49px;
 	width:1120px;
 	z-index: 10;
+}
 
+/*조합원 추천물품*/
+.recomend-area .tab-content4 {
+	padding:30px 0;
+	margin-top:20px;
+	border:1px solid #ddd;
+	text-align: center;
+
+}
+.recomend-area .tab-content4 p {
+	position: relative;
+	display: inline-block;
+	padding-left: 20px;
+	font-size: 18px;
+	color:#60b015;
+	padding-left: 40px;
+
+}
+.recomend-area .tab-content4 p:before {
+	content: '';
+	position: absolute;
+	left:0; top:0;
+	background:url(../img/icon/ico_recomend.png) no-repeat 0 0;
+	width:29px;
+	height:29px;
 }
 /* =========================================================================================================
 	레이어 팝업
@@ -8036,6 +8087,187 @@ td .radish-bank-box span {display:block;}
 /* 천연벽지 -> 이전 견적내역 팝업*/
 .pop-estimate-history {width:900px;}
 
+<<<<<<< HEAD
+/* 물품 특별주문일정 */
+.title01 {
+	padding-left:28px;
+	font-size:18px;
+	color:#63a607;
+	line-height:22px;
+	font-weight:bold;
+	background:url(../img/icon/ico_check.png) no-repeat 0 0;
+}
+.filter-wrap.type05 .supply-area ul li {width:20% !important;}
+.filter-wrap.type05  .allergy-area {border-top:1px solid #ddd;}
+.bor-title  {
+	position:relative;
+	margin:55px 0 15px;
+	text-align:center;
+}
+.bor-title:before  {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; top:50%;
+	width:100%;
+	height:1px;
+	background-color:#666;
+	z-index:5;
+	-webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.bor-title .tit {
+	display:inline-block;
+	position:relative;
+	padding:0 12px;
+	font-size:24px;
+	color:#000;
+	font-weight:bold;
+	line-height:30px;
+	background-color:#fff;
+	z-index:10;
+}
+.date-box {
+	border-top:1px solid #ddd;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+}
+.date-box .adte-cont {
+	position:relative;
+	overflow:hidden;
+	padding:23px 30px;
+	border-bottom:1px solid #ddd;
+}
+.date-box .adte-cont .btn-image {
+	margin-left:14px;
+	vertical-align:middle;
+}
+.date-box .adte-cont .btn-mini-text {
+	margin-top:5px;
+}
+.date-box .adte-cont .adte-list {overflow:hidden;}
+.date-box .adte-cont .adte-list li {
+	float:left;
+	width:50%;
+	font-size:15px;
+	color:#666;
+}
+.date-box .adte-cont .adte-list li .dte-title {
+	display:inline-block;
+	margin-right:46px;
+	color:#000;
+	font-weight:bold;
+}
+/* 새로 공급한 물품 이용후기 */
+.review-area {
+	position:relative;
+	width:1040px;
+	margin:0 auto;
+}
+.review-area .review-list {
+	overflow:hidden;
+}
+.review-area .review-list .item-review {
+	float:left;
+	width:515px;
+	margin-left:10px;
+	padding:20px 15px;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+}
+.review-area .review-list .item-review:first-child {
+	margin-left:0;
+}
+.review-area .review-list .item-review .review-img {
+	float:left;
+	width:110px;
+	height:155px;
+	padding-right:15px;
+	border-right:1px solid #ddd;
+}
+.review-area .review-list .item-review .review-img span {display:block;}
+.review-area .review-list .item-review .review-img .img-txt {
+	margin-top:5px;
+	font-size:14px;
+	color:#666;
+	line-height:20px;
+	letter-spacing:-0.5px;
+	text-align:center;
+}
+.review-area .review-list .item-review .review-cont {
+	float:left;
+	width:332px;
+	margin-left:24px;
+}
+.review-area .review-list .item-review .review-cont dl dt {
+	font-size:18px;
+	color:#000;
+	line-height:37px;
+	font-weight:bold;
+}
+.review-area .review-list .item-review .review-cont dl dt .revi-icon {
+	display:block;
+	padding-left:46px;
+	background:url(../img/icon/icon_review03.png) no-repeat 0 0;
+}
+.review-area .review-list .item-review .review-cont dl dt .revi-icon.hate {
+	background:url(../img/icon/icon_review04.png) no-repeat 0 0;
+}
+.review-area .review-list .item-review .review-cont dl .text {
+	overflow:hidden;
+	height:96px;
+	margin-top:6px;
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+	letter-spacing:-0.5px;
+	display:-webkit-box;
+	-webkit-line-clamp:4;
+    -webkit-box-orient:vertical;
+	text-overflow:ellipsis;
+}
+.review-area .bx-controls-direction a {
+	display:block;
+	position:absolute;
+	top:78px;
+	width:30px;
+	height:50px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.review-area .bx-prev {
+	left:-40px;
+	background:url(../img/btn/btn_bx_prev30x50.png) no-repeat 0 0
+}
+.review-area .bx-next {
+	right:-40px;
+	background:url(../img/btn/btn_bx_next30x50.png) no-repeat 0 0
+}
+.review-area .bx-pager {
+	overflow:hidden;
+	height:10px;
+	margin-top:20px;
+	font-size:0;
+	line-height:0;
+	text-align:center;
+}
+.review-area .bx-pager .bx-pager-item {
+	display:inline-block;
+	margin-left:6px;
+}
+.review-area .bx-pager .bx-pager-link {
+	display:inline-block;
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background-color:#8a8a8a;
+	text-indent:-9999px;
+}
+.review-area .bx-pager .bx-pager-link.active {
+	background-color:#000;
+=======
 
 /* store-area 매장 */
 .store-area {margin-bottom:40px;}
