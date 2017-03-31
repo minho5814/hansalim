@@ -764,6 +764,89 @@ td.e-mail-form {
 		font-size: 14px;
 	}
 
+/*물품리스트 여러줄일경우*/
+	.thumb-list3 {width: 100%; margin-left: 1px;}
+	.thumb-list3:after {content: ''; display: block; clear: both;}
+	.thumb-list3 .thumb-item {
+		float:left;
+		position:relative;
+		width:25%;
+		padding-bottom:90px;
+		background-color:#fff;
+		border:1px solid #ddd;
+		box-sizing: border-box;
+		margin-top:-1px;
+		margin-left:-1px;
+	}
+	.thumb-list3 .thumb-item .ico-category {position: absolute;right:20px; top:20px;}
+	.thumb-list3 .thumb-item .ico-round2 {position: absolute;right:20px; top:20px;}
+	.thumb-list3 .thumb-item .link {
+		display:block;
+	}
+	.thumb-list3 .thumb-item .img-area {
+		width:265px;
+		height:265px;
+		margin:0 auto;
+		font-size:0;
+		line-height:0;
+	}
+		.thumb-list3 .thumb-item .img-area img {
+			width:265px;
+			height:265px;
+		}
+	.thumb-list3 .thumb-item .name {
+		margin-top:-10px;
+		padding-left:30px;
+		color:#555;
+		font-size:15px;
+		line-height:21px;
+	}
+	.thumb-list3 .thumb-item .price-btn {
+		overflow:hidden;
+		position:absolute;
+		left:30px;right:30px;bottom:30px;
+	}
+	.thumb-list3 .thumb-item .price-btn .price {
+		float:left;
+		color:#333;
+		font-size:14px;
+		line-height:32px;
+	}
+	.thumb-list3 .thumb-item .price-btn .price .number {
+			font-size:24px;
+			font-weight:900;
+			vertical-align:top;
+			letter-spacing:-1px;
+		}
+	.thumb-list3 .thumb-item .price-btn .btn-area {
+		float:right;
+	}
+.thumb-list3 .thumb-item .retail {
+	text-decoration:line-through; display:block; line-height:20px;
+	position: absolute;
+	bottom:10px;
+	left: 30px;
+	color:#999;
+	font-size: 14px;
+}
+
+.thumb-list3 .thumb-item.addtext {padding-bottom:190px;}
+.thumb-list3 .thumb-item.addtext .result-txt {
+	position:absolute;
+	left:29px; right:29px; bottom:6px;
+	padding:19px 0;
+	border-top:1px solid #ddd;
+	font-size:14px;
+	color:#999;
+	letter-spacing:-0.5px;
+}
+.thumb-list3 .thumb-item.addtext .price-btn {
+	overflow:hidden;
+	position:absolute;
+	bottom:128px;
+}
+	/*.sub-cont .right-area .item-list .btn-center {width:100%; height: 100%;}*/
+
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -6154,11 +6237,11 @@ td .radish-bank-box span {display:block;}
 }
 
 /*.order-list {margin:15px 0;}*/
-.recipe-list {width:100%;}
-	.recipe-list:after {
+.recipe-wrap .recipe-list {width:100%;}
+	.recipe-wrap .recipe-list:after {
 		content:'';display:block;clear:both;
 	}
-	.recipe-list li {
+	.recipe-wrap .recipe-list li {
 		position:relative;
 		float:left;
 		width:25%;
@@ -6170,14 +6253,14 @@ td .radish-bank-box span {display:block;}
 		margin-left: -1px;
 	}
 
-	.recipe-list .img-area {
+	.recipe-wrap .recipe-list .img-area {
 		position:relative;
 		width:100%;
 		height:280px;
 		overflow: hidden;
 	}
-	.recipe-list .img-area img {height: 100%;}
-	.recipe-list .img-area.over:before {
+	.recipe-wrap .recipe-list .img-area img {height: 100%;}
+	.recipe-wrap .recipe-list .img-area.over:before {
 		content: '';
 		width:100%; height:280px;
 		position:absolute; left:0; top:0; background-color:rgba(0,0,0,.8);
@@ -6186,7 +6269,7 @@ td .radish-bank-box span {display:block;}
 		transition:opacity .3s;
 
 	}
-	.recipe-list .title-area {
+	.recipe-wrap .recipe-list .title-area {
 		width:100%;
 		height:60px;
 		font-size: 18px;
@@ -6196,16 +6279,16 @@ td .radish-bank-box span {display:block;}
 		line-height:60px;
 	}
 
-	.recipe-list .btn-center {opacity:0; position:absolute; left:50%; top:40%; margin:-45px -75px;}
-	.recipe-list .btn-center .btn-like {margin-left:0;}
-	.recipe-list li:hover .btn-center {
+	.recipe-wrap .recipe-list .btn-center {opacity:0; position:absolute; left:50%; top:40%; margin:-45px -75px;}
+	.recipe-wrap .recipe-list .btn-center .btn-like {margin-left:0;}
+	.recipe-wrap .recipe-list li:hover .btn-center {
 		opacity:1;
 		-webkit-transition:opacity .3s;
 		-ms-transition:opacity .3s;
 		transition:opacity .3s;
 	}
 
-	.recipe-list .btn-center .time {display: block; height:25px; margin-bottom:15px; line-height:22px; background:url(../img/icon/ico_clock.png) no-repeat 0 0; padding-left:30px; font-size:18px; color:#fff; font-weight: bold;}
+	.recipe-wrap .recipe-list .btn-center .time {display: block; height:25px; margin-bottom:15px; line-height:22px; background:url(../img/icon/ico_clock.png) no-repeat 0 0; padding-left:30px; font-size:18px; color:#fff; font-weight: bold;}
 /*
 	.recipe-list .img-area img {width: 100%; vertical-align: middle;}
 	.recipe-list p {text-align: center;}
