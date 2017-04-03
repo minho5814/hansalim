@@ -5807,23 +5807,24 @@ td .radish-bank-box span {display:block;}
 
 /*한살림소식 검색결과*/
 .grid {
-  max-width: 1200px;
+	max-width: 1200px;
+	margin-top:-11px;
 }
 
 /* clearfix */
 .grid:after {
-  content: '';
-  display: block;
-  clear: both;
+	content: '';
+	display: block;
+	clear: both;
 }
 
 .grid-item {
-  float: left;
-  width: 366px;
-  padding:30px;
-  margin-bottom: 11px;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
+	float: left;
+	width: 366px;
+	margin-top:11px;
+	padding:30px;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
 }
 /*.grid-item:nth-child(1+3n) {margin-left:0;}*/
 .grid-item .title {font-size: 18px; color:#000; font-weight: bold;}
@@ -7420,13 +7421,13 @@ td .radish-bank-box span {display:block;}
 /* 스토어 리스트 */
 .store-list ul {
 	overflow:hidden;
-	margin-left:-6px;
+	margin:-7px 0 0 -6px;
 }
 	.store-list li {
 		float:left;
 		width:368px;
 		height:418px;
-		margin:0 0 7px 7px;
+		margin:7px 0 0 7px;
 		padding:25px 30px;
 		border:1px solid #ddd;
 		box-sizing: border-box;
@@ -7449,7 +7450,7 @@ td .radish-bank-box span {display:block;}
 		padding:0 6px;
 		font-size:13px;
 		font-weight: bold;
-		line-height: 20px;
+		line-height: 21px;
 		border-radius:10px;
 	}
 	.store-list li .operate .type01 {
