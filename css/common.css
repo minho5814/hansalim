@@ -103,6 +103,7 @@ input[type=password] {
 	color:#666;
 	font-size:15px;
 	line-height:30px;
+	letter-spacing:-1px;
 	-webkit-appearance:none;-moz-appearance:none;appearance:none;
 	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
 	vertical-align:top;
@@ -292,6 +293,7 @@ html {
 		.board-write1 .text {
 			padding:5px 0;
 			font-size:15px;
+			font-weight:normal;
 			line-height:22px;
 		}
 	.board-write1 th {
@@ -629,7 +631,7 @@ td.e-mail-form {
 	.bullet-list1 .item:before {
 		content:'';
 		position:absolute;
-		left:0;top:11px;
+		left:0;top:14px;
 		width:3px;
 		height:3px;
 		background-color:#676767;
@@ -1465,7 +1467,8 @@ td.e-mail-form {
 .mgL55 {margin-left:55px !important;}
 .mgL60 {margin-left:60px !important;}
 
-.mgB0 {margin-bottom:0px !important;}
+.mgB0 {margin-bottom:0 !important;}
+.mgB10 {margin-bottom:10px !important;}
 .mgB15 {margin-bottom:15px !important;}
 .mgB20 {margin-bottom:20px !important;}
 .mgB30 {margin-bottom:30px !important;}
@@ -2237,7 +2240,7 @@ td.e-mail-form {
 	right:0;top:50%;
 	width:7px;
 	height:13px;
-	margin-top:-7px;
+	margin-top:-6px;
 	background:url(../img/sprite/button.png) no-repeat 0 -593px;
 }
 
@@ -3558,7 +3561,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		.box-content1 .box-cont .item:before {
 			content:'';
 			position:absolute;
-			left:0;top:13px;
+			left:0;top:12px;
 			width:3px;
 			height:3px;
 			background-color:#676767;
@@ -3695,15 +3698,19 @@ label.check-radio .radiobox {margin-right:8px;}
 	text-align:center;
 }
 	.login-wrap .id-make input {
-		width:430px;
+		width:462px;
 		height:40px;
 		line-height:40px;
 	}
 	.login-wrap .id-make .btn-center {margin-top:18px;}
-	.login-wrap .id-make .btn-center .btn-icon-text {padding:0 35px 0 68px;}
+	.login-wrap .id-make .btn-center .btn-icon-text {padding:0 53px 0 66px;}
 	.login-wrap .id-make .text1 {
+		width:462px;
+		padding-left:25px;
+		margin:0 auto;
 		color:#666;
 		font-size:14px;
+		text-align:left;
 		line-height:37px;
 	}
 
@@ -3784,6 +3791,46 @@ label.check-radio .radiobox {margin-right:8px;}
 	margin:15px auto 0;
 	border-top:1px solid #666;
 }
+/* 조합원 가입안내 */
+.join-info-list {
+	padding:53px 39px 56px;
+	border:1px solid #ddd;
+	border-top:0;
+}
+	.join-info-list .title {
+		color:#000;
+		font-size:18px;
+		font-weight:bold;
+	}
+	.join-info-list .bullet-text {
+		position:relative;
+		margin-top:18px;
+		padding-left:11px;
+		color:#000;
+		font-size:16px;
+		font-weight:bold;
+		line-height:32px;
+	}
+	.join-info-list .bullet-text:before {
+		content:'';
+		position:absolute;
+		left:0;top:15px;
+		width:3px;
+		height:3px;
+		background-color:#676767;
+	}
+	.join-info-list .text {
+		padding-left:11px;
+		color:#666;
+		font-size:15px;
+		line-height:24px;
+	}
+	.join-info-list .green-text {
+		margin-top:20px;
+		color:#60b015;
+		font-size:18px;
+		font-weight:bold;
+	}
 
 /* 조합원 가입 > step 01 (jo/IM-JO0201.html) */
 .join-page {
@@ -3849,7 +3896,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	.query-title-area .cTitle4 {float:left;}
 	.query-title-area .btn-mini-text {
 		float:left;
-		margin:7px 0 0 9px;
+		margin:8px 0 0 9px;
 	}
 
 .query-wrap .hint-layer {
@@ -3975,6 +4022,11 @@ label.check-radio .radiobox {margin-right:8px;}
 			font-size:18px;
 			font-weight:bold;
 			line-height:25px;
+		}
+		.join-page .box-area .box .text {
+			margin-top:5px;
+			color:#666;
+			font-size:15px;
 		}
 	.join-page .box-area .bullet-list1 {margin-top:11px;}
 		.join-page .box-area .bullet-list1 .item {line-height:24px;}
@@ -4713,6 +4765,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		line-height:24px;
 		border-top:1px solid #bbb;
 	}
+	.pd-faq .faq-list li .answer.on {display:block;}
 .inquiry {
 	overflow:hidden;
 	margin-top:60px;
@@ -4928,20 +4981,19 @@ label.check-radio .radiobox {margin-right:8px;}
 	top:20px;
 	width:66px;
 	height:40px;
-	background-color:rgba(0,0,0,.3);
+	background-color:rgba(0,0,0,.1);
 }
 .goods-banner .bx-controls-direction a {float:left; display: inline-block; width:33px; height:40px; text-indent: -9999px; line-height:0; font-size:0;}
 .goods-banner .bx-controls-direction .bx-prev {background:url(../img/btn/btn_bx_prev_33x40.png) no-repeat 0 0;}
 .goods-banner .bx-controls-direction .bx-next {background:url(../img/btn/btn_bx_next_33x40.png) no-repeat 0 0;}
 
 .goods-banner .bx-controls-auto {
-
 	position:absolute;
 	right:20px;
 	top:20px;
 	width:32px;
 	height:40px;
-	background-color:rgba(0,0,0,.3);
+	background-color:rgba(0,0,0,.1);
 }
 .goods-banner .bx-controls-auto .bx-start {
 	float:right; display: inline-block; width:32px; height:40px; text-indent: -9999px; line-height:0; font-size:0;
@@ -5078,7 +5130,7 @@ label.check-radio .radiobox {margin-right:8px;}
 /*view페이지 스타일*/
 .sub-cont .view-area {
 	width: 100%;
-	padding:40px 40px 60px 40px;
+	padding:40px;
 	background-color: #fff;
 	box-sizing: border-box;
 }
@@ -5815,23 +5867,24 @@ td .radish-bank-box span {display:block;}
 
 /*한살림소식 검색결과*/
 .grid {
-  max-width: 1200px;
+	max-width: 1200px;
+	margin-top:-11px;
 }
 
 /* clearfix */
 .grid:after {
-  content: '';
-  display: block;
-  clear: both;
+	content: '';
+	display: block;
+	clear: both;
 }
 
 .grid-item {
-  float: left;
-  width: 366px;
-  padding:30px;
-  margin-bottom: 11px;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
+	float: left;
+	width: 366px;
+	margin-top:11px;
+	padding:30px;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
 }
 /*.grid-item:nth-child(1+3n) {margin-left:0;}*/
 .grid-item .title {font-size: 18px; color:#000; font-weight: bold;}
@@ -6002,6 +6055,10 @@ td .radish-bank-box span {display:block;}
 	box-sizing:border-box;
 	border:1px solid #ddd;
 	background-color:#fff;
+}
+.goods-item1 .ico-round2 {
+	position:absolute;
+	left:80px;top:10px;
 }
 	.goods-item1 .img-area {
 		width:128px;
@@ -6523,6 +6580,8 @@ td .radish-bank-box span {display:block;}
 .recommend-list .bx-controls-direction .bx-prev{position: absolute;left:0; top:0; border-right: 0; background: url(../img/btn/btn_bx_prev_39x48.png) center no-repeat; }
 .recommend-list .bx-controls-direction .bx-next{position: absolute;right:0; top:0; background: url(../img/btn/btn_bx_next_39x48.png) center no-repeat;}
 
+.recommend-list .bx-controls-direction .bx-prev.off,
+.recommend-list .bx-controls-direction .bx-next.off {background-color: #ddd; cursor:default;}
 
 .recommend-area .tab-content4 {
 	padding:30px;
@@ -7424,13 +7483,13 @@ td .radish-bank-box span {display:block;}
 /* 스토어 리스트 */
 .store-list ul {
 	overflow:hidden;
-	margin-left:-6px;
+	margin:-7px 0 0 -6px;
 }
 	.store-list li {
 		float:left;
 		width:368px;
 		height:418px;
-		margin:0 0 7px 7px;
+		margin:7px 0 0 7px;
 		padding:25px 30px;
 		border:1px solid #ddd;
 		box-sizing: border-box;
@@ -7453,7 +7512,7 @@ td .radish-bank-box span {display:block;}
 		padding:0 6px;
 		font-size:13px;
 		font-weight: bold;
-		line-height: 20px;
+		line-height: 21px;
 		border-radius:10px;
 	}
 	.store-list li .operate .type01 {
