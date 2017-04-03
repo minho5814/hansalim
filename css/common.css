@@ -1458,7 +1458,8 @@ td.e-mail-form {
 .mgL55 {margin-left:55px !important;}
 .mgL60 {margin-left:60px !important;}
 
-.mgB0 {margin-bottom:0px !important;}
+.mgB0 {margin-bottom:0 !important;}
+.mgB10 {margin-bottom:10px !important;}
 .mgB15 {margin-bottom:15px !important;}
 .mgB20 {margin-bottom:20px !important;}
 .mgB30 {margin-bottom:30px !important;}
@@ -4012,6 +4013,11 @@ label.check-radio .radiobox {margin-right:8px;}
 			font-size:18px;
 			font-weight:bold;
 			line-height:25px;
+		}
+		.join-page .box-area .box .text {
+			margin-top:5px;
+			color:#666;
+			font-size:15px;
 		}
 	.join-page .box-area .bullet-list1 {margin-top:11px;}
 		.join-page .box-area .bullet-list1 .item {line-height:24px;}
