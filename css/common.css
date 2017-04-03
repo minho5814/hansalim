@@ -119,8 +119,8 @@ input[type=password]:disabled {
 }
 input[type=password].click {font-family:돋움, Dotum, Arial, Helvetica, sans-serif;}
 
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
 	-webkit-appearance:none;
 	margin:0;
 }
@@ -6175,11 +6175,12 @@ td .radish-bank-box span {display:block;}
 }
 .list-wrap .order-list {margin-bottom:15px;}
 .list-wrap .grid-item {position: relative;}
-.list-wrap .grid-item:hover .btn-center {
-	opacity:1;
-	-webkit-transition:opacity .3s;
-	-ms-transition:opacity .3s;
-	transition:opacity .3s;
+.list-wrap .grid-item .over-layer {
+	display:none;
+	opacity:0;
+	position:absolute;
+	left:0;right:0;top:0;bottom:0;
+	background-color:rgba(0,0,0,.5);
 }
 .list-wrap .grid-item .btn-center {
 	margin-top:0;
@@ -6188,25 +6189,15 @@ td .radish-bank-box span {display:block;}
 	-webkit-transform:translate(-50%,-50%);
 	-ms-transform:translate(-50%,-50%);
 	transform:translate(-50%,-50%);
-	opacity:0;
 }
-.list-wrap .grid-item:before {
-	content:'';
-	position: absolute;
-	left:0;
-	right:0;
-	top:0;
-	bottom:0;
-	margin-top:0;
-	 background-color:rgba(0,0,0,.5);
-	 opacity: 0;
-}
-.list-wrap .grid-item.on:before {
+.list-wrap .grid-item:hover .over-layer {display:block;}/* hover */
+.list-wrap .grid-item .over-layer:hover {
 	opacity:1;
 	-webkit-transition:opacity .3s;
 	-ms-transition:opacity .3s;
 	transition:opacity .3s;
-}
+}/* hover */
+
 
 /*나의한살림 상세*/
 .sub-cont {overflow: hidden;}
@@ -6511,14 +6502,21 @@ td .radish-bank-box span {display:block;}
 }
 
 /*조합원 추천물품*/
-.recomend-area .tab-content4 {
-	padding:30px 0;
+.recommend-list {position: relative;}
+.recommend-list  .bx-viewport {width:1040px !important; margin:0 auto;}
+.recommend-list .bx-controls-direction a {width:40px; height:50px; border:1px solid #bbb; text-indent: -9999; font-size: 0; line-height: 0;}
+.recommend-list .bx-controls-direction .bx-prev{position: absolute;left:0; top:0; border-right: 0; background: url(../img/btn/btn_bx_prev_39x48.png) center no-repeat; }
+.recommend-list .bx-controls-direction .bx-next{position: absolute;right:0; top:0; background: url(../img/btn/btn_bx_next_39x48.png) center no-repeat;}
+
+
+.recommend-area .tab-content4 {
+	padding:30px;
 	margin-top:20px;
 	border:1px solid #ddd;
 	text-align: center;
 
 }
-.recomend-area .tab-content4 p {
+.recommend-area .tab-content4 p {
 	position: relative;
 	display: inline-block;
 	padding-left: 20px;
@@ -6527,7 +6525,7 @@ td .radish-bank-box span {display:block;}
 	padding-left: 40px;
 
 }
-.recomend-area .tab-content4 p:before {
+.recommend-area .tab-content4 p:before {
 	content: '';
 	position: absolute;
 	left:0; top:0;
