@@ -2188,6 +2188,7 @@ td.e-mail-form {
     font-size: 0;
     text-indent: -9999px;
     line-height: 0;
+	vertical-align: top;
     cursor: pointer;
 	background-image:url(../img/btn/btn_question.png);
 	background-repeat:no-repeat;
@@ -7336,9 +7337,6 @@ td .radish-bank-box span {display:block;}
 	margin-left:3px;
 	background:url(../img/btn/btn_question.png) 0 0 no-repeat;
 }
-.total-price dl dt .tip:hover .inner-box {
-	display: block;
-}
 .total-price dl dt .tip .inner-box {
 	display: none;
 	position: absolute;
@@ -7346,6 +7344,9 @@ td .radish-bank-box span {display:block;}
 	z-index:10;
 	transform: translateX(100px);
 	padding-top:4px;
+}
+.total-price dl dt .tip:hover .inner-box {
+	display: block;
 }
 .total-price dl dt .tip .inner-box:before {
 	content: '';
