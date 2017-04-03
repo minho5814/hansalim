@@ -119,6 +119,12 @@ input[type=password]:disabled {
 }
 input[type=password].click {font-family:돋움, Dotum, Arial, Helvetica, sans-serif;}
 
+input[type=text]::-ms-clear,
+input[type=number]::-ms-clear,
+input[type=password]::-ms-clear {
+	display: none;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance:none;
