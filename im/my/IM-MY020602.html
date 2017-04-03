@@ -7,6 +7,30 @@
 
 	<link rel="stylesheet" type="text/css" href="../../css/common.css">
 	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+	<style media="screen">
+		.sece-notice {
+			padding:28px 28px 30px 38px;
+			border:1px solid #ddd;
+			box-sizing:border-box;
+		}
+		.sece-notice dl dt {
+			margin-top:16px;
+			font-weight:bold;
+		}
+		.sece-notice dl dt,
+		.sece-notice dl dd {
+			font-size:15px;
+			color:#000;
+			letter-spacing:-0.5px;
+		}
+		.sece-notice dl dd {
+			color:#666;
+		}
+		.sece-notice dl dd .gray-text{
+			font-size:14px;
+			color:#999;
+		}
+	</style>
 </head>
 
 <body>
@@ -828,10 +852,6 @@
 			</div>
 		</div>
 
-		<div class="content-banner">
-			<!-- 고객 주요 정보 노출 영역 (기획설계 중) -->
-		</div>
-
 		<div class="lnb-container">
 			<!-- LNB -->
 			<div class="lnb">
@@ -892,17 +912,140 @@
 			<!-- /LNB -->
 			<div class="content">
 				<h3 class="cTitle1">탈퇴신청</h3>
+				<ul class="step-list three-step">
+					<li class="step-item item1"><p class="text"><span class="step">step 1</span>한살림조합원확인</p></li>
+					<li class="step-item item2 on"><p class="text"><span class="step">step 2</span>탈퇴사유</p></li>
+					<li class="step-item item3"><p class="text"><span class="step">step 3</span>탈퇴신청완료</p></li>
+				</ul>
 				<div class="cont-box">
-					<div class="order-complete">
-						<p class="text-green">탈퇴신청완료</p>
-						<p class="fColor2">
-							업무일 기준 24시간 이내 담당실무자가 연락 드리겠습니다.<br>
-							(탈퇴처리 및 출자금 송금까지는 1~2일 소요됨)
-						</p>
-						<p class="fColor2 mgT15">기타 문의사항이 있으시면 해당 지역 한살림으로 연락 주시기 바랍니다.</p>
-						<div class="btn-center">
-							<a href="#" class="btn-text btn-green">확인</a>
+					<div class="shopping-history">
+						<div class="inner-box">
+							<dl>
+								<dt>보유내역</dt>
+								<dd>
+									<ul>
+										<li>출자금<span class="number"><em class="fColor3">30,000</em>원</span></li>
+										<li>적립금<span class="number"><em class="fColor3">10,000</em>원</span></li>
+										<li>선수금 잔액<span class="number"><em class="fColor3">5,000</em>원</span></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl>
+								<dt>미정산내역</dt>
+								<dd>
+									<ul>
+										<li>공급외상<span class="number"><em class="fColor3">0</em>원</span></li>
+										<li>매장 미정산<span class="number"><em class="fColor3">0</em>원</span></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl>
+								<dt>미수내역</dt>
+								<dd>
+									<ul>
+										<li>공급상자<span class="number"><em class="fColor3">3</em>개</span></li>
+										<li>보냉상자<span class="number"><em class="fColor3">0</em>개</span></li>
+										<li>장바구니<span class="number"><em class="fColor3">1</em>개</span></li>
+									</ul>
+								</dd>
+							</dl>
 						</div>
+						<p class="text">※ <strong>미정산내역 또는 미수내역이 존재</strong>할 경우 <strong>출자금에서 금액차감</strong> 될 수 있습니다. 관련하여 담당실무자가 연락드릴 예정입니다.</p>
+					</div>
+
+					<div class="board-wrap mgT60">
+						<div class="title-wrap">
+							<h3 class="cTitle4">탈퇴사유</h3>
+						</div>
+						<div class="board-write1">
+							<table>
+								<colgroup>
+									<col style="width:160px;">
+									<col style="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><div class="text">탈퇴사유</div></th>
+										<td>
+											<div class="secede-group">
+												<label class="item" for="secede1"><input type="radio" id="secede1" name="secede" class="styled1" checked>이사</label>
+												<label class="item" for="secede2"><input type="radio" id="secede2" name="secede" class="styled1">구매처이동</label>
+												<label class="item" for="secede3"><input type="radio" id="secede3" name="secede" class="styled1">매장이용불편</label>
+												<label class="item" for="secede4"><input type="radio" id="secede4" name="secede" class="styled1">공급이용불편</label>
+												<label class="item" for="secede5"><input type="radio" id="secede5" name="secede" class="styled1">물품불만</label>
+											</div>
+											<div class="secede-group">
+												<label class="item" for="secede6"><input type="radio" id="secede6" name="secede" class="styled1">이용안함</label>
+												<label class="item" for="secede7"><input type="radio" id="secede7" name="secede" class="styled1">기타</label>
+												<label class="item" for="secede8"><input type="radio" id="secede8" name="secede" class="styled1">사망</label>
+												<label class="item" for="secede9"><input type="radio" id="secede9" name="secede" class="styled1">이용불편</label>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><div class="text">비고</div></th>
+										<td><input type="text" value="" style="width:100%;"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="board-wrap mgT25">
+						<div class="title-wrap">
+							<h3 class="cTitle4">출자금 환불정보</h3>
+						</div>
+						<div class="board-write1">
+							<table>
+								<colgroup>
+									<col style="width:160px;">
+									<col style="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><div class="text">환불수단</div></th>
+										<td>
+											<label class="item" for="refund1"><input type="radio" id="refund1" name="Refund" class="styled1" checked>CMS(자동이체)계좌</label>
+											<label class="item mgL35" for="refund2"><input type="radio" id="refund2" name="Refund" class="styled1">타 계좌(본인명의)</label>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><div class="text">입금은행</div></th>
+										<td>
+											<select class="styled1" style="width:240px;">
+												<option>선택해주세요</option>
+												<option>선택해주세요</option>
+												<option>선택해주세요</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><div class="text">계좌번호</div></th>
+										<td>
+											<input type="number" value="" style="width:240px;"><span class="notice-text02">※ - 없이 입력해주세요.</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><div class="text">예금주명</div></th>
+										<td><input type="text" value="" style="width:240px;"></td>
+									</tr>
+									<tr>
+										<th scope="row"><div class="text">예금주 연락처</div></th>
+										<td>
+											<select class="styled1" style="width:100px;">
+												<option>010</option>
+												<option>011</option>
+												<option>017</option>
+											</select>
+											<input type="number" value="" style="width:100px;">
+											<input type="number" value="" style="width:100px;">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="btn-center mgT60">
+						<a href="#" class="btn-text btn-green">탈퇴신청</a>
 					</div>
 				</div>
 			</div>

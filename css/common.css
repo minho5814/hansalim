@@ -103,6 +103,7 @@ input[type=password] {
 	color:#666;
 	font-size:15px;
 	line-height:30px;
+	letter-spacing:-1px;
 	-webkit-appearance:none;-moz-appearance:none;appearance:none;
 	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
 	vertical-align:top;
@@ -630,7 +631,7 @@ td.e-mail-form {
 	.bullet-list1 .item:before {
 		content:'';
 		position:absolute;
-		left:0;top:11px;
+		left:0;top:14px;
 		width:3px;
 		height:3px;
 		background-color:#676767;
@@ -1409,7 +1410,16 @@ td.e-mail-form {
 				background-color:#60b015;
 			}/* on */
 
-
+.step-list.three-step .step-item {
+	width:33%;
+}
+.step-list.three-step .step-item:first-child {
+	width:34%;
+}
+.step-list.three-step .step-item .text{
+	width:100%;
+	box-sizing: border-box;
+}
 /* =========================================================================================================
 	공통
 ========================================================================================================= */
@@ -1457,7 +1467,8 @@ td.e-mail-form {
 .mgL55 {margin-left:55px !important;}
 .mgL60 {margin-left:60px !important;}
 
-.mgB0 {margin-bottom:0px !important;}
+.mgB0 {margin-bottom:0 !important;}
+.mgB10 {margin-bottom:10px !important;}
 .mgB15 {margin-bottom:15px !important;}
 .mgB20 {margin-bottom:20px !important;}
 .mgB30 {margin-bottom:30px !important;}
@@ -1751,7 +1762,7 @@ td.e-mail-form {
 	font-size:14px;
 	font-weight:bold;
 	text-align:center;
-	line-height:25px;
+	line-height:26px;
 }
 .btn-mini-text.btn-box-green {
 	border-color:#7eb533;
@@ -3572,7 +3583,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		.box-content1 .box-cont .item:before {
 			content:'';
 			position:absolute;
-			left:0;top:13px;
+			left:0;top:12px;
 			width:3px;
 			height:3px;
 			background-color:#676767;
@@ -3802,6 +3813,46 @@ label.check-radio .radiobox {margin-right:8px;}
 	margin:15px auto 0;
 	border-top:1px solid #666;
 }
+/* 조합원 가입안내 */
+.join-info-list {
+	padding:53px 39px 56px;
+	border:1px solid #ddd;
+	border-top:0;
+}
+	.join-info-list .title {
+		color:#000;
+		font-size:18px;
+		font-weight:bold;
+	}
+	.join-info-list .bullet-text {
+		position:relative;
+		margin-top:18px;
+		padding-left:11px;
+		color:#000;
+		font-size:16px;
+		font-weight:bold;
+		line-height:32px;
+	}
+	.join-info-list .bullet-text:before {
+		content:'';
+		position:absolute;
+		left:0;top:15px;
+		width:3px;
+		height:3px;
+		background-color:#676767;
+	}
+	.join-info-list .text {
+		padding-left:11px;
+		color:#666;
+		font-size:15px;
+		line-height:24px;
+	}
+	.join-info-list .green-text {
+		margin-top:20px;
+		color:#60b015;
+		font-size:18px;
+		font-weight:bold;
+	}
 
 /* 조합원 가입 > step 01 (jo/IM-JO0201.html) */
 .join-page {
@@ -3867,7 +3918,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	.query-title-area .cTitle4 {float:left;}
 	.query-title-area .btn-mini-text {
 		float:left;
-		margin:7px 0 0 9px;
+		margin:8px 0 0 9px;
 	}
 
 .query-wrap .hint-layer {
@@ -3993,6 +4044,11 @@ label.check-radio .radiobox {margin-right:8px;}
 			font-size:18px;
 			font-weight:bold;
 			line-height:25px;
+		}
+		.join-page .box-area .box .text {
+			margin-top:5px;
+			color:#666;
+			font-size:15px;
 		}
 	.join-page .box-area .bullet-list1 {margin-top:11px;}
 		.join-page .box-area .bullet-list1 .item {line-height:24px;}
@@ -7002,7 +7058,7 @@ td .radish-bank-box span {display:block;}
 	font-weight: bold;
 	text-align: center;
 }
-.app-content .qr-code .info-text {
+.app-content .qr-code .text {
 	font-size:15px;
 	color:#666;
 	line-height: 24px;
@@ -7705,6 +7761,72 @@ td .radish-bank-box span {display:block;}
 }
 .pw-confirm input[type=password] {
 	width:240px;
+}
+
+.shopping-history {
+	margin-top:40px;
+}
+.shopping-history .text {
+	margin-top:15px;
+	color:#999;
+}
+.shopping-history .text strong {
+	color:#666;
+}
+.shopping-history .inner-box{
+	overflow: hidden;
+	border:4px solid #ddd;
+}
+.shopping-history dl {
+	float:left;
+	width:33%;
+	border-left:1px solid #ddd;
+	box-sizing: border-box;
+}
+.shopping-history dl:first-child {
+	width:34%;
+	border-left:0;
+}
+.shopping-history dl dt {
+	font-size:#000;
+	font-size:18px;
+	font-weight: bold;
+	text-align:center;
+	line-height: 46px;
+	background-color:#f7f7f7;
+}
+.shopping-history dl dd {
+	position: relative;
+	height:92px;
+	font-size:15px;
+	color:#000;
+}
+.shopping-history dl dd ul{
+	position: absolute;
+	top: 50%;
+	left: 50px;
+	right: 50px;
+	transform: translateY(-50%);
+}
+
+.shopping-history dl dd ul li {
+	overflow: hidden;
+}
+.shopping-history dl dd .number {
+	float:right;
+}
+.shopping-history dl dd .number em {
+	font-size:16px;
+	font-weight: bold;
+}
+
+.secede-group {
+	overflow:hidden;
+	margin:8px 0;
+}
+.secede-group .item {
+	float:left;
+	width:20%;
 }
 /* 나의 알림 */
 .my-notice-area {}
