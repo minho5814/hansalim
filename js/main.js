@@ -134,10 +134,4 @@ $(window).load(function(){
 		columnWidth:366,
 		gutter:11
 	});
-	$('.grid-item').mouseenter(function(){
-		$(this).addClass('on');
-	});
-	$('.grid-item').mouseleave(function(){
-		$(this).removeClass('on');
-	});
 });
