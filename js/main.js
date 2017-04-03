@@ -119,4 +119,13 @@ $(window).load(function(){
 		$('.tab-text').removeClass('on').eq(idx).addClass('on');
 		$('.recommend-tab .right-slide .thumb-slide1').removeClass('on').hide().eq(idx).addClass('on').show();
 	});
+
+	/* 이즈음 밥상 */
+	$('.recipe-cont .bxslider').each(function(){
+		$(this).bxSlider({
+			infiniteLoop:false,
+			hideControlOnEnd: true,
+			speed:400
+		});
+	});
 });
