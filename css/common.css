@@ -8501,7 +8501,7 @@ td .radish-bank-box span {display:block;}
 .find-list li:first-child {
 	border-top:0;
 }
-.find-list li .num {
+.find-list li .pointer {
 	position: absolute;
 	top:25px; left: 23px;
 	width:26px; height:32px;
@@ -8513,10 +8513,13 @@ td .radish-bank-box span {display:block;}
 	font-weight: bold;
 	text-align: center;
 }
-.find-list li.on .num,
-.find-list li:hover .num {
+.find-list li.on .pointer,
+.find-list li:hover .pointer {
 	background:url(../img/bg/bg_spot_on.png) 0 0 no-repeat;
 	color:#fff;
+}
+.find-list li .pointer.type02 {
+	font-size:12px;
 }
 .find-list li dl {margin-left:37px;}
 .find-list li dl dt {
@@ -8814,6 +8817,14 @@ td .radish-bank-box span {display:block;}
 	width:98px; height:27px;
 	border:2px solid #60b015;
 }
+
+.transport-cont {
+	overflow-x: hidden;
+	overflow-y: auto;
+	max-height: 468px;
+}
+
+/* 매장 슬라이드 */
 .thumb-slide4 {position:relative;}
 .thumb-slide4 .bxslider .item {
 	width:336px;
