@@ -1499,6 +1499,28 @@ td.e-mail-form {
 /*width*/
 .wid80 {width:80% !important;}
 
+/*타이틀 비주얼 영역*/
+.blue{d6f6eb}
+.bg-title {
+	width:1120px;
+	height:200px;
+	margin:0 auto;
+	background:url(../img/bg/bg_title1.png) no-repeat right bottom;
+}
+
+.bg-title-text {
+	width:1120px;
+
+}
+.bg-title-text h2 {
+	display: inline-block;
+	font-size: 58px;
+	font-weight: 900;
+	line-height: 58px;
+	letter-spacing: -1px;
+	vertical-align: middle;
+}
+.bg-title-text span {padding-left:30px; font-size: 22px; vertical-align: middle;}
 /* 타이틀 박스 */
 .title-wrap {
 	overflow:hidden;
