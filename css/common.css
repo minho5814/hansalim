@@ -4966,20 +4966,19 @@ label.check-radio .radiobox {margin-right:8px;}
 	top:20px;
 	width:66px;
 	height:40px;
-	background-color:rgba(0,0,0,.3);
+	background-color:rgba(0,0,0,.1);
 }
 .goods-banner .bx-controls-direction a {float:left; display: inline-block; width:33px; height:40px; text-indent: -9999px; line-height:0; font-size:0;}
 .goods-banner .bx-controls-direction .bx-prev {background:url(../img/btn/btn_bx_prev_33x40.png) no-repeat 0 0;}
 .goods-banner .bx-controls-direction .bx-next {background:url(../img/btn/btn_bx_next_33x40.png) no-repeat 0 0;}
 
 .goods-banner .bx-controls-auto {
-
 	position:absolute;
 	right:20px;
 	top:20px;
 	width:32px;
 	height:40px;
-	background-color:rgba(0,0,0,.3);
+	background-color:rgba(0,0,0,.1);
 }
 .goods-banner .bx-controls-auto .bx-start {
 	float:right; display: inline-block; width:32px; height:40px; text-indent: -9999px; line-height:0; font-size:0;
@@ -5116,7 +5115,7 @@ label.check-radio .radiobox {margin-right:8px;}
 /*view페이지 스타일*/
 .sub-cont .view-area {
 	width: 100%;
-	padding:40px 40px 60px 40px;
+	padding:40px;
 	background-color: #fff;
 	box-sizing: border-box;
 }
