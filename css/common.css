@@ -6508,6 +6508,8 @@ td .radish-bank-box span {display:block;}
 .recommend-list .bx-controls-direction .bx-prev{position: absolute;left:0; top:0; border-right: 0; background: url(../img/btn/btn_bx_prev_39x48.png) center no-repeat; }
 .recommend-list .bx-controls-direction .bx-next{position: absolute;right:0; top:0; background: url(../img/btn/btn_bx_next_39x48.png) center no-repeat;}
 
+.recommend-list .bx-controls-direction .bx-prev.off,
+.recommend-list .bx-controls-direction .bx-next.off {background-color: #ddd; cursor:default;}
 
 .recommend-area .tab-content4 {
 	padding:30px;
