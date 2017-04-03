@@ -2362,7 +2362,13 @@ $(window).load(function(){
 	$('.text.selected').each(function(){
 		$(this).parents('.jstree-anchor').click();
 	});
+
 	$('.tree-list').css({'opacity':'1'});
+
+	$('.btn-all-check').click(function(){
+		$.jstree.reference('.tree-list');
+	});
+
 });
 </script>
 </body>
