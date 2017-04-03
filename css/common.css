@@ -1408,7 +1408,16 @@ td.e-mail-form {
 				background-color:#60b015;
 			}/* on */
 
-
+.step-list.three-step .step-item {
+	width:33%;
+}
+.step-list.three-step .step-item:first-child {
+	width:34%;
+}
+.step-list.three-step .step-item .text{
+	width:100%;
+	box-sizing: border-box;
+}
 /* =========================================================================================================
 	공통
 ========================================================================================================= */
@@ -6968,7 +6977,7 @@ td .radish-bank-box span {display:block;}
 	font-weight: bold;
 	text-align: center;
 }
-.app-content .qr-code .info-text {
+.app-content .qr-code .text {
 	font-size:15px;
 	color:#666;
 	line-height: 24px;
@@ -7671,6 +7680,72 @@ td .radish-bank-box span {display:block;}
 }
 .pw-confirm input[type=password] {
 	width:240px;
+}
+
+.shopping-history {
+	margin-top:40px;
+}
+.shopping-history .text {
+	margin-top:15px;
+	color:#999;
+}
+.shopping-history .text strong {
+	color:#666;
+}
+.shopping-history .inner-box{
+	overflow: hidden;
+	border:4px solid #ddd;
+}
+.shopping-history dl {
+	float:left;
+	width:33%;
+	border-left:1px solid #ddd;
+	box-sizing: border-box;
+}
+.shopping-history dl:first-child {
+	width:34%;
+	border-left:0;
+}
+.shopping-history dl dt {
+	font-size:#000;
+	font-size:18px;
+	font-weight: bold;
+	text-align:center;
+	line-height: 46px;
+	background-color:#f7f7f7;
+}
+.shopping-history dl dd {
+	position: relative;
+	height:92px;
+	font-size:15px;
+	color:#000;
+}
+.shopping-history dl dd ul{
+	position: absolute;
+	top: 50%;
+	left: 50px;
+	right: 50px;
+	transform: translateY(-50%);
+}
+
+.shopping-history dl dd ul li {
+	overflow: hidden;
+}
+.shopping-history dl dd .number {
+	float:right;
+}
+.shopping-history dl dd .number em {
+	font-size:16px;
+	font-weight: bold;
+}
+
+.secede-group {
+	overflow:hidden;
+	margin:8px 0;
+}
+.secede-group .item {
+	float:left;
+	width:20%;
 }
 /* 나의 알림 */
 .my-notice-area {}
