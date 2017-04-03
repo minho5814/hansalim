@@ -292,6 +292,7 @@ html {
 		.board-write1 .text {
 			padding:5px 0;
 			font-size:15px;
+			font-weight:normal;
 			line-height:22px;
 		}
 	.board-write1 th {
@@ -1728,7 +1729,7 @@ td.e-mail-form {
 	font-size:14px;
 	font-weight:bold;
 	text-align:center;
-	line-height:26px;
+	line-height:25px;
 }
 .btn-mini-text.btn-box-green {
 	border-color:#7eb533;
@@ -2228,7 +2229,7 @@ td.e-mail-form {
 	right:0;top:50%;
 	width:7px;
 	height:13px;
-	margin-top:-7px;
+	margin-top:-6px;
 	background:url(../img/sprite/button.png) no-repeat 0 -593px;
 }
 
@@ -3686,15 +3687,19 @@ label.check-radio .radiobox {margin-right:8px;}
 	text-align:center;
 }
 	.login-wrap .id-make input {
-		width:430px;
+		width:462px;
 		height:40px;
 		line-height:40px;
 	}
 	.login-wrap .id-make .btn-center {margin-top:18px;}
-	.login-wrap .id-make .btn-center .btn-icon-text {padding:0 35px 0 68px;}
+	.login-wrap .id-make .btn-center .btn-icon-text {padding:0 53px 0 66px;}
 	.login-wrap .id-make .text1 {
+		width:462px;
+		padding-left:25px;
+		margin:0 auto;
 		color:#666;
 		font-size:14px;
+		text-align:left;
 		line-height:37px;
 	}
 
