@@ -6490,14 +6490,21 @@ td .radish-bank-box span {display:block;}
 }
 
 /*조합원 추천물품*/
-.recomend-area .tab-content4 {
-	padding:30px 0;
+.recommend-list {position: relative;}
+.recommend-list  .bx-viewport {width:1040px !important; margin:0 auto;}
+.recommend-list .bx-controls-direction a {width:40px; height:50px; border:1px solid #bbb; text-indent: -9999; font-size: 0; line-height: 0;}
+.recommend-list .bx-controls-direction .bx-prev{position: absolute;left:0; top:0; border-right: 0; background: url(../img/btn/btn_bx_prev_39x48.png) center no-repeat; }
+.recommend-list .bx-controls-direction .bx-next{position: absolute;right:0; top:0; background: url(../img/btn/btn_bx_next_39x48.png) center no-repeat;}
+
+
+.recommend-area .tab-content4 {
+	padding:30px;
 	margin-top:20px;
 	border:1px solid #ddd;
 	text-align: center;
 
 }
-.recomend-area .tab-content4 p {
+.recommend-area .tab-content4 p {
 	position: relative;
 	display: inline-block;
 	padding-left: 20px;
@@ -6506,7 +6513,7 @@ td .radish-bank-box span {display:block;}
 	padding-left: 40px;
 
 }
-.recomend-area .tab-content4 p:before {
+.recommend-area .tab-content4 p:before {
 	content: '';
 	position: absolute;
 	left:0; top:0;
