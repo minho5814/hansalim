@@ -128,4 +128,16 @@ $(window).load(function(){
 			speed:400
 		});
 	});
+
+	$('.grid').masonry({
+		itemSelector:'.grid-item',
+		columnWidth:366,
+		gutter:11
+	});
+	$('.grid-item').mouseenter(function(){
+		$(this).addClass('on');
+	});
+	$('.grid-item').mouseleave(function(){
+		$(this).removeClass('on');
+	});
 });

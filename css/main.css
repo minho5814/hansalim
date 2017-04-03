@@ -371,7 +371,7 @@
 	.recommend-tab .right-slide .thumb-slide1 .bx-pager {margin:28px 0 0 -280px;}
 	.recommend-tab .right-slide .thumb-slide1 .bx-controls-direction a {top:352px;}
 
-
+/* 이즈음 밥상 */
 .recipe-cont {
 	position:relative;
 	width:1120px;
@@ -452,25 +452,6 @@
 			line-height:38px;
 		}
 	.recipe-cont .recipe-top {}
-	.recipe-cont .bx-pager {display:none;}
-	.recipe-cont .bx-controls-direction {}
-		.recipe-cont .bx-controls-direction a {
-			display:block;
-			position:absolute;
-			z-index:6;
-			top:185px;
-			width:30px;
-			height:50px;
-			background-color:rgba(0,0,0,.4);
-			background-repeat:no-repeat;
-			background-position:50% 50%;
-			font-size:0;
-			text-indent:-9999px;
-			line-height:0;
-		}
-		.recipe-cont .bx-controls-direction .bx-prev {left:0;background-image:url(../img/btn/btn_bx_prev01.png);}
-		.recipe-cont .bx-controls-direction .bx-next {right:0;background-image:url(../img/btn/btn_bx_next01.png);}
-		.recipe-cont .bx-controls-direction a.disabled {display:none;}
 
 	.recipe-cont .recipe-goods {
 		margin-top:27px;
@@ -481,12 +462,12 @@
 			margin-top:7px;
 		}
 		.recipe-cont .recipe-goods .goods-item1 {border:0;}
-	.recipe-cont .recipe-goods .btn-area {
+	.recipe-cont .recipe-goods .btn-more-area {
 		margin-top:20px;
 		border-top:1px solid #bbb;
 		text-align:center;
 	}
-		.recipe-cont .recipe-goods .btn-area .btn-goods-more {
+		.recipe-cont .recipe-goods .btn-more-area .btn-goods-more {
 			position:relative;
 			height:39px;
 			padding:0 44px 0 30px;
@@ -498,7 +479,7 @@
 			font-weight:bold;
 			line-height:38px;
 		}
-		.recipe-cont .recipe-goods .btn-area .btn-goods-more:before {
+		.recipe-cont .recipe-goods .btn-more-area .btn-goods-more:before {
 			content:'';
 			position:absolute;
 			right:30px;top:0;bottom:0;
@@ -506,4 +487,51 @@
 			background:url(../img/btn/btn_more.png) no-repeat 0 50%;
 		}
 
-	.recipe-cont {}
+.recipe-cont .bx-pager {
+	overflow:hidden;
+	height:14px;
+	margin-top:25px;
+	font-size:0;
+	text-align:center;
+	line-height:0;
+}
+	.recipe-cont .bx-pager .bx-pager-item {
+		display:inline-block;
+		margin-left:6px;
+	}
+	.recipe-cont .bx-pager .bx-pager-item:first-child {margin-left:0;}
+		.recipe-cont .bx-pager .bx-pager-item .bx-pager-link {
+			display:inline-block;
+			width:14px;
+			height:14px;
+			border-radius:50%;
+			background-color:#8a8a8a;
+			text-indent:-9999px;
+		}
+		.recipe-cont .bx-pager .bx-pager-item .bx-pager-link.active {background-color:#000;}
+	.recipe-cont .bx-pager {}
+	.recipe-cont .bx-pager {}
+.recipe-cont .bx-controls-direction {}
+	.recipe-cont .bx-controls-direction a {
+		display:block;
+		position:absolute;
+		z-index:6;
+		top:185px;
+		width:30px;
+		height:50px;
+		background-color:rgba(0,0,0,.4);
+		background-repeat:no-repeat;
+		background-position:50% 50%;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+	}
+	.recipe-cont .bx-controls-direction .bx-prev {left:0;background-image:url(../img/btn/btn_bx_prev01.png);}
+	.recipe-cont .bx-controls-direction .bx-next {right:0;background-image:url(../img/btn/btn_bx_next01.png);}
+	.recipe-cont .bx-controls-direction a.disabled {display:none;}
+
+/* 한살림 소식 */
+.list-wrap {
+	width:1120px;
+	margin:0 auto;
+}
