@@ -119,8 +119,14 @@ input[type=password]:disabled {
 }
 input[type=password].click {font-family:돋움, Dotum, Arial, Helvetica, sans-serif;}
 
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
+input[type=text]::-ms-clear,
+input[type=number]::-ms-clear,
+input[type=password]::-ms-clear {
+	display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
 	-webkit-appearance:none;
 	margin:0;
 }
@@ -4698,6 +4704,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		line-height:24px;
 		border-top:1px solid #bbb;
 	}
+	.pd-faq .faq-list li .answer.on {display:block;}
 .inquiry {
 	overflow:hidden;
 	margin-top:60px;
@@ -5800,23 +5807,24 @@ td .radish-bank-box span {display:block;}
 
 /*한살림소식 검색결과*/
 .grid {
-  max-width: 1200px;
+	max-width: 1200px;
+	margin-top:-11px;
 }
 
 /* clearfix */
 .grid:after {
-  content: '';
-  display: block;
-  clear: both;
+	content: '';
+	display: block;
+	clear: both;
 }
 
 .grid-item {
-  float: left;
-  width: 366px;
-  padding:30px;
-  margin-bottom: 11px;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
+	float: left;
+	width: 366px;
+	margin-top:11px;
+	padding:30px;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
 }
 /*.grid-item:nth-child(1+3n) {margin-left:0;}*/
 .grid-item .title {font-size: 18px; color:#000; font-weight: bold;}
@@ -5987,6 +5995,10 @@ td .radish-bank-box span {display:block;}
 	box-sizing:border-box;
 	border:1px solid #ddd;
 	background-color:#fff;
+}
+.goods-item1 .ico-round2 {
+	position:absolute;
+	left:80px;top:10px;
 }
 	.goods-item1 .img-area {
 		width:128px;
@@ -7411,13 +7423,13 @@ td .radish-bank-box span {display:block;}
 /* 스토어 리스트 */
 .store-list ul {
 	overflow:hidden;
-	margin-left:-6px;
+	margin:-7px 0 0 -6px;
 }
 	.store-list li {
 		float:left;
 		width:368px;
 		height:418px;
-		margin:0 0 7px 7px;
+		margin:7px 0 0 7px;
 		padding:25px 30px;
 		border:1px solid #ddd;
 		box-sizing: border-box;
@@ -7440,7 +7452,7 @@ td .radish-bank-box span {display:block;}
 		padding:0 6px;
 		font-size:13px;
 		font-weight: bold;
-		line-height: 20px;
+		line-height: 21px;
 		border-radius:10px;
 	}
 	.store-list li .operate .type01 {
@@ -8501,7 +8513,7 @@ td .radish-bank-box span {display:block;}
 .find-list li:first-child {
 	border-top:0;
 }
-.find-list li .num {
+.find-list li .pointer {
 	position: absolute;
 	top:25px; left: 23px;
 	width:26px; height:32px;
@@ -8513,10 +8525,13 @@ td .radish-bank-box span {display:block;}
 	font-weight: bold;
 	text-align: center;
 }
-.find-list li.on .num,
-.find-list li:hover .num {
+.find-list li.on .pointer,
+.find-list li:hover .pointer {
 	background:url(../img/bg/bg_spot_on.png) 0 0 no-repeat;
 	color:#fff;
+}
+.find-list li .pointer.type02 {
+	font-size:12px;
 }
 .find-list li dl {margin-left:37px;}
 .find-list li dl dt {
@@ -8814,6 +8829,14 @@ td .radish-bank-box span {display:block;}
 	width:98px; height:27px;
 	border:2px solid #60b015;
 }
+
+.transport-cont {
+	overflow-x: hidden;
+	overflow-y: auto;
+	max-height: 468px;
+}
+
+/* 매장 슬라이드 */
 .thumb-slide4 {position:relative;}
 .thumb-slide4 .bxslider .item {
 	width:336px;
