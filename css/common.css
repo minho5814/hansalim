@@ -5995,6 +5995,10 @@ td .radish-bank-box span {display:block;}
 	border:1px solid #ddd;
 	background-color:#fff;
 }
+.goods-item1 .ico-round2 {
+	position:absolute;
+	left:80px;top:10px;
+}
 	.goods-item1 .img-area {
 		width:128px;
 		height:128px;
