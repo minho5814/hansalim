@@ -4704,6 +4704,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		line-height:24px;
 		border-top:1px solid #bbb;
 	}
+	.pd-faq .faq-list li .answer.on {display:block;}
 .inquiry {
 	overflow:hidden;
 	margin-top:60px;
