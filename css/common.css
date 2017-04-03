@@ -1150,10 +1150,11 @@ td.e-mail-form {
 		.thumb-slide1 .bx-controls-direction a {
 			display:block;
 			position:absolute;
+			z-index:6;
 			top:158px;
 			width:30px;
 			height:50px;
-			background-color:#ddd;
+			background-color:rgba(0,0,0,.4);
 			background-repeat:no-repeat;
 			background-position:50% 50%;
 			font-size:0;
@@ -8164,18 +8165,22 @@ td .radish-bank-box span {display:block;}
 .date-box .adte-cont .btn-mini-text {
 	margin-top:5px;
 }
-.date-box .adte-cont .adte-list {overflow:hidden;}
-.date-box .adte-cont .adte-list li {
+.date-box .adte-cont .adte-list {
 	float:left;
+	width:50%;
+}
+.date-box .adte-cont .adte-list dt {
+	display:inline-block;
+	margin-right:46px;
+	font-size:15px;
+	color:#000;
+	font-weight:bold;
+}
+.date-box .adte-cont .adte-list dd {
+	display:inline-block;
 	width:50%;
 	font-size:15px;
 	color:#666;
-}
-.date-box .adte-cont .adte-list li .dte-title {
-	display:inline-block;
-	margin-right:46px;
-	color:#000;
-	font-weight:bold;
 }
 /* 새로 공급한 물품 이용후기 */
 .review-area {
@@ -8207,6 +8212,8 @@ td .radish-bank-box span {display:block;}
 .review-area .review-list .item-review .review-img span {display:block;}
 .review-area .review-list .item-review .review-img .img-box img {vertical-align:middle;}
 .review-area .review-list .item-review .review-img .img-txt {
+	overflow:hidden;
+	height:40px;
 	margin-top:5px;
 	font-size:14px;
 	color:#666;
