@@ -111,5 +111,12 @@ $(window).load(function(){
 		speed:400
 	});
 
-
+	/* 조합원 추천 물품 */
+	$('.recommend-tab .right-slide .thumb-slide1').hide().css({'opacity':'1'});
+	$('.recommend-tab .right-slide .thumb-slide1.on').show();
+	$('.tab-text').click(function(){
+		var idx = $(this).index();
+		$('.tab-text').removeClass('on').eq(idx).addClass('on');
+		$('.recommend-tab .right-slide .thumb-slide1').removeClass('on').hide().eq(idx).addClass('on').show();
+	});
 });
