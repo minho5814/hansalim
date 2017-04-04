@@ -1501,6 +1501,7 @@ td.e-mail-form {
 /* 폰트 스타일 */
 .fEbold {font-weight:900 !important;}
 .fbold {font-weight:bold !important;}
+.fNormal {font-weight:normal !important;}
 .fstyled1 {color:#666 !important; font-size:13px !important;}
 .num-style01 {font-weight:600; letter-spacing:-1px;}
 
@@ -1517,16 +1518,24 @@ td.e-mail-form {
 .wid80 {width:80% !important;}
 
 /*타이틀 비주얼 영역*/
-.blue{d6f6eb}
+.title-bg1{background-color:#d6f6eb;}
+.title-bg2{background-color:#dfdbfe;}
+.title-bg3{background-color:#dbfdda}
+.title-bg4{background-color: #fdd9dd}
+.title-bg5{background-color: #d8edfe}
+
 .bg-title {
 	width:1120px;
 	height:200px;
 	margin:0 auto;
-	background:url(../img/bg/bg_title1.png) no-repeat right bottom;
+	background-image:url(../img/bg/bg_title1.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
 }
 
 .bg-title-text {
 	width:1120px;
+	margin-top:35px;
 
 }
 .bg-title-text h2 {
@@ -1603,6 +1612,10 @@ td.e-mail-form {
 	font-size:15px;
 	color:#666;
 	line-height: 24px;
+}
+
+.group .cTitle3 {
+	font-weight: normal;
 }
 
 /* 정렬 */
@@ -2100,7 +2113,7 @@ td.e-mail-form {
 	height:18px;
 	background-position:0 -364px;
 }
-.btn-image.btn-notice2 {background-color:#666;}
+.btn-image.btn-notice2 {background-color:#999;}
 .btn-image.btn-notice2:before {
 	width:18px;
 	height:20px;
@@ -5736,7 +5749,7 @@ td .radish-bank-box span {display:block;}
 .result-wrap .btn-center {margin-top:25px;}
 .all-search {margin-bottom:40px;}
 .all-search p {font-size: 18px;}
-.filter-wrap {border:1px solid #ddd;}
+.filter-wrap {border:1px solid #bbb;}
 .filter-wrap:first-child {margin-bottom:10px;}
 	.filter-wrap > div {position:relative; padding:13px 0; }
 	.filter-wrap p {
@@ -5792,14 +5805,15 @@ td .radish-bank-box span {display:block;}
 	letter-spacing: -1px;
 }
 
-.filter-wrap .reset-area {display: inline-block;position:relative; padding-left:31px;  margin-left:30px;}
+.filter-wrap .reset-area {display: inline-block;position:relative; padding-left:20px;  margin-left:20px;}
 	.filter-wrap .reset-area:before {
 		content: '';
 		position:absolute;
 		left:0;
-		top:0;
+		top:50%;
 		width:1px;
-		height:32px;
+		height:20px;
+		margin-top:-10px;
 		background-color: #ddd;
 
 	}
@@ -5811,7 +5825,6 @@ td .radish-bank-box span {display:block;}
 
 .toggle-area .btn-area .btn-toggle {
 	float:left;
-
 	height:32px;
 	margin-left:4px;
 	padding:0 15px;
@@ -5820,7 +5833,7 @@ td .radish-bank-box span {display:block;}
 	background-color:#fff;
 	color:#666;
 	font-size:15px;
-	font-weight:bold;
+	/*font-weight:bold;*/
 	text-align:center;
 	line-height:30px;
 }
@@ -5909,7 +5922,7 @@ td .radish-bank-box span {display:block;}
 .result-wrap .result-bottom .good-table table td button {width: 110px;}
 .result-wrap .result-bottom .good-table table td button:first-child {margin-bottom:5px;}
 
-.tab-content4 .cTitle3 {font-weight: normal}
+/*.tab-content4 .cTitle3 {font-weight: normal}*/
 .tab-content4  .result-top {margin-top:0}
 
 .tab-content4 .group {margin-top:80px;}
@@ -6614,7 +6627,7 @@ td .radish-bank-box span {display:block;}
 	overflow: hidden;
 }
 .brand-wrap .top-area .text-area {padding: 7px 0 0 230px;}
-.brand-wrap .top-area .text-area .title p {display: inline-block; padding-right:15px; font-size:24px; color:#000;}
+.brand-wrap .top-area .text-area .title p {display: inline-block; padding-right:15px; font-size:24px; color:#000; font-weight: bold;}
 .brand-wrap .top-area .text-area .title .btn-icon {vertical-align: text-bottom;}
 .brand-wrap .top-area .text-area .desc {
 	margin-top:10px;
@@ -6669,9 +6682,9 @@ td .radish-bank-box span {display:block;}
 /*조합원 추천물품*/
 .recommend-list {position: relative;}
 .recommend-list  .bx-viewport {width:1040px !important; margin:0 auto;}
-.recommend-list .bx-controls-direction a {width:40px; height:50px; border:1px solid #bbb; text-indent: -9999; font-size: 0; line-height: 0;}
-.recommend-list .bx-controls-direction .bx-prev{position: absolute;left:0; top:0; border-right: 0; background: url(../img/btn/btn_bx_prev_39x48.png) center no-repeat; }
-.recommend-list .bx-controls-direction .bx-next{position: absolute;right:0; top:0; background: url(../img/btn/btn_bx_next_39x48.png) center no-repeat;}
+.recommend-list .bx-controls-direction a {position: absolute; top:0; width:40px; height:50px; border:1px solid #bbb; text-indent: -9999; font-size: 0; line-height: 0;}
+.recommend-list .bx-controls-direction .bx-prev{left:0; background: url(../img/btn/btn_bx_prev_39x48.png) #fff center no-repeat; }
+.recommend-list .bx-controls-direction .bx-next{right:0;background: url(../img/btn/btn_bx_next_39x48.png) #fff center no-repeat;}
 
 .recommend-list .bx-controls-direction .bx-prev.off,
 .recommend-list .bx-controls-direction .bx-next.off {background-color: #ddd; cursor:default;}
@@ -6689,13 +6702,13 @@ td .radish-bank-box span {display:block;}
 	padding-left: 20px;
 	font-size: 18px;
 	color:#60b015;
-	padding-left: 40px;
+	padding-left: 35px;
 
 }
 .recommend-area .tab-content4 p:before {
 	content: '';
 	position: absolute;
-	left:0; top:0;
+	left:0; top:-1px;
 	background:url(../img/icon/ico_recomend.png) no-repeat 0 0;
 	width:29px;
 	height:29px;
@@ -8387,6 +8400,12 @@ td .radish-bank-box span {display:block;}
 	overflow:hidden;
 	padding:23px 30px;
 	border-bottom:1px solid #ddd;
+}
+.date-box .adte-cont:nth-child(1){
+	background-color:#f7feed;
+}
+.date-box .adte-cont:nth-child(2){
+	background-color:#f7f7f7;
 }
 .date-box .adte-cont .btn-image {
 	margin-left:14px;
