@@ -1098,11 +1098,11 @@ td.e-mail-form {
 		border-left:0;
 		margin-top:-1px;
 		box-sizing:border-box;
+		cursor:pointer;
 	}
-	.tab-styled5 .item:first-child {
-		margin-left:0;
-	}
-	.tab-styled5 .item.on .text{background-color:#60b015; color:#fff;}
+	.tab-styled5 .item:first-child {margin-left:0;}
+	.tab-styled5 .item:hover .text,
+	.tab-styled5 .item.on .text {background-color:#60b015; color:#fff;}
 
 		.tab-styled5 .item .text {
 			display:block;
