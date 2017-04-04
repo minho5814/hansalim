@@ -701,25 +701,31 @@ td.e-mail-form {
 }
 	.box-link-list .link {
 		display:block;
+		overflow:hidden;
 		position:relative;
-		padding:20px 40px;
+		padding:29px 40px 29px 0;
 		border-top:1px solid #ddd;
 	}
 	.box-link-list .link:first-child {border-top:0;}
 	.box-link-list .link:before {
 		content:'';
 		position:absolute;
-		right:50px;top:0;bottom:0;
+		right:40px;top:0;bottom:0;
 		width:10px;
 		background:url(../img/icon/icon_arrow_10x17.png) no-repeat 0 50%;
 	}
 		.box-link-list .link .title {
+			float:left;
+			width:190px;
+			padding-left:40px;
+			box-sizing:border-box;
 			color:#000;
-			font-size:18px;
+			font-size:16px;
 			font-weight:bold;
-			line-height:30px;
+			line-height:22px;
 		}
 		.box-link-list .link .text {
+			float:left;
 			color:#666;
 			font-size:14px;
 			line-height:22px;
@@ -4072,6 +4078,71 @@ label.check-radio .radiobox {margin-right:8px;}
 		line-height:22px;
 	}
 	.complete-area .btn-center {margin-top:35px;}
+
+/* 가입완료 (IM-JO0601.html) */
+.box-content2 {
+	border:1px solid #bbb;
+}
+	.box-content2 .box-title {
+		margin:0 40px;
+		padding:38px 0 46px;
+		border-bottom:1px solid #bbb;
+		color:#000;
+		text-align:center;
+	}
+		.box-content2 .box-title .title {
+			font-size:22px;
+			font-weight:bold;
+			line-height:45px;
+		}
+		.box-content2 .box-title .text {
+			font-size:15px;
+			line-height:22px;
+		}
+	.box-content2 .box-cont {}
+		.box-content2 .box-cont {}
+		.box-content2 .box-cont.bg-join {
+			height:600px;
+			background:url(../img/bg/bg_join.png) no-repeat 50% 50%;
+		}
+.join-page .box-content2 {margin-top:80px;}
+
+.site-link-area {margin-top:45px;}
+
+.box-sns-list {
+	overflow:hidden;
+	margin:5px -5px 0;
+}
+	.box-sns-list .link {
+		position:relative;
+		float:left;
+		width:50%;
+		padding:5px;
+		box-sizing:border-box;
+	}
+	.box-sns-list .link:before {
+		content: '';
+		position: absolute;
+		right: 40px;
+		top: 0;
+		bottom: 0;
+		width: 10px;
+		background: url(../img/icon/icon_arrow_10x17.png) no-repeat 0 50%;
+	}
+			.box-sns-list .link .inner {
+				display:block;
+				padding:20px 0 20px 105px;
+				border:1px solid #bbb;
+				background-color:#fff;
+				background-repeat:no-repeat;
+				background-position:40px 50%;
+				color:#666;
+				font-size:14px;
+				line-height:20px;
+			}
+			.box-sns-list .link.facebook .inner {background-image:url(../img/icon/icon_facebook02.png);}
+			.box-sns-list .link.blog .inner {background-image:url(../img/icon/icon_blog02.png);}
+		.box-sns-list .link {}
 
 /* =========================================================================================================
 	물품전시
