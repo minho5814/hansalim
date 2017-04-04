@@ -1772,6 +1772,7 @@ td.e-mail-form {
 	font-size:14px;
 	line-height:32px;
 }
+.btn-round-text.btn-orange {background-color:#f56d24;color:#fff;}
 .btn-round-text.btn-gray {background-color:#666;color:#fff;}
 .btn-round-text.btn-white {
 	background-color:#fff;
@@ -6744,6 +6745,8 @@ td .radish-bank-box span {display:block;}
 	width:29px;
 	height:29px;
 }
+
+
 /* =========================================================================================================
 	레이어 팝업
 ========================================================================================================= */
@@ -9182,3 +9185,32 @@ td .radish-bank-box span {display:block;}
 		}
 		.thumb-slide4 .bx-pager .bx-pager-item:first-child {margin-left:0;}
 		.thumb-slide4 .bx-pager .bx-pager-link.active {background-color:#000;}
+
+/*매장 상세*/
+.sub-cont.store {}
+.sub-cont.store .title-area {overflow: hidden;}
+	.sub-cont.store .title-area .cTitle1{float: left;}
+	.sub-cont.store .title-area .util {float:right;}
+	.sub-cont.store .title-area .util li {padding-right:0; margin-left:0;}
+	.sub-cont.store .title-area .util li:first-child {margin-right:5px}
+	.sub-cont.store .title-area .util li:before {content: none;}
+
+.sub-cont.store .cont-area {overflow:hidden;}
+.sub-cont.store .store-slide {float:left; width:438px; height:334px; border:1px solid #e4e4e4; box-sizing: border-box;}
+	.sub-cont.store .store-slide .thumb-slide1 {width: 100%}
+	.sub-cont.store .store-slide .thumb-slide1 .img-area {font-size: 0;}
+
+.sub-cont.store .table-area {float: right; width:550px;}
+.sub-cont.store .table-area .store-info li {position: relative; padding:17px 10px; border-top:1px solid #e3e3e3; font-size: 15px; color:#666; }
+.sub-cont.store .table-area .store-info li:first-child {border-top:1px solid #666;}
+.sub-cont.store .table-area .store-info li:last-child {border-bottom:1px solid #666;}
+.sub-cont.store .table-area .store-info li .title { position: absolute; left:10px; top:50%; margin-top:-11px; color:#000; font-weight: bold;}
+.sub-cont.store .table-area .store-info li .txt {display: block; width:100%; padding-left:100px; line-height:20px; box-sizing: border-box;}
+.sub-cont.store .table-area .store-info li.top {overflow: hidden;}
+.sub-cont.store .table-area .store-info li.top p {float:left; height:30px; line-height: 30px; font-size: 18px;}
+.sub-cont.store .table-area .store-info li.top .flag {float: right; height:30px; line-height: 30px;}
+.sub-cont.store .table-area .store-info li.top .flag img {vertical-align: middle;}
+.sub-cont.store .table-area .store-info li.top p span {display: inline-block; padding: 0 13px; font-size: 15px; font-weight: bold; line-height: 28px; border-radius: 15px; }
+.sub-cont.store .table-area .store-info li.top p span.type01 {color: #09babc; border: 1px solid #09babc;}
+.sub-cont.store .table-area .store-info li.top p span.type02 {color: #ec7015; border: 1px solid #ec7015;}
+.sub-cont.store .table-area .store-info li.top p span.type03 {color: #666; border: 1px solid #666666;}
