@@ -9092,10 +9092,9 @@ td .radish-bank-box span {display:block;}
 	.thumb-slide4 .bx-controls-direction a {
 		display:block;
 		position:absolute;
-		top:50%;
+		top:110px;
 		width:30px;
 		height:50px;
-		margin-top: -25px;
 		background-color:#ddd;
 		background-repeat:no-repeat;
 		background-position:50% 50%;
