@@ -814,20 +814,22 @@
 		</div><!-- /.head-btm -->
 	</div>
 
-	<div class="container gray">
-		<div class="location-wrap">
-			<div class="location">
-				<div class="inner">
-					<a href="#" class="item">홈</a>
-					<span class="arrow">&gt;</span>
-					<span class="item">선물택배</span>
-				</div>
+	<div class="container">
+		<div class="location">
+			<div class="inner">
+				<a href="#" class="item">홈</a>
+				<span class="arrow">&gt;</span>
+				<span class="item">선물택배</span>
 			</div>
 		</div>
 
-		<div class="content-w1120">
-			<div class="visual-area" style="width:1120px; height:238px; background-color:rgba(0,0,0,.5); color:#fff; text-align:center; font-size:35px; line-height:238px">타이틀 비주얼 영역</div>
+		<div class="banner-title bg5">
+			<div class="title-inner">
+				<h2 class="title">선물택배</h2>
+				<p class="text">언제든 소중한 분에게 한살림을 선물하세요</p>
+			</div>
 		</div>
+
 		<div class="content pdT60">
 			<div class="content-w1120">
 				<div class="tab-area">
@@ -2786,22 +2788,12 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-
-	//테이블정렬
-	$('.order-list button').click(function(){
-		$(this).parents('.order-list').find('button').removeClass('on');
-		$(this).addClass('on');
-	});
-
-
-
 	$('.tab-styled5 .item').click(function(){
 		var idx = $(this).index();
 		$('.tab-styled5 .item').removeClass('on').eq(idx).addClass('on');
 		$('.tab-content4').removeClass('on').eq(idx).addClass('on');
 
 	});
-
 });
 </script>
 </body>

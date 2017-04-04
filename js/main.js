@@ -111,5 +111,27 @@ $(window).load(function(){
 		speed:400
 	});
 
+	/* 조합원 추천 물품 */
+	$('.recommend-tab .right-slide .thumb-slide1').hide().css({'opacity':'1'});
+	$('.recommend-tab .right-slide .thumb-slide1.on').show();
+	$('.tab-text').click(function(){
+		var idx = $(this).index();
+		$('.tab-text').removeClass('on').eq(idx).addClass('on');
+		$('.recommend-tab .right-slide .thumb-slide1').removeClass('on').hide().eq(idx).addClass('on').show();
+	});
 
+	/* 이즈음 밥상 */
+	$('.recipe-cont .bxslider').each(function(){
+		$(this).bxSlider({
+			infiniteLoop:false,
+			hideControlOnEnd: true,
+			speed:400
+		});
+	});
+
+	$('.grid').masonry({
+		itemSelector:'.grid-item',
+		columnWidth:366,
+		gutter:11
+	});
 });
