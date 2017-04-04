@@ -1218,37 +1218,8 @@ $(window).load(function(){
 		slideWidth: 1040,
 		slideMargin: 0,
 		pager:false,
-		function(currentIndex){
-			if(currentIndex==0){
-				$('.bx-prev').addClass('off');
-			}
-		//	$('.recommend-list .bx-controls-direction .bx-prev').addClass('off');
-		},
-		onSlidePrev:function($slideElement, oldIndex, newIndex){
-			$('.bx-next').removeClass('off');
-			if(newIndex==0){
-				$('.bx-prev').addClass('off');
-			}else{
-				$('.bx-prev').removeClass('off');
-			}
-
-		},
-		onSlideNext:function($slideElement, oldIndex, newIndex){
-
-			var slideQty = slider.getSlideCount() / 4 - 1 ; //슬라이드수 (0부터라서 -1)
-
-			$('.bx-prev').removeClass('off');
-			if(newIndex== slideQty){
-				$('.bx-next').addClass('off');
-			}else{
-				$('.bx-next').removeClass('off');
-			}
-		}
+		hideControlOnEnd: true
 	});
-
-
-
-
 
 	$('.view-area .btn-view').click(function(){
 		$(this).each(function(i) {
@@ -1258,43 +1229,6 @@ $(window).load(function(){
 			$(this).parents('.result-wrap').find('.result-bottom').removeClass('on').eq(idx).addClass('on');
 		});
 	});
-
-	//테이블정렬
-	$('.order-list button').click(function(){
-		$(this).parents('.order-list').find('button').removeClass('on');
-		$(this).addClass('on');
-	});
-
-	// 하단리스트 그리드
-	$('.grid').masonry({
-		itemSelector:'.grid-item',
-		columnWidth:366,
-		gutter:11
-	});
-
-
-	//리스트 온오버
-	$('.grid-item').mouseenter(function(){
-		$(this).addClass('on');
-	});
-	$('.grid-item').mouseleave(function(){
-		$(this).removeClass('on');
-	});
-
-	//태그박스
-	$('.btn-open').click(function(){
-		$(this).parents().find('.tag-wrap').toggleClass('on');
-		if($(this).parents().find('.tag-wrap').hasClass('on')){
-				$(this).removeClass('btn-open').addClass('btn-close');
-				$(this).parents().find('.tag-wrap').css({'height':'100%'});
-		}else{
-			$(this).removeClass('btn-close').addClass('btn-open');
-			$(this).parents().find('.tag-wrap').css({'height':'85px'});
-		}
-	});
-
-
-
 });
 </script>
 

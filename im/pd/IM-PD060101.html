@@ -2789,22 +2789,12 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-
-	//테이블정렬
-	$('.order-list button').click(function(){
-		$(this).parents('.order-list').find('button').removeClass('on');
-		$(this).addClass('on');
-	});
-
-
-
 	$('.tab-styled5 .item').click(function(){
 		var idx = $(this).index();
 		$('.tab-styled5 .item').removeClass('on').eq(idx).addClass('on');
 		$('.tab-content4').removeClass('on').eq(idx).addClass('on');
 
 	});
-
 });
 </script>
 </body>
