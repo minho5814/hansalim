@@ -1623,6 +1623,30 @@ td.e-mail-form {
 .align-left {text-align:left !important;}
 .align-right {text-align:right !important;}
 
+/* 타이틀 라인형 */
+.title-through {
+	position:relative;
+	text-align:center;
+}
+.title-through:before {
+	content:'';
+	position:absolute;
+	left:0;right:0;top:50%;
+	height:1px;
+	background-color:#bbb;
+}
+	.title-through h2,
+	.title-through h3,
+	.title-through h4,
+	.title-through h5 {
+		position:relative;
+		display:inline-block;
+		padding:0 20px;
+		background-color:#fff;
+	}
+	.title-through {}
+	.title-through {}
+
 
 .floatL {float:left;}
 .floatR {float:right;}
