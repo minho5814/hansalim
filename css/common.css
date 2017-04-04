@@ -209,8 +209,10 @@ html {
 /* 로케이션 */
 .location {
 	width:1120px;
+	height:45px;
 	margin:0 auto;
 	padding:22px 0 0;
+	box-sizing:border-box;
 }
 .location .inner {
 	overflow:hidden;
@@ -1517,36 +1519,42 @@ td.e-mail-form {
 /*width*/
 .wid80 {width:80% !important;}
 
-/*타이틀 비주얼 영역*/
-.title-bg1{background-color:#d6f6eb;}
-.title-bg2{background-color:#dfdbfe;}
-.title-bg3{background-color:#dbfdda}
-.title-bg4{background-color: #fdd9dd}
-.title-bg5{background-color: #d8edfe}
-
-.bg-title {
-	width:1120px;
+/* 배너 스타일 상단 비주엉 영역 */
+.banner-title {
 	height:200px;
-	margin:0 auto;
-	background-image:url(../img/bg/bg_title1.png);
-	background-repeat: no-repeat;
-	background-position: right bottom;
+	margin-top:-45px;
 }
+.banner-title.bg1 {background-color:#d6f6eb;}
+.banner-title.bg2 {background-color:#dfdbfe;}
+.banner-title.bg3 {background-color:#dbfdda;}
+.banner-title.bg4 {background-color:#fdd9dd;}
+.banner-title.bg5 {background-color:#d8edfe;}
+.banner-title.bg6 {background-color:#fdf2d8;}
+	.banner-title .title-inner {
+		overflow:hidden;
+		width:1120px;
+		height:200px;
+		margin:0 auto;
+		padding-top:50px;
+		box-sizing:border-box;
+		background:url(../img/bg/bg_title1.png) no-repeat 100% 100%;
+		line-height:120px;
+	}
+		.banner-title .title-inner .title {
+			float:left;
+			color:#333;
+			font-size:58px;
+			font-weight:900;
+		}
+		.banner-title .title-inner .text {
+			float:left;
+			margin-left:20px;
+			color:#000;
+			font-size:22px;
+		}
 
-.bg-title-text {
-	width:1120px;
-	margin-top:35px;
+	.banner-title {}
 
-}
-.bg-title-text h2 {
-	display: inline-block;
-	font-size: 58px;
-	font-weight: 900;
-	line-height: 58px;
-	letter-spacing: -1px;
-	vertical-align: middle;
-}
-.bg-title-text span {padding-left:30px; font-size: 22px; vertical-align: middle;}
 /* 타이틀 박스 */
 .title-wrap {
 	overflow:hidden;
