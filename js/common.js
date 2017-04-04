@@ -163,6 +163,19 @@ $(window).load(function(){
 		});
 	});
 
+	/*한살림 매장 소식*/
+	$('.thumb-slide4 .bxslider').each(function(){
+		$(this).bxSlider({
+			//infiniteLoop:false,
+			slideWidth: 366,
+			minSlides: 2,
+			maxSlides: 3,
+			moveSlides: 3,
+			slideMargin: 10,
+		});
+	});
+
+
 	/* 새로 공급한 물품 이용후기 */
 	$('.review-area .bxslider').each(function(){
 		$(this).bxSlider({
