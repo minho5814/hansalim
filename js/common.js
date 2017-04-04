@@ -441,6 +441,64 @@ $(window).load(function(){
 		$(this).find('.list').hide();
 	});
 
+	/* 정렬 솔팅 영역 */
+	$('.order-list button').click(function(){
+		$(this).parents('.order-list').find('button').removeClass('on');
+		$(this).addClass('on');
+	});
+
+	/* -----------------------------------------------------------------------------------------------------------
+		검색 조건 설정 테이블
+	----------------------------------------------------------------------------------------------------------- */
+	/* 선택 조건 */
+	$('.select-area').each(function(){
+		// 갯수 출력
+		var len = $(this).find('.list-area li').length;
+		$(this).find('.title span').html(len);
+
+		// 삭제
+		var btnDelete = $(this).find('.btn-delete');
+		$(btnDelete).click(function(){
+			var dLen = $(this).parents('.select-area').find('.list-area li').length - 1;
+			$(this).parents('.select-area').find('.title span').html(dLen);
+			if(dLen <= 0){
+				$(this).parents('.select-area').find('.reset-area').hide();
+				$(this).parents('.select-area').find('.list-area ul').remove();
+			}
+			$(this).parents('li').remove();
+		});
+
+		// 초기화
+		var btnReset = $(this).find('.btn-reset');
+		$(btnReset).click(function(){
+			$(this).parents('.select-area').find('.title span').html('0');
+			$(this).parents('.select-area').find('.list-area').remove();
+		});
+	});
+
+	/* 알레르기성분 제외조건 */
+	$('.allergy-area').each(function(){
+		// 갯수 출력
+		var len = $(this).find('.btn-toggle.on').length;
+		$(this).find('.title span').html(len);
+
+		// 버튼 선택
+		var btnTog = $(this).find('.btn-toggle');
+		$(btnTog).click(function(){
+			$(this).toggleClass('on');
+			var len = $(this).parents('.allergy-area').find('.btn-toggle.on').length;
+			$(this).parents('.allergy-area').find('.title span').html(len);
+		});
+
+		// 초기화
+		var btnReset = $(this).find('.btn-reset');
+		$(btnReset).click(function(){
+			$(this).parents('.allergy-area').find('.btn-toggle').addClass('on');
+			var len = $(this).parents('.allergy-area').find('.btn-toggle.on').length;
+			$(this).parents('.allergy-area').find('.title span').html(len);
+		});
+	});
+
 	/* ===========================================================================================================
 		로그인 (lo/)
 	=========================================================================================================== */

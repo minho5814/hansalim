@@ -1142,7 +1142,6 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-
 	/*리스트 온오버*/
 	$('.recipe-list li').mouseenter(function(){
 		$(this).find('.img-area').addClass('over');
@@ -1150,12 +1149,6 @@ $(window).load(function(){
 	$('.recipe-list li').mouseleave(function(){
 		$(this).find('.img-area').removeClass('over');
 	});
-
-	$('.order-list button').click(function(){
-		$(this).parents('.order-list').find('button').removeClass('on');
-		$(this).addClass('on');
-	});
-
 });
 </script>
 

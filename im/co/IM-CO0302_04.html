@@ -1225,7 +1225,6 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-
 	/* 탭 추가 */
 	$('.tab-styled3 .item').click(function(){
 		var idx = $(this).index();
@@ -1241,12 +1240,6 @@ $(window).load(function(){
 		var idx = $(this).index();
 		$('.view-area button').removeClass('on').eq(idx).addClass('on');
 		$('.result-bottom').removeClass('on').eq(idx).addClass('on');
-	});
-
-	$('.order-list button').click(function(){
-		$(this).parents('.order-list').find('button').removeClass('on');
-		$(this).addClass('on');
-
 	});
 });
 </script>

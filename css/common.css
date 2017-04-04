@@ -1098,11 +1098,11 @@ td.e-mail-form {
 		border-left:0;
 		margin-top:-1px;
 		box-sizing:border-box;
+		cursor:pointer;
 	}
-	.tab-styled5 .item:first-child {
-		margin-left:0;
-	}
-	.tab-styled5 .item.on .text{background-color:#60b015; color:#fff;}
+	.tab-styled5 .item:first-child {margin-left:0;}
+	.tab-styled5 .item:hover .text,
+	.tab-styled5 .item.on .text {background-color:#60b015; color:#fff;}
 
 		.tab-styled5 .item .text {
 			display:block;
@@ -1622,6 +1622,30 @@ td.e-mail-form {
 .align-center {text-align:center !important;}
 .align-left {text-align:left !important;}
 .align-right {text-align:right !important;}
+
+/* 타이틀 라인형 */
+.title-through {
+	position:relative;
+	text-align:center;
+}
+.title-through:before {
+	content:'';
+	position:absolute;
+	left:0;right:0;top:50%;
+	height:1px;
+	background-color:#bbb;
+}
+	.title-through h2,
+	.title-through h3,
+	.title-through h4,
+	.title-through h5 {
+		position:relative;
+		display:inline-block;
+		padding:0 20px;
+		background-color:#fff;
+	}
+	.title-through {}
+	.title-through {}
 
 
 .floatL {float:left;}
@@ -6687,15 +6711,14 @@ td .radish-bank-box span {display:block;}
 .recommend-list .bx-controls-direction .bx-prev{left:0; background: url(../img/btn/btn_bx_prev_39x48.png) #fff center no-repeat; }
 .recommend-list .bx-controls-direction .bx-next{right:0;background: url(../img/btn/btn_bx_next_39x48.png) #fff center no-repeat;}
 
-.recommend-list .bx-controls-direction .bx-prev.off,
-.recommend-list .bx-controls-direction .bx-next.off {background-color: #ddd; cursor:default;}
+.recommend-list .bx-controls-direction .bx-prev.disabled,
+.recommend-list .bx-controls-direction .bx-next.disabled {background-color: #ddd; cursor:default;}
 
 .recommend-area .tab-content4 {
 	padding:30px;
 	margin-top:20px;
 	border:1px solid #ddd;
 	text-align: center;
-
 }
 .recommend-area .tab-content4 p {
 	position: relative;
@@ -9114,10 +9137,9 @@ td .radish-bank-box span {display:block;}
 	.thumb-slide4 .bx-controls-direction a {
 		display:block;
 		position:absolute;
-		top:50%;
+		top:110px;
 		width:30px;
 		height:50px;
-		margin-top: -25px;
 		background-color:#ddd;
 		background-repeat:no-repeat;
 		background-position:50% 50%;
