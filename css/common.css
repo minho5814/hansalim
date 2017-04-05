@@ -3140,6 +3140,44 @@ label.check-radio .radiobox {margin-right:8px;}
 		top:47px;
 	}
 		.head-top .search-box .search-text {background-color:#f3f3f3;}
+		.head-top .search-box input[type=text]:focus {
+			border:1px solid #90c807;
+			background-color:#fff;
+		}
+		.head-top .search-box .inner-box {
+			position: relative;
+		}
+		.head-top .search-box .word-box {
+			display: none;
+			position: absolute;
+			top:31px; left:0;
+			z-index:10;
+			width:100%;
+			background-color:#fff;
+			border:1px solid #90c807;
+			box-sizing: border-box;
+		}
+		.head-top .search-box .word-box p {
+			padding:0 13px;
+			color:#000;
+			font-size:14px;
+			line-height:32px;
+		}
+		.head-top .search-box .word-box ul li {
+			padding:0 13px;
+		}
+		.head-top .search-box .word-box ul li:hover {
+			background-color:#f3f3f3;
+		}
+		.head-top .search-box .word-box ul li a {
+			display: block;
+			color:#666;
+			font-size:14px;
+			line-height: 32px;
+		}
+		.head-top .search-box .word-box ul li a span {
+			color:#f56d24;
+		}
 
 /* gnb 영역 */
 .head-btm {height:49px;}
@@ -6248,6 +6286,41 @@ td .radish-bank-box span {display:block;}
 			right:0;top:0;
 		}
 
+	.search-left .inner-box {
+		position: relative;
+	}
+	.search-left .word-box {
+		display: none;
+		position: absolute;
+		top:31px; left:0;
+		z-index:10;
+		width:100%;
+		background-color:#fff;
+		border:1px solid #90c807;
+		box-sizing: border-box;
+	}
+	.search-left .word-box p {
+		padding:0 13px;
+		color:#000;
+		font-size:14px;
+		line-height:32px;
+	}
+	.search-left .word-box ul li {
+		padding:0 13px;
+	}
+	.search-left .word-box ul li:hover {
+		background-color:#f3f3f3;
+	}
+	.search-left .word-box ul li a {
+		display: block;
+		color:#666;
+		font-size:14px;
+		line-height: 32px;
+	}
+	.search-left .word-box ul li a span {
+		color:#f56d24;
+	}
+
 .search-left .search-tree {
 	margin-top:25px;
 }
@@ -6307,9 +6380,12 @@ td .radish-bank-box span {display:block;}
 			box-sizing:border-box;
 			vertical-align:top;
 		}
-		.tree-list .jstree-ocl {
+		.tree-list .jstree-open .jstree-ocl {
 			margin-top:14px;
 			background:url(../img/btn/btn_tree_tog.png) no-repeat 0 0;
+		}
+		.tree-list .jstree-closed .jstree-ocl {
+			background-position: 0  -18px;
 		}
 		.tree-list .jstree-leaf .jstree-ocl {display:none;}
 		.tree-list .jstree-anchor .jstree-checkbox {
