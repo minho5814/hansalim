@@ -9738,12 +9738,15 @@ td .radish-bank-box span {display:block;}
 	padding-top:25px;
 	text-align:center;
 }
-.coup-infor-list .coup-item .article-box .aricle-list li span {display:block;}
+.coup-infor-list .coup-item .article-box .aricle-list li span {
+	display:block;
+	height:95px;
+}
 .coup-infor-list .coup-item .article-box .aricle-list li .img img {vertical-align:top;}
 .coup-infor-list .coup-item .article-box .aricle-list li .txt {
 	overflow:hidden;
 	height:36px;
-	margin-top:20px;
+	margin-top:10px;
 	font-size:14px;
 	color:#666;
 	line-height:18px;
