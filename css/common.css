@@ -549,6 +549,7 @@ td.e-mail-form {
     position: relative;
     display: inline-block;
     border:1px solid #ddd;
+	z-index:10;
 }
 .good-table table td.goods .goods-img img {
     vertical-align: middle;
@@ -1182,6 +1183,7 @@ td.e-mail-form {
 		height:50px;
 		line-height:50px;
 		margin-left:-1px;
+		cursor:pointer;
 	}
 	.tab-styled4 .item:first-child {
 
@@ -1201,6 +1203,7 @@ td.e-mail-form {
 		}
 	.tab-styled4 .item:hover,
 	.tab-styled4 .item.on {z-index:1;}/* on */
+	.tab-styled4 .item.on {cursor:default;}
 		.tab-styled4 .item:hover .text {
 			border-color:#666;
 			background-color:#fff;
@@ -6081,7 +6084,7 @@ td .radish-bank-box span {display:block;}
 .result-wrap .result-bottom td:last-child {border-right:0;}
 
 .result-wrap .result-bottom .good-table .goods-img .ico-round2 {position: absolute;right:-12px; top:-12px;}
-.result-wrap .result-bottom .good-table .location {padding:0; font-size: 14px; color:#666}
+.result-wrap .result-bottom .good-table .location {display:block; width:100%; padding:0; font-size: 14px; color:#666;}
 .result-wrap .result-bottom .good-table .goods-name {font-size:16px; color:#000;}
 .result-wrap .result-bottom .good-table td:nth-child(2),
 .result-wrap .result-bottom .good-table td:nth-child(3) {text-align: right; padding-right:20px;}
