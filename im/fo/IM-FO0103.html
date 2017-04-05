@@ -1220,7 +1220,7 @@
 								<li class="on">
 									<p class="title">봄 기운을 물씬 느낄 수 있는 냉이밥과 달래간장 정말 맛이 좋네요 ! </p>
 									<div class="cont">
-										<div class="img-area"><a href="#"><img src="../../img/temp/@temp_reply.jpg" alt="temp"></a></div>
+										<div class="img-area"><a class="view-img" href="#"><img src="../../img/temp/@temp_reply.jpg" alt="temp"></a></div>
 										<div class="text-area">
 											<p>봄 기운을 물씬 느낄 수 있는 냉이밥과 달래간장 정말 맛이 좋네요 ! 한살림 냉이 사다가 저녁밥상으로 차렸더니 나물 싫어하는
 												아이들과 남편이 정말 잘 먹고 좋아하더라구요. 밥 두공기가 뚝딱입니다. 한살림 냉이 구입한 분들 한번 도전해보세요!
@@ -1418,6 +1418,18 @@
 	</div>
 </div>
 
+<!-- 이미지보기-->
+<div class="layer-popup pop-img-view">
+	<div class="pop-head">
+		<h1 class="pop-title">요리이미지</h1>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="reply-img">
+			<img src="../../img/temp/@temp_event_sub1.jpg" alt="요리이미지">
+		</div>
+	</div>
+</div>
 
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
@@ -1440,22 +1452,11 @@ $(window).load(function(){
 		});
 	});
 
-	/* 원재료 검색 */
-	// jstree
-	$('.tree-list').jstree({
-	'plugins' : ['checkbox']
-	});
-	$('.text.selected').each(function(){
-		$(this).parents('.jstree-anchor').click();
+	/* 이미지보기 호출 */
+	$('.view-img').click(function(){
+		$('.pop-img-view').fadeIn(200);
 	});
 
-	$('.tree-list').css({'opacity':'1'});
-
-	$('.search-input .query, .search-box .search-text').focusin(function(){
-		$(this).next('.word-box').show();
-	}).focusout(function(){
-		$(this).next('.word-box').hide();
-	});
 });
 </script>
 </body>

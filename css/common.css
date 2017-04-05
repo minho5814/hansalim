@@ -6959,19 +6959,22 @@ td .radish-bank-box span {display:block;}
 		font-size:0;
 	    text-indent:-9999px;
 	    line-height:0;
+		background-color:rgba(0, 0, 0, 0.6);
+		background-repeat: no-repeat;
+		background-position:50% 50%;
 	}
 	.recipe-wrap .bx-prev {
 		left:0;
-		background:url(../img/btn/btn_bx_prev30x50.png) no-repeat 0 0;
+		background-image:url(../img/btn/btn_bx_prev01.png);
 	}
 	.recipe-wrap  .bx-next {
 		right:0;
-		background:url(../img/btn/btn_bx_next30x50.png) no-repeat 0 0;
+		background-image:url(../img/btn/btn_bx_next01.png);
 	}
 
 	.recipe-wrap  .bx-pager {
 		overflow:hidden;
-		height:14px;
+		height:10px;
 		margin-top:20px;
 		font-size:0;
 		line-height:0;
@@ -6983,8 +6986,8 @@ td .radish-bank-box span {display:block;}
 	}
 	.recipe-wrap  .bx-pager .bx-pager-link {
 		display:inline-block;
-		width:14px;
-		height:14px;
+		width:10px;
+		height:10px;
 		border-radius:50%;
 		background-color:#8a8a8a;
 		text-indent:-9999px;
@@ -10026,7 +10029,7 @@ td .radish-bank-box span {display:block;}
 		.thumb-slide4 .bx-pager .bx-pager-link.active {background-color:#000;}
 
 /*매장 상세*/
-.sub-cont.store {}
+.sub-cont.store {margin-bottom:40px;}
 .sub-cont.store .title-area {position:relative;}
 .sub-cont.store .title-area:after {
 	content: '';
