@@ -2043,6 +2043,13 @@ table .good-table table th {padding:0;}
 	background-color:#91c90b;
 	color:#fff;
 }
+
+.btn-text.btn-yellow {
+	border-color:#fffb3d;
+	background-color:#fffb3d;
+	color:#18ac3e;
+}
+
 .btn-text.btn-green2 {
 	border-color:#57a30f;
 	background-color:#60b015;
@@ -7694,6 +7701,14 @@ td .radish-bank-box span {display:block;}
 	margin:0 auto;
 }
 /* 앱 다운로드 */
+.content.app-down {
+	height:1045px;
+	margin:-45px 0 -190px;
+	padding-top:65px;
+	background:url(../img/bg/bg_apps.jpg) no-repeat 0 0;
+	background-size: cover;
+}
+
 .utill-title {
 	margin:15px auto 0;
 	border-top:1px solid #666;
@@ -7709,59 +7724,61 @@ td .radish-bank-box span {display:block;}
 	color:#000;
 	font-weight: bold;
 }
-.content-gray {
-	margin-top:100px;
-	height:500px;
-	background-color:#f7f7f7;
-}
+
 .app-content {
 	position:relative;
 	width:1120px;
 	height:100%;
 	margin:0 auto;
 }
+.app-content .app-box {
+	height:647px;
+}
 .app-content .img-wrap {
 	position: absolute;
-	top:-68px; left:50px;
+	top:42px; left:0;
 }
-
+.app-content .img-wrap img {vertical-align:top;}
 .app-content .qr-code {
-	width:450px;
-	margin-left:610px;
-	padding-top:53px;
+	width:454px;
+	margin-left:606px;
 }
+.app-content .qr-code .notice-txt img {vertical-align:top;}
 .app-content .qr-code .title {
-	font-size:24px;
-	color:#000;
-	font-weight: bold;
-	text-align: center;
+	display:block;
+	margin-top:17px;
+	font-size:18px;
+	color:#0c431a;
+	font-weight:bold;
+	text-align:center;
 }
 .app-content .qr-code .text {
 	font-size:15px;
-	color:#666;
-	line-height: 24px;
-	text-align: center;
-	letter-spacing: -0.5px;
+	color:#fff;
+	line-height:24px;
+	text-align:center;
+	letter-spacing:-0.5px;
 }
 .qr-list {
 	overflow:hidden;
 	margin-top:27px;
-	background-color:#fff;
-	border:1px solid #ddd;
 }
 .qr-list li {
 	float:left;
-	width:50%;
-	padding:46px 0 41px;
+	width:225px;
+	margin-left:3px;
+	padding:44px 0 38px;
+	border-radius:5px;
+	box-sizing:border-box;
+	background-color:#fff;
 	text-align:center;
 }
 .qr-list li:first-child {
-	border-right:1px solid #ddd;
-	box-sizing:border-box;
+	margin-left:0;
 }
 .qr-list li .qr-img {
 	display:block;
-	margin-bottom: 37px;
+	margin-bottom:20px;
 }
 .qr-list li .qr-img img {
 	vertical-align: top;
@@ -7794,9 +7811,10 @@ td .radish-bank-box span {display:block;}
 .app-sms {
 	position: relative;
 	width:1120px;
-	margin:120px auto 0;
+	margin:58px auto 0;
 	padding:46px 60px;
-	border:1px solid #e3e3e3;
+	background-color:rgba(27,149,59,.8);
+	border-radius:5px;
 	box-sizing: border-box;
 }
 .app-sms:after {
@@ -7806,14 +7824,15 @@ td .radish-bank-box span {display:block;}
 }
 .app-sms dt {float:left}
 .app-sms dt {
-	color:#000;
+	color:#fffb3d;
 	font-size:18px;
-	font-weight: bold;
+	font-weight:bold;
 	letter-spacing: -0.5px;
 }
 .app-sms dt span {
 	display: block;
-	color:#666;
+	margin-top:4px;
+	color:#fff;
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 20px;
