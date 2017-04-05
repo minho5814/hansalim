@@ -8296,6 +8296,30 @@ td .radish-bank-box span {display:block;}
 	float:left;
 	width:20%;
 }
+
+.sece-notice {
+	padding:28px 28px 30px 38px;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+}
+.sece-notice dl dt {
+	margin-top:16px;
+	font-weight:bold;
+}
+.sece-notice dl dt,
+.sece-notice dl dd {
+	font-size:15px;
+	color:#000;
+	letter-spacing:-0.5px;
+}
+.sece-notice dl dd {
+	color:#666;
+}
+.sece-notice dl dd .gray-text{
+	font-size:14px;
+	color:#999;
+}
+
 /* 나의 알림 */
 .my-notice-area {}
 .my-notice-area .cTitle4 {
