@@ -5450,12 +5450,13 @@ label.check-radio .radiobox {margin-right:8px;}
 	padding:30px 40px 40px 40px;
 }
 
-.sub-cont .view-area .cTitle1  {line-height: inherit;}
+.sub-cont .view-area .cTitle1  {line-height:inherit;}
 .sub-cont .view-area .cTitle1 span {
 	display: block;
 	color:#60b015;
-	font-size: 18px;
-	line-height: 18px;
+	font-size:18px;
+	line-height:18px;
+	font-weight:normal;
 }
 .sub-cont .view-area .util {position: relative; margin:20px 0 15px}
 .sub-cont .view-area .util:after {
@@ -6656,9 +6657,11 @@ td .radish-bank-box span {display:block;}
 	font-size: 18px;
 	line-height: 18px;
 }
-.sub-cont .left-area .util {overflow: hidden; margin:20px 0 15px}
+.sub-cont .left-area .util {margin:20px 0 15px}
+.sub-cont .left-area .util::after {content:''; display:block; clear:both;}
 .sub-cont .left-area .util .date { float:left; height:32px; color:#999; font-size: 14px; line-height: 32px;}
-.sub-cont .left-area .util ul {overflow: hidden; float:right;}
+.sub-cont .left-area .util ul {float:right;}
+.sub-cont .left-area .util ul:after {content:''; display:block; clear:both;}
 .sub-cont .left-area .util ul li {position: relative; float: left;  font-size: 14px; color:#999; height:32px; line-height: 32px; padding-right:11px; margin-left:11px;}
 .sub-cont .left-area .util ul li:last-child {padding-right: 0;}
 .sub-cont .left-area .util ul li:last-child:before{content: none;}
@@ -8504,35 +8507,7 @@ td .radish-bank-box span {display:block;}
 	background-color:#000;
 }
 /* 어린이 밥상 */
-.align-center .txt {
-	display:block;
-	font-size:16px;
-	color:#333;
-	line-height:20px;
-	font-weight:bold;
-}
-.align-center .type02 {
-	line-height:38px;
-}
-.util-area {
-	position:absolute;
-	right:0; bottom:3px;
-	overflow:hidden;
-}
-.util-area ul {
-	overflow:hidden;
-	float:right;
-}
-.util-area ul li {
-	position:relative;
-    float:left;
-	margin-right:4px;
-    font-size:14px;
-    color:#999;
-    height:32px;
-    line-height:32px;
-}
-.util-area ul li:last-child {margin-right:0;}
+.child-table img {vertical-align:top;}
 
 .food-list li {
 	margin-top:7px;
@@ -8546,8 +8521,8 @@ td .radish-bank-box span {display:block;}
 }
 .recipe-icon {
 	display:inline-block;
-	padding-left:32px;
-	background:url(../img/icon/icon_hat.gif) no-repeat 0 0;
+	padding-left:22px;
+	background:url(../img/icon/icon_hat.gif) no-repeat 0 4px;
 }
 
 .reference-box {}
@@ -9978,7 +9953,12 @@ td .radish-bank-box span {display:block;}
 }
 /*요리 상세*/
  .sub-cont.recipe {}
-	 .sub-cont.recipe .title-area {overflow: hidden;}
+	 .sub-cont.recipe .title-area {position:relative;}
+	 .sub-cont.recipe .title-area:after {
+		 content:'';
+		 display:block;
+		 clear:both;
+	 }
 	 	.sub-cont.recipe .title-area .cTitle1{float: left;}
 	 	.sub-cont.recipe .title-area .util {float:right;}
 	 	.sub-cont.recipe .title-area .util li {padding-right:0; margin-left:0;}
