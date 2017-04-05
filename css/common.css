@@ -587,7 +587,10 @@ td.e-mail-form {
 }
 .good-table table td.goods .goods-txt,
 .good-table table td.goods .goods-amount {display: block; font-size: 14px;}
-.good-table table td.goods .goods-amount {margin-top:13px;}
+.good-table table td.goods .goods-amount {
+	margin-top:13px;
+	color:#999;
+}
 .good-table table td.goods .supply-date {
 	color:#999;
 	font-size:14px;
@@ -2372,8 +2375,9 @@ td.e-mail-form {
 .btn-image.btn-list-close:before {
 	width:26px;
 	height:15px;
-	background-position:0 -821px;
+	background-position:0 -886px;
 }
+.list-group.on .btn-image.btn-list-close:before {background-position:0 -821px;}
 .btn-image.btn-use {background-color:#fff; border:1px solid #ddd;}
 .btn-image.btn-use:before {
 	width:14px;
@@ -2457,32 +2461,45 @@ td.e-mail-form {
 	background-position:0 -1026px;
 }
 .btn-question {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
 	margin-top: 2px;
-    font-size: 0;
-    text-indent: -9999px;
-    line-height: 0;
+	font-size: 0;
+	text-indent: -9999px;
+	line-height: 0;
 	vertical-align: top;
-    cursor: pointer;
+	cursor: pointer;
 	background-image:url(../img/btn/btn_question.png);
 	background-repeat:no-repeat;
 }
 
 .btn-delete {
-    display: inline-block;
-    width: 19px;
-    height: 19px;
-    font-size: 0;
-    text-indent: -9999px;
-    line-height: 0;
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	font-size: 0;
+	text-indent: -9999px;
+	line-height: 0;
 	vertical-align: text-bottom;
-    cursor: pointer;
+	cursor: pointer;
 	background-image:url(../img/btn/btn_delete.gif);
 	background-repeat:no-repeat;
-
 }
+
+.btn-fixed {
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background:url(../img/sprite/button.png);
+	background-repeat:no-repeat;
+	background-position:0 -1251px;
+	font-size:0;
+	text-indent:-9999px;
+	vertical-align:middle;
+	line-height:0;
+}
+.btn-fixed.on {background-position:0 -1269px;}
 
 /* 화살표 링크 버튼 */
 .btn-link {
@@ -3025,7 +3042,7 @@ label.check-radio .radiobox {margin-right:8px;}
 /*결과 없음, 게시물 없음 */
 .no-result {
 	position:relative;
-	height:200px;
+	height:300px;
 	box-sizing:border-box;
 	border:1px solid #ddd;
 	text-align:center;
