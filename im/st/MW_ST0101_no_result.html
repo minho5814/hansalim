@@ -6,7 +6,6 @@
 	<title>한살림 인터넷 장보기</title>
 
 	<link rel="stylesheet" type="text/css" href="../../css/common.css">
-	<link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="../../css/main.css">
 </head>
 
@@ -817,159 +816,289 @@
 	</div>
 
 	<div class="container">
-		<div class="location">
+		<div class="location type02">
 			<div class="inner">
 				<a href="#" class="item">홈</a>
 				<span class="arrow">&gt;</span>
-				<a href="#" class="item">나의한살림</a>
-				<span class="arrow">&gt;</span>
-				<span class="item">1:1상담</span>
+				<span class="item">매장</span>
 			</div>
 		</div>
-
-		<div class="content-banner">
-			<!-- 고객 주요 정보 노출 영역 (기획설계 중) -->
-		</div>
-
-		<div class="lnb-container">
-			<!-- LNB -->
-			<div class="lnb">
-				<div class="lnb-title">
-					<h2 class="title">나의 한살림</h2>
-				</div>
-				<ul class="lnb-list">
-					<!-- 개인정보 -->
-					<li class="lnb-item">
-						<h3 class="title"><a href="#" class="link">개인정보</a></h3>
-						<ul class="list">
-							<li class="item"><a href="#" class="link"><span class="text">개인정보 조회/수정</span></a></li>
-							<li class="item"><a href="#" class="link"><span class="text">주소록관리</span></a></li>
-							<li class="item"><a href="#" class="link"><span class="text">결제정보관리</span></a></li>
-							<li class="item"><a href="#" class="link"><span class="text">나의 알림</span></a></li>
-							<li class="item"><a href="#" class="link"><span class="text">탈퇴신청</span></a></li>
+		<div class="store-area">
+			<div class="map-area">
+				<img src="../../img/temp/temp_map.jpg" alt="샘플 이미지">
+				<div class="map-search">
+					<div class="find-store">
+						<ul class="find-tab">
+							<li class="item on"><span class="text">매장찾기</span></li>
+							<li class="item"><span class="text">단골매장</span></li>
 						</ul>
-					</li>
-					<!-- 거래정보 -->
-					<li class="lnb-item">
-						<h3 class="title"><a href="#" class="link">거래정보</a></h3>
-						<ul class="list">
-							<li class="item"><a href="#" class="link"><span class="text">주문조회</span></a></li>
-							<li class="item"><a href="#" class="link"><span class="text">공급내역조회</span></a></li>
-							<li class="item"><a href="#" class="link"><span class="text">매장이용내역조회</span></a></li>
-							<li class="item"><a href="#" class="link"><span class="text">거래내역조회</span></a></li>
-						</ul>
-					</li>
-					<!-- 내가 참여한 캠페인 -->
-					<li class="lnb-item">
-						<h3 class="title"><a href="#" class="link">내가 참여한 캠페인</a></h3>
-					</li>
-					<!-- 적립금/쿠폰 -->
-					<li class="lnb-item">
-						<h3 class="title"><a href="#" class="link">적립금/쿠폰</a></h3>
-						<ul class="list">
-							<li class="item"><a href="#" class="link"><span class="text">출자금내역조회</span></a></li>
-							<li class="item"><a href="#" class="link"><span class="text">적립금내역조회</span></a></li>
-							<li class="item"><a href="#" class="link"><span class="text">선수금내역조회</span></a></li>
-							<li class="item"><a href="#" class="link"><span class="text">쿠폰</span></a></li>
-						</ul>
-					</li>
-					<!-- 1:1상담 -->
-					<li class="lnb-item">
-						<h3 class="title"><a href="#" class="link">1:1상담</a></h3>
-					</li>
-					<!-- 즐겨찾기/물품후기 -->
-					<li class="lnb-item">
-						<h3 class="title"><a href="#" class="link">즐겨찾기/물품후기</a></h3>
-						<ul class="list">
-							<li class="item"><a href="#" class="link"><span class="text">관심물품</span></a></li>
-							<li class="item"><a href="#" class="link"><span class="text">관심 콘텐츠</span></a></li>
-							<li class="item"><a href="#" class="link"><span class="text">내가 작성한 물품후기</span></a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<!-- /LNB -->
-			<div class="content">
-				<h3 class="cTitle1">1:1상담</h3>
-				<div class="cont-box mgT0">
-					<div class="board-top mgT0">
-						<div class="fr">
-							<a href="#" class="btn-mini-text btn-popup btn-icon btn-consul">1:1상담 등록</a>
-						</div>
 					</div>
-					<dl class="search-form mgT15">
-						<dt class="title">조회기간</dt>
-						<dd class="cont">
-							<div class="btn-area">
-								<button type="button" class="btn-term month1 on">1개월</button>
-								<button type="button" class="btn-term month3">3개월</button>
-								<button type="button" class="btn-term month6">6개월</button>
-							</div>
-							<div class="calendar-area">
-								<span class="calendar term">
-									<input type="text" class="datepicker start" readonly>
-								</span>
-								<span class="swung-dash">~</span>
-								<span class="calendar term">
-									<input type="text" class="datepicker end" readonly>
-								</span>
-							</div>
-							<button type="button" class="btn-search">조회</button>
-						</dd>
-					</dl>
-
-					<div class="consul-table mgT40">
-						<div class="consul-title">
-							<span class="consul-tit01">번호</span>
-							<span class="consul-tit02">상담유형</span>
-							<span class="consul-tit03">제목</span>
-							<span class="consul-tit04">등록일</span>
-							<span class="consul-tit05">처리상태</span>
-						</div>
-						<div class="consul-cont">
-							<ul class="consul-list">
-								<li class="item-consul">
-									<div class="consul-box">
-										<span class="number">10</span>
-										<span class="consul-type">물품상담</span>
-										<div class="title-box">
-											<a href="#">곡물세안제 이제 구입 못하나요?</a>
-											<div class="speech-box">
-												늘 사용하던 제품이라 주문하려고 했는데 중단 됐다고 나오네요 구입 못하는건가요?<br>꼭 구매하고 싶습니다.
-											</div>
-											<div class="btn-area">
-												<a href="#" class="btn-mini-text btn-icon2">수정</a>
-												<a href="#" class="btn-mini-text btn-icon2">삭제</a>
-											</div>
-										</div>
-										<span class="enroll-date">2017-02-27(월)</span>
-										<span class="proce-condi">처리중</span>
-									</div>
-									<div class="notice-box">
-										<p class="notice-txt">아직 답변이 등록되지 않았습니다. 빠른 시일 내 답변 드리겠습니다.</p>
-									</div>
-								</li>
+					<div class="find-cont on">
+						<div class="findway">
+							<ul class="findway-tab">
+								<li class="item on"><a href="#none" class="text">매장검색</a></li>
+								<li class="item"><a href="#none" class="text">길찾기</a></li>
 							</ul>
-							<div class="pagenation">
-								<div class="page-list">
-									<a href="#none" class="button btn-first">맨앞</a>
-									<a href="#none" class="button btn-prev">이전</a>
-									<span class="number on">1</span>
-									<a href="#none" class="number">2</a>
-									<a href="#none" class="number">3</a>
-									<a href="#none" class="number">4</a>
-									<a href="#none" class="number">5</a>
-									<a href="#none" class="number">6</a>
-									<a href="#none" class="number">7</a>
-									<a href="#none" class="number">8</a>
-									<a href="#none" class="number">9</a>
-									<a href="#none" class="number">10</a>
-									<a href="#none" class="button btn-next">다음</a>
-									<a href="#none" class="button btn-last">맨뒤</a>
+						</div>
+						<div class="find-box on">
+							<div class="search-form">
+								<div class="row">
+									<div class="floatL">
+										<label class="hide">시/도</label>
+										<select class="styled1" style="width:159px;">
+											<option>시/도</option>
+											<option>서울</option>
+											<option>대전</option>
+											<option>대구</option>
+										</select>
+									</div>
+									<div class="floatR">
+										<label class="hide">시/도</label>
+										<select class="styled1" style="width:159px;">
+											<option>시/군/구</option>
+											<option>강동구</option>
+											<option>서대문구</option>
+											<option>송파구</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<label for="Address" class="hide">주소</label>
+									<div class="btn-type">
+										<input type="text" placeholder="지역/매장명 검색">
+										<button type="button" class="btn-basic-text btn-green">검색</button>
+									</div>
+								</div>
+							</div>
+							<div class="store-result">
+								<p class="title">총 <em class="fColor3">10</em>개의 매장이 검색되었습니다.</p>
+								<div class="flag-list">
+									<span class="flag01">신규/이전<br>매장</span>
+									<span class="flag02">매장<br>픽업</span>
+									<span class="flag03">매장<br>배송</span>
+									<span class="flag04">신선육<br>매장</span>
+								</div>
+								<div class="find-list">
+									<!-- 검색된 매장이 없을 경우 -->
+									<p class="no-list" style="display:block;">검색된 <span class="fColor1">'매장'</span>이 없습니다.</p>
+									<!-- //검색된 매장이 없을 경우 -->
+								</div>
+							</div>
+						</div>
+						<div class="find-box">
+							<div class="search-form current-posi">
+								<div class="row">
+									<button type="button" class="btn-basic-text btn-gray btn-cp">현재위치</button>
+									<input type="text" class="departure" placeholder="출발지를 입력하세요.">
+									<button type="button" class="btn-delete"><span>삭제</span></button>
+								</div>
+								<div class="row">
+									<input type="text" class="destination" placeholder="도착지를 입력하세요.">
+									<button type="button" class="btn-delete"><span>삭제</span></button>
+								</div>
+								<button type="button" class="btn-findway">길찾기</button>
+
+								<div class="transport">
+									<ul>
+									<li class="on"><a href="#none">자동차</a></li>
+									<li><a href="#none">대중교통</a></li>
+									<li><a href="#none">도보</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="transport-cont">
+								<div class="find-list">
+									<ul>
+										<li class="on">
+											<span class="pointer type02">출발</span>
+											<dl>
+												<dt>
+													<a href="#none">대치매장</a>
+
+												</dt>
+												<dd class="addr">서울 강남구 삼성로51길 11(대치동 611)<br>카이로스빌딩 104호, 105호</dd>
+											</dl>
+										</li>
+										<li>
+											<span class="pointer type02">도착</span>
+											<dl>
+												<dt>
+													<a href="#none">대치매장</a>
+
+												</dt>
+												<dd class="addr">서울 강남구 삼성로51길 11(대치동 611)<br>카이로스빌딩 104호, 105호</dd>
+											</dl>
+										</li>
+										<li>
+											<span class="pointer type02">출발</span>
+											<dl>
+												<dt>
+													<a href="#none">대치매장</a>
+
+												</dt>
+												<dd class="addr">서울 강남구 삼성로51길 11(대치동 611)<br>카이로스빌딩 104호, 105호</dd>
+											</dl>
+										</li>
+										<li>
+											<span class="pointer type02">도착</span>
+											<dl>
+												<dt>
+													<a href="#none">대치매장</a>
+
+												</dt>
+												<dd class="addr">서울 강남구 삼성로51길 11(대치동 611)<br>카이로스빌딩 104호, 105호</dd>
+											</dl>
+										</li>
+										<li>
+											<span class="pointer type02">출발</span>
+											<dl>
+												<dt>
+													<a href="#none">대치매장</a>
+
+												</dt>
+												<dd class="addr">서울 강남구 삼성로51길 11(대치동 611)<br>카이로스빌딩 104호, 105호</dd>
+											</dl>
+										</li>
+										<li>
+											<span class="pointer type02">도착</span>
+											<dl>
+												<dt>
+													<a href="#none">대치매장</a>
+
+												</dt>
+												<dd class="addr">서울 강남구 삼성로51길 11(대치동 611)<br>카이로스빌딩 104호, 105호</dd>
+											</dl>
+										</li>
+										<li>
+											<span class="pointer type02">출발</span>
+											<dl>
+												<dt>
+													<a href="#none">대치매장</a>
+
+												</dt>
+												<dd class="addr">서울 강남구 삼성로51길 11(대치동 611)<br>카이로스빌딩 104호, 105호</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+								<div class="find-result" style="display:none;">
+									<!-- 네이버 결과값 영역 -->
+									<img src="../../img/temp/@temp_findway.jpg" alt="네이버 지도 영역">
+									<!-- //네이버 결과값 영역 -->
 								</div>
 							</div>
 						</div>
 					</div>
+					<div class="find-cont">
+						<div class="store-result type02">
+							<p class="title">총 <em class="fColor3">10</em>개의 매장이 검색되었습니다.</p>
+							<div class="flag-list">
+								<span class="flag01">신규/이전<br>매장</span>
+								<span class="flag02">매장<br>픽업</span>
+								<span class="flag03">매장<br>배송</span>
+								<span class="flag04">신선육<br>매장</span>
+							</div>
+							<div class="find-list">
+								<!-- 검색된 매장이 없을 경우 -->
+								<p class="no-list" style="display:block;">검색된 <span class="fColor1">'매장'</span>이 없습니다.</p>
+								<!-- //검색된 매장이 없을 경우 -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map-more"><a href="#" class="btn-mini-text btn-map-more">내 주변 매장보기</a></div>
+				<div class="map-maker" style="position:absolute; top:565px; right:280px;">
+					<a href="#none" class="maker">1</a>
+					<div class="maker-name"><span>대치매장</span></div>
+				</div>
+				<div class="store-info" style="position:absolute; top:150px; right:100px;">
+					<dl>
+						<dt>대치매장
+							<span class="flag">
+								<img src="../../img/icon/flag_icon01.png" alt="신규/이전 매장">
+								<img src="../../img/icon/flag_icon02.png" alt="매장 픽업">
+							</span>
+						</dt>
+						<dd class="img-wrap"><img src="../../img/temp/@temp_store01.jpg" alt="대치매장"></dd>
+						<dd class="addr">서울 강남구 삼성로51길 11(대치동 611)<br>카이로스빌딩 104호, 105호</dd>
+						<dd class="operate"><span class="type01">운영중</span>☎ 02-1234-5678</dd>
+					</dl>
+					<a href="#none" class="regular on">단골</a>
+					<div class="btn-wrap">
+						<a href="#none" class="btn-mini-text btn-icon btn-green">매장상세</a>
+						<span class="group">
+							<a href="#none" class="btn-mini-text">매장배송</a>
+							<a href="#none" class="btn-mini-text">물품정보</a>
+							<a href="#none" class="btn-mini-text">이용내역</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-w1120">
+
+
+			<div class="store-news">
+				<div class="title-wrap">
+					<h3 class="cTitle1">한살림 매장 소식</h3>
+				</div>
+				<div class="thumb-slide4">
+					<ul class="bxslider">
+						<li class="item">
+							<a href="#none">
+								<dl>
+									<dt class="title">[서울] 대치매장 이전기념 특별행사</dt>
+									<dd class="img-wrap"><img src="../../img/temp/@temp_store01.jpg" alt="대치매장 이전기념 특별행사"></dd>
+									<dd class="date">2017-02-27</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#none">
+								<dl>
+									<dt class="title">[성남용인] 위례매장 개장행사 긴 경우...</dt>
+									<dd class="img-wrap"><img src="../../img/temp/@temp_store02.jpg" alt="[성남용인] 위례매장 개장행사 긴 경우..."></dd>
+									<dd class="date">2017-02-27</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#none">
+								<dl>
+									<dt class="title">[성남용인] 서현매장 이전 개장 행사</dt>
+									<dd class="img-wrap"><img src="../../img/temp/@temp_store03.jpg" alt="[성남용인] 서현매장 이전 개장 행사"></dd>
+									<dd class="date">2017-02-27</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#none">
+								<dl>
+									<dt class="title">[서울] 대치매장 이전기념 특별행사</dt>
+									<dd class="img-wrap"><img src="../../img/temp/@temp_store01.jpg" alt="대치매장 이전기념 특별행사"></dd>
+									<dd class="date">2017-02-27</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#none">
+								<dl>
+									<dt class="title">[성남용인] 위례매장 개장행사 긴 경우...</dt>
+									<dd class="img-wrap"><img src="../../img/temp/@temp_store02.jpg" alt="[성남용인] 위례매장 개장행사 긴 경우..."></dd>
+									<dd class="date">2017-02-27</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#none">
+								<dl>
+									<dt class="title">[성남용인] 서현매장 이전 개장 행사</dt>
+									<dd class="img-wrap"><img src="../../img/temp/@temp_store03.jpg" alt="[성남용인] 서현매장 이전 개장 행사"></dd>
+									<dd class="date">2017-02-27</dd>
+								</dl>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -1065,124 +1194,33 @@
 	</div>
 </div>
 
-<!-- 레이어 팝업 영역 -->
-<!-- 1:1 상담 -->
-<div class="layer-popup pop-consul">
-	<div class="pop-head">
-		<h1 class="pop-title">1:1상담</h1>
-		<button type="button" class="btn-close">닫기</button>
-	</div>
-	<div class="pop-content">
-		<div class="board-write1 mgT10">
-			<table>
-				<colgroup>
-					<col style="width:170px;">
-					<col style="*">
-				</colgroup>
-				<tbody>
-					<tr>
-						<th scope="row"><div class="text">제목</div></th>
-						<td><input type="text" value="제목을 입력하세요." style="width:100%;"></td>
-					</tr>
-					<tr>
-						<th scope="row"><div class="text">상담유형</div></th>
-						<td>
-							<div class="secede-group">
-								<label class="item" for="consul1"><input type="radio" id="consul1" name="consul" class="styled1" checked>물품주문</label>
-								<label class="item" for="consul2"><input type="radio" id="consul2" name="consul" class="styled1">물품공급</label>
-								<label class="item" for="consul3"><input type="radio" id="consul3" name="consul" class="styled1">물품대금</label>
-								<label class="item" for="consul4"><input type="radio" id="consul4" name="consul" class="styled1">물품상담</label>
-								<label class="item" for="consul5"><input type="radio" id="consul5" name="consul" class="styled1">물품 기타문의</label>
-							</div>
-							<div class="secede-group">
-								<label class="item" for="consul6"><input type="radio" id="consul6" name="consul" class="styled1">조합원정보</label>
-								<label class="item" for="consul7"><input type="radio" id="consul7" name="consul" class="styled1">기타 건의사항</label>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row"><div class="text">상담내용</div></th>
-						<td>
-							<div class="write-box">
-								<textarea id="text-write" maxlength="500" placeholder="내용을 입력하세요."></textarea>
-							</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="btn-bottom">
-			<a href="#" class="btn-text btn-gray">취소</a>
-			<a href="#" class="btn-text btn-green mgL10">확인</a>
-		</div>
-	</div>
-</div>
-
-<!-- 1:1 상담 -->
-<!-- <div class="layer-popup pop-consul">
-	<div class="pop-head">
-		<h1 class="pop-title">1:1상담</h1>
-		<button type="button" class="btn-close">닫기</button>
-	</div>
-	<div class="pop-content">
-		<div class="board-write1 mgT10">
-			<table>
-				<colgroup>
-					<col style="width:170px;">
-					<col style="*">
-				</colgroup>
-				<tbody>
-					<tr>
-						<th scope="row"><div class="text">제목</div></th>
-						<td><input type="text" value="제목을 입력하세요." style="width:100%;"></td>
-					</tr>
-					<tr>
-						<th scope="row"><div class="text">상담유형</div></th>
-						<td>
-							<label class="item" for="consul1"><input type="radio" id="consul1" name="consul" class="styled1" checked>물품주문</label>
-							<label class="item" for="consul2"><input type="radio" id="consul2" name="consul" class="styled1">물품공급</label>
-							<label class="item" for="consul3"><input type="radio" id="consul3" name="consul" class="styled1">물품대금</label>
-							<label class="item" for="consul4"><input type="radio" id="consul4" name="consul" class="styled1">물품상담</label>
-							<label class="item" for="consul5"><input type="radio" id="consul5" name="consul" class="styled1">물품 기타문의</label>
-							<label class="item mgT10" for="consul6"><input type="radio" id="consul6" name="consul" class="styled1">조합원정보</label>
-							<label class="item mgT10" for="consul7"><input type="radio" id="consul7" name="consul" class="styled1">기타 건의사항</label>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row"><div class="text">상담내용</div></th>
-						<td>
-							<div class="write-box">
-								<textarea id="text-write" maxlength="500" placeholder="내용을 입력하세요."></textarea>
-							</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="btn-bottom">
-			<a href="#" class="btn-text">취소</a>
-			<a href="#" class="btn-text btn-gray mgL10">삭제</a>
-			<a href="#" class="btn-text btn-green mgL10">확인</a>
-		</div>
-	</div>
-</div> -->
-
-
-
-
-
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
+<script type="text/javascript" src="../../js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
-	$(window).load(function(){
-		/* 1:1 상담 */
-		$('.btn-consul').click(function(){
-			$('.pop-consul').fadeIn(200);
-		});
+$(window).load(function(){
 
+	$('.find-tab .item').click(function(){
+		var idx = $(this).index();
+
+		$('.find-tab .item').removeClass('on').eq(idx).addClass('on');
+		$('.find-cont').removeClass('on').eq(idx).addClass('on');
 	});
+
+	$('.findway-tab .item').click(function(){
+		var idx = $(this).index();
+
+		$('.findway-tab .item').removeClass('on').eq(idx).addClass('on');
+		$('.find-cont .find-box').removeClass('on').eq(idx).addClass('on');
+	});
+
+	$('.transport a').click(function(){
+		$(this).parents('li').addClass('on').siblings('li').removeClass('on');
+	});
+});
 </script>
+
 </body>
 
 </html>
