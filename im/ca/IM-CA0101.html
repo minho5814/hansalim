@@ -1128,80 +1128,13 @@
 		</div>
 	</div>
 </div>
-<!-- 레이어 팝업 영역 -->
-<!-- 목표 약정량을 입력해주세요 -->
-<div class="layer-popup pop-goal-amount">
-	<div class="pop-head">
-		<h1 class="pop-title">목표 약정량을 입력해주세요</h1>
-		<button type="button" class="btn-close">닫기</button>
-	</div>
-	<div class="pop-content">
-		<div class="goal-box">
-			<input type="text" id="goal1" name="goal" placeholder="80" style="width:310px;">kg
-		</div>
-		<div class="box-content1 mgT20">
-			<h3 class="box-title">목표 약정량 안내</h3>
-			<div class="box-cont">
-				<p class="item">목표 약정량은 숫자로만 입력 가능합니다.</p>
-				<p class="item">목표 약정량 수정시 최초 입력한 약정량보다 작게 입력 할 수 없습니다.</p>
 
-			</div>
-		</div>
-		<div class="btn-bottom pdT30">
-			<a href="#" class="btn-text">취소</a>
-			<a href="#" class="btn-text btn-green mgL10">확인</a>
-		</div>
-	</div>
-</div>
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="../../js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
-<script type="text/javascript" src="../../js/jquery.jstree.js"></script>
-<script>
-$(window).load(function(){
-	/*리스트 온오버*/
-	$('.recipe-list li').mouseenter(function(){
-		$(this).find('.img-area').addClass('over');
-	});
-	$('.recipe-list li').mouseleave(function(){
-		$(this).find('.img-area').removeClass('over');
-	});
 
-	/* 으뜸요리 */
-	$('.cooking-slide-list').bxSlider({
-		mode:'fade',
-		auto:true,
-		pagerCustom: '.cooking-slide-pager',
-		speed:400, // Slide Speed (default:500)
-		pause:7000
-	});
 
-	/* 목표 약정량을 입력해주세요 */
-	$('.btn-goal-amount').click(function(){
-		$('.pop-goal-amount').fadeIn(200);
-	});
-
-	/* 원재료 검색 */
-	// jstree
-	$('.tree-list').jstree({
-	'plugins' : ['checkbox']
-	});
-	$('.text.selected').each(function(){
-		$(this).parents('.jstree-anchor').click();
-	});
-
-	$('.tree-list').css({'opacity':'1'});
-
-	$('.search-input .query, .search-box .search-text').focusin(function(){
-		$(this).next('.word-box').show();
-	}).focusout(function(){
-		$(this).next('.word-box').hide();
-	});
-
-});
-</script>
 
 
 </body>
