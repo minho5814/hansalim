@@ -835,7 +835,7 @@
 				<span class="arrow">&gt;</span>
 				<a href="#" class="item">캠페인</a>
 				<span class="arrow">&gt;</span>
-				<span class="item">진행중인 캠페인</span>
+				<span class="item">지난 캠페인</span>
 			</div>
 		</div>
 		<div class="banner-title2 bg7 campaign">
@@ -849,78 +849,17 @@
 				<div class="tab-wrap2">
 					<div class="tab-area">
 						<ul class="tab-list1 wid50 tab-styled3">
-							<li class="item on"><a href="IM-CA0101.html" class="text">진행중인 캠페인</a></li>
-							<li class="item"><a href="IM-CA0201.html" class="text">지난 캠페인</a></li>
+							<li class="item"><a href="IM-CA0101.html" class="text">진행중인 캠페인</a></li>
+							<li class="item  on"><a href="IM-CA0201.html" class="text">지난 캠페인</a></li>
 					</div>
 					<div class="tab-content3 on">
-						<div class="group">
-							<div class="title-through">
-								<h3 class="cTitle1">신규 캠페인</h3>
+						<div class="group mgT40">
+							<div class="btn-area year-list">
+								<button type="button" class="btn-year on">2017년</button>
+								<button type="button" class="btn-year">2016년</button>
+								<button type="button" class="btn-year">2015년</button>
 							</div>
-							<div class="campaign-wrap">
-								<ul class="campaign-list">
-									<li>
-										<div class="simbol-area">
-											<div class="symbol-item rect rect1">
-												<span class="cont"><img src="../../img/img/img_campaigin_type1.png" alt="쌀"></span>
-											</div>
-										</div>
-										<div class="text-area">
-											<p>우리땅, 우리 작물</p>
-											<span>5kg 쌀을 구매하고, 우리 땅과 우리 작물을 지켜요</span>
-										</div>
-										<div class="btn-center">
-											<a href="#" class="btn-mini-text btn-icon">자세히보기</a>
-										</div>
-										<div class="bottom-area">
-											<span class="count">123,453 명 참여</span>
-											<span class="date">2017-01-01 ~ 2017-12-31</span>
-										</div>
-									</li>
-									<li>
-										<div class="simbol-area">
-											<div class="symbol-item circle2 circle2_1">
-												<span class="cont">매운<br>라면</span>
-											</div>
-										</div>
-										<div class="text-area">
-											<p>라면도! 기부도!</p>
-											<span>구매한 라면만큼 기부도 동시에</span>
-										</div>
-										<div class="btn-center">
-											<a href="#" class="btn-mini-text btn-icon">자세히보기</a>
-										</div>
-										<div class="bottom-area">
-											<span class="count">123,453 명 참여</span>
-											<span class="date">2017-01-01 ~ 2017-12-31</span>
-										</div>
-									</li>
-									<li>
-										<div class="simbol-area">
-											<div class="symbol-item triangle1 triangle1_2">
-												<span class="cont">두부<br>행사</span>
-											</div>
-										</div>
-										<div class="text-area">
-											<p>빈 병으로 이어달리기</p>
-											<span>생활 속 작은 실천 병 재사용!<br>다음 세대에게 이어줄 소중한 자원입니다.</span>
-										</div>
-										<div class="btn-center">
-											<a href="#" class="btn-mini-text btn-icon">자세히보기</a>
-										</div>
-										<div class="bottom-area">
-											<span class="count">123,453 명 참여</span>
-											<span class="date">2017-01-01 ~ 2017-12-31</span>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="group mgT70">
-							<div class="title-through">
-								<h3 class="cTitle1">진행중인 캠페인</h3>
-							</div>
-							<div class="campaign-wrap">
+							<div class="campaign-wrap mgT5">
 								<ul class="campaign-list">
 									<li class="attain"> <!--달성함-->
 										<div class="simbol-area">
@@ -940,7 +879,7 @@
 											<span class="date">2017-01-01 ~ 2017-12-31</span>
 										</div>
 									</li>
-									<li class="join"> <!--참여중-->
+									<li class="joined"> <!--참여함-->
 										<div class="simbol-area">
 											<div class="symbol-item circle2 circle2_1">
 												<span class="cont">매운<br>라면</span>
@@ -1138,38 +1077,11 @@
 <script>
 $(window).load(function(){
 	/*리스트 온오버*/
-	$('.recipe-list li').mouseenter(function(){
-		$(this).find('.img-area').addClass('over');
-	});
-	$('.recipe-list li').mouseleave(function(){
-		$(this).find('.img-area').removeClass('over');
+	$('.year-list .btn-year').click(function(){
+		$('.year-list .btn-year').removeClass('on');
+		$(this).addClass('on');
 	});
 
-	/* 으뜸요리 */
-	$('.cooking-slide-list').bxSlider({
-		mode:'fade',
-		auto:true,
-		pagerCustom: '.cooking-slide-pager',
-		speed:400, // Slide Speed (default:500)
-		pause:7000
-	});
-
-	/* 원재료 검색 */
-	// jstree
-	$('.tree-list').jstree({
-	'plugins' : ['checkbox']
-	});
-	$('.text.selected').each(function(){
-		$(this).parents('.jstree-anchor').click();
-	});
-
-	$('.tree-list').css({'opacity':'1'});
-
-	$('.search-input .query, .search-box .search-text').focusin(function(){
-		$(this).next('.word-box').show();
-	}).focusout(function(){
-		$(this).next('.word-box').hide();
-	});
 
 });
 </script>

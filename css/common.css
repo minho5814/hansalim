@@ -10460,18 +10460,30 @@ td .radish-bank-box span {display:block;}
 	margin:11px 0 0 11px;
 	border:1px solid #ddd;
 }
+.campaign-list li:before {
+	content: '';
+	position: absolute;
+	left: -1px;
+	top: -5px;
+	width: 52px;
+	height: 40px;
+}
+.campaign-list li.attain:before {
+	background: url(../img/img/img_flag_campaign1.png) 0 0 no-repeat;
+}
+.campaign-list li.join:before {
+	background: url(../img/img/img_flag_campaign2.png) 0 0 no-repeat;
+}
+.campaign-list li.joined:before {
+	background: url(../img/img/img_flag_campaign3.png) 0 0 no-repeat;
+}
 .campaign-list li:nth-child(3n+1) {margin-left: 0}
 .campaign-list .simbol-area {
-/*	width:170px;
-	height:150px;*/
-	/*padding:35px 0;*/
 	position:absolute;
 	left:0;
 	top:0;
 	width:100%;
 	height:220px;
-	background-color:#eee;
-	/*margin:35px auto;*/
 }
 .campaign-list .text-area {
 	position: absolute;
@@ -10479,9 +10491,28 @@ td .radish-bank-box span {display:block;}
 	height:75px;
 	left:0;
 	top:220px;
-
 	text-align: center;
 }
+	.campaign-list .text-area p {
+		overflow: hidden;
+		padding:0 10px 5px 10px;
+		font-size: 18px;
+		font-weight: bold;
+		color:#000;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.campaign-list .text-area span {
+		padding:0 10px;
+		font-size: 15px;
+		color:#666;
+		line-height:21px;
+		display: block;
+		display:-webkit-box;-webkit-line-clamp:2;
+		-webkit-box-orient:vertical;
+		overflow:hidden;
+		text-overflow:ellipsis;
+	}
 .campaign-list .btn-center {
 	width: 100%;
 	height:28px;
@@ -10490,8 +10521,7 @@ td .radish-bank-box span {display:block;}
 	top:310px;
 	margin-top:0;
 }
-.campaign-list .text-area p {padding-bottom:5px; font-size: 18px; font-weight: bold; color:#000;}
-.campaign-list .text-area span {font-size: 15px; color:#666;}
+
 .campaign-wrap .bottom-area {
 	overflow: hidden;
 	position: absolute;
@@ -10511,8 +10541,13 @@ td .radish-bank-box span {display:block;}
 
 /*캠페인 심볼*/
 .symbol-item {
-	position:relative;
+	position:absolute;;
 	height:150px;
+	left:50%;
+	top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
 }
 .symbol-item .cont:before {
 	content: '';
@@ -10614,3 +10649,8 @@ td .radish-bank-box span {display:block;}
 	width:150px;
 	background:url(../img/bg/bg_campaign5.png) no-repeat left center;
 }
+
+.btn-area.year-list {overflow: hidden;}
+	.btn-area.year-list .btn-year:first-child {margin-left:0;}
+	.btn-area.year-list .btn-year {float: left; width: 72px; height:28px; margin-left:4px; background-color: #fff; border:1px solid #bbb; color:#666; font-size: 15px;}
+	.btn-area.year-list .btn-year.on {background-color: #91c90b; border-color:#91c90b; color: #fff;}
