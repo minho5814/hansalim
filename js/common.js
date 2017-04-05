@@ -49,6 +49,7 @@ $(window).load(function(){
 			showMonthAfterYear:true,
 			dayNamesMin:['일', '월', '화', '수', '목', '금', '토'],
 			firstDay: 0,
+			yearSuffix: '년',
 			onSelect: function(e){
 				if($(this).parents('.calendar').hasClass('term') == false){
 					var date = new Date($(this).datepicker({ dateFormat:'yy/mm/dd'}).val()),
@@ -584,7 +585,7 @@ $(window).load(function(){
 	$('.sns-box .sns-close').click(function(){
 		$(this).parents('.sns-box').hide();
 	});
-	
+
 	/* ===========================================================================================================
 		장바구니 (sh/)
 	=========================================================================================================== */
