@@ -1849,6 +1849,13 @@ table .good-table table th {padding:0;}
 	top:8px; right:0;
 }
 
+.title-wrap .user-info {
+	margin:6px 0 26px;
+	color:#666;
+}
+.title-wrap .user-info span {
+	color:#60b015;
+}
 /* 타이틀 */
 .cTitle1 {
 	color:#000;
@@ -1951,6 +1958,18 @@ table .good-table table th {padding:0;}
 	width: 100%;
 	height: 1px;
 	background-color: #60b015;
+}
+
+.sorting-wrap {
+	position: relative;
+	margin:20px 0 35px;
+	padding-bottom:15px;
+	border-bottom:1px solid #ddd;
+}
+.sorting-wrap:after {
+	content: '';
+	display: block;
+	clear: both;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -5372,9 +5391,8 @@ label.check-radio .radiobox {margin-right:8px;}
 .pagenation .page-list .number {
 	width:28px;height:28px;
 	color:#666;
-	font-size:16px;
+	font-size:13px;
 	line-height:28px;
-	font-weight:bold;
 	background-color:#fff;
 }
 .pagenation .page-list .number:hover {
@@ -6159,9 +6177,9 @@ label.check-radio .radiobox {margin-right:8px;}
 
 /*MY030107.html*/
 .layer-popup.pop-way-look .way-look-box {margin-bottom:10px;}
-.search-form.supply-select {overflow:hidden; padding:20px 0; background:none;}
+.search-form.supply-select {overflow:hidden; padding:0; background:none;}
 .supply-select dt {float:left; font-size:18px; color:#000; line-height:32px; font-weight:bold;}
-.search-form.supply-select dd {position:absolute; left:80px; top:20px;}
+.search-form.supply-select dd {position:absolute; left:86px; top:0;}
 
 /*MY030105.html*/
 td .radish-bank-box span {display:block;}
@@ -10680,10 +10698,10 @@ td .radish-bank-box span {display:block;}
 	width: 52px;
 	height: 40px;
 }
-.campaign-list li.attain:before {
+.campaign-list li.join:before {
 	background: url(../img/img/img_flag_campaign1.png) 0 0 no-repeat;
 }
-.campaign-list li.join:before {
+.campaign-list li.attain:before {
 	background: url(../img/img/img_flag_campaign2.png) 0 0 no-repeat;
 }
 .campaign-list li.joined:before {
@@ -10751,7 +10769,30 @@ td .radish-bank-box span {display:block;}
 .campaign-wrap .bottom-area .count {float: left;}
 .campaign-wrap .bottom-area .date {float: right;}
 
-/* 캠페인 */
+/* 캠페인 상세 */
+.sub-cont.campaign {overflow: inherit; position: relative;}
+.sub-cont.campaign .symbol-item {top:37px; right:70px;}
+.campaign .view-area {
+	position: relative;
+}
+.campaign .view-area:before {
+	content: '';
+	position: absolute;
+	left: -1px;
+	top: -5px;
+	width: 52px;
+	height: 40px;
+}
+.campaign .view-area.join:before {
+	background: url(../img/img/img_flag_campaign1.png) 0 0 no-repeat;
+}
+.campaign .view-area.attain:before {
+	background: url(../img/img/img_flag_campaign2.png) 0 0 no-repeat;
+}
+.campaign .view-area.joined:before {
+	background: url(../img/img/img_flag_campaign3.png) 0 0 no-repeat;
+}
+
 .title-txt {
 	font-size:18px;
 	color:#000;
@@ -10791,6 +10832,7 @@ td .radish-bank-box span {display:block;}
 	overflow: hidden;
 	position:relative;
 }
+.campaign-bar .bar + p {padding-top:5px; font-size: 15px; font-weight: bold; text-align: right;}
 .campaign-bar:before{
 	content:'';
 	position:absolute;
@@ -10806,9 +10848,18 @@ td .radish-bank-box span {display:block;}
 	display:block;
 	min-width:3% !important;
 	height:20px;
-	background-color:#51d4d3;
 	text-align:center;
 }
+.normal .campaign-bar {display: none;}
+.attain .campaign-bar .bar {
+	background-color:#51d4d3;
+}
+.joined .campaign-bar .bar,
+.join .campaign-bar .bar,
+.normal .campaign-bar .bar {
+	background-color:#61b016;
+}
+
 .campaign-bar .bar .percent {
 	font-size:13px;
 	color:#fff;
@@ -10822,27 +10873,25 @@ td .radish-bank-box span {display:block;}
 }
 .partner-box .partner-list {}
 .partner-box .partner-list .item-partner {
-	position:relative;
-	overflow:hidden;
-	height:102px;
-	padding:20px;
+	padding:20px 0;
 	border-bottom:1px solid #e3e3e3;
 	box-sizing:border-box;
 }
-.partner-box .partner-list .item-partner .part-profile,
-.partner-box .partner-list .item-partner .part-tracking {float:left;}
 .partner-box .partner-list .item-partner .part-profile {
 	overflow:hidden;
+	float: left;
 	width:445px;
 }
 .partner-box .partner-list .item-partner .part-profile .part-img {
-	float:left;
 	height:60px;
+	display: inline-block;
 }
 .partner-box .partner-list .item-partner .part-profile .part-img img {vertical-align:top;}
 .partner-box .partner-list .item-partner .part-profile .part-text {
-	float:left;
+
 	margin-left:10px;
+	display: inline-block;
+	vertical-align: top;
 }
 .partner-box .partner-list .item-partner .part-profile .part-text .part-tit {
 	display:block;
@@ -10855,31 +10904,26 @@ td .radish-bank-box span {display:block;}
 	line-height:25px;
 }
 .partner-box .partner-list .item-partner .part-tracking {
-	position:relative;
-	width:633px;
-	height:62px;
+	height:60px;
+	display: table-cell;
+	vertical-align: middle;
 }
-.partner-box .partner-list .item-partner .part-tracking  .tracking-box {
-	position:absolute;
-	left:0; top:50%;
-	-ms-transform:translateY(-50%);
-	-webkit-transform:translateY(-50%);
-	transform:translateY(-50%);
-}
+
 .partner-box .partner-list .item-partner .part-tracking .progress-tit {
-	float:left;
+	display: inline-block;
 	width:73px;
 	font-size:15px;
 	color:#000;
 }
 .partner-box .partner-list .item-partner .part-tracking .bar-area {
 	position:relative;
-	float:left;
+	display: inline-block;
 	width:560px;
 }
 .bar-area .bar-box {
 	overflow: hidden;
 	position:relative;
+	display: inline-block;
 	width:440px;
 }
 .bar-area .bar-box:before {
@@ -10900,6 +10944,10 @@ td .radish-bank-box span {display:block;}
 	height:10px;
 	background-color:#51d4d3;
 }
+.bar-area .bar-box.ty02 .bar {
+	background-color:#60b015;
+}
+.bar-area .bar-box.ty02 + .percent {color:#60b015;}
 .bar-area .percent {
 	position:absolute;
 	right:72px; top:0;
@@ -10909,9 +10957,10 @@ td .radish-bank-box span {display:block;}
 }
 .bar-area .attain-mark {
 	position:absolute;
-	right:0; top:-18px;
+	right:0;
+	top:-18px;
 }
-.bar-area .attain-mark img {vertical-align:top;}
+
 
 
 .campaign-wrap .bottom-area .count {float: left; background:url(../img/icon/icon_flag.png) no-repeat left center; padding-left:20px;}
@@ -10919,8 +10968,10 @@ td .radish-bank-box span {display:block;}
 
 /*캠페인 심볼*/
 .symbol-item {
-	position:absolute;;
 	height:150px;
+	position:absolute;
+}
+.simbol-area .symbol-item{
 	left:50%;
 	top:50%;
 	-webkit-transform:translate(-50%,-50%);
