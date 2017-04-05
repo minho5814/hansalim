@@ -5457,9 +5457,19 @@ label.check-radio .radiobox {margin-right:8px;}
 	font-size: 18px;
 	line-height: 18px;
 }
-.sub-cont .view-area .util {overflow: hidden; margin:20px 0 15px}
+.sub-cont .view-area .util {position: relative; margin:20px 0 15px}
+.sub-cont .view-area .util:after {
+	content:'';
+	display: block;
+	clear: both;
+}
 .sub-cont .view-area .util .date { float:left; height:32px; color:#999; font-size: 14px; line-height: 32px;}
-.sub-cont .view-area .util ul {overflow: hidden; float:right;}
+.sub-cont .view-area .util ul {position:relative; float:right;}
+.sub-cont .view-area .util ul:after {
+	content:'';
+	display: block;
+	clear: both;
+}
 .sub-cont .view-area .util ul li {position: relative; float: left;  font-size: 14px; color:#999; height:32px; line-height: 32px; padding-right:11px; margin-left:11px;}
 .sub-cont .view-area .util ul li:last-child {padding-right: 0;}
 .sub-cont .view-area .util ul li:last-child:before{content: none;}
@@ -9882,7 +9892,12 @@ td .radish-bank-box span {display:block;}
 
 /*매장 상세*/
 .sub-cont.store {}
-.sub-cont.store .title-area {overflow: hidden;}
+.sub-cont.store .title-area {position:relative;}
+.sub-cont.store .title-area:after {
+	content: '';
+	display: block;
+	clear: both;
+}
 	.sub-cont.store .title-area .cTitle1{float: left;}
 	.sub-cont.store .title-area .util {float:right;}
 	.sub-cont.store .title-area .util li {padding-right:0; margin-left:0;}
@@ -9909,6 +9924,58 @@ td .radish-bank-box span {display:block;}
 .sub-cont.store .table-area .store-info li.top p span.type02 {color: #ec7015; border: 1px solid #ec7015;}
 .sub-cont.store .table-area .store-info li.top p span.type03 {color: #666; border: 1px solid #666666;}
 
+.sns-box {
+	display: none;
+	position: absolute;
+	top:36px; right:0; z-index: 1;
+	width:272px;
+	padding:20px;
+	background-color:#fff;
+	border:1px solid #666;
+	box-sizing:border-box;
+}
+.sns-box .sns-close {
+	position: absolute;
+	top:16px; right:20px;
+	width:22px; height:22px;
+	background:url(../img/btn/btn_x_11x11.png) 50% 50% no-repeat;
+}
+.sns-box h4 {
+	font-size:15px;
+	color:#000;
+	font-weight: bold;
+	line-height: 16px;
+}
+.sns-box .inner {
+	position:relative;
+	margin-top:15px;
+}
+.sns-box .inner:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.sns-box .inner .sns {
+	float:left;
+	width:50px;
+	height:50px;
+	margin-left:10px;
+}
+.sns-box .inner .sns:first-child {
+	margin-left:0;
+}
+.sns-box .inner .sns01 {
+	background:url(../img/btn/btn_cacaotalk.jpg) 0 0 no-repeat;
+}
+.sns-box .inner .sns02 {
+	background:url(../img/btn/btn_cacaostory.jpg) 0 0 no-repeat;
+}
+.sns-box .inner .sns03 {
+	background:url(../img/btn/btn_facebook.jpg) 0 0 no-repeat;
+}
+.sns-box .inner .sns04 {
+	background:url(../img/btn/btn_addrcopy.jpg) 0 0 no-repeat;
+}
 /*요리 상세*/
  .sub-cont.recipe {}
 	 .sub-cont.recipe .title-area {overflow: hidden;}
