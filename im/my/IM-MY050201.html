@@ -843,10 +843,6 @@
 			</div>
 		</div>
 
-		<div class="content-banner">
-			<!-- 고객 주요 정보 노출 영역 (기획설계 중) -->
-		</div>
-
 		<div class="lnb-container">
 			<!-- LNB -->
 			<div class="lnb">
@@ -910,9 +906,9 @@
 				<div class="cont-box mgT30">
 					<div class="box-style3">
 						<ul class="wage-list">
-							<li><p class="txt">내 출자금 (전일 마감 기준)<span class="price">4,000<em>원</em></span></p></li>
-							<li><p class="txt">내 출자금 (전일 마감 기준)<span class="price fColo4">2,000<em>원</em></span></p></li>
-							<li><p class="txt">내 출자금 (전일 마감 기준)<span class="price">2,000<em>원</em></span></p></li>
+							<li><p class="txt">내 적립금 (전일 마감 기준)<span class="price">4,000<em>원</em></span></p></li>
+							<li><p class="txt">사용신청 적립금<span class="price fColo4">2,000<em>원</em></span></p></li>
+							<li><p class="txt">사용신청 가능 적립금<span class="price">2,000<em>원</em></span></p></li>
 						</ul>
 					</div>
 					<div class="title-wrap mgT25">
@@ -1219,7 +1215,7 @@
 	</div>
 </div>
 
-<!-- 적립금 적립제도 이용안내 -->
+<!-- 적립금 사용신청 -->
 <div class="layer-popup pop-reser-apply">
 	<div class="pop-head">
 		<h1 class="pop-title">적립금사용신청</h1>
@@ -1229,12 +1225,12 @@
 		<div class="board-write1">
 			<table>
 				<colgroup>
-					<col style="width:100px;">
+					<col style="width:200px;">
 					<col style="*">
 				</colgroup>
 				<tbody>
 					<tr>
-						<th scope="row" rowspan="2"><div class="text">적립금<br>전환 선택</div></th>
+						<th scope="row" rowspan="2"><div class="text">적립금 전환 선택</div></th>
 						<td>
 							<div class="swit-rese-box">
 								<label class="item" for="price"><input type="radio" id="price" name="price1" class="styled1">물품대금 전환 (외상금 있을 시 가능)
@@ -1242,8 +1238,8 @@
 										<span class="hide">도움말</span>
 										<div class="inner-box">
 											<div>
-												<p>1</p>
-												<p>2</p>
+												<p>신청하신 적립금만큼 조합원의 외상대금으로 자동 전환됩니다.</p>
+												<p>외상대금전환은 전일 마감 기준의 외상금이 있을시 신청 할 수 있으며, 외상대금 전환시 CMS로 외상대금을 납입하는 조합원은 당일 마감시 선수금이 발생할 수 있습니다.</p>
 											</div>
 										</div>
 									</a>
@@ -1261,8 +1257,8 @@
 										<span class="hide">도움말</span>
 										<div class="inner-box">
 											<div>
-												<p>1</p>
-												<p>2</p>
+												<p>신청하신 적립금만큼 조합원의 출자금으로 자동 전환됩니다.</p>
+												<p>전환된 출자금은 다음날 조합원의 출자금내역보기에서 확인할 수 있습니다.</p>
 											</div>
 										</div>
 									</a>
@@ -1272,9 +1268,9 @@
 						</td>
 					</tr>
 					<tr>
-						<th scope="row"><div class="text">사용하실<br>적립금</div></th>
+						<th scope="row"><div class="text">사용하실 적립금<br><span class="fstyled1">(적립금 사용단위 : 1,000원)</span></div></th>
 						<td>
-							<input type="number" value="적립금 사용단위 1,000원" style="width:200px;" class="align-left"><span class="txt-label">원</span>
+							<input type="number" style="width:200px;" class="align-left"><span class="txt-label">원</span>
 							<span class="use-possi-price">사용가능금액 <span class="price-number">2,000</span>원</span>
 						</td>
 					</tr>
@@ -1283,12 +1279,12 @@
 		</div>
 		<div class="btn-bottom">
 			<a href="#" class="btn-text btn-gray">취소</a>
-			<a href="#" class="btn-text btn-green mgL10">확인</a>
+			<a href="#" class="btn-text btn-green mgL10">신청</a>
 		</div>
 		<div class="title-wrap mgT15">
 			<h3 class="cTitle5">신청내역</h3>
 		</div>
-		<div class="board-lsit type2">
+		<div class="board-lsit type2 mgT15">
 			<table>
 				<colgroup>
 					<col style="width:15%;">
@@ -1326,82 +1322,6 @@
 		</div>
 	</div>
 </div>
-
-<!-- 적립금사용신청_no_result -->
-<!-- <div class="layer-popup pop-reser-apply">
-	<div class="pop-head">
-		<h1 class="pop-title">적립금사용신청</h1>
-		<button type="button" class="btn-close">닫기</button>
-	</div>
-	<div class="pop-content">
-		<div class="board-write1">
-			<table>
-				<colgroup>
-					<col style="width:100px;">
-					<col style="*">
-				</colgroup>
-				<tbody>
-					<tr>
-						<th scope="row" rowspan="2"><div class="text">적립금<br>전환 선택</div></th>
-						<td>
-							<div class="swit-rese-box">
-								<label class="item" for="price"><input type="radio" id="price" name="price1" class="styled1">물품대금 전환 (외상금 있을 시 가능)
-									<a href="#" class="tip">
-										<span class="hide">도움말</span>
-										<div class="inner-box">
-											<div>
-												<p>1</p>
-												<p>2</p>
-											</div>
-										</div>
-									</a>
-								</label>
-								<span class="dead-balan">전일 마감 기준 외상 잔액 <span class="price">0</span>원</span>
-								<span class="gift-addr"><a href="#" class="btn-mini-text btn-icon">나의 거래내역</a></span>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class="swit-rese-box">
-								<label class="item" for="invest"><input type="radio" id="invest" name="invest1" class="styled1">출자금 전환
-									<a href="#" class="tip">
-										<span class="hide">도움말</span>
-										<div class="inner-box">
-											<div>
-												<p>1</p>
-												<p>2</p>
-											</div>
-										</div>
-									</a>
-								</label>
-								<span class="gift-addr"><a href="#" class="btn-mini-text btn-icon">나의 출자금내역</a></span>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row"><div class="text">사용하실<br>적립금</div></th>
-						<td>
-							<input type="number" value="적립금 사용단위 1,000원" style="width:200px;" class="align-left"><span class="txt-label">원</span>
-							<span class="use-possi-price">사용가능금액 <span class="price-number">2,000</span>원</span>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="btn-bottom">
-			<a href="#" class="btn-text btn-gray">취소</a>
-			<a href="#" class="btn-text btn-green mgL10">확인</a>
-		</div>
-		<div class="title-wrap mgT15">
-			<h3 class="cTitle5">신청내역</h3>
-		</div>
-		<div class="no-result">
-			<p class="text">적립금 사용 신청 내역이 존재하지 않습니다.</p>
-		</div>
-	</div>
-</div> -->
-
 
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
