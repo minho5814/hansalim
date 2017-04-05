@@ -6383,12 +6383,14 @@ td .radish-bank-box span {display:block;}
 			box-sizing:border-box;
 			vertical-align:top;
 		}
-		.tree-list .jstree-open .jstree-ocl {
+		.tree-list .jstree-ocl {
 			margin-top:14px;
+		}
+		.tree-list .jstree-open .jstree-ocl {
 			background:url(../img/btn/btn_tree_tog.png) no-repeat 0 0;
 		}
 		.tree-list .jstree-closed .jstree-ocl {
-			background-position: 0  -18px;
+			background:url(../img/btn/btn_tree_tog.png) no-repeat 0 -18px;
 		}
 		.tree-list .jstree-leaf .jstree-ocl {display:none;}
 		.tree-list .jstree-anchor .jstree-checkbox {
