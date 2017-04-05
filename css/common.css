@@ -10841,3 +10841,20 @@ td .radish-bank-box span {display:block;}
 	.btn-area.year-list .btn-year:first-child {margin-left:0;}
 	.btn-area.year-list .btn-year {float: left; width: 72px; height:28px; margin-left:4px; background-color: #fff; border:1px solid #bbb; color:#666; font-size: 15px;}
 	.btn-area.year-list .btn-year.on {background-color: #91c90b; border-color:#91c90b; color: #fff;}
+
+/* 목표 약정량을 입력해주세요 */
+.pop-goal-amount {width:400px;}
+.pop-goal-amount .pop-content {padding:30px;}
+.goal-box {
+	font-size:18px;
+	color:#000;
+	line-height:50px;
+}
+.goal-box input {
+	height:50px;
+	margin-right:9px;
+	border:2px solid #90c807;
+	font-size:18px;
+	color:#666;
+	text-align:right;
+}
