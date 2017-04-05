@@ -49,6 +49,7 @@ $(window).load(function(){
 			showMonthAfterYear:true,
 			dayNamesMin:['일', '월', '화', '수', '목', '금', '토'],
 			firstDay: 0,
+			yearSuffix: '년',
 			onSelect: function(e){
 				if($(this).parents('.calendar').hasClass('term') == false){
 					var date = new Date($(this).datepicker({ dateFormat:'yy/mm/dd'}).val()),
@@ -574,6 +575,15 @@ $(window).load(function(){
 			$(this).parents('.select-box').find('.select-title .data').remove();
 			console.log(0);
 		});
+	});
+
+	/* sns 공유 */
+	$('.btn-use').click(function(){
+		$(this).next('.sns-box').show();
+	});
+
+	$('.sns-box .sns-close').click(function(){
+		$(this).parents('.sns-box').hide();
 	});
 
 	/* ===========================================================================================================

@@ -29,7 +29,22 @@
 				</dl>
 			</div>
 			<div class="search-box">
-				<input type="text" placeholder="검색어를 입력하세요" class="search-text">
+				<div class="inner-box">
+					<input type="text" placeholder="검색어를 입력하세요" class="search-text">
+					<div class="word-box" style="display:none;">
+						<p>추천검색어</p>
+						<ul>
+							<li><a href="#none"><span>감자</span></a></li>
+							<li><a href="#none"><span>감자</span>라면</a></li>
+							<li><a href="#none"><span>감자</span>바게트</a></li>
+							<li><a href="#none"><span>감자</span>쌀과자</a></li>
+							<li><a href="#none">돼지<span>감자</span></a></li>
+							<li><a href="#none"><span>감자</span>떡</a></li>
+							<li><a href="#none"><span>감자</span>전분</a></li>
+							<li><a href="#none"><span>감자</span>과자</a></li>
+						</ul>
+					</div>
+				</div>
 				<button type="button" class="btn-search">검색</button>
 			</div>
 		</div>
@@ -837,7 +852,19 @@
 					<div class="util">
 						<span class="date">2017년 3월 20일 ~ 3월 26일</span>
 						<ul>
-							<li><button type="button" class="btn-image btn-use">공유</button></li>
+							<li>
+								<button type="button" class="btn-image btn-use">공유</button>
+								<div class="sns-box">
+									<h4>공유하기</h4>
+									<button class="sns-close"><span class="hide">닫기</span></button>
+									<div class="inner">
+										<a href="#none" class="sns sns01"><span class="hide">카카오톡</span></a>
+										<a href="#none" class="sns sns02"><span class="hide">카카오스토리</span></a>
+										<a href="#none" class="sns sns03"><span class="hide">페이스북</span></a>
+										<a href="#none" class="sns sns04"><span class="hide">주소복사</span></a>
+									</div>
+								</div>
+							</li>
 						</ul>
 					</div>
 					<div class="cont-area">
@@ -1143,6 +1170,7 @@
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/jquery.jstree.js"></script>
 <script>
 $(window).load(function(){
 
@@ -1157,6 +1185,23 @@ $(window).load(function(){
 	$('.event .btn-top').click(function(){
 		var cont_height = $('.top-anchor').offset().top - $('.head-btm').outerHeight() ;
 		$('html, body').animate({scrollTop:cont_height});
+	});
+
+	/* 원재료 검색 */
+	// jstree
+	$('.tree-list').jstree({
+	'plugins' : ['checkbox']
+	});
+	$('.text.selected').each(function(){
+		$(this).parents('.jstree-anchor').click();
+	});
+
+	$('.tree-list').css({'opacity':'1'});
+
+	$('.search-input .query, .search-box .search-text').focusin(function(){
+		$(this).next('.word-box').show();
+	}).focusout(function(){
+		$(this).next('.word-box').hide();
 	});
 });
 </script>

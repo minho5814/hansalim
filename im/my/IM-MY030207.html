@@ -30,7 +30,22 @@
 				</dl>
 			</div>
 			<div class="search-box">
-				<input type="text" placeholder="검색어를 입력하세요" class="search-text">
+				<div class="inner-box">
+					<input type="text" placeholder="검색어를 입력하세요" class="search-text">
+					<div class="word-box" style="display:none;">
+						<p>추천검색어</p>
+						<ul>
+							<li><a href="#none"><span>감자</span></a></li>
+							<li><a href="#none"><span>감자</span>라면</a></li>
+							<li><a href="#none"><span>감자</span>바게트</a></li>
+							<li><a href="#none"><span>감자</span>쌀과자</a></li>
+							<li><a href="#none">돼지<span>감자</span></a></li>
+							<li><a href="#none"><span>감자</span>떡</a></li>
+							<li><a href="#none"><span>감자</span>전분</a></li>
+							<li><a href="#none"><span>감자</span>과자</a></li>
+						</ul>
+					</div>
+				</div>
 				<button type="button" class="btn-search">검색</button>
 			</div>
 		</div>
@@ -890,7 +905,7 @@
 				<h3 class="cTitle1">매장이용내역조회</h3>
 				<div class="cont-box">
 					<div class="box-content1">
-						<div class="box-cont dot-line">
+						<div class="box-cont">
 							<h4 class="cTitle4">자주 이용하는 매장 :  <a href="#none" class="fColor1 text-link">서초매장</a> (총 이용횟수 100회)<a href="#" class="btn-mini-text mgL10">단골매장 등록</a></h4>
 							<p class="item">위 매장은 조합원님께서 가장 많이 이용한 매장입니다.</p>
 							<p class="item2">단골매장으로 등록하시면 다양한 혜택 및 매장 이벤트 소식 등을 받아보실 수 있습니다.</p>
@@ -1176,7 +1191,27 @@
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/jquery.jstree.js"></script>
+<script>
+$(window).load(function(){
+	/* 원재료 검색 */
+	// jstree
+	$('.tree-list').jstree({
+	'plugins' : ['checkbox']
+	});
+	$('.text.selected').each(function(){
+		$(this).parents('.jstree-anchor').click();
+	});
 
+	$('.tree-list').css({'opacity':'1'});
+
+	$('.search-input .query, .search-box .search-text').focusin(function(){
+		$(this).next('.word-box').show();
+	}).focusout(function(){
+		$(this).next('.word-box').hide();
+	});
+});
+</script>
 </body>
 
 </html>

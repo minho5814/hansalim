@@ -30,7 +30,22 @@
 				</dl>
 			</div>
 			<div class="search-box">
-				<input type="text" placeholder="검색어를 입력하세요" class="search-text">
+				<div class="inner-box">
+					<input type="text" placeholder="검색어를 입력하세요" class="search-text">
+					<div class="word-box" style="display:none;">
+						<p>추천검색어</p>
+						<ul>
+							<li><a href="#none"><span>감자</span></a></li>
+							<li><a href="#none"><span>감자</span>라면</a></li>
+							<li><a href="#none"><span>감자</span>바게트</a></li>
+							<li><a href="#none"><span>감자</span>쌀과자</a></li>
+							<li><a href="#none">돼지<span>감자</span></a></li>
+							<li><a href="#none"><span>감자</span>떡</a></li>
+							<li><a href="#none"><span>감자</span>전분</a></li>
+							<li><a href="#none"><span>감자</span>과자</a></li>
+						</ul>
+					</div>
+				</div>
 				<button type="button" class="btn-search">검색</button>
 			</div>
 		</div>
@@ -944,8 +959,8 @@
 												<option>011</option>
 												<option>017</option>
 											</select>
-											<input type="number" value="" style="width:140px;">
-											<input type="number" value="" style="width:140px;">
+											<input type="number" value="1234" style="width:140px;">
+											<input type="number" value="5678" style="width:140px;">
 										</td>
 									</tr>
 									<tr>
@@ -959,8 +974,8 @@
 									<tr>
 										<th scope="row"><div class="text">이메일</div></th>
 										<td>
-											<input type="text" value="" style="width:140px;"> @
-											<input type="text" value="" style="width:140px;">
+											<input type="text" value="abc123" style="width:140px;"> @
+											<input type="text" value="naver.com" style="width:140px;">
 											<select class="styled1" style="width:140px;">
 												<option>직접입력</option>
 												<option>naver.com</option>
@@ -983,8 +998,8 @@
 												<input type="number" id="Add" value="15320" class="align-center" style="width:90px;">
 												<button type="button" class="btn-round-text btn-gray btn-post">우편번호</button>
 											</div>
-											<input type="text" placeholder="텍스트 입력" value=" 서울시 강동구 구천면로 123-12번지" class="mgT10">
-											<input type="text" value="" class="mgT10">
+											<input type="text" placeholder="텍스트 입력" value="서울 강남구 삼성동" class="mgT10">
+											<input type="text" value="123-45번지 abc아파트 340동 1210호" class="mgT10">
 										</td>
 									</tr>
 									<tr>
@@ -1223,6 +1238,7 @@
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/jquery.jstree.js"></script>
 <script>
 $(window).load(function(){
 	/* 우편번호 찾기 팝업 호출 */
@@ -1236,6 +1252,23 @@ $(window).load(function(){
 	$('.pop-post .btn-search').click(function(){
 		$(this).parents('.pop-post').find('.post-text').hide();
 		$(this).parents('.pop-post').find('.post-result').show();
+	});
+
+	/* 원재료 검색 */
+	// jstree
+	$('.tree-list').jstree({
+	'plugins' : ['checkbox']
+	});
+	$('.text.selected').each(function(){
+		$(this).parents('.jstree-anchor').click();
+	});
+
+	$('.tree-list').css({'opacity':'1'});
+
+	$('.search-input .query, .search-box .search-text').focusin(function(){
+		$(this).next('.word-box').show();
+	}).focusout(function(){
+		$(this).next('.word-box').hide();
 	});
 });
 </script>

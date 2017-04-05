@@ -28,7 +28,22 @@
 				</dl>
 			</div>
 			<div class="search-box">
-				<input type="text" placeholder="검색어를 입력하세요" class="search-text">
+				<div class="inner-box">
+					<input type="text" placeholder="검색어를 입력하세요" class="search-text">
+					<div class="word-box" style="display:none;">
+						<p>추천검색어</p>
+						<ul>
+							<li><a href="#none"><span>감자</span></a></li>
+							<li><a href="#none"><span>감자</span>라면</a></li>
+							<li><a href="#none"><span>감자</span>바게트</a></li>
+							<li><a href="#none"><span>감자</span>쌀과자</a></li>
+							<li><a href="#none">돼지<span>감자</span></a></li>
+							<li><a href="#none"><span>감자</span>떡</a></li>
+							<li><a href="#none"><span>감자</span>전분</a></li>
+							<li><a href="#none"><span>감자</span>과자</a></li>
+						</ul>
+					</div>
+				</div>
 				<button type="button" class="btn-search">검색</button>
 			</div>
 		</div>
@@ -975,9 +990,10 @@
 						</div>
 						<div class="info-text">
 							<p class="fColor7">최근 한달 간 <em class="orange">7</em>번 주문하셨습니다.</p><!-- class="fColor7" 추가 -->
-							<div class="check-area">
+							<!--2017-04-05:정기배송 삭제-->
+							<!-- <div class="check-area">
 								<label><input type="checkbox" class="styled1" checked>정기배송 <em>(주문을 간편하게! 정기배송을 신청하세요!)</em></label>
-							</div>
+							</div> -->
 						</div>
 						<div class="btn-center sub">
 							<a href="#" class="btn-icon-text btn-cart2">장바구니</a>
@@ -2132,6 +2148,27 @@
 <script type="text/javascript" src="../../js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/jquery.jstree.js"></script>
+<script>
+$(window).load(function(){
+	/* 원재료 검색 */
+	// jstree
+	$('.tree-list').jstree({
+	'plugins' : ['checkbox']
+	});
+	$('.text.selected').each(function(){
+		$(this).parents('.jstree-anchor').click();
+	});
+
+	$('.tree-list').css({'opacity':'1'});
+
+	$('.search-input .query, .search-box .search-text').focusin(function(){
+		$(this).next('.word-box').show();
+	}).focusout(function(){
+		$(this).next('.word-box').hide();
+	});
+});
+</script>
 </body>
 
 </html>
