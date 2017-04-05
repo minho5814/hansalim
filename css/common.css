@@ -10785,6 +10785,7 @@ td .radish-bank-box span {display:block;}
 	overflow: hidden;
 	position:relative;
 }
+.campaign-bar .bar + p {padding-top:5px; font-size: 15px; font-weight: bold; text-align: right;}
 .campaign-bar:before{
 	content:'';
 	position:absolute;
@@ -10800,9 +10801,18 @@ td .radish-bank-box span {display:block;}
 	display:block;
 	min-width:3% !important;
 	height:20px;
-	background-color:#51d4d3;
 	text-align:center;
 }
+.normal .campaign-bar {display: none;}
+.attain .campaign-bar .bar {
+	background-color:#51d4d3;
+}
+.joined .campaign-bar .bar,
+.join .campaign-bar .bar,
+.normal .campaign-bar .bar {
+	background-color:#61b016;
+}
+
 .campaign-bar .bar .percent {
 	font-size:13px;
 	color:#fff;
