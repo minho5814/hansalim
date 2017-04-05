@@ -29,7 +29,22 @@
 				</dl>
 			</div>
 			<div class="search-box">
-				<input type="text" placeholder="검색어를 입력하세요" class="search-text">
+				<div class="inner-box">
+					<input type="text" placeholder="검색어를 입력하세요" class="search-text">
+					<div class="word-box" style="display: none;">
+						<p>추천검색어</p>
+						<ul>
+							<li><a href="#none"><span>감자</span></a></li>
+							<li><a href="#none"><span>감자</span>라면</a></li>
+							<li><a href="#none"><span>감자</span>바게트</a></li>
+							<li><a href="#none"><span>감자</span>쌀과자</a></li>
+							<li><a href="#none">돼지<span>감자</span></a></li>
+							<li><a href="#none"><span>감자</span>떡</a></li>
+							<li><a href="#none"><span>감자</span>전분</a></li>
+							<li><a href="#none"><span>감자</span>과자</a></li>
+						</ul>
+					</div>
+				</div>
 				<button type="button" class="btn-search">검색</button>
 			</div>
 		</div>
@@ -1124,7 +1139,22 @@
 						<div class="search-top">
 							<h3 class="search-title">원재료 검색</h3>
 							<div class="search-input">
-								<input type="text" placeholder="검색어를 입력하세요">
+								<div class="inner-box">
+									<input type="text" class="query" placeholder="검색어를 입력하세요">
+									<div class="word-box">
+										<p>추천검색어</p>
+										<ul>
+											<li><a href="#none"><span>감자</span></a></li>
+											<li><a href="#none"><span>감자</span>라면</a></li>
+											<li><a href="#none"><span>감자</span>바게트</a></li>
+											<li><a href="#none"><span>감자</span>쌀과자</a></li>
+											<li><a href="#none">돼지<span>감자</span></a></li>
+											<li><a href="#none"><span>감자</span>떡</a></li>
+											<li><a href="#none"><span>감자</span>전분</a></li>
+											<li><a href="#none"><span>감자</span>과자</a></li>
+										</ul>
+									</div>
+								</div>
 								<button type="button" class="btn-round-text btn-gray">검색</button>
 							</div>
 						</div>
@@ -1167,11 +1197,38 @@
 													</li>
 												</ul>
 											</li>
-											<li><span class="text  selected">간식/음식(7)</span></li>
-											<li><span class="text selected">식사대용(2)</span></li>
+											<li class="jstree-closed">
+												<span class="text  selected">간식/음식(7)</span>
+												<ul class="depth3">
+													<li class="jstree-open">
+														<span class="text">우리밀빵(19)</span>
+														<ul>
+															<li><span class="text selected">계피</span></li><!-- .text 에 class="selected" 추가시 선택되어 로드 -->
+															<li><span class="text selected">계피분말</span></li>
+															<li><span class="text selected">고구마</span></li>
+															<li><span class="text selected">날보리가루</span></li>
+															<li><span class="text selected">드라이이스트</span></li>
+															<li><span class="text selected">디어바게트</span></li>
+															<li><span class="text selected">딸기</span></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li class="jstree-closed">
+												<span class="text selected">식사대용(2)</span>
+												<ul class="depth3">
+													<li class="jstree-open">
+														<span class="text">우리밀빵(19)</span>
+														<ul>
+															<li><span class="text selected">계피</span></li><!-- .text 에 class="selected" 추가시 선택되어 로드 -->
+															<li><span class="text selected">계피분말</span></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
 										</ul>
 									</li>
-									<li class="jstree-open"><span class="text selected">대용량</span></li>
+									<li class="jstree-open"><span class="text selected">대용량(0)</span></li>
 								</ul>
 							</div>
 						</div>
@@ -2327,6 +2384,12 @@ $(window).load(function(){
 	});
 
 	$('.tree-list').css({'opacity':'1'});
+
+	$('.search-input .query, .search-box .search-text').focusin(function(){
+		$(this).next('.word-box').show();
+	}).focusout(function(){
+		$(this).next('.word-box').hide();
+	});
 });
 </script>
 </body>
