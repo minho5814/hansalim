@@ -1033,7 +1033,6 @@ td.e-mail-form {
 	display:inline-block;
 	font-size:22px;
 	color:#ec7015;
-	vertical-align:top;
 }
 
 .box-style3 {
@@ -9685,7 +9684,6 @@ td .radish-bank-box span {display:block;}
 }
 /* 1:1 상담 팝업 */
 .pop-consul {width:900px;}
-.pop-consul .pop-content .board-write1 td .item {width:115px;}
 .pop-consul .pop-content .board-write1 td .write-box {
 	position:relative;
 	width:100%;
