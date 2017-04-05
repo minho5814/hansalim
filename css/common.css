@@ -3185,10 +3185,13 @@ label.check-radio .radiobox {margin-right:8px;}
 		}
 		.head-top .search-box .word-box {
 			display: none;
+			overflow-x: hidden;
+			overflow-y: auto;
 			position: absolute;
 			top:31px; left:0;
 			z-index:10;
 			width:100%;
+			max-height: 500px;
 			background-color:#fff;
 			border:1px solid #90c807;
 			box-sizing: border-box;
@@ -3207,9 +3210,10 @@ label.check-radio .radiobox {margin-right:8px;}
 		}
 		.head-top .search-box .word-box ul li a {
 			display: block;
+			padding: 8px 0;
 			color:#666;
 			font-size:14px;
-			line-height: 32px;
+			line-height: 16px;
 		}
 		.head-top .search-box .word-box ul li a span {
 			color:#f56d24;
@@ -6328,10 +6332,13 @@ td .radish-bank-box span {display:block;}
 	}
 	.search-left .word-box {
 		display: none;
+		overflow-x: hidden;
+		overflow-y: auto;
 		position: absolute;
 		top:31px; left:0;
 		z-index:10;
 		width:100%;
+		max-height: 325px;
 		background-color:#fff;
 		border:1px solid #90c807;
 		box-sizing: border-box;
@@ -6350,9 +6357,10 @@ td .radish-bank-box span {display:block;}
 	}
 	.search-left .word-box ul li a {
 		display: block;
+		padding:8px 0;
 		color:#666;
 		font-size:14px;
-		line-height: 32px;
+		line-height: 16px;
 	}
 	.search-left .word-box ul li a span {
 		color:#f56d24;
@@ -8413,6 +8421,30 @@ td .radish-bank-box span {display:block;}
 .pop-notice-set {width:600px;}
 .pop-notice-set .btn-text {min-width:120px;}
 
+/* 탈퇴신청 */
+.sece-notice {
+	padding:28px 28px 30px 38px;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+}
+.sece-notice dl dt {
+	margin-top:16px;
+	font-weight:bold;
+}
+.sece-notice dl dt,
+.sece-notice dl dd {
+	font-size:15px;
+	color:#000;
+	letter-spacing:-0.5px;
+}
+.sece-notice dl dd {
+	color:#666;
+}
+.sece-notice dl dd .gray-text{
+	font-size:14px;
+	color:#999;
+}
+
 /* 요리서브 메인 */
 .new-cooking-area {}
 .new-cooking-area .new-cooking {
@@ -9771,12 +9803,15 @@ td .radish-bank-box span {display:block;}
 	padding-top:25px;
 	text-align:center;
 }
-.coup-infor-list .coup-item .article-box .aricle-list li span {display:block;}
+.coup-infor-list .coup-item .article-box .aricle-list li span {
+	display:block;
+	height:95px;
+}
 .coup-infor-list .coup-item .article-box .aricle-list li .img img {vertical-align:top;}
 .coup-infor-list .coup-item .article-box .aricle-list li .txt {
 	overflow:hidden;
 	height:36px;
-	margin-top:20px;
+	margin-top:10px;
 	font-size:14px;
 	color:#666;
 	line-height:18px;
