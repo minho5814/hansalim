@@ -266,7 +266,7 @@ html {
 .location-wrap .right-area {
 	position: absolute;
 	right:0;
-	top:20px;
+	top:18px;
 }
 
 .fRight {float:right !important;}
@@ -1441,7 +1441,7 @@ td.e-mail-form {
 /*회색 배경*/
 .container.gray {background-color:#eee;}
 /*회색 배경의 로케이션*/
-.container.gray .location {padding:22px 0;}
+.container.gray .location {padding:22px 0; height: auto;}
 
 /*카테고리 아이콘*/
 .ico-category {font-size: 0;}
@@ -2138,6 +2138,12 @@ td.e-mail-form {
 	width:20px;
 	height:18px;
 	background-position:0 -867px;
+}
+.btn-image.btn-like3{background-color: #fff;border: 1px solid #ddd;box-sizing: border-box;}
+.btn-image.btn-like3:before {
+	width:18px;
+	height:16px;
+	background-position:0 -1193px;
 }
 
 .btn-image.btn-notice {background-color:#666;}
@@ -9261,3 +9267,93 @@ td .radish-bank-box span {display:block;}
 .sub-cont.store .table-area .store-info li.top p span.type01 {color: #09babc; border: 1px solid #09babc;}
 .sub-cont.store .table-area .store-info li.top p span.type02 {color: #ec7015; border: 1px solid #ec7015;}
 .sub-cont.store .table-area .store-info li.top p span.type03 {color: #666; border: 1px solid #666666;}
+
+/*요리 상세*/
+ .sub-cont.recipe {}
+	 .sub-cont.recipe .title-area {overflow: hidden;}
+	 	.sub-cont.recipe .title-area .cTitle1{float: left;}
+	 	.sub-cont.recipe .title-area .util {float:right;}
+	 	.sub-cont.recipe .title-area .util li {padding-right:0; margin-left:0;}
+	 	.sub-cont.recipe .title-area .util li:first-child {margin-right:5px}
+	 	.sub-cont.recipe .title-area .util li:before {content: none;}
+
+ .sub-cont.recipe .cont-area {background-color:#f2f2f2;}
+.recipe-box {position: relative;}
+.recipe-box .img-area {position:absolute; left:0; top:0; width:530px; font-size: 0;}
+.recipe-box .text-area {
+	position: absolute;
+	left:530px;
+	padding:50px 40px 0 40px;
+	width: 510px;
+	height: 100%;
+	box-sizing: border-box;
+}
+.recipe-box .title {
+	padding-left:40px;
+	font-size:22px;
+	line-height: 22px;
+	font-weight: bold;
+	color: #000;
+}
+
+.recipe-box.box1 {height:530px;}
+.recipe-box.box1 .img-area {
+	width:530px;
+	height:100%;
+	overflow: hidden;
+}
+.recipe-box.box1 .img-area img {width: 100%;}
+
+.recipe-box.box1  .title {
+	background:url(../img/icon/icon_recipe1.png) left center no-repeat;
+}
+.recipe-box.box2  .title {
+	float:left;
+	background:url(../img/icon/icon_recipe2.png) left center no-repeat;
+}
+.recipe-box.box1  .time {
+	display:block;
+	margin-top:20px;
+	padding-left:20px;
+	background:url(../img/icon/icon_recipe4.png) left center no-repeat;
+	font-size:15px;
+	line-height: 15px;
+	font-weight: bold;
+	color: #60b015;
+}
+.recipe-box.box1 .recipe-list {
+	margin-top:40px;
+	color:#666;
+}
+.recipe-box.box1 .text-area {}
+.recipe-box.box1 .text-area:before {
+	content: '';
+	position:absolute;
+	left:40px;
+	bottom:1px;
+	width:430px;
+	height:1px;
+	background:url(../img/bg/bg02.png) 0 0 repeat-x;
+
+}
+
+.recipe-box.box2 {height:290px; }
+.recipe-box.box2 .img-area {width:530px; height:290px; overflow: hidden;}
+.recipe-box.box2 .img-area img {width:100%; height: 100%;}
+.recipe-box.box2 .text-area{padding-top:40px;}
+.recipe-box.box2 .text-top {overflow: hidden;}
+.recipe-box.box2 .person {
+	float:right;
+	display:block;
+	padding-left:20px;
+	background:url(../img/icon/icon_recipe3.png) left center no-repeat;
+	font-size:15px;
+	font-weight: bold;
+	color: #60b015;
+}
+.recipe-box.box2 .material {display: block; margin-top:30px;  letter-spacing: -0.5px;}
+.recipe-box.box2 dl {
+
+}
+.recipe-box.box2 dt {float:left; padding-right: 8px; color:#9e8441; font-weight: bold; padding-top:14px;}
+.recipe-box.box2 dd {color:#666; padding-left:48px; padding-top:15px;}
