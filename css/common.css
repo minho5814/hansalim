@@ -426,27 +426,31 @@ html {
 			.board-write3 .btn-styled a,
 			.board-write3 .btn-styled button {margin-left:4px;}
 
-.board-write4 {border-top:1px solid #61b016;}
-	.board-write4 table {border-bottom:1px solid #ddd;}
+.board-write4 {border-top:1px solid #666;}
+	.board-write4 table {
+		border:1px solid #bbb;
+	}
 	.board-write4 th,
 	.board-write4 td {
-		padding:15px 20px 18px;
-		border-bottom:1px solid #ddd;
-		border-right:1px solid #ddd;
+		border-left:1px solid #ddd;
 		text-align:center;
 	}
 	.board-write4 tr th:first-child ,
-	.board-write4 tr td:first-child {border-left:1px solid #ddd;}
+	.board-write4 tr td:first-child {border-left:0;}
 		.board-write4 .text {
 			padding:5px 0;
 			font-size:15px;
 			line-height:22px;
 		}
 	.board-write4 th {
+		height:55px;
 		background-color:#f0f2ef;
 		color:#000;
+		font-weight:bold;
 	}
 	.board-write4 td {
+		padding:15px 20px 18px;
+		border-top:1px solid #ddd;
 		font-size:15px;
 		color:#666;
 		line-height:22px;
@@ -3881,7 +3885,6 @@ label.check-radio .radiobox {margin-right:8px;}
 	}
 		.box-content1 .box-cont p {
 			position:relative;
-			margin-top:5px;
 			padding-left:11px;
 			color:#666;
 			font-size:14px;
@@ -8794,15 +8797,16 @@ td .radish-bank-box span {display:block;}
 /* 어린이 밥상 */
 .child-table img {vertical-align:top;}
 
-.food-list li {
-	margin-top:7px;
-}
-.food-list li:first-child {margin-top:7px;}
+.food-list li {margin-top:7px;}
+.food-list li:first-child {margin-top:0;}
 .food-list li .recipe{
 	display:inline-block;
-	padding-right:32px;
+	padding-right:20px;
 	color:#61b016;
-	background:url(../img/icon/icon_hat.gif) no-repeat right 0;
+	background:url(../img/icon/icon_hat.gif) no-repeat 100% 3px;
+	font-weight:bold;
+	text-decoration:underline;
+	line-height:22px;
 }
 .recipe-icon {
 	display:inline-block;
