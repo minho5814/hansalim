@@ -839,8 +839,8 @@ td.e-mail-form {
 		margin-top:-1px;
 		margin-left:-1px;
 	}
-	.thumb-list3 .thumb-item .ico-category {position: absolute;right:20px; top:20px;}
-	.thumb-list3 .thumb-item .ico-round2 {position: absolute;right:20px; top:20px;}
+	.thumb-list3 .thumb-item .ico-category {position: absolute;right:16px; top:16px;}
+	.thumb-list3 .thumb-item .ico-round2 {position: absolute;right:16px; top:16px;}
 	.thumb-list3 .thumb-item .link {
 		display:block;
 	}
@@ -1630,6 +1630,7 @@ td.e-mail-form {
 .pdT60 {padding-top:60px !important;}
 
 .pdB40 {padding-bottom:40px !important;}
+.pdB80 {padding-bottom:80px !important;}
 
 .pdL0 {padding-left:0 !important;}
 .pdL30 {padding-left:30px !important;}
@@ -10025,18 +10026,22 @@ td .radish-bank-box span {display:block;}
 	background:url(../img/btn/btn_addrcopy.jpg) 0 0 no-repeat;
 }
 /*요리 상세*/
+.thumb-list3.sub-recipe .check-box{left:10px; top:10px;}
+
  .sub-cont.recipe {}
-	 .sub-cont.recipe .title-area {overflow: hidden;}
-	 	.sub-cont.recipe .title-area .cTitle1{float: left;}
-	 	.sub-cont.recipe .title-area .util {float:right;}
+	.sub-cont.recipe .view-area {padding-bottom:60px;}
+	.sub-cont.recipe .title-area {overflow: hidden; position:relative; padding-bottom:20px;}
+	 	.sub-cont.recipe .title-area .cTitle1{float:left;}
+	 	.sub-cont.recipe .title-area .util {position:absolute; right:0; bottom:15px; margin: 0;}
 	 	.sub-cont.recipe .title-area .util li {padding-right:0; margin-left:0;}
 	 	.sub-cont.recipe .title-area .util li:first-child {margin-right:5px}
 	 	.sub-cont.recipe .title-area .util li:before {content: none;}
 
- .sub-cont.recipe .cont-area {background-color:#f2f2f2;}
+.sub-cont.recipe .cont-area {background-color:#f2f2f2;}
 .recipe-box {position: relative;}
 .recipe-box .img-area {position:absolute; left:0; top:0; width:530px; font-size: 0;}
 .recipe-box .text-area {
+	overflow: hidden;
 	position: absolute;
 	left:530px;
 	padding:50px 40px 0 40px;
@@ -10050,6 +10055,7 @@ td .radish-bank-box span {display:block;}
 	line-height: 22px;
 	font-weight: bold;
 	color: #000;
+	letter-spacing: -2px;
 }
 
 .recipe-box.box1 {height:530px;}
@@ -10084,7 +10090,6 @@ td .radish-bank-box span {display:block;}
 .recipe-box.box1 .recipe-list li {
 	text-indent: -15px;
 	margin:0 0 15px 10px;
-
 }
 .recipe-box.box1 .text-area {}
 .recipe-box.box1 .text-area:before {
@@ -10095,7 +10100,6 @@ td .radish-bank-box span {display:block;}
 	width:430px;
 	height:1px;
 	background:url(../img/bg/bg02.png) 0 0 repeat-x;
-
 }
 
 .recipe-box.box2 {height:290px; }
@@ -10113,8 +10117,93 @@ td .radish-bank-box span {display:block;}
 	color: #60b015;
 }
 .recipe-box.box2 .material {display: block; margin-top:30px;  letter-spacing: -0.5px;}
-.recipe-box.box2 dl {
-
-}
 .recipe-box.box2 dt {float:left; padding-right: 8px; color:#9e8441; font-weight: bold; padding-top:14px;}
 .recipe-box.box2 dd {color:#666; padding-left:48px; padding-top:15px;}
+
+.reply-area {position:relative; width:100%; height:100px;}
+/*.reply-area::after {content: ''; display: block; clear: both;}*/
+	.reply-area button {
+		position:absolute;
+		top:0;
+		display: inline-block;
+		/*position: absolute;
+		right: 0;
+		top: 0;*/
+		height: 100px;
+		box-sizing: border-box;
+		border-radius: 3px;
+
+		font-size: 15px;
+		text-align: center;
+		line-height: 50px;
+	}
+	.reply-area button.btn-reply {
+		right:0;
+		width:140px;
+		background-color: #91c90b;
+		border:1px solid #91c90b;
+		color:#fff;
+		font-size: 18px;
+	}
+	.reply-area button.btn-photo {
+		position:absolute;
+		/*float:left;*/
+		width:120px;
+		background-color: #fff;
+		border:1px solid #55941b;
+		color:#55941b;
+		font-size: 14px;
+	}
+	.reply-area button.btn-photo:before {
+		content:'';
+		position:absolute;
+		left:50%;top:30px;
+		-webkit-transform:translateX(-50%);
+		-ms-transform:translateX(-50%);
+		transform:translateX(-50%);
+		width:22px;
+		height:19px;
+		background:url(../img/sprite/button.png) no-repeat 0 -1210px;
+	}
+		.reply-area button.btn-photo span {display: inline-block; margin-top:25px;}
+
+	.reply-area .write-box {
+		position: absolute;
+		left:130px;
+		top:0;
+		width:840px;
+		height:100px;
+		border:1px solid #bbb;
+		box-sizing: border-box;
+	}
+	.reply-area .write-box textarea {
+		padding: 20px;
+		height: 98px;
+		resize: none;
+		border: 0;
+	}
+		.reply-area .write-box  .text-leng {position: absolute;right:20px;bottom:20px; font-size: 14px; color:#999;}
+
+.reply-table {width:100%; border-top:1px solid #666; border-bottom:1px solid #bbb;}
+	.reply-table li {
+		padding:20px;
+		box-sizing: border-box;
+		border-top:1px solid  #ddd;
+	}
+		.reply-table li .title {width:100%;}
+	.reply-table li:first-child {margin-top:0;}
+
+	.reply-table .cont {}
+	.reply-table .cont > div,
+	.reply-table .cont > span {display: table-cell; vertical-align: middle;}
+	.reply-table .cont .img-area {width:13%; vertical-align: top;}
+	.reply-table .cont .text-area {width:70%; padding: 0 20px; vertical-align: top;}
+	.reply-table .cont .name { width:7%}
+	.reply-table .cont .date {width:10%}
+
+	.reply-table li {cursor: pointer;}
+	.reply-table li.on {cursor: default;}
+	.reply-table li .cont {display:none;}
+	.reply-table li.on .cont {display: block;}
+	.reply-table li.on .title {display: none;}
+	.reply-table li.on .cont {block;}
