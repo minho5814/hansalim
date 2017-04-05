@@ -10017,7 +10017,7 @@ td .radish-bank-box span {display:block;}
 		.thumb-slide4 .bx-pager .bx-pager-link.active {background-color:#000;}
 
 /*매장 상세*/
-.sub-cont.store {}
+.sub-cont.store {margin-bottom:40px;}
 .sub-cont.store .title-area {position:relative;}
 .sub-cont.store .title-area:after {
 	content: '';
