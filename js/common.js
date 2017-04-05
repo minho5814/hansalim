@@ -49,6 +49,7 @@ $(window).load(function(){
 			showMonthAfterYear:true,
 			dayNamesMin:['일', '월', '화', '수', '목', '금', '토'],
 			firstDay: 0,
+			showOtherMonths: true,
 			yearSuffix: '년',
 			onSelect: function(e){
 				if($(this).parents('.calendar').hasClass('term') == false){
@@ -434,7 +435,11 @@ $(window).load(function(){
 	$('.input-select .list .item').click(function(){
 		var txt = $(this).html();
 		var byte = $(this).text().length;
-		$(this).parents('.input-select').find('input').val(txt);
+		if($(this).hasClass('write')){
+			$(this).parents('.input-select').find('input').val('').focus();
+		}else{
+			$(this).parents('.input-select').find('input').val(txt);
+		}
 		$(this).parents('.input-select').find('.list').hide();
 		$(this).parents('.input-select').find('.byte-text .byte').html(byte);
 	});
