@@ -587,7 +587,10 @@ td.e-mail-form {
 }
 .good-table table td.goods .goods-txt,
 .good-table table td.goods .goods-amount {display: block; font-size: 14px;}
-.good-table table td.goods .goods-amount {margin-top:13px;}
+.good-table table td.goods .goods-amount {
+	margin-top:13px;
+	color:#999;
+}
 .good-table table td.goods .supply-date {
 	color:#999;
 	font-size:14px;
@@ -2372,8 +2375,9 @@ td.e-mail-form {
 .btn-image.btn-list-close:before {
 	width:26px;
 	height:15px;
-	background-position:0 -821px;
+	background-position:0 -886px;
 }
+.list-group.on .btn-image.btn-list-close:before {background-position:0 -821px;}
 .btn-image.btn-use {background-color:#fff; border:1px solid #ddd;}
 .btn-image.btn-use:before {
 	width:14px;
@@ -2457,32 +2461,45 @@ td.e-mail-form {
 	background-position:0 -1026px;
 }
 .btn-question {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
 	margin-top: 2px;
-    font-size: 0;
-    text-indent: -9999px;
-    line-height: 0;
+	font-size: 0;
+	text-indent: -9999px;
+	line-height: 0;
 	vertical-align: top;
-    cursor: pointer;
+	cursor: pointer;
 	background-image:url(../img/btn/btn_question.png);
 	background-repeat:no-repeat;
 }
 
 .btn-delete {
-    display: inline-block;
-    width: 19px;
-    height: 19px;
-    font-size: 0;
-    text-indent: -9999px;
-    line-height: 0;
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	font-size: 0;
+	text-indent: -9999px;
+	line-height: 0;
 	vertical-align: text-bottom;
-    cursor: pointer;
+	cursor: pointer;
 	background-image:url(../img/btn/btn_delete.gif);
 	background-repeat:no-repeat;
-
 }
+
+.btn-fixed {
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background:url(../img/sprite/button.png);
+	background-repeat:no-repeat;
+	background-position:0 -1251px;
+	font-size:0;
+	text-indent:-9999px;
+	vertical-align:middle;
+	line-height:0;
+}
+.btn-fixed.on {background-position:0 -1269px;}
 
 /* 화살표 링크 버튼 */
 .btn-link {
@@ -3025,7 +3042,7 @@ label.check-radio .radiobox {margin-right:8px;}
 /*결과 없음, 게시물 없음 */
 .no-result {
 	position:relative;
-	height:200px;
+	height:300px;
 	box-sizing:border-box;
 	border:1px solid #ddd;
 	text-align:center;
@@ -10539,6 +10556,153 @@ td .radish-bank-box span {display:block;}
 .campaign-wrap .bottom-area span {
 	font-size: 14px; color:#666;
 	line-height: 45px;
+}
+.campaign-wrap .bottom-area .count {float: left;}
+.campaign-wrap .bottom-area .date {float: right;}
+
+/* 캠페인 */
+.title-txt {
+	font-size:18px;
+	color:#000;
+	line-height:26px;
+}
+.campaign-txt {
+	margin-top:23px;
+	font-size:15px;
+	color:#666;
+	line-height:26px;
+}
+
+.campaign-area {}
+.campaign-area .campaign-term {}
+.campaign-area .campaign-term ul {
+	overflow:hidden;
+	margin-top:23px;
+}
+.campaign-area .campaign-term ul li {
+	float:left;
+	font-size:14px;
+	color:#666;
+	line-height:24px;
+}
+.campaign-area .campaign-term ul li.item-campaign02 {float:right;}
+.campaign-area .campaign-term ul li .date {
+	margin-left:10px;
+	padding-left:19px;
+	background:url(../img/icon/ico_calendar.png) no-repeat 0 center;
+}
+.campaign-area .campaign-term ul li .partici {
+	padding-left:19px;
+	background:url(../img/icon/ico_originality.png) no-repeat 0 center;
+}
+
+.campaign-bar {
+	overflow: hidden;
+	position:relative;
+}
+.campaign-bar:before{
+	content:'';
+	position:absolute;
+	top:0; left:0;
+	width:100%;
+	height:20px;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+}
+.campaign-bar .bar {
+	position:relative;
+	z-index:1;
+	display:block;
+	min-width:3% !important;
+	height:20px;
+	background-color:#51d4d3;
+	text-align:center;
+}
+.campaign-bar .bar .percent {
+	font-size:13px;
+	color:#fff;
+	font-weight:bold;
+	line-height:20px;
+	vertical-align:top;
+}
+
+.partner-box {
+	border-top:1px solid #666;
+}
+.partner-box .partner-list {}
+.partner-box .partner-list .item-partner {
+	overflow:hidden;
+	padding:20px;
+	border-bottom:1px solid #e3e3e3;
+}
+.partner-box .partner-list .item-partner .part-name,
+.partner-box .partner-list .item-partner .part-tracking {float:left;}
+.partner-box .partner-list .item-partner .part-name {
+	overflow:hidden;
+	width:445px;
+}
+.partner-box .partner-list .item-partner .part-name .part-img {
+	float:left;
+	height:60px;
+}
+.partner-box .partner-list .item-partner .part-name .part-img img {vertical-align:top;}
+.partner-box .partner-list .item-partner .part-name .part-text {
+	float:left;
+	margin-left:10px;
+}
+.partner-box .partner-list .item-partner .part-name .part-text .part-tit {
+	display:block;
+	font-size:18px;
+	color:#000;
+}
+.partner-box .partner-list .item-partner .part-name .part-text .part-txt {
+	font-size:14px;
+	color:#999;
+	line-height:25px;
+}
+.partner-box .partner-list .item-partner .part-tracking {
+	width:633px;
+}
+.partner-box .partner-list .item-partner .part-tracking .progress-tit {
+	float:left;
+	width:73px;
+	font-size:15px;
+	color:#000;
+}
+.partner-box .partner-list .item-partner .part-tracking .bar-area {
+	position:relative;
+	float:left;
+	width:560px;
+}
+.bar-area .bar-box {
+	overflow: hidden;
+	position:relative;
+	width:440px;
+}
+.bar-area .bar-box:before {
+	content:'';
+	display:block;
+	position:absolute;
+	top:0; left:0;
+	width:100%;
+	height:20px;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+}
+.bar-area .bar-box .bar {
+	position:relative;
+	z-index:1;
+	display:block;
+	min-width:3% !important;
+	height:20px;
+	background-color:#51d4d3;
+}
+.bar-area .percent {
+	position:absolute;
+	right:72px; top:0;
+	font-size:15px;
+	color:#09babc;
+	line-height:22px;
 }
 .campaign-wrap .bottom-area .count {float: left; background:url(../img/icon/icon_flag.png) no-repeat left center; padding-left:20px;}
 .campaign-wrap .bottom-area .date {float: right; background:url(../img/icon/icon_date.png) no-repeat left center; padding-left:20px;}
