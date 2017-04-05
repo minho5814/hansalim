@@ -9345,9 +9345,13 @@ td .radish-bank-box span {display:block;}
 	vertical-align: top;
 }
 .thumb-slide4 .bxslider .item dl .title {
+	overflow: hidden;
+	width:100%;
 	color:#000;
 	font-size:18px;
 	font-weight: bold;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .thumb-slide4 .bxslider .item dl .date {
 	color:#666;
