@@ -272,6 +272,8 @@ html {
 
 .fRight {float:right !important;}
 
+.location.select {padding:22px 0 !important; height: auto;}
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	테이블
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -5488,12 +5490,13 @@ label.check-radio .radiobox {margin-right:8px;}
 	padding:30px 40px 40px 40px;
 }
 
-.sub-cont .view-area .cTitle1  {line-height: inherit;}
+.sub-cont .view-area .cTitle1  {line-height:inherit;}
 .sub-cont .view-area .cTitle1 span {
 	display: block;
 	color:#60b015;
-	font-size: 18px;
-	line-height: 18px;
+	font-size:18px;
+	line-height:18px;
+	font-weight:normal;
 }
 .sub-cont .view-area .util {position: relative; margin:20px 0 15px}
 .sub-cont .view-area .util:after {
@@ -6732,9 +6735,11 @@ td .radish-bank-box span {display:block;}
 	font-size: 18px;
 	line-height: 18px;
 }
-.sub-cont .left-area .util {overflow: hidden; margin:20px 0 15px}
+.sub-cont .left-area .util {margin:20px 0 15px}
+.sub-cont .left-area .util::after {content:''; display:block; clear:both;}
 .sub-cont .left-area .util .date { float:left; height:32px; color:#999; font-size: 14px; line-height: 32px;}
-.sub-cont .left-area .util ul {overflow: hidden; float:right;}
+.sub-cont .left-area .util ul {float:right;}
+.sub-cont .left-area .util ul:after {content:''; display:block; clear:both;}
 .sub-cont .left-area .util ul li {position: relative; float: left;  font-size: 14px; color:#999; height:32px; line-height: 32px; padding-right:11px; margin-left:11px;}
 .sub-cont .left-area .util ul li:last-child {padding-right: 0;}
 .sub-cont .left-area .util ul li:last-child:before{content: none;}
@@ -6876,6 +6881,14 @@ td .radish-bank-box span {display:block;}
 }
 
 /*.order-list {margin:15px 0;}*/
+.recipe-wrap {position: relative;}
+.recipe-wrap.list .recipe-list  {margin-top:-13px;}
+.recipe-wrap.list .recipe-list li {
+	margin-left: 13px;
+	margin-top:13px;
+}
+.recipe-wrap.list .recipe-list li:nth-child(4n+1){margin-left: 0px;}
+
 .recipe-wrap .recipe-list {width:100%;}
 	.recipe-wrap .recipe-list:after {
 		content:'';display:block;clear:both;
@@ -6883,60 +6896,98 @@ td .radish-bank-box span {display:block;}
 	.recipe-wrap .recipe-list li {
 		position:relative;
 		float:left;
-		width:25%;
-		height:340px;
+		width:270px;
+		height:280px;
 		border:1px solid #ddd;
 		box-sizing: border-box;
 		background-color: #fff;
-		margin-top: -1px;
-		margin-left: -1px;
-	}
 
+	}
 	.recipe-wrap .recipe-list .img-area {
 		position:relative;
 		width:100%;
-		height:280px;
+		height:222px;
 		overflow:hidden;
 	}
-	.recipe-wrap .recipe-list .img-area img {height: 100%;}
-	.recipe-wrap .recipe-list .img-area.over:before {
-		content: '';
-		width:100%; height:280px;
-		position:absolute; left:0; top:0; background-color:rgba(0,0,0,.8);
-		-webkit-transition:opacity .3s;
-		-ms-transition:opacity .3s;
-		transition:opacity .3s;
+	.recipe-wrap .recipe-list .img-area img {width: 100%; height: 100%;}
 
-	}
-	.recipe-wrap .recipe-list .title-area {
-		width:100%;
-		height:60px;
-		font-size: 18px;
-		color:#000;
-		font-weight: bold;
-		text-align: center;
-		line-height:60px;
-	}
+.recipe-wrap li .over-layer {
+	display:none;
+	opacity:0;
+	position:absolute;
+	left:0;right:0;top:0;bottom:0;
+	background-color:rgba(0,0,0,.5);
+}
+.recipe-wrap li .btn-center {
+	margin-top:0;
+	position: absolute;
+	left:50%;top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+.recipe-wrap li:hover .over-layer {display:block; text-align: center;}/* hover */
+.recipe-wrap li .over-layer:hover {
+	opacity:1;
+	-webkit-transition:opacity .3s;
+	-ms-transition:opacity .3s;
+	transition:opacity .3s;
+}/* hover */
 
-	.recipe-wrap .recipe-list .btn-center {opacity:0; position:absolute; left:50%; top:40%; margin:-45px -75px;}
+	.recipe-wrap .recipe-list .title-area {height: 58px; line-height: 58px; font-size: 18px; font-weight: bold; color:#000; text-align: center;}
 	.recipe-wrap .recipe-list .btn-center .btn-like {margin-left:0;}
-	.recipe-wrap .recipe-list li:hover .btn-center {
-		opacity:1;
-		-webkit-transition:opacity .3s;
-		-ms-transition:opacity .3s;
-		transition:opacity .3s;
-	}
-
-	.recipe-wrap .recipe-list .btn-center .time {
-		display: block;
-		height:25px;
-		margin-bottom:15px;
-		line-height:22px;
-		background:url(../img/icon/ico_clock.png) no-repeat 0 0;
-		padding-left:30px;
-		font-size:18px;
+	.recipe-wrap .recipe-list .time {
+		margin-top:70px;
+		display:inline-block;
+		background:url(../img/icon/ico_clock.png) no-repeat left center;
+		padding-left:20px;
+		font-size:15px;
 		color:#fff;
 		font-weight: bold;
+	}
+
+	/*연관요리 슬라이드*/
+	.recipe-wrap .bx-controls-direction a {
+		display:block;
+		position:absolute;
+		top:115px;
+		width:30px;
+		height:50px;
+		font-size:0;
+	    text-indent:-9999px;
+	    line-height:0;
+	}
+	.recipe-wrap .bx-prev {
+		left:0;
+		background:url(../img/btn/btn_bx_prev30x50.png) no-repeat 0 0;
+	}
+	.recipe-wrap  .bx-next {
+		right:0;
+		background:url(../img/btn/btn_bx_next30x50.png) no-repeat 0 0;
+	}
+
+	.recipe-wrap  .bx-pager {
+		overflow:hidden;
+		height:14px;
+		margin-top:20px;
+		font-size:0;
+		line-height:0;
+		text-align:center;
+	}
+	.recipe-wrap  .bx-pager .bx-pager-item {
+		display:inline-block;
+		margin-left:6px;
+	}
+	.recipe-wrap  .bx-pager .bx-pager-link {
+		display:inline-block;
+		width:14px;
+		height:14px;
+		border-radius:50%;
+		background-color:#8a8a8a;
+		text-indent:-9999px;
+	}
+	.recipe-wrap  .bx-pager .bx-pager-link.active {
+		background-color:#000;
 	}
 
 /*브랜드관*/
@@ -8580,35 +8631,7 @@ td .radish-bank-box span {display:block;}
 	background-color:#000;
 }
 /* 어린이 밥상 */
-.align-center .txt {
-	display:block;
-	font-size:16px;
-	color:#333;
-	line-height:20px;
-	font-weight:bold;
-}
-.align-center .type02 {
-	line-height:38px;
-}
-.util-area {
-	position:absolute;
-	right:0; bottom:3px;
-	overflow:hidden;
-}
-.util-area ul {
-	overflow:hidden;
-	float:right;
-}
-.util-area ul li {
-	position:relative;
-    float:left;
-	margin-right:4px;
-    font-size:14px;
-    color:#999;
-    height:32px;
-    line-height:32px;
-}
-.util-area ul li:last-child {margin-right:0;}
+.child-table img {vertical-align:top;}
 
 .food-list li {
 	margin-top:7px;
@@ -8622,8 +8645,8 @@ td .radish-bank-box span {display:block;}
 }
 .recipe-icon {
 	display:inline-block;
-	padding-left:32px;
-	background:url(../img/icon/icon_hat.gif) no-repeat 0 0;
+	padding-left:22px;
+	background:url(../img/icon/icon_hat.gif) no-repeat 0 4px;
 }
 
 .reference-box {}
@@ -10054,7 +10077,12 @@ td .radish-bank-box span {display:block;}
 }
 /*요리 상세*/
  .sub-cont.recipe {}
-	 .sub-cont.recipe .title-area {overflow: hidden;}
+	 .sub-cont.recipe .title-area {position:relative;}
+	 .sub-cont.recipe .title-area:after {
+		 content:'';
+		 display:block;
+		 clear:both;
+	 }
 	 	.sub-cont.recipe .title-area .cTitle1{float: left;}
 	 	.sub-cont.recipe .title-area .util {float:right;}
 	 	.sub-cont.recipe .title-area .util li {padding-right:0; margin-left:0;}
@@ -10108,6 +10136,11 @@ td .radish-bank-box span {display:block;}
 .recipe-box.box1 .recipe-list {
 	margin-top:40px;
 	color:#666;
+}
+.recipe-box.box1 .recipe-list li {
+	text-indent: -15px;
+	margin:0 0 15px 10px;
+
 }
 .recipe-box.box1 .text-area {}
 .recipe-box.box1 .text-area:before {
