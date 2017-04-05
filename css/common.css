@@ -10631,37 +10631,49 @@ td .radish-bank-box span {display:block;}
 }
 .partner-box .partner-list {}
 .partner-box .partner-list .item-partner {
+	position:relative;
 	overflow:hidden;
+	height:102px;
 	padding:20px;
 	border-bottom:1px solid #e3e3e3;
+	box-sizing:border-box;
 }
-.partner-box .partner-list .item-partner .part-name,
+.partner-box .partner-list .item-partner .part-profile,
 .partner-box .partner-list .item-partner .part-tracking {float:left;}
-.partner-box .partner-list .item-partner .part-name {
+.partner-box .partner-list .item-partner .part-profile {
 	overflow:hidden;
 	width:445px;
 }
-.partner-box .partner-list .item-partner .part-name .part-img {
+.partner-box .partner-list .item-partner .part-profile .part-img {
 	float:left;
 	height:60px;
 }
-.partner-box .partner-list .item-partner .part-name .part-img img {vertical-align:top;}
-.partner-box .partner-list .item-partner .part-name .part-text {
+.partner-box .partner-list .item-partner .part-profile .part-img img {vertical-align:top;}
+.partner-box .partner-list .item-partner .part-profile .part-text {
 	float:left;
 	margin-left:10px;
 }
-.partner-box .partner-list .item-partner .part-name .part-text .part-tit {
+.partner-box .partner-list .item-partner .part-profile .part-text .part-tit {
 	display:block;
 	font-size:18px;
 	color:#000;
 }
-.partner-box .partner-list .item-partner .part-name .part-text .part-txt {
+.partner-box .partner-list .item-partner .part-profile .part-text .part-txt {
 	font-size:14px;
 	color:#999;
 	line-height:25px;
 }
 .partner-box .partner-list .item-partner .part-tracking {
+	position:relative;
 	width:633px;
+	height:62px;
+}
+.partner-box .partner-list .item-partner .part-tracking  .tracking-box {
+	position:absolute;
+	left:0; top:50%;
+	-ms-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
 }
 .partner-box .partner-list .item-partner .part-tracking .progress-tit {
 	float:left;
@@ -10685,7 +10697,7 @@ td .radish-bank-box span {display:block;}
 	position:absolute;
 	top:0; left:0;
 	width:100%;
-	height:20px;
+	height:10px;
 	border:1px solid #ddd;
 	box-sizing:border-box;
 }
@@ -10694,7 +10706,7 @@ td .radish-bank-box span {display:block;}
 	z-index:1;
 	display:block;
 	min-width:3% !important;
-	height:20px;
+	height:10px;
 	background-color:#51d4d3;
 }
 .bar-area .percent {
@@ -10704,6 +10716,13 @@ td .radish-bank-box span {display:block;}
 	color:#09babc;
 	line-height:22px;
 }
+.bar-area .attain-mark {
+	position:absolute;
+	right:0; top:-18px;
+}
+.bar-area .attain-mark img {vertical-align:top;}
+
+
 .campaign-wrap .bottom-area .count {float: left; background:url(../img/icon/icon_flag.png) no-repeat left center; padding-left:20px;}
 .campaign-wrap .bottom-area .date {float: right; background:url(../img/icon/icon_date.png) no-repeat left center; padding-left:20px;}
 
