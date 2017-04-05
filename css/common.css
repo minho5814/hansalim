@@ -10283,6 +10283,7 @@ td .radish-bank-box span {display:block;}
 	.reply-table .cont > div,
 	.reply-table .cont > span {display: table-cell; vertical-align: middle;}
 	.reply-table .cont .img-area {width:13%; vertical-align: top;}
+	.reply-table .cont .img-area img {width: 100%; height: 100%;}
 	.reply-table .cont .text-area {width:70%; padding: 0 20px; vertical-align: top;}
 	.reply-table .cont .name { width:7%}
 	.reply-table .cont .date {width:10%}
