@@ -273,6 +273,74 @@ html {
 
 .location.select {padding:22px 0 !important; height: auto;}
 
+/* 캘린더 */
+.ui-datepicker {
+	width:386px;
+	padding:0 15px 15px;
+	box-sizing:border-box;
+	box-shadow:4px 4px 0 rgba(0,0,0,.2);
+	border:2px solid #90c807;
+	background-color:#fff;
+}
+.ui-datepicker-header {
+	position:relative;
+	height:50px;
+	line-height:50px;
+}
+	.ui-datepicker-header .ui-corner-all {
+		position:absolute;
+		top:50%;
+		width:20px;
+		height:20px;
+		margin-top:-10px;
+		background-repeat:no-repeat;
+		background-position:50% 50%;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+	}
+	.ui-datepicker-header .ui-datepicker-prev {left:105px;background-image:url(../img/btn/btn_date_prev.png);}
+	.ui-datepicker-header .ui-datepicker-next {right:105px;background-image:url(../img/btn/btn_date_next.png);}
+	.ui-datepicker-header .ui-datepicker-title {
+		color:#000;
+		font-size:18px;
+		font-weight:bold;
+		text-align:center;
+	}
+
+.ui-datepicker-calendar {
+	color:#000;
+	text-align:center;
+}
+	.ui-datepicker-calendar th {
+		height:30px;
+		font-size:15px;
+		font-weight:normal;
+	}
+	.ui-datepicker-calendar td {
+		height:30px;
+		font-size:14px;
+	}
+	.ui-datepicker-calendar th:first-child,
+	.ui-datepicker-calendar td:first-child a {color:#f56d24;}
+	.ui-datepicker-calendar .ui-state-disabled {color:#999;}
+		.ui-datepicker-calendar td a {
+			display:inline-block;
+			width:25px;
+			height:25px;
+			padding-right:4px;
+			box-sizing:border-box;
+			text-align:right;
+			line-height:25px;
+		}
+		.ui-datepicker-calendar .ui-datepicker-today a {
+			border:1px solid #ccc;
+			line-height:23px;
+		}
+	.ui-datepicker-calendar {}
+	.ui-datepicker-div {}
+	.ui-datepicker-div {}
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	테이블
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -368,6 +436,12 @@ html {
 	font-size:14px;
 	line-height:32px;
 }
+
+.board-write1.styled2 td {
+	padding:16px 20px;
+}
+.board-write1.styled2 td .radio-check .item {margin-left:85px;}
+.board-write1.styled2 td .radio-check .item:first-child {margin-left:0;}
 
 .board-write2 {border-top:1px solid #666;}
 	.board-write2 table {border-bottom:1px solid #bbb;}
@@ -6311,6 +6385,7 @@ td .radish-bank-box span {display:block;}
 	padding:30px;
 	border: 1px solid #ddd;
 	box-sizing: border-box;
+	background-color:#fff;
 }
 /*.grid-item:nth-child(1+3n) {margin-left:0;}*/
 .grid-item .title {font-size: 18px; color:#000; font-weight: bold;}
@@ -7976,21 +8051,24 @@ td .radish-bank-box span {display:block;}
 	font-size:14px;
 	color:#666;
 	text-align: center;
+	line-height:20px;
 }
 .total-price dl dt .tip {
 	position: relative;
 	display: inline-block;
-	width:18px; height:18px;
+	width:18px; height:20px;
 	margin-left:3px;
 	background:url(../img/btn/btn_question.png) 0 0 no-repeat;
+	vertical-align:middle;
 }
+.total-price dl dt .tip:hover {background:url(../img/btn/btn_question_on.png) 0 0 no-repeat;}
 .total-price dl dt .tip .inner-box {
 	display: none;
 	position: absolute;
-	top:20px; left:-200px;
+	top:10px; left:-200px;
 	z-index:10;
 	transform: translateX(100px);
-	padding-top:4px;
+	padding-top:14px;
 }
 .total-price dl dt .tip:hover .inner-box {
 	display: block;
@@ -7998,7 +8076,7 @@ td .radish-bank-box span {display:block;}
 .total-price dl dt .tip .inner-box:before {
 	content: '';
 	position: absolute;
-	top:0; left:50%;
+	top:10px; left:50%;
 	width:5px; height:4px;
 	margin-left:-2px;
 	background:url(../img/img/img_bubble02.png) 0 0 no-repeat;
