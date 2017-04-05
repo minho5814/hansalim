@@ -8680,25 +8680,34 @@ td .radish-bank-box span {display:block;}
 }
 
 .reference-box {}
-.reference-box .reference-cont {
+.reference-area{
+	padding:0 29px;
+	border:1px solid #ddd;
 	border-top:1px solid #666;
-	border-right:1px solid #ddd;
-	border-left:1px solid #ddd;
+	box-sizing:border-box;
 }
-.reference-box .reference-cont dt {
-	margin:15px 0 2px;
-	padding:0 18px 0 18px;
+.reference-area dl {
+	overflow:hidden;
+	padding:27px 0 25px;
+	border-bottom:1px solid #ddd;
+}
+.reference-area dl:last-child {border-bottom:0;}
+.reference-area dl dt {
+	float:left;
+	width:140px;
 	font-size:16px;
 	color:#000;
+	line-height:22px;
 	font-weight:bold;
 }
-.reference-box .reference-cont dd {
-	padding:0 38px 19px 18px;
+.reference-area dl dd {
+	float:left;
+	width:840px;
 	font-size:15px;
 	color:#666;
 	line-height:22px;
-	border-bottom:1px solid #ddd;
 }
+
 .thumb-box .thumb-list1.first {border-top:1px solid #ddd;}
 .thumb-box .thumb-list1 .thumb-item1 {border-top:0;}
 
