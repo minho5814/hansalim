@@ -437,6 +437,33 @@ html {
 	line-height:32px;
 }
 
+.board-write1 .text-btn {
+	position:relative;
+	padding: 5px 0;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 22px;
+}
+.board-write1 .text-btn button {
+	position:absolute;
+	right:0;top:50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.board-write1.bdBddd {position:relative;}
+.board-write1.bdBddd:after {
+	content:'';
+	position:absolute;
+	left:0;right:0;bottom:0;
+	height:1px;
+	background-color:#bbb;
+}
+.board-write1 .post-user-write {display:none;}
+
+.board-write1.bdBddd table {border-bottom:1px solid #ddd;}
+
 .board-write1.styled2 td {
 	padding:16px 20px;
 }
@@ -598,9 +625,9 @@ td.e-mail-form {
 
 /* 상품 구매 테이블 */
 .good-table {
-    border-top:1px solid #bbb;
-    border-left:1px solid #ddd;
-    border-right:1px solid #ddd;
+	border-top:1px solid #bbb;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
 }
 .good-table.no-data {
 	margin-top:20px;
@@ -610,30 +637,29 @@ td.e-mail-form {
 	margin: 15px 0 80px;
 }
 .good-table table th {
-    height:40px;
-    background-color:#f0f2ef;
-    font-weight: normal;
-		text-align: center;
-    border-bottom:1px solid #ddd;
+	height:40px;
+	background-color:#f0f2ef;
+	font-weight: normal;
+	text-align: center;
+	border-bottom:1px solid #ddd;
 }
+table .good-table table th {padding:0;}
 .good-table table td {
-    text-align:center;
-    vertical-align: middle;
-    border-bottom:1px solid #ddd;
+	text-align:center;
+	vertical-align: middle;
+	border-bottom:1px solid #ddd;
 }
 .good-table table td.goods {
-    padding:25px 20px;
-    text-align:left;
+	padding:25px 20px;
+	text-align:left;
 }
 .good-table table td.goods .goods-img{
-    position: relative;
-    display: inline-block;
-    border:1px solid #ddd;
+	position: relative;
+	display: inline-block;
+	border:1px solid #ddd;
 	z-index:10;
 }
-.good-table table td.goods .goods-img img {
-    vertical-align: middle;
-}
+.good-table table td.goods .goods-img img {vertical-align: middle;}
 .good-table table td.goods .goods-img .goods-type {
     position: absolute;
     top:-12px; right:-12px;
@@ -645,13 +671,15 @@ td.e-mail-form {
     box-sizing: border-box;
 }
 .good-table table td.goods .goods-img .goods-type span {
-    position:absolute;;
-    top:50%; left:0;
-    width:100%;
-    transform: translateY(-50%);
-    font-size:13px;
-    font-weight: 900;
-    line-height: 15px;
+	position:absolute;
+	top:50%; left:0;
+	width:100%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-size:13px;
+	font-weight: 900;
+	line-height: 15px;
 }
 .good-table table td.goods .txt-box span {display: block;}
 .good-table table td.goods .goods-name {
