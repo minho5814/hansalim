@@ -275,6 +275,7 @@ html {
 
 /* 캘린더 */
 .ui-datepicker {
+	display:none;
 	width:386px;
 	padding:0 15px 15px;
 	box-sizing:border-box;
@@ -7433,6 +7434,44 @@ td .radish-bank-box span {display:block;}
 	font-size:14px;
 	color:#999;
 }
+
+/* ---------------------------------------------------------------------------------------------------------
+	로그인(lo)
+--------------------------------------------------------------------------------------------------------- */
+.pop-joining {width:600px;}
+	.pop-joining .bullet-list1 {margin-top:8px;}
+	.pop-joining .bullet-list1 .item {
+		color:#666;
+		letter-spacing:-0.5px;
+	}
+	.pop-joining .joing-top {
+		overflow:hidden;
+		margin:-20px -30px 15px;
+		padding:0 17px;
+		border:1px solid #e3e3e3;
+	}
+		.pop-joining .joing-top .item {
+			float:left;
+			width:33%;
+			height:76px;
+			padding-top:114px;
+			background-repeat:no-repeat;
+			background-position:50% 32px;
+			color:#666;
+			font-size:16px;
+			font-weight:bold;
+			text-align:center;
+			line-height:76px;
+		}
+		.pop-joining .joing-top .item:nth-child(2) {width:34%;}
+		.pop-joining .joing-top .item.on {color:#60b015;}/* on */
+		.pop-joining .joing-top .item.step1 {background-image:url(../img/icon/ico_join01_off.png);}
+		.pop-joining .joing-top .item.step2 {background-image:url(../img/icon/ico_join02_off.png);}
+		.pop-joining .joing-top .item.step3 {background-image:url(../img/icon/ico_join03_off.png);}
+		.pop-joining .joing-top .item.step1.on {background-image:url(../img/icon/ico_join01_on.png);}/* on */
+		.pop-joining .joing-top .item.step2.on {background-image:url(../img/icon/ico_join02_on.png);}/* on */
+		.pop-joining .joing-top .item.step3.on {background-image:url(../img/icon/ico_join03_on.png);}/* on */
+
 /* ---------------------------------------------------------------------------------------------------------
 	회원가입 (jo)
 --------------------------------------------------------------------------------------------------------- */
