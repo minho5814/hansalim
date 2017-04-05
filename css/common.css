@@ -6967,19 +6967,22 @@ td .radish-bank-box span {display:block;}
 		font-size:0;
 	    text-indent:-9999px;
 	    line-height:0;
+		background-color:rgba(0, 0, 0, 0.6);
+		background-repeat: no-repeat;
+		background-position:50% 50%;
 	}
 	.recipe-wrap .bx-prev {
 		left:0;
-		background:url(../img/btn/btn_bx_prev30x50.png) no-repeat 0 0;
+		background-image:url(../img/btn/btn_bx_prev01.png);
 	}
 	.recipe-wrap  .bx-next {
 		right:0;
-		background:url(../img/btn/btn_bx_next30x50.png) no-repeat 0 0;
+		background-image:url(../img/btn/btn_bx_next01.png);
 	}
 
 	.recipe-wrap  .bx-pager {
 		overflow:hidden;
-		height:14px;
+		height:10px;
 		margin-top:20px;
 		font-size:0;
 		line-height:0;
@@ -6991,8 +6994,8 @@ td .radish-bank-box span {display:block;}
 	}
 	.recipe-wrap  .bx-pager .bx-pager-link {
 		display:inline-block;
-		width:14px;
-		height:14px;
+		width:10px;
+		height:10px;
 		border-radius:50%;
 		background-color:#8a8a8a;
 		text-indent:-9999px;
@@ -8307,6 +8310,30 @@ td .radish-bank-box span {display:block;}
 	float:left;
 	width:20%;
 }
+
+.sece-notice {
+	padding:28px 28px 30px 38px;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+}
+.sece-notice dl dt {
+	margin-top:16px;
+	font-weight:bold;
+}
+.sece-notice dl dt,
+.sece-notice dl dd {
+	font-size:15px;
+	color:#000;
+	letter-spacing:-0.5px;
+}
+.sece-notice dl dd {
+	color:#666;
+}
+.sece-notice dl dd .gray-text{
+	font-size:14px;
+	color:#999;
+}
+
 /* 나의 알림 */
 .my-notice-area {}
 .my-notice-area .cTitle4 {
@@ -8685,25 +8712,34 @@ td .radish-bank-box span {display:block;}
 }
 
 .reference-box {}
-.reference-box .reference-cont {
+.reference-area{
+	padding:0 29px;
+	border:1px solid #ddd;
 	border-top:1px solid #666;
-	border-right:1px solid #ddd;
-	border-left:1px solid #ddd;
+	box-sizing:border-box;
 }
-.reference-box .reference-cont dt {
-	margin:15px 0 2px;
-	padding:0 18px 0 18px;
+.reference-area dl {
+	overflow:hidden;
+	padding:27px 0 25px;
+	border-bottom:1px solid #ddd;
+}
+.reference-area dl:last-child {border-bottom:0;}
+.reference-area dl dt {
+	float:left;
+	width:140px;
 	font-size:16px;
 	color:#000;
+	line-height:22px;
 	font-weight:bold;
 }
-.reference-box .reference-cont dd {
-	padding:0 38px 19px 18px;
+.reference-area dl dd {
+	float:left;
+	width:840px;
 	font-size:15px;
 	color:#666;
 	line-height:22px;
-	border-bottom:1px solid #ddd;
 }
+
 .thumb-box .thumb-list1.first {border-top:1px solid #ddd;}
 .thumb-box .thumb-list1 .thumb-item1 {border-top:0;}
 
@@ -9734,12 +9770,15 @@ td .radish-bank-box span {display:block;}
 	padding-top:25px;
 	text-align:center;
 }
-.coup-infor-list .coup-item .article-box .aricle-list li span {display:block;}
+.coup-infor-list .coup-item .article-box .aricle-list li span {
+	display:block;
+	height:95px;
+}
 .coup-infor-list .coup-item .article-box .aricle-list li .img img {vertical-align:top;}
 .coup-infor-list .coup-item .article-box .aricle-list li .txt {
 	overflow:hidden;
 	height:36px;
-	margin-top:20px;
+	margin-top:10px;
 	font-size:14px;
 	color:#666;
 	line-height:18px;
@@ -10025,7 +10064,7 @@ td .radish-bank-box span {display:block;}
 		.thumb-slide4 .bx-pager .bx-pager-link.active {background-color:#000;}
 
 /*매장 상세*/
-.sub-cont.store {}
+.sub-cont.store {margin-bottom:40px;}
 .sub-cont.store .title-area {position:relative;}
 .sub-cont.store .title-area:after {
 	content: '';
@@ -10116,10 +10155,9 @@ td .radish-bank-box span {display:block;}
  .sub-cont.recipe {}
 
 	.sub-cont.recipe .view-area {padding-bottom:60px;}
-	.sub-cont.recipe .title-area {overflow: hidden; position:relative; padding-bottom:20px;}
+	.sub-cont.recipe .title-area {position:relative; padding-bottom:20px;}
 	 	.sub-cont.recipe .title-area .cTitle1{float:left;}
 	 	.sub-cont.recipe .title-area .util {position:absolute; right:0; bottom:15px; margin: 0;}
-	 .sub-cont.recipe .title-area {position:relative;}
 	 .sub-cont.recipe .title-area:after {
 		 content:'';
 		 display:block;
@@ -10131,7 +10169,15 @@ td .radish-bank-box span {display:block;}
 	 	.sub-cont.recipe .title-area .util li:first-child {margin-right:5px}
 	 	.sub-cont.recipe .title-area .util li:before {content: none;}
 
-.sub-cont.recipe .cont-area {background-color:#f2f2f2;}
+.sub-cont.recipe .cont-area {position: relative;background-color:#f2f2f2;}
+.sub-cont.recipe .cont-area:before {
+	content: '';
+	position: absolute;
+	right: 30px; top: 0;
+	width:66px;
+	height:103px;
+	background:url(../img/img/img_ribbon.png) 0 0 no-repeat;
+}
 .recipe-box {position: relative;}
 .recipe-box .img-area {position:absolute; left:0; top:0; width:530px; font-size: 0;}
 .recipe-box .text-area {
@@ -10291,6 +10337,7 @@ td .radish-bank-box span {display:block;}
 	.reply-table .cont > div,
 	.reply-table .cont > span {display: table-cell; vertical-align: middle;}
 	.reply-table .cont .img-area {width:13%; vertical-align: top;}
+	.reply-table .cont .img-area img {width: 100%; height: 100%;}
 	.reply-table .cont .text-area {width:70%; padding: 0 20px; vertical-align: top;}
 	.reply-table .cont .name { width:7%}
 	.reply-table .cont .date {width:10%}

@@ -30,7 +30,22 @@
 				</dl>
 			</div>
 			<div class="search-box">
-				<input type="text" placeholder="검색어를 입력하세요" class="search-text">
+				<div class="inner-box">
+					<input type="text" placeholder="검색어를 입력하세요" class="search-text">
+					<div class="word-box" style="display:none;">
+						<p>추천검색어</p>
+						<ul>
+							<li><a href="#none"><span>감자</span></a></li>
+							<li><a href="#none"><span>감자</span>라면</a></li>
+							<li><a href="#none"><span>감자</span>바게트</a></li>
+							<li><a href="#none"><span>감자</span>쌀과자</a></li>
+							<li><a href="#none">돼지<span>감자</span></a></li>
+							<li><a href="#none"><span>감자</span>떡</a></li>
+							<li><a href="#none"><span>감자</span>전분</a></li>
+							<li><a href="#none"><span>감자</span>과자</a></li>
+						</ul>
+					</div>
+				</div>
 				<button type="button" class="btn-search">검색</button>
 			</div>
 		</div>
@@ -1193,11 +1208,29 @@
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/jquery.jstree.js"></script>
 <script>
 $(window).load(function(){
 	/* 이전 배송지 */
 	$('.btn-prev-shipping').click(function(){
 		$('.pop-prev-shipping').fadeIn(200);
+	});
+
+	/* 원재료 검색 */
+	// jstree
+	$('.tree-list').jstree({
+	'plugins' : ['checkbox']
+	});
+	$('.text.selected').each(function(){
+		$(this).parents('.jstree-anchor').click();
+	});
+
+	$('.tree-list').css({'opacity':'1'});
+
+	$('.search-input .query, .search-box .search-text').focusin(function(){
+		$(this).next('.word-box').show();
+	}).focusout(function(){
+		$(this).next('.word-box').hide();
 	});
 });
 </script>
