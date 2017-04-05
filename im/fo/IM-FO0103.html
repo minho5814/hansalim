@@ -1229,7 +1229,7 @@
 						<p class="cTitle5 fNormal">총 <em class="fColor3">18</em>건의 댓글이 있습니다.</p>
 						<div class="reply-table mgT15">
 							<ul>
-								<li class="on">
+								<li class="item on">
 									<p class="title">봄 기운을 물씬 느낄 수 있는 냉이밥과 달래간장 정말 맛이 좋네요 ! </p>
 									<div class="cont">
 										<div class="img-area"><a class="view-img" href="#"><img src="../../img/temp/@temp_reply.jpg" alt="temp"></a></div>
@@ -1246,7 +1246,7 @@
 										<span class="date">2017-02-27(월)</span>
 									</div>
 								</li>
-								<li>
+								<li class="item">
 									<p class="title">봄 기운을 물씬 느낄 수 있는 냉이밥과 달래간장 정말 맛이 좋네요 ! </p>
 									<div class="cont">
 										<div class="img-area"><img src="../../img/temp/@temp_reply.jpg" alt="temp"></div>
@@ -1263,7 +1263,7 @@
 										<span class="date">2017-02-27(월)</span>
 									</div>
 								</li>
-								<li>
+								<li class="item">
 									<p class="title">봄 기운을 물씬 느낄 수 있는 냉이밥과 달래간장 정말 맛이 좋네요 ! </p>
 									<div class="cont">
 										<div class="img-area"><a href="#"><img src="../../img/temp/@temp_reply.jpg" alt="temp"></a></div>
@@ -1280,7 +1280,7 @@
 										<span class="date">2017-02-27(월)</span>
 									</div>
 								</li>
-								<li>
+								<li class="item">
 									<p class="title">봄 기운을 물씬 느낄 수 있는 냉이밥과 달래간장 정말 맛이 좋네요 ! </p>
 									<div class="cont">
 										<div class="img-area"><a href="#"><img src="../../img/temp/@temp_reply.jpg" alt="temp"></a></div>
@@ -1297,7 +1297,7 @@
 										<span class="date">2017-02-27(월)</span>
 									</div>
 								</li>
-								<li>
+								<li class="item">
 									<p class="title">봄 기운을 물씬 느낄 수 있는 냉이밥과 달래간장 정말 맛이 좋네요 ! </p>
 									<div class="cont">
 										<div class="img-area"><a href="#"><img src="../../img/temp/@temp_reply.jpg" alt="temp"></a></div>
@@ -1467,6 +1467,12 @@ $(window).load(function(){
 	/* 이미지보기 호출 */
 	$('.view-img').click(function(){
 		$('.pop-img-view').fadeIn(200);
+	});
+
+	/* 댓글 아코디언 */
+	$('.reply-table .item .title').click(function(){
+		$('.reply-table .item').removeClass('on');
+		$(this).parent('.item').addClass('on');
 	});
 
 });

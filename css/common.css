@@ -10425,11 +10425,14 @@ td .radish-bank-box span {display:block;}
 
 .reply-table {width:100%; border-top:1px solid #666; border-bottom:1px solid #bbb;}
 	.reply-table li {
-		padding:20px;
 		box-sizing: border-box;
 		border-top:1px solid  #ddd;
 	}
-		.reply-table li .title {width:100%;}
+	.reply-table li.on {padding:20px;}
+		.reply-table li .title {
+			width:100%;
+			padding:20px;
+		}
 	.reply-table li:first-child {margin-top:0;}
 
 	.reply-table .cont {}
