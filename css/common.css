@@ -10108,10 +10108,9 @@ td .radish-bank-box span {display:block;}
  .sub-cont.recipe {}
 
 	.sub-cont.recipe .view-area {padding-bottom:60px;}
-	.sub-cont.recipe .title-area {overflow: hidden; position:relative; padding-bottom:20px;}
+	.sub-cont.recipe .title-area {position:relative; padding-bottom:20px;}
 	 	.sub-cont.recipe .title-area .cTitle1{float:left;}
 	 	.sub-cont.recipe .title-area .util {position:absolute; right:0; bottom:15px; margin: 0;}
-	 .sub-cont.recipe .title-area {position:relative;}
 	 .sub-cont.recipe .title-area:after {
 		 content:'';
 		 display:block;
