@@ -273,6 +273,74 @@ html {
 
 .location.select {padding:22px 0 !important; height: auto;}
 
+/* 캘린더 */
+.ui-datepicker {
+	width:386px;
+	padding:0 15px 15px;
+	box-sizing:border-box;
+	box-shadow:4px 4px 0 rgba(0,0,0,.2);
+	border:2px solid #90c807;
+	background-color:#fff;
+}
+.ui-datepicker-header {
+	position:relative;
+	height:50px;
+	line-height:50px;
+}
+	.ui-datepicker-header .ui-corner-all {
+		position:absolute;
+		top:50%;
+		width:20px;
+		height:20px;
+		margin-top:-10px;
+		background-repeat:no-repeat;
+		background-position:50% 50%;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+	}
+	.ui-datepicker-header .ui-datepicker-prev {left:105px;background-image:url(../img/btn/btn_date_prev.png);}
+	.ui-datepicker-header .ui-datepicker-next {right:105px;background-image:url(../img/btn/btn_date_next.png);}
+	.ui-datepicker-header .ui-datepicker-title {
+		color:#000;
+		font-size:18px;
+		font-weight:bold;
+		text-align:center;
+	}
+
+.ui-datepicker-calendar {
+	color:#000;
+	text-align:center;
+}
+	.ui-datepicker-calendar th {
+		height:30px;
+		font-size:15px;
+		font-weight:normal;
+	}
+	.ui-datepicker-calendar td {
+		height:30px;
+		font-size:14px;
+	}
+	.ui-datepicker-calendar th:first-child,
+	.ui-datepicker-calendar td:first-child a {color:#f56d24;}
+	.ui-datepicker-calendar .ui-state-disabled {color:#999;}
+		.ui-datepicker-calendar td a {
+			display:inline-block;
+			width:25px;
+			height:25px;
+			padding-right:4px;
+			box-sizing:border-box;
+			text-align:right;
+			line-height:25px;
+		}
+		.ui-datepicker-calendar .ui-datepicker-today a {
+			border:1px solid #ccc;
+			line-height:23px;
+		}
+	.ui-datepicker-calendar {}
+	.ui-datepicker-div {}
+	.ui-datepicker-div {}
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	테이블
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -368,6 +436,12 @@ html {
 	font-size:14px;
 	line-height:32px;
 }
+
+.board-write1.styled2 td {
+	padding:16px 20px;
+}
+.board-write1.styled2 td .radio-check .item {margin-left:85px;}
+.board-write1.styled2 td .radio-check .item:first-child {margin-left:0;}
 
 .board-write2 {border-top:1px solid #666;}
 	.board-write2 table {border-bottom:1px solid #bbb;}
@@ -1041,6 +1115,8 @@ td.e-mail-form {
 	display:inline-block;
 	font-size:22px;
 	color:#ec7015;
+	line-height: 24px;
+	vertical-align: top;
 }
 
 .box-style3 {
@@ -6310,6 +6386,7 @@ td .radish-bank-box span {display:block;}
 	padding:30px;
 	border: 1px solid #ddd;
 	box-sizing: border-box;
+	background-color:#fff;
 }
 /*.grid-item:nth-child(1+3n) {margin-left:0;}*/
 .grid-item .title {font-size: 18px; color:#000; font-weight: bold;}
@@ -7975,21 +8052,24 @@ td .radish-bank-box span {display:block;}
 	font-size:14px;
 	color:#666;
 	text-align: center;
+	line-height:20px;
 }
 .total-price dl dt .tip {
 	position: relative;
 	display: inline-block;
-	width:18px; height:18px;
+	width:18px; height:20px;
 	margin-left:3px;
 	background:url(../img/btn/btn_question.png) 0 0 no-repeat;
+	vertical-align:middle;
 }
+.total-price dl dt .tip:hover {background:url(../img/btn/btn_question_on.png) 0 0 no-repeat;}
 .total-price dl dt .tip .inner-box {
 	display: none;
 	position: absolute;
-	top:20px; left:-200px;
+	top:10px; left:-200px;
 	z-index:10;
 	transform: translateX(100px);
-	padding-top:4px;
+	padding-top:14px;
 }
 .total-price dl dt .tip:hover .inner-box {
 	display: block;
@@ -7997,7 +8077,7 @@ td .radish-bank-box span {display:block;}
 .total-price dl dt .tip .inner-box:before {
 	content: '';
 	position: absolute;
-	top:0; left:50%;
+	top:10px; left:50%;
 	width:5px; height:4px;
 	margin-left:-2px;
 	background:url(../img/img/img_bubble02.png) 0 0 no-repeat;
@@ -8054,6 +8134,52 @@ td .radish-bank-box span {display:block;}
 }
 .total-price.total-price4 dl {
 	width:20%;
+}
+
+/* tip */
+.tip {
+	position: relative;
+	display: inline-block;
+	width:18px; height:18px;
+	margin-left:3px;
+	background:url(../img/btn/btn_question.png) 0 0 no-repeat;
+	vertical-align: top;
+}
+.tip .inner-box {
+	display: none;
+	position: absolute;
+	top:20px; left:-200px;
+	z-index:10;
+	transform: translateX(100px);
+	padding-top:4px;
+}
+.tip:hover .inner-box {
+	display: block;
+}
+.tip .inner-box:before {
+	content: '';
+	position: absolute;
+	top:0; left:50%;
+	width:5px; height:4px;
+	margin-left:-2px;
+	background:url(../img/img/img_bubble02.png) 0 0 no-repeat;
+
+}
+.tip .inner-box div {
+	padding:11px 15px;
+	font-size:13px;
+	color:#666;
+	line-height: 19px;
+	text-align: left;
+	background-color: #fff;
+	border:1px solid #60b015;
+}
+
+.tip .inner-box div p {
+	margin-top:10px;
+}
+.tip .inner-box div p:first-child {
+	margin-top:0;
 }
 
 /* 스토어 리스트 */
@@ -9742,40 +9868,6 @@ td .radish-bank-box span {display:block;}
 }
 .pop-reser-apply .pop-content {padding:30px;}
 .pop-reser-apply .no-result {height:100px;}
-.pop-reser-apply .pop-content .tip {
-	position:relative;
-    display:inline-block;
-    width:18px;
-    height:18px;
-    margin-left:3px;
-    background:url(../img/btn/btn_question.png) 0 0 no-repeat;
-	vertical-align:bottom;
-}
-.pop-reser-apply .pop-content .tip:hover .inner-box {
-	display: block;
-}
-.pop-reser-apply .pop-content .tip .inner-box {
-	display:none;
-    position:absolute;
-    top:20px;
-    left:-110px;
-    z-index:10;
-    transform:translateX(100px);
-    padding-top:4px;
-}
-.pop-reser-apply .pop-content .tip .inner-box div {
-	padding:11px 15px;
-    font-size:13px;
-    color:#666;
-    line-height:19px;
-    text-align:left;
-    background-color:#fff;
-    border:1px solid #60b015;
-}
-.pop-reser-apply .pop-content .tip .inner-box div p {
-	margin-top:10px;
-}
-.pop-reser-apply .pop-content .tip .inner-box div p:first-child {margin-top:0;}
 
 .pop-reser-apply .dead-balan {
 	display:block;
@@ -9879,23 +9971,56 @@ td .radish-bank-box span {display:block;}
 .coup-infor-list .coup-item .article-box {
 	float:left;
 	width:50%;
+	text-align: right;
 }
 .coup-infor-list .coup-item .article-box .aricle-list {
-	overflow:hidden;
+	position: relative;
+	display: inline-block;
+}
+.coup-infor-list .coup-item .article-box .aricle-list:after {
+	content: '';
+	display: block;
+	clear: both;
 }
 .coup-infor-list .coup-item .article-box .aricle-list li {
-	float:right;
-	width:25%;
+	position: relative;
+	float:left;
+	width:95px;
+	margin-left:10px;
 	padding-top:25px;
 	text-align:center;
 }
-.coup-infor-list .coup-item .article-box .aricle-list li span {
+.coup-infor-list .coup-item .article-box .aricle-list li:first-child {
+	margin-left:0;
+}
+.coup-infor-list .coup-item .article-box .aricle-list li .img {
 	display:block;
+	width: 95px;
 	height:95px;
 }
 .coup-infor-list .coup-item .article-box .aricle-list li .img img {vertical-align:top;}
+.coup-infor-list .coup-item .article-box .aricle-list li .goods-type {
+	position: absolute;
+	top:0; right:0;
+	width:48px; height:42px;
+	text-align: center;
+	background-color: #f4f4f4;
+	border:1px solid #dadada;
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+.coup-infor-list .coup-item .article-box .aricle-list li .goods-type span {
+	position:absolute;;
+	top:50%; left:0;
+	width:100%;
+	transform: translateY(-50%);
+	font-size:13px;
+	font-weight: 900;
+	line-height: 15px;
+}
 .coup-infor-list .coup-item .article-box .aricle-list li .txt {
 	overflow:hidden;
+	display: block;
 	height:36px;
 	margin-top:10px;
 	font-size:14px;
@@ -9904,8 +10029,8 @@ td .radish-bank-box span {display:block;}
 	letter-spacing:-0.5px;
 }
 /* 1:1 상담 */
-.consul-table {}
-.consul-table .consul-title {
+.my-qna {}
+.my-qna .column-group {
 	overflow:hidden;
 	height:57px;
 	border-top:1px solid #666;
@@ -9914,66 +10039,104 @@ td .radish-bank-box span {display:block;}
 	box-sizing:border-box;
 	line-height:57px;
 }
-.consul-table .consul-title span {
+.my-qna .column-group span {
 	display:block;
 	float:left;
 	text-align:center;
 }
-.consul-table .consul-title .consul-tit01 {width:8%;}
-.consul-table .consul-title .consul-tit02 {width:10%;}
-.consul-table .consul-title .consul-tit03 {width:53%;}
-.consul-table .consul-title .consul-tit04 {width:15%;}
-.consul-table .consul-title .consul-tit05 {width:12%;}
-.consul-cont .consul-list .item-consul {
+.my-qna .column-group .column01 {width:8%;}
+.my-qna .column-group .column02 {width:12%;}
+.my-qna .column-group .column03 {width:55%;}
+.my-qna .column-group .column04 {width:12%;}
+.my-qna .column-group .column05 {width:12%;}
+
+.my-qna .qna-list .item {
 	border-bottom:1px solid #ddd;
 }
-.consul-cont .consul-list .item-consul .consul-box {
-	overflow:hidden;
+.qna-cont .qna-list .item .question {
 	padding:20px 0;
+}
+.qna-cont .qna-list .item .question .row {
+	position: relative;
+}
+.qna-cont .qna-list .item .question .row:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.qna-cont .qna-list .item .question .row a,
+.qna-cont .qna-list .item .question .row span {
+	float: left;
+	display: inline-block;
 	font-size:15px;
 	color:#666;
 	line-height:22px;
 	letter-spacing:-0.5px;
 	text-align:center;
 }
-.consul-cont .consul-list .item-consul .consul-box .number {
-	float:left;
+.qna-cont .qna-list .item .question .number {
 	width:8%;
 }
-.consul-cont .consul-list .item-consul .consul-box .consul-type {
-	float:left;
-	width:10%;
+.qna-cont .qna-list .item .question .type {
+	width:12%;
 }
-.consul-cont .consul-list .item-consul .consul-box .title-box {
-	float:left;
+.qna-cont .qna-list .item .question .title {
 	width:55%;
-	text-align:left;
+	text-align:left !important;
 }
-.consul-cont .consul-list .item-consul .consul-box .title-box .speech-box {display:none;}
-.consul-cont .consul-list .item-consul .consul-box .title-box .btn-area {
-	display:none;
-	margin-top:10px;
+.qna-cont .qna-list .item .question .date {
+	width:12%;
 }
-.consul-cont .consul-list .item-consul .consul-box .enroll-date {
-	float:left;
-	width:15%;
-}
-.consul-cont .consul-list .item-consul .consul-box .proce-condi {
-	float:left;
+.qna-cont .qna-list .item .question .status {
 	width:12%;
 }
 
-
-.consul-cont .consul-list .item-consul .notice-box {
+.qna-cont .qna-list .item .question .detail {
 	display:none;
-	padding:20px 0 20px 169px;
+	padding:0 24% 0 20%;
+}
+.qna-cont .qna-list .item .question .detail .text {
+	color:#666;
+	line-height: 24px;
+	letter-spacing:-0.5px;
+}
+.qna-cont .qna-list .item .question .detail .btn-area {
+	margin-top:10px;
+}
+.qna-cont .qna-list .item .answer {
+	display:none;
+	overflow:hidden;
+	position: relative;
+	padding:20px 0;
 	background-color:#f7f7f7;
 }
-.consul-cont .consul-list .item-consul .notice-box .notice-txt {
+.qna-cont .qna-list .item .answer .text {
+	width:55%;
+	margin:0 24% 0 20%;
 	font-size:15px;
 	color:#666;
 	line-height:24px;
+	letter-spacing: -0.5px;
 }
+.qna-cont .qna-list .item .answer .date {
+	position: absolute;
+	top:50%; right:12%;
+	width:15%;
+	color:#666;
+	text-align: center;
+	transform: translateY(-50%);
+}
+
+.qna-cont .qna-list .item.on .question .title {
+	color:#000;
+	font-weight: bold;
+	line-height: 18px;
+}
+.qna-cont .qna-list .item.on .detail,
+.qna-cont .qna-list .item.on .answer {
+	display: block;
+}
+
 /* 1:1 상담 팝업 */
 .pop-consul {width:900px;}
 .pop-consul .pop-content .board-write1 td .write-box {
@@ -10863,3 +11026,20 @@ td .radish-bank-box span {display:block;}
 	.btn-area.year-list .btn-year:first-child {margin-left:0;}
 	.btn-area.year-list .btn-year {float: left; width: 72px; height:28px; margin-left:4px; background-color: #fff; border:1px solid #bbb; color:#666; font-size: 15px;}
 	.btn-area.year-list .btn-year.on {background-color: #91c90b; border-color:#91c90b; color: #fff;}
+
+/* 목표 약정량을 입력해주세요 */
+.pop-goal-amount {width:400px;}
+.pop-goal-amount .pop-content {padding:30px;}
+.goal-box {
+	font-size:18px;
+	color:#000;
+	line-height:50px;
+}
+.goal-box input {
+	height:50px;
+	margin-right:9px;
+	border:2px solid #90c807;
+	font-size:18px;
+	color:#666;
+	text-align:right;
+}

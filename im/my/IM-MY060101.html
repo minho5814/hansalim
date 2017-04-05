@@ -30,7 +30,22 @@
 				</dl>
 			</div>
 			<div class="search-box">
-				<input type="text" placeholder="검색어를 입력하세요" class="search-text">
+				<div class="inner-box">
+					<input type="text" placeholder="검색어를 입력하세요" class="search-text">
+					<div class="word-box" style="display:none;">
+						<p>추천검색어</p>
+						<ul>
+							<li><a href="#none"><span>감자</span></a></li>
+							<li><a href="#none"><span>감자</span>라면</a></li>
+							<li><a href="#none"><span>감자</span>바게트</a></li>
+							<li><a href="#none"><span>감자</span>쌀과자</a></li>
+							<li><a href="#none">돼지<span>감자</span></a></li>
+							<li><a href="#none"><span>감자</span>떡</a></li>
+							<li><a href="#none"><span>감자</span>전분</a></li>
+							<li><a href="#none"><span>감자</span>과자</a></li>
+						</ul>
+					</div>
+				</div>
 				<button type="button" class="btn-search">검색</button>
 			</div>
 		</div>
@@ -826,10 +841,6 @@
 			</div>
 		</div>
 
-		<div class="content-banner">
-			<!-- 고객 주요 정보 노출 영역 (기획설계 중) -->
-		</div>
-
 		<div class="lnb-container">
 			<!-- LNB -->
 			<div class="lnb">
@@ -917,35 +928,90 @@
 						</dd>
 					</dl>
 
-					<div class="consul-table mgT40">
-						<div class="consul-title">
-							<span class="consul-tit01">번호</span>
-							<span class="consul-tit02">상담유형</span>
-							<span class="consul-tit03">제목</span>
-							<span class="consul-tit04">등록일</span>
-							<span class="consul-tit05">처리상태</span>
+					<div class="my-qna mgT40">
+						<div class="column-group">
+							<span class="column01">번호</span>
+							<span class="column02">상담유형</span>
+							<span class="column03">제목</span>
+							<span class="column04">등록일</span>
+							<span class="column05">처리상태</span>
 						</div>
-						<div class="consul-cont">
-							<ul class="consul-list">
-								<li class="item-consul">
-									<div class="consul-box">
-										<span class="number">10</span>
-										<span class="consul-type">물품상담</span>
-										<div class="title-box">
-											<a href="#">곡물세안제 이제 구입 못하나요?</a>
-											<div class="speech-box">
+						<div class="qna-cont">
+							<ul class="qna-list">
+								<li class="item on">
+									<div class="question">
+										<div class="row">
+											<span class="number">10</span>
+											<span class="type">물품상담</span>
+											<a href="#none" class="title">곡물세안제 이제 구입 못하나요?</a>
+											<span class="date">2017-02-27</span>
+											<span class="status">상담중</span>
+										</div>
+										<div class="detail">
+											<p class="text">
 												늘 사용하던 제품이라 주문하려고 했는데 중단 됐다고 나오네요 구입 못하는건가요?<br>꼭 구매하고 싶습니다.
-											</div>
+											</p>
 											<div class="btn-area">
 												<a href="#" class="btn-mini-text btn-icon2">수정</a>
 												<a href="#" class="btn-mini-text btn-icon2">삭제</a>
 											</div>
 										</div>
-										<span class="enroll-date">2017-02-27(월)</span>
-										<span class="proce-condi">처리중</span>
 									</div>
-									<div class="notice-box">
-										<p class="notice-txt">아직 답변이 등록되지 않았습니다. 빠른 시일 내 답변 드리겠습니다.</p>
+									<div class="answer">
+										<p class="text">아직 답변이 등록되지 않았습니다. 빠른 시일 내 답변 드리겠습니다.</p>
+										<p class="date"><span>2017-02-27</span></p>
+									</div>
+								</li>
+								<li class="item">
+									<div class="question">
+										<div class="row">
+											<span class="number">9</span>
+											<span class="type">물품 기타문의</span>
+											<a href="#none" class="title">계좌등록</a>
+											<span class="date">2017-02-27</span>
+											<span class="status">상담중</span>
+										</div>
+										<div class="detail">
+											<p class="text">
+												늘 사용하던 제품이라 주문하려고 했는데 중단 됐다고 나오네요 구입 못하는건가요?<br>꼭 구매하고 싶습니다.
+											</p>
+											<div class="btn-area">
+												<a href="#" class="btn-mini-text btn-icon2">수정</a>
+												<a href="#" class="btn-mini-text btn-icon2">삭제</a>
+											</div>
+										</div>
+									</div>
+									<div class="answer">
+										<p class="text">아직 답변이 등록되지 않았습니다. 빠른 시일 내 답변 드리겠습니다.</p>
+										<p class="date"><span>2017-02-27</span></p>
+									</div>
+								</li>
+								<li class="item">
+									<div class="question">
+										<div class="row">
+											<span class="number">8</span>
+											<span class="type">물품주문</span>
+											<a href="#none" class="title">공급일 변경 가능할까요?</a>
+											<span class="date">2017-02-27</span>
+											<span class="status">상담완료</span>
+										</div>
+										<div class="detail">
+											<p class="text">
+												3/8(수) 공급일로 물건을 주문을 했습니다만, 출장으로 물건을 받을 수가 없습니다.<br>
+												혹시... 다음 공급일로 공급을 연기해주실순 없으신지요?
+											</p>
+										</div>
+									</div>
+									<div class="answer">
+										<p class="text">
+											안녕하세요. 한살림주문상담실입니다.<br>
+											한살림은 사전 주문 공급제로 처리기한이 마감되면 단순 주문수정 및 취소가 어렵습니다.<br>
+											물품 이상이 아닌 조합원님의 사정에 의한 취소라면, 공급수수료 3,000원과 출자금 1,000원이 부과되오니<br>
+											이점 조합원님의 양해 부탁드립니다.<br>
+											관련하여 조합원님께 다시 한번 전화상담 드리도록 하겠습니다.<br>
+											감사합니다.
+										</p>
+										<p class="date"><span>2017-02-27</span></p>
 									</div>
 								</li>
 							</ul>
@@ -1173,6 +1239,7 @@
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/jquery.jstree.js"></script>
 <script>
 	$(window).load(function(){
 		/* 1:1 상담 */
@@ -1180,6 +1247,30 @@
 			$('.pop-consul').fadeIn(200);
 		});
 
+		/* 원재료 검색 */
+		// jstree
+		$('.tree-list').jstree({
+		'plugins' : ['checkbox']
+		});
+		$('.text.selected').each(function(){
+			$(this).parents('.jstree-anchor').click();
+		});
+
+		$('.tree-list').css({'opacity':'1'});
+
+		$('.search-input .query, .search-box .search-text').focusin(function(){
+			$(this).next('.word-box').show();
+		}).focusout(function(){
+			$(this).next('.word-box').hide();
+		});
+
+		$('.question .title').click(function(){
+			if($(this).parents('.item').hasClass('on')){
+				$(this).parents('.item').removeClass('on');
+			}else{
+				$(this).parents('.item').addClass('on').siblings('li').removeClass('on');
+			}
+		});
 	});
 </script>
 </body>

@@ -1023,7 +1023,7 @@
 											<span>생활 속 작은 실천 병 재사용!<br>다음 세대에게 이어줄 소중한 자원입니다.</span>
 										</div>
 										<div class="btn-center">
-											<a href="#" class="btn-mini-text btn-icon">자세히보기</a>
+											<a href="#" class="btn-mini-text btn-popup btn-icon btn-goal-amount">자세히보기</a>
 										</div>
 										<div class="bottom-area">
 											<span class="count">123,453 명 참여</span>
@@ -1128,7 +1128,31 @@
 		</div>
 	</div>
 </div>
+<!-- 레이어 팝업 영역 -->
+<!-- 목표 약정량을 입력해주세요 -->
+<div class="layer-popup pop-goal-amount">
+	<div class="pop-head">
+		<h1 class="pop-title">목표 약정량을 입력해주세요</h1>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="goal-box">
+			<input type="text" id="goal1" name="goal" placeholder="80" style="width:310px;">kg
+		</div>
+		<div class="box-content1 mgT20">
+			<h3 class="box-title">목표 약정량 안내</h3>
+			<div class="box-cont">
+				<p class="item">목표 약정량은 숫자로만 입력 가능합니다.</p>
+				<p class="item">목표 약정량 수정시 최초 입력한 약정량보다 작게 입력 할 수 없습니다.</p>
 
+			</div>
+		</div>
+		<div class="btn-bottom pdT30">
+			<a href="#" class="btn-text">취소</a>
+			<a href="#" class="btn-text btn-green mgL10">확인</a>
+		</div>
+	</div>
+</div>
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery.bxslider.min.js"></script>
@@ -1152,6 +1176,11 @@ $(window).load(function(){
 		pagerCustom: '.cooking-slide-pager',
 		speed:400, // Slide Speed (default:500)
 		pause:7000
+	});
+
+	/* 목표 약정량을 입력해주세요 */
+	$('.btn-goal-amount').click(function(){
+		$('.pop-goal-amount').fadeIn(200);
 	});
 
 	/* 원재료 검색 */
