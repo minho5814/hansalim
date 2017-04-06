@@ -1800,6 +1800,7 @@ table .good-table table th {padding:0;}
 			color:#333;
 			font-size:58px;
 			font-weight:900;
+			letter-spacing: -4px;
 		}
 		.banner-title .title-inner .text {
 			float:left;
@@ -1825,6 +1826,7 @@ table .good-table table th {padding:0;}
 		color:#333;
 		font-size:58px;
 		font-weight:900;
+		letter-spacing: -4px;
 	}
 	.banner-title2 .title-inner .text {
 		display: block;
@@ -1904,6 +1906,8 @@ table .good-table table th {padding:0;}
 	line-height: 26px;
 	background:url(../img/icon/ico_notice02.png) 0 3px no-repeat;
 }
+
+.cTitle4.logo {background:url(../img/icon/icon_hansalim.png) left center no-repeat; padding-left:33px;}
 .title-wrap .info-text {margin-bottom:9px;}
 
 .sub-text {
@@ -4510,7 +4514,7 @@ label.check-radio .radiobox {margin-right:8px;}
 			font-size:15px;
 		}
 	.join-page .box-area .bullet-list1 {margin-top:11px;}
-		.join-page .box-area .bullet-list1 .item {line-height:24px;}
+		.join-page .box-area .bullet-list1 .item {font-size: 15px;}
 		.join-page .box-area .bullet-list1 .item.fColor1 {font-weight:bold;}
 
 /* 조합원 가입 > step 05 (IM-JO0601.html) */
@@ -7420,6 +7424,7 @@ td .radish-bank-box span {display:block;}
 	color:#000;
 	line-height:24px;
 }
+.pop-abort-guid2 {width:600px;}
 .pop-abort-guid2 .abort-guid .info-box02 {
 	margin-top:15px;
 	padding:20px 20px;
@@ -7733,6 +7738,10 @@ td .radish-bank-box span {display:block;}
 
 .pop-supply-print .bullet-list4 {margin-top:15px;}
 .pop-supply-print .btn-bottom {padding:50px 0 10px}
+
+/*물품상세 요리이미지팝업*/
+.pop-img-view {width:640px; height:640px; box-sizing:border-box;}
+.pop-img-view .reply-img img {width:100%;}
 
 /* Foot Utill */
 .content-w1120 {
@@ -9971,6 +9980,7 @@ td .radish-bank-box span {display:block;}
 	border:1px solid #ddd;
 	box-sizing:border-box;
 }
+.pop-reser-apply {width:600px;}
 .pop-reser-apply .pop-content {padding:30px;}
 .pop-reser-apply .no-result {height:100px;}
 

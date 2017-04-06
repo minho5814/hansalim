@@ -499,7 +499,7 @@ $(window).load(function(){
 		// 초기화
 		var btnReset = $(this).find('.btn-reset');
 		$(btnReset).click(function(){
-			$(this).parents('.allergy-area').find('.btn-toggle').addClass('on');
+			$(this).parents('.allergy-area').find('.btn-toggle').removeClass('on');
 			var len = $(this).parents('.allergy-area').find('.btn-toggle.on').length;
 			$(this).parents('.allergy-area').find('.title span').html(len);
 		});
