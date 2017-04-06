@@ -11031,18 +11031,29 @@ td .radish-bank-box span {display:block;}
 	background: url(../img/img/img_flag_campaign3.png) 0 0 no-repeat;
 }
 
-.title-txt {
+.campaign .campaign-cont {
+	width:800px;
+}
+.campaign .title-txt {
 	font-size:18px;
 	color:#000;
 	line-height:26px;
 }
-.campaign-txt {
+.campaign  .campaign-txt {
 	margin-top:23px;
 	font-size:15px;
 	color:#666;
 	line-height:26px;
 }
-
+.btn-campaign .btn-update {
+	display: none;
+}
+.btn-campaign.on .btn-goal-amount{
+	display: none;
+}
+.btn-campaign.on .btn-update {
+	display: inline-block;
+}
 .campaign-area {}
 .campaign-area .campaign-term {}
 .campaign-area .campaign-term ul {
