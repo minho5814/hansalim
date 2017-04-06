@@ -11602,8 +11602,18 @@ td .radish-bank-box span {display:block;}
 }
 
 .improve-cont .word-box {
+	position: relative;
+	padding:26px 30px;
 	background-color:#f7f7f7;
 	border-top:1px solid #ddd;
 }
-.improve-cont .word-box dt {}
-.improve-cont .word-box dd {}
+.improve-cont .word-box dt {
+	color:#000;
+	font-size:15px;
+	font-weight: bold;
+}
+.improve-cont .word-box dd {
+	margin-top:10px;
+	color:#666;
+	letter-spacing:-0.5px;
+}
