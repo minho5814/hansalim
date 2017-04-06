@@ -1201,56 +1201,7 @@
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
-<script type="text/javascript" src="../../js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
-<script type="text/javascript" src="../../js/jquery.jstree.js"></script>
-<script>
-$(window).load(function(){
-	// 하단리스트 그리드
-	$('.grid').masonry({
-		itemSelector:'.grid-item',
-		columnWidth:366,
-		gutter:11
-	});
-
-	//리스트 온오버
-	$('.grid-item').mouseenter(function(){
-		$(this).addClass('on');
-	});
-	$('.grid-item').mouseleave(function(){
-		$(this).removeClass('on');
-	});
-
-	//태그박스
-	$('.btn-open').click(function(){
-		$(this).parents().find('.tag-wrap').toggleClass('on');
-		if($(this).parents().find('.tag-wrap').hasClass('on')){
-				$(this).removeClass('btn-open').addClass('btn-close');
-				$(this).parents().find('.tag-wrap').css({'height':'100%'});
-		}else{
-			$(this).removeClass('btn-close').addClass('btn-open');
-			$(this).parents().find('.tag-wrap').css({'height':'85px'});
-		}
-	});
-
-	/* 원재료 검색 */
-	// jstree
-	$('.tree-list').jstree({
-	'plugins' : ['checkbox']
-	});
-	$('.text.selected').each(function(){
-		$(this).parents('.jstree-anchor').click();
-	});
-
-	$('.tree-list').css({'opacity':'1'});
-
-	$('.search-input .query, .search-box .search-text').focusin(function(){
-		$(this).next('.word-box').show();
-	}).focusout(function(){
-		$(this).next('.word-box').hide();
-	});
-});
-</script>
 </body>
 
 </html>

@@ -6444,9 +6444,9 @@ td .radish-bank-box span {display:block;}
 	background-color:#fff;
 }
 /*.grid-item:nth-child(1+3n) {margin-left:0;}*/
-.grid-item .title {font-size: 18px; color:#000; font-weight: bold;}
+.grid-item .title {position:relative;z-index:1;font-size: 18px; color:#000; font-weight: bold;}
 .grid-item .title span {font-size:14px; display: block; font-weight: normal;}
-.grid-item .tag-area {overflow: hidden; margin:15px 0 30px;}
+.grid-item .tag-area {overflow: hidden;position:relative;z-index:1; margin:15px 0 30px;}
 .grid-item .tag-area a {float: left; height:24px; margin:0 5px 5px 0; padding:0 5px; font-size: 14px; color:#333; background-color:#eee; line-height: 24px; box-sizing: border-box;}
 .grid-item .tag-area a:last-child {margin-right:0}
 .grid-item .img-area {width:100%; height:150px; overflow: hidden;}
@@ -6899,8 +6899,8 @@ td .radish-bank-box span {display:block;}
 	display:none;
 	opacity:0;
 	position:absolute;
-	left:0;right:0;top:0;bottom:0;
-	background-color:rgba(0,0,0,.5);
+	left:0;right:0;top:93px;bottom:0;
+	background-color:rgba(255,255,255,.5);
 }
 .list-wrap .grid-item .btn-center {
 	margin-top:0;
