@@ -1904,7 +1904,7 @@ table .good-table table th {padding:0;}
 	background:url(../img/icon/ico_notice02.png) 0 3px no-repeat;
 }
 
-.cTitle4.logo {background:url(../img/icon/icon_hansalim.png) left center no-repeat; padding-left:33px;} 
+.cTitle4.logo {background:url(../img/icon/icon_hansalim.png) left center no-repeat; padding-left:33px;}
 .title-wrap .info-text {margin-bottom:9px;}
 
 .sub-text {
@@ -4511,7 +4511,7 @@ label.check-radio .radiobox {margin-right:8px;}
 			font-size:15px;
 		}
 	.join-page .box-area .bullet-list1 {margin-top:11px;}
-		.join-page .box-area .bullet-list1 .item {line-height:24px;}
+		.join-page .box-area .bullet-list1 .item {font-size: 15px;}
 		.join-page .box-area .bullet-list1 .item.fColor1 {font-weight:bold;}
 
 /* 조합원 가입 > step 05 (IM-JO0601.html) */
