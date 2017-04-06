@@ -1027,8 +1027,9 @@
 												<p class="price">8,000<em>원</em></p>
 											</div>
 											<div class="btn-center">
-												<button type="button" class="btn-image btn-like2">관심상품</button>
-												<button type="button" class="btn-image btn-cart">장바구니</button>
+												<a href="#" class="btn-image btn-detail">자세히 보기</a>
+												<a href="#" class="btn-image btn-cart">장바구니</a>
+												<a href="#" class="btn-image btn-like2">관심상품</a>
 											</div>
 										</li>
 										<li>
@@ -1039,8 +1040,9 @@
 												<p class="price">8,000<em>원</em></p>
 											</div>
 											<div class="btn-center">
-												<button type="button" class="btn-image btn-like2">관심상품</button>
-												<button type="button" class="btn-image btn-cart">장바구니</button>
+												<a href="#" class="btn-image btn-detail">자세히 보기</a>
+												<a href="#" class="btn-image btn-cart">장바구니</a>
+												<a href="#" class="btn-image btn-like2">관심상품</a>
 											</div>
 										</li>
 										<li>
@@ -1051,8 +1053,9 @@
 												<p class="price">8,000<em>원</em></p>
 											</div>
 											<div class="btn-center">
-												<button type="button" class="btn-image btn-like2">관심상품</button>
-												<button type="button" class="btn-image btn-cart">장바구니</button>
+												<a href="#" class="btn-image btn-detail">자세히 보기</a>
+												<a href="#" class="btn-image btn-cart">장바구니</a>
+												<a href="#" class="btn-image btn-like2">관심상품</a>
 											</div>
 										</li>
 									</ul>
@@ -1771,14 +1774,14 @@
 									</tr>
 									<tr>
 										<td>18</td>
-										<td class="title"><a href="#none">카스테라의 계란 때문인지.. 굳어서 왔기에 더 굳기 전에 오전부터 뜯어서 먹었는데, 확 ...</a></td>
+										<td class="title"><a href="#none">카스테라의 계란 때문인지.. 굳어서 왔기에 더 굳기 전에 오전부터 뜯어서 먹었는데, 카스테라의 계란 때문인지.. 굳어서 왔기에 더 굳기 전에 오전부터 뜯어서 먹었는데</a></td>
 										<td>임*범(한살림서울)</td>
 										<td>2017-03-03</td>
 										<td><img src="../../img/icon/icon_bad.png" alt="불만족"></td>
 									</tr>
 									<tr>
 										<td>17</td>
-										<td class="title"><a href="#none">기름이 없고 잘 손질되어있어서 요리용으로 좋아요</a></td>
+										<td class="title"><a href="#none">기름이 없고 잘 손질되어있어서 요리용으로 좋아요 기름이 없고 잘 손질되어있어서 요리용으로 좋아요</a></td>
 										<td>임*범(한살림서울)</td>
 										<td>2017-03-03</td>
 										<td><img src="../../img/icon/icon_good.png" alt="만족"></td>
@@ -2151,21 +2154,11 @@
 <script type="text/javascript" src="../../js/jquery.jstree.js"></script>
 <script>
 $(window).load(function(){
-	/* 원재료 검색 */
-	// jstree
-	$('.tree-list').jstree({
-	'plugins' : ['checkbox']
-	});
-	$('.text.selected').each(function(){
-		$(this).parents('.jstree-anchor').click();
-	});
 
-	$('.tree-list').css({'opacity':'1'});
-
-	$('.search-input .query, .search-box .search-text').focusin(function(){
-		$(this).next('.word-box').show();
-	}).focusout(function(){
-		$(this).next('.word-box').hide();
+	/*이용후기 아코디언*/
+	$('.board-lsit .title a').click(function(){
+		$('.board-lsit .title a').removeClass('on');
+		$(this).addClass('on');
 	});
 });
 </script>
