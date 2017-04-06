@@ -2566,11 +2566,12 @@ table .good-table table th {padding:0;}
 	position:relative;
 	width:50px;
 	height:50px;
+	border-radius:5px;
 	font-size:0;
 	text-indent:-9999px;
+	vertical-align:top;
 	line-height:0;
 	cursor:pointer;
-	border-radius:5px;
 }
 .btn-image3:before {
 	content:'';
@@ -2592,7 +2593,7 @@ table .good-table table th {padding:0;}
 .btn-image3.btn-mark {background-color:#666;}
 .btn-image3.btn-mark:before {
 	width:26px;
-	height:26px;
+	height:28px;
 	background-position:0 -1026px;
 }
 .btn-question {
