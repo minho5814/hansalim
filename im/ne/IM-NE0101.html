@@ -846,17 +846,17 @@
 			<div class="tag-wrap">
 				<div class="tag-top">
 					<ul>
-						<li><button type="button" class="on">전체</button></li>
-						<li><button type="button">#한살림과함께</button></li>
-						<li><button type="button">#자주점검활동</button></li>
-						<li><button type="button">#생활실천</button></li>
-						<li><button type="button">#그사람그물품</button></li>
-						<li><button type="button">#한살림서울</button></li>
-						<li><button type="button">#한살림과함께</button></li>
-						<li><button type="button">#자주점검활동</button></li>
-						<li><button type="button">#생활실천</button></li>
-						<li><button type="button">#그사람그물품</button></li>
-						<li><button type="button" class="on">#한살림서울</button></li>
+						<li><button type="button" class="btn-all">전체</button></li>
+						<li><button type="button" class="btn-tag">#한살림과함께</button></li>
+						<li><button type="button" class="btn-tag">#자주점검활동</button></li>
+						<li><button type="button" class="btn-tag">#생활실천</button></li>
+						<li><button type="button" class="btn-tag">#그사람그물품</button></li>
+						<li><button type="button" class="btn-tag">#한살림서울</button></li>
+						<li><button type="button" class="btn-tag">#한살림과함께</button></li>
+						<li><button type="button" class="btn-tag">#자주점검활동</button></li>
+						<li><button type="button" class="btn-tag">#생활실천</button></li>
+						<li><button type="button" class="btn-tag">#그사람그물품</button></li>
+						<li><button type="button" class="btn-tag">#한살림서울</button></li>
 					</ul>
 				</div>
 				<div class="tag-bottom">
@@ -864,9 +864,9 @@
 						<button type="button" class="btn-reset">초기화</button>
 					</div>
 					<ul class="tag-list">
-						<li>#자주점검활동<button type="button" class="btn-delete">삭제</button></li>
-						<li>#생활실천<button type="button" class="btn-delete">삭제</button></li>
-						<li>#생활실천<button type="button" class="btn-delete">삭제</button></li>
+						<li class="tag">#자주점검활동<button type="button" class="btn-delete">삭제</button></li>
+						<li class="tag">#생활실천<button type="button" class="btn-delete">삭제</button></li>
+						<li class="tag">#생활실천<button type="button" class="btn-delete">삭제</button></li>
 					</ul>
 					<span>* 대표 태그는 최대 2개 선택 가능합니다.</span>
 				</div>
@@ -1154,6 +1154,37 @@ $(window).load(function(){
 			$(this).removeClass('btn-close').addClass('btn-open');
 			$(this).parents().find('.tag-wrap').css({'height':'85px'});
 		}
+	});
+
+	// 태그 선택/해제
+	$('.btn-tag').click(function(){
+		$(this).toggleClass('on');
+		var len = $(this).parents('.tag-top').find('.btn-tag').length;
+		var onLen = $(this).parents('.tag-top').find('.btn-tag.on').length;
+		if(onLen >= len){
+			$(this).parents('.tag-top').find('.btn-all').addClass('on');
+		}else{
+			$(this).parents('.tag-top').find('.btn-all').removeClass('on');
+		}
+	});
+	// 태그 전채 선택/해제
+	$('.btn-all').click(function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on');
+			$(this).parents('.tag-top').find('.btn-tag').removeClass('on');
+		}else{
+			$(this).addClass('on');
+			$(this).parents('.tag-top').find('.btn-tag').addClass('on');
+		}
+	});
+
+	// 대표태그 제거
+	$('.btn-delete').click(function(){
+		$(this).parent('.tag').hide();
+	});
+	// 대표태그 초기화
+	$('.btn-reset').click(function(){
+		$(this).parents('.tag-bottom').find('.tag').hide();
 	});
 });
 </script>
