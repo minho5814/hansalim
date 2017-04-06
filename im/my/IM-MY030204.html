@@ -936,9 +936,9 @@
 															<dt>운송장 번호를 선택해주세요.</dt>
 															<dd>
 																<ul>
-																	<li><a href="#none" class="btn-way-look">홍길동 : 12345678912</a></li>
-																	<li><a href="#none" class="btn-way-look">홍길순 : 12345678913</a></li>
-																	<li><a href="#none" class="btn-way-look">김아무개 : 12345678914</a></li>
+																	<li><a href="#none" class="btn-way-look btn-popup">홍길동 : 12345678912</a></li>
+																	<li><a href="#none" class="btn-way-look btn-popup">홍길순 : 12345678913</a></li>
+																	<li><a href="#none" class="btn-way-look btn-popup">김아무개 : 12345678914</a></li>
 																</ul>
 															</dd>
 														</dl>
@@ -1492,7 +1492,6 @@
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
-<script type="text/javascript" src="../../js/jquery.jstree.js"></script>
 <script>
 $(window).load(function(){
 	/* 운송장조회 */
@@ -1506,23 +1505,6 @@ $(window).load(function(){
 
 	$('.waybill-box .btn-close').click(function(){
 		$(this).parents('.waybill-box').hide();
-	});
-
-	/* 원재료 검색 */
-	// jstree
-	$('.tree-list').jstree({
-	'plugins' : ['checkbox']
-	});
-	$('.text.selected').each(function(){
-		$(this).parents('.jstree-anchor').click();
-	});
-
-	$('.tree-list').css({'opacity':'1'});
-
-	$('.search-input .query, .search-box .search-text').focusin(function(){
-		$(this).next('.word-box').show();
-	}).focusout(function(){
-		$(this).next('.word-box').hide();
 	});
 });
 </script>
