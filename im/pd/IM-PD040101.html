@@ -1365,22 +1365,6 @@
 <script type="text/javascript" src="../../js/jquery.jstree.js"></script>
 <script>
 $(window).load(function(){
-	/* 원재료 검색 */
-	// jstree
-	$('.tree-list').jstree({
-	'plugins' : ['checkbox']
-	});
-	$('.text.selected').each(function(){
-		$(this).parents('.jstree-anchor').click();
-	});
-
-	$('.tree-list').css({'opacity':'1'});
-
-	$('.search-input .query, .search-box .search-text').focusin(function(){
-		$(this).next('.word-box').show();
-	}).focusout(function(){
-		$(this).next('.word-box').hide();
-	});
 
 	//링크이동
 	$('.tab-styled5 .item').click(function(){
@@ -1388,8 +1372,6 @@ $(window).load(function(){
 		var cont_height = $('.brand-wrap').eq(idx).offset().top - $('.head-btm').outerHeight() - $('.tab-styled5').outerHeight()+2;
 		var wrap = $('.tab-styled5').outerHeight();
 
-		// $('.tab-styled5 .item').removeClass('on');
-		// $('.tab-styled5 .item').eq(idx).addClass('on');
 		$('html, body').animate({scrollTop:cont_height});
 		$(this).parents('.tab-wrap').css('height',wrap);
 	});
@@ -1416,10 +1398,6 @@ $(window).load(function(){
 
 	});
 	$(window).scroll();
-
-
-
-
 
 });
 </script>
