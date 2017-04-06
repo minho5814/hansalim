@@ -1896,9 +1896,9 @@
 									</div>
 									<div class="grid">
 										<div class="grid-item">
-											<p class="title">
+											<a href="#" class="title">
 												<span>함께 보는 영농일지</span> 오복수 생산자의 양파 일지
-											</p>
+											</a>
 											<div class="tag-area">
 												<a href="#">#한살림과함께</a>
 												<a href="#">#자주점검활동</a>
@@ -1923,9 +1923,9 @@
 											</div>
 										</div>
 										<div class="grid-item">
-											<p class="title">
+											<a href="#" class="title">
 												<span>공지사항</span>한살림 30주년 기념 대화마당
-											</p>
+											</a>
 											<div class="tag-area">
 												<a href="#">#한살림과함께</a>
 												<a href="#">#자주점검활동</a>
@@ -1944,9 +1944,9 @@
 											</div>
 										</div>
 										<div class="grid-item">
-											<p class="title">
+											<a href="#" class="title">
 												<span>생산지는 지금</span>[괴산연합회] 다시 토마토를 심습니다.
-											</p>
+											</a>
 											<div class="tag-area">
 												<a href="#">#한살림과함께</a>
 												<a href="#">#자주점검활동</a>
@@ -1968,9 +1968,9 @@
 											</div>
 										</div>
 										<div class="grid-item">
-											<p class="title">
+											<a href="#" class="title">
 												<span>조합원 자주점검활동</span>한살림 서울 – ㈜ 우리밀
-											</p>
+											</a>
 											<div class="tag-area">
 												<a href="#">#한살림과함께</a>
 												<a href="#">#자주점검활동</a>
@@ -1995,9 +1995,9 @@
 											</div>
 										</div>
 										<div class="grid-item">
-											<p class="title">
+											<a href="#" class="title">
 												<span>조합원 자주점검활동</span>한살림 서울 - 공근공동체
-											</p>
+											</a>
 											<div class="tag-area">
 												<a href="#">#한살림과함께</a>
 												<a href="#">#자주점검활동</a>
@@ -2019,9 +2019,9 @@
 											</div>
 										</div>
 										<div class="grid-item">
-											<p class="title">
+											<a href="#" class="title">
 												<span>함께 보는 영농일지</span>[공급재개] 배추김치(5kg)
-											</p>
+											</a>
 											<div class="tag-area">
 												<a href="#">#한살림과함께</a>
 												<a href="#">#자주점검활동</a>
@@ -2329,13 +2329,7 @@ $(window).load(function(){
 		var idx = $(this).index();
 		$('.tab-styled4 .item').removeClass('on').eq(idx).addClass('on');
 		$('.tab-content4').removeClass('on').eq(idx).addClass('on');
-
-		// external js: masonry.pkgd.js
-		$('.grid').masonry({
-			itemSelector:'.grid-item',
-			columnWidth:366,
-			gutter:11
-		});
+		$('.grid').masonry();
 	});
 
 	$('.view-area .btn-view').click(function(){
@@ -2347,31 +2341,11 @@ $(window).load(function(){
 		});
 	});
 
-	// 트리 아코디언
-	$('.open-type.on').each(function(){
-		$(this).next('ul').show();
-	});
-	$('.open-type .btn-tree-tog').click(function(){
-		if($(this).parents('.open-type').hasClass('on')){
-			$(this).parents('.open-type').removeClass('on').next('ul').slideUp(100);
-		}else{
-			$(this).parents('.open-type').addClass('on').next('ul').slideDown(200);
-		}
-	});
-
 	// external js: masonry.pkgd.js
 	$('.grid').masonry({
 		itemSelector:'.grid-item',
 		columnWidth:366,
 		gutter:11
-	});
-
-	//리스트 온오버
-	$('.grid-item').mouseenter(function(){
-		$(this).addClass('on');
-	});
-	$('.grid-item').mouseleave(function(){
-		$(this).removeClass('on');
 	});
 
 	/* 원재료 검색 */
