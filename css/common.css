@@ -4188,8 +4188,17 @@ label.check-radio .radiobox {margin-right:8px;}
 		height:40px;
 		line-height:40px;
 	}
-	.login-wrap .id-make .btn-center {margin-top:18px;}
-	.login-wrap .id-make .btn-center .btn-icon-text {padding:0 53px 0 66px;}
+	.login-wrap .id-make .btn-center {
+		overflow:hidden;
+		width:462px;
+		margin:18px auto 0;
+	}
+	.login-wrap .id-make .btn-center .btn-icon-text {
+		float:right;
+		width:226px;
+		margin-left:0;
+	}
+	.login-wrap .id-make .btn-center .btn-icon-text:first-child {float:left;}
 	.login-wrap .id-make .text1 {
 		width:462px;
 		padding-left:25px;
