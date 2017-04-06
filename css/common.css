@@ -10919,32 +10919,103 @@ td .radish-bank-box span {display:block;}
 }
 .campaign-wrap .bottom-area .count {float: left;}
 .campaign-wrap .bottom-area .date {float: right;}
+.campaign-wrap .bottom-area .count {float: left; background:url(../img/icon/icon_flag.png) no-repeat left center; padding-left:20px;}
+.campaign-wrap .bottom-area .date {float: right; background:url(../img/icon/icon_date.png) no-repeat left center; padding-left:20px;}
 
 /* campaign-list02 */
+.campaign-wrap.campaign-com {
+	overflow:hidden;
+	position:relative;
+	padding:30px 0 20px;
+	border-top:1px solid #ddd;
+}
+.campaign-wrap.campaign-com:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:50%;
+	top:130px;
+	bottom:0;
+	width:10px;
+	height:100%;
+	margin-left:-5px;
+	background-color:#f7f7f7;
+}
+.campaign-left {float:left;}
+.campaign-right {float:right;}
+.campaign-left .campaign-list02 li:after {
+	content:'';
+	position:absolute;
+	right:-16px; top:110px;
+	width:15px;
+	height:23px;
+	background:url(../img/icon/utill_right.gif) no-repeat 0 0;
+}
+.campaign-right .campaign-list02 li:after {
+	content:'';
+	position:absolute;
+	left:-16px; bottom:110px;
+	width:15px;
+	height:23px;
+	background:url(../img/icon/utill_left.gif) no-repeat 0 0;
+}
 
-	.campaign-list02 {overflow: hidden;}
+.campaign-cont {
+	position:relative;
+	left:50%;
+	top:100px;
+	width:120px;
+	height:auto;
+	margin-left:-60px;
+}
+.campaign-cont .term-list li {
+	position:absolute;
+	left:0;
+	width:120px;
+	height:42px;
+	font-size:15px;
+	color:#000;
+	line-height:38px;
+	font-weight:bold;
+	border:3px solid #ddd;
+	background-color:#fff;
+	box-sizing:border-box;
+	border-radius:30px;
+	text-align:center;
+}
+.campaign-cont .term-list li.item-term01 {top:0;}
+.campaign-cont .term-list li.item-term02 {top:246px;}
+.campaign-cont .term-list li.item-term03 {top:504px;}
+.campaign-cont .term-list li.item-term04 {top:750px;}
+
+
+.campaign-right .campaign-list02 li:first-child {margin-top:35px;}
+	.campaign-list02 {}
 	.campaign-list02 li {
 		position: relative;
-		width:364px;
-		height:419px;
+		width:365px;
+		height:456px;
+		margin-top:47px;
 		border:1px solid #ddd;
+		box-sizing:border-box;
 	}
+	.campaign-list02 li:first-child {margin-top:0;}
 	.campaign-list02 li:before {
 		content: '';
-		position: absolute;
-		left: -1px;
-		top: -5px;
-		width: 52px;
-		height: 40px;
+		position:absolute;
+		left:-1px;
+		top:-5px;
+		width:52px;
+		height:40px;
 	}
 	.campaign-list02 li.join:before {
-		background: url(../img/img/img_flag_campaign1.png) 0 0 no-repeat;
+		background:url(../img/img/img_flag_campaign1.png) 0 0 no-repeat;
 	}
 	.campaign-list02 li.attain:before {
-		background: url(../img/img/img_flag_campaign2.png) 0 0 no-repeat;
+		background:url(../img/img/img_flag_campaign2.png) 0 0 no-repeat;
 	}
 	.campaign-list02 li.joined:before {
-		background: url(../img/img/img_flag_campaign3.png) 0 0 no-repeat;
+		background:url(../img/img/img_flag_campaign3.png) 0 0 no-repeat;
 	}
 	.campaign-list02 li:nth-child(3n+1) {margin-left: 0}
 	.campaign-list02 .simbol-area {
@@ -10963,49 +11034,88 @@ td .radish-bank-box span {display:block;}
 		text-align: center;
 	}
 		.campaign-list02 .text-area p {
-			overflow: hidden;
+			overflow:hidden;
 			padding:0 10px 5px 10px;
-			font-size: 18px;
-			font-weight: bold;
+			font-size:18px;
+			font-weight:bold;
 			color:#000;
-			white-space: nowrap;
-			text-overflow: ellipsis;
+			white-space:nowrap;
+			text-overflow:ellipsis;
 		}
 		.campaign-list02 .text-area span {
 			padding:0 10px;
-			font-size: 15px;
+			font-size:15px;
 			color:#666;
 			line-height:21px;
-			display: block;
+			display:block;
 			display:-webkit-box;-webkit-line-clamp:2;
 			-webkit-box-orient:vertical;
 			overflow:hidden;
 			text-overflow:ellipsis;
 		}
 	.campaign-list02 .btn-center {
-		width: 100%;
+		width:100%;
 		height:28px;
-		position: absolute;
+		position:absolute;
 		left:0;
-		top:310px;
+		bottom:30px;
 		margin-top:0;
 	}
 	.campaign-list02 li .bottom-box {
-		overflow: hidden;
-		position: absolute;
-		left:0; bottom:0;
-		padding:0 20px;
-		background-color:#f3f3f3;
-		box-sizing: border-box;
+		overflow:hidden;
+		position:absolute;
+		left:0; bottom:79px;
+		width:100%;
+		padding:0 30px;
+		box-sizing:border-box;
 	}
 	.campaign-list02 li .bottom-box span {
 		display:block;
-		font-size: 14px;
+		overflow:hidden;
+		height:22px;
+		font-size:14px;
 		color:#666;
-		line-height: 45px;
+		line-height:22px;
 	}
-	.campaign-list02 li .bottom-box .count {}
-	.campaign-list02 li .bottom-box .date {}
+	.campaign-list02 li .bottom-box .count {background:url(../img/icon/icon_flag.png) no-repeat left center; padding-left:20px;}
+	.campaign-list02 li .bottom-box .date {background:url(../img/icon/icon_date.png) no-repeat left center; padding-left:20px;}
+
+	.bar-com {
+		position:absolute;
+		left:0; bottom:128px;
+		width:100%;
+		text-align:center;
+	}
+	.bar-com .bar-area {
+		overflow:hidden;
+		display:inline-block;
+		position:relative;
+		width:260px;
+	}
+	.bar-com .bar-area:before {
+		content:'';
+		display:block;
+		position:absolute;
+		left:0; top:0;
+		width:100%;
+		height:10px;
+		border:1px solid #ddd;
+		box-sizing:border-box;
+	}
+	.bar-com .bar-area .bar {
+		position:relative;
+		width:0%;
+		height:10px;
+		background-color:#60b015;
+		z-index:1;
+	}
+	.bar-com .percent-txt {
+		display:inline-block;
+		margin-left:10px;
+		font-size:15px;
+		color:#60b015;
+		line-height:22px;
+	}
 
 /* 캠페인 상세 */
 .sub-cont.campaign {overflow: inherit; position: relative;}
@@ -11209,11 +11319,6 @@ td .radish-bank-box span {display:block;}
 	right:0;
 	top:-18px;
 }
-
-
-
-.campaign-wrap .bottom-area .count {float: left; background:url(../img/icon/icon_flag.png) no-repeat left center; padding-left:20px;}
-.campaign-wrap .bottom-area .date {float: right; background:url(../img/icon/icon_date.png) no-repeat left center; padding-left:20px;}
 
 /*캠페인 심볼*/
 .symbol-item {
