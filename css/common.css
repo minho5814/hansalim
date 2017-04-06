@@ -1144,8 +1144,8 @@ table .good-table table th {padding:0;}
 	display:inline-block;
 	font-size:22px;
 	color:#ec7015;
-	line-height: 24px;
-	vertical-align: top;
+	line-height: 26px;
+	font-weight: 900;
 }
 
 .box-style3 {
@@ -1176,6 +1176,7 @@ table .good-table table th {padding:0;}
 	margin-top:4px;
 	font-size:22px;
 	color:#ec7015;
+	font-weight: 900;
 }
 .wage-list li .price em {
 	font-size:16px;
@@ -1878,6 +1879,11 @@ table .good-table table th {padding:0;}
 }
 .title-wrap .user-info span {
 	color:#60b015;
+}
+
+.title-wrap .txt-add-btn {
+	float: right;
+	margin-top: -28px;
 }
 /* 타이틀 */
 .cTitle1 {
@@ -4208,8 +4214,17 @@ label.check-radio .radiobox {margin-right:8px;}
 		height:40px;
 		line-height:40px;
 	}
-	.login-wrap .id-make .btn-center {margin-top:18px;}
-	.login-wrap .id-make .btn-center .btn-icon-text {padding:0 53px 0 66px;}
+	.login-wrap .id-make .btn-center {
+		overflow:hidden;
+		width:462px;
+		margin:18px auto 0;
+	}
+	.login-wrap .id-make .btn-center .btn-icon-text {
+		float:right;
+		width:226px;
+		margin-left:0;
+	}
+	.login-wrap .id-make .btn-center .btn-icon-text:first-child {float:left;}
 	.login-wrap .id-make .text1 {
 		width:462px;
 		padding-left:25px;
@@ -6316,6 +6331,11 @@ td .radish-bank-box span {display:block;}
 	/*font-weight:bold;*/
 	text-align:center;
 	line-height:30px;
+}
+.toggle-area .btn-area .btn-group {
+	overflow:hidden;
+	float:left;
+	margin-left:4px;
 }
 .toggle-area .btn-area .btn-toggle:first-child {margin-left:0;}
 .toggle-area .btn-area .btn-toggle.on {border-color:#91c90b;color:#60b015;}
@@ -8659,8 +8679,13 @@ td .radish-bank-box span {display:block;}
 }
 
 .secede-group {
-	overflow:hidden;
+	position: relative;
 	margin:8px 0;
+}
+.secede-group:after {
+	content:'';
+	display: block;
+	clear: both;
 }
 .secede-group .item {
 	float:left;
@@ -10310,6 +10335,8 @@ td .radish-bank-box span {display:block;}
 	height:100%;
 	resize:none;
 	border:0;
+	font-size: 15px;
+	letter-spacing: -1px;
 }
 /* 관심 콘텐츠 */
 .atten-area {
