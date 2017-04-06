@@ -10984,12 +10984,12 @@ td .radish-bank-box span {display:block;}
 	text-align:center;
 }
 .campaign-cont .term-list li.item-term01 {top:0;}
-.campaign-cont .term-list li.item-term02 {top:246px;}
+.campaign-cont .term-list li.item-term02 {top:258px;}
 .campaign-cont .term-list li.item-term03 {top:504px;}
-.campaign-cont .term-list li.item-term04 {top:750px;}
+.campaign-cont .term-list li.item-term04 {top:760px;}
 
 
-.campaign-right .campaign-list02 li:first-child {margin-top:35px;}
+.campaign-right .campaign-list02 li:first-child {margin-top:45px;}
 	.campaign-list02 {}
 	.campaign-list02 li {
 		position: relative;
@@ -11109,12 +11109,18 @@ td .radish-bank-box span {display:block;}
 		background-color:#60b015;
 		z-index:1;
 	}
+	.bar-com.ty02 .bar-area .bar {
+		background-color:#51d4d3;
+	}
 	.bar-com .percent-txt {
 		display:inline-block;
 		margin-left:10px;
 		font-size:15px;
 		color:#60b015;
 		line-height:22px;
+	}
+	.bar-com.ty02 .percent-txt {
+		color:#09babc;
 	}
 
 /* 캠페인 상세 */
