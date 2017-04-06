@@ -917,11 +917,11 @@
 						</div>
 						<div class="tab-content3 on">
 							<div class="thumb-box">
-								<div class="board-top mgT0 mgB15">
+								<div class="top-btn-box">
 									<a href="#" class="btn-mini-text">전체선택</a>
 									<a href="#" class="btn-mini-text">삭제</a>
 								</div>
-								<div class="thumb-list4">
+								<div class="thumb-list4 mgT15">
 									<div class="thumb-item">
 										<a href="#" class="link">
 											<div class="img-area"><img src="../../img/temp/@temp_article1.jpg" alt=""></div>
@@ -1028,7 +1028,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="btn-area mgT15">
+								<div class="bottom-btn-box mgT15">
 									<a href="#" class="btn-mini-text">전체선택</a>
 									<a href="#" class="btn-mini-text">삭제</a>
 								</div>
@@ -1157,6 +1157,21 @@ $(window).load(function(){
 	}).focusout(function(){
 		$(this).next('.word-box').hide();
 	});
+
+	/* 스크롤에 따른 하단 버튼 show & hide */
+	$(window).scroll(function(){
+		var topBtn = $('.top-btn-box').offset().top;
+		var scrollTop = $(window).scrollTop();
+
+		if(topBtn < scrollTop){
+			$('.bottom-btn-box a').attr('style', 'display:inline-block');
+		}else{
+			$('.bottom-btn-box a').attr('style', 'display:none');
+		}
+	});
+
+
+
 });
 </script>
 
