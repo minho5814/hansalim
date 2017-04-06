@@ -1800,6 +1800,7 @@ table .good-table table th {padding:0;}
 			color:#333;
 			font-size:58px;
 			font-weight:900;
+			letter-spacing: -4px;
 		}
 		.banner-title .title-inner .text {
 			float:left;
@@ -1825,6 +1826,7 @@ table .good-table table th {padding:0;}
 		color:#333;
 		font-size:58px;
 		font-weight:900;
+		letter-spacing: -4px;
 	}
 	.banner-title2 .title-inner .text {
 		display: block;
