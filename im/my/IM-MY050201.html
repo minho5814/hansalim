@@ -1236,7 +1236,10 @@
 						<th scope="row" rowspan="2"><div class="text">적립금 전환 선택</div></th>
 						<td>
 							<div class="swit-rese-box">
-								<label class="item" for="check01"><input type="radio" id="check01" name="chk" class="styled1">물품대금 전환 (외상금 있을 시 가능)
+								<label class="item" for="check01">
+									<!-- 전일 마감 기준 외상 잔액이 0원일 경우 input에 disabled 추가 -->
+									<input type="radio" id="check01" name="chk" class="styled1">물품대금 전환 (외상금 있을 시 가능)
+									<!-- //전일 마감 기준 외상 잔액이 0원일 경우 input에 disabled 추가 -->
 									<a href="#" class="tip">
 										<span class="hide">도움말</span>
 										<div class="inner-box">
