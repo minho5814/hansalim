@@ -1800,6 +1800,7 @@ table .good-table table th {padding:0;}
 			color:#333;
 			font-size:58px;
 			font-weight:900;
+			letter-spacing: -4px;
 		}
 		.banner-title .title-inner .text {
 			float:left;
@@ -1825,6 +1826,7 @@ table .good-table table th {padding:0;}
 		color:#333;
 		font-size:58px;
 		font-weight:900;
+		letter-spacing: -4px;
 	}
 	.banner-title2 .title-inner .text {
 		display: block;
@@ -1904,6 +1906,8 @@ table .good-table table th {padding:0;}
 	line-height: 26px;
 	background:url(../img/icon/ico_notice02.png) 0 3px no-repeat;
 }
+
+.cTitle4.logo {background:url(../img/icon/icon_hansalim.png) left center no-repeat; padding-left:33px;}
 .title-wrap .info-text {margin-bottom:9px;}
 
 .sub-text {
@@ -2562,11 +2566,12 @@ table .good-table table th {padding:0;}
 	position:relative;
 	width:50px;
 	height:50px;
+	border-radius:5px;
 	font-size:0;
 	text-indent:-9999px;
+	vertical-align:top;
 	line-height:0;
 	cursor:pointer;
-	border-radius:2px;
 }
 .btn-image3:before {
 	content:'';
@@ -2588,7 +2593,7 @@ table .good-table table th {padding:0;}
 .btn-image3.btn-mark {background-color:#666;}
 .btn-image3.btn-mark:before {
 	width:26px;
-	height:26px;
+	height:28px;
 	background-position:0 -1026px;
 }
 .btn-question {
@@ -4314,10 +4319,6 @@ label.check-radio .radiobox {margin-right:8px;}
 	}
 
 /* 조합원 가입 > step 01 (jo/IM-JO0201.html) */
-.hansalim-mark {
-	padding-left:32px;
-	background:url(../img/img/hansalim_logo.png) no-repeat 0 center;
-}
 .join-page {
 	margin-top:65px;
 	padding-bottom:40px;
@@ -4514,7 +4515,7 @@ label.check-radio .radiobox {margin-right:8px;}
 			font-size:15px;
 		}
 	.join-page .box-area .bullet-list1 {margin-top:11px;}
-		.join-page .box-area .bullet-list1 .item {line-height:24px;}
+		.join-page .box-area .bullet-list1 .item {font-size: 15px;}
 		.join-page .box-area .bullet-list1 .item.fColor1 {font-weight:bold;}
 
 /* 조합원 가입 > step 05 (IM-JO0601.html) */
@@ -6448,9 +6449,9 @@ td .radish-bank-box span {display:block;}
 	background-color:#fff;
 }
 /*.grid-item:nth-child(1+3n) {margin-left:0;}*/
-.grid-item .title {font-size: 18px; color:#000; font-weight: bold;}
+.grid-item .title {position:relative;z-index:1;font-size: 18px; color:#000; font-weight: bold;}
 .grid-item .title span {font-size:14px; display: block; font-weight: normal;}
-.grid-item .tag-area {overflow: hidden; margin:15px 0 30px;}
+.grid-item .tag-area {overflow: hidden;position:relative;z-index:1; margin:15px 0 30px;}
 .grid-item .tag-area a {float: left; height:24px; margin:0 5px 5px 0; padding:0 5px; font-size: 14px; color:#333; background-color:#eee; line-height: 24px; box-sizing: border-box;}
 .grid-item .tag-area a:last-child {margin-right:0}
 .grid-item .img-area {width:100%; height:150px; overflow: hidden;}
@@ -6903,8 +6904,8 @@ td .radish-bank-box span {display:block;}
 	display:none;
 	opacity:0;
 	position:absolute;
-	left:0;right:0;top:0;bottom:0;
-	background-color:rgba(0,0,0,.5);
+	left:0;right:0;top:93px;bottom:0;
+	background-color:rgba(255,255,255,.5);
 }
 .list-wrap .grid-item .btn-center {
 	margin-top:0;
@@ -7738,6 +7739,10 @@ td .radish-bank-box span {display:block;}
 
 .pop-supply-print .bullet-list4 {margin-top:15px;}
 .pop-supply-print .btn-bottom {padding:50px 0 10px}
+
+/*물품상세 요리이미지팝업*/
+.pop-img-view {width:640px; height:640px; box-sizing:border-box;}
+.pop-img-view .reply-img img {width:100%;}
 
 /* Foot Utill */
 .content-w1120 {
