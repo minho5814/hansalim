@@ -3467,6 +3467,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	position:fixed;
 	left:0;right:0;top:0;
 	z-index:10;
+	box-shadow:0 0 22px #797979;
 	background-color:#91c90b;
 }
 	.down .head-btm .gnb {border:0;}
