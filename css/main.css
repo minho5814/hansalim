@@ -404,6 +404,7 @@
 				line-height:21px;
 			}
 			.recipe-cont .recipe-top .recipe-box .link .title {
+				padding-left:0;
 				font-size:28px;
 				font-weight:bold;
 				line-height:37px;
