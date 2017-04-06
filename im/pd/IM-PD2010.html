@@ -876,10 +876,12 @@
 						<p class="title">유형검색</p>
 						<div class="list-area">
 							<div class="btn-area">
-								<button type="button" class="btn-toggle on">전체</button>
-								<button type="button" class="btn-toggle">건강식품</button>
-								<button type="button" class="btn-toggle">가공식품</button>
-								<button type="button" class="btn-toggle">생활용품</button>
+								<button type="button" class="btn-toggle btn-all on">전체</button>
+								<div class="btn-group">
+									<button type="button" class="btn-toggle on">건강식품</button>
+									<button type="button" class="btn-toggle on">가공식품</button>
+									<button type="button" class="btn-toggle on">생활용품</button>
+								</div>
 							</div>
 							<div class="reset-area">
 								<button type="button" class="btn-reset">초기화</button>
@@ -1197,11 +1199,25 @@
 	</div>
 </div>
 
-
-
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	$('.btn-all').click(function(){
+		$(this).parents('.btn-area').find('.btn-toggle').addClass('on');
+	});
+	$('.btn-group .btn-toggle').click(function(){
+		var len = $(this).parents('.btn-group').find('.btn-toggle').length;
+		var onLen = $(this).parents('.btn-group').find('.btn-toggle.on').length;
+		if(onLen >= len){
+			$(this).parents('.btn-area').find('.btn-all').addClass('on');
+		}else{
+			$(this).parents('.btn-area').find('.btn-all').removeClass('on');
+		}
+	});
+});
+</script>
 </body>
 
 </html>
