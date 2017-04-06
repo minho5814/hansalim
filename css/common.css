@@ -6306,6 +6306,11 @@ td .radish-bank-box span {display:block;}
 	text-align:center;
 	line-height:30px;
 }
+.toggle-area .btn-area .btn-group {
+	overflow:hidden;
+	float:left;
+	margin-left:4px;
+}
 .toggle-area .btn-area .btn-toggle:first-child {margin-left:0;}
 .toggle-area .btn-area .btn-toggle.on {border-color:#91c90b;color:#60b015;}
 
