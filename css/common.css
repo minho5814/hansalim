@@ -275,6 +275,7 @@ html {
 
 /* 캘린더 */
 .ui-datepicker {
+	display:none;
 	width:386px;
 	padding:0 15px 15px;
 	box-sizing:border-box;
@@ -7421,6 +7422,7 @@ td .radish-bank-box span {display:block;}
 	color:#000;
 	line-height:24px;
 }
+.pop-abort-guid2 {width:600px;}
 .pop-abort-guid2 .abort-guid .info-box02 {
 	margin-top:15px;
 	padding:20px 20px;
@@ -7442,6 +7444,44 @@ td .radish-bank-box span {display:block;}
 	font-size:14px;
 	color:#999;
 }
+
+/* ---------------------------------------------------------------------------------------------------------
+	로그인(lo)
+--------------------------------------------------------------------------------------------------------- */
+.pop-joining {width:600px;}
+	.pop-joining .bullet-list1 {margin-top:8px;}
+	.pop-joining .bullet-list1 .item {
+		color:#666;
+		letter-spacing:-0.5px;
+	}
+	.pop-joining .joing-top {
+		overflow:hidden;
+		margin:-20px -30px 15px;
+		padding:0 17px;
+		border:1px solid #e3e3e3;
+	}
+		.pop-joining .joing-top .item {
+			float:left;
+			width:33%;
+			height:76px;
+			padding-top:114px;
+			background-repeat:no-repeat;
+			background-position:50% 32px;
+			color:#666;
+			font-size:16px;
+			font-weight:bold;
+			text-align:center;
+			line-height:76px;
+		}
+		.pop-joining .joing-top .item:nth-child(2) {width:34%;}
+		.pop-joining .joing-top .item.on {color:#60b015;}/* on */
+		.pop-joining .joing-top .item.step1 {background-image:url(../img/icon/ico_join01_off.png);}
+		.pop-joining .joing-top .item.step2 {background-image:url(../img/icon/ico_join02_off.png);}
+		.pop-joining .joing-top .item.step3 {background-image:url(../img/icon/ico_join03_off.png);}
+		.pop-joining .joing-top .item.step1.on {background-image:url(../img/icon/ico_join01_on.png);}/* on */
+		.pop-joining .joing-top .item.step2.on {background-image:url(../img/icon/ico_join02_on.png);}/* on */
+		.pop-joining .joing-top .item.step3.on {background-image:url(../img/icon/ico_join03_on.png);}/* on */
+
 /* ---------------------------------------------------------------------------------------------------------
 	회원가입 (jo)
 --------------------------------------------------------------------------------------------------------- */
@@ -9934,6 +9974,7 @@ td .radish-bank-box span {display:block;}
 	border:1px solid #ddd;
 	box-sizing:border-box;
 }
+.pop-reser-apply {width:600px;}
 .pop-reser-apply .pop-content {padding:30px;}
 .pop-reser-apply .no-result {height:100px;}
 
@@ -10223,31 +10264,27 @@ td .radish-bank-box span {display:block;}
 /* 관심 콘텐츠 */
 .atten-area {
 	position:relative;
+	margin-top:40px;
 }
-.atten-area .check-box {
-	position:initial;
-}
-.atten-area .check-box label {
+.atten-area .day-title label {
 	display:inline-block;
 	font-size:18px;
 	color:#000;
 	font-weight:bold;
 }
 .atten-area .arren-box {
-	padding:39px 32px 38px 29px;
+	padding:23px 12px;
 	border:1px solid #ddd;
-	border-top:0;
 	border-top:1px solid #666;
 	box-sizing:border-box;
 }
 .atten-area .arren-box .arren-list {
 	overflow:hidden;
-	margin:-35px 0 0 -35px;
 }
 .atten-area .arren-box .arren-list .item {
 	float:left;
 	position:relative;
-	margin:35px 0 0 35px;
+	margin: 16px 17px;
 }
 .atten-area .arren-box .arren-list .item.item-arren01 {	width:141px;}
 .atten-area .arren-box .arren-list .item.item-arren02 {width:225px;}
