@@ -1084,6 +1084,8 @@
 		</div>
 	</div>
 </div>
+
+<!-- 레이어 팝업 영역 -->
 <!-- 나의 알림 설정 -->
 <div class="layer-popup pop-notice-set">
 	<div class="pop-head">
@@ -1158,29 +1160,11 @@
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
-<script type="text/javascript" src="../../js/jquery.jstree.js"></script>
 <script>
 $(window).load(function(){
 	/* 나의 알림 설정 */
 	$('.btn-notice-set').click(function(){
 		$('.pop-notice-set').fadeIn(200);
-	});
-
-	/* 원재료 검색 */
-	// jstree
-	$('.tree-list').jstree({
-	'plugins' : ['checkbox']
-	});
-	$('.text.selected').each(function(){
-		$(this).parents('.jstree-anchor').click();
-	});
-
-	$('.tree-list').css({'opacity':'1'});
-
-	$('.search-input .query, .search-box .search-text').focusin(function(){
-		$(this).next('.word-box').show();
-	}).focusout(function(){
-		$(this).next('.word-box').hide();
 	});
 });
 </script>
