@@ -7737,6 +7737,10 @@ td .radish-bank-box span {display:block;}
 .pop-supply-print .bullet-list4 {margin-top:15px;}
 .pop-supply-print .btn-bottom {padding:50px 0 10px}
 
+/*물품상세 요리이미지팝업*/
+.pop-img-view {width:640px; height:640px; box-sizing:border-box;}
+.pop-img-view .reply-img img {width:100%;}
+
 /* Foot Utill */
 .content-w1120 {
 	width: 1120px;
