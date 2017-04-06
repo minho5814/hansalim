@@ -842,7 +842,7 @@
 			<h2 class="cTitle1">물품소식</h2>
 		</div>
 
-		<div class="content-w1120">
+		<div class="content-w1120 news-cont">
 			<div class="tab-wrap2">
 				<div class="tab-area">
 					<ul class="tab-list1 tab-styled3">
@@ -858,8 +858,8 @@
 							<li class="item on"><span class="text">오늘의 물품소식</span></li>
 							<li class="item"><span class="text">공지사항</span></li>
 						</ul>
-						<div class="tab-content4 on">
-							<div class="float-area mgT40">
+						<div class="tab-content4 on noty-area">
+							<div class="float-area mgT40 mgB15">
 								<div class="order-list f-left">
 									<button type="button" class="on">전체</button>
 									<button type="button">공급재개</button>
@@ -868,7 +868,7 @@
 									<button type="button">가격변경</button>
 									<button type="button">변경공급</button>
 								</div>
-								<div class="search-input f-right" style="width:210px">
+								<div class="search-input f-right">
 									<div class="inner-box">
 										<input type="text" class="query">
 									</div>
@@ -885,8 +885,8 @@
 								</div>
 								<div class="qna-cont">
 									<ul class="qna-list">
-										<li class="item on">
-											<div class="question">
+										<li class="item">
+											<div class="question important">
 												<div class="row">
 													<span class="number">필독</span>
 													<span class="type">임시중단</span>
@@ -900,7 +900,7 @@
 											</div>
 										</li>
 										<li class="item">
-											<div class="question">
+											<div class="question important">
 												<div class="row">
 													<span class="number">필독</span>
 													<span class="type">공급재개</span>
@@ -1276,16 +1276,11 @@ $(window).load(function(){
 	});
 
 
-	/* 1:1 상담 */
-	// $('.btn-consul').click(function(){
-	// 	$('.pop-consul').fadeIn(200);
-	// });
-
-	$('.question .title').click(function(){
-		if($(this).parents('.item').hasClass('on')){
-			$(this).parents('.item').removeClass('on');
+	$('.qna-list .item').click(function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on');
 		}else{
-			$(this).parents('.item').addClass('on').siblings('li').removeClass('on');
+			$(this).addClass('on').siblings('li').removeClass('on');
 		}
 	});
 

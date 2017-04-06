@@ -10837,6 +10837,49 @@ td .radish-bank-box span {display:block;}
 	.reply-table li.on .title {display: none;}
 	.reply-table li.on .cont {block;}
 
+/* 물품소식*/
+.news-cont {margin-top:25px;}
+.news-cont .tab-styled4 .item {
+	width:170px;
+	height:40px;
+	margin-left: 2px;
+}
+.news-cont .tab-styled4 .item span {height:40px; line-height: 40px; font-size: 15px;}
+.news-cont .tab-styled4 .item:first-child {margin-left:0;}
+
+.news-cont .qna-cont .qna-list .item .question.important span,
+.news-cont .qna-cont .qna-list .item .question.important a{color:#000 !important;}
+.news-cont .qna-cont .qna-list .item.on .question.important span,
+.news-cont .qna-cont .qna-list .item.on .question.important a{color:#666 !important; font-weight: normal}
+.news-cont .qna-cont .qna-list .item.on .question .title{color:#666 !important; font-weight: normal; line-height: 22px;}
+.noty-area .order-list {margin-top: 5px;}
+.noty-area .search-input {width:207px;}
+.noty-area .search-input .inner-box {float:left; width:150px; margin-right:5px;}
+.noty-area .search-input .inner-box input {width: 100%;}
+.news-cont .qna-cont .qna-list .item .question .title {padding-left:20px;box-sizing: border-box;}
+
+.news-cont  .my-qna .column-group .column01,
+.news-cont .qna-cont .qna-list .item .question .number {width:8%;}
+
+.news-cont  .my-qna .column-group .column02,
+.news-cont .qna-cont .qna-list .item .question .type {width:10%;}
+
+.news-cont  .my-qna .column-group .column03,
+.news-cont .qna-cont .qna-list .item .question .title {width:60%;}
+
+.news-cont  .my-qna .column-group .column04,
+.news-cont .qna-cont .qna-list .item .question .date {width:11%;}
+
+.news-cont  .my-qna .column-group .column05,
+.news-cont .qna-cont .qna-list .item .question .status {width:11%;}
+
+
+.news-cont .qna-cont .qna-list .item .answer .text {padding-left: 20px; box-sizing: border-box;}
+
+
+
+
+
 /*campaign*/
 .campaign-list {overflow: hidden;}
 .campaign-list li {
