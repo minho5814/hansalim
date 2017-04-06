@@ -1956,6 +1956,11 @@ table .good-table table th {padding:0;}
 .align-left {text-align:left !important;}
 .align-right {text-align:right !important;}
 
+/*float*/
+.float-area {overflow: hidden;}
+.float-area .f-left {float:left;}
+.float-area .f-right {float:right;}
+
 /* 타이틀 라인형 */
 .title-through {
 	position:relative;
@@ -3491,6 +3496,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	position:fixed;
 	left:0;right:0;top:0;
 	z-index:10;
+	box-shadow:0 0 22px #797979;
 	background-color:#91c90b;
 }
 	.down .head-btm .gnb {border:0;}
@@ -11147,18 +11153,29 @@ td .radish-bank-box span {display:block;}
 	background: url(../img/img/img_flag_campaign3.png) 0 0 no-repeat;
 }
 
-.title-txt {
+.campaign .campaign-box {
+	width:800px;
+}
+.campaign .title-txt {
 	font-size:18px;
 	color:#000;
 	line-height:26px;
 }
-.campaign-txt {
+.campaign  .campaign-txt {
 	margin-top:23px;
 	font-size:15px;
 	color:#666;
 	line-height:26px;
 }
-
+.btn-campaign .btn-update {
+	display: none;
+}
+.btn-campaign.on .btn-goal-amount{
+	display: none;
+}
+.btn-campaign.on .btn-update {
+	display: inline-block;
+}
 .campaign-area {}
 .campaign-area .campaign-term {}
 .campaign-area .campaign-term ul {
