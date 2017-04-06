@@ -4707,7 +4707,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		}
 		.detail-box .cont-area .recipe-area .title em {display: block;}
 		.detail-box .cont-area .recipe-area .title a {
-			display: inline-block;
+			/*display: inline-block;*/
 			position: relative;
 			padding-right:22px;
 			color:#000;
@@ -4719,7 +4719,7 @@ label.check-radio .radiobox {margin-right:8px;}
 				.detail-box .cont-area .recipe-area .title a:before {
 					content: '';
 					position: absolute;
-					right:0; bottom:7px;
+					right:0; bottom:11px;
 					width:18px;
 					height:18px;
 					/*margin-top:-9px;*/
@@ -5793,6 +5793,11 @@ label.check-radio .radiobox {margin-right:8px;}
 	width:100%;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+}
+.board-lsit table tbody td.title a.on {
+	overflow: inherit;
+	white-space: inherit;
+	text-overflow: inherit;
 }
 .board-lsit table tbody td img {vertical-align:middle;}
 .board-lsit table .checkbox {vertical-align: middle;}
