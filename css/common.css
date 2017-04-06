@@ -1696,6 +1696,10 @@ table .good-table table th {padding:0;}
 
 /*카테고리 아이콘*/
 .ico-category {font-size: 0;}
+
+.top-btn-box {}
+.bottom-btn-box {height:28px;}
+.bottom-btn-box a {display: none;}
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	마진/패딩
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -10166,13 +10170,17 @@ td .radish-bank-box span {display:block;}
 }
 .coup-infor-list .coup-item .article-box .aricle-list li .txt {
 	overflow:hidden;
-	display: block;
+	display: -webkit-box;
 	height:36px;
 	margin-top:10px;
 	font-size:14px;
 	color:#666;
 	line-height:18px;
 	letter-spacing:-0.5px;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	text-overflow:ellipsis;
+	word-wrap: break-word;
 }
 /* 1:1 상담 */
 .my-qna {}
@@ -10301,9 +10309,12 @@ td .radish-bank-box span {display:block;}
 	letter-spacing: -1px;
 }
 /* 관심 콘텐츠 */
+.atten-cont {
+	margin-top:40px;
+}
 .atten-area {
 	position:relative;
-	margin-top:40px;
+	margin-bottom:40px;
 }
 .atten-area .day-title label {
 	display:inline-block;
@@ -10351,6 +10362,7 @@ td .radish-bank-box span {display:block;}
 	-webkit-line-clamp:2;
 	-webkit-box-orient:vertical;
 	text-overflow:ellipsis;
+	word-wrap: break-word;
 }
 .ico-mark {
 	display:inline-block;
@@ -10457,13 +10469,17 @@ td .radish-bank-box span {display:block;}
 	box-sizing:border-box;
 }
 .my-review-box dl .review-article .article-com .txt {
-	display:block;
+	display:-webkit-box;
 	overflow:hidden;
 	height:36px;
 	margin-top:5px;
 	font-size:14px;
 	color:#666;
 	line-height:18px;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	text-overflow:ellipsis;
+	word-wrap: break-word;
 }
 
 	.thumb-slide4 .bx-pager {
