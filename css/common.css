@@ -10885,8 +10885,42 @@ td .radish-bank-box span {display:block;}
 .noty-area .board-lsit.type2 td {padding:15px 0;}
 .noty-area .board-lsit.type2 td.title {padding-left:20px;}
 
+/*공지사항 상세*/
+.view-area2 { border:1px solid #ddd; padding:60px 40px 30px 40px; box-sizing: border-box;}
+.view-area2 .top-area .title {font-size: 28px; color:#000; font-weight: bold;}
+.view-area2 .top-area .date {font-size: 14px; color: #999;}
+.view-area2 .top-area .count {position: relative; font-size: 14px; color: #999; padding-left:18px;}
+.view-area2 .top-area .count:before {content:''; position:absolute; left:0; top:5px; width:13px; height:13px; background:url(../img/icon/ico_search.png) no-repeat left 50%; }
 
+.view-area2 .center-area {width:100%; margin-top:20px; padding-bottom:60px; border-bottom:1px solid #ddd; color:#666; overflow: hidden;}
+.view-area2 .center-area img {max-width: 100%;}
+.view-area2 .center-area p {color: #666;}
 
+.view-area2 .bottom-area { position: relative; width: 100%;}
+.view-area2 .bottom-area .direction-area {overflow: hidden; position: absolute; width:100%; left:0; top:50%; margin-top:-11px;}
+.view-area2 .bottom-area .direction-area a {
+	position: relative;
+	font-size: 15px;
+	color:#666;
+	vertical-align: middle;
+}
+.view-area2 .bottom-area .direction-area a:before {
+	content:'';
+	position:absolute;
+	top:2px;
+	width:9px;
+	height:16px;
+	background:url(../img/btn/btn_prev.png) no-repeat left top;
+}
+.view-area2 .bottom-area .direction-area .btn-prev:before {
+	left:0;
+}
+.view-area2 .bottom-area .direction-area .btn-next:before {
+	right:0;
+	transform: rotate(180deg);
+}
+.view-area2 .bottom-area .direction-area .btn-prev {float:left; padding-left:20px;}
+.view-area2 .bottom-area .direction-area .btn-next {float:right; padding-right:20px;}
 
 
 /*campaign*/
