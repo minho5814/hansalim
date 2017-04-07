@@ -1550,7 +1550,7 @@ table .good-table table th {padding:0;}
 		box-sizing: border-box;
 	}
 	.item-list li:first-child {border-left: 0;}
-	.item-list li > .item-info {display: block; height:198px; padding:10px 0;  box-sizing: border-box;}
+	.item-list li > .item-info {display: block; height:198px;  padding:6px 0 10px;  box-sizing: border-box;}
 	.item-list .btn-center {display:none; width:186px; height:198px; margin-top:0; position:absolute; left:0; top:0; background-color:rgba(255,255,255,.8);opacity:0;}
 	.item-list li:hover .btn-center {display:block;}
 	.item-list li .btn-center:hover {
@@ -1577,9 +1577,9 @@ table .good-table table th {padding:0;}
 		font-weight: bold;
 	}
 	.item-list .img-area {
-		width:85px;
-		height:85px;
-		margin:10px auto 5px;
+		width:100px;
+		height:100px;
+		margin:6px auto;
 
 	}
 	.item-list .img-area img {width: 100%; vertical-align: middle;}
@@ -1594,7 +1594,8 @@ table .good-table table th {padding:0;}
 	.item-list .name {
 		position: absolute;
 		left:50%; top:45%;
-		width: 90%;
+		width: 120px;
+		max-height: 45px;
 		font-size:14px;
 		color:#666;
 		display:-webkit-box;-webkit-line-clamp:2;
@@ -1605,7 +1606,7 @@ table .good-table table th {padding:0;}
 		-ms-transform:translate(-50%,-50%);
 		transform:translate(-50%,-50%);
 	}
-	.item-list .price {font-size:18px; color:#000; font-weight: 900; letter-spacing: -1px;}
+	.item-list .price {line-height: 18px;font-size:18px; color:#000; font-weight: 900; letter-spacing: -1px;}
 	.item-list .price em {font-size:14px}
 
 /*sub-캠페인*/
