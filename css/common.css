@@ -883,8 +883,10 @@ table .good-table table th {padding:0;}
 			vertical-align:middle;
 		}
 	.thumb-item1 .name {
+		overflow:hidden;
+		max-height:42px;
 		margin-top:-10px;
-		padding-left:30px;
+		padding:0 30px;
 		color:#555;
 		font-size:15px;
 		line-height:21px;
@@ -963,17 +965,14 @@ table .good-table table th {padding:0;}
 			height:265px;
 		}
 	.thumb-list3 .thumb-item .name {
+		display: block;
+		overflow:hidden;
 		height:42px;
 		margin-top:-10px;
 		padding:0 30px;
 		color:#555;
 		font-size:15px;
 		line-height:21px;
-		display: block;
-		display:-webkit-box;-webkit-line-clamp:2;
-		-webkit-box-orient:vertical;
-		overflow:hidden;
-		text-overflow:ellipsis;
 	}
 	.thumb-list3 .thumb-item .price-btn {
 		overflow:hidden;
@@ -1046,10 +1045,6 @@ table .good-table table th {padding:0;}
 	font-size:15px;
 	color:#666;
 	line-height:22px;
-	display:-webkit-box;
-	-webkit-line-clamp:2;
-	-webkit-box-orient:vertical;
-	text-overflow:ellipsis;
 	text-align:center;
 }
 .thumb-list4 .thumb-item .price-box {
@@ -1548,7 +1543,7 @@ table .good-table table th {padding:0;}
 		box-sizing: border-box;
 	}
 	.item-list li:first-child {border-left: 0;}
-	.item-list li > .item-info {display: block; height:198px; padding:10px 0;  box-sizing: border-box;}
+	.item-list li > .item-info {display: block; height:198px;  padding:6px 0 10px;  box-sizing: border-box;}
 	.item-list .btn-center {display:none; width:186px; height:198px; margin-top:0; position:absolute; left:0; top:0; background-color:rgba(255,255,255,.8);opacity:0;}
 	.item-list li:hover .btn-center {display:block;}
 	.item-list li .btn-center:hover {
@@ -1575,9 +1570,9 @@ table .good-table table th {padding:0;}
 		font-weight: bold;
 	}
 	.item-list .img-area {
-		width:85px;
-		height:85px;
-		margin:10px auto 5px;
+		width:100px;
+		height:100px;
+		margin:6px auto;
 
 	}
 	.item-list .img-area img {width: 100%; vertical-align: middle;}
@@ -1590,20 +1585,19 @@ table .good-table table th {padding:0;}
 		box-sizing: border-box;
 	}
 	.item-list .name {
-		position: absolute;
-		left:50%; top:45%;
-		width: 90%;
+		overflow:hidden;
+		position:absolute;
+		left:50%;top:45%;
+		width:120px;
+		max-height:42px;
 		font-size:14px;
 		color:#666;
-		display:-webkit-box;-webkit-line-clamp:2;
-		-webkit-box-orient:vertical;
-		overflow:hidden;
-		text-overflow:ellipsis;
+		line-height:21px;
 		-webkit-transform:translate(-50%,-50%);
 		-ms-transform:translate(-50%,-50%);
 		transform:translate(-50%,-50%);
 	}
-	.item-list .price {font-size:18px; color:#000; font-weight: 900; letter-spacing: -1px;}
+	.item-list .price {line-height: 18px;font-size:18px; color:#000; font-weight: 900; letter-spacing: -1px;}
 	.item-list .price em {font-size:14px}
 
 /*sub-캠페인*/
@@ -5450,7 +5444,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .pagenation .page-list .number {
 	width:28px;height:28px;
 	color:#666;
-	font-size:13px;
+	font-size:16px;
 	line-height:28px;
 	background-color:#fff;
 }
@@ -5657,7 +5651,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .container.category .best .right-area {width:280px; height:100%; position:absolute; right:0; top:0;border-left:1px solid #ddd; box-sizing: border-box;}
 .container.category .best .center {position:absolute; left:280px; top:0;width:560px; height:746px; box-sizing: border-box;}
 .container.category .best .center .thumb-item1 {border:none; padding-bottom:135px}
-.container.category .best .center .name {margin-top:30px; font-size: 24px;}
+.container.category .best .center .name {margin-top:8px; font-size: 24px; text-overflow:ellipsis; line-height:40px; white-space:nowrap;}
 .container.category .best .center .price-btn {bottom:65px;}
 .container.category .best .center .price {font-size: 24px;}
 .container.category .best .center .price .number {font-size: 36px;}
@@ -8930,7 +8924,6 @@ td .radish-bank-box span {display:block;}
 				margin-top:5px;
 			}
 				.new-cooking-item .connection-list .item .text-area .name {
-					display:-webkit-box;
 					overflow:hidden;
 					position:absolute;
 					left:0;right:0;top:50%;
@@ -8940,12 +8933,7 @@ td .radish-bank-box span {display:block;}
 					max-height:36px;
 					color:#666;
 					font-size:14px;
-					text-overflow:ellipsis;
 					line-height:18px;
-					word-break:webkit-box;
-					-webkit-line-clamp:2;
-					-webkit-box-orient:vertical;
-					word-wrap:break-word;
 				}
 
 /* 으뜸요리 */
@@ -10851,35 +10839,39 @@ td .radish-bank-box span {display:block;}
 }
 .news-cont .tab-styled4 .item span {height:40px; line-height: 40px; font-size: 15px;}
 .news-cont .tab-styled4 .item:first-child {margin-left:0;}
+.noty-area .order-list {margin-top: 5px;}
+.noty-area .search-input {width:207px;}
+.noty-area .search-input .inner-box {float:left; width:150px; margin-right:5px;}
+.noty-area .search-input .inner-box input {width: 100%;}
 
+/*오늘의 물품소식*/
+.news-cont .my-qna .column-group {height:55px; line-height: 53px;}
+.news-cont .qna-cont .qna-list .item .question {padding:16px 0;}
 .news-cont .qna-cont .qna-list .item .question.important span,
 .news-cont .qna-cont .qna-list .item .question.important a{color:#000 !important;}
 .news-cont .qna-cont .qna-list .item.on .question.important span,
 .news-cont .qna-cont .qna-list .item.on .question.important a{color:#666 !important; font-weight: normal}
 .news-cont .qna-cont .qna-list .item.on .question .title{color:#666 !important; font-weight: normal; line-height: 22px;}
-.noty-area .order-list {margin-top: 5px;}
-.noty-area .search-input {width:207px;}
-.noty-area .search-input .inner-box {float:left; width:150px; margin-right:5px;}
-.noty-area .search-input .inner-box input {width: 100%;}
-.news-cont .qna-cont .qna-list .item .question .title {padding-left:20px;box-sizing: border-box;}
 
+.news-cont .qna-cont .qna-list .item .question .title {padding-left:20px;box-sizing: border-box;}
 .news-cont  .my-qna .column-group .column01,
 .news-cont .qna-cont .qna-list .item .question .number {width:8%;}
-
 .news-cont  .my-qna .column-group .column02,
 .news-cont .qna-cont .qna-list .item .question .type {width:10%;}
-
 .news-cont  .my-qna .column-group .column03,
 .news-cont .qna-cont .qna-list .item .question .title {width:60%;}
-
 .news-cont  .my-qna .column-group .column04,
 .news-cont .qna-cont .qna-list .item .question .date {width:11%;}
-
 .news-cont  .my-qna .column-group .column05,
 .news-cont .qna-cont .qna-list .item .question .status {width:11%;}
 
-
-.news-cont .qna-cont .qna-list .item .answer .text {padding-left: 20px; box-sizing: border-box;}
+/*공지사항*/
+.noty-area .board-lsit.type2 {}
+.noty-area .board-lsit.type2 tr.noty td,
+.noty-area .board-lsit.type2 tr.noty td a {color:#000;}
+.noty-area .board-lsit.type2 thead th {height:53px; line-height: 53px; color:#333; font-weight: normal}
+.noty-area .board-lsit.type2 td {padding:15px 0;}
+.noty-area .board-lsit.type2 td.title {padding-left:20px;}
 
 
 
