@@ -5450,7 +5450,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .pagenation .page-list .number {
 	width:28px;height:28px;
 	color:#666;
-	font-size:13px;
+	font-size:16px;
 	line-height:28px;
 	background-color:#fff;
 }
@@ -10851,35 +10851,39 @@ td .radish-bank-box span {display:block;}
 }
 .news-cont .tab-styled4 .item span {height:40px; line-height: 40px; font-size: 15px;}
 .news-cont .tab-styled4 .item:first-child {margin-left:0;}
+.noty-area .order-list {margin-top: 5px;}
+.noty-area .search-input {width:207px;}
+.noty-area .search-input .inner-box {float:left; width:150px; margin-right:5px;}
+.noty-area .search-input .inner-box input {width: 100%;}
 
+/*오늘의 물품소식*/
+.news-cont .my-qna .column-group {height:55px; line-height: 53px;}
+.news-cont .qna-cont .qna-list .item .question {padding:16px 0;}
 .news-cont .qna-cont .qna-list .item .question.important span,
 .news-cont .qna-cont .qna-list .item .question.important a{color:#000 !important;}
 .news-cont .qna-cont .qna-list .item.on .question.important span,
 .news-cont .qna-cont .qna-list .item.on .question.important a{color:#666 !important; font-weight: normal}
 .news-cont .qna-cont .qna-list .item.on .question .title{color:#666 !important; font-weight: normal; line-height: 22px;}
-.noty-area .order-list {margin-top: 5px;}
-.noty-area .search-input {width:207px;}
-.noty-area .search-input .inner-box {float:left; width:150px; margin-right:5px;}
-.noty-area .search-input .inner-box input {width: 100%;}
-.news-cont .qna-cont .qna-list .item .question .title {padding-left:20px;box-sizing: border-box;}
 
+.news-cont .qna-cont .qna-list .item .question .title {padding-left:20px;box-sizing: border-box;}
 .news-cont  .my-qna .column-group .column01,
 .news-cont .qna-cont .qna-list .item .question .number {width:8%;}
-
 .news-cont  .my-qna .column-group .column02,
 .news-cont .qna-cont .qna-list .item .question .type {width:10%;}
-
 .news-cont  .my-qna .column-group .column03,
 .news-cont .qna-cont .qna-list .item .question .title {width:60%;}
-
 .news-cont  .my-qna .column-group .column04,
 .news-cont .qna-cont .qna-list .item .question .date {width:11%;}
-
 .news-cont  .my-qna .column-group .column05,
 .news-cont .qna-cont .qna-list .item .question .status {width:11%;}
 
-
-.news-cont .qna-cont .qna-list .item .answer .text {padding-left: 20px; box-sizing: border-box;}
+/*공지사항*/
+.noty-area .board-lsit.type2 {}
+.noty-area .board-lsit.type2 tr.noty td,
+.noty-area .board-lsit.type2 tr.noty td a {color:#000;}
+.noty-area .board-lsit.type2 thead th {height:53px; line-height: 53px; color:#333; font-weight: normal}
+.noty-area .board-lsit.type2 td {padding:15px 0;}
+.noty-area .board-lsit.type2 td.title {padding-left:20px;}
 
 
 
