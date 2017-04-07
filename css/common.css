@@ -1549,7 +1549,7 @@ table .good-table table th {padding:0;}
 		box-sizing: border-box;
 	}
 	.item-list li:first-child {border-left: 0;}
-	.item-list li > .item-info {display: block; height:198px; padding:10px 0;  box-sizing: border-box;}
+	.item-list li > .item-info {display: block; height:198px;  padding:6px 0 10px;  box-sizing: border-box;}
 	.item-list .btn-center {display:none; width:186px; height:198px; margin-top:0; position:absolute; left:0; top:0; background-color:rgba(255,255,255,.8);opacity:0;}
 	.item-list li:hover .btn-center {display:block;}
 	.item-list li .btn-center:hover {
@@ -1576,9 +1576,9 @@ table .good-table table th {padding:0;}
 		font-weight: bold;
 	}
 	.item-list .img-area {
-		width:85px;
-		height:85px;
-		margin:10px auto 5px;
+		width:100px;
+		height:100px;
+		margin:6px auto;
 
 	}
 	.item-list .img-area img {width: 100%; vertical-align: middle;}
@@ -1593,7 +1593,8 @@ table .good-table table th {padding:0;}
 	.item-list .name {
 		position: absolute;
 		left:50%; top:45%;
-		width: 90%;
+		width: 120px;
+		max-height: 45px;
 		font-size:14px;
 		color:#666;
 		display:-webkit-box;-webkit-line-clamp:2;
@@ -1604,7 +1605,7 @@ table .good-table table th {padding:0;}
 		-ms-transform:translate(-50%,-50%);
 		transform:translate(-50%,-50%);
 	}
-	.item-list .price {font-size:18px; color:#000; font-weight: 900; letter-spacing: -1px;}
+	.item-list .price {line-height: 18px;font-size:18px; color:#000; font-weight: 900; letter-spacing: -1px;}
 	.item-list .price em {font-size:14px}
 
 /*sub-캠페인*/
@@ -5448,7 +5449,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .pagenation .page-list .number {
 	width:28px;height:28px;
 	color:#666;
-	font-size:13px;
+	font-size:16px;
 	line-height:28px;
 	background-color:#fff;
 }
@@ -10843,35 +10844,39 @@ td .radish-bank-box span {display:block;}
 }
 .news-cont .tab-styled4 .item span {height:40px; line-height: 40px; font-size: 15px;}
 .news-cont .tab-styled4 .item:first-child {margin-left:0;}
+.noty-area .order-list {margin-top: 5px;}
+.noty-area .search-input {width:207px;}
+.noty-area .search-input .inner-box {float:left; width:150px; margin-right:5px;}
+.noty-area .search-input .inner-box input {width: 100%;}
 
+/*오늘의 물품소식*/
+.news-cont .my-qna .column-group {height:55px; line-height: 53px;}
+.news-cont .qna-cont .qna-list .item .question {padding:16px 0;}
 .news-cont .qna-cont .qna-list .item .question.important span,
 .news-cont .qna-cont .qna-list .item .question.important a{color:#000 !important;}
 .news-cont .qna-cont .qna-list .item.on .question.important span,
 .news-cont .qna-cont .qna-list .item.on .question.important a{color:#666 !important; font-weight: normal}
 .news-cont .qna-cont .qna-list .item.on .question .title{color:#666 !important; font-weight: normal; line-height: 22px;}
-.noty-area .order-list {margin-top: 5px;}
-.noty-area .search-input {width:207px;}
-.noty-area .search-input .inner-box {float:left; width:150px; margin-right:5px;}
-.noty-area .search-input .inner-box input {width: 100%;}
-.news-cont .qna-cont .qna-list .item .question .title {padding-left:20px;box-sizing: border-box;}
 
+.news-cont .qna-cont .qna-list .item .question .title {padding-left:20px;box-sizing: border-box;}
 .news-cont  .my-qna .column-group .column01,
 .news-cont .qna-cont .qna-list .item .question .number {width:8%;}
-
 .news-cont  .my-qna .column-group .column02,
 .news-cont .qna-cont .qna-list .item .question .type {width:10%;}
-
 .news-cont  .my-qna .column-group .column03,
 .news-cont .qna-cont .qna-list .item .question .title {width:60%;}
-
 .news-cont  .my-qna .column-group .column04,
 .news-cont .qna-cont .qna-list .item .question .date {width:11%;}
-
 .news-cont  .my-qna .column-group .column05,
 .news-cont .qna-cont .qna-list .item .question .status {width:11%;}
 
-
-.news-cont .qna-cont .qna-list .item .answer .text {padding-left: 20px; box-sizing: border-box;}
+/*공지사항*/
+.noty-area .board-lsit.type2 {}
+.noty-area .board-lsit.type2 tr.noty td,
+.noty-area .board-lsit.type2 tr.noty td a {color:#000;}
+.noty-area .board-lsit.type2 thead th {height:53px; line-height: 53px; color:#333; font-weight: normal}
+.noty-area .board-lsit.type2 td {padding:15px 0;}
+.noty-area .board-lsit.type2 td.title {padding-left:20px;}
 
 
 
@@ -11505,4 +11510,108 @@ td .radish-bank-box span {display:block;}
 	font-size:18px;
 	color:#666;
 	text-align:right;
+}
+
+/* 물품소식 - 물품개선 */
+.goods-improve {
+	border:1px solid #ddd;
+}
+.goods-improve h3 {
+	padding:19px 0;
+	color:#000;
+	font-size:22px;
+	font-weight: bold;
+	text-align: center;
+	border-bottom:1px solid #ddd;
+}
+.goods-improve h3 span {
+	position: relative;
+	display: inline-block;
+	padding-left:46px;
+	line-height: 37px;
+}
+.goods-improve h3 span:before{
+	content: '';
+	position: absolute;
+	top:0; left:0;
+	width:37px; height: 37px;
+	background:url(../img/icon/icon_improve.png) 0 0 no-repeat;
+}
+
+.improve-cont .inner-box{
+	position: relative;
+	height: 310px;
+}
+.improve-cont .inner-box:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.improve-cont .inner-box .img-wrap {
+	position: absolute;
+	top:36px; left:49px;
+	width:198px;
+	height: 230px;
+}
+.improve-cont .inner-box .img-wrap .goods-type {
+	position: absolute;
+	top:0; right:-5px;
+}
+.improve-cont .inner-box .improve-list {
+	 margin:0 49px 0 280px;
+	 padding-top:33px;
+}
+.improve-cont .inner-box .improve-list dt {
+	margin-bottom:8px;
+	color:#60b015;
+	font-size:22px;
+	font-weight: bold;
+	line-height: 25px;
+}
+.improve-cont .inner-box .improve-list li {
+	overflow: hidden;
+	border-top: 1px solid #ddd;
+}
+.improve-cont .inner-box .improve-list li:first-child {
+	border-top:0;
+}
+.improve-cont .inner-box .improve-list li a,
+.improve-cont .inner-box .improve-list li span {
+	display: inline-block;
+	float:left;
+	color:#666;
+	font-size:15px;
+	line-height: 55px;
+}
+.improve-cont .inner-box .improve-list li a {
+	overflow: hidden;
+	width:60%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.improve-cont .inner-box .improve-list li span {
+	text-align: center;
+}
+.improve-cont .inner-box .improve-list li .user {
+	width:25%;
+}
+.improve-cont .inner-box .improve-list li .date {
+	width:15%;
+}
+
+.improve-cont .word-box {
+	position: relative;
+	padding:26px 30px;
+	background-color:#f7f7f7;
+	border-top:1px solid #ddd;
+}
+.improve-cont .word-box dt {
+	color:#000;
+	font-size:15px;
+	font-weight: bold;
+}
+.improve-cont .word-box dd {
+	margin-top:10px;
+	color:#666;
+	letter-spacing:-0.5px;
 }
