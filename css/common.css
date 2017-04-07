@@ -315,6 +315,16 @@ button {outline:0;vertical-align:top;}
 		position:absolute;
 		right:0;top:0;
 	}
+.thumb-list2.check-style {margin:-25px 0 0 -30px;}
+	.thumb-list2.check-style .thumb-item {
+		width:100px;
+		margin:25px 0 0 30px;
+		padding-left:25px;
+	}
+	.thumb-list2.check-style .thumb-item .checkbox {
+		position:absolute;
+		left:0;top:0;
+	}
 
 .quick-menu-layer {
 	position:absolute;
@@ -323,6 +333,9 @@ button {outline:0;vertical-align:top;}
 	border:1px solid #559b13;
 	background-color:#fff;
 }
+.quick-layer {display:none;}
+.quick-layer.on {display:block;}
+
 	.quick-menu-layer .head {
 		position:relative;
 		height:50px;
@@ -348,9 +361,8 @@ button {outline:0;vertical-align:top;}
 			line-height:0;
 		}
 
-.quick-menu-layer .quick-cont {
-	padding:30px 30px 0;
-}
+.quick-menu-layer .quick-cont {padding:30px 30px 0;}
+.quick-menu-layer .quick-cont.type2 {padding:0 10px 0 30px;}
 	.quick-menu-layer .quick-cont .scroll-box {
 		overflow:hidden;
 		overflow-y:auto;
@@ -361,10 +373,10 @@ button {outline:0;vertical-align:top;}
 
 .quick-menu-layer .bottom {
 	position:relative;
-	height:72px;
-	padding:0 24px;
+	height:32px;
+	padding:20px 24px;
 	border-top:1px solid #ddd;
-	line-height:72px;
+	line-height:32px;
 }
 	.quick-menu-layer .bottom .all-price {overflow:hidden;}
 		.quick-menu-layer .bottom .all-price .number {color:#f56d24;}
@@ -384,12 +396,12 @@ button {outline:0;vertical-align:top;}
 				font-size:24px;
 				font-weight:900;
 			}
-		.quick-menu-layer .bottom .btn-cart4 {
+		.quick-menu-layer .bottom .btn-pos {
 			position:absolute;
 			right:20px;top:50%;
 			margin-top:-16px;
 		}
-.quick-menu-layer .bottom {}
+.quick-menu-layer .bottom.align-center {font-size:0;line-height:0;}
 	.quick-menu-layer .quick-cont {}
 	.quick-menu-layer {}
 	.quick-menu-layer {}
