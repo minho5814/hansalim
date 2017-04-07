@@ -204,8 +204,11 @@ html {
 	min-height:145px;
 }
 .container {position:relative;}
-
+.container.category {background-color:#fff !important;}
 /* 로케이션 */
+.container.category .location {
+	margin-bottom:-16px;
+}
 .location {
 	width:1120px;
 	margin:0 auto;
@@ -2066,8 +2069,8 @@ table .good-table table th {padding:0;}
 .btn-text.disabled:hover:after {display:none;}
 
 .btn-text.btn-gray {
-	border-color:#666;
-	background-color:#666;
+	border-color:#999;
+	background-color:#999;
 	color:#fff;
 }
 .btn-text.btn-green {
@@ -2135,9 +2138,9 @@ table .good-table table th {padding:0;}
 	border:1px solid #57a311;
 }
 .btn-basic-text.btn-gray {
-	background-color:#666;
+	background-color:#999;
 	color:#fff;
-	border:1px solid #666;
+	border:1px solid #999;
 }
 
 .btn-mini-text {
@@ -3017,7 +3020,7 @@ label.check-radio .radiobox {margin-right:8px;}
 		float:left;
 		position:relative;
 		width:820px;
-		z-index:10;
+		z-index:11;
 	}
 		.input-select .text-form input {}
 
