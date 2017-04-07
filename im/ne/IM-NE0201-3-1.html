@@ -855,21 +855,239 @@
 				<div class="tab-content3 on">
 					<div class="tab-area">
 						<ul class="tab-styled4">
-							<li class="item"><span class="text">방사능 검사</span></li>
+							<li class="item on"><span class="text">방사능 검사</span></li>
 							<li class="item"><span class="text">농식품 안전센터</span></li>
 							<li class="item"><span class="text">자주인증/자주관리·점검</span></li>
-							<li class="item on"><span class="text">축산물 이력검사</span></li>
+							<li class="item"><span class="text">축산물 이력검사</span></li>
 						</ul>
-						<!-- 축산물 이력검사 -->
+						<!-- 방사능 검사 -->
 						<div class="tab-content4 on">
-							<div class="livesto-area mgT50">
-								<h3 class="livesto-title">한살림 축산물<br>그 안전함을 확인하세요.</h3>
-								<p class="livesto-text">한살림 축산 생산자들이 생명을 존중하며 키운 한살림<br>축산물 생산이력을 확인하실 수 있습니다.</p>
-								<div class="search-livesto">
-									<input type="text" placeholder="이력번호를 입력해주세요">
-									<button type="button" class="btn-lookup-livesto btn-popup btn-livesto-record">조회</button>
+							<div class="radiation-area">
+								<div class="float-area mgB15">
+									<div class="search-input f-right">
+										<div class="inner-box">
+											<select class="styled1" style="width:100px;">
+												<option>년</option>
+												<option>2017</option>
+												<option>2016</option>
+												<option>2015</option>
+												<option>2014</option>
+												<option>2013</option>
+											</select>
+											<select class="styled1" style="width:100px;">
+												<option>월</option>
+												<option>01월</option>
+												<option>02월</option>
+												<option>03월</option>
+												<option>04월</option>
+												<option>05월</option>
+												<option>06월</option>
+											</select>
+										</div>
+										<button type="button" class="btn-round-text btn-gray">조회</button>
+									</div>
 								</div>
-								<p class="txt-notice">L자를 포함한 묶음번호 15자리 또는 12자리 개체식별번호를 입력 후 조회하세요.</p>
+								<div class="radiation-table">
+									<div class="board-lsit type2">
+										<table>
+											<colgroup>
+												<col style="width:140px;">
+												<col style="width:140px;">
+												<col style="width:140px;">
+												<col style="width:160px;">
+												<col style="width:75px;">
+												<col style="width:75px;">
+												<col style="width:75px;">
+												<col style="width:75px;">
+												<col style="width:75px;">
+												<col style="width:75px;">
+												<col style="width:75px;">
+												<col style="width:220px;">
+											</colgroup>
+											<thead>
+												<tr>
+													<th rowspan="2">날짜</th>
+													<th rowspan="2">시료명</th>
+													<th rowspan="2">생산지</th>
+													<th rowspan="2">검사기관</th>
+													<th colspan="2">I-131</th>
+													<th colspan="2">Cs-134</th>
+													<th colspan="2">Cs-137</th>
+													<th rowspan="2">총량</th>
+													<th rowspan="2">비고</th>
+												</tr>
+												<tr>
+													<th>검출한계</th>
+													<th>검사결과</th>
+													<th>검출한계</th>
+													<th>검사결과</th>
+													<th>검출한계</th>
+													<th>검사결과</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>2017-02-27(월)</td>
+													<td><a href="#">표고버섯 사각칩</a></td>
+													<td>에코푸드코리아</td>
+													<td>한살림농식품분석센터</td>
+													<td>1</td>
+													<td>불검출</td>
+													<td>1</td>
+													<td>불검출</td>
+													<td>1</td>
+													<td class="fColor3">검출(2.3)</td>
+													<td class="fColor3">검출(2.3)</td>
+													<td>우리밀라면, 감자라면 원료</td>
+												</tr>
+												<tr>
+													<td>2017-02-27(월)</td>
+													<td><a href="#">전어</a></td>
+													<td>해정씨푸드</td>
+													<td>기초과학지원연구원</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>불검출</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>2017-02-27(월)</td>
+													<td><a href="#">전어</a></td>
+													<td>해정씨푸드</td>
+													<td>기초과학지원연구원</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>불검출</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>2017-02-27(월)</td>
+													<td><a href="#">전어</a></td>
+													<td>해정씨푸드</td>
+													<td>기초과학지원연구원</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>불검출</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>2017-02-27(월)</td>
+													<td><a href="#">전어</a></td>
+													<td>해정씨푸드</td>
+													<td>기초과학지원연구원</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>불검출</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>2017-02-27(월)</td>
+													<td><a href="#">전어</a></td>
+													<td>해정씨푸드</td>
+													<td>기초과학지원연구원</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>불검출</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>2017-02-27(월)</td>
+													<td><a href="#">전어</a></td>
+													<td>해정씨푸드</td>
+													<td>기초과학지원연구원</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>불검출</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>2017-02-27(월)</td>
+													<td><a href="#">전어</a></td>
+													<td>해정씨푸드</td>
+													<td>기초과학지원연구원</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>불검출</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>2017-02-27(월)</td>
+													<td><a href="#">전어</a></td>
+													<td>해정씨푸드</td>
+													<td>기초과학지원연구원</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>불검출</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>2017-02-27(월)</td>
+													<td><a href="#">전어</a></td>
+													<td>해정씨푸드</td>
+													<td>기초과학지원연구원</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>0.21</td>
+													<td>불검출</td>
+													<td>불검출</td>
+													<td>&nbsp;</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="pagenation">
+									<div class="page-list">
+										<a href="#none" class="button btn-first">맨앞</a>
+										<a href="#none" class="button btn-prev">이전</a>
+										<span class="number on">1</span>
+										<a href="#none" class="number">2</a>
+										<a href="#none" class="number">3</a>
+										<a href="#none" class="number">4</a>
+										<a href="#none" class="number">5</a>
+										<a href="#none" class="number">6</a>
+										<a href="#none" class="number">7</a>
+										<a href="#none" class="number">8</a>
+										<a href="#none" class="number">9</a>
+										<a href="#none" class="number">10</a>
+										<a href="#none" class="button btn-next">다음</a>
+										<a href="#none" class="button btn-last">맨뒤</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -968,282 +1186,6 @@
 	</div>
 </div>
 
-<!-- 레이어 팝업 영역 -->
-<!-- 축산물 이력 조회 결과 -->
-<div class="layer-popup pop-livesto-record">
-	<div class="pop-head">
-		<h1 class="pop-title">축산물 이력 조회 결과</h1>
-		<button type="button" class="btn-close">닫기</button>
-	</div>
-	<div class="pop-content">
-		<div class="record-infor">
-			<p class="record-infor-tit">이력(묶음)번호 정보조회</p>
-			<div class="search-livesto">
-				<input type="text" placeholder="L01611035122358">
-				<button type="button" class="btn-lookup-livesto btn-popup btn-livesto-record">조회</button>
-			</div>
-			<p class="notice-txt">L자를 포함한 묶음번호 15자리 또는 12자리 개체식별번호를 입력 후 조회하세요.</p>
-		</div>
-		<div class="bundle-result">
-			<p class="result-notice fColor3">묶음번호 조회 결과입니다.</p>
-			<div class="configura-state">
-				<h3 class="pop-tit3">묶음번호 구성내역서</h3>
-				<div class="state-box">
-					<div class="board-write5 type2">
-						<table>
-							<colgroup>
-								<col style="width:100px;">
-								<col style="*">
-							</colgroup>
-							<tbody>
-								<tr>
-									<th class="align-left">묶음번호</th>
-									<td>L01611035122358</td>
-								</tr>
-								<tr>
-									<th class="align-left">상호</th>
-									<td>노업회사법인 한살림축산식품 유한회사</td>
-								</tr>
-								<tr>
-									<th class="align-left">주소</th>
-									<td>충청북도 괴산군 소수면 수리 619-3</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<div class="board-top">
-					<h3 class="pop-tit3 mgT0 mgB0 fl">묶음번호 구성내역</h3>
-					<p class="pop-txt03 fr">개체 식별번호 클릭 시 상세정보 확인가능</p>
-				</div>
-				<div class="board-lsit type2">
-					<table>
-						<colgroup>
-							<col style="width:12%;">
-							<col style="width:22%;">
-							<col style="width:20%;">
-							<col style="width:10%;">
-							<col style="*">
-						</colgroup>
-						<thead>
-							<tr>
-								<th scope="col">번호</th>
-								<th scope="col">이력번호</th>
-								<th scope="col">소의 종류</th>
-								<th scope="col">등급</th>
-								<th scope="col">사육지</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>002 6096 0222 1</td>
-								<td>한우</td>
-								<td>3</td>
-								<td>충청북도 괴산군 연풍면 유하리</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>002 6096 0222 1</td>
-								<td>한우</td>
-								<td>3</td>
-								<td>충청북도 괴산군 연풍면 유하리</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>002 6096 0222 1</td>
-								<td>한우</td>
-								<td>3</td>
-								<td>충청북도 괴산군 연풍면 유하리</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>002 6096 0222 1</td>
-								<td>한우</td>
-								<td>3</td>
-								<td>충청북도 괴산군 연풍면 유하리</td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>002 6096 0222 1</td>
-								<td>한우</td>
-								<td>3</td>
-								<td>충청북도 괴산군 연풍면 유하리</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>002 6096 0222 1</td>
-								<td>한우</td>
-								<td>3</td>
-								<td>충청북도 괴산군 연풍면 유하리</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- 축산물 이력 조회 결과 -->
-<!-- <div class="layer-popup pop-livesto-record">
-	<div class="pop-head">
-		<h1 class="pop-title">축산물 이력 조회 결과</h1>
-		<button type="button" class="btn-close">닫기</button>
-	</div>
-	<div class="pop-content">
-		<div class="record-infor">
-			<p class="record-infor-tit">이력(묶음)번호 정보조회</p>
-			<div class="search-livesto">
-				<input type="text" placeholder="00230533009">
-				<button type="button" class="btn-lookup-livesto btn-popup btn-livesto-record">조회</button>
-			</div>
-			<p class="notice-txt">L자를 포함한 묶음번호 15자리 또는 12자리 개체식별번호를 입력 후 조회하세요.</p>
-		</div>
-		<div class="bundle-result">
-			<p class="result-notice fColor3">이력번호 조회 결과입니다.</p>
-			<div class="configura-state">
-				<h3 class="pop-tit3">소 개체정보</h3>
-				<div class="state-box">
-					<div class="board-write5 type2">
-						<table>
-							<colgroup>
-								<col style="width:100px;">
-								<col style="*">
-								<col style="width:100px;">
-								<col style="*">
-							</colgroup>
-							<tbody>
-								<tr>
-									<th class="align-left">이력번호</th>
-									<td>00230533009</td>
-									<th class="align-left">출생년월일</th>
-									<td>2015-01-01 (25개월령)</td>
-								</tr>
-								<tr>
-									<th class="align-left">소의 종류 </th>
-									<td>한우</td>
-									<th class="align-left">성별</th>
-									<td>수</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<h3 class="pop-tit3 mgT45">소 출생 등 신고정보</h3>
-				<div class="board-lsit type2">
-					<table>
-						<colgroup>
-							<col style="width:25%;">
-							<col style="width:15%;">
-							<col style="width:25%;">
-							<col style="*">
-						</colgroup>
-						<thead>
-							<tr>
-								<th scope="col">소유주</th>
-								<th scope="col">신고구분</th>
-								<th scope="col">년월일</th>
-								<th scope="col">사육지</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>송재환(314629)</td>
-								<td>전산등록</td>
-								<td>2015-01-02 (화)</td>
-								<td>충청북도 괴산군 연풍면 유하리</td>
-							</tr>
-							<tr>
-								<td>송재환(314629)</td>
-								<td>전산등록</td>
-								<td>2015-01-02 (화)</td>
-								<td>충청북도 괴산군 연풍면 유하리</td>
-							</tr>
-							<tr>
-								<td>송재환(314629)</td>
-								<td>전산등록</td>
-								<td>2015-01-02 (화)</td>
-								<td>충청북도 괴산군 연풍면 유하리</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<h3 class="pop-tit3">도축 및 포장처리정보</h3>
-				<div class="state-box">
-					<div class="board-write5 type2">
-						<table>
-							<colgroup>
-								<col style="width:100px;">
-								<col style="*">
-								<col style="width:100px;">
-								<col style="*">
-							</colgroup>
-							<tbody>
-								<tr>
-									<th class="align-left">도축장</th>
-									<td colspan="3">(주)박달재엘피씨(LPC)(충청북도 제천시 보양읍 의암로)</td>
-								</tr>
-								<tr>
-									<th class="align-left">도축일자</th>
-									<td>2017-01-12 (화)</td>
-									<th class="align-left">도축검사결과</th>
-									<td>합격</td>
-								</tr>
-								<tr>
-									<th class="align-left">도체중</th>
-									<td>482kg</td>
-									<th class="align-left">육칠등급</th>
-									<td>3등급</td>
-								</tr>
-								<tr>
-									<th class="align-left">포장처리업소</th>
-									<td colspan="3">농업회사법인 한살림축산식품 유한회사 (충청북도 괴산군 소수면 수리)</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<h3 class="pop-tit3">구제역 백신접종 및 가축질병 검사 정보</h3>
-				<div class="state-box">
-					<div class="board-write5 type2">
-						<table>
-							<colgroup>
-								<col style="width:170px;">
-								<col style="*">
-								<col style="width:130px;">
-								<col style="*">
-							</colgroup>
-							<tbody>
-								<tr>
-									<th class="align-left">구제역 예방접종최종일자</th>
-									<td colspan="3">2016-07-20 (4차) 접종 후 176일 경과</td>
-								</tr>
-								<tr>
-									<th class="align-left">브루셀라 검사최종일자</th>
-									<td>2016-12-26 (화)</td>
-									<th class="align-left">브루셀라 검사결과</th>
-									<td>음성</td>
-								</tr>
-								<tr>
-									<th class="align-left">결핵 최종일자</th>
-									<td>해당없음</td>
-									<th class="align-left">결핵검사결과</th>
-									<td>해당없음</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<ul class="bullet-list1 mgT5">
-					<li class="item">브루셀라 및 결핵 검사정보는 농림축산식품부 Agix에서 제공된 정보임 (http://www.agix.go.kr)</li>
-					<li class="item">브루셀라 및 결핵 검사결과 정보가 사실과 다를 경우 축산 위생시험소에서 발급한 증명서를 반드시 확인하시기 바랍니다.</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div> -->
-
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
@@ -1267,10 +1209,6 @@ $(window).load(function(){
 		});
 	});
 
-	/* 축산물 이력 조회 결과 */
-	$('.btn-livesto-record').click(function(){
-		$('.pop-livesto-record').fadeIn(200);
-	});
 
 	/* 1:1 상담 */
 	// $('.btn-consul').click(function(){
