@@ -1033,7 +1033,7 @@
 						<div class="btn-area">
 							<a href="#" class="btn-mini-text btn-gray">선택삭제</a>
 							<a href="#" class="btn-mini-text">공급중단 물품삭제</a>
-							<button type="button " class="btn-icon-text btn-like2">관심물품 보기</button>
+							<button type="button " class="btn-icon-text btn-like2 btn-popup">관심물품 보기</button>
 						</div>
 						<div class="btn-center">
 							<a href="#" class="btn-icon-text btn-cart">계속 장보기</a>
@@ -1714,7 +1714,7 @@
 					</div>
 					<div class="box-cont dot-line">
 						<h4 class="cTitle5">출자금 자동증자</h4>
-						<p class="item">비영리단체인 한살림의 출자금은 건물임대, 공급차량 구입, 매장 임대 등 조직 운영에 사용되며, 물품구입시마다 의무자동출자 됩니다. 이는 탈퇴 시 환불됩니다. <a href="#" class="btn-mini-text btn-icon btn-invest-inst">출자금 자동증자 제도란</a></p>
+						<p class="item">비영리단체인 한살림의 출자금은 건물임대, 공급차량 구입, 매장 임대 등 조직 운영에 사용되며, 물품구입시마다 의무자동출자 됩니다. 이는 탈퇴 시 환불됩니다. <button type="button" class="btn-mini-text btn-icon btn-popup btn-invest-inst">출자금 자동증자 제도란</button></p>
 						<p class="item2">특별품으로 변경됨에 해당되는 물품은 특별품장바구니를 통해 주문해 주십시오.</p>
 					</div>
 					<div class="box-cont dot-line">
@@ -2062,7 +2062,6 @@
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
-<script type="text/javascript" src="../../js/jquery.jstree.js"></script>
 <script>
 $(window).load(function(){
 	/* 관심물품 호출 */
@@ -2080,24 +2079,6 @@ $(window).load(function(){
 		$(this).parents('.btn-center').prev('.like-wrap').find('.checkbox').children().prop('checked', true);
 		$(this).parents('.btn-center').prev('.like-wrap').find('.checkbox').addClass('checked');
 	});
-
-	/* 원재료 검색 */
-	// jstree
-	$('.tree-list').jstree({
-	'plugins' : ['checkbox']
-	});
-	$('.text.selected').each(function(){
-		$(this).parents('.jstree-anchor').click();
-	});
-
-	$('.tree-list').css({'opacity':'1'});
-
-	$('.search-input .query, .search-box .search-text').focusin(function(){
-		$(this).next('.word-box').show();
-	}).focusout(function(){
-		$(this).next('.word-box').hide();
-	});
-
 });
 </script>
 
