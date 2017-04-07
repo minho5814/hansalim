@@ -1974,6 +1974,7 @@ table .good-table table th {padding:0;}
 .mgL5 {margin-left:5px !important;}
 .mgL10 {margin-left:10px !important;}
 .mgL15 {margin-left:15px !important;}
+.mgL20 {margin-left:20px !important;}
 .mgL25 {margin-left:25px !important;}
 .mgL30 {margin-left:30px !important;}
 .mgL35 {margin-left:35px !important;}
@@ -12064,15 +12065,150 @@ td .radish-bank-box span {display:block;}
 	border-top:1px solid #ddd;
 }
 .improve-cont .word-box dt {
+	position:absolute;
+	left:30px; top:30px;
 	color:#000;
 	font-size:15px;
 	font-weight: bold;
 }
 .improve-cont .word-box dd {
-	margin-top:10px;
+	margin-top: 5px;
 	color:#666;
 	letter-spacing:-0.5px;
+	padding-left:215px;
 }
+/*슬라이드*/
+.improve-box {position: relative;}
+.improve-box .bx-controls-direction {}
+	.improve-box .bx-controls-direction a {
+		display:block;
+		position:absolute;
+		top:205px;
+		width:30px;
+		height:50px;
+		background-color:#ddd;
+		background-repeat:no-repeat;
+		background-position:50% 50%;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+	}
+	.improve-box.type2 .bx-controls-direction a {top:100px;}
+	.improve-box .bx-prev {
+		left:0;
+		background-image:url(../img/btn/btn_bx_prev01.png);
+	}
+	.improve-box .bx-next {
+		right:0;
+		background-image:url(../img/btn/btn_bx_next01.png);
+	}
+
+	.improve-box .bx-pager {
+		overflow:hidden;
+		height:10px;
+		margin-top:20px;
+		font-size:0;
+		text-align:center;
+		line-height:0;
+	}
+		.improve-box .bx-pager .bx-pager-item {
+			display:inline-block;
+			margin-left:6px;
+		}
+		.improve-box .bx-pager .bx-pager-link {
+			display:inline-block;
+			width:10px;
+			height:10px;
+			border-radius:50%;
+			background-color:#8a8a8a;
+			text-indent:-9999px;
+		}
+		.improve-box .bx-pager .bx-pager-item:first-child {margin-left:0;}
+		.improve-box .bx-pager .bx-pager-link.active {background-color:#000;}
+
+.goods-improve2 { border: 1px solid #ddd; padding:23px 50px; box-sizing: border-box;}
+.goods-improve2 .goods-list {overflow: hidden;position:relative; width: 100%; float:inherit;}
+	.goods-improve2 .goods-list .item {float: left; width:50%; padding-left:55px; box-sizing: border-box;}
+	.goods-improve2 .goods-list .item:first-child {padding-right:55px; padding-left:0; border-right:1px solid #ddd;}
+	.goods-improve2 .goods-list .item .img-area{
+		float:left;
+		width: 100px;
+		height: 100px;
+		box-sizing: border-box;
+		border: 1px solid #ddd;
+		font-size: 0;
+		line-height: 0;
+		}
+		.goods-improve2 .goods-list .item .img-area img {width: 100%;}
+		.goods-improve2 .goods-list .item .text-area {height:100px; padding:15px 0 0 120px; box-sizing: border-box;}
+		.goods-improve2 .goods-list .item .text-area .name {font-size:16px; color: #000; font-weight: bold;}
+		.goods-improve2 .goods-list .item .text-area .cont {font-size:15px; color: #666; line-height: 20px; margin-top:5px;}
+
+.improve-box .text {font-size:14px; color:#666;}
+
+.improve-list-wrap {position:relative; overflow: hidden; padding-right:50px; border:1px solid #ddd; box-sizing: border-box;}
+.improve-list-wrap .improve-tit {
+	float:left;
+	position:absolute;
+	left:0;top:50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width:280px;
+	font-size:34px;
+	color:#60b015;
+	font-weight: bold;
+	text-align: center;
+	line-height: 40px;
+}
+
+.improve-list2 {overflow: hidden; width:788px; padding-left:280px;}
+.improve-list2 li {overflow: hidden; width: 100%; padding:17px 0 16px; border-top:1px solid #ddd; display: table; cursor: pointer;}
+.improve-list2 li.on {cursor: default;}
+.improve-list2 li:first-child {border-top:0;}
+.improve-list2 li div,
+.improve-list2 li span {display:table-cell; vertical-align: middle; color:#666; letter-spacing: -1px}
+.improve-list2 li .contents {display:none; margin-top:10px;}
+.improve-list2 li.on .contents {display:block;}
+.improve-list2 .top {width:63%; padding-right:30px; box-sizing: border-box;}
+.improve-list2 .user {width:23%}
+.improve-list2 .date {width:14%}
+.improve-list2 li.on .title {color:#000; }
+
+.improve-list3 {overflow: hidden;padding-top:1px; padding-left:1px;}
+	.improve-list3 li {
+		float: left;
+		border:1px solid #ddd;
+		width:280px;
+		height:225px;
+		padding:25px;
+		margin-top:-1px;
+		margin-left:-1px;
+		box-sizing: border-box;
+	}
+	.improve-list3 li .title {
+		font-size: 16px;
+		color:#000;
+		font-weight: bold;
+
+	}
+	.improve-list3 li .cont {
+		padding-top:10px;
+		height:95px;
+		font-size: 15px;
+		color: #666;
+		line-height: 20px;
+	}
+	.improve-list3 li .name {
+		padding-top:15px;
+		font-size: 14px;
+		color: #666;
+		border-top:1px solid #ddd;
+	}
+		.improve-list3 li .name .date {
+			display: block;
+		}
+
 /* 방사능 검사 */
 .radiation-area {}
 	.radiation-area .float-area {overflow:visible;}
