@@ -360,10 +360,35 @@ button {outline:0;vertical-align:top;}
 	}
 
 .quick-menu-layer .bottom {
+	position:relative;
 	height:72px;
+	padding:0 24px;
 	border-top:1px solid #ddd;
+	line-height:72px;
 }
-.quick-menu-layer .bottom {}
+	.quick-menu-layer .bottom .all-price {overflow:hidden;}
+		.quick-menu-layer .bottom .all-price .number {color:#f56d24;}
+		.quick-menu-layer .bottom .all-price .title {
+			float:left;
+			color:#666;
+			font-size:14px;
+			font-weight:bold;
+		}
+		.quick-menu-layer .bottom .all-price .price {
+			float:left;
+			margin-left:10px;
+			color:#f56d24;
+			font-size:15px;
+		}
+			.quick-menu-layer .bottom .all-price .price .number {
+				font-size:24px;
+				font-weight:900;
+			}
+		.quick-menu-layer .bottom .btn-cart4 {
+			position:absolute;
+			right:20px;top:50%;
+			margin-top:-16px;
+		}
 .quick-menu-layer .bottom {}
 	.quick-menu-layer .quick-cont {}
 	.quick-menu-layer {}
@@ -2261,7 +2286,7 @@ table .good-table table th {padding:0;}
 	color:#666;
 	font-size:18px;
 	text-align:center;
-	line-height:50px;
+	line-height:48px;
 }
 .btn-text:hover:after {
 	content:'';
@@ -2442,7 +2467,7 @@ table .good-table table th {padding:0;}
 	border-width:1px;
 	border-style:solid;
 	font-size:18px;
-	line-height:50px;
+	line-height:48px;
 	cursor:pointer;
 }
 .btn-icon-text:before {
@@ -2646,6 +2671,40 @@ table .good-table table th {padding:0;}
 	width:11px;
 	height:7px;
 	background-position: 0 -1069px
+}
+
+.btn-cart4 {
+	display:inline-block;
+	position:relative;
+	padding:0 12px;
+	height:32px;
+	box-sizing:border-box;
+	border-radius:3px;
+	background-color:#91c90b;
+	line-height:32px;
+}
+.btn-cart4 .text {
+	position:relative;
+	padding-left:26px;
+	color:#fff;
+	font-size:14px;
+}
+.btn-cart4 .text:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	width:20px;
+	height:18px;
+	margin-top:-9px;
+	background:url(../img/sprite/button.png) no-repeat 0 -1287px;
+}
+.btn-cart4:hover:after {
+	content:'';
+	position:absolute;
+	left:0;right:0;bottom:0;
+	height:3px;
+	border-radius:0 0 4px 4px;
+	background-color:rgba(0,0,0,.1);
 }
 
 /* 이미지 버튼 */
@@ -2877,6 +2936,8 @@ table .good-table table th {padding:0;}
 	line-height:0;
 }
 .btn-fixed.on {background-position:0 -1269px;}
+
+
 
 /* 화살표 링크 버튼 */
 .btn-link {
