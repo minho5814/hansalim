@@ -12000,3 +12000,35 @@ td .radish-bank-box span {display:block;}
 	color:#666;
 	letter-spacing:-0.5px;
 }
+/* 방사능 검사 */
+.radiation-area {}
+	.radiation-area .float-area {overflow:visible;}
+.radiation-area .float-area:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.radiation-area .search-input {
+	width:262px;
+}
+.radiation-area .search-input .inner-box {
+	float:left;
+	width:204px;
+	margin-right:5px;
+}
+.radiation-table {
+	overflow:auto;
+	width:100%;
+}
+.radiation-table .board-lsit {
+	border-top:0;
+}
+.radiation-table .board-lsit table {
+	border-top:1px solid #666;
+}
+.radiation-table .board-lsit th {
+	height:45px;
+}
+.radiation-table .board-lsit td {
+	font-size:15px;
+}
