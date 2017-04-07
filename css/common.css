@@ -193,6 +193,139 @@ button {outline:0;vertical-align:top;}
 /* =========================================================================================================
 	레이아웃
 ========================================================================================================= */
+/* ---------------------------------------------------------------------------------------------------------
+	퀵메뉴
+---------------------------------------------------------------------------------------------------------- */
+.quick-menu {
+	position:fixed;
+	right:0;top:245px;
+	z-index:300;
+	width:85px;
+	padding:0 0 3px 3px;
+	background-color:rgba(0,0,0,.25);
+}
+.quick-list {
+	background-color:#61b116;
+}
+	.quick-list .item {
+		display:block;
+		position:relative;
+		height:85px;
+		margin-top:1px;
+		box-sizing:border-box;
+		border-left:1px solid #4e920e;
+		border-right:1px solid #4e920e;
+		cursor:pointer;
+	}
+	.quick-list .item1 {margin-top:0;border-top:1px solid #4e920e;}
+	.quick-list .item:hover,
+	.quick-list .item.on {
+		border-color:#91c90b;
+		background-color:#91c90b;
+	}
+		.quick-list .item .text {
+			position:absolute;
+			left:0;right:0;top:50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			height:18px;
+			background-repeat:no-repeat;
+			background-position:50% 0;
+			color:#fff;
+			font-size:13px;
+			text-align:center;
+			line-height:18px;
+		}
+		.quick-list .item.item1 .text {padding-top:31px;background-image:url(../img/icon/ico_quick01.png);}
+		.quick-list .item.item2 .text {padding-top:28px;background-image:url(../img/icon/ico_quick02.png);}
+		.quick-list .item.item3 .text {padding-top:35px;background-image:url(../img/icon/ico_quick03.png);}
+		.quick-list .item.item4 .text {padding-top:35px;background-image:url(../img/icon/ico_quick04.png);}
+	.quick-menu .btn-scroll-area {
+		position:relative;
+		background-color:#4e920e;
+	}
+	.quick-menu .btn-scroll-area:before {
+		content:'';
+		position:absolute;
+		left:10px;right:10px;top:50%;
+		height:1px;
+		background-color:#609d27;
+	}
+		.quick-menu .btn-scroll-area button {
+			height:30px;
+			margin-top:1px;
+			padding-left:25px;
+			background-repeat:no-repeat;
+			background-position:11px 50%;
+			color:#fff;
+			font-size:11px;
+			font-weight:bold;
+			line-height:30px;
+		}
+		.quick-menu .btn-scroll-area button:first-child {margin-top:0;}
+		.quick-menu .btn-scroll-area .btn-top {background-image:url(../img/btn/btn_top.png);}
+		.quick-menu .btn-scroll-area .btn-bottom {background-image:url(../img/btn/btn_bottom.png);}
+
+.thumb-list2 {
+	overflow:hidden;
+	margin:-25px 0 0 -37px;
+}
+	.thumb-list2 .thumb-item {
+		float:left;
+		position:relative;
+		width:121px;
+		margin:25px 0 0 37px;
+	}
+		.thumb-list2 .thumb-item .link {
+			display:block;
+			width:100px;
+		}
+		.thumb-list2 .thumb-item .img-area {
+			width:100px;
+			height:100px;
+			font-size:0;
+			line-height:0;
+		}
+			.thumb-list2 .thumb-item .img-area img {width:100%;}
+	.thumb-list2 .thumb-item .text-area {
+		margin-top:6px;
+		text-align:center;
+	}
+		.thumb-list2 .thumb-item .text-area .name {
+			overflow:hidden;
+			height:40px;
+			font-size:14px;
+			line-height:20px
+		}
+		.thumb-list2 .thumb-item .text-area .price {
+			color:#000;
+			font-size:14px;
+			line-height:23px;
+		}
+			.thumb-list2 .thumb-item .text-area .price .number {
+				font-size:18px;
+				font-weight:900;
+			}
+	.thumb-list2 .thumb-item .btn-delete {}
+
+.quick-menu-layer {
+	position:absolute;
+	left:-677px;top:0;
+	width:680px;
+	border:1px solid #559b13;
+	background-color:#fff;
+}
+	.quick-menu-layer .head {}
+		.quick-menu-layer .head .title {}
+		.quick-menu-layer .head .btn-close {}
+	.quick-menu-layer {}
+	.quick-menu-layer {}
+	.quick-menu-layer {}
+
+
+
+
 html {
 	height:100%;
 	background-color:#0e0b0a;
