@@ -1793,17 +1793,37 @@ table .good-table table th {padding:0;}
 /* 배너 스타일 상단 비주엉 영역 */
 .banner-title {
 	height:200px;
-	margin-top:-45px;
+	margin-top:-60px;
 }
 
-.banner-title.bg1 {background-color:#d6f6eb;}
-.banner-title.bg2 {background-color:#dfdbfe;}
-.banner-title.bg3 {background-color:#dbfdda;}
-.banner-title.bg4 {background-color:#fdd9dd;}
-.banner-title.bg5 {background-color:#d8edfe;}
-.banner-title.bg6 {background-color:#fdf2d8;}
-.banner-title.bg7,
-.banner-title2.bg7  {background-color:#e9fdd8;}
+.banner-title.bg1 {background-color:#fdf2d8;}
+.banner-title.bg1 .title-inner {
+	background:url(../img/bg/bg_title1.png) no-repeat 100% 100%;
+}
+.banner-title.bg2 {background-color:#e9fdd8;}
+.banner-title.bg2 .title-inner {
+	background:url(../img/bg/bg_title3.png) no-repeat 100% 100%;
+}
+.banner-title.bg3 {background-color:#d6f6eb;}
+.banner-title.bg3 .title-inner {
+	background:url(../img/bg/bg_title4.png) no-repeat 100% 100%;
+}
+.banner-title.bg4 {background-color:#d6f6eb;}
+.banner-title.bg4 .title-inner {
+	background:url(../img/bg/bg_title5.png) no-repeat 100% 100%;
+}
+.banner-title.bg5 {background-color:#d8e4fd;}
+.banner-title.bg5 .title-inner {
+	background:url(../img/bg/bg_title6.png) no-repeat 100% 100%;
+}
+.banner-title.bg6 {background-color:#fdf5de;}
+.banner-title.bg6 .title-inner {
+	background:url(../img/bg/bg_title7.png) no-repeat 100% 100%;
+}
+.banner-title2.bg7 {background-color:#e9fdd8;}
+.banner-title2.bg7 .title-inner {
+	background:url(../img/bg/bg_title2.png) no-repeat 100% 100%;
+}
 	.banner-title .title-inner {
 		overflow:hidden;
 		width:1120px;
@@ -1811,7 +1831,6 @@ table .good-table table th {padding:0;}
 		margin:0 auto;
 		padding-top:50px;
 		box-sizing:border-box;
-		background:url(../img/bg/bg_title1.png) no-repeat 100% 100%;
 		line-height:120px;
 	}
 
@@ -1831,7 +1850,7 @@ table .good-table table th {padding:0;}
 
 .banner-title2 {
 	height:260px;
-	margin-top:-45px;
+	margin-top:-60px;
 }
 	.banner-title2 .title-inner{
 		overflow:hidden;
@@ -1854,12 +1873,6 @@ table .good-table table th {padding:0;}
 		color:#666;
 		font-size:15px;
 	}
-
-	.banner-title2.campaign .title-inner {background:url(../img/bg/bg_title2.png) right bottom no-repeat;}
-
-
-
-	.banner-title {}
 
 /* 타이틀 박스 */
 .title-wrap {
