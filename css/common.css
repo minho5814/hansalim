@@ -270,6 +270,7 @@ button {outline:0;vertical-align:top;}
 .thumb-list2 {
 	overflow:hidden;
 	margin:-25px 0 0 -37px;
+	width:650px;
 }
 	.thumb-list2 .thumb-item {
 		float:left;
@@ -284,6 +285,8 @@ button {outline:0;vertical-align:top;}
 		.thumb-list2 .thumb-item .img-area {
 			width:100px;
 			height:100px;
+			box-sizing:border-box;
+			border:1px solid #ddd;
 			font-size:0;
 			line-height:0;
 		}
@@ -299,6 +302,7 @@ button {outline:0;vertical-align:top;}
 			line-height:20px
 		}
 		.thumb-list2 .thumb-item .text-area .price {
+			margin-top:3px;
 			color:#000;
 			font-size:14px;
 			line-height:23px;
@@ -307,19 +311,61 @@ button {outline:0;vertical-align:top;}
 				font-size:18px;
 				font-weight:900;
 			}
-	.thumb-list2 .thumb-item .btn-delete {}
+	.thumb-list2 .thumb-item .btn-delete {
+		position:absolute;
+		right:0;top:0;
+	}
 
 .quick-menu-layer {
 	position:absolute;
-	left:-677px;top:0;
+	left:-677px;top:-50px;
 	width:680px;
 	border:1px solid #559b13;
 	background-color:#fff;
 }
-	.quick-menu-layer .head {}
-		.quick-menu-layer .head .title {}
-		.quick-menu-layer .head .btn-close {}
-	.quick-menu-layer {}
+	.quick-menu-layer .head {
+		position:relative;
+		height:50px;
+		border-bottom:1px solid #60b015;
+		background-color:#fff;
+	}
+		.quick-menu-layer .head .title {
+			color:#60b015;
+			font-size:18px;
+			text-align:center;
+			font-weight:bold;
+			line-height:50px;
+		}
+			.quick-menu-layer .head .title .number {color:#91c90b;}
+		.quick-menu-layer .head .btn-close {
+			position:absolute;
+			right:0;top:0;
+			width:54px;
+			height:50px;
+			background:url(../img/btn/btn_pop_close.png) no-repeat 50% 50%;
+			font-size:0;
+			text-indent:-9999px;
+			line-height:0;
+		}
+
+.quick-menu-layer .quick-cont {
+	padding:30px 30px 0;
+}
+	.quick-menu-layer .quick-cont .scroll-box {
+		overflow:hidden;
+		overflow-y:auto;
+		height:425px;
+		padding:30px 30px 30px 0;
+		box-sizing:border-box;
+	}
+
+.quick-menu-layer .bottom {
+	height:72px;
+	border-top:1px solid #ddd;
+}
+.quick-menu-layer .bottom {}
+.quick-menu-layer .bottom {}
+	.quick-menu-layer .quick-cont {}
 	.quick-menu-layer {}
 	.quick-menu-layer {}
 
@@ -3290,8 +3336,7 @@ label.check-radio .radiobox {margin-right:8px;}
 			line-height:50px;
 		}
 	.tab-list1 .item:hover,
-	.tab-list1 .item.on {z-index:1;}/* on */
-	.tab-list1 .item.on {cursor:default;}/* on */
+	.tab-list1 .item.on {z-index:1;cursor:default;}/* on */
 		.tab-list1 .item:hover .text {
 			border-color:#666;
 			background-color:#fff;
@@ -3306,6 +3351,41 @@ label.check-radio .radiobox {margin-right:8px;}
 			background-color:#fff;
 			color:#000;
 		}/* on */
+
+.tab-list2 {
+	overflow:hidden;
+}
+	.tab-list2 .item {
+		position:relative;
+		float:left;
+		width:25%;
+	}
+	.tab-list2 .item .text {
+		display:block;
+		height:50px;
+		margin-left:-1px;
+		box-sizing:border-box;
+		border:1px solid #ddd;
+		background-color:#f7f7f7;
+		color:#999;
+		font-size:15px;
+		text-align:center;
+		line-height:48px;
+		cursor:pointer;
+	}
+	.tab-list2 .item:first-child .text {margin-left:0;}
+	.tab-list2 .item:hover,
+	.tab-list2 .item.on {z-index:1;}
+	.tab-list2 .item:hover .text,
+	.tab-list2 .item.on .text {
+		border-color:#666;
+		background-color:#fff;
+		color:#666;
+		-webkit-transition:all .3s;
+		-ms-transition:all .3s;
+		transition:all .3s;
+	}
+	.tab-list2 .item.on .text {cursor:default;}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	기타
