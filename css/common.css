@@ -886,7 +886,7 @@ table .good-table table th {padding:0;}
 		}
 	.thumb-item1 .name {
 		overflow:hidden;
-		max-height:42px;
+		height:42px;
 		margin-top:-10px;
 		padding:0 30px;
 		color:#555;
@@ -7310,15 +7310,17 @@ td .radish-bank-box span {display:block;}
 	width:20%;
 }
 .brand-wrap .bottom-area .item-list  .item-info .name {
-	width:100%;
-	position: absolute;
-	top:130px;
-	line-height: 18px;
 	overflow:hidden;
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-	word-wrap: break-word;
+	width:100%;
+	max-height:36px;
+	position: absolute;
+	top:130px;left:0;
+	padding:0 30px;
+	box-sizing:border-box;
+	line-height:18px;
+	-webkit-transform:translate(0,0);
+	-ms-transform:translate(0,-0);
+	transform:translate(0,-0);
 }
 .brand-wrap .bottom-area .item-list  .item-info .price {
 	display: block;
@@ -10205,18 +10207,13 @@ td .radish-bank-box span {display:block;}
 	line-height: 15px;
 }
 .coup-infor-list .coup-item .article-box .aricle-list li .txt {
+	display:block;
 	overflow:hidden;
-	display: -webkit-box;
 	height:36px;
 	margin-top:10px;
 	font-size:14px;
 	color:#666;
 	line-height:18px;
-	letter-spacing:-0.5px;
-	-webkit-line-clamp:2;
-	-webkit-box-orient:vertical;
-	text-overflow:ellipsis;
-	word-wrap: break-word;
 }
 /* 1:1 상담 */
 .my-qna {}
@@ -10388,21 +10385,25 @@ td .radish-bank-box span {display:block;}
 	right:0; top:0;
 }
 .atten-area .arren-box .arren-list .item .txt-box {
-	overflow:hidden;
+	position:relative;
 	height:44px;
 	margin-top:5px;
-	font-size:15px;
 	color:#666;
 	line-height:22px;
-	display:-webkit-box;
-	-webkit-line-clamp:2;
-	-webkit-box-orient:vertical;
-	text-overflow:ellipsis;
-	word-wrap: break-word;
+}
+.atten-area .arren-box .arren-list .item .txt-box .text {
+	overflow:hidden;
+	height:44px;
+	padding-top:2px;
+	font-size:15px;
+	color:#666;
+	text-indent:46px;
+	line-height:22px;
 }
 .ico-mark {
 	display:inline-block;
-	margin-right:5px;
+	position:absolute;
+	left:0;top:0;
 	padding:0 6px 0 7px;
 	border:1px solid #60b015;
 	box-sizing:border-box;
