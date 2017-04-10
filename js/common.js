@@ -6,6 +6,17 @@
 */
 
 $(window).load(function(){
+	/* 퀵메뉴 */
+	// 스크롤 버튼
+	$('.btn-scroll-area button').click(function(){
+		if($(this).hasClass('btn-top')){
+			$('html, body').stop().animate({scrollTop:0},200);
+		}else{
+			var sBtm = $(document).height() - $(window).height();
+			$('html, body').stop().animate({scrollTop:sBtm},200);
+		}
+	});
+
 	// 상단 배너 닫기
 	$('.top-banner .btn-close').click(function(){
 		$(this).parents('.top-banner').slideUp(300, function(){
