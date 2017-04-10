@@ -32,6 +32,7 @@ $(window).load(function(){
 		$(this).parents('.top-banner').slideUp(300, function(){
 			$(this).remove();
 		});
+		$('.quick-menu').animate({top:145}, 300);// 퀵메뉴
 	});
 
 	/* 전체보기 레이어에 gnb 복사 */
@@ -278,10 +279,16 @@ $(window).load(function(){
 			var gnbW = $('.gnb').outerWidth();
 			var right = winW - ($('.gnb').offset().left + gnbW - 20);
 			$('.down .head-top .search-box').css({'right':right});
+			$('.quick-menu').stop().animate({top:145}, 200);// 퀵메뉴
 		}else{
 			$('html').removeClass('down');
 			$('.head-btm .gnb').css({'left':'0'});
 			$('.head-top .search-box').css({'right':'0'});
+			if($('.top-banner').length >= 1){
+				$('.quick-menu').stop().animate({top:245}, 200);// 퀵메뉴
+			}else{
+				$('.quick-menu').stop().animate({top:145}, 200);// 퀵메뉴
+			}
 		}
 
 		if($('.tab-wrap').length >= 1){
