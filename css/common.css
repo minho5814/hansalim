@@ -331,12 +331,31 @@ button {outline:0;vertical-align:top;}
 .quick-layer {
 	display:none;
 	position:absolute;
-	left:-677px;top:-50px;
+	left:-676px;top:-50px;
 	width:680px;
+	box-sizing:border-box;
 	border:1px solid #559b13;
 	background-color:#fff;
 }
 .quick-layer.on {display:block;}
+.quick-layer.list-layer {
+	left:-443px;
+	width:447px;
+}
+.quick-layer:before {
+	content:'';
+	position:absolute;
+	left:-4px;top:-1px;bottom:0;
+	width:4px;
+	background-color:rgba(0,0,0,.25);
+}
+.quick-layer:after {
+	content:'';
+	position:absolute;
+	left:-4px;right:-1px;bottom:-4px;
+	height:4px;
+	background-color:rgba(0,0,0,.25);
+}
 
 	.quick-menu-layer .head {
 		position:relative;
@@ -407,6 +426,62 @@ button {outline:0;vertical-align:top;}
 	.quick-menu-layer .quick-cont {}
 	.quick-menu-layer {}
 	.quick-menu-layer {}
+
+.quick-menu-layer .list-layer select.styled1 {
+	width:120px;
+}
+	.quick-menu-layer .list-layer .select-box .select-title {
+		width:120px;
+		border-color:#f3f3f3;
+		background-color:#f3f3f3;
+	}
+	.quick-menu-layer .list-layer .history-list {margin-top:15px;}
+		.quick-menu-layer .list-layer .history-list .item {
+			position:relative;
+			border-top:1px solid #ddd;
+			padding:13px 30px 13px 0;
+			color:#666;
+			font-size:14px;
+			line-height:22px;
+		}
+		.quick-menu-layer .list-layer .history-list .item .label {color:#61b116;}
+		.quick-menu-layer .list-layer .history-list .item .btn-delete {
+			position:absolute;
+			right:0;top:50%;
+			margin-top:-10px;
+
+		}
+			.quick-menu-layer .list-layer .history-list .item .img-area {
+				overflow:hidden;
+				position:absolute;
+				left:0;top:15px;
+				width:80px;
+				height:80px;
+				box-sizing:border-box;
+				border:1px solid #ddd;
+			}
+			.quick-menu-layer .list-layer .history-list .item .img-area img {width:100%;}
+			.quick-menu-layer .list-layer .history-list .item .text-area {
+				height:80px;
+				padding:2px 0 2px 90px;
+			}
+			.quick-menu-layer .list-layer .history-list .item .text-area .name {
+				padding-top:6px;
+				height:40px;
+				line-height:20px;
+			}
+			.quick-menu-layer .list-layer .history-list .item .text-area .price {
+				margin-top:4px;
+				color:#000;
+			}
+			.quick-menu-layer .list-layer .history-list .item .text-area .price .number {
+				font-size:18px;
+				font-weight:900;
+			}
+			.quick-menu-layer .list-layer .history-list .item {}
+		.quick-menu-layer .list-layer .history-list {}
+		.quick-menu-layer .list-layer .history-list {}
+	.quick-menu-layer .list-layer {}
 
 
 
