@@ -11238,7 +11238,7 @@ td .radish-bank-box span {display:block;}
 	.reply-table li .cont {display:none;}
 	.reply-table li.on .cont {display: block;}
 	.reply-table li.on .title {display: none;}
-	.reply-table li.on .cont {block;}
+	.reply-table li.on .cont {display:block;}
 
 /* 물품소식*/
 .news-cont {margin-top:25px;}
