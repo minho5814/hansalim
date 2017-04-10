@@ -326,14 +326,15 @@ button {outline:0;vertical-align:top;}
 		left:0;top:0;
 	}
 
-.quick-menu-layer {
+.quick-menu-layer {}
+.quick-layer {
+	display:none;
 	position:absolute;
 	left:-677px;top:-50px;
 	width:680px;
 	border:1px solid #559b13;
 	background-color:#fff;
 }
-.quick-layer {display:none;}
 .quick-layer.on {display:block;}
 
 	.quick-menu-layer .head {
@@ -2391,6 +2392,11 @@ table .good-table table th {padding:0;}
 	color:#fff;
 	border:1px solid #999;
 }
+.btn-basic-text.btn-gray2 {
+	border:1px solid #777;
+	background-color:#777;
+	color:#fff;
+}
 
 .btn-mini-text {
 	display:inline-block;
@@ -2686,30 +2692,31 @@ table .good-table table th {padding:0;}
 	background-position: 0 -1069px
 }
 
-.btn-cart4 {
+.btn-cart4,
+.btn-oder {
 	display:inline-block;
 	position:relative;
 	padding:0 12px;
 	height:32px;
 	box-sizing:border-box;
 	border-radius:3px;
-	background-color:#91c90b;
 	line-height:32px;
 }
-.btn-cart4 .text {
+.btn-cart4 .text,
+.btn-oder .text {
 	position:relative;
 	padding-left:26px;
 	color:#fff;
 	font-size:14px;
 }
-.btn-cart4 .text:before {
+.btn-cart4 .text:before,
+.btn-oder .text:before {
 	content:'';
 	position:absolute;
 	left:0;top:50%;
-	width:20px;
-	height:18px;
 	margin-top:-9px;
-	background:url(../img/sprite/button.png) no-repeat 0 -1287px;
+	background-image:url(../img/sprite/button.png);
+	background-repeat:no-repeat;
 }
 .btn-cart4:hover:after {
 	content:'';
@@ -2719,6 +2726,20 @@ table .good-table table th {padding:0;}
 	border-radius:0 0 4px 4px;
 	background-color:rgba(0,0,0,.1);
 }
+
+.btn-cart4 {background-color:#91c90b;}
+	.btn-cart4 .text:before {
+		width:20px;
+		height:18px;
+		background-position:0 -1287px;
+	}
+
+.btn-oder {background-color:#f56d24;}
+	.btn-oder .text:before {
+		width:22px;
+		height:17px;
+		background-position:0 -384px;
+	}
 
 /* 이미지 버튼 */
 .btn-image {
