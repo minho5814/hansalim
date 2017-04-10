@@ -1590,7 +1590,7 @@ table .good-table table th {padding:0;}
 
 .tab-styled3 .item:first-child {border-left:1px solid #ddd}
 .tab-styled3 .item:last-child {margin-left:-2px;}
-.tab-content3 {display: none; margin-top:40px;}
+.tab-content3 {display: none; margin-top:30px;}
 .tab-content3.on {display: block;}
 
 
@@ -2319,7 +2319,7 @@ table .good-table table th {padding:0;}
 
 .sorting-wrap {
 	position: relative;
-	margin:20px 0 35px;
+	margin:14px 0 35px;
 	padding-bottom:15px;
 	border-bottom:1px solid #ddd;
 }
@@ -4270,10 +4270,14 @@ label.check-radio .radiobox {margin-right:8px;}
 	.lnb-container .content .cont-box {margin-top:14px;}
 
 	.lnb-container .content .cont-box .exhibitions-banner {
-		margin:60px auto 20px;
+		margin:40px auto 20px;
 	}
 	.lnb-container .content .cont-box .exhibitions-banner img {
 		vertical-align: middle;
+	}
+
+	.lnb-container .content .cont-box .no-result + .exhibitions-banner {
+		margin-top:20px;
 	}
 /* =========================================================================================================
 	푸터
@@ -6632,8 +6636,8 @@ label.check-radio .radiobox {margin-right:8px;}
 
 /* 장바구니 (IM-SH0202.html) */
 .order-complete {
-	margin-top:50px;
-	padding-top:117px;
+	margin-top:60px;
+	padding-top:137px;
 	background:url(../img/bg/bg_order_complete.gif) no-repeat 50% 0;
 }
 	.order-complete p {text-align: center;}
@@ -9086,7 +9090,7 @@ td .radish-bank-box span {display:block;}
 }
 
 .shopping-history {
-	margin-top:40px;
+	margin-top:30px;
 }
 .shopping-history .text {
 	margin-top:15px;
@@ -9639,7 +9643,10 @@ td .radish-bank-box span {display:block;}
 .estimate-request-area {
 	border-top:1px solid #666;
 }
-
+.estimate-request-area .order-complete {
+	margin-top:50px;
+	padding-top:117px;
+}
 .estimate-request-area .board-write1 td .deliver-box {
 	border:1px solid #bbb;
 	border-radius:0;
