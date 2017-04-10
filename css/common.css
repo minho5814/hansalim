@@ -2037,6 +2037,7 @@ table .good-table table th {padding:0;}
 .mgT0 {margin-top:0 !important;}
 .mgT5 {margin-top:5px !important;}
 .mgT10 {margin-top:10px !important;}
+.mgT12 {margin-top:12px !important;}
 .mgT15 {margin-top:15px !important;}
 .mgT20 {margin-top:20px !important;}
 .mgT25 {margin-top:25px !important;}
@@ -2070,6 +2071,7 @@ table .good-table table th {padding:0;}
 .mgB20 {margin-bottom:20px !important;}
 .mgB30 {margin-bottom:30px !important;}
 .mgB40 {margin-bottom:40px !important;}
+.mgB45 {margin-bottom:45px !important;}
 
 .pdT0 {padding-top:0 !important;}
 .pdT5 {padding-top:5px !important;}
@@ -2078,6 +2080,7 @@ table .good-table table th {padding:0;}
 .pdT30 {padding-top:30px !important;}
 .pdT45 {padding-top:45px !important;}
 .pdT60 {padding-top:60px !important;}
+.pdT65 {padding-top:65px !important;}
 
 .pdB40 {padding-bottom:40px !important;}
 .pdB80 {padding-bottom:80px !important;}
@@ -5332,6 +5335,9 @@ label.check-radio .radiobox {margin-right:8px;}
 .content.gray {
 	background-color:#eee;
 }
+.content.gray2 {
+	background-color:#f7f7f7;
+}
 	.content .sub-inner {
 		width:1120px;
 		margin:0 auto;
@@ -6878,7 +6884,7 @@ td .radish-bank-box span {display:block;}
 /*.tab-content4 .cTitle3 {font-weight: normal}*/
 .tab-content4  .result-top {margin-top:0}
 
-.tab-content4 .group {margin-top:80px;}
+.tab-content4 .group {margin-top:66px;}
 .group.list-wrap .order-list {margin-bottom: 0;}
 /*요리검색결과*/
 .recipe-list .item-recipe {
@@ -7118,6 +7124,11 @@ td .radish-bank-box span {display:block;}
 	width:840px;
 	margin-top:15px;
 }
+.search-right .reset-area .btn-reset {
+	height:45px;
+	line-height:45px
+}
+	.search-right .reset-area .btn-reset:before {top:15px}
 .search-right .filter-data {
 	padding:13px 30px;
 	border:1px solid #ddd;
@@ -9293,6 +9304,7 @@ td .radish-bank-box span {display:block;}
 	padding-bottom:160px;
 	background-color:#f2efe8;
 }
+.new-cooking-area .title-through {width: 1120px; margin:0 auto;}
 .new-cooking-area .cTitle1 {background-color:#f2efe8;}
 .new-cooking-list {
 	width:1120px;
