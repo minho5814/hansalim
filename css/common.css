@@ -12187,17 +12187,24 @@ td .radish-bank-box span {display:block;}
 		box-sizing: border-box;
 	}
 	.improve-list3 li .title {
+		width: 100%;
 		font-size: 16px;
 		color:#000;
 		font-weight: bold;
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space: nowrap;
 
 	}
 	.improve-list3 li .cont {
+		overflow: hidden;
 		padding-top:10px;
-		height:95px;
+		padding-bottom:15px;
+		height:80px;
 		font-size: 15px;
 		color: #666;
 		line-height: 20px;
+
 	}
 	.improve-list3 li .name {
 		padding-top:15px;
