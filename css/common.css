@@ -757,6 +757,8 @@ html {
 
 .board-write1.bdBddd table {border-bottom:1px solid #ddd;}
 
+.board-write1 .right {text-align:right;}
+
 .board-write1.styled2 td {
 	padding:16px 20px;
 }
@@ -2240,15 +2242,16 @@ table .good-table table th {padding:0;}
 
 .info-text {
 	padding-left:28px;
+	background:url(../img/icon/ico_notice02.png) 0 3px no-repeat;
 	color:#999;
 	line-height: 26px;
-	background:url(../img/icon/ico_notice02.png) 0 3px no-repeat;
 }
 .info-text2 {
 	padding-left:28px;
-	color:#63a607;
-	line-height: 26px;
 	background:url(../img/icon/icon_exclamation.png) 0 3px no-repeat;
+	color:#63a607;
+	font-weight:bold;
+	line-height: 26px;
 }
 
 .cTitle4.logo {background:url(../img/icon/icon_hansalim.png) left center no-repeat; padding-left:33px;}
@@ -7900,6 +7903,27 @@ td .radish-bank-box span {display:block;}
 .layer-popup .btn-center .btn-text {
 	min-width:120px;
 }
+
+/* 퀵메뉴 팝업 */
+.pop-order {width:600px;}
+	.pop-order .top-info-list {
+		margin:-20px -30px 28px;
+		padding:25px 30px;
+		border-bottom:1px solid #e3e3e3;
+		color:#000;
+		font-size:15px;
+	}
+		.pop-order .top-info-list .item {margin-top:15px;}
+		.pop-order .top-info-list .item:first-child {margin-top:0;}
+		.pop-order .top-info-list .item.text-gray {color:#666;}
+			.pop-order .top-info-list .item .title {
+				display:inline-block;
+				width:70px;
+				color:#000;
+				font-weight:bold;
+			}
+	.pop-order .info-text2 {margin-bottom:13px;}
+	.pop-order .cTitle6 {margin:25px 0 10px;}
 
 /* CMS 임의해지 공통팝업 */
 .pop-abort-guid1 {width:600px;}
