@@ -2046,6 +2046,8 @@ table .good-table table th {padding:0;}
 .mgT80 {margin-top:80px !important;}
 .mgT85 {margin-top:85px !important;}
 
+.mgT-23 {margin-top:-23px !important;}
+
 .mgL5 {margin-left:5px !important;}
 .mgL10 {margin-left:10px !important;}
 .mgL15 {margin-left:15px !important;}
@@ -5309,7 +5311,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	.container.sub02 {
 		background-color:#fff;
 	}
-
+	.container.sub02 .location {margin-bottom:-16px;}
 .content {
 	background-color:#fff;
 	padding-top:80px;
@@ -6627,8 +6629,8 @@ label.check-radio .radiobox {margin-right:8px;}
 
 /* 장바구니 (IM-SH0202.html) */
 .order-complete {
-	margin-top:90px;
-	padding-top:140px;
+	margin-top:50px;
+	padding-top:117px;
 	background:url(../img/bg/bg_order_complete.gif) no-repeat 50% 0;
 }
 	.order-complete p {text-align: center;}
@@ -9620,7 +9622,7 @@ td .radish-bank-box span {display:block;}
 }
 
 .estimate-request-box {
-	margin-top:60px;
+	margin-top:50px;
 	padding:26px 30px;
 	background-color:#f7f7f7;
 }
@@ -11252,7 +11254,7 @@ td .radish-bank-box span {display:block;}
 	.reply-table li .cont {display:none;}
 	.reply-table li.on .cont {display: block;}
 	.reply-table li.on .title {display: none;}
-	.reply-table li.on .cont {block;}
+	.reply-table li.on .cont {display:block;}
 
 /* 물품소식*/
 .news-cont {margin-top:25px;}
