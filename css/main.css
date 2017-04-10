@@ -77,7 +77,7 @@
 /* 주요카테고리/테마관/서브브랜드 */
 .category-wrap {
 	position:relative;
-	height:317px;
+	height:357px;
 	padding-top:44px;
 	box-sizing:border-box;
 	background-color:#fff;
@@ -124,7 +124,7 @@
 .category-slide {
 	position:absolute;
 	left:50%;top:117px;
-	width:1044px;
+	width:1075px;
 	margin-left:-522px;
 	opacity:0;
 }
@@ -140,11 +140,17 @@
 	}
 		.category-slide .link .img-area {
 			overflow:hidden;
-			width:140px;
-			height:140px;
+			width:180px;
+			height:180px;
 			margin:0 auto;
 			border-radius:50%;
 		}
+		.category-slide .link .img-area img {
+			width:180px;
+			height:360px;
+			vertical-align:top;
+		}
+		.category-slide .link:hover .img-area img {margin-top:-180px;}
 		.category-slide .link .text {
 			position:absolute;
 			left:0;right:0;top:50%;
@@ -171,9 +177,10 @@
 		font-size:0;
 		text-indent:-9999px;
 		line-height:0;
+		opacity:.5;
 	}
-	.category-slide .bx-controls-direction .bx-prev {left:-52px;background-image:url(../img/btn/btn_bx_prev_12x21.png);}
-	.category-slide .bx-controls-direction .bx-next {right:-52px;background-image:url(../img/btn/btn_bx_next_12x21.png);}
+	.category-slide .bx-controls-direction .bx-prev {left:-40px;background-image:url(../img/btn/btn_bx_prev_12x21.png);}
+	.category-slide .bx-controls-direction .bx-next {right:-40px;background-image:url(../img/btn/btn_bx_next_12x21.png);}
 	.category-slide .bx-controls-direction .disabled {display:none;}
 
 /* 컨텐츠 공통 영역 */
@@ -214,7 +221,7 @@
 		}
 
 .main-cont.gray {background-color:#f7f7f7;}
-.main-cont.gray2 {background-color:#ebe5d9;}
+.main-cont.gray2 {margin-top:50px;background-color:#ebe5d9;}
 .main-cont.gray2 .main-title .text {background-color:#ebe5d9;}
 
 /* 조합원 추천 물품 */
@@ -365,10 +372,10 @@
 }
 	.recommend-tab .right-slide .thumb-item1 {
 		width:278px;
-		padding-bottom:98px;
+		padding-bottom:80px;
 	}
 	.recommend-tab .right-slide .thumb-list1 {width:840px;}
-	.recommend-tab .right-slide .thumb-slide1 .bx-pager {margin:28px 0 0 -280px;}
+	.recommend-tab .right-slide .thumb-slide1 .bx-pager {margin:20px 0 0 -280px;}
 	.recommend-tab .right-slide .thumb-slide1 .bx-controls-direction a {top:352px;}
 
 /* 이즈음 밥상 */
