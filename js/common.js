@@ -16,6 +16,16 @@ $(window).load(function(){
 			$('html, body').stop().animate({scrollTop:sBtm},200);
 		}
 	});
+	// 메뉴 버튼
+	$('.btn-group .item').click(function(){
+		var idx = $(this).index();
+		$(this).removeClass('on').eq(idx).addClass('on');
+		$('.quick-layer').removeClass('on').eq(idx).addClass('on');
+	});
+	$('.quick-menu-layer .head .btn-close').click(function(){
+		$('.btn-group .item').removeClass('on');
+		$('.quick-layer').removeClass('on');
+	});
 
 	// 상단 배너 닫기
 	$('.top-banner .btn-close').click(function(){
