@@ -7910,6 +7910,10 @@ td .radish-bank-box span {display:block;}
 
 /* 퀵메뉴 팝업 */
 .pop-order {width:600px;}
+.pop-order .pop-content {
+	overflow-y:auto;
+	max-height:600px;
+}
 	.pop-order .top-info-list {
 		margin:-20px -30px 28px;
 		padding:25px 30px;
