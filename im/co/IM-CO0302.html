@@ -305,7 +305,7 @@
 				</div>
 			</div>
 			<div class="bottom align-center">
-				<button type="button" class="btn-order"><span class="text">빠른주문</span></button>
+				<button type="button" class="btn-order2 btn-popup btn-pop-order"><span class="text">간편주문</span></button>
 				<a href="#" class="btn-cart4 mgL5"><span class="text">장바구니 담기</span></a>
 			</div>
 		</div>
@@ -2863,10 +2863,12 @@
 				</tbody>
 			</table>
 		</div>
-	</div>
-	<div class="btn-bottom">
-		<a href="#" class="btn-text btn-gray">취소</a>
-		<a href="#" class="btn-text btn-green mgL10">확인</a>
+
+		<div class="btn-bottom">
+			<p class="btm-text">[ 새송이버섯(300g) 외 2개 ]를 주문하시겠습니까?</p>
+			<a href="#" class="btn-text btn-gray">취소</a>
+			<a href="#" class="btn-text btn-orange mgL10">간편주문</a>
+		</div>
 	</div>
 </div>
 
@@ -2879,7 +2881,6 @@
 <script type="text/javascript" src="../../js/jquery.jstree.js"></script>
 <script>
 $(window).load(function(){
-	$('.pop-order').show();
 	/* 탭 추가 */
 	$('.tab-styled3 .item').click(function(){
 		var idx = $(this).index();
