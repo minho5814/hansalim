@@ -1591,7 +1591,7 @@ table .good-table table th {padding:0;}
 .tab-styled3 .item {cursor: pointer !important;}
 .tab-styled3 .item.on {cursor: default !important;}
 .tab-styled3 .item:first-child {border-left:1px solid #ddd}
-.tab-styled3 .item:last-child {margin-left:-1px;}
+.tab-styled3 .item:last-child {margin-left:-2px;}
 .tab-content3 {display: none; margin-top:30px;}
 .tab-content3.on {display: block;}
 
@@ -1957,8 +1957,6 @@ table .good-table table th {padding:0;}
 			margin-left:-135px;
 		}
 
-.tab-styled3.wid50 .item:last-child {margin-left:-2px;}
-
 /* 스텝리스트 */
 .step-list {
 	overflow:hidden;
@@ -2192,7 +2190,7 @@ table .good-table table th {padding:0;}
 }
 
 .title-wrap .user-info {
-	margin:6px 0 23px;
+	margin:6px 0 26px;
 	color:#666;
 }
 .title-wrap .user-info span {
@@ -4516,6 +4514,7 @@ label.check-radio .radiobox {margin-right:8px;}
 			top:15px; right:20px;
 			padding-right:15px;
 		}
+		.box-content1 .box-cont.bg-color1 {border-top:0; background-color:#f3f3f3;}
 
 .login-wrap .box-content1 {margin-top:60px;}
 
@@ -5851,7 +5850,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .pagenation {
 	position:relative;
 	height:28px;
-	margin:20px 0 40px;
+	margin:20px 0 60px;
 	text-align:center;
 }
 .pagenation .page-list {
@@ -6631,7 +6630,7 @@ label.check-radio .radiobox {margin-right:8px;}
 
 	.total-count + .btn-area .btn-like2 {float: right;}
 
-.cart-box-content {margin-top:40px;}
+.cart-box-content {margin-top:80px;}
 .cart-box-content h4 {margin-bottom:5px;}
 .cart-box-content .box-content1 .box-cont p {overflow:hidden; margin-top:0; letter-spacing: -0.5px;}
 .cart-box-content .box-content1 .box-cont p .btn-mini-text.btn-icon {float:right;}
@@ -6695,7 +6694,7 @@ td .radish-bank-box span {display:block;}
 	통합검색 (co/)
 ========================================================================================================= */
 .result-wrap .btn-center {margin-top:25px;}
-.all-search {margin-bottom:34px;}
+.all-search {margin-bottom:40px;}
 .all-search p {font-size: 18px;}
 .filter-wrap {border:1px solid #bbb;}
 .filter-wrap:first-child {margin-bottom:10px;}
@@ -6811,7 +6810,7 @@ td .radish-bank-box span {display:block;}
 	height:13px;
 	background-color: #d9d9d9;
 }
-.result-top {overflow: hidden; margin:56px 0 10px}
+.result-top {overflow: hidden; margin:60px 0 15px}
 .result-top .order-list {float:left;}
 .order-list button:first-child:before {content: none;}
 
@@ -8709,7 +8708,7 @@ td .radish-bank-box span {display:block;}
 /* 장바구니 및 나의 한살림 가격 표 */
 .total-price {
 	position: relative;
-	margin-top:10px;
+	margin-top:20px;
 	background-color:#f0f2ef;
 	border:1px solid #bbb;
 }
@@ -10569,7 +10568,7 @@ td .radish-bank-box span {display:block;}
 	color:#ec7015;
 }
 /* 쿠폰 */
-.coup-infor {margin-top:20px;}
+.coup-infor {}
 .coup-infor .infor-title-box {
 	overflow:hidden;
 	padding:20px 0;
@@ -10829,14 +10828,11 @@ td .radish-bank-box span {display:block;}
 }
 /* 관심 콘텐츠 */
 .atten-cont {
-	margin-bottom:30px;
+	margin-top:40px;
 }
 .atten-area {
 	position:relative;
-	margin-top:40px;
-}
-.atten-cont .atten-area:first-child {
-	margin-top:30px;
+	margin-bottom:40px;
 }
 .atten-area .day-title label {
 	display:inline-block;
@@ -10934,12 +10930,10 @@ td .radish-bank-box span {display:block;}
 }
 .my-review-box {
 	position:relative;
-	margin-top:12px;
 	padding:19px 189px 20px 29px;
 	border:1px solid #ddd;
 	box-sizing:border-box;
 }
-.my-review-box:fisrt-child {margin-top:0;}
 .my-review-box dl dt {
 	font-size:18px;
 	color:#000;
@@ -11488,51 +11482,54 @@ td .radish-bank-box span {display:block;}
 .campaign-wrap .bottom-area .date {float: right; background:url(../img/icon/icon_date.png) no-repeat left center; padding-left:20px;}
 
 /* campaign-list02 */
-.my-campaign {
+.campaign-wrap.campaign-com {
 	overflow:hidden;
 	position:relative;
-	padding:34px 0 20px;
+	padding:30px 0 20px;
 	border-top:1px solid #ddd;
 }
-.my-campaign:before {
+.campaign-wrap.campaign-com:before {
 	content:'';
 	display:block;
 	position:absolute;
 	left:50%;
-	top:134px;
+	top:130px;
 	bottom:0;
 	width:10px;
 	height:100%;
 	margin-left:-5px;
 	background-color:#f7f7f7;
 }
-.my-campaign li {
-	position:relative;
-	margin-top:52px;
-}
-.my-campaign li:first-child {margin-top:0;}
-.my-campaign li:nth-child(odd) {float:left;}
-.my-campaign li:nth-child(even) {float:right;}
-
-.my-campaign li:nth-child(odd):after {
+.campaign-left {float:left;}
+.campaign-right {float:right;}
+.campaign-left .campaign-list02 li:after {
 	content:'';
 	position:absolute;
-	right:-15px; top:110px;
+	right:-16px; top:110px;
 	width:15px;
 	height:23px;
 	background:url(../img/icon/utill_right.gif) no-repeat 0 0;
 }
-.my-campaign li:nth-child(even):after {
+.campaign-right .campaign-list02 li:after {
 	content:'';
 	position:absolute;
-	left:-15px; top:312px;
+	left:-16px; bottom:110px;
 	width:15px;
 	height:23px;
 	background:url(../img/icon/utill_left.gif) no-repeat 0 0;
 }
 
-.my-campaign li .date {
+.campaign-cont {
+	position:relative;
+	left:50%;
+	top:100px;
+	width:120px;
+	height:auto;
+	margin-left:-60px;
+}
+.campaign-cont .term-list li {
 	position:absolute;
+	left:0;
 	width:120px;
 	height:42px;
 	font-size:15px;
@@ -11545,22 +11542,24 @@ td .radish-bank-box span {display:block;}
 	border-radius:30px;
 	text-align:center;
 }
-.my-campaign li:nth-child(odd) .date {
-	top:100px; right:-144px;
-}
+.campaign-cont .term-list li.item-term01 {top:0;}
+.campaign-cont .term-list li.item-term02 {top:258px;}
+.campaign-cont .term-list li.item-term03 {top:504px;}
+.campaign-cont .term-list li.item-term04 {top:760px;}
 
-.my-campaign li:nth-child(even) .date {
-	top:302px; left:-144px;
-}
 
-	.my-campaign li .inner-box {
+.campaign-right .campaign-list02 li:first-child {margin-top:45px;}
+	.campaign-list02 {}
+	.campaign-list02 li {
 		position: relative;
 		width:365px;
 		height:456px;
+		margin-top:47px;
 		border:1px solid #ddd;
 		box-sizing:border-box;
 	}
-	.my-campaign li .inner-box:before {
+	.campaign-list02 li:first-child {margin-top:0;}
+	.campaign-list02 li:before {
 		content: '';
 		position:absolute;
 		left:-1px;
@@ -11568,23 +11567,24 @@ td .radish-bank-box span {display:block;}
 		width:52px;
 		height:40px;
 	}
-	.my-campaign li.join .inner-box:before {
+	.campaign-list02 li.join:before {
 		background:url(../img/img/img_flag_campaign1.png) 0 0 no-repeat;
 	}
-	.my-campaign li.attain .inner-box:before {
+	.campaign-list02 li.attain:before {
 		background:url(../img/img/img_flag_campaign2.png) 0 0 no-repeat;
 	}
-	.my-campaign li.joined .inner-box:before {
+	.campaign-list02 li.joined:before {
 		background:url(../img/img/img_flag_campaign3.png) 0 0 no-repeat;
 	}
-	.my-campaign .simbol-area {
+	.campaign-list02 li:nth-child(3n+1) {margin-left: 0}
+	.campaign-list02 .simbol-area {
 		position:absolute;
 		left:0;
 		top:0;
 		width:100%;
 		height:220px;
 	}
-	.my-campaign .text-area {
+	.campaign-list02 .text-area {
 		position: absolute;
 		width:100%;
 		height:75px;
@@ -11592,7 +11592,7 @@ td .radish-bank-box span {display:block;}
 		top:220px;
 		text-align: center;
 	}
-		.my-campaign .text-area p {
+		.campaign-list02 .text-area p {
 			overflow:hidden;
 			padding:0 10px 5px 10px;
 			font-size:18px;
@@ -11601,7 +11601,7 @@ td .radish-bank-box span {display:block;}
 			white-space:nowrap;
 			text-overflow:ellipsis;
 		}
-		.my-campaign .text-area span {
+		.campaign-list02 .text-area span {
 			display:block;
 			overflow:hidden;
 			height:42px;
@@ -11610,7 +11610,7 @@ td .radish-bank-box span {display:block;}
 			color:#666;
 			line-height:21px;
 		}
-	.my-campaign .btn-center {
+	.campaign-list02 .btn-center {
 		width:100%;
 		height:28px;
 		position:absolute;
@@ -11618,7 +11618,7 @@ td .radish-bank-box span {display:block;}
 		bottom:30px;
 		margin-top:0;
 	}
-	.my-campaign li .bottom-box {
+	.campaign-list02 li .bottom-box {
 		overflow:hidden;
 		position:absolute;
 		left:0; bottom:79px;
@@ -11626,7 +11626,7 @@ td .radish-bank-box span {display:block;}
 		padding:0 30px;
 		box-sizing:border-box;
 	}
-	.my-campaign li .bottom-box span {
+	.campaign-list02 li .bottom-box span {
 		display:block;
 		overflow:hidden;
 		height:22px;
@@ -11634,8 +11634,8 @@ td .radish-bank-box span {display:block;}
 		color:#666;
 		line-height:22px;
 	}
-	.my-campaign li .bottom-box .count {background:url(../img/icon/icon_flag.png) no-repeat left center; padding-left:20px;}
-	.my-campaign li .bottom-box .date {background:url(../img/icon/icon_date.png) no-repeat left center; padding-left:20px;}
+	.campaign-list02 li .bottom-box .count {background:url(../img/icon/icon_flag.png) no-repeat left center; padding-left:20px;}
+	.campaign-list02 li .bottom-box .date {background:url(../img/icon/icon_date.png) no-repeat left center; padding-left:20px;}
 
 	.bar-com {
 		position:absolute;
@@ -12596,6 +12596,7 @@ td .radish-bank-box span {display:block;}
 .certifi-list .item-certifi04 {
 	background:url(../img/temp/@temp_certifi_step04.jpg) no-repeat center 10px;
 }
+
 .often-certifi .board-lsit td.align-left {padding-left:0;}
 .often-certifi .often-text {
 	font-size:15px;
