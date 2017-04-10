@@ -329,15 +329,14 @@ button {outline:0;vertical-align:top;}
 
 .quick-menu-layer {}
 .quick-layer {
-	display:none;
 	position:absolute;
 	left:-676px;top:-50px;
 	width:680px;
 	box-sizing:border-box;
 	border:1px solid #559b13;
 	background-color:#fff;
+	opacity:0;
 }
-.quick-layer.on {display:block;}
 .quick-layer.list-layer {
 	left:-443px;
 	width:447px;
@@ -2245,6 +2244,12 @@ table .good-table table th {padding:0;}
 	line-height: 26px;
 	background:url(../img/icon/ico_notice02.png) 0 3px no-repeat;
 }
+.info-text2 {
+	padding-left:28px;
+	color:#63a607;
+	line-height: 26px;
+	background:url(../img/icon/icon_exclamation.png) 0 3px no-repeat;
+}
 
 .cTitle4.logo {background:url(../img/icon/icon_hansalim.png) left center no-repeat; padding-left:33px;}
 .title-wrap .info-text {margin-bottom:9px;}
@@ -2757,7 +2762,7 @@ table .good-table table th {padding:0;}
 }
 
 .btn-cart4,
-.btn-oder {
+.btn-order {
 	display:inline-block;
 	position:relative;
 	padding:0 12px;
@@ -2767,14 +2772,14 @@ table .good-table table th {padding:0;}
 	line-height:32px;
 }
 .btn-cart4 .text,
-.btn-oder .text {
+.btn-order .text {
 	position:relative;
 	padding-left:26px;
 	color:#fff;
 	font-size:14px;
 }
 .btn-cart4 .text:before,
-.btn-oder .text:before {
+.btn-order .text:before {
 	content:'';
 	position:absolute;
 	left:0;top:50%;
@@ -2798,8 +2803,8 @@ table .good-table table th {padding:0;}
 		background-position:0 -1287px;
 	}
 
-.btn-oder {background-color:#f56d24;}
-	.btn-oder .text:before {
+.btn-order {background-color:#f56d24;}
+	.btn-order .text:before {
 		width:22px;
 		height:17px;
 		background-position:0 -384px;
@@ -6268,6 +6273,32 @@ label.check-radio .radiobox {margin-right:8px;}
 
 .board-lsit.type2 table thead th {background-color:#f0f2ef;}
 
+.board-lsit.type3 table thead th {
+	height:45px;
+	border-left:1px solid #ddd;
+	background-color:#f0f2ef;
+}
+.board-lsit.type3 table tbody td {
+	padding:7px 15px;
+	border-left:1px solid #ddd;
+}
+.board-lsit.type3 table .left {text-align:left;}
+.board-lsit.type3 table .right {text-align:right;}
+.board-lsit.type3 table tbody th:first-child,
+.board-lsit.type3 table tbody td:first-child {border-left:0;}
+.board-lsit.type3 table tbody td .volume-box {
+	width:100px;
+	margin:0 auto;
+}
+.board-lsit.type3 table td .price {
+	color:#000;
+	font-size:15px;
+}
+.board-lsit.type3 table td .price .number {
+	font-size:18px;
+	font-weight:900;
+}
+
 /* board scroll */
 .board-scroll {
 	overflow:hidden;
@@ -8722,18 +8753,10 @@ td .radish-bank-box span {display:block;}
 	margin-top:-13px;
 }
 
-.total-price.total-price2 dl {
-	width:33%;
-}
-.total-price.total-price2 dl:first-child {
-	width:34%;
-}
-.total-price.total-price3 dl {
-	width:25%;
-}
-.total-price.total-price4 dl {
-	width:20%;
-}
+.total-price.total-price2 dl {width:33%;}
+.total-price.total-price2 dl:first-child {width:34%;}
+.total-price.total-price3 dl {width:25%;}
+.total-price.total-price4 dl {width:20%;}
 
 /* tip */
 .tip {
@@ -8747,10 +8770,10 @@ td .radish-bank-box span {display:block;}
 .tip .inner-box {
 	display: none;
 	position: absolute;
-	top:20px; left:-200px;
+	top:18px; left:-200px;
 	z-index:10;
 	transform: translateX(100px);
-	padding-top:4px;
+	padding-top:6px;
 }
 .tip:hover .inner-box {
 	display: block;
@@ -8758,7 +8781,7 @@ td .radish-bank-box span {display:block;}
 .tip .inner-box:before {
 	content: '';
 	position: absolute;
-	top:0; left:50%;
+	top:2px; left:50%;
 	width:5px; height:4px;
 	margin-left:-2px;
 	background:url(../img/img/img_bubble02.png) 0 0 no-repeat;
