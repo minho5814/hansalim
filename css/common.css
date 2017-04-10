@@ -1588,6 +1588,8 @@ table .good-table table th {padding:0;}
 .tab-content2.on {display:block;}
 .tab-content2.active {display:block;}
 
+.tab-styled3 .item {cursor: pointer !important;}
+.tab-styled3 .item.on {cursor: default !important;}
 .tab-styled3 .item:first-child {border-left:1px solid #ddd}
 .tab-styled3 .item:last-child {margin-left:-2px;}
 .tab-content3 {display: none; margin-top:30px;}
