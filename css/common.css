@@ -6078,7 +6078,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .container.category .best .center .price {font-size: 24px;}
 .container.category .best .center .price .number {font-size: 36px;}
 .container.category .best .center .retail2 {position: inherit; display: inline; padding-left:10px; font-size:18px; color:#999; text-decoration: line-through;}
-.container.category .best .thumb-item1 {float: none; width: 100%; border:none;}
+.container.category .best .thumb-item1 {float: none; width: 100%; border:none; padding-bottom:75px;}
 .container.category .best .center .img-area {overflow: hidden; width:560px; height:560px; font-size: 0;}
 .container.category .best .center .img-area img {width: 100%; height:100%;}
 .container.category .best .price-btn,
@@ -6798,7 +6798,7 @@ td .radish-bank-box span {display:block;}
 	font-size: 15px;
 	color:#999;
 	padding-left:10px;
-	margin-right:10px;
+	margin-right:6px;
 }
 .order-list button:first-child{padding-left:0;}
 .order-list button.on {color:#000;}
@@ -7150,7 +7150,7 @@ td .radish-bank-box span {display:block;}
 .search-right .goods-result {margin-top:46px;}
 	.search-right .goods-result .cTitle3 {font-weight:normal;}
 	.search-right .goods-result .order-list {margin-top:12px;}
-	.search-right .goods-result .goods-list1 {margin-top:11px;}
+	.search-right .goods-result .goods-list1 {margin-top:-2px;}
 
 .goods-item1 {
 	position:relative;
