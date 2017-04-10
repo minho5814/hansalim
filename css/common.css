@@ -1591,7 +1591,7 @@ table .good-table table th {padding:0;}
 .tab-styled3 .item {cursor: pointer !important;}
 .tab-styled3 .item.on {cursor: default !important;}
 .tab-styled3 .item:first-child {border-left:1px solid #ddd}
-.tab-styled3 .item:last-child {margin-left:-2px;}
+.tab-styled3 .item:last-child {margin-left:-1px;}
 .tab-content3 {display: none; margin-top:30px;}
 .tab-content3.on {display: block;}
 
@@ -1956,6 +1956,8 @@ table .good-table table th {padding:0;}
 			bottom:20px;
 			margin-left:-135px;
 		}
+
+.tab-styled3.wid50 .item:last-child {margin-left:-2px;}
 
 /* 스텝리스트 */
 .step-list {
@@ -6693,7 +6695,7 @@ td .radish-bank-box span {display:block;}
 	통합검색 (co/)
 ========================================================================================================= */
 .result-wrap .btn-center {margin-top:25px;}
-.all-search {margin-bottom:40px;}
+.all-search {margin-bottom:34px;}
 .all-search p {font-size: 18px;}
 .filter-wrap {border:1px solid #bbb;}
 .filter-wrap:first-child {margin-bottom:10px;}
@@ -6809,7 +6811,7 @@ td .radish-bank-box span {display:block;}
 	height:13px;
 	background-color: #d9d9d9;
 }
-.result-top {overflow: hidden; margin:60px 0 15px}
+.result-top {overflow: hidden; margin:56px 0 10px}
 .result-top .order-list {float:left;}
 .order-list button:first-child:before {content: none;}
 
@@ -12638,8 +12640,10 @@ td .radish-bank-box span {display:block;}
 .manage-list .item-manage .manage-depth li {
 	position: relative;
 	float:left;
-	width:50%;
-	padding-top:148px;
+	width:250px;
+	height:190px;
+	padding:148px 0 0 32px;
+	box-sizing: border-box;
 }
 .manage-list .item-manage .manage-depth .item-depth01 {
 	background:url(../img/temp/@temp_manage01.jpg) no-repeat center 0;
@@ -12672,35 +12676,31 @@ td .radish-bank-box span {display:block;}
 	background:url(../img/temp/@temp_manage10.jpg) no-repeat center 0;
 }
 .manage-list .item-manage .manage-depth li .manage-txt {
-	position: absolute;
-	left:50%;
-	bottom:0;
-	display:block;
+
+	display:inline-block;
 	padding:6px 0;
 	font-size:15px;
 	color:#666;
 	line-height:18px;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
+
 }
 .manage-list .item-manage .manage-depth li .manage-txt.ico-number01 {
 	padding-left:38px;
-	background:url(../img/icon/ico_number01.gif) no-repeat 0 0;
+	background:url(../img/icon/ico_number01.gif) no-repeat left center;
 }
 .manage-list .item-manage .manage-depth li .manage-txt.ico-number02 {
 	padding-left:38px;
-	background:url(../img/icon/ico_number02.gif) no-repeat 0 0;
+	background:url(../img/icon/ico_number02.gif) no-repeat left center;
 }
 .manage-list .item-manage .manage-depth li .manage-txt.ico-number03 {
 	padding-left:38px;
-	background:url(../img/icon/ico_number03.gif) no-repeat 0 0;
+	background:url(../img/icon/ico_number03.gif) no-repeat left center;
 }
 .manage-list .item-manage .manage-depth li .manage-txt.ico-number04 {
 	padding-left:38px;
-	background:url(../img/icon/ico_number04.gif) no-repeat 0 0;
+	background:url(../img/icon/ico_number04.gif) no-repeat left center;
 }
 .manage-list .item-manage .manage-depth li .manage-txt.ico-number05 {
 	padding-left:38px;
-	background:url(../img/icon/ico_number05.gif) no-repeat 0 0;
+	background:url(../img/icon/ico_number05.gif) no-repeat left center;
 }
