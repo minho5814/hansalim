@@ -2186,7 +2186,7 @@ table .good-table table th {padding:0;}
 }
 
 .title-wrap .user-info {
-	margin:6px 0 26px;
+	margin:6px 0 23px;
 	color:#666;
 }
 .title-wrap .user-info span {
@@ -5844,7 +5844,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .pagenation {
 	position:relative;
 	height:28px;
-	margin:20px 0 60px;
+	margin:20px 0 40px;
 	text-align:center;
 }
 .pagenation .page-list {
@@ -6624,7 +6624,7 @@ label.check-radio .radiobox {margin-right:8px;}
 
 	.total-count + .btn-area .btn-like2 {float: right;}
 
-.cart-box-content {margin-top:80px;}
+.cart-box-content {margin-top:40px;}
 .cart-box-content h4 {margin-bottom:5px;}
 .cart-box-content .box-content1 .box-cont p {overflow:hidden; margin-top:0; letter-spacing: -0.5px;}
 .cart-box-content .box-content1 .box-cont p .btn-mini-text.btn-icon {float:right;}
@@ -8660,7 +8660,7 @@ td .radish-bank-box span {display:block;}
 /* 장바구니 및 나의 한살림 가격 표 */
 .total-price {
 	position: relative;
-	margin-top:20px;
+	margin-top:10px;
 	background-color:#f0f2ef;
 	border:1px solid #bbb;
 }
@@ -10520,7 +10520,7 @@ td .radish-bank-box span {display:block;}
 	color:#ec7015;
 }
 /* 쿠폰 */
-.coup-infor {}
+.coup-infor {margin-top:20px;}
 .coup-infor .infor-title-box {
 	overflow:hidden;
 	padding:20px 0;
@@ -10780,11 +10780,14 @@ td .radish-bank-box span {display:block;}
 }
 /* 관심 콘텐츠 */
 .atten-cont {
-	margin-top:40px;
+	margin-bottom:30px;
 }
 .atten-area {
 	position:relative;
-	margin-bottom:40px;
+	margin-top:40px;
+}
+.atten-cont .atten-area:first-child {
+	margin-top:30px;
 }
 .atten-area .day-title label {
 	display:inline-block;
@@ -10882,10 +10885,12 @@ td .radish-bank-box span {display:block;}
 }
 .my-review-box {
 	position:relative;
+	margin-top:12px;
 	padding:19px 189px 20px 29px;
 	border:1px solid #ddd;
 	box-sizing:border-box;
 }
+.my-review-box:fisrt-child {margin-top:0;}
 .my-review-box dl dt {
 	font-size:18px;
 	color:#000;
@@ -11434,54 +11439,51 @@ td .radish-bank-box span {display:block;}
 .campaign-wrap .bottom-area .date {float: right; background:url(../img/icon/icon_date.png) no-repeat left center; padding-left:20px;}
 
 /* campaign-list02 */
-.campaign-wrap.campaign-com {
+.my-campaign {
 	overflow:hidden;
 	position:relative;
-	padding:30px 0 20px;
+	padding:34px 0 20px;
 	border-top:1px solid #ddd;
 }
-.campaign-wrap.campaign-com:before {
+.my-campaign:before {
 	content:'';
 	display:block;
 	position:absolute;
 	left:50%;
-	top:130px;
+	top:134px;
 	bottom:0;
 	width:10px;
 	height:100%;
 	margin-left:-5px;
 	background-color:#f7f7f7;
 }
-.campaign-left {float:left;}
-.campaign-right {float:right;}
-.campaign-left .campaign-list02 li:after {
+.my-campaign li {
+	position:relative;
+	margin-top:52px;
+}
+.my-campaign li:first-child {margin-top:0;}
+.my-campaign li:nth-child(odd) {float:left;}
+.my-campaign li:nth-child(even) {float:right;}
+
+.my-campaign li:nth-child(odd):after {
 	content:'';
 	position:absolute;
-	right:-16px; top:110px;
+	right:-15px; top:110px;
 	width:15px;
 	height:23px;
 	background:url(../img/icon/utill_right.gif) no-repeat 0 0;
 }
-.campaign-right .campaign-list02 li:after {
+.my-campaign li:nth-child(even):after {
 	content:'';
 	position:absolute;
-	left:-16px; bottom:110px;
+	left:-15px; top:312px;
 	width:15px;
 	height:23px;
 	background:url(../img/icon/utill_left.gif) no-repeat 0 0;
 }
 
-.campaign-cont {
-	position:relative;
-	left:50%;
-	top:100px;
-	width:120px;
-	height:auto;
-	margin-left:-60px;
-}
-.campaign-cont .term-list li {
+.my-campaign li .date {
 	position:absolute;
-	left:0;
 	width:120px;
 	height:42px;
 	font-size:15px;
@@ -11494,24 +11496,22 @@ td .radish-bank-box span {display:block;}
 	border-radius:30px;
 	text-align:center;
 }
-.campaign-cont .term-list li.item-term01 {top:0;}
-.campaign-cont .term-list li.item-term02 {top:258px;}
-.campaign-cont .term-list li.item-term03 {top:504px;}
-.campaign-cont .term-list li.item-term04 {top:760px;}
+.my-campaign li:nth-child(odd) .date {
+	top:100px; right:-144px;
+}
 
+.my-campaign li:nth-child(even) .date {
+	top:302px; left:-144px;
+}
 
-.campaign-right .campaign-list02 li:first-child {margin-top:45px;}
-	.campaign-list02 {}
-	.campaign-list02 li {
+	.my-campaign li .inner-box {
 		position: relative;
 		width:365px;
 		height:456px;
-		margin-top:47px;
 		border:1px solid #ddd;
 		box-sizing:border-box;
 	}
-	.campaign-list02 li:first-child {margin-top:0;}
-	.campaign-list02 li:before {
+	.my-campaign li .inner-box:before {
 		content: '';
 		position:absolute;
 		left:-1px;
@@ -11519,24 +11519,23 @@ td .radish-bank-box span {display:block;}
 		width:52px;
 		height:40px;
 	}
-	.campaign-list02 li.join:before {
+	.my-campaign li.join .inner-box:before {
 		background:url(../img/img/img_flag_campaign1.png) 0 0 no-repeat;
 	}
-	.campaign-list02 li.attain:before {
+	.my-campaign li.attain .inner-box:before {
 		background:url(../img/img/img_flag_campaign2.png) 0 0 no-repeat;
 	}
-	.campaign-list02 li.joined:before {
+	.my-campaign li.joined .inner-box:before {
 		background:url(../img/img/img_flag_campaign3.png) 0 0 no-repeat;
 	}
-	.campaign-list02 li:nth-child(3n+1) {margin-left: 0}
-	.campaign-list02 .simbol-area {
+	.my-campaign .simbol-area {
 		position:absolute;
 		left:0;
 		top:0;
 		width:100%;
 		height:220px;
 	}
-	.campaign-list02 .text-area {
+	.my-campaign .text-area {
 		position: absolute;
 		width:100%;
 		height:75px;
@@ -11544,7 +11543,7 @@ td .radish-bank-box span {display:block;}
 		top:220px;
 		text-align: center;
 	}
-		.campaign-list02 .text-area p {
+		.my-campaign .text-area p {
 			overflow:hidden;
 			padding:0 10px 5px 10px;
 			font-size:18px;
@@ -11553,7 +11552,7 @@ td .radish-bank-box span {display:block;}
 			white-space:nowrap;
 			text-overflow:ellipsis;
 		}
-		.campaign-list02 .text-area span {
+		.my-campaign .text-area span {
 			display:block;
 			overflow:hidden;
 			height:42px;
@@ -11562,7 +11561,7 @@ td .radish-bank-box span {display:block;}
 			color:#666;
 			line-height:21px;
 		}
-	.campaign-list02 .btn-center {
+	.my-campaign .btn-center {
 		width:100%;
 		height:28px;
 		position:absolute;
@@ -11570,7 +11569,7 @@ td .radish-bank-box span {display:block;}
 		bottom:30px;
 		margin-top:0;
 	}
-	.campaign-list02 li .bottom-box {
+	.my-campaign li .bottom-box {
 		overflow:hidden;
 		position:absolute;
 		left:0; bottom:79px;
@@ -11578,7 +11577,7 @@ td .radish-bank-box span {display:block;}
 		padding:0 30px;
 		box-sizing:border-box;
 	}
-	.campaign-list02 li .bottom-box span {
+	.my-campaign li .bottom-box span {
 		display:block;
 		overflow:hidden;
 		height:22px;
@@ -11586,8 +11585,8 @@ td .radish-bank-box span {display:block;}
 		color:#666;
 		line-height:22px;
 	}
-	.campaign-list02 li .bottom-box .count {background:url(../img/icon/icon_flag.png) no-repeat left center; padding-left:20px;}
-	.campaign-list02 li .bottom-box .date {background:url(../img/icon/icon_date.png) no-repeat left center; padding-left:20px;}
+	.my-campaign li .bottom-box .count {background:url(../img/icon/icon_flag.png) no-repeat left center; padding-left:20px;}
+	.my-campaign li .bottom-box .date {background:url(../img/icon/icon_date.png) no-repeat left center; padding-left:20px;}
 
 	.bar-com {
 		position:absolute;
