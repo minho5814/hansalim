@@ -41,6 +41,10 @@ $(window).load(function(){
 		$('.btn-group .item').removeClass('on');
 		$('.quick-layer').hide();
 	});
+	// 간편주문 팝업
+	$('.btn-pop-order').click(function(){
+		$('.pop-order').fadeIn(200);
+	});
 
 	// 상단 배너 닫기
 	$('.top-banner .btn-close').click(function(){

@@ -757,6 +757,8 @@ html {
 
 .board-write1.bdBddd table {border-bottom:1px solid #ddd;}
 
+.board-write1 .right {text-align:right;}
+
 .board-write1.styled2 td {
 	padding:16px 20px;
 }
@@ -2240,15 +2242,16 @@ table .good-table table th {padding:0;}
 
 .info-text {
 	padding-left:28px;
+	background:url(../img/icon/ico_notice02.png) 0 3px no-repeat;
 	color:#999;
 	line-height: 26px;
-	background:url(../img/icon/ico_notice02.png) 0 3px no-repeat;
 }
 .info-text2 {
 	padding-left:28px;
-	color:#63a607;
-	line-height: 26px;
 	background:url(../img/icon/icon_exclamation.png) 0 3px no-repeat;
+	color:#63a607;
+	font-weight:bold;
+	line-height: 26px;
 }
 
 .cTitle4.logo {background:url(../img/icon/icon_hansalim.png) left center no-repeat; padding-left:33px;}
@@ -2762,7 +2765,7 @@ table .good-table table th {padding:0;}
 }
 
 .btn-cart4,
-.btn-order {
+.btn-order2 {
 	display:inline-block;
 	position:relative;
 	padding:0 12px;
@@ -2772,14 +2775,14 @@ table .good-table table th {padding:0;}
 	line-height:32px;
 }
 .btn-cart4 .text,
-.btn-order .text {
+.btn-order2 .text {
 	position:relative;
 	padding-left:26px;
 	color:#fff;
 	font-size:14px;
 }
 .btn-cart4 .text:before,
-.btn-order .text:before {
+.btn-order2 .text:before {
 	content:'';
 	position:absolute;
 	left:0;top:50%;
@@ -2803,8 +2806,8 @@ table .good-table table th {padding:0;}
 		background-position:0 -1287px;
 	}
 
-.btn-order {background-color:#f56d24;}
-	.btn-order .text:before {
+.btn-order2 {background-color:#f56d24;}
+	.btn-order2 .text:before {
 		width:22px;
 		height:17px;
 		background-position:0 -384px;
@@ -7904,6 +7907,44 @@ td .radish-bank-box span {display:block;}
 .layer-popup .btn-center .btn-text {
 	min-width:120px;
 }
+
+/* 퀵메뉴 팝업 */
+.pop-order {width:600px;}
+	.pop-order .top-info-list {
+		margin:-20px -30px 28px;
+		padding:25px 30px;
+		border-bottom:1px solid #e3e3e3;
+		color:#000;
+		font-size:15px;
+	}
+		.pop-order .top-info-list .item {margin-top:15px;}
+		.pop-order .top-info-list .item:first-child {margin-top:0;}
+		.pop-order .top-info-list .item.text-gray {color:#666;}
+			.pop-order .top-info-list .item .title {
+				display:inline-block;
+				width:70px;
+				color:#000;
+				font-weight:bold;
+			}
+	.pop-order .info-text2 {margin-bottom:13px;}
+	.pop-order .cTitle6 {margin:25px 0 10px;}
+	.pop-order .btn-bottom {padding-top:0;}
+	.pop-order .btn-bottom .btn-text {
+		border-radius:2px;
+		width:130px;
+	}
+	.pop-order .btn-bottom .btn-gray {
+		border-color:#666;
+		background-color:#666;
+	}
+	.pop-order .btn-bottom .btm-text {
+		padding:27px 0 17px;
+		color:#000;
+		font-size:18px;
+		font-weight:bold;
+		text-align:center;
+		line-height:22px;
+	}
 
 /* CMS 임의해지 공통팝업 */
 .pop-abort-guid1 {width:600px;}
