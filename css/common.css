@@ -4672,7 +4672,7 @@ label.check-radio .radiobox {margin-right:8px;}
 /* 아이디 만들기 완료 (lo/IM-LOO402.html) */
 .login-wrap .id-complete {
 	padding-top:155px;
-	background:url(../img/bg/bg_login.gif) no-repeat 50% 35px;
+	background:url(../img/bg/bg_login.png) no-repeat 50% 35px;
 }
 	.login-wrap .id-complete .text-green {
 		color:#60b015;
@@ -4983,7 +4983,7 @@ label.check-radio .radiobox {margin-right:8px;}
 /* 조합원 가입 > step 05 (IM-JO0601.html) */
 .complete-area {
 	padding-top:148px;
-	background:url(../img/bg/bg_login.gif) no-repeat 50% 15px;
+	background:url(../img/bg/bg_login.png) no-repeat 50% 15px;
 	text-align:center;
 }
 	.complete-area .title {
@@ -5534,12 +5534,12 @@ label.check-radio .radiobox {margin-right:8px;}
 .quality-list li.item-quality04 {height:307px; border-right:0;}
 .quality-list li.item-quality05 {height:307px; border-right:0;}
 .quality-list li.item-quality06 {height:307px;}
-.quality-list li.item-quality01:before {content:''; display:inline-block; position:absolute; left:50%; top:48px; width:63px; height:58px; margin-left:-31.5px; background:url(../img/icon/icon_quality01.gif) no-repeat center 0;}
-.quality-list li.item-quality02:before {content:''; display:inline-block; position:absolute; left:50%; top:52px; width:51px; height:49px; margin-left:-25.5px; background:url(../img/icon/icon_quality02.gif) no-repeat 0 0;}
-.quality-list li.item-quality03:before {content:''; display:inline-block; position:absolute; left:50%; top:47px; width:49px; height:59px; margin-left:-24.5px; background:url(../img/icon/icon_quality03.gif) no-repeat 0 0;}
-.quality-list li.item-quality04:before {content:''; display:inline-block; position:absolute; left:50%; top:60px; width:43px; height:31px; margin-left:-21.5px; background:url(../img/icon/icon_quality04.gif) no-repeat 0 0;}
-.quality-list li.item-quality05:before {content:''; display:inline-block; position:absolute; left:50%; top:50px; width:53px; height:50px; margin-left:-26.5px; background:url(../img/icon/icon_quality05.gif) no-repeat 0 0;}
-.quality-list li.item-quality06:before {content:''; display:inline-block; position:absolute; left:50%; top:50px; width:52px; height:50px; margin-left:-26px; background:url(../img/icon/icon_quality06.gif) no-repeat 0 0;}
+.quality-list li.item-quality01:before {content:''; display:inline-block; position:absolute; left:50%; top:48px; width:66px; height:60px; margin-left:-33px; background:url(../img/icon/icon_quality01.png) no-repeat center 0;}
+.quality-list li.item-quality02:before {content:''; display:inline-block; position:absolute; left:50%; top:50px; width:52px; height:52px; margin-left:-26px; background:url(../img/icon/icon_quality02.png) no-repeat 0 0;}
+.quality-list li.item-quality03:before {content:''; display:inline-block; position:absolute; left:50%; top:49px; width:55px; height:51px; margin-left:-27.5px; background:url(../img/icon/icon_quality03.png) no-repeat 0 0;}
+.quality-list li.item-quality04:before {content:''; display:inline-block; position:absolute; left:50%; top:54px; width:52px; height:44px; margin-left:-26px; background:url(../img/icon/icon_quality04.png) no-repeat 0 0;}
+.quality-list li.item-quality05:before {content:''; display:inline-block; position:absolute; left:50%; top:50px; width:54px; height:51px; margin-left:-27px; background:url(../img/icon/icon_quality05.png) no-repeat 0 0;}
+.quality-list li.item-quality06:before {content:''; display:inline-block; position:absolute; left:50%; top:50px; width:52px; height:52px; margin-left:-26px; background:url(../img/icon/icon_quality06.png) no-repeat 0 0;}
 .quality-list li .quality-tit{display:block; font-size:20px; color:#000; line-height:28px; font-weight:bold;}
 .quality-list li .quality-txt{display:block; margin-top:9px; font-size:14px; color:#666; line-height:22px;}
 /*물품기본정보*/
@@ -6642,7 +6642,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .order-complete {
 	margin-top:60px;
 	padding-top:137px;
-	background:url(../img/bg/bg_order_complete.gif) no-repeat 50% 0;
+	background:url(../img/bg/bg_order_complete.png) no-repeat 50% 0;
 }
 	.order-complete p {text-align: center;}
 	.order-complete .text-green {
