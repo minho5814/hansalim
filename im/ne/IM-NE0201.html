@@ -834,7 +834,7 @@
 			<div class="inner">
 				<a href="#" class="item">홈</a>
 				<span class="arrow">&gt;</span>
-				<span class="item">물품소식</span>
+				<span class="item">물품소식11</span>
 			</div>
 		</div>
 
@@ -843,7 +843,7 @@
 		</div>
 
 		<div class="content-w1120 news-cont">
-			<div class="tab-wrap2" style="position:relative;">
+			<div class="tab-wrap2">
 				<div class="tab-area">
 					<ul class="tab-list1 tab-styled3">
 						<li class="item on"><span class="text">물품소식과 공지</span></li>
@@ -1262,8 +1262,8 @@
 					</div>
 				</div>
 				<!-- 물품개선 -->
-				<div class="tab-content3">
-					<div class="improve-box">
+				<div class="tab-content3 on slider">
+					<div class="improve-box type1">
 						<ul class="bxslider">
 							<li>
 								<div class="goods-improve">
@@ -1765,47 +1765,54 @@
 <script>
 $(window).load(function(){
 
+/* 물품개선 슬라이드*/
+$('.improve-box.type1 .bxslider').bxSlider({
+	speed:400,
+	onSliderLoad: function(){
+		$('.improve-box.type2 .bxslider').bxSlider({
+			speed:400
+		});
+		$('.tab-content3.slider').removeClass('on');
+	}
 
-	/* 탭 추가 */
-	// $('.tab-styled3 .item').each(function(){
-	// 	$(this).click(function(){
-	// 		var idx = $(this).index();
-	// 		$('.tab-styled3 .item').removeClass('on').eq(idx).addClass('on');
-	// 		$('.tab-content3').removeClass('on').eq(idx).addClass('on');
-	// 	});
-	// });
+});
 
-
-	/* 물품개선*/
-	//  $('.improve-box .bxslider').each(function(){
-	// 	$(this).bxSlider({
-	// 		speed:400
-	// 	});
-	// });
-
-
-
-	 var temp_slider = {
-		speed:400
-	 };
-
-	var sliders = new Array();
-	$('.improve-box .bxslider').each(function(i, slider) {
-		sliders[i] = $(slider).bxSlider(temp_slider);
-	});
-
-
-	$('.tab-styled3 .item').click(function(e){
-		e.preventDefault();
-
+/*물품소식 탭*/
+$('.tab-styled3 .item').each(function(){
+	$(this).click(function(){
 		var idx = $(this).index();
 		$('.tab-styled3 .item').removeClass('on').eq(idx).addClass('on');
 		$('.tab-content3').removeClass('on').eq(idx).addClass('on');
-
-		$.each(sliders, function(i, slider) {
-		slider.reloadSlider(temp_slider);
-		});
 	});
+});
+
+
+
+
+
+
+
+	//  var temp_slider = {
+	// 	speed:400
+	//  };
+	//
+	// var sliders = new Array();
+	// $('.improve-box .bxslider').each(function(i, slider) {
+	// 	sliders[i] = $(slider).bxSlider(temp_slider);
+	// });
+	//
+	//
+	// $('.tab-styled3 .item').click(function(e){
+	// 	e.preventDefault();
+	//
+	// 	var idx = $(this).index();
+	// 	$('.tab-styled3 .item').removeClass('on').eq(idx).addClass('on');
+	// 	$('.tab-content3').removeClass('on').eq(idx).addClass('on');
+	//
+	// 	$.each(sliders, function(i, slider) {
+	// 	slider.reloadSlider(temp_slider);
+	// 	});
+	// });
 
 
 
