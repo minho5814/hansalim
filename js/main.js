@@ -82,10 +82,10 @@ $(window).load(function(){
 		$(this).bxSlider({
 			infiniteLoop:false,
 			hideControlOnEnd: true,
-			slideWidth: 174,
+			slideWidth: 215,
 			minSlides: 1,
-			maxSlides: 6,
-			moveSlides: 6,
+			maxSlides: 5,
+			moveSlides: 5,
 			speed:400
 		});
 	});
