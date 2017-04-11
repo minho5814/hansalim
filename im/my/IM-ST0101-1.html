@@ -843,10 +843,10 @@
 				<div class="nick-img-wrap">
 					<span class="nick-img"><img src="../../img/temp/@temp_nick01.png" alt=""></span>
 					<div class="bg-box">
-						<button class="bg-img">사진수정</button>
+						<button class="bg-img btn-popup">사진수정</button>
 					</div>
 				</div>
-				<p class="nick-name">조합원<span class="user-name"><span class="fColor1">홍길동홍길동홍길동동</span>님</span></p>
+				<p class="nick-name"><span class="user-name"><span class="fColor1">이영애</span>님</span>조합원</p>
 			</div>
 			<div class="my-infor">
 				<dl>
@@ -855,7 +855,7 @@
 				</dl>
 				<dl>
 					<dt><a href="#" class="btn-go" title="적립금 상세페이지 이동">적립금</a></dt>
-					<dd><div class="inner"><span class="price">10,000</span>원<a href="#" class="btn-mini-text btn-icon">적립금 사용신청</a></div></dd>
+					<dd><div class="inner"><span class="price">10,000</span>원<a href="#" class="btn-mini-text btn-icon btn-icon btn-reser-apply">적립금 사용신청</a></div></dd>
 				</dl>
 				<dl>
 					<dt><a href="#" class="btn-go" title="선수금 상세페이지 이동">선수금</a></dt>
@@ -937,8 +937,16 @@
 				</ul>
 			</div>
 			<!-- /LNB -->
-			<div class="content">
-				<div class="cont-box">
+			<div class="content pdT0">
+				<div class="cont-box mgT0">
+					<div class="notice-slide">
+						<p class="notice-title">오늘의 알림</p>
+						<div class="notice-list">
+							<a href="#" class="item">[쿠폰] 축산/축산가공 물품 10% 할인쿠폰이 발급되었습니다.</a>
+							<a href="#" class="item">[특별품] 은은한 자연의 향 담아 입맛 돋우는 당귀무말림무침 은은한 자연의 향 담아 입맛 돋우는 당귀무말림무침 은은한 자연의 향 담아 입맛 돋우는 당귀무말림무침</a>
+							<a href="#" class="item">[물품재개] 훈제오리슬라이스(250g)</a>
+						</div>
+					</div>
 					<div class="title-wrap title-wrap02 mgT25">
 						<h3 class="cTitle4">최근 주문조회</h3>
 						<span class="flag-wrap">
@@ -998,7 +1006,7 @@
 											<div class="btn-wrap">
 												<div class="waybill">
 													<span class="search-waybill">
-														<a href="#none" class="btn-mini-text btn-icon">운송장조회</a>
+														<a href="#none" class="btn-mini-text btn-icon mgT5">운송장조회</a>
 													</span>
 													<div class="waybill-box">
 														<button type="button" class="btn-close">닫기</button>
@@ -1282,7 +1290,223 @@
 	</div>
 </div>
 
+<!-- 운송장조회 -->
+<div class="layer-popup pop-way-look">
+	<div class="pop-head">
+		<h1 class="pop-title">운송장조회</h1>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+	<div class="pop-content align-center">
+		<div class="way-look-box">
+			<div class="board-wrap">
+				<div class="title-wrap align-left">
+					<h3 class="cTitle4">주문정보</h3>
+				</div>
+				<div class="board-write1">
+					<table>
+						<colgroup>
+							<col style="width:120px;">
+							<col style="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row"><div class="text">운송장번호</div></th>
+								<td><div class="text">12345678912</div></td>
+							</tr>
+							<tr>
+								<th scope="row"><div class="text">받는분</div></th>
+								<td><div class="text">홍길*</div></td>
+							</tr>
+							<tr>
+								<th scope="row"><div class="text">주소</div></th>
+								<td><div class="text">서울 송파구 잠실동</div></td>
+							</tr>
+							<tr>
+								<th scope="row"><div class="text">주문물품</div></th>
+								<td><div class="text">유기 연엽식기세트</div></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 
+
+			</div>
+			<div class="board-wrap mgT35">
+				<div class="title-wrap align-left">
+					<h3 class="cTitle4">배송상태</h3>
+				</div>
+				<div class="board-lsit type2">
+					<table>
+						<colgroup>
+							<col>
+							<col style="width:31%;">
+							<col style="width:31%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>시간</th>
+								<th>현재위치</th>
+								<th>배송상태</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2017-03-14 22:54:00</td>
+								<td>잠실</td>
+								<td>배송출고</td>
+							</tr>
+							<tr>
+								<td>2017-03-14 22:54:00</td>
+								<td>잠실</td>
+								<td>배송출고</td>
+							</tr>
+							<tr>
+								<td>2017-03-14 22:54:00</td>
+								<td>송파센터</td>
+								<td>터미널출고</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="btn-center mgT30">
+				<a href="#" class="btn-text btn-green">확인</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 사진등록 팝업 -->
+<div class="layer-popup pop-photo">
+	<div class="pop-head">
+		<h1 class="pop-title">사진등록</h1>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="file-area">
+			<input type="text" id="fakeFileTxt" class="fakeFileTxt" readonly="readonly" style="width:260px;">
+			<div class="fileDiv">
+				<button type="button" class="buttonImg">파일찾기</button>
+				<input type="file" class="realFile" onchange="javascript:document.getElementById('fakeFileTxt').value = this.value">
+			</div>
+		</div>
+		<div class="btn-bottom pdT30">
+			<a href="#" class="btn-text btn-green ">등록</a>
+			<a href="#" class="btn-text btn-gray mgL10">취소</a>
+		</div>
+	</div>
+</div>
+
+<!-- 적립금 사용신청 -->
+<div class="layer-popup pop-reser-apply">
+	<div class="pop-head">
+		<h1 class="pop-title">적립금사용신청</h1>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="board-write1">
+			<table>
+				<colgroup>
+					<col style="width:100px;">
+					<col style="*">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row" rowspan="2"><div class="text">적립금 전환 선택</div></th>
+						<td>
+							<div class="swit-rese-box">
+								<label class="item" for="check01">
+									<!-- 전일 마감 기준 외상 잔액이 0원일 경우 input에 disabled 추가 -->
+									<input type="radio" id="check01" name="chk" class="styled1">물품대금 전환 (외상금 있을 시 가능)
+									<!-- //전일 마감 기준 외상 잔액이 0원일 경우 input에 disabled 추가 -->
+									<a href="#" class="tip">
+										<span class="hide">도움말</span>
+										<div class="inner-box">
+											<div>
+												<p>신청하신 적립금만큼 조합원의 외상대금으로 자동 전환됩니다.</p>
+												<p>외상대금전환은 전일 마감 기준의 외상금이 있을시 신청 할 수 있으며, 외상대금 전환시 CMS로 외상대금을 납입하는 조합원은 당일 마감시 선수금이 발생할 수 있습니다.</p>
+											</div>
+										</div>
+									</a>
+								</label>
+								<span class="dead-balan">전일 마감 기준 외상 잔액 <span class="price">0</span>원</span>
+								<span class="gift-addr"><a href="#" class="btn-mini-text btn-icon">나의 거래내역</a></span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="swit-rese-box">
+								<label class="item" for="check02"><input type="radio" id="check02" name="chk" class="styled1">출자금 전환
+									<a href="#" class="tip">
+										<span class="hide">도움말</span>
+										<div class="inner-box">
+											<div>
+												<p>신청하신 적립금만큼 조합원의 출자금으로 자동 전환됩니다.</p>
+												<p>전환된 출자금은 다음날 조합원의 출자금내역보기에서 확인할 수 있습니다.</p>
+											</div>
+										</div>
+									</a>
+								</label>
+								<span class="gift-addr"><a href="#" class="btn-mini-text btn-icon">나의 출자금내역</a></span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><div class="text">사용하실 적립금</div></th>
+						<td>
+							<input type="number" placeholder="적립금 사용단위 1,000원" style="width:200px;" class="align-left"><span class="txt-label">원</span>
+							<span class="use-possi-price">사용가능금액 <span class="price-number">2,000</span>원</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="btn-bottom">
+			<a href="#" class="btn-text btn-gray">취소</a>
+			<a href="#" class="btn-text btn-green mgL10">신청</a>
+		</div>
+		<div class="title-wrap mgT15">
+			<h3 class="cTitle5">신청내역</h3>
+		</div>
+		<div class="board-lsit type2 mgT15">
+			<table>
+				<colgroup>
+					<col style="width:15%;">
+					<col style="width:20%;">
+					<col style="width:20%;">
+					<col style="width:20%;">
+					<col style="width:25%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">번호</th>
+						<th scope="col">신청일</th>
+						<th scope="col">전환선택</th>
+						<th scope="col">신청금액</th>
+						<th scope="col">전환취소</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2</td>
+						<td>2017-02-13</td>
+						<td>물품대금전환</td>
+						<td>1,000원</td>
+						<td><button href="#" class="btn-mini-text">전환취소</button></td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2017-02-14</td>
+						<td>출자금전환</td>
+						<td>1,000원</td>
+						<td><button href="#" class="btn-mini-text">전환취소</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
@@ -1311,6 +1535,17 @@
 		$('.waybill-box .btn-close').click(function(){
 			$(this).parents('.waybill-box').hide();
 		});
+
+		/* 사진등록 팝업 */
+		$('.bg-img').click(function(){
+			$('.pop-photo').fadeIn(200);
+		});
+
+		/* 적립금사용 신청 */
+		$('.btn-reser-apply').click(function(){
+			$('.pop-reser-apply').fadeIn(200);
+		});
+
 	});
 </script>
 </body>
