@@ -81,11 +81,11 @@ $(window).load(function(){
 	$('.category-slide .bxslider').each(function(){
 		$(this).bxSlider({
 			infiniteLoop:false,
-			hideControlOnEnd: true,
-			slideWidth: 215,
-			minSlides: 1,
-			maxSlides: 5,
-			moveSlides: 5,
+			hideControlOnEnd:true,
+			slideWidth:215,
+			minSlides:1,
+			maxSlides:5,
+			moveSlides:5,
 			speed:400
 		});
 	});

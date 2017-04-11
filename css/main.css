@@ -519,9 +519,6 @@
 			text-indent:-9999px;
 		}
 		.recipe-cont .bx-pager .bx-pager-item .bx-pager-link.active {background-color:#000;}
-	.recipe-cont .bx-pager {}
-	.recipe-cont .bx-pager {}
-.recipe-cont .bx-controls-direction {}
 	.recipe-cont .bx-controls-direction a {
 		display:block;
 		position:absolute;
@@ -529,7 +526,7 @@
 		top:185px;
 		width:30px;
 		height:50px;
-		background-color:rgba(0,0,0,.4);
+		background-color:rgba(187,187,187,.6);
 		background-repeat:no-repeat;
 		background-position:50% 50%;
 		font-size:0;
