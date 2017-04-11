@@ -939,8 +939,8 @@
 				<div class="tab-wrap2">
 					<div class="tab-area">
 						<ul class="tab-list1 wid50 tab-styled3">
-							<li class="item on"><a href="#none" class="text">전체</a></li>
-							<li class="item"><a href="#none" class="text">나의 지역 한살림</a></li>
+							<li class="item on"><span class="text">전체</span></li><!-- 2017-04-12 a -> span 으로 변경 -->
+							<li class="item"><span class="text">나의 지역 한살림</span></li><!-- 2017-04-12 a -> span 으로 변경 -->
 						</ul>
 					</div>
 					<div class="tab-content3 on">
@@ -1313,7 +1313,6 @@
 
 <script>
 $(window).load(function(){
-
 	//탭
 	$('.tab-styled3 .item').click(function(){
 		var idx = $(this).index();
@@ -1338,7 +1337,6 @@ $(window).load(function(){
 
 		$('.btn-campaign').addClass('on');
 	});
-
 });
 </script>
 </body>
