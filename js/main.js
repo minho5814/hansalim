@@ -130,8 +130,14 @@ $(window).load(function(){
 		});
 
 		var dHei = $('.goods-wrap').outerHeight();
+		var bxHei = $(this).parents('.bx-viewport').outerHeight();
 		$('.btn-goods-more').click(function(){
-			$('.goods-wrap').css({'height':'auto'});
+			$(this).parents('.recipe-goods').find('.goods-wrap').css({'height':'auto'});
+			var aHei = $('.goods-wrap').outerHeight();
+			var btnHei = $(this).parents('.btn-more-area').outerHeight() + 20;
+			var bxAfterHei = bxHei + (aHei - dHei - btnHei);
+			$(this).parents('.bx-viewport').animate({'height':bxAfterHei}, 300);
+			$(this).parents('.btn-more-area').hide();
 		});
 	});
 
