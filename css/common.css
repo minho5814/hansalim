@@ -3291,7 +3291,7 @@ table .good-table table th {padding:0;}
 	display:inline-block;
 	position:relative;
 	height:32px;
-	cursor:default;
+	cursor:pointer;
 }
 .select-box.focus {z-index:9999;}
 	.select-box .select-title {
@@ -6683,13 +6683,13 @@ label.check-radio .radiobox {margin-right:8px;}
 	margin:15px auto 0;
 	background-color:#f8f3eb;
 }
-.content-banner:before {/* 추 후 삭제 */
+/*.content-banner:before {/* 추 후 삭제 */
 	content:'고객 주요 정보 노출 영역 (기획설계 중)';
 	display:block;
 	height:240px;
 	text-align:center;
 	line-height:240px;
-}
+}*/
 
 /*MY030107.html*/
 .layer-popup.pop-way-look .way-look-box {margin-bottom:10px;}
@@ -10946,6 +10946,23 @@ td .radish-bank-box span {display:block;}
 	height:17px;
 	background:url(../img/icon/icon_revi02.gif) no-repeat 0 0;
 }
+.btn-mini-text.btn-all.on,
+.btn-mini-text.btn-good.on ,
+.btn-mini-text.btn-hate.on {
+	color:#fff;
+	border-color: #7eb533;
+	background-color: #91c90b;
+}
+.btn-mini-text.btn-good.on:before {
+	background:url(../img/icon/icon_revi01_on.png) no-repeat 0 0;
+}
+.btn-mini-text.btn-hate.on:before {
+	background:url(../img/icon/icon_revi02_on.png) no-repeat 0 0;
+}
+
+.review-sorting {
+	margin:0 0 15px;
+}
 .my-review-box {
 	position:relative;
 	padding:19px 189px 20px 29px;
@@ -11500,54 +11517,51 @@ td .radish-bank-box span {display:block;}
 .campaign-wrap .bottom-area .date {float: right; background:url(../img/icon/icon_date.png) no-repeat left center; padding-left:20px;}
 
 /* campaign-list02 */
-.campaign-wrap.campaign-com {
+.my-campaign {
 	overflow:hidden;
 	position:relative;
-	padding:30px 0 20px;
+	padding:34px 0 20px;
 	border-top:1px solid #ddd;
 }
-.campaign-wrap.campaign-com:before {
+.my-campaign:before {
 	content:'';
 	display:block;
 	position:absolute;
 	left:50%;
-	top:130px;
+	top:134px;
 	bottom:0;
 	width:10px;
 	height:100%;
 	margin-left:-5px;
 	background-color:#f7f7f7;
 }
-.campaign-left {float:left;}
-.campaign-right {float:right;}
-.campaign-left .campaign-list02 li:after {
+.my-campaign li {
+	position:relative;
+	margin-top:52px;
+}
+.my-campaign li:first-child {margin-top:0;}
+.my-campaign li:nth-child(odd) {float:left;}
+.my-campaign li:nth-child(even) {float:right;}
+
+.my-campaign li:nth-child(odd):after {
 	content:'';
 	position:absolute;
-	right:-16px; top:110px;
+	right:-15px; top:110px;
 	width:15px;
 	height:23px;
 	background:url(../img/icon/utill_right.gif) no-repeat 0 0;
 }
-.campaign-right .campaign-list02 li:after {
+.my-campaign li:nth-child(even):after {
 	content:'';
 	position:absolute;
-	left:-16px; bottom:110px;
+	left:-15px; top:312px;
 	width:15px;
 	height:23px;
 	background:url(../img/icon/utill_left.gif) no-repeat 0 0;
 }
 
-.campaign-cont {
-	position:relative;
-	left:50%;
-	top:100px;
-	width:120px;
-	height:auto;
-	margin-left:-60px;
-}
-.campaign-cont .term-list li {
+.my-campaign li .date {
 	position:absolute;
-	left:0;
 	width:120px;
 	height:42px;
 	font-size:15px;
@@ -11560,24 +11574,22 @@ td .radish-bank-box span {display:block;}
 	border-radius:30px;
 	text-align:center;
 }
-.campaign-cont .term-list li.item-term01 {top:0;}
-.campaign-cont .term-list li.item-term02 {top:258px;}
-.campaign-cont .term-list li.item-term03 {top:504px;}
-.campaign-cont .term-list li.item-term04 {top:760px;}
+.my-campaign li:nth-child(odd) .date {
+	top:100px; right:-144px;
+}
 
+.my-campaign li:nth-child(even) .date {
+	top:302px; left:-144px;
+}
 
-.campaign-right .campaign-list02 li:first-child {margin-top:45px;}
-	.campaign-list02 {}
-	.campaign-list02 li {
+	.my-campaign li .inner-box {
 		position: relative;
 		width:365px;
 		height:456px;
-		margin-top:47px;
 		border:1px solid #ddd;
 		box-sizing:border-box;
 	}
-	.campaign-list02 li:first-child {margin-top:0;}
-	.campaign-list02 li:before {
+	.my-campaign li .inner-box:before {
 		content: '';
 		position:absolute;
 		left:-1px;
@@ -11585,24 +11597,23 @@ td .radish-bank-box span {display:block;}
 		width:52px;
 		height:40px;
 	}
-	.campaign-list02 li.join:before {
+	.my-campaign li.join .inner-box:before {
 		background:url(../img/img/img_flag_campaign1.png) 0 0 no-repeat;
 	}
-	.campaign-list02 li.attain:before {
+	.my-campaign li.attain .inner-box:before {
 		background:url(../img/img/img_flag_campaign2.png) 0 0 no-repeat;
 	}
-	.campaign-list02 li.joined:before {
+	.my-campaign li.joined .inner-box:before {
 		background:url(../img/img/img_flag_campaign3.png) 0 0 no-repeat;
 	}
-	.campaign-list02 li:nth-child(3n+1) {margin-left: 0}
-	.campaign-list02 .simbol-area {
+	.my-campaign .simbol-area {
 		position:absolute;
 		left:0;
 		top:0;
 		width:100%;
 		height:220px;
 	}
-	.campaign-list02 .text-area {
+	.my-campaign .text-area {
 		position: absolute;
 		width:100%;
 		height:75px;
@@ -11610,7 +11621,7 @@ td .radish-bank-box span {display:block;}
 		top:220px;
 		text-align: center;
 	}
-		.campaign-list02 .text-area p {
+		.my-campaign .text-area p {
 			overflow:hidden;
 			padding:0 10px 5px 10px;
 			font-size:18px;
@@ -11619,7 +11630,7 @@ td .radish-bank-box span {display:block;}
 			white-space:nowrap;
 			text-overflow:ellipsis;
 		}
-		.campaign-list02 .text-area span {
+		.my-campaign .text-area span {
 			display:block;
 			overflow:hidden;
 			height:42px;
@@ -11628,7 +11639,7 @@ td .radish-bank-box span {display:block;}
 			color:#666;
 			line-height:21px;
 		}
-	.campaign-list02 .btn-center {
+	.my-campaign .btn-center {
 		width:100%;
 		height:28px;
 		position:absolute;
@@ -11636,7 +11647,7 @@ td .radish-bank-box span {display:block;}
 		bottom:30px;
 		margin-top:0;
 	}
-	.campaign-list02 li .bottom-box {
+	.my-campaign li .bottom-box {
 		overflow:hidden;
 		position:absolute;
 		left:0; bottom:79px;
@@ -11644,7 +11655,7 @@ td .radish-bank-box span {display:block;}
 		padding:0 30px;
 		box-sizing:border-box;
 	}
-	.campaign-list02 li .bottom-box span {
+	.my-campaign li .bottom-box span {
 		display:block;
 		overflow:hidden;
 		height:22px;
@@ -11652,8 +11663,8 @@ td .radish-bank-box span {display:block;}
 		color:#666;
 		line-height:22px;
 	}
-	.campaign-list02 li .bottom-box .count {background:url(../img/icon/icon_flag.png) no-repeat left center; padding-left:20px;}
-	.campaign-list02 li .bottom-box .date {background:url(../img/icon/icon_date.png) no-repeat left center; padding-left:20px;}
+	.my-campaign li .bottom-box .count {background:url(../img/icon/icon_flag.png) no-repeat left center; padding-left:20px;}
+	.my-campaign li .bottom-box .date {background:url(../img/icon/icon_date.png) no-repeat left center; padding-left:20px;}
 
 	.bar-com {
 		position:absolute;
