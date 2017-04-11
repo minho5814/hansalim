@@ -1667,6 +1667,7 @@ table .good-table table th {padding:0;}
 		position:relative;
 		border: 1px solid #bbb;
 		border-left:0;
+		background-color:#fff;
 		margin-top:-1px;
 		box-sizing:border-box;
 		cursor:pointer;
