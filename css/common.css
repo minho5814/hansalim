@@ -6678,13 +6678,13 @@ label.check-radio .radiobox {margin-right:8px;}
 	margin:15px auto 0;
 	background-color:#f8f3eb;
 }
-.content-banner:before {/* 추 후 삭제 */
+/*.content-banner:before {/* 추 후 삭제 */
 	content:'고객 주요 정보 노출 영역 (기획설계 중)';
 	display:block;
 	height:240px;
 	text-align:center;
 	line-height:240px;
-}
+}*/
 
 /*MY030107.html*/
 .layer-popup.pop-way-look .way-look-box {margin-bottom:10px;}
