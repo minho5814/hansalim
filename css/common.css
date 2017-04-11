@@ -12818,7 +12818,8 @@ td .radish-bank-box span {display:block;}
 .nick-img-wrap .bg-box {
 	display:none;
 	position:absolute;
-	left:5px; top:0;
+	left:50%; top:0;
+	margin-left:-50px;
 }
 .nick-img-wrap .bg-box .bg-img {
 	display:block;
