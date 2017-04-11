@@ -488,10 +488,14 @@ html {
 	height:100%;
 	background-color:#0e0b0a;
 }
-.wrapper {background-color:#fff;}
+.wrapper {
+	min-width:1120px;
+	background-color:#fff;
+}
 .header {
 	position:relative;
 	z-index:80;
+	min-width:1120px;
 	min-height:145px;
 }
 .container {position:relative;}
@@ -3701,7 +3705,10 @@ label.check-radio .radiobox {margin-right:8px;}
 /* =========================================================================================================
 	상단 배너
 ========================================================================================================= */
-.top-banner {background-color:#8bc838;}
+.top-banner {
+	min-width:1120px;
+	background-color:#8bc838;
+}
 	.top-banner .inner {
 		position:relative;
 		width:1120px;

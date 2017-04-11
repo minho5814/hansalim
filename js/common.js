@@ -54,6 +54,13 @@ $(window).load(function(){
 		$('.quick-menu').animate({top:145}, 300);// 퀵메뉴
 	});
 
+	/* 상단 검색 레이어 */
+	$('.search-input .query, .search-box .search-text').focusin(function(){
+		$(this).next('.word-box').show();
+	}).focusout(function(){
+		$(this).next('.word-box').hide();
+	});
+
 	/* 전체보기 레이어에 gnb 복사 */
 	var gnb = $('.gnb-list').html();
 	$('.gnb-layer .layer-top').append('<ul class="gnb-list">');
@@ -325,7 +332,7 @@ $(window).load(function(){
 		상품상세 faq
 	=========================================================================================================== */
 	//아코디언
-	$('.faq-list .question').click(function(){
+	$(document).on('click', '.faq-list .question', function(){
 		if($(this).parents('li').hasClass('on')){
 			$(this).parents('li').removeClass('on').find('.answer').slideUp(100);
 		}else{
@@ -353,15 +360,18 @@ $(window).load(function(){
 		if(winTop >= gnbTop){
 			$('html').addClass('down');
 			$('.head-btm .gnb').css({'left':-winLeft});
-			var winW = $(window).width();
-			var gnbW = $('.gnb').outerWidth();
-			var right = winW - ($('.gnb').offset().left + gnbW - 20);
-			$('.down .head-top .search-box').css({'right':right});
+			$(window).resize(function(){
+				var gnbW = $('.gnb').outerWidth();
+				var searchW = $('.head-top .search-box').outerWidth();
+				var left = $('.gnb').offset().left + (gnbW - searchW);
+				$('.down .head-top .search-box').css({'right':'inherit', 'left':left});
+			});
+			$(window).resize();
 			$('.quick-menu').stop().animate({top:145}, 200);// 퀵메뉴
 		}else{
 			$('html').removeClass('down');
 			$('.head-btm .gnb').css({'left':'0'});
-			$('.head-top .search-box').css({'right':'0'});
+			$('.head-top .search-box').css({'right':'0', 'left':'inherit'});
 			if($('.top-banner').length >= 1){
 				$('.quick-menu').stop().animate({top:245}, 200);// 퀵메뉴
 			}else{
