@@ -10940,6 +10940,23 @@ td .radish-bank-box span {display:block;}
 	height:17px;
 	background:url(../img/icon/icon_revi02.gif) no-repeat 0 0;
 }
+.btn-mini-text.btn-all.on,
+.btn-mini-text.btn-good.on ,
+.btn-mini-text.btn-hate.on {
+	color:#fff;
+	border-color: #7eb533;
+	background-color: #91c90b;
+}
+.btn-mini-text.btn-good.on:before {
+	background:url(../img/icon/icon_revi01_on.png) no-repeat 0 0;
+}
+.btn-mini-text.btn-hate.on:before {
+	background:url(../img/icon/icon_revi02_on.png) no-repeat 0 0;
+}
+
+.review-sorting {
+	margin:0 0 15px;
+}
 .my-review-box {
 	position:relative;
 	padding:19px 189px 20px 29px;
