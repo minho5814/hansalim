@@ -1220,6 +1220,7 @@
 								<dl>
 									<dt class="title">[서울] 대치매장 이전기념 특별행사</dt>
 									<dd class="img-wrap"><img src="../../img/temp/@temp_store01.jpg" alt="대치매장 이전기념 특별행사"></dd>
+									<!-- 2017-04-12 요일 추가 -->
 									<dd class="date">2017-02-27 (월)</dd>
 								</dl>
 							</a>
@@ -1229,6 +1230,7 @@
 								<dl>
 									<dt class="title">[성남용인] 위례매장 개장행사 긴 경우...</dt>
 									<dd class="img-wrap"><img src="../../img/temp/@temp_store02.jpg" alt="[성남용인] 위례매장 개장행사 긴 경우..."></dd>
+									<!-- 2017-04-12 요일 추가 -->
 									<dd class="date">2017-02-27 (월)</dd>
 								</dl>
 							</a>
@@ -1238,6 +1240,7 @@
 								<dl>
 									<dt class="title">[성남용인] 서현매장 이전 개장 행사</dt>
 									<dd class="img-wrap"><img src="../../img/temp/@temp_store03.jpg" alt="[성남용인] 서현매장 이전 개장 행사"></dd>
+									<!-- 2017-04-12 요일 추가 -->
 									<dd class="date">2017-02-27 (월)</dd>
 								</dl>
 							</a>
@@ -1247,6 +1250,7 @@
 								<dl>
 									<dt class="title">[서울] 대치매장 이전기념 특별행사</dt>
 									<dd class="img-wrap"><img src="../../img/temp/@temp_store01.jpg" alt="대치매장 이전기념 특별행사"></dd>
+									<!-- 2017-04-12 요일 추가 -->
 									<dd class="date">2017-02-27 (월)</dd>
 								</dl>
 							</a>
@@ -1256,6 +1260,7 @@
 								<dl>
 									<dt class="title">[성남용인] 위례매장 개장행사 긴 경우...</dt>
 									<dd class="img-wrap"><img src="../../img/temp/@temp_store02.jpg" alt="[성남용인] 위례매장 개장행사 긴 경우..."></dd>
+									<!-- 2017-04-12 요일 추가 -->
 									<dd class="date">2017-02-27 (월)</dd>
 								</dl>
 							</a>
@@ -1265,6 +1270,7 @@
 								<dl>
 									<dt class="title">[성남용인] 서현매장 이전 개장 행사</dt>
 									<dd class="img-wrap"><img src="../../img/temp/@temp_store03.jpg" alt="[성남용인] 서현매장 이전 개장 행사"></dd>
+									<!-- 2017-04-12 요일 추가 -->
 									<dd class="date">2017-02-27 (월)</dd>
 								</dl>
 							</a>
@@ -1369,7 +1375,6 @@
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
-<script type="text/javascript" src="../../js/jquery.jstree.js"></script>
 <script>
 $(window).load(function(){
 
@@ -1390,17 +1395,6 @@ $(window).load(function(){
 	$('.transport a').click(function(){
 		$(this).parents('li').addClass('on').siblings('li').removeClass('on');
 	});
-
-	/* 원재료 검색 */
-	// jstree
-	$('.tree-list').jstree({
-	'plugins' : ['checkbox']
-	});
-	$('.text.selected').each(function(){
-		$(this).parents('.jstree-anchor').click();
-	});
-
-	$('.tree-list').css({'opacity':'1'});
 
 	$('.search-input .query, .search-box .search-text').focusin(function(){
 		$(this).next('.word-box').show();
