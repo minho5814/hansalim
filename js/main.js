@@ -124,8 +124,14 @@ $(window).load(function(){
 	$('.recipe-cont .bxslider').each(function(){
 		$(this).bxSlider({
 			infiniteLoop:false,
+			adaptiveHeight: true,
 			hideControlOnEnd: true,
 			speed:400
+		});
+
+		var dHei = $('.goods-wrap').outerHeight();
+		$('.btn-goods-more').click(function(){
+			$('.goods-wrap').css({'height':'auto'});
 		});
 	});
 
