@@ -1734,7 +1734,7 @@ table .good-table table th {padding:0;}
 			top:158px;
 			width:30px;
 			height:50px;
-			background-color:rgba(0,0,0,.4);
+			background-color:rgba(0,0,0,.2);
 			background-repeat:no-repeat;
 			background-position:50% 50%;
 			font-size:0;
@@ -6691,7 +6691,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	margin:15px auto 0;
 	background-color:#f8f3eb;
 }
-/*.content-banner:before {/* 추 후 삭제 */
+/*.content-banner:before {/* 추 후 삭제
 	content:'고객 주요 정보 노출 영역 (기획설계 중)';
 	display:block;
 	height:240px;
@@ -6708,6 +6708,70 @@ label.check-radio .radiobox {margin-right:8px;}
 /*MY030105.html*/
 td .radish-bank-box span {display:block;}
 
+/* 오늘의 알림 */
+.notice-slide {
+	overflow:hidden;
+	position:relative;
+	height:64px;
+	padding:16px 20px 16px 128px;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+	background-color:#fff;
+}
+.notice-slide:before,
+.notice-slide:after {
+	content:'';
+	position:absolute;
+	left:0;right:0;
+	z-index:2;
+	height:16px;
+	background-color:#fff;
+}
+.notice-slide:before {top:0;}
+.notice-slide:after {bottom:0;}
+	.notice-slide .notice-title {
+		position:absolute;
+		left:30px;top:16px;
+		color:#000;
+		font-size:15px;
+		font-weight:bold;
+		line-height:30px;
+	}
+	.notice-slide .notice-list {
+		position:relative;
+		min-height:30px;
+	}
+		.notice-slide .notice-list .item {
+			display:block;
+			position:absolute;
+			left:0;top:0;
+			color:#666;
+			font-size:15px;
+			line-height:30px;
+		}
+	.notice-slide .btn-notice-tog {
+		position:absolute;
+		right:30px;top:16px;
+		width:30px;
+		height:30px;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+		background-image:url(../img/btn/btn_notice_tog.png);
+		background-position:0 0;
+	}
+	.notice-slide .btn-next {
+		position:fixed;
+		left:50px;top:300px;
+		z-index:999999;
+	}
+	.notice-slide .count-area {
+		position:absolute;
+		right:80px;top:16px;
+		color:#666;
+		font-size:15px;
+		line-height:30px;
+	}
 
 /* =========================================================================================================
 	통합검색 (co/)

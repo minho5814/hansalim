@@ -235,6 +235,47 @@ $(window).load(function(){
 	});
 	$('.bxslider').animate({'opacity':'1'}, 200);
 
+	/* 나의 한살림 (오늘의 알림) */
+	$('.notice-slide').each(function(){
+		var item = $(this).find('.notice-list .item');
+		var itemLen =  $(item).length;
+		if(itemLen >= 2){
+			$(this).append('<button type="button" class="btn-notice-tog">');
+			$(this).append('<div class="count-area"><span class="now">1</span>/<span class="all">' + itemLen + '</span></div>');
+			$(this).append('<button type="button" class="btn-next">다음');
+		}
+
+		var itemHei = $(item).outerHeight();
+		$(item).each(function(){
+			var idx = $(this).index();
+			$(this).css({'top':itemHei * idx});
+		});
+
+		count = 0;
+		var btnNext = $(this).find('.btn-next');
+		$(btnNext).click(function(){
+			$('.notice-slide .notice-list .item').animate({top:'-=' + itemHei}, 300);
+			setTimeout(function(){
+				$('.notice-slide .notice-list .item:first-child').remove();
+				var itemData = $('.notice-slide .notice-list .item:first-child').html();
+				var itemLen = $('.notice-slide .notice-list .item').length;
+
+				$('.notice-slide .notice-list').append('<p class="item" style="top:' + itemHei * itemLen + 'px;">' + itemData);
+			}, 300);
+
+			count ++;
+			if(count >= itemLen){
+				console.log(count);
+				$('.notice-slide .count-area .now').html(count);
+			}
+		});
+
+		var sSpeed = 4000;// 슬라이드 속도
+		noticeTimer = setInterval(function(){
+			$(btnNext).click();
+		}, sSpeed);
+	});
+
 	/* ===========================================================================================================
 		탭메뉴
 	=========================================================================================================== */
