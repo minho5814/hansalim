@@ -6707,8 +6707,8 @@ td .radish-bank-box span {display:block;}
 .notice-slide {
 	overflow:hidden;
 	position:relative;
-	height:64px;
-	padding:16px 20px 16px 128px;
+	min-height:64px;
+	padding:16px 120px 16px 128px;
 	box-sizing:border-box;
 	border:1px solid #ddd;
 	background-color:#fff;
@@ -6738,11 +6738,15 @@ td .radish-bank-box span {display:block;}
 	}
 		.notice-slide .notice-list .item {
 			display:block;
+			overflow:hidden;
 			position:absolute;
 			left:0;top:0;
+			width:100%;
 			color:#666;
 			font-size:15px;
+			text-overflow:ellipsis;
 			line-height:30px;
+			white-space:nowrap;
 		}
 	.notice-slide .btn-notice-tog {
 		position:absolute;
@@ -6755,10 +6759,9 @@ td .radish-bank-box span {display:block;}
 		background-image:url(../img/btn/btn_notice_tog.png);
 		background-position:0 0;
 	}
+	.notice-slide .btn-notice-tog.on {background-position:0 -30px;}
 	.notice-slide .btn-next {
-		position:fixed;
-		left:50px;top:300px;
-		z-index:999999;
+		display:none;
 	}
 	.notice-slide .count-area {
 		position:absolute;

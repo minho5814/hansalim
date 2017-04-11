@@ -243,37 +243,55 @@ $(window).load(function(){
 			$(this).append('<button type="button" class="btn-notice-tog">');
 			$(this).append('<div class="count-area"><span class="now">1</span>/<span class="all">' + itemLen + '</span></div>');
 			$(this).append('<button type="button" class="btn-next">다음');
+
+			var itemHei = $(item).outerHeight();
+			$(item).each(function(){
+				var idx = $(this).index();
+				$(this).css({'top':itemHei * idx});
+			});
+
+			count = 0;
+			var btnNext = $(this).find('.btn-next');
+			$(btnNext).click(function(){
+				$('.notice-slide .notice-list .item').animate({top:'-=' + itemHei}, 300);
+				setTimeout(function(){
+					var itemData = $('.notice-slide .notice-list .item:first-child').html();
+					$('.notice-slide .notice-list .item:first-child').remove();
+					var itemLen = $('.notice-slide .notice-list .item').length;
+					$('.notice-slide .notice-list').append('<p class="item" style="top:' + itemHei * itemLen + 'px;">' + itemData);
+				}, 300);
+
+				count ++;
+				if(count >= itemLen){
+					count = 0;
+					$('.notice-slide .count-area .now').html('1');
+				}else{
+					$('.notice-slide .count-area .now').html(count + 1);
+				}
+			});
+
+			var sSpeed = 4000;// 슬라이드 속도
+			noticeTimer = setInterval(function(){
+				$(btnNext).click();
+			}, sSpeed);
+
+			var btnTog = $(this).find('.btn-notice-tog');
+			$(btnTog).click(function(){
+				if($(this).hasClass('on')){
+					noticeTimer = setInterval(function(){
+						$(btnNext).click();
+					}, sSpeed);
+					$('.notice-slide .notice-list').animate({'height':itemHei}, 200);
+					$('.notice-slide .count-area').show();
+					$(this).removeClass('on');
+				}else{
+					clearInterval(noticeTimer);
+					$('.notice-slide .notice-list').animate({'height':itemLen * itemHei}, 200);
+					$('.notice-slide .count-area').hide();
+					$(this).addClass('on');
+				}
+			});
 		}
-
-		var itemHei = $(item).outerHeight();
-		$(item).each(function(){
-			var idx = $(this).index();
-			$(this).css({'top':itemHei * idx});
-		});
-
-		count = 0;
-		var btnNext = $(this).find('.btn-next');
-		$(btnNext).click(function(){
-			$('.notice-slide .notice-list .item').animate({top:'-=' + itemHei}, 300);
-			setTimeout(function(){
-				$('.notice-slide .notice-list .item:first-child').remove();
-				var itemData = $('.notice-slide .notice-list .item:first-child').html();
-				var itemLen = $('.notice-slide .notice-list .item').length;
-
-				$('.notice-slide .notice-list').append('<p class="item" style="top:' + itemHei * itemLen + 'px;">' + itemData);
-			}, 300);
-
-			count ++;
-			if(count >= itemLen){
-				console.log(count);
-				$('.notice-slide .count-area .now').html(count);
-			}
-		});
-
-		var sSpeed = 4000;// 슬라이드 속도
-		noticeTimer = setInterval(function(){
-			$(btnNext).click();
-		}, sSpeed);
 	});
 
 	/* ===========================================================================================================
