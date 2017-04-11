@@ -2551,7 +2551,7 @@ $('.tab-styled4 .item').each(function(){
 
 
 /*오늘의 물품소식 아코디언*/
-$('.qna-list .item').click(function(){
+$(document).on('click', '.qna-list .item', function(){//2017-04-11 클릭형식 변경
 	if($(this).hasClass('on')){
 		$(this).removeClass('on');
 	}else{

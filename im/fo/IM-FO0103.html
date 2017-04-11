@@ -1472,7 +1472,7 @@ $(window).load(function(){
 	});
 
 	/* 댓글 아코디언 */
-	$('.reply-table .item .title').click(function(){
+	$(document).on('click', '.reply-table .item .title', function(){//2017-04-11 클릭형식 변경
 		$('.reply-table .item').removeClass('on');
 		$(this).parent('.item').addClass('on');
 	});
