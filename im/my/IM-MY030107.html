@@ -1019,7 +1019,8 @@
 					<div class="board-wrap mgT25">
 					<!-- //2017-04-10 board-wrap mgT45 -> board-wrap mgT25 -->
 						<h3 class="cTitle4">결제정보</h3>
-						<div class="board-write1">
+						<!-- 2017-04-11 구조 변경 -->
+						<div class="board-write1 styled2">
 							<table>
 								<colgroup>
 									<col style="width:100%;">
@@ -1027,28 +1028,17 @@
 								<tbody>
 									<tr>
 										<td>
-											<div class="text"><span class="fbold fColor7">CMS</span></div>
+											<div class="radio-check">
+												<label class="item"><input type="radio" name="Pay" class="styled1" checked>CMS</label>
+												<label class="item"><input type="radio" name="Pay" class="styled1">신용카드</label>
+												<label class="item"><input type="radio" name="Pay" class="styled1">무통장입금</label>
+											</div>
 										</td>
 									</tr>
-									<!-- <tr>
-										<td>
-											<div class="text">
-												<span class="fbold fColor7">카드</span>
-												<a href="#" class="btn-mini-text btn-icon mgL10">카드영수증 보기</a>
-											</div>
-										</td>
-									</tr> -->
-									<!-- <tr>
-										<td>
-											<div class="text radish-bank-box">
-												<span class="fbold fColor7">무통장입금</span>
-												<span>농협은행(예금주:한살림) 12345-02-678910</span>
-											</div>
-										</td>
-									</tr> -->
 								</tbody>
 							</table>
 						</div>
+						<!-- //2017-04-11 구조 변경 -->
 					</div>
 					<!-- 2017-04-10 board-wrap mgT45 -> board-wrap mgT25 -->
 					<div class="board-wrap mgT25">
@@ -1116,7 +1106,9 @@
 					<!-- 2017-04-10 <div class="cart-box-content"> 삭제 -->
 					<!-- 2017-04-10 box-content1 -> box-content1 mgT40 -->
 					<div class="box-content1 mgT40">
-						<h3 class="box-title">김장채소 주문조회 안애</h3>
+						<!-- 2017-04-11 김장채소 주문조회 안애 -> 김장채소 주문조회 안내 -->
+						<h3 class="box-title">김장채소 주문조회 안내</h3>
+						<!-- //2017-04-11 김장채소 주문조회 안애 -> 김장채소 주문조회 안내 -->
 						<div class="box-cont dot-line">
 							<p class="item">컨텐츠 수급 중</p>
 							<p class="item">컨텐츠 수급 중</p>
@@ -1191,7 +1183,7 @@
 					</li>
 				</ul>
 				<div class="mark-sns">
-					<div class="mark"><img src="../../img/icon/icon_mark.png" alt="보안인증 2017-02-22"></div>
+					<div class="mark"><script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=www.hansalim.or.kr&amp;size=M&amp;lang=ko"></script></div><!-- 2017-04-11 마크 일괄 수정 -->
 					<div class="sns">
 						<a href="#" class="link"><img src="../../img/icon/icon_facebook.png" alt="facebook"></a>
 						<a href="#" class="link"><img src="../../img/icon/icon_blog.png" alt="naver blog"></a>
