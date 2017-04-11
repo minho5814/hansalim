@@ -1195,7 +1195,7 @@
 		});
 
 		/* 아코디언 */
-		$('.question .title').click(function(){
+		$(document).on('click', '.question .title', function(){//2017-04-11 클릭 형식 수정
 			if($(this).parents('.item').hasClass('on')){
 				$(this).parents('.item').removeClass('on');
 			}else{

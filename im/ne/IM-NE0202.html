@@ -1326,7 +1326,7 @@ $(window).load(function(){
 	});
 
 
-	$('.qna-list .item').click(function(){
+	$(document).on('click', '.qna-list .item', function(){//2017-04-11 클릭형식 변경
 		if($(this).hasClass('on')){
 			$(this).removeClass('on');
 		}else{

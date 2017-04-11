@@ -699,7 +699,6 @@ $(window).load(function(){
 		var item = $(this).parents('.select-box').find('.select-list .item');
 		$(item).click(function(){
 			$(this).parents('.select-box').find('.select-title .data').remove();
-			console.log(0);
 		});
 	});
 
