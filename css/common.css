@@ -3288,7 +3288,7 @@ table .good-table table th {padding:0;}
 	display:inline-block;
 	position:relative;
 	height:32px;
-	cursor:default;
+	cursor:pointer;
 }
 .select-box.focus {z-index:9999;}
 	.select-box .select-title {
