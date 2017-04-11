@@ -4394,7 +4394,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	width:830px;
 	margin:15px auto 0;
 	padding-top:40px;
-	border-top:1px solid #666;
+	border-top:1px solid #999;
 }
 	.login-wrap .left-cont,
 	.login-wrap .right-cont {
@@ -8988,7 +8988,7 @@ td .radish-bank-box span {display:block;}
 .useterms-infor-area {
 	width:1120px;
 	margin:15px auto 0;
-	border-top:1px solid #666;
+	border-top:1px solid #999;
 }
 .useterms-infor-area .text-box  {
 	padding:20px;
@@ -9682,7 +9682,7 @@ td .radish-bank-box span {display:block;}
 
 /* 천연벽지 */
 .estimate-request-area {
-	border-top:1px solid #666;
+	border-top:1px solid #999;
 }
 .estimate-request-area .order-complete {
 	margin-top:50px;
