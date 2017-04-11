@@ -843,7 +843,7 @@
 				<div class="nick-img-wrap">
 					<span class="nick-img"><img src="../../img/temp/@temp_nick01.png" alt=""></span>
 					<div class="bg-box">
-						<button class="bg-img">사진수정</button>
+						<button class="bg-img btn-popup">사진수정</button>
 					</div>
 				</div>
 				<p class="nick-name"><span class="fColor1">홍길동</span>조합원님</p>
@@ -1282,6 +1282,28 @@
 	</div>
 </div>
 
+<!-- 사진등록 팝업 -->
+<div class="layer-popup pop-photo">
+	<div class="pop-head">
+		<h1 class="pop-title">사진등록</h1>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="file-area">
+			<input type="text" id="fakeFileTxt" class="fakeFileTxt" readonly="readonly" style="width:260px;">
+			<div class="fileDiv">
+				<button type="button" class="buttonImg">파일찾기</button>
+				<input type="file" class="realFile" onchange="javascript:document.getElementById('fakeFileTxt').value = this.value">
+			</div>
+		</div>
+		<div class="btn-bottom pdT30">
+			<a href="#" class="btn-text btn-green ">등록</a>
+			<a href="#" class="btn-text btn-gray mgL10">취소</a>
+		</div>
+	</div>
+</div>
+
+
 
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
@@ -1311,6 +1333,12 @@
 		$('.waybill-box .btn-close').click(function(){
 			$(this).parents('.waybill-box').hide();
 		});
+
+		/* 사진등록 팝업 */
+		$('.bg-img').click(function(){
+			$('.pop-photo').fadeIn(200);
+		});
+
 	});
 </script>
 </body>
