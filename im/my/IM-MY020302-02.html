@@ -914,7 +914,7 @@
 						<div class="tab-content3 on">
 							<div class="board-wrap">
 								<div class="title-wrap align-right">
-									<a href="#" class="btn-round-text btn-prev-shipping btn-popup btn-white">이전 배송지</a>
+									<button type="button" class="btn-round-text btn-prev-shipping btn-popup btn-white">이전 배송지</button><!-- 2017-04-12 a -> button 으로 변경 -->
 								</div>
 								<div class="board-write1 mgT10">
 									<table>
@@ -1289,7 +1289,6 @@
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
-<script type="text/javascript" src="../../js/jquery.jstree.js"></script>
 <script>
 $(window).load(function(){
 	/* 이전 배송지 */
@@ -1309,26 +1308,8 @@ $(window).load(function(){
 		$(this).parents('.pop-post').find('.post-text').hide();
 		$(this).parents('.pop-post').find('.post-result').show();
 	});
-
-	/* 원재료 검색 */
-	// jstree
-	$('.tree-list').jstree({
-	'plugins' : ['checkbox']
-	});
-	$('.text.selected').each(function(){
-		$(this).parents('.jstree-anchor').click();
-	});
-
-	$('.tree-list').css({'opacity':'1'});
-
-	$('.search-input .query, .search-box .search-text').focusin(function(){
-		$(this).next('.word-box').show();
-	}).focusout(function(){
-		$(this).next('.word-box').hide();
-	});
 });
 </script>
-
 </body>
 
 </html>
