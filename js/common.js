@@ -483,7 +483,7 @@ $(window).load(function(){
 			$(this).parents('.checkbox').addClass('disabled');
 		}
 	});
-	$('.checkbox input[type=checkbox].styled1').change(function(){
+	$('input[type=checkbox].styled1').change(function(){
 		if(this.checked){
 			$(this).parents('.checkbox').addClass('checked');
 		}else{
@@ -502,7 +502,7 @@ $(window).load(function(){
 			$(this).parents('.radiobox').addClass('disabled');
 		}
 	});
-	$('.radiobox input[type=radio].styled1').change(function(){
+	$('input[type=radio].styled1').change(function(){
 		var name = $(this).attr('name');
 		if(this.checked){
 			$('.radiobox input[name='+name+']').parents('.radiobox').removeClass('checked');
