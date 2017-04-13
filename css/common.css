@@ -2989,7 +2989,7 @@ table .good-table table th {padding:0;}
 .btn-image.btn-list-close {
 	width:54px;
 	height:54px;
-	background-color:#61b016;
+	background-color:#999;
 	border-radius: 0;
 }
 .btn-image.btn-list-close:before {
@@ -3109,18 +3109,30 @@ table .good-table table th {padding:0;}
 }
 
 .btn-fixed {
-	display:inline-block;
-	width:16px;
-	height:16px;
-	background:url(../img/sprite/button.png);
-	background-repeat:no-repeat;
-	background-position:0 -1251px;
+	position: relative;
+	display:block;
+	width:35px;
+	height:32px;
+	border:1px solid #bbb;
+	border-radius: 3px;
 	font-size:0;
 	text-indent:-9999px;
-	vertical-align:middle;
 	line-height:0;
 }
-.btn-fixed.on {background-position:0 -1269px;}
+.btn-fixed:before {
+	content: '';
+	position: absolute;
+	left:50%;top:50%;
+	margin:-9px 0 0 -10px;
+	display: block;
+	width:20px;
+	height:19px;
+	background:url(../img/sprite/button.png);
+	background-repeat:no-repeat;
+	background-position:0 -1306px;
+}
+.btn-fixed.on { border-color:#60b015;}
+.btn-fixed.on:before {background-position:-21px -1306px;}
 
 
 
@@ -6661,7 +6673,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	.list-group .list-title {
 		overflow: hidden;
 		background-color:#f7feed;
-		border-top:2px solid #61b016;
+		border-top:1px solid #666;
 		border-bottom:1px solid #bbb;
 	}
 		.list-group .list-title .left-area {
@@ -6713,6 +6725,10 @@ label.check-radio .radiobox {margin-right:8px;}
 				float:left;
 				margin-left:7px;
 			}
+			.list-group .list-title .date-area dd.calendar .datepicker{
+				border:1px solid #bbb;
+			}
+			.list-group .list-title .date-area dd.calendar .ui-datepicker-trigger:before {background-color:#999;}
 
 		.list-group .list-title .right-area {float:right}
 
