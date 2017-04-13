@@ -206,6 +206,7 @@
 			font-size:28px;
 			font-weight:bold;
 			line-height:46px;
+			font-family:ns;
 		}
 		.main-cont .main-title .text {
 			position:relative;
@@ -235,7 +236,7 @@
 		width:14px;
 		height:14px;
 	}
-.thumb-list1 .thumb-item1 .ico-round2 {
+.thumb-list1 .thumb-item1 .ico-label {
 	position:absolute;
 	right:15px;top:15px;
 }
@@ -417,6 +418,7 @@
 				font-size:28px;
 				font-weight:bold;
 				line-height:37px;
+				font-family:ns;
 			}
 			.recipe-cont .recipe-top .recipe-box .link .title:after {
 				content:'';
