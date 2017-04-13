@@ -1216,9 +1216,7 @@ $(window).load(function(){
 		var idx = $(this).index();
 		$('.tab-styled5 .item').removeClass('on').eq(idx).addClass('on');
 		$('.tab-content4').removeClass('on').eq(idx).addClass('on');
-
 	});
-
 
 	slider = $('.recommend-list .tab-styled5').bxSlider({
 		infiniteLoop:false,
@@ -1233,32 +1231,12 @@ $(window).load(function(){
 	$('.view-area .btn-view').click(function(){
 		$(this).each(function(i) {
 			var idx = $(this).index();
-
 			$(this).addClass('on').siblings('.btn-view').removeClass('on');
 			$(this).parents('.result-wrap').find('.result-bottom').removeClass('on').eq(idx).addClass('on');
 		});
 	});
-
-	/* 원재료 검색 */
-	// jstree
-	$('.tree-list').jstree({
-	'plugins' : ['checkbox']
-	});
-	$('.text.selected').each(function(){
-		$(this).parents('.jstree-anchor').click();
-	});
-
-	$('.tree-list').css({'opacity':'1'});
-
-	$('.search-input .query, .search-box .search-text').focusin(function(){
-		$(this).next('.word-box').show();
-	}).focusout(function(){
-		$(this).next('.word-box').hide();
-	});
 });
 </script>
-
-
 </body>
 
 </html>
