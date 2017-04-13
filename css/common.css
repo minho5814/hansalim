@@ -1005,16 +1005,7 @@ table .good-table table th {padding:0;}
 	z-index:10;
 }
 .good-table table td.goods .goods-img img {vertical-align: middle;}
-.good-table table td.goods .goods-img .goods-type {
-    position: absolute;
-    top:-12px; right:-12px;
-    width:48px; height:42px;
-    text-align: center;
-    background-color: #f4f4f4;
-    border:1px solid #dadada;
-    border-radius: 15px;
-    box-sizing: border-box;
-}
+
 .good-table table td.goods .goods-img .goods-type span {
 	position:absolute;
 	top:50%; left:0;
@@ -1294,8 +1285,7 @@ table .good-table table th {padding:0;}
 		margin-top:-1px;
 		margin-left:-1px;
 	}
-	.thumb-list3 .thumb-item .ico-category {position: absolute;right:16px; top:16px;}
-	.thumb-list3 .thumb-item .ico-round2 {position: absolute;right:16px; top:16px;}
+	.thumb-list3 .thumb-item .ico-label {position: absolute;right:16px; top:16px;}
 	.thumb-list3 .thumb-item .link {
 		display:block;
 	}
@@ -1416,10 +1406,10 @@ table .good-table table th {padding:0;}
 	color:#999;
 	text-decoration:line-through;
 }
-.thumb-list4 .thumb-item .ico-round2 {
+.thumb-list4 .thumb-item .ico-label {
 	position:absolute;
-    right:20px;
-    top:20px;
+	right:20px;
+	top:20px;
 }
 .thumb-list4 .thumb-item  .sup-stop {
 	position:absolute;
@@ -3732,6 +3722,37 @@ label.check-radio .radiobox {margin-right:8px;}
 			color:#666;
 			font-size: 14px;
 		}
+
+/* 물품딱지 아이콘 */
+.ico-label {
+	display:inline-block;
+	width:48px;
+	height:43px;
+	background-image:url(../img/sprite/thumb_label.png);
+	background-repeat:no-repeat;
+	font-size:0;
+	text-indent:-9999px;
+	vertical-align:top;
+	line-height:0;
+}
+.ico-label.icon01 {background-position:0 0;}
+.ico-label.icon02 {background-position:0 -45px;}
+.ico-label.icon03 {background-position:0 -90px;}
+.ico-label.icon04 {background-position:0 -135px;}
+.ico-label.icon05 {background-position:0 -180px;}
+.ico-label.icon06 {background-position:0 -225px;}
+.ico-label.icon07 {background-position:0 -270px;}
+.ico-label.icon08 {background-position:0 -315px;}
+.ico-label.icon09 {background-position:0 -360px;}
+.ico-label.icon10 {background-position:0 -405px;}
+.ico-label.icon11 {background-position:0 -450px;}
+.ico-label.icon12 {background-position:0 -495px;}
+.ico-label.icon13 {background-position:0 -540px;}
+.ico-label.icon14 {background-position:0 -585px;}
+.ico-label.icon15 {background-position:0 -630px;}
+.ico-label.icon16 {background-position:0 -675px;}
+.ico-label.icon17 {background-position:0 -720px;}
+.ico-label.icon18 {background-position:0 -765px;}
 
 /* =========================================================================================================
 	상단 배너
@@ -6705,6 +6726,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	.list-group .list-content .good-table tbody td {height:150px; box-sizing: border-box;}
 	.list-group .list-content .good-table tbody td:first-child {vertical-align: top; padding-top:25px;}
 	.list-group .list-content .good-table tbody td:nth-child(2) {padding-left: 0;}
+	.list-group .list-content .good-table tbody .volume-box {margin:0 auto;}
 
 		.fixed-list {margin-top:40px;}
 		.fixed-list .title-wrap {margin-bottom:0;}
@@ -7034,7 +7056,7 @@ td .radish-bank-box span {display:block;}
 .result-bottom .thumb-list1:first-child {border-top:1px solid #ddd;}
 .result-bottom .thumb-item1 {border-top: 0;}
 .result-bottom .thumb-item1 .link {position: relative;}
-.result-bottom .thumb-item1 .ico-round2,
+.result-bottom .thumb-item1 .ico-label,
 .result-bottom .thumb-item1 .ico-category {position: absolute;right:15px; top:15px;}
 
 
@@ -7042,7 +7064,7 @@ td .radish-bank-box span {display:block;}
 .result-wrap .result-bottom td:first-child {border-left:0;}
 .result-wrap .result-bottom td:last-child {border-right:0;}
 
-.result-wrap .result-bottom .good-table .goods-img .ico-round2 {position: absolute;right:-12px; top:-12px;}
+.result-wrap .result-bottom .good-table .goods-img .ico-label {position: absolute;right:-12px; top:-12px;}
 .result-wrap .result-bottom .good-table .location {display:block; width:100%; padding:0; font-size: 14px; color:#666;}
 .result-wrap .result-bottom .good-table .goods-name {font-size:16px; color:#000;}
 .result-wrap .result-bottom .good-table td:nth-child(2),
@@ -7341,7 +7363,7 @@ td .radish-bank-box span {display:block;}
 	border:1px solid #ddd;
 	background-color:#fff;
 }
-.goods-item1 .ico-round2 {
+.goods-item1 .ico-label {
 	position:absolute;
 	left:80px;top:10px;
 }
@@ -9580,7 +9602,7 @@ td .radish-bank-box span {display:block;}
 			height:148px;
 			text-align:center;
 		}
-		.new-cooking-item .connection-list .link .ico-round2 {
+		.new-cooking-item .connection-list .link .ico-label {
 			position:absolute;
 			right:0;top:2px;
 		}
@@ -12390,7 +12412,7 @@ td .radish-bank-box span {display:block;}
 	width:198px;
 	height: 230px;
 }
-.improve-cont .inner-box .img-wrap .goods-type {
+.improve-cont .inner-box .img-wrap .ico-label {
 	position: absolute;
 	top:0; right:-5px;
 }
