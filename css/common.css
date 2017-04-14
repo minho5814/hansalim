@@ -111,7 +111,7 @@ blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
 input,select,textarea,button {vertical-align:middle;outline:0;}
 button {border:0 none;background-color:transparent;cursor:pointer}
 body,th,td,input,select,textarea,button,select {font-family:'notokr';font-size:15px;line-height:1.5;color:#333;}
-body {width:100%;-webkit-user-select:none}
+body {width:100%;}
 input[type=text],
 input[type=number],
 input[type=password] {
