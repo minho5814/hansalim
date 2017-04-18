@@ -652,18 +652,81 @@ html {
 			display:inline-block;
 			width:25px;
 			height:25px;
-			padding-right:4px;
+			padding-right:5px;
 			box-sizing:border-box;
+			border-radius:50%;
 			text-align:right;
-			line-height:25px;
+			line-height:24px;
 		}
 		.ui-datepicker-calendar .ui-datepicker-today a {
+			border-radius:0;
 			border:1px solid #ccc;
 			line-height:23px;
 		}
-	.ui-datepicker-calendar {}
-	.ui-datepicker-div {}
-	.ui-datepicker-div {}
+
+.pop-calender {
+	display:none;
+	position:fixed;
+	left:0;top:0;
+	z-index:500;
+	box-shadow:4px 4px 0 rgba(0,0,0,.2);
+	border:2px solid #90c807;
+	background-color:#fff;
+}
+.pop-calender .ui-datepicker {
+	box-shadow:0 0 0 transparent;
+	border:0;
+}
+.pop-calender .calender-info {
+	padding:0 30px;
+	border-top:1px solid #ddd;
+}
+.pop-calender .calender-info .list {
+	overflow:hidden;
+	color:#666;
+	font-size:14px;
+	line-height:40px;
+}
+.pop-calender .calender-info .list .text {
+	float:left;
+	position:relative;
+	margin-left:56px;
+	padding-left:18px;
+}
+.pop-calender .calender-info .list .text:first-child {margin-left:0;}
+.pop-calender .calender-info .list .text:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	width:10px;
+	height:10px;
+	margin-top:-5px;
+	border-radius:50%;
+	background-color:#91c90b;
+}
+.pop-calender .calender-info .list .text:first-child:before {background-color:#e3e3e3;}
+.pop-calender .calender-info .date-area {
+	margin-top:6px;
+	padding:16px 0 15px;
+	background-color:#f3f3f3;
+	text-align:center;
+}
+.pop-calender .calender-info .date-area dt {
+	color:#000;
+	font-size:15px;
+	line-height:21px;
+}
+.pop-calender .calender-info .date-area dd {
+	color:#60b015;
+	font-size:18px;
+	line-height:28px;
+}
+.pop-calender .btn-center {
+	margin-top:0;
+	padding:20px 0;
+}
+.pop-calender .btn-center button,
+.pop-calender .btn-center a {margin-left:4px;}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	테이블
@@ -2514,6 +2577,7 @@ table .good-table table th {padding:0;}
 }
 .btn-round-text.btn-orange {background-color:#f56d24;color:#fff;}
 .btn-round-text.btn-gray {background-color:#999;color:#fff;}
+.btn-round-text.btn-green {background-color:#91c90b;color:#fff;}
 .btn-round-text.btn-white {
 	background-color:#fff;
 	color:#666;
