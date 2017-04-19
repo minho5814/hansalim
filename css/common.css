@@ -10011,6 +10011,8 @@ td .radish-bank-box span {display:block;}
 }
 .filter-wrap.type05 .supply-area ul li {width:20% !important;}
 .filter-wrap.type05 .allergy-area {border-top:1px solid #ddd;}
+.filter-wrap.type05 .allergy-area:first-child { border-top:0; background-color:#fff;}
+
 .bor-title  {
 	position:relative;
 	margin:55px 0 15px;

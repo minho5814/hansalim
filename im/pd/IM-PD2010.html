@@ -856,24 +856,30 @@
 					</div>
 				</div>
 				<div class="filter-wrap type05 mgT30">
-					<div class="supply-area">
+					<!-- 2017-04-19 : 하위 전체수정 -->
+					<div class="allergy-area toggle-area">
 						<p class="title">기간 검색</p>
-						<ul>
-							<li><label><input type="checkbox" id="term1" name="term" class="styled1">전체</label></li>
-							<li><label><input type="checkbox" id="term1" name="term" class="styled1" checked>1월</label></li>
-							<li><label><input type="checkbox" id="term1" name="term" class="styled1">2월</label></li>
-							<li><label><input type="checkbox" id="term1" name="term" class="styled1">3월</label></li>
-							<li><label><input type="checkbox" id="term1" name="term" class="styled1">4월</label></li>
-							<li><label><input type="checkbox" id="term1" name="term" class="styled1">5월</label></li>
-							<li><label><input type="checkbox" id="term1" name="term" class="styled1">6월</label></li>
-							<li><label><input type="checkbox" id="term1" name="term" class="styled1">7월</label></li>
-							<li><label><input type="checkbox" id="term1" name="term" class="styled1">8월</label></li>
-							<li><label><input type="checkbox" id="term1" name="term" class="styled1">9월</label></li>
-							<li><label><input type="checkbox" id="term1" name="term" class="styled1">10월</label></li>
-							<li><label><input type="checkbox" id="term1" name="term" class="styled1">11월</label></li>
-							<li><label><input type="checkbox" id="term1" name="term" class="styled1">12월</label></li>
-						</ul>
+						 <div class="list-area">
+							 <div class="btn-area">
+								 <button type="button" class="btn-toggle btn-all on">전체</button>
+								 <div class="btn-group">
+									 <button type="button" class="btn-toggle on">1월</button>
+									 <button type="button" class="btn-toggle on">2월</button>
+									 <button type="button" class="btn-toggle on">3월</button>
+									 <button type="button" class="btn-toggle on">4월</button>
+									 <button type="button" class="btn-toggle on">5월</button>
+									 <button type="button" class="btn-toggle on">6월</button>
+									 <button type="button" class="btn-toggle on">7월</button>
+									 <button type="button" class="btn-toggle on">8월</button>
+									 <button type="button" class="btn-toggle on">9월</button>
+									 <button type="button" class="btn-toggle on">10월</button>
+									 <button type="button" class="btn-toggle on">11월</button>
+									 <button type="button" class="btn-toggle on">12월</button>
+								 </div>
+							 </div>
+						 </div>
 					</div>
+					<!-- // 2017-04-19 : 하위 전체수정-->
 					<div class="allergy-area toggle-area">
 						<p class="title">유형검색</p>
 						<div class="list-area">
@@ -885,9 +891,11 @@
 									<button type="button" class="btn-toggle on">생활용품</button>
 								</div>
 							</div>
+							<!-- 2017-04-19 : 초기화버튼 삭제
 							<div class="reset-area">
 								<button type="button" class="btn-reset">초기화</button>
 							</div>
+						 	-->
 						</div>
 					</div>
 				</div>
@@ -1211,18 +1219,24 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-	$('.btn-all').click(function(){
-		$(this).parents('.btn-area').find('.btn-toggle').addClass('on');
+	/*2017-04-19 : 스크립트 수정 (each로 한번 감쌈)*/
+	$('.btn-all').each(function(){
+		$(this).click(function(){
+			$(this).parents('.btn-area').find('.btn-toggle').addClass('on');
+		});
 	});
-	$('.btn-group .btn-toggle').click(function(){
-		var len = $(this).parents('.btn-group').find('.btn-toggle').length;
-		var onLen = $(this).parents('.btn-group').find('.btn-toggle.on').length;
-		if(onLen >= len){
-			$(this).parents('.btn-area').find('.btn-all').addClass('on');
-		}else{
-			$(this).parents('.btn-area').find('.btn-all').removeClass('on');
-		}
+	$('.btn-group .btn-toggle').each(function(){
+		$(this).click(function(){
+			var len = $(this).parents('.btn-group').find('.btn-toggle').length;
+			var onLen = $(this).parents('.btn-group').find('.btn-toggle.on').length;
+			if(onLen >= len){
+				$(this).parents('.btn-area').find('.btn-all').addClass('on');
+			}else{
+				$(this).parents('.btn-area').find('.btn-all').removeClass('on');
+			}
+		});
 	});
+	/* //2017-04-19 : 스크립트 수정 (each로 한번 감쌈)*/
 });
 </script>
 </body>
