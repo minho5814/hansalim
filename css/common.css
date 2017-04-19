@@ -13118,3 +13118,54 @@ td .radish-bank-box span {display:block;}
 	margin-right:12px;
 }
 .thumb-list3.ty02 .thumb-item:last-child {margin-right:0;}
+
+/* 알림 팝업 */
+.popup-notice {
+	position:fixed;
+	right:-4px;bottom:-9999px;
+	width:286px;
+	padding:4px;
+	border-radius:5px;
+	background-color:rgba(0,0,0,.2);
+}
+.popup-notice .inner {
+	position:relative;
+	padding:4px 0 0;
+	border-radius:5px;
+	border:1px solid #434444;
+	background-color:#fff;
+}
+.popup-notice .user-name {
+	padding:0 25px;
+	color:#000;
+	font-size:18px;
+	line-height:42px;
+}
+.popup-notice .user-name .name {color:#60b015;}
+.popup-notice .text {
+	padding:0 20px 0 25px;
+	color:#666;
+	font-size:15px;
+	line-height:24px;
+}
+.popup-notice .btn-area {
+	overflow:hidden;
+	margin-top:20px;
+	padding:9px 25px;
+	border-top:1px solid #ddd;
+}
+.popup-notice .btn-area .btn-link {float:left;}
+.popup-notice .btn-area label {float:right;}
+.popup-notice .btn-close {
+	position:absolute;
+	right:15px;top:12px;
+	width:34px;
+	height:34px;
+	background:url(../img/btn/btn_close.png) no-repeat 50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.popup-notice {}
+.popup-notice {}
+.popup-notice {}

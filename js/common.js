@@ -11,6 +11,15 @@ $(window).load(function(){
 		$(this).dotdotdot();
 	});
 
+	/* 알림창 팝업 */
+	$('.popup-notice').each(function(){
+		var popH = $(this).outerHeight();
+		$(this).css({'bottom':-popH}).delay(500).animate({bottom:-4}, 400);
+	});
+	$('.popup-notice .btn-close').click(function(){
+		$('.popup-notice').hide();
+	});
+
 	/* 퀵메뉴 */
 	$('.quick-layer').hide().css({'opacity':'1'});
 	// 스크롤 버튼
