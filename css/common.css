@@ -1437,11 +1437,15 @@ table .good-table table th {padding:0;}
 .thumb-list4 .thumb-item .link {
 	display:block;
 }
-.thumb-list4 .thumb-item .img-area img {vertical-align:top;}
+.thumb-list4 .thumb-item .img-area {
+	width:180px;
+	height:180px;
+	margin:15px auto 5px auto;
+}
+.thumb-list4 .thumb-item .img-area img {width:180px; height:180px;}
 .thumb-list4 .thumb-item .txt-area {
 	overflow:hidden;
-	height:44px;
-	margin-top:-8px;
+	height:44px;	
 	padding:0 30px;
 	font-size:15px;
 	color:#666;
