@@ -13125,6 +13125,7 @@ td .radish-bank-box span {display:block;}
 .popup-notice {
 	position:fixed;
 	right:-4px;bottom:-9999px;
+	z-index:550;
 	width:286px;
 	padding:4px;
 	border-radius:5px;
