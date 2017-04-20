@@ -1445,7 +1445,7 @@ table .good-table table th {padding:0;}
 .thumb-list4 .thumb-item .img-area img {width:180px; height:180px;}
 .thumb-list4 .thumb-item .txt-area {
 	overflow:hidden;
-	height:44px;	
+	height:44px;
 	padding:0 30px;
 	font-size:15px;
 	color:#666;
@@ -9725,16 +9725,21 @@ td .radish-bank-box span {display:block;}
 .chief-cooking-box {
 	overflow:hidden;
 	position:relative;
-	height:540px;
+	height:420px;
 }
 .chief-cooking-area {}
 	.chief-cooking-area .slide-item {
 		position:relative;
-		height:540px;
+		height:420px;
 	}
 		.chief-cooking-area .slide-item .img-area {
+			width:1120px;
+			height:420px;
+			border:1px solid #dcdcde;
+			border-bottom:0;
 			font-size:0;
 			line-height:0;
+			box-sizing: border-box;
 		}
 		.chief-cooking-area .slide-item .menual-area {
 			position:absolute;
@@ -9768,17 +9773,16 @@ td .radish-bank-box span {display:block;}
 				vertical-align:top;
 			}
 			.chief-cooking-area .slide-item .menual-area .menual-list {
+				height:110px;
 				margin-top:23px;
 				padding-top:25px;
 				border-top:1px solid #ddd;
-			}
-			.chief-cooking-area .slide-item .menual-area .menual-list .item {
-				margin:10px 0 0 15px;
+				/*margin:10px 0 0 15px;*/
 				color:#666;
 				font-size:14px;
-				text-indent:-15px;
 				line-height:22px;
 			}
+
 			.chief-cooking-area .slide-item .menual-area .menual-list .item:first-child {margin-top:0;}
 
 .chief-cooking-box .bx-controls {display:none;}
