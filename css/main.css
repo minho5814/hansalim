@@ -431,19 +431,20 @@
 			}
 
 		.recipe-cont .recipe-top .recipe-box .recipe-text {
+			height:40px;
 			margin-top:9px;
 			color:#999;
 			font-size:14px;
 			line-height:20px;
 		}
-		.recipe-cont .recipe-top .recipe-box .recipe-list {margin-top:15px;}
-			.recipe-cont .recipe-top .recipe-box .recipe-list .item {
-				margin-left:15px;
-				color:#666;
-				font-size:14px;
-				line-height:22px;
-				text-indent:-15px;
-			}
+		.recipe-cont .recipe-top .recipe-box .recipe-list {
+			height:110px;
+			margin-top:15px;
+			color:#666;
+			font-size:14px;
+			line-height:22px;
+		}
+
 	.recipe-cont .recipe-top .hashtag-area {
 		overflow:hidden;
 		position:absolute;

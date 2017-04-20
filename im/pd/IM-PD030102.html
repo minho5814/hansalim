@@ -897,17 +897,19 @@
 								<button type="button">가나다순</button>
 								<button type="button">후기많은순</button>
 							</div>
+							<!--  2017-04-20 : 영역 삭제
 							<div class="view-area">
 								<button type="button" class="btn-view btn-thumbnail on"><span>썸네일</span></button>
 								<button type="button" class="btn-view btn-list"><span>리스트</span></button>
 							</div>
+						 	-->
 						</div>
 						<div class="result-bottom on">
 							<div class="thumb-list3">
 								<div class="thumb-item">
 									<a href="#" class="link">
 										<span class="ico-label icon05">유기</span><!-- 2017-04-13 아이콘 형식 변경 -->
-										<div class="img-area"><img src="../../img/temp/thumb_265x265.jpg" alt="상품이미지"></div>
+										<div class="img-area"><img src="../../img/temp/thumb_265x265_2.jpg" alt="상품이미지"></div>
 										<p class="name line-2">찹쌀탕수육(30g)찹쌀탕수육(30g)찹쌀탕수육(30g)찹쌀탕수육(30g)찹쌀탕수육(30g)찹쌀탕수육(30g)찹쌀탕수육(30g)</p><!-- 2017-04-07 class="line-2" 추가 -->
 									</a>
 									<div class="price-btn">
@@ -1012,6 +1014,7 @@
 								</div>
 							</div>
 						</div>
+						<!-- 2017-04-20 : 리스트영역 삭제
 						<div class="result-bottom">
 							<div class="good-table">
 								<table>
@@ -1027,7 +1030,7 @@
 												<div class="goods-area">
 													<span class="goods-img">
 														<a href="#"><img src="../../img/temp/@temp_goods01.jpg" alt="유정란(10알/국내산)"></a>
-														<span class="ico-label icon05">유기</span><!-- 2017-04-13 아이콘 형식 변경 -->
+														<span class="ico-label icon05">유기</span>
 													</span>
 													<div class="txt-box">
 														<span class="location"><a href="#">채소/버섯</a> &gt; <a href="#">뿌리채소</a></span>
@@ -1047,7 +1050,7 @@
 												<div class="goods-area">
 													<span class="goods-img">
 														<a href="#"><img src="../../img/temp/@temp_goods01.jpg" alt="유정란(10알/국내산)"></a>
-														<span class="ico-label icon06">무농약이상</span><!-- 2017-04-13 아이콘 형식 변경 -->
+														<span class="ico-label icon06">무농약이상</span>
 													</span>
 													<div class="txt-box">
 														<span class="location"><a href="#">채소/버섯</a> &gt; <a href="#">뿌리채소</a></span>
@@ -1067,7 +1070,7 @@
 												<div class="goods-area">
 													<span class="goods-img">
 														<a href="#"><img src="../../img/temp/@temp_goods01.jpg" alt="유정란(10알/국내산)"></a>
-														<span class="ico-label icon02">새물품</span><!-- 2017-04-13 아이콘 형식 변경 -->
+														<span class="ico-label icon02">새물품</span>
 													</span>
 													<div class="txt-box">
 														<span class="location"><a href="#">채소/버섯</a> &gt; <a href="#">뿌리채소</a></span>
@@ -1087,7 +1090,7 @@
 												<div class="goods-area">
 													<span class="goods-img">
 														<a href="#"><img src="../../img/temp/@temp_goods01.jpg" alt="유정란(10알/국내산)"></a>
-														<span class="ico-label icon05">유기</span><!-- 2017-04-13 아이콘 형식 변경 -->
+														<span class="ico-label icon05">유기</span>
 													</span>
 													<div class="txt-box">
 														<span class="location"><a href="#">채소/버섯</a> &gt; <a href="#">뿌리채소</a></span>
@@ -1106,6 +1109,7 @@
 								</table>
 							</div>
 						</div>
+						-->
 					</div>
 				</div>
 			</div>
@@ -1228,6 +1232,7 @@ $(window).load(function(){
 		hideControlOnEnd: true
 	});
 
+	/* 2017-04-20  스크립트 삭제
 	$('.view-area .btn-view').click(function(){
 		$(this).each(function(i) {
 			var idx = $(this).index();
@@ -1235,6 +1240,7 @@ $(window).load(function(){
 			$(this).parents('.result-wrap').find('.result-bottom').removeClass('on').eq(idx).addClass('on');
 		});
 	});
+	*/
 });
 </script>
 </body>
