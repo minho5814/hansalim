@@ -6270,21 +6270,22 @@ label.check-radio .radiobox {margin-right:8px;}
 .container.category .price-btn {bottom:140px;}
 
 
-.container.category .best {position: relative; height: 746px; border:1px solid #ddd;}
+.container.category .best {position: relative; height: 753px; border:1px solid #ddd; box-sizing: border-box;}
 
 .container.category .best .left-area {width:280px; height:100%; position:absolute; left:0; top:0; border-right:1px solid #ddd; box-sizing: border-box;}
 .container.category .best .left-area .thumb-item1:first-child,
 .container.category .best .right-area .thumb-item1:first-child {border-bottom:1px solid #ddd;}
 .container.category .best .right-area {width:280px; height:100%; position:absolute; right:0; top:0;border-left:1px solid #ddd; box-sizing: border-box;}
+.container.category .best .thumb-item1 .img-area {padding-top:29px; margin-top:0;}
 .container.category .best .center {position:absolute; left:280px; top:0;width:560px; height:746px; box-sizing: border-box;}
 .container.category .best .center .thumb-item1 {border:none; padding-bottom:135px}
-.container.category .best .center .name {margin-top:8px; font-size: 24px; text-overflow:ellipsis; line-height:40px; white-space:nowrap;}
+.container.category .best .center .name {margin-top:65px; font-size: 24px; text-overflow:ellipsis; line-height:40px; white-space:nowrap;}
 .container.category .best .center .price-btn {bottom:65px;}
 .container.category .best .center .price {font-size: 24px;}
 .container.category .best .center .price .number {font-size: 36px;}
 .container.category .best .center .retail2 {position: inherit; display: inline; padding-left:10px; font-size:18px; color:#999; text-decoration: line-through;}
 .container.category .best .thumb-item1 {float: none; width: 100%; border:none; padding-bottom:75px;}
-.container.category .best .center .img-area {overflow: hidden; width:560px; height:560px; font-size: 0;}
+.container.category .best .center .img-area {overflow: hidden; width:480px; height:480px; font-size: 0;}
 .container.category .best .center .img-area img {width: 100%; height:100%;}
 .container.category .best .price-btn,
 .container.category .group .price-btn{bottom:30px}
