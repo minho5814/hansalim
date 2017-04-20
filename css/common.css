@@ -1445,7 +1445,7 @@ table .good-table table th {padding:0;}
 .thumb-list4 .thumb-item .img-area img {width:180px; height:180px;}
 .thumb-list4 .thumb-item .txt-area {
 	overflow:hidden;
-	height:44px;	
+	height:44px;
 	padding:0 30px;
 	font-size:15px;
 	color:#666;
@@ -10749,10 +10749,12 @@ td .radish-bank-box span {display:block;}
 	padding-top: 165px;
 }
 .thumb-slide4 .bxslider .item dl .img-wrap {
+	overflow:hidden;
 	position: absolute;
 	top:0; left:0;
 	width: 306px; height:150px;
 }
+.thumb-slide4 .bxslider .item dl .img-wrap img {width:100%;}
 .thumb-slide4 .bxslider .item dl .img-wrap .img {
 	vertical-align: top;
 }
@@ -11372,6 +11374,7 @@ td .radish-bank-box span {display:block;}
 .sub-cont.store .store-slide {float:left; width:438px; height:334px; border:1px solid #e4e4e4; box-sizing: border-box;}
 	.sub-cont.store .store-slide .thumb-slide1 {width: 100%}
 	.sub-cont.store .store-slide .thumb-slide1 .img-area {font-size: 0;}
+	.sub-cont.store .store-slide .thumb-slide1 .img-area img {display:inline-block; width:105%;}
 
 .sub-cont.store .table-area {float: right; width:550px;}
 .sub-cont.store .table-area .store-info li {position: relative; padding:17px 10px; border-top:1px solid #e3e3e3; font-size: 15px; color:#666; }
