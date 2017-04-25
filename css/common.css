@@ -9918,14 +9918,20 @@ td .radish-bank-box span {display:block;}
 
 .food-list li {margin-top:7px;}
 .food-list li:first-child {margin-top:0;}
-.food-list li .recipe{
+.food-list li .recipe {
 	display:inline-block;
-	padding-right:20px;
 	color:#61b016;
-	background:url(../img/icon/icon_hat.gif) no-repeat 100% 3px;
 	font-weight:bold;
 	text-decoration:underline;
 	line-height:22px;
+}
+.food-list li .recipe:after {
+	content:'';
+	display:inline-block;
+	width:17px;
+	height:14px;
+	margin-left:3px;
+	background:url(../img/icon/icon_hat.gif) no-repeat 100% 3px;
 }
 .recipe-icon {
 	display:inline-block;
