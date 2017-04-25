@@ -2236,7 +2236,7 @@ table .good-table table th {padding:0;}
 /* 배너 스타일 상단 비주엉 영역 */
 .banner-title {
 	height:200px;
-	margin-top:-45px;
+	margin-top:-60px;
 }
 
 .banner-title.bg1 {background-color:#d6f6eb;}
@@ -12143,7 +12143,7 @@ td .radish-bank-box span {display:block;}
 .partner-box .partner-list .item-partner .part-profile {
 	overflow:hidden;
 	float: left;
-	width:445px;
+	width:500px;
 }
 .partner-box .partner-list .item-partner .part-profile .part-img {
 	height:60px;
@@ -12167,21 +12167,26 @@ td .radish-bank-box span {display:block;}
 	line-height:25px;
 }
 .partner-box .partner-list .item-partner .part-tracking {
+	position: relative;
 	height:60px;
+	padding-left:55px;
 	display: table-cell;
 	vertical-align: middle;
 }
 
 .partner-box .partner-list .item-partner .part-tracking .progress-tit {
 	display: inline-block;
-	width:73px;
+	width:50px;
+	padding-right:10px;
 	font-size:15px;
-	color:#000;
+	color:#666;
+	text-align: right;
+	box-sizing: border-box;
 }
 .partner-box .partner-list .item-partner .part-tracking .bar-area {
 	position:relative;
 	display: inline-block;
-	width:560px;
+	width:490px;
 }
 .bar-area .bar-box {
 	overflow: hidden;
@@ -12213,15 +12218,15 @@ td .radish-bank-box span {display:block;}
 .bar-area .bar-box.ty02 + .percent {color:#60b015;}
 .bar-area .percent {
 	position:absolute;
-	right:72px; top:0;
+	right:0; top:0;
 	font-size:15px;
 	color:#09babc;
 	line-height:22px;
 }
-.bar-area .attain-mark {
+.part-tracking .attain-mark {
 	position:absolute;
-	right:0;
-	top:-18px;
+	left:0;
+	top:0;
 }
 
 /*캠페인 심볼*/
