@@ -608,7 +608,7 @@ $(window).load(function(){
 		var btnReset = $(this).find('.btn-reset');
 		$(btnReset).click(function(){
 			$(this).parents('.select-area').find('.title span').html('0');
-			$(this).parents('.select-area').find('.list-area').remove();
+			$(this).parents('.select-area').find('.list-area ul').remove();
 		});
 	});
 
