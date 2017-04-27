@@ -8024,8 +8024,8 @@ td .radish-bank-box span {display:block;}
 	overflow: hidden;
 }
 .brand-wrap .top-area .text-area {padding: 7px 0 0 230px;}
-.brand-wrap .top-area .text-area .title p {display: inline-block; padding-right:15px; font-size:24px; color:#000; font-weight: bold; font-family:ns;}
-.brand-wrap .top-area .text-area .title .btn-icon {vertical-align: 1px;}
+.brand-wrap .top-area .text-area .title p {display: inline-block; padding-right:15px; font-size:24px; color:#000; font-weight: bold;}
+.brand-wrap .top-area .text-area .title .btn-icon {vertical-align: text-bottom}
 .brand-wrap .top-area .text-area .desc {
 	margin-top:10px;
 	font-size:15px;
@@ -8041,7 +8041,6 @@ td .radish-bank-box span {display:block;}
 	font-size: 18px;
 	color:#000;
 	font-weight: bold;
-	font-family:ns;
 }
 .brand-wrap .bottom-area .item-list {
 	overflow: hidden;
