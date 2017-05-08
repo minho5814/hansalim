@@ -3503,7 +3503,7 @@ label.check-radio .radiobox {margin-right:8px;}
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 .tab .tab-area {
 	position:fixed;
-	top:49px;
+	top:0;
 	z-index:10;
 	background-color:#555;
 }
@@ -8182,17 +8182,13 @@ td .radish-bank-box span {display:block;}
 	display:inline-block;
 	padding-right:15px;
 	color:#000;
-	font-family:ns;
 	font-size:24px;
 	font-weight:bold;
 }
-<<<<<<< HEAD
 .brand-wrap .top-area .text-area {padding: 7px 0 0 230px;}
-.brand-wrap .top-area .text-area .title p {display: inline-block; padding-right:15px; font-size:24px; color:#000; font-weight: bold;}
-.brand-wrap .top-area .text-area .title .btn-icon {vertical-align: text-bottom}
-=======
+/*.brand-wrap .top-area .text-area .title p {display: inline-block; padding-right:15px; font-size:24px; color:#000; font-weight: bold;}*/
 .brand-wrap .top-area .text-area .title .btn-icon {vertical-align:1px;}
->>>>>>> e23259e320e352568905e9ea3c461370ff26b1c4
+
 .brand-wrap .top-area .text-area .desc {
 	margin-top:10px;
 	color:#666;
@@ -8205,12 +8201,7 @@ td .radish-bank-box span {display:block;}
 	padding:0 40px;
 	font-size:18px;
 	color:#000;
-<<<<<<< HEAD
-	font-weight: bold;
-=======
 	font-weight:bold;
-	font-family:ns;
->>>>>>> e23259e320e352568905e9ea3c461370ff26b1c4
 }
 .brand-wrap .bottom-area .item-list {
 	overflow:hidden;
@@ -8241,7 +8232,7 @@ td .radish-bank-box span {display:block;}
 
 .tab .tab-styled5{
 	position:fixed;
-	top:49px;
+	top:0;
 	width:1120px;
 	z-index:10;
 }
@@ -10553,13 +10544,12 @@ td .radish-bank-box span {display:block;}
 }
 .store-result .flag-list span {
 	display:inline-block;
-	margin-left:20px;
+	margin-left:5px;
 	padding-left:25px;
 	color:#666;
 	font-size:13px;
-	line-height:15px;
+	line-height:21px;
 	text-align:left;
-	vertical-align:top;
 }
 .store-result .flag-list span:first-child {
 	margin-left:0;
@@ -11541,6 +11531,7 @@ td .radish-bank-box span {display:block;}
 
 /*매장 상세*/
 .sub-cont.store {margin-bottom:40px;}
+.sub-cont.store .view-area{padding:40px;}
 .sub-cont.store .title-area {position:relative;}
 .sub-cont.store .title-area:after {
 	content:'';
