@@ -1965,8 +1965,8 @@ table .good-table table th {padding:0;}
 .step-list .step-item {
 	float:left;
 	box-sizing:border-box;
-	border-top:2px solid #ddd;
-	border-bottom:1px solid #ddd;
+	border-top:1px solid #ddd;
+	border-bottom:2px solid #ddd;
 	text-align:center;
 }
 .step-list .step-item.item1 {width:29%;}
@@ -1994,7 +1994,7 @@ table .good-table table th {padding:0;}
 	.step-list .step-item.on .text:before {
 		content:'';
 		position:absolute;
-		left:0;right:0;top:-2px;
+		left:0;right:0;bottom:-2px;
 		height:2px;
 		background-color:#60b015;
 	}/* on */
@@ -2058,6 +2058,7 @@ table .good-table table th {padding:0;}
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 .mgT0 {margin-top:0 !important;}
 .mgT5 {margin-top:5px !important;}
+.mgT7 {margin-top:7px !important;}
 .mgT10 {margin-top:10px !important;}
 .mgT12 {margin-top:12px !important;}
 .mgT15 {margin-top:15px !important;}
@@ -2104,11 +2105,13 @@ table .good-table table th {padding:0;}
 .pdT60 {padding-top:60px !important;}
 .pdT65 {padding-top:65px !important;}
 
+.pdB0 {padding-bottom:0 !important;}
 .pdB40 {padding-bottom:40px !important;}
 .pdB80 {padding-bottom:80px !important;}
 
 .pdL0 {padding-left:0 !important;}
 .pdL30 {padding-left:30px !important;}
+.pdL40 {padding-left:40px !important;}
 .pdT50 {padding-top:50px !important;}
 
 .mgR30 {margin-right:30px !important;}
@@ -3500,7 +3503,7 @@ label.check-radio .radiobox {margin-right:8px;}
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 .tab .tab-area {
 	position:fixed;
-	top:49px;
+	top:0;
 	z-index:10;
 	background-color:#555;
 }
@@ -3893,7 +3896,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	width:58px;
 	height:47px;
 	box-sizing:border-box;
-	border-right:1px solid #ddd;
+	/*border-right:1px solid #ddd;*/
 	background:url(../img/sprite/button.png) no-repeat 0 -34px;
 	font-size:0;
 	text-indent:-9999px;
@@ -4436,18 +4439,12 @@ label.check-radio .radiobox {margin-right:8px;}
 	padding-top:40px;
 	border-top:1px solid #999;
 }
-.login-wrap .left-cont,
-.login-wrap .right-cont {
-	float:left;
-	width:50%;
-	box-sizing:border-box;
-}
-.login-wrap .left-cont {padding-right:15px;}
-.login-wrap .right-cont {padding-left:15px;}
+
 
 .login-wrap .login-top {
-	overflow:hidden;
+	width: 50%;
 	padding-bottom:30px;
+	margin:0 auto;
 }
 .login-wrap .login-form {}
 	.login-wrap .login-form input {
@@ -4498,6 +4495,12 @@ label.check-radio .radiobox {margin-right:8px;}
 	overflow:hidden;
 	padding-top:26px;
 	border-top:1px solid #ddd;
+}
+.login-wrap .login-mid  .left-cont,
+.login-wrap .login-mid  .right-cont {
+	float:left;
+	width:50%;
+	box-sizing:border-box;
 }
 .login-wrap .login-mid .login-dl {
 	color:#666;
@@ -6279,7 +6282,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	height:219px;
 	font-size:0;
 }
-.event-list ul li.deadline .img-area:before {
+/*.event-list ul li.deadline .img-area:before {
 	content:'';
 	position:absolute;
 	left:0;right:0;top:0;bottom:0;
@@ -6287,7 +6290,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	background-image:url(../img/icon/icon_deadline.png);
 	background-repeat:no-repeat;
 	background-position:50% 50%;
-}
+}*/
 .event-list ul li .img-area img {width:100%;}
 .event-list ul li .txt-area {padding:20px;}
 .event-list ul li .txt-area .title {
@@ -6311,12 +6314,13 @@ label.check-radio .radiobox {margin-right:8px;}
 /*view페이지 스타일*/
 .sub-cont .view-area {
 	width:100%;
-	padding:40px;
+	padding:40px 0;
 	background-color:#fff;
 	box-sizing:border-box;
 }
 
 .sub-cont .view-area.type6 {padding:30px 40px 40px 40px;}
+.sub-cont .view-area.brand-view {padding:40px;}
 
 .sub-cont .view-area .cTitle1  {line-height:inherit;}
 .sub-cont .view-area .cTitle1 span {
@@ -6507,12 +6511,13 @@ label.check-radio .radiobox {margin-right:8px;}
 .waybill .waybill-box {
 	display:none;
 	position:absolute;
-	top:32px;right:0;
-	width:210px;
-	padding:15px 20px 13px;
+	top:27px;right:0;
+	width:250px;
+	/*padding:15px 20px 13px;*/
 	background-color:#fff;
 	border:1px solid #60b015;
 	z-index:10;
+	border: border-box;
 }
 .waybill .waybill-box .btn-close {
 	position:absolute;
@@ -6523,10 +6528,16 @@ label.check-radio .radiobox {margin-right:8px;}
 	line-height:0;
 }
 .waybill .waybill-box dt {
-	margin-bottom:9px;
+	padding:15px;
+	border-bottom:1px solid #60b015;
 	font-size:14px;
 	color:#000;
 	text-align:left;
+	box-sizing: border-box;
+}
+.waybill .waybill-box dd {
+	padding:15px;
+	box-sizing: border-box;
 }
 .waybill .waybill-box dd ul li {
 	position:relative;
@@ -8171,17 +8182,13 @@ td .radish-bank-box span {display:block;}
 	display:inline-block;
 	padding-right:15px;
 	color:#000;
-	font-family:ns;
 	font-size:24px;
 	font-weight:bold;
 }
-<<<<<<< HEAD
 .brand-wrap .top-area .text-area {padding: 7px 0 0 230px;}
-.brand-wrap .top-area .text-area .title p {display: inline-block; padding-right:15px; font-size:24px; color:#000; font-weight: bold;}
-.brand-wrap .top-area .text-area .title .btn-icon {vertical-align: text-bottom}
-=======
+/*.brand-wrap .top-area .text-area .title p {display: inline-block; padding-right:15px; font-size:24px; color:#000; font-weight: bold;}*/
 .brand-wrap .top-area .text-area .title .btn-icon {vertical-align:1px;}
->>>>>>> e23259e320e352568905e9ea3c461370ff26b1c4
+
 .brand-wrap .top-area .text-area .desc {
 	margin-top:10px;
 	color:#666;
@@ -8194,12 +8201,7 @@ td .radish-bank-box span {display:block;}
 	padding:0 40px;
 	font-size:18px;
 	color:#000;
-<<<<<<< HEAD
-	font-weight: bold;
-=======
 	font-weight:bold;
-	font-family:ns;
->>>>>>> e23259e320e352568905e9ea3c461370ff26b1c4
 }
 .brand-wrap .bottom-area .item-list {
 	overflow:hidden;
@@ -8230,7 +8232,7 @@ td .radish-bank-box span {display:block;}
 
 .tab .tab-styled5{
 	position:fixed;
-	top:49px;
+	top:0;
 	width:1120px;
 	z-index:10;
 }
@@ -10542,13 +10544,12 @@ td .radish-bank-box span {display:block;}
 }
 .store-result .flag-list span {
 	display:inline-block;
-	margin-left:20px;
+	margin-left:5px;
 	padding-left:25px;
 	color:#666;
 	font-size:13px;
-	line-height:15px;
+	line-height:21px;
 	text-align:left;
-	vertical-align:top;
 }
 .store-result .flag-list span:first-child {
 	margin-left:0;
@@ -11127,6 +11128,11 @@ td .radish-bank-box span {display:block;}
 	width:50%;
 	text-align:right;
 }
+.coup-infor-list .coup-item .article-box p.txt {
+	padding-left:20px;
+	line-height: 165px;
+	text-align: left;
+}
 .coup-infor-list .coup-item .article-box .aricle-list {
 	position:relative;
 	display:inline-block;
@@ -11525,6 +11531,7 @@ td .radish-bank-box span {display:block;}
 
 /*매장 상세*/
 .sub-cont.store {margin-bottom:40px;}
+.sub-cont.store .view-area{padding:40px;}
 .sub-cont.store .title-area {position:relative;}
 .sub-cont.store .title-area:after {
 	content:'';

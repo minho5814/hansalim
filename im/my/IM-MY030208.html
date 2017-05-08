@@ -946,7 +946,7 @@
 								<span class="text">환불가능금액 <strong class="fColor1">2,000원</strong></span>
 								<button type="button" class="btn-round-text btn-white">환불신청</button>
 								<span class="text mgL15">공급잔액 <strong class="fColor1">10,000원</strong></span>
-								<button type="button" class="btn-round-text btn-white btn-popup btn-credit">결제</button>
+								<button type="button" class="btn-round-text btn-white btn-popup btn-credit">미납금 결제</button> <button type="button" class="btn-popup btn-question type01 mgT7">툴팁</button> <!-- 2017-05-08 : 버튼명수정 및 툴팁아이콘 추가 -->
 							</div>
 						</div>
 
@@ -1190,6 +1190,17 @@
 	</div>
 </div>
 
+<!-- 미납급결제 팝업 2017-05-08 추가 -->
+<div class="layer-popup pop-question1">
+	<div class="pop-head">
+		<h1 class="pop-title">미납금결제</h1>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		컨텐츠 수급 필요
+	</div>
+</div>
+<!--//미납급결제 팝업 2017-05-08 추가 -->
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
@@ -1200,6 +1211,11 @@ $(window).load(function(){
 	$('.btn-credit').click(function(){
 		$('.pop-credit').fadeIn(200);
 	});
+
+	/* 미납금결제 팝업 2017-05-08 스크립트 추가 */
+	$('.btn-question.type01').click(function(){
+		$('.pop-question1').fadeIn(200);
+	});f
 });
 </script>
 </body>
