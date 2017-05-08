@@ -2104,11 +2104,13 @@ table .good-table table th {padding:0;}
 .pdT60 {padding-top:60px !important;}
 .pdT65 {padding-top:65px !important;}
 
+.pdB0 {padding-bottom:0 !important;}
 .pdB40 {padding-bottom:40px !important;}
 .pdB80 {padding-bottom:80px !important;}
 
 .pdL0 {padding-left:0 !important;}
 .pdL30 {padding-left:30px !important;}
+.pdL40 {padding-left:40px !important;}
 .pdT50 {padding-top:50px !important;}
 
 .mgR30 {margin-right:30px !important;}
@@ -6279,7 +6281,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	height:219px;
 	font-size:0;
 }
-.event-list ul li.deadline .img-area:before {
+/*.event-list ul li.deadline .img-area:before {
 	content:'';
 	position:absolute;
 	left:0;right:0;top:0;bottom:0;
@@ -6287,7 +6289,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	background-image:url(../img/icon/icon_deadline.png);
 	background-repeat:no-repeat;
 	background-position:50% 50%;
-}
+}*/
 .event-list ul li .img-area img {width:100%;}
 .event-list ul li .txt-area {padding:20px;}
 .event-list ul li .txt-area .title {
@@ -6311,12 +6313,13 @@ label.check-radio .radiobox {margin-right:8px;}
 /*view페이지 스타일*/
 .sub-cont .view-area {
 	width:100%;
-	padding:40px;
+	padding:40px 0;
 	background-color:#fff;
 	box-sizing:border-box;
 }
 
 .sub-cont .view-area.type6 {padding:30px 40px 40px 40px;}
+.sub-cont .view-area.brand-view {padding:40px;}
 
 .sub-cont .view-area .cTitle1  {line-height:inherit;}
 .sub-cont .view-area .cTitle1 span {
