@@ -3893,7 +3893,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	width:58px;
 	height:47px;
 	box-sizing:border-box;
-	border-right:1px solid #ddd;
+	/*border-right:1px solid #ddd;*/
 	background:url(../img/sprite/button.png) no-repeat 0 -34px;
 	font-size:0;
 	text-indent:-9999px;

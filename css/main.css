@@ -1,5 +1,5 @@
 /* 비주얼 슬라이드 */
-.visual-banner {background:url(../img/bg/bg_visual_back.jpg) no-repeat 50% 0;}
+/*.visual-banner {background:url(../img/bg/bg_visual_back.jpg) no-repeat 50% 0;}*/
 	.visual-banner .center-box {
 		position:relative;
 		width:1120px;
@@ -378,7 +378,7 @@
 		padding-bottom:76px;
 	}
 	.recommend-tab .right-slide .thumb-list1 {width:840px;}
-	.recommend-tab .right-slide .thumb-slide1 .bx-pager {margin:20px 0 0 -280px;}
+	.recommend-tab .right-slide .thumb-slide1 .bx-pager {/*margin:20px 0 0 -280px;*/ display: none;}
 	.recommend-tab .right-slide .thumb-slide1 .bx-controls-direction a {top:352px;}
 
 /* 이즈음 밥상 */
