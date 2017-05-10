@@ -876,7 +876,7 @@
 							</ul>
 						</div>
 						<div class="select-area">
-							<p class="title">선택조건 <span class="fColor3">3</span>개</p>
+							<p class="title">선택한 원재료 <span class="fColor3">3</span>개</p> <!-- 2017-05-10 : 문구수정 -->
 							<div class="list-area">
 								<ul>
 									<li>라면/간편조리 <button type="button" class="btn-delete">삭제</button></span></li>
@@ -911,11 +911,12 @@
 						<div class="result-top">
 							<div class="order-list">
 								<button type="button" class="on">전체</button>
+								<button type="button">인기물품+적체물품</button> <!-- 2017-05-10 : button 추가-->
 								<button type="button">인기물품</button>
 								<button type="button">낮은공급가</button>
 								<button type="button">높은공급가</button>
 								<button type="button">가나다순</button>
-								<button type="button">상품후기 많은 순</button>
+								<button type="button">물품후기 많은 순</button> <!--2017-05-10 : 버튼명수정 -->
 							</div>
 							<div class="view-area">
 								<button type="button" class="btn-view btn-thumbnail on"><span>썸네일</span></button>
@@ -1262,11 +1263,12 @@
 							<h3 class="cTitle3">검색 결과 <span class="fColor3">21</span>건</h3>
 							<div class="order-list">
 								<button type="button" class="on">전체</button>
+								<button type="button">인기물품+적체물품</button> <!-- 2017-05-10 : button 추가-->
 								<button type="button">인기물품</button>
 								<button type="button">낮은공급가</button>
 								<button type="button">높은공급가</button>
 								<button type="button">가나다순</button>
-								<button type="button">상품후기 많은 순</button>
+								<button type="button">물품후기 많은 순</button> <!--2017-05-10 : 버튼명수정 -->
 							</div>
 							<div class="goods-list1">
 								<div class="goods-item1">
@@ -1590,11 +1592,12 @@
 									<div class="result-top">
 										<div class="order-list">
 											<button type="button" class="on">전체</button>
+											<button type="button">인기물품+적체물품</button> <!-- 2017-05-10 : button 추가 -->
 											<button type="button">인기물품</button>
 											<button type="button">낮은공급가</button>
 											<button type="button">높은공급가</button>
 											<button type="button">가나다순</button>
-											<button type="button">상품후기 많은 순</button>
+											<button type="button">물품후기 많은 순</button> <!-- 2017-05-10 : 버튼명수정 -->
 										</div>
 										<div class="view-area">
 											<button type="button" class="btn-view btn-thumbnail on"><span>썸네일</span></button>
@@ -1816,11 +1819,14 @@
 								<h3 class="cTitle3">요리 검색 결과 결과 <span class="fColor3">3<span>건</h3>
 								<div class="result-wrap">
 									<div class="result-top">
+										<!-- 2017-05-10 :버튼 추가 및 버튼명 수정 -->
 										<div class="order-list">
-											<button type="button" class="on">전체</button>
-											<button type="button">요리명 오름차순</button>
-											<button type="button">요리명 내림차순</button>
+											<button type="button" class="on">최신순</button>
+											<button type="button">조회순</button>
+											<button type="button">관심순</button>
+											<button type="button">가나다순</button>
 										</div>
+										<!--// 2017-05-10 :버튼 추가 및 버튼명 수정 -->
 									</div>
 									<div class="recipe-list">
 										<ul>
@@ -1918,11 +1924,14 @@
 								<h3 class="cTitle3">한살림소식 검색 결과 <span class="fColor3">3<span>건</h3>
 								<div class="result-wrap">
 									<div class="result-top">
+										<!-- 2017-05-10 :버튼 추가 및 버튼명 수정 -->
 										<div class="order-list">
-											<button type="button" class="on">전체</button>
-											<button type="button">한살림소식 오름차순</button>
-											<button type="button">한살림소식 내림차순</button>
+											<button type="button" class="on">최신순</button>
+											<button type="button">조회순</button>
+											<button type="button">관심순</button>
+											<button type="button">가나다순</button>
 										</div>
+										<!--// 2017-05-10 :버튼 추가 및 버튼명 수정 -->
 									</div>
 									<div class="grid">
 										<div class="grid-item">
@@ -2087,32 +2096,49 @@
 							<div class="group">
 								<h3 class="cTitle3">매장 검색 결과 <span class="fColor3">3<span>건</h3>
 								<div class="result-wrap">
-									<div class="result-top">
-										<div class="order-list">
-											<!-- 2017-05-08 : 버튼명 수정 및 삭제 -->
+									<!-- 2017-05-10 : 전체적인 태그추가 및 클래스 추가, 문구변경-->
+									<div class="result-top float-area">
+										<div class="order-list f-left">
 											<button type="button" class="on">최신등록순</button>
 											<button type="button">가까운순</button>
-											<!--// 2017-05-08 : 버튼명 수정 및 삭제 -->
+										</div>
+										<div class="f-right store-list">
+											<span class="type01">신규/이전</span>
+											<span class="type02">픽업가능</span>
+											<span class="type03">매장배송</span>
+											<span class="type04">신선육</span>
 										</div>
 									</div>
+									<!--// 2017-05-10 : 전체적인 태그추가 및 클래스 추가-->
 									<div class="store-list">
 										<ul>
 											<li>
 												<a href="#none">
 													<dl>
-														<dt class="title">광교매장</dt>
-														<dd class="operate"><span class="type01">운영중</span></dd>
+														<!--2017-05-10 : title영역 전면수정(태그 추가) 하위 동일내용 공통수정-->
+														<dt class="title">
+															<span class="type01">운영중</span>광교매장
+															<div class="flag">
+																<img src="../../img/icon/flag_icon01.png" alt="신규/이전">
+																<img src="../../img/icon/flag_icon02.png" alt="픽업가능">
+																<img src="../../img/icon/flag_icon03.png" alt="매장배송">
+																<img src="../../img/icon/flag_icon04.png" alt="신선육">
+															</div>
+														</dt>
+														<!--// 2017-05-10 : title영역 전면수정(태그 추가)-->
 														<dd class="img-wrap">
 															<span>
 																<img src="../../img/temp/@temp_store01.jpg" alt="광교매장">
 															</span>
 														</dd>
+														<!-- 2017-05-10 :삭제
 														<dd class="item">
 															<span class="type01">신선육<br>매장</span>
 															<span class="type02">일요<br>매장</span>
 															<span class="type03">즉석빵<br>매장</span>
 															<span class="type04">즉석떡<br>매장</span>
 														</dd>
+													 	-->
 														<dd class="text">
 															<p>경기 수원시 영통구 센트럴파크로 127번길 170(이의동)
 																<span class="call">☎ 031-216-6916</span>
@@ -2125,17 +2151,18 @@
 											<li>
 												<a href="#none">
 													<dl>
-														<dt class="title">영통매장</dt>
-														<dd class="operate"><span class="type01">운영중</span></dd>
+														<dt class="title">
+															<span class="type01">운영중</span>영통매장
+															<div class="flag">
+																<img src="../../img/icon/flag_icon01.png" alt="신규/이전">
+																<img src="../../img/icon/flag_icon02.png" alt="픽업가능">
+															</div>
+														</dt>
 														<dd class="img-wrap">
 															<span>
 																<img src="../../img/temp/@temp_store02.jpg" alt="영통매장">
 															</span>
 														</dd>
-														<dd class="item">
-															<span class="type01">신선육<br>매장</span>
-															<span class="type02">일요<br>매장</span>
-														</dd>
 														<dd class="text">
 															<p>경기 수원시 영통구 센트럴파크로 127번길 170(이의동)
 																<span class="call">☎ 031-216-6916</span>
@@ -2148,16 +2175,20 @@
 											<li>
 												<a href="#none">
 													<dl>
-														<dt class="title">장안매장</dt>
-														<dd class="operate"><span class="type02">운영준비중</span></dd>
+														<dt class="title">
+															<span class="type02">운영준비중</span>장안매장
+															<div class="flag">
+																<img src="../../img/icon/flag_icon01.png" alt="신규/이전">
+																<img src="../../img/icon/flag_icon02.png" alt="픽업가능">
+																<img src="../../img/icon/flag_icon03.png" alt="매장배송">
+																<img src="../../img/icon/flag_icon04.png" alt="신선육">
+															</div>
+														</dt>
 														<dd class="img-wrap">
 															<span>
 																<img src="../../img/temp/@temp_store03.jpg" alt="장안매장">
 															</span>
 														</dd>
-														<dd class="item">
-															<span class="type03">즉석빵<br>매장</span>
-														</dd>
 														<dd class="text">
 															<p>경기 수원시 영통구 센트럴파크로 127번길 170(이의동)
 																<span class="call">☎ 031-216-6916</span>
@@ -2170,19 +2201,19 @@
 											<li>
 												<a href="#none">
 													<dl>
-														<dt class="title">광교매장</dt>
-														<dd class="operate"><span class="type02">운영준비중</span></dd>
+														<dt class="title">
+															<span class="type02">운영준비중</span>광교매장
+															<div class="flag">
+																<img src="../../img/icon/flag_icon02.png" alt="픽업가능">
+																<img src="../../img/icon/flag_icon03.png" alt="매장배송">
+																<img src="../../img/icon/flag_icon04.png" alt="신선육">
+															</div>
+														</dt>
 														<dd class="img-wrap">
 															<span>
 																<img src="../../img/temp/@temp_store01.jpg" alt="광교매장">
 															</span>
 														</dd>
-														<dd class="item">
-															<span class="type01">신선육<br>매장</span>
-															<span class="type02">일요<br>매장</span>
-															<span class="type03">즉석빵<br>매장</span>
-															<span class="type04">즉석떡<br>매장</span>
-														</dd>
 														<dd class="text">
 															<p>경기 수원시 영통구 센트럴파크로 127번길 170(이의동)
 																<span class="call">☎ 031-216-6916</span>
@@ -2195,17 +2226,20 @@
 											<li>
 												<a href="#none">
 													<dl>
-														<dt class="title">영통매장</dt>
-														<dd class="operate"><span class="type03">운영마감</span></dd>
+														<dt class="title">
+															<span class="type03">운영마감</span>영통매장
+															<div class="flag">
+																<img src="../../img/icon/flag_icon01.png" alt="신규/이전">
+																<img src="../../img/icon/flag_icon02.png" alt="픽업가능">
+																<img src="../../img/icon/flag_icon03.png" alt="매장배송">
+																<img src="../../img/icon/flag_icon04.png" alt="신선육">
+															</div>
+														</dt>
 														<dd class="img-wrap">
 															<span>
 																<img src="../../img/temp/@temp_store02.jpg" alt="영통매장">
 															</span>
 														</dd>
-														<dd class="item">
-															<span class="type01">신선육<br>매장</span>
-															<span class="type02">일요<br>매장</span>
-														</dd>
 														<dd class="text">
 															<p>경기 수원시 영통구 센트럴파크로 127번길 170(이의동)
 																<span class="call">☎ 031-216-6916</span>
@@ -2218,15 +2252,16 @@
 											<li>
 												<a href="#none">
 													<dl>
-														<dt class="title">장안매장</dt>
-														<dd class="operate"><span class="type02">운영준비중</span></dd>
+														<dt class="title">
+															<span class="type02">운영준비중</span>장안매장
+															<div class="flag">
+																<img src="../../img/icon/flag_icon04.png" alt="신선육">
+															</div>
+														</dt>
 														<dd class="img-wrap">
 															<span>
 																<img src="../../img/temp/@temp_store03.jpg" alt="장안매장">
 															</span>
-														</dd>
-														<dd class="item">
-															<span class="type03">즉석빵<br>매장</span>
 														</dd>
 														<dd class="text">
 															<p>경기 수원시 영통구 센트럴파크로 127번길 170(이의동)
