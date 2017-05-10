@@ -1553,7 +1553,11 @@ table .good-table table th {padding:0;}
 	transition:all .3s;
 }
 
-.tab-content {display:none;padding:65px 60px;box-sizing:border-box;}
+.tab-content {
+	display:none;
+	padding:65px 0;
+	box-sizing:border-box;
+}
 .tab-content.on {display:block;}
 .tab-content.active {display:block;}
 
@@ -4910,10 +4914,10 @@ label.check-radio .radiobox {margin-right:8px;}
 .query-wrap .hint-layer .bullet-list1 .item {color:#666;}
 .query-wrap .hint-layer .btn-close {
 	position:absolute;
-	right:0;bottom:0;
+	right:0;top:0;
 	width:27px;
 	height:27px;
-	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
 	border-left:1px solid #ddd;
 	background:url(../img/btn/btn_x_11x11.png) no-repeat 50% 50%;
 	font-size:0;
@@ -5568,7 +5572,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .quality-list li {
 	position:relative;
 	float:left;
-	width:333px;
+	width:33%;
 	height:279px;
 	padding-top:140px;
 	box-sizing:border-box;
@@ -5576,6 +5580,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	text-align:center;
 }
 .quality-list li.item-quality01 {
+	width:34%;
 	border-right:0;
 	border-bottom:0;
 	border-top:0;
@@ -5590,6 +5595,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	border-top:0;
 }
 .quality-list li.item-quality04 {
+	width:34%;
 	height:307px;
 	border-right:0;
 }
@@ -5739,7 +5745,7 @@ label.check-radio .radiobox {margin-right:8px;}
 
 .test-result {
 	overflow:hidden;
-	width:998px;
+	width:100%;
 	height:433px;
 	margin:0 auto;
 	border:1px solid #e3e3e3;
@@ -5806,7 +5812,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .test-result .test {
 	float:right;
 	width:637px;
-	padding:0 40px;
+	padding:0 100px;
 }
 .test-result .test ul li {
 	position:relative;
