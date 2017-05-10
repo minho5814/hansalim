@@ -3065,7 +3065,7 @@ table .good-table table th {padding:0;}
 
 .btn-fixed {
 	position:relative;
-	display:block;
+	display:ㅑinline-block;
 	width:35px;
 	height:32px;
 	border:1px solid #bbb;
@@ -6218,18 +6218,29 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 .container.category .best .center .thumb-item1 {
 	border:none;
-	padding-bottom:135px
+	padding-bottom:155px
 }
 .container.category .best .center .name {
-	margin-top:65px;
+	margin-top:45px;
 	font-size:24px;
+	text-align: center;
 	text-overflow:ellipsis;
 	line-height:40px;
 	white-space:nowrap;
 }
-.container.category .best .center .price-btn {bottom:65px;}
-.container.category .best .center .price {font-size:24px;}
+/*.container.category .best .center .price-btn {bottom:65px;}*/
+.container.category .best .center .price {
+	width: 100%;
+	font-size:24px;
+	text-align: center;
+}
 .container.category .best .center .price .number {font-size:36px;}
+.container.category .best .center .price-btn .btn-area {
+	width:100%;
+	text-align: center;
+	margin-top:15px;
+}
+.container.category .best .center .price-btn .btn-area button {}
 .container.category .best .center .retail2 {
 	display:inline;
 	position:inherit;
@@ -6751,8 +6762,8 @@ label.check-radio .radiobox {margin-right:8px;}
 .list-group .list-title .date-area {
 	overflow:hidden;
 	display:inline-block;
-	margin-left:50px;
-	vertical-align:middle;
+	margin-right:30px;
+	padding-top:11px;
 }
 .list-group .list-title .date-area dt {float:left;}
 .list-group .list-title .date-area dd {
@@ -10269,12 +10280,6 @@ td .radish-bank-box span {display:block;}
 	overflow:hidden;
 	padding:23px 30px;
 	border-bottom:1px solid #ddd;
-}
-.date-box .adte-cont:nth-child(1){
-	background-color:#f7feed;
-}
-.date-box .adte-cont:nth-child(2){
-	background-color:#f7f7f7;
 }
 .date-box .adte-cont .btn-image {
 	margin-left:14px;
