@@ -13,12 +13,14 @@
 <!-- 퀵메뉴 -->
 <div class="quick-menu">
 	<div class="quick-list">
-		<div class="item item1 btn-popup"><span class="text">1:1문의</span></div>
+		<!--2017-05-10 : 1:1문의 버튼 위치 수정-->
 		<div class="btn-group">
-			<div class="item  item2"><span class="text">장바구니</span></div>
-			<div class="item  item3"><span class="text">관심물품</span></div>
-			<div class="item  item4"><span class="text">최근이력</span></div>
+			<div class="item item1"><span class="text">1:1문의</span></div>
+			<div class="item item2"><span class="text">장바구니</span></div>
+			<div class="item item3"><span class="text">관심물품</span></div>
+			<div class="item item4"><span class="text">최근이력</span></div>
 		</div>
+		<!--// 2017-05-10 : 1:1문의 버튼 위치 수정-->
 	</div>
 	<div class="btn-scroll-area">
 		<button type="button" class="btn-top">상단으로</button>
@@ -26,6 +28,59 @@
 	</div>
 
 	<div class="quick-menu-layer">
+		<!-- 2017-05-10 : 1:1 상담 추가 -->
+		<div class="quick-layer pop-consul">
+			<div class="head">
+				<h1 class="title">1:1상담</h1>
+				<button type="button" class="btn-close">닫기</button>
+			</div>
+			<div class="quick-cont mgB30">
+				<div class="board-write1 mgT10">
+					<table>
+						<colgroup>
+							<col style="width:170px;">
+							<col style="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row"><div class="text">제목</div></th>
+								<td><input type="text" placeholder="제목을 입력하세요." style="width:100%;"></td>
+							</tr>
+							<tr>
+								<th scope="row"><div class="text">상담유형</div></th>
+								<td>
+									<div class="secede-group">
+										<label class="item" for="consul1"><input type="radio" id="consul1" name="consul" class="styled1" checked>물품주문</label>
+										<label class="item" for="consul2"><input type="radio" id="consul2" name="consul" class="styled1">물품공급</label>
+										<label class="item" for="consul3"><input type="radio" id="consul3" name="consul" class="styled1">물품대금</label>
+										<label class="item" for="consul4"><input type="radio" id="consul4" name="consul" class="styled1">물품상담</label>
+										<label class="item" for="consul5"><input type="radio" id="consul5" name="consul" class="styled1">물품 기타문의</label>
+									</div>
+									<div class="secede-group">
+										<label class="item" for="consul6"><input type="radio" id="consul6" name="consul" class="styled1">조합원정보</label>
+										<label class="item" for="consul7"><input type="radio" id="consul7" name="consul" class="styled1">기타 건의사항</label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><div class="text">상담내용</div></th>
+								<td>
+									<div class="write-box">
+										<textarea id="text-write" maxlength="500" placeholder="내용을 입력하세요."></textarea>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btn-center">
+					<a href="#" class="btn-text btn-gray">취소</a>
+					<a href="#" class="btn-text btn-green mgL10">확인</a>
+				</div>
+			</div>
+		</div>
+		<!--// 2017-05-10 : 1:1 상담 추가 -->
+
 		<!-- 장바구니 -->
 		<div class="quick-layer">
 			<div class="head">
@@ -308,7 +363,7 @@
 			</div>
 			<div class="bottom align-center">
 				<button type="button" class="btn-order2 btn-popup btn-pop-order"><span class="text">간편주문</span></button>
-				<a href="im/sh/IM-SH01.html" class="btn-cart4 mgL5"><span class="text">장바구니 담기</span></a>
+				<a href="im/sh/IM-SH01.html" class="btn-cart4 mgL5"><span class="text">장바구니</span></a>
 			</div>
 		</div>
 
@@ -2694,7 +2749,7 @@
 
 
 <!-- 퀵메뉴 레이어 팝업 영역 -->
-<!-- 1:1 상담 -->
+<!-- 1:1 상담 2017-05-10 삭제
 <div class="layer-popup pop-consul">
 	<div class="pop-head">
 		<h1 class="pop-title">1:1상담</h1>
@@ -2745,6 +2800,7 @@
 		</div>
 	</div>
 </div>
+-->
 
 <!-- 간편주문 -->
 <div class="layer-popup pop-order">

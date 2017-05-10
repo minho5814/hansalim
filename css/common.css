@@ -347,7 +347,7 @@ button {outline:0;vertical-align:top;}
 .quick-menu-layer {}
 .quick-layer {
 	position:absolute;
-	left:-676px;top:-50px;
+	left:-676px;top:0;
 	width:680px;
 	box-sizing:border-box;
 	border:1px solid #559b13;
@@ -358,7 +358,7 @@ button {outline:0;vertical-align:top;}
 	left:-443px;
 	width:447px;
 }
-.quick-layer:before {
+/*.quick-layer:before {
 	content:'';
 	position:absolute;
 	left:-4px;top:-1px;bottom:0;
@@ -372,7 +372,7 @@ button {outline:0;vertical-align:top;}
 	height:4px;
 	background-color:rgba(0,0,0,.25);
 }
-
+*/
 .quick-menu-layer .head {
 	position:relative;
 	height:50px;
@@ -9815,21 +9815,12 @@ td .radish-bank-box span {display:block;}
 }
 .new-cooking-item {
 	overflow:hidden;
-	position:relative;
 	min-height:156px;
 	margin-top:20px;
 	padding:34px 24px 34px 34px;
 	background-color:#fff;
 }
 .new-cooking-item:first-child {margin-top:0;}
-.new-cooking-item:before,
-.new-cooking-item:after {
-	content:'';
-	position:absolute;
-	border:1px solid #ebebeb;
-}
-.new-cooking-item:before {left:10px;right:10px;top:10px;bottom:10px;}
-.new-cooking-item:after {left:13px;right:13px;top:13px;bottom:13px;}
 	.new-cooking-item .left-cont {
 		float:left;
 		position:relative;
@@ -9958,7 +9949,7 @@ td .radish-bank-box span {display:block;}
 		}
 		.chief-cooking-area .slide-item .menual-area {
 			position:absolute;
-			right:30px;top:30px;
+			left:30px;top:30px;
 			width:360px;
 			padding:37px 20px 38px 30px;
 			box-sizing:border-box;
@@ -11347,15 +11338,16 @@ td .radish-bank-box span {display:block;}
 }
 
 /* 1:1 상담 팝업 */
-.pop-consul {width:900px;}
-.pop-consul .pop-content .board-write1 td .write-box {
+.pop-consul {width:900px; left:-896px}
+
+.pop-consul .quick-cont .board-write1 td .write-box {
 	position:relative;
 	width:100%;
 	height:200px;
 	border:1px solid #bbb;
 	box-sizing:border-box;
 }
-.pop-consul .pop-content .board-write1 td .write-box textarea {
+.pop-consul .quick-cont .board-write1 td .write-box textarea {
 	width:100%;
 	height:100%;
 	resize:none;
@@ -11748,7 +11740,7 @@ td .radish-bank-box span {display:block;}
 }
 .recipe-box.box1 .recipe-list li {
 	text-indent:-15px;
-	margin:0 0 15px 10px;
+	margin:0 0 10px 10px;
 }
 .recipe-box.box1 .text-area {}
 .recipe-box.box1 .text-area:before {
@@ -11988,7 +11980,7 @@ td .radish-bank-box span {display:block;}
 .campaign-list li:before {
 	content:'';
 	position:absolute;
-	left:-1px;
+	left:5px;
 	top:-5px;
 	width:52px;
 	height:40px;
@@ -12140,7 +12132,7 @@ td .radish-bank-box span {display:block;}
 	.my-campaign li .inner-box:before {
 		content:'';
 		position:absolute;
-		left:-1px;
+		left:5px;
 		top:-5px;
 		width:52px;
 		height:40px;
@@ -12263,11 +12255,12 @@ td .radish-bank-box span {display:block;}
 .sub-cont.campaign .symbol-item {top:37px;right:70px;}
 .campaign .view-area {
 	position:relative;
+	padding:40px;
 }
 .campaign .view-area:before {
 	content:'';
 	position:absolute;
-	left:-1px;
+	left:5px;
 	top:-5px;
 	width:52px;
 	height:40px;
