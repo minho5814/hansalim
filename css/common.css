@@ -628,19 +628,15 @@ html {
 .ui-datepicker-calendar td:first-child a {color:#f56d24;}
 .ui-datepicker-calendar .ui-state-disabled {color:#999;}
 .ui-datepicker-calendar td a {
-	display:inline-block;
-	width:25px;
-	height:25px;
-	padding-right:5px;
+	display:block;
+	height:30px;
 	box-sizing:border-box;
-	border-radius:50%;
-	text-align:right;
-	line-height:24px;
+	line-height:30px;
 }
 .ui-datepicker-calendar .ui-datepicker-today a {
 	border-radius:0;
-	border:1px solid #ccc;
-	line-height:23px;
+	border:1px solid #91c90b;
+	line-height:28px;
 }
 
 .pop-calender {
@@ -677,10 +673,9 @@ html {
 	content:'';
 	position:absolute;
 	left:0;top:50%;
-	width:10px;
-	height:10px;
-	margin-top:-5px;
-	border-radius:50%;
+	width:12px;
+	height:12px;
+	margin-top:-6px;
 	background-color:#91c90b;
 }
 .pop-calender .calender-info .list .text:first-child:before {background-color:#e3e3e3;}
