@@ -7655,6 +7655,13 @@ td .radish-bank-box span {display:block;}
 	font-size:18px;
 	font-weight:900;
 }
+.goods-item2 .text-area .retail{
+	text-decoration: line-through;
+	display: block;
+	color: #999;
+	font-size: 13px;
+	line-height: 13px;
+}
 
 .goods-item2 .count-area {
 	border-top:1px solid #ddd;
