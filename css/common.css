@@ -13141,7 +13141,7 @@ td .radish-bank-box span {display:block;}
 		text-indent:-9999px;
 		line-height:0;
 	}
-	.improve-box.type2 .bx-controls-direction a {top:100px;}
+	.improve-box.type2 .bx-controls-direction a {top:150px;}
 	.improve-box .bx-prev {
 		left:0;
 		background-image:url(../img/btn/btn_bx_prev01.png);
@@ -13264,6 +13264,58 @@ td .radish-bank-box span {display:block;}
 		.improve-list3 li .name .date {
 			display:block;
 		}
+
+
+ .noty-title-wrap .cTitle4 {
+	line-height:18px;
+	margin-top:5px;
+}
+ .noty-title-wrap  .bullet-list1 {
+	margin:20px 0 40px;
+}
+ .noty-title-wrap  .bullet-list1 .item {
+	font-size: 15px;
+	color: #666;
+	line-height: 24px;
+	padding:0 0 0 11px;
+}
+ .noty-title-wrap  .bullet-list1 .item::before{top:10px;}
+
+.improve-box.type1 .board-lsit td.title {
+	padding-left:25px;
+}
+.improve-box.type1 .board-lsit td.title a {
+	max-height: 48px;
+}
+.improve-box.type1 .board-lsit td {
+	position:relative;
+}
+
+.improve-box.type1 .board-lsit td .link {
+	display:block;
+}
+
+.improve-box.type1 .board-lsit td .img-area {
+		width:100px;
+		height:100px;
+		margin:0 auto;
+		box-sizing:border-box;
+		border:1px solid #ddd;
+		font-size:0;
+		line-height:0;
+	}
+.improve-box.type1 .board-lsit td.img-area img {width:100%;}
+.improve-box.type1 .board-lsit td .text-area {
+	position:relative;
+}
+.improve-box.type1 .board-lsit td .text-area .name {
+	overflow:hidden;
+	max-height:36px;
+	color:#666;
+	font-size:14px;
+	line-height:18px;
+	margin-top:10px;
+}
 
 /* 방사능 검사 */
 .radiation-area {}
