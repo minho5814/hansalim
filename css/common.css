@@ -10386,6 +10386,14 @@ td .radish-bank-box span {display:block;}
 	font-size:15px;
 	color:#666;
 }
+/*특별품 주문일정 */
+.float-area.special .util {
+	margin:0;
+	padding-top:12px;
+}
+.float-area.special .util .date {font-size:14px; font-weight: bold;}
+	.float-area.special .util .date em {color:#000;}
+
 /* 새로 공급한 물품 이용후기 */
 .review-area {
 	position:relative;
