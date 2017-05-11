@@ -4405,6 +4405,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	background-color:#fff;
 }
 .footer.gray:before {background-color:#eee;}
+.footer.gray2:before {background-color:#f2efe8;}
 .footer .utill {
 	border-top:1px solid #999;
 	border-bottom:1px solid #ddd;
