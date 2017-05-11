@@ -337,6 +337,10 @@ $(window).load(function(){
 		$(this).addClass('on').siblings('li').removeClass('on');
 	});
 
+	$('.test-tab li button').click(function(){
+		var idx = $(this).parents('li').index();
+		$('.test-tab li').removeClass('on').eq(idx).addClass('on');
+	});
 	/* ===========================================================================================================
 		상품상세 faq
 	=========================================================================================================== */
