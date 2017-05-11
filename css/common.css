@@ -12437,6 +12437,7 @@ td .radish-bank-box span {display:block;}
 	line-height:26px;
 }
 .campaign  .campaign-txt {
+	min-height:78px;
 	margin-top:23px;
 	font-size:15px;
 	color:#666;
