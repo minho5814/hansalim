@@ -1586,8 +1586,13 @@ table .good-table table th {padding:0;}
 
 .tab-content {
 	display:none;
-	padding:65px 0;
+	padding:65px 60px;
 	box-sizing:border-box;
+}
+.tab-content.goods-view {
+	border:1px solid #eee;
+	border-top:0;
+	box-sizing: border-box;
 }
 .tab-content.on {display:block;}
 .tab-content.active {display:block;}
@@ -1961,14 +1966,14 @@ table .good-table table th {padding:0;}
 .thumb-slide2.campaign:after {content:'';display:block;clear:both;}
 .thumb-slide2.campaign .img-area {
 	float:left;
-	width:745px;
+	width:705px;
 	height:198px;
 }
 .thumb-slide2.campaign .slide-item .img-area img {width:100%}
 .thumb-slide2.campaign .campaign-info {
 	position:relative;
 	float:right;
-	width:372px;
+	width:413px;
 	height:158px;
 	margin:20px 0;
 	padding:25px 51px 19px 51px;
@@ -2528,6 +2533,11 @@ table .good-table table th {padding:0;}
 	font-size:14px;
 	line-height:32px;
 }
+.btn-basic-text.btn-white {
+	background-color:#fff;
+	color:#666;
+	border:1px solid #e3e3e3;
+}
 .btn-basic-text.btn-green {
 	background-color:#60b015;
 	color:#fff;
@@ -2541,6 +2551,11 @@ table .good-table table th {padding:0;}
 .btn-basic-text.btn-gray2 {
 	border:1px solid #777;
 	background-color:#777;
+	color:#fff;
+}
+.btn-basic-text.btn-gray3 {
+	border:1px solid #666;
+	background-color:#666;
 	color:#fff;
 }
 
@@ -5968,10 +5983,11 @@ label.check-radio .radiobox {margin-right:8px;}
 .test-result {
 	overflow:hidden;
 	width:100%;
-	height:433px;
+	height:513px;
 	margin:0 auto;
 	border:1px solid #e3e3e3;
 	border-top:1px solid #666;
+	box-sizing: border-box;
 }
 .test-result .test-term {
 	float:left;
@@ -6034,15 +6050,40 @@ label.check-radio .radiobox {margin-right:8px;}
 .test-result .test {
 	float:right;
 	width:637px;
-	padding:0 100px;
+	padding-right:39px;
 }
-.test-result .test ul li {
+.test-result .test .test-tab {
+	overflow:hidden;
+	margin-top:35px;
+}
+.test-result .test .test-tab li {
+	float:left;
+	margin:0 6px 6px 0;
+}
+.test-result .test .test-tab li button {
+	display: inline-block;
+	width:176px;
+	height: 37px;
+	padding: 0 13px;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 37px;
+	background-color:#fff;
+	color:#666;
+	border:1px solid #e3e3e3;
+}
+.test-result .test .test-tab li.on button {
+	background-color:#666;
+	color:#fff;
+	border:1px solid #666;
+}
+.test-result .test .graph li {
 	position:relative;
 	height:144px;
 	border-top:1px solid #ddd;
 }
-.test-result .test ul li:first-child {border-top:0;}
-.test-result .test ul li .item {
+.test-result .test .graph li:first-child {border-top:0;}
+.test-result .test .graph li .item {
 	display:inline-block;
 	width:120px;
 	line-height:144px;
@@ -6050,13 +6091,13 @@ label.check-radio .radiobox {margin-right:8px;}
 	font-weight:bold;
 	color:#000;
 }
-.test-result .test ul li .percent {
+.test-result .test .graph li .percent {
 	position:absolute;
 	top:70px;right:0;
 	padding:0 4px;
 }
-.test-result .test ul li .percent img {vertical-align:top;}
-.test-result .test ul li .percent .result {
+.test-result .test .graph li .percent img {vertical-align:top;}
+.test-result .test .graph li .percent .result {
 	position:absolute;
 	top:-39px;
 	padding:0 10px;
@@ -6067,7 +6108,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	border:1px solid #60b015;
 	border-radius:3px 3px 3px 0;
 }
-.test-result .test ul li .percent .result:before {
+.test-result .test .graph li .percent .result:before {
 	content:'';
 	display:block;
 	position:absolute;
@@ -6075,7 +6116,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	width:8px;height:9px;
 	background:url(../img/img/img_bubble.png) 0 0 no-repeat;
 }
-.test-result .test ul li .percent .num span {
+.test-result .test .graph li .percent .num span {
 	position:absolute;
 	font-size:14px;
 	color:#000;
