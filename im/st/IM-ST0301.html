@@ -849,10 +849,17 @@
 			<div class="sub-cont store">
 				<div class="view-area">
 					<div class="title-area">
-						<p class="cTitle1">대치매장</p>
+						<!-- 2017-05-11 : 구조변경 -->
+						<div class="title-text">
+							<p class="cTitle1">대치매장</p>
+							<span class="type01">운영중</span>
+						</div>
+						<!--// 2017-05-11 : 구조변경 -->
 						<div class="util">
 							<ul>
-								<li><a href="#" class="btn-round-text btn-orange">단골</a></li>
+								<!--2017-05-11 : 단골 버튼 변경 -->
+								<li><button type="button" class="regular on">단골</button></li>
+								<!--// 2017-05-11 : 단골 버튼 변경 -->
 								<li>
 									<button type="button" class="btn-image btn-use">공유</button>
 									<div class="sns-box">
@@ -887,8 +894,9 @@
 						</div>
 						<div class="table-area">
 							<ul class="store-info">
-								<li class="top">
-									<p>한살림 <em class="fColor7 fbold">대치매장</em>은 현재 <span class="type01">운영중</span> 입니다.</p> <!--type02:운영준비중, type03:운영마감-->
+								<!-- 2017-05-11 : 영역삭제
+									<li class="top">
+									<p>한살림 <em class="fColor7 fbold">대치매장</em>은 현재  입니다.</p>
 									<span class="flag">
 										<img src="../../img/icon/flag_icon01.png" alt="신규/이전 매장">
 										<img src="../../img/icon/flag_icon02.png" alt="매장 픽업">
@@ -896,6 +904,18 @@
 										<img src="../../img/icon/flag_icon04.png" alt="신선육 매장">
 									</span>
 								</li>
+							 	-->
+								<!--2017-05-11 : 심볼정보 추가 -->
+								<li>
+									<span class="title">특성</span>
+									<div class="txt store-list">
+										<span class="type01">신규/이전</span>
+										<span class="type02">픽업가능</span>
+										<span class="type03">매장배송</span>
+										<span class="type04">신선육</span>
+									</div>
+								</li>
+								<!--// 2017-05-11 : 심볼정보 추가 -->
 								<li>
 									<span class="title">주소</span>
 									<span class="txt">강남구 삼성로51길 (대치동 611) 카이로스빌딩 104호, 105호<br>구대한신학서울  위치</span>
@@ -1612,6 +1632,11 @@ $(window).load(function(){
 		$(this).next('.word-box').show();
 	}).focusout(function(){
 		$(this).next('.word-box').hide();
+	});
+
+	/*2017-05-11 : 버튼 on/off 추가*/
+	$('.regular').click(function(){
+		$(this).toggleClass('on');
 	});
 });
 </script>
