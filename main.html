@@ -462,7 +462,7 @@
 			<div class="gnb">
 				<button type="button" class="btn-menu">메뉴</button>
 				<ul class="gnb-list">
-					<li class="gnb-item item1"><a href="main.html" class="link">홈</a></li>
+					<li class="gnb-item item1"><a href="main.html" class="link on">홈</a></li> <!-- 2017-05-10 : 클래스 on 추가 -->
 					<li class="gnb-item item2"><a href="im/fo/IM-FO0101.html" class="link">요리</a></li>
 					<li class="gnb-item item3"><a href="im/st/MW_ST0101.html" class="link">매장</a></li>
 					<li class="gnb-item item4"><a href="im/ca/IM-CA0101.html" class="link">캠페인</a></li>
@@ -1343,42 +1343,42 @@
 						<li class="slide-item">
 							<a href="im/pd/IM-PD030102.html" class="link">
 								<div class="img-area"><img src="img/temp/img_theme05.jpg" alt="배경이미지"></div>
-								<p class="text">재철물품</p>
+								<p class="text">제철물품</p>
 							</a>
 						</li>
 					</ul>
 				</div>
 				<!-- 서브브랜드 -->
-				<div class="category-slide">
+				<div class="category-slide brand"> <!--2017-05-10 : 클래스추가(brand)-->
 					<ul class="bxslider">
 						<li class="slide-item">
 							<a href="im/pd/IM-PD040102.html" class="link">
-								<div class="img-area"><img src="img/temp/img_brand01.jpg" alt="배경이미지"></div>
+								<div class="img-area"><img src="img/temp/img_brand01.png" alt="배경이미지"></div> <!--2017-05-10 :이미지 확장자 수정 jpg->png -->
 							</a>
 						</li>
 						<li class="slide-item">
 							<a href="im/pd/IM-PD040102.html" class="link">
-								<div class="img-area"><img src="img/temp/img_brand02.jpg" alt="배경이미지"></div>
+								<div class="img-area"><img src="img/temp/img_brand02.png" alt="배경이미지"></div> <!--2017-05-10 :이미지 확장자 수정 jpg->png -->
 							</a>
 						</li>
 						<li class="slide-item">
 							<a href="im/pd/IM-PD040102.html" class="link">
-								<div class="img-area"><img src="img/temp/img_brand03.jpg" alt="배경이미지"></div>
+								<div class="img-area"><img src="img/temp/img_brand03.png" alt="배경이미지"></div> <!--2017-05-10 :이미지 확장자 수정 jpg->png -->
 							</a>
 						</li>
 						<li class="slide-item">
 							<a href="im/pd/IM-PD040102.html" class="link">
-								<div class="img-area"><img src="img/temp/img_brand04.jpg" alt="배경이미지"></div>
+								<div class="img-area"><img src="img/temp/img_brand04.png" alt="배경이미지"></div> <!--2017-05-10 :이미지 확장자 수정 jpg->png -->
 							</a>
 						</li>
 						<li class="slide-item">
 							<a href="im/pd/IM-PD040102.html" class="link">
-								<div class="img-area"><img src="img/temp/img_brand05.jpg" alt="배경이미지"></div>
+								<div class="img-area"><img src="img/temp/img_brand05.png" alt="배경이미지"></div> <!--2017-05-10 :이미지 확장자 수정 jpg->png -->
 							</a>
 						</li>
 						<li class="slide-item">
 							<a href="im/pd/IM-PD040102.html" class="link">
-								<div class="img-area"><img src="img/temp/img_brand06.jpg" alt="배경이미지"></div>
+								<div class="img-area"><img src="img/temp/img_brand06.png" alt="배경이미지"></div> <!--2017-05-10 :이미지 확장자 수정 jpg->png -->
 							</a>
 						</li>
 					</ul>
@@ -2948,17 +2948,20 @@
 <div class="popup-notice">
 	<div class="inner">
 		<p class="user-name"><span class="name">홍길동</span> 조합원님,</p>
+		<!-- 2017-05-10 :span 태그 추가, 줄바꿈 수정-->
 		<div class="text">
-			2017년 03월 10일에 구입하신 물품 중<br>
+			<span class="fColor1">2017년 03월 10일</span>에 구입하신 물품 중<br>
 			이용후기 미등록 물품이 있습니다.<br>
-			다른 조합원들께 도움이 될 수 있는<br>
-			물품후기 등록 부탁드립니다.
+			다른 조합원들께 도움이 될 수 있는 물품후기<br>
+		 	등록 부탁드립니다.
 		</div>
-		<p class="ps">※ 알림서비스는 1회 알림 후 자동으로 해제됩니다</p> <!-- 2017-05-10 :태그 추가-->
-		<div class="btn-area">
-			<a href="#" class="btn-link">바로가기</a>
-			<label><input type="checkbox" class="styled1">그만보기</label>
+		<!--// 2017-05-10 :span 태그 추가, 줄바꿈 수정--->
+		<!-- 2017-05-10 : 클래스 수정 및 태그추가-->
+		<div class="btn-right">
+			<a href="#" class="btn-mini-text btn-icon">바로가기</a>
 		</div>
+		<p class="ps">※ 알림서비스는 1회 알림 후 자동으로 해제됩니다.</p>
+		<!--// 2017-05-10 : 클래스 수정 및 태그추가-->
 	</div>
 	<button type="button" class="btn-close">닫기</button>
 </div>

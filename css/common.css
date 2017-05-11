@@ -1426,11 +1426,9 @@ table .good-table table th {padding:0;}
 	background-color:rgba(70, 69, 68, .6);
 	text-align:center;
 	z-index:10;
-
 	/*-ms-transform:translateX(-50%);
 	-webkit-transform:translateX(-50%);
 	transform:translateX(-50%);*/
-
 }
 .thumb-list4 .thumb-item  .sup-stop span {
 	font-size:15px;
@@ -3909,19 +3907,36 @@ label.check-radio .radiobox {margin-right:8px;}
 	line-height:0;
 }
 .gnb-list {
-	overflow:hidden;
 	padding-left:58px;
+}
+.gnb-list:after {
+	color: '';
+	display: block;
+	clear: both;
 }
 .gnb-item {float:left;}
 .gnb .gnb-item .link {
+	position: relative;
 	display:inline-block;
 	height:47px;
-	padding:0 35px 0 30px;
+	margin:0 25px 0 20px;
+	padding:0 10px;
 	color:#333;
 	font-size:18px;
 	font-weight:bold;
 	line-height:49px;
 	font-family:ns;
+	box-sizing: border-box;
+}
+
+.gnb .gnb-item .link:hover:before,
+.gnb .gnb-item .link.on:before {
+	content:'';
+	position: absolute;
+	bottom:-1px;
+	left:0;
+	width:100%;
+	border-bottom:3px solid #60b015;
 }
 
 .gnb .my-menu {
@@ -13385,7 +13400,7 @@ td .radish-bank-box span {display:block;}
 	position:fixed;
 	right:-4px;bottom:-9999px;
 	z-index:550;
-	width:286px;
+	width:300px;
 	padding:4px;
 	border-radius:5px;
 	background-color:rgba(0,0,0,.2);
@@ -13408,14 +13423,10 @@ td .radish-bank-box span {display:block;}
 	padding:0 20px 0 25px;
 	color:#666;
 	font-size:15px;
-	line-height:24px;
+	line-height:20px;
+	letter-spacing: -1px;
 }
-.popup-notice .btn-area {
-	overflow:hidden;
-	/*margin-top:20px;*/
-	padding:9px 25px;
-	border-top:1px solid #ddd;
-}
+.popup-notice .btn-right {	padding:5px 20px 15px;}
 .popup-notice .btn-area .btn-link {float:left;}
 .popup-notice .btn-area label {float:right;}
 .popup-notice .btn-close {
@@ -13428,7 +13439,12 @@ td .radish-bank-box span {display:block;}
 	text-indent:-9999px;
 	line-height:0;
 }
-.popup-notice .ps {padding:5px 20px 15px 20px; font-size: 12px;}
+.popup-notice .ps {
+	border-top:1px solid #ddd;
+	padding:12px;
+	font-size: 13px;
+	text-align: center;
+}
 .popup-notice {}
 .popup-notice {}
 
