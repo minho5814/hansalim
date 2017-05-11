@@ -854,40 +854,17 @@
 			</div>
 		</div>
 
-		<!-- 2017-04-07 content gray first - > content first 로 변경 -->
-		<div class="content first">
-		<!-- //2017-04-07 content gray first - > content first 로 변경 -->
-			<div class="content-w1120">
-				<div class="align-center">
+		<!--2017-05-11 : 전체 수정 (기존 <div class="content first"> 영역은 전체 삭제. 현 div는 으뜸물품 컨텐츠 영역으로 상단 베너가 삭제됨에 따라 첫번째 div에서 타이틀 영역만 가져옴.)-->
+		<div class="content first pdB0">
+			<div class="content-w1120 pdT15">
+				<div class="align-center mgB45">
 					<h2 class="cTitle1">멥쌀/찹쌀</h2>
 				</div>
-
-				<!--배너 이미지 개수와  goods-slide-pager의 개수를 맞춰준 뒤 goods-slide-pager의 클래스를 추가해준다 -->
-				<!-- 2017-04-07 goods-banner - > goods-banner mgT20 로 변경 -->
-				<div class="goods-banner mgT20">
-				<!-- //2014-04-07 goods-banner - > goods-banner mgT20 로 변경 -->
-					<ul class="goods-slide">
-						<li><img src="../../img/temp/@temp_category1.jpg" alt="temp1"></li>
-						<li><img src="../../img/temp/@temp_category2.jpg" alt="temp2"></li>
-						<li><img src="../../img/temp/@temp_category1.jpg" alt="temp1"></li>
-						<li><img src="../../img/temp/@temp_category2.jpg" alt="temp2"></li>
-						<li><img src="../../img/temp/@temp_category1.jpg" alt="temp1"></li>
-					</ul>
-					<div class="goods-slide-pager five">
-						<a data-slide-index="0" href="" class="goods-pager01"><span>신선한 햅쌀</span></a>
-						<a data-slide-index="1" href="" class="goods-pager02"><span>금주 양곡 행사</span></a>
-						<a data-slide-index="2" href="" class="goods-pager04"><span>친환경 양곡 대전</span></a>
-						<a data-slide-index="3" href="" class="goods-pager05"><span>한살림 쌀</span></a>
-						<a data-slide-index="4" href="" class="goods-pager01"><span>프리미엄 친환경 쌀</span></a>
-					</div>
+				<!-- 2017-05-11 : 타이틀영역 수정 -->
+				<div class="title-through">
+					<h3 class="cTitle3"><em>조합원이 선택한</em> 으뜸물품</h3>
 				</div>
-			</div>
-		</div>
-		<div class="content pdT60">
-			<div class="content-w1120">
-				<div class="title-wrap align-left">
-					<h3 class="cTitle3">으뜸 물품</h3>
-				</div>
+				<!--// 2017-05-11 : 타이틀영역 수정 -->
 				<div class="result-wrap mgT15">
 					<div class="result-bottom result-block best">
 						<div class="left-area">
@@ -974,6 +951,7 @@
 				</div>
 			</div>
 		</div>
+		<!--2017-05-11 : 전체 수정 (기존 <div class="content first"> 영역은 전체 삭제. 현 div는 으뜸물품 컨텐츠 영역으로 상단 베너가 삭제됨에 따라 첫번째 div에서 타이틀 영역만 가져옴.)-->
 		<div class="content">
 			<div class="content-w1120">
 				<div class="filter-wrap">
@@ -1246,7 +1224,7 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-	/*슬라이드 */
+	/*슬라이드 스크립트 삭제
 	$('.goods-slide').bxSlider({
 		mode:'fade',
 		auto:true,
@@ -1257,6 +1235,7 @@ $(window).load(function(){
 		controls:true,
 		autoControls: true,
 	});
+	*/
 });
 </script>
 </body>
