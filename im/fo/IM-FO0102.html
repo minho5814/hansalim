@@ -848,8 +848,12 @@
 				<input type="text" placeholder="요리/재료명을 입력해주세요">
 				<button type="button" class="btn-keyword">키워드검색</button>
 			</div>
-
-			<div class="filter-wrap2-title">한살림 요리 조건 검색</div>
+			<!-- 2017-05-11 : 구조 변경 및 버튼 추가 -->
+			<div class="filter-wrap2-title">
+				<h3 class="title">한살림 요리 조건 검색</h3>
+				<button type="button" class="btn-mini-text btn-all-check">전체선택</button>
+			</div>
+			<!-- //2017-05-11 : 구조 변경 및 버튼 추가 -->
 			<div class="filter-wrap2">
 				<div class="check-area">
 					<p class="title">종류별</p>
@@ -924,32 +928,23 @@
 						<li><label><input type="checkbox" class="styled1"><span class="text">가공식품</span></label></li>
 					</ul>
 				</div>
+				<!-- 2017-05-11 : 선택조건 영역 추가 -->
 				<div class="select-area">
-					<p class="title">선택조건 <span class="fColor3">3</span>개</p>
-					<div class="list-area-wrap">
-						<div class="list-area">
-							<ul>
-								<li>라면/간편조리 <button type="button" class="btn-delete">삭제</button></span></li>
-								<li>국수/면 <button type="button" class="btn-delete">삭제</button></span></li>
-								<li>일반공급 <button type="button" class="btn-delete">삭제</button></span></li>
-								<li>일반공급 <button type="button" class="btn-delete">삭제</button></span></li>
-								<li>일반공급 <button type="button" class="btn-delete">삭제</button></span></li>
-								<li>일반공급 <button type="button" class="btn-delete">삭제</button></span></li>
-								<li>일반공급 <button type="button" class="btn-delete">삭제</button></span></li>
-								<li>일반공급 <button type="button" class="btn-delete">삭제</button></span></li>
-								<li>일반공급 <button type="button" class="btn-delete">삭제</button></span></li>
-								<li>일반공급 <button type="button" class="btn-delete">삭제</button></span></li>
-								<li>일반공급 <button type="button" class="btn-delete">삭제</button></span></li>
-								<li>일반공급 <button type="button" class="btn-delete">삭제</button></span></li>
-								<li>일반공급 <button type="button" class="btn-delete">삭제</button></span></li>
-								<li>일반공급 <button type="button" class="btn-delete">삭제</button></span></li>
-							</ul>
-							<div class="reset-area">
-								<button type="button" class="btn-reset">초기화</button>
-							</div>
+					<p class="title">선택조건 <span class="fColor3">0</span>개</p> <!-- 2017-05-10 : 문구수정 -->
+					<div class="list-area">
+						<ul>
+							<li>볶음 <button type="button" class="btn-delete">삭제</button></span></li>
+							<li>손님접대 <button type="button" class="btn-delete">삭제</button></span></li>
+							<li>채소류 <button type="button" class="btn-delete">삭제</button></span></li>
+							<li>버섯류 <button type="button" class="btn-delete">삭제</button></span></li>
+						</ul>
+						<div class="reset-area">
+							<button type="button" class="btn-reset">초기화</button>
 						</div>
 					</div>
+					<button type="button" class="btn-text btn-green">조건검색</button>
 				</div>
+				<!-- // 2017-05-11 : 선택조건 영역 추가 -->
 			</div>
 		</div>
 
@@ -1235,6 +1230,14 @@
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	/* 2017-05-11 : 전체선택 버튼 */
+	$('.btn-all-check').click(function(){
+		$('.filter-wrap2 .check-area').find('input').prop('checked', true).parents('.checkbox').addClass('checked');
+	});
+});
+</script>
 </body>
 
 </html>

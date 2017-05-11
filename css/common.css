@@ -8190,15 +8190,23 @@ td .radish-bank-box span {display:block;}
 /*.search-area .search-box.focus .btn-search {background-position:0 -1077px;}*/
 
 .filter-wrap2-title {
+	position:relative;
 	height:59px;
 	padding-left:35px;
 	border:1px solid #bbb;
 	border-bottom:0;
+}
+.filter-wrap2-title .title {
+	display:inline-block;
 	color:#000;
 	font-size:18px;
 	font-weight:bold;
 	line-height:59px;
 	font-family:ns;
+}
+.filter-wrap2-title .btn-all-check {
+	position:absolute;
+	right:20px; top:16px;
 }
 .filter-wrap2 {
 	border:1px solid #ddd;
@@ -8248,8 +8256,8 @@ td .radish-bank-box span {display:block;}
 
 .filter-wrap2 .select-area {
 	position:relative;
-	min-height:0;
-	padding:0 0 0 180px !important;
+	min-height:83px;
+	padding:25px 180px !important;
 	border-top:0;
 }
 .filter-wrap2 .select-area .title {
@@ -8298,6 +8306,15 @@ td .radish-bank-box span {display:block;}
 	font-size:15px;
 	text-align:center;
 	line-height:50px;
+}
+.filter-wrap2 .select-area .btn-text {
+	position:absolute;
+	right:40px; top:50%;
+	min-width:115px;
+	padding:0;
+	transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
 }
 
 /*.order-list {margin:15px 0;}*/
