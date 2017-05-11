@@ -870,6 +870,7 @@
 					</ul>
 				</div>
 				<!--배너 이미지 개수와  goods-slide-pager의 개수를 맞춰준 뒤 goods-slide-pager의 클래스를 추가해준다 -->
+				<!-- 2017-05-11 :배너 삭제
 				<div class="goods-banner">
 					<ul class="goods-slide">
 						<li><img src="../../img/temp/@temp_category1.jpg" alt="temp1"></li>
@@ -886,9 +887,10 @@
 						<a data-slide-index="4" href="" class="goods-pager01"><span>프리미엄 친환경 쌀</span></a>
 					</div>
 				</div>
+				-->
 			</div>
 		</div>
-		<div class="content pdT60">
+		<div class="content pdT20"> <!-- 2017-05-11 : 클래스변경 (pdT60 -> pdT20)-->
 			<div class="content-w1120">
 				<div class="title-through">
 					<h3 class="cTitle3"><em>담당자가 주목한</em> 관심! 이 물품</h3> <!-- 2017-05-10 : 문구수정 -->
@@ -1421,17 +1423,18 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-	/*슬라이드 */
+	/*2017-05-11 :슬라이드 스크립트 삭제
 	$('.goods-slide').bxSlider({
 		mode:'fade',
 		auto:true,
 		pager: true,
 		pagerCustom: '.goods-slide-pager',
-		speed:500, // Slide Speed (default:500)
+		speed:500,
 		slideWidth: 1120,
 		controls:true,
 		autoControls: true,
 	});
+	*/
 });
 </script>
 </body>
