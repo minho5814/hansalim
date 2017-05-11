@@ -1454,7 +1454,7 @@ table .good-table table th {padding:0;}
 	width:100%;
 	height:30px;
 	line-height: 30px;
-	background-color:rgba(70, 69, 68, .6);
+	background-color:rgba(0,0,0,.5);
 	text-align:center;
 	z-index:10;
 	/*-ms-transform:translateX(-50%);
