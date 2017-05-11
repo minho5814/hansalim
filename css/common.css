@@ -4375,9 +4375,18 @@ label.check-radio .radiobox {margin-right:8px;}
 	푸터
 ========================================================================================================= */
 .footer {
-	margin-top:80px;
+	position:relative;
+	padding-top:80px;
 	background-color:#f7f7f7;
 }
+.footer:before {
+	content:'';
+	position:absolute;
+	left:0;right:0;top:0;
+	height:80px;
+	background-color:#fff;
+}
+.footer.gray:before {background-color:#eee;}
 .footer .utill {
 	border-top:1px solid #999;
 	border-bottom:1px solid #ddd;
