@@ -2922,6 +2922,7 @@ table .good-table table th {padding:0;}
 }
 
 .btn-image.btn-notice {background-color:#666;}
+.btn-image.btn-notice.ty02 {background-color:#999;}
 .btn-image.btn-notice:before {
 	width:17px;
 	height:18px;
@@ -4374,9 +4375,19 @@ label.check-radio .radiobox {margin-right:8px;}
 	푸터
 ========================================================================================================= */
 .footer {
-	margin-top:80px;
+	position:relative;
+	padding-top:80px;
 	background-color:#f7f7f7;
 }
+.footer:before {
+	content:'';
+	position:absolute;
+	left:0;right:0;top:0;
+	height:80px;
+	background-color:#fff;
+}
+.footer.gray:before {background-color:#eee;}
+.footer.gray2:before {background-color:#f2efe8;}
 .footer .utill {
 	border-top:1px solid #999;
 	border-bottom:1px solid #ddd;
@@ -12436,6 +12447,7 @@ td .radish-bank-box span {display:block;}
 	line-height:26px;
 }
 .campaign  .campaign-txt {
+	min-height:78px;
 	margin-top:23px;
 	font-size:15px;
 	color:#666;
