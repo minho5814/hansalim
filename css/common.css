@@ -492,7 +492,8 @@ html {
 	height:100%;
 	background-color:#0e0b0a;
 }
-.error-html {
+.error-html,
+.bg-white {
 	background-color:#fff !important;
 }
 .wrapper {
@@ -1442,11 +1443,9 @@ table .good-table table th {padding:0;}
 	background-color:rgba(70, 69, 68, .6);
 	text-align:center;
 	z-index:10;
-
 	/*-ms-transform:translateX(-50%);
 	-webkit-transform:translateX(-50%);
 	transform:translateX(-50%);*/
-
 }
 .thumb-list4 .thumb-item  .sup-stop span {
 	font-size:15px;
@@ -3618,17 +3617,18 @@ label.check-radio .radiobox {margin-right:8px;}
 	height:28px;
 	padding:0 20px;
 	box-sizing:border-box;
+	border:1px solid #f56d24;
 	border-radius:25px;
-	color:#fff;
+	color:#f56d24;
 	font-size:15px;
 	font-weight:900;
 	line-height:28px;
 }
-.ico-round.type1 {background-color:#5bb4ba;}
+/*.ico-round.type1 {background-color:#5bb4ba;}
 .ico-round.type2 {background-color:#86669c;}
 .ico-round.type3 {background-color:#9c7141;}
 .ico-round.type4 {background-color:#ff9c00;}
-.ico-round.type5 {background-color:#6bc31c;}
+.ico-round.type5 {background-color:#6bc31c;}*/
 
 .ico-round2 {
 	display:inline-block;
@@ -3926,19 +3926,36 @@ label.check-radio .radiobox {margin-right:8px;}
 	line-height:0;
 }
 .gnb-list {
-	overflow:hidden;
 	padding-left:58px;
+}
+.gnb-list:after {
+	color: '';
+	display: block;
+	clear: both;
 }
 .gnb-item {float:left;}
 .gnb .gnb-item .link {
+	position: relative;
 	display:inline-block;
 	height:47px;
-	padding:0 35px 0 30px;
+	margin:0 25px 0 20px;
+	padding:0 10px;
 	color:#333;
 	font-size:18px;
 	font-weight:bold;
 	line-height:49px;
 	font-family:ns;
+	box-sizing: border-box;
+}
+
+.gnb .gnb-item .link:hover:before,
+.gnb .gnb-item .link.on:before {
+	content:'';
+	position: absolute;
+	bottom:-1px;
+	left:0;
+	width:100%;
+	border-bottom:3px solid #60b015;
 }
 
 .gnb .my-menu {
@@ -6609,22 +6626,23 @@ label.check-radio .radiobox {margin-right:8px;}
 .board-lsit table .checkbox {vertical-align:middle;}
 
 .board-lsit table td .regular {
-	display:block;
-	width:38px;height:22px;
-	margin:0 auto;
-	font-size:13px;
+	display:inline-block;
+	width:52px;height:28px;
+	margin-left: 3px;
+	font-size:14px;
 	font-weight:bold;
-	line-height:20px;
+	line-height:28px;
 	text-align:center;
 	border:1px solid #ddd;
-	color:#ddd;
-	border-radius:10px;
+	background-color:#f7f7f7;
+	color:#aaa;
 	box-sizing:border-box;
-		cursor:pointer;
+	cursor:pointer;
 }
 .board-lsit table td .regular.on{
-	border:1px solid #09babc;
-	color:#09babc;
+	border:1px solid #60b015;
+	color:#60b015;
+	background-color:#fff;
 }
 
 .board-lsit.type2 table thead th {background-color:#f0f2ef;}
@@ -6682,22 +6700,23 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 .waybill .waybill-box .btn-close {
 	position:absolute;
-	top:14px;right:14px;
+	top:9px;right:14px;
 	width:24px;height:24px;
 	background:url(../img/btn/btn_pop_close.png) 50% 50% no-repeat;
 	font-size:0;
 	line-height:0;
 }
 .waybill .waybill-box dt {
-	padding:15px;
+	padding:10px 15px;
 	border-bottom:1px solid #60b015;
-	font-size:14px;
-	color:#000;
+	font-size:18px;
+	color:#60b015;
+	font-weight: bold;
 	text-align:left;
 	box-sizing: border-box;
 }
 .waybill .waybill-box dd {
-	padding:15px;
+	padding:30px 20px;
 	box-sizing: border-box;
 }
 .waybill .waybill-box dd ul li {
@@ -6712,6 +6731,10 @@ label.check-radio .radiobox {margin-right:8px;}
 	top:11px;left:0;
 	width:3px;height:3px;
 	background-color:#676767;
+}
+.waybill .waybill-box dd ul li button {
+	font-size:14px;
+	color:#666;
 }
 
 .review-write {border-top:1px solid #666;}
@@ -7771,6 +7794,13 @@ td .radish-bank-box span {display:block;}
 	font-size:18px;
 	font-weight:900;
 }
+.goods-item2 .text-area .retail{
+	text-decoration: line-through;
+	display: block;
+	color: #999;
+	font-size: 13px;
+	line-height: 13px;
+}
 
 .goods-item2 .count-area {
 	border-top:1px solid #ddd;
@@ -8455,6 +8485,12 @@ td .radish-bank-box span {display:block;}
 	line-height:44px;
 	font-weight:bold;
 }
+.pop-text3 {
+	color:#000;
+	font-size:15px;
+	line-height: 20px;
+	text-align: center;
+}
 .layer-popup {
 	position:fixed;
 	left:50%;top:50%;
@@ -8645,6 +8681,9 @@ td .radish-bank-box span {display:block;}
 		.pop-joining .joing-top .item.step2.on {background-image:url(../img/icon/ico_join02_on.png);}/* on */
 		.pop-joining .joing-top .item.step3.on {background-image:url(../img/icon/ico_join03_on.png);}/* on */
 
+.pop-joining.case {width: 400px;}
+.pop-joining.case .btn-center {margin:25px 0 10px}
+.pop-joining.case .btn-center a {padding:0 38px;}
 /* ---------------------------------------------------------------------------------------------------------
 	회원가입 (jo)
 --------------------------------------------------------------------------------------------------------- */
@@ -9886,8 +9925,8 @@ td .radish-bank-box span {display:block;}
 	font-weight:bold;
 	line-height:20px;
 	border-radius:10px;
-	color:#09babc;
-	border:1px solid #09babc;
+	color:#f56d24;
+	border:1px solid #f56d24;
 	vertical-align:middle;
 }
 .my-notice-area .my-notice-box {
@@ -10843,19 +10882,19 @@ td .radish-bank-box span {display:block;}
 	position:absolute;
 	top:25px;right:27px;
 	width:52px;height:28px;
-	color:#666;
+	color:#aaa;
 	font-size:14px;
 	line-height:26px;
 	text-align:center;
 	font-weight:bold;
-	background-color:#e3e3e3;
+	background-color:#f7f7f7;
 	border:1px solid #ddd;
 	box-sizing:border-box;
 }
 .find-list li .regular.on {
-	color:#fff;
-	background-color:#f56d24;
-	border:1px solid #f56d24;
+	color:#60b015;
+	background-color:#fff;
+	border:1px solid #60b015;
 }
 .find-list .no-list {
 	display:none;
@@ -10870,11 +10909,19 @@ td .radish-bank-box span {display:block;}
 	background-color:#fff;
 	border:1px solid #666;
 }
+.map-area .store-info.flag:after {
+	content: '';
+	position: absolute;
+	right:10px; top:-6px;
+	width:52px;
+	height:40px;
+	background:url(../img/img/img_flag_store.png) 0 0 no-repeat;
+}
 .map-area .store-info:before {
 	content:'';
 	position:absolute;
-	left:50%;bottom:-24px;
-	width:16px;height:24px;
+	left:50%;bottom:-16px;
+	width:20px;height:16px;
 	margin-left:-8px;
 	background:url(../img/img/img_bubble03.png) 0 0 no-repeat;
 }
@@ -13527,7 +13574,7 @@ td .radish-bank-box span {display:block;}
 	position:fixed;
 	right:-4px;bottom:-9999px;
 	z-index:550;
-	width:286px;
+	width:300px;
 	padding:4px;
 	border-radius:5px;
 	background-color:rgba(0,0,0,.2);
@@ -13550,14 +13597,10 @@ td .radish-bank-box span {display:block;}
 	padding:0 20px 0 25px;
 	color:#666;
 	font-size:15px;
-	line-height:24px;
+	line-height:20px;
+	letter-spacing: -1px;
 }
-.popup-notice .btn-area {
-	overflow:hidden;
-	/*margin-top:20px;*/
-	padding:9px 25px;
-	border-top:1px solid #ddd;
-}
+.popup-notice .btn-right {	padding:5px 20px 15px;}
 .popup-notice .btn-area .btn-link {float:left;}
 .popup-notice .btn-area label {float:right;}
 .popup-notice .btn-close {
@@ -13570,7 +13613,12 @@ td .radish-bank-box span {display:block;}
 	text-indent:-9999px;
 	line-height:0;
 }
-.popup-notice .ps {padding:5px 20px 15px 20px; font-size: 12px;}
+.popup-notice .ps {
+	border-top:1px solid #ddd;
+	padding:12px;
+	font-size: 13px;
+	text-align: center;
+}
 .popup-notice {}
 .popup-notice {}
 

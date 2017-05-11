@@ -93,18 +93,21 @@
 		.category-wrap .category-tab .item {
 			display:inline-block;
 			position:relative;
-			height:46px;
+			width:140px;
+			height:40px;
 			margin-left:44px;
 			color:#999;
-			font-size:16px;
+			border:1px solid #ccc;
+			font-size:18px;
 			font-weight:bold;
-			line-height:46px;
+			line-height:40px;
 			cursor:pointer;
 		}
 		.category-wrap .category-tab .item:first-child {margin-left:0;}
-		.category-wrap .category-tab .item:hover {color:#60b015;}/* hover */
+		.category-wrap .category-tab .item:hover {color:#60b015; border:1px solid #60b015;}/* hover */
 		.category-wrap .category-tab .item.on {
 			color:#60b015;
+			border:1px solid #60b015;
 			cursor:default;
 		}/* on */
 			.category-wrap .category-tab .item.on:before,
@@ -113,13 +116,9 @@
 				position:absolute;
 				left:0;right:0;
 			}/* on */
-			.category-wrap .category-tab .item.on:before {
-				bottom:4px;
-				height:2px;
-				background-color:#60b045;
-			}/* on */
+
 			.category-wrap .category-tab .item.on:after {
-				bottom:0;
+				bottom:-5px;
 				height:4px;
 				background:url(../img/icon/icon_tab_on.png) no-repeat 50% 0;
 			}/* on */
@@ -140,19 +139,30 @@
 		font-size:0;
 		line-height:0;
 	}
+	.category-slide .link:hover .img-area:before {
+		content: '';
+		position: absolute;
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		background-color: #60b015;
+		opacity: 0.6;
+
+	}
 		.category-slide .link .img-area {
+			position: relative;
 			overflow:hidden;
 			width:180px;
 			height:180px;
 			margin:0 auto;
-			border-radius:50%;
 		}
-		.category-slide .link .img-area img {
+		/*.category-slide .link .img-area img {
 			width:180px;
 			height:360px;
 			vertical-align:top;
-		}
-		.category-slide .link:hover .img-area img {margin-top:-180px;}
+		}*/
+		/*.category-slide .link:hover .img-area img {margin-top:-180px;}*/
 		.category-slide .link .text {
 			position:absolute;
 			left:0;right:0;top:50%;
@@ -160,11 +170,11 @@
 			-ms-transform:translateY(-50%);
 			transform:translateY(-50%);
 			color:#fff;
-			font-size:15px;
+			font-size:24px;
 			text-align:center;
-			text-shadow:2px 2px rgba(0,0,0,.4);
+			/*text-shadow:2px 2px rgba(0,0,0,.4);*/
 			font-weight:bold;
-			line-height:18px;
+			line-height:28px;
 		}
 .category-slide .bx-pager {display:none;}
 .category-slide .bx-controls-direction {}
