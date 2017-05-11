@@ -5024,7 +5024,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	height:27px;
 	border-bottom:1px solid #ddd;
 	border-left:1px solid #ddd;
-	background:url(../img/btn/btn_x_11x11.png) no-repeat 50% 50%;
+	background:#fff url(../img/btn/btn_x_11x11.png) no-repeat 50% 50%;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
