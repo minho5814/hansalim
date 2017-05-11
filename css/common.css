@@ -12941,6 +12941,12 @@ td .radish-bank-box span {display:block;}
 }
 
 /* 축산물이력검사 */
+.livesto-title {
+	margin-top:50px;
+}
+.livesto-title .cTitle4 {
+	margin-top
+}
 .livesto-area {
 	height:381px;
 	padding:45px 50px;
@@ -13382,15 +13388,20 @@ td .radish-bank-box span {display:block;}
 	border-top:1px solid #666;
 }
 .radiation-table .board-lsit th {
-	height:45px;
+	height:90px;
+	line-height:26px;
+	font-weight: normal;
 }
 /* 농식품 안전센터 */
 .agrofood-area {
-	margin-top:50px;
+	margin-top:10px;
 	padding:27px 39px 72px;
 	border:1px solid #ddd;
 	box-sizing:border-box;
 }
+.agrofood-area .cTitle4.first,
+.often-title .cTitle4,
+.livesto-title .cTitle4  {line-height: inherit; margin-top:30px;}
 .agrofood-area .safety-img {
 	height:454px;
 	margin-top:27px;
@@ -13429,7 +13440,7 @@ td .radish-bank-box span {display:block;}
 .agrofood-area .process-area {
 	margin-top:6px;
 }
-.agrofood-area .process-area .proce-list {
+/*.agrofood-area .process-area .proce-list {
 	overflow:hidden;
 }
 .agrofood-area .process-area .proce-list li {
@@ -13455,13 +13466,53 @@ td .radish-bank-box span {display:block;}
 	height:20px;
 	margin-top:-10px;
 	background:url(../img/icon/icon_direc01.png) no-repeat 0 0;
-}
+}*/
 .agrofood-area .proce-img {
 	width:742px;
 	height:660px;
 	margin:45px auto 0;
 	background:url(../img/temp/@temp_proce.jpg) no-repeat 0 0;
 	text-align:center;
+}
+
+.agrofood-area .process-list {
+	border:1px solid #ccc;
+	box-sizing:border-box;
+}
+.agrofood-area .process-list .item {
+	position:relative;
+	border-top:1px solid #eee;
+}
+.agrofood-area .process-list .item:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:60px; bottom:-9px;
+	width:20px;
+	height:20px;
+	background:url(../img/icon/ico_bot.png) no-repeat 0 0;
+	z-index:10;
+}
+.agrofood-area .process-list .item:last-child:before {display:none;}
+.agrofood-area .process-list .item:first-child {border-top:0;}
+.agrofood-area .process-list .item dl {display:table; width:100%;}
+.agrofood-area .process-list .item dl dt,
+.agrofood-area .process-list .item dl dd  {
+	display:table-cell;
+	padding:22px 15px;
+	background-color:#f7f7f7;
+	box-sizing:border-box;
+	font-size:15px;
+	color:#666;
+	line-height:19px;
+	vertical-align:middle;
+	text-align:center;
+}
+.agrofood-area .process-list .item dl dt {width:140px; color:#000;}
+.agrofood-area .process-list .item dl dd {
+	background-color:#fff;
+	text-align:left;
+	color:#666;
 }
 .vision-list {
 	overflow:hidden;
@@ -13510,6 +13561,9 @@ td .radish-bank-box span {display:block;}
 }
 
 /* 자주인증/자주관리·점검 */
+ .often-title {
+	 margin-top:50px;
+ }
 .often-certifi {
 	padding:45px 38px 60px;
 	border:1px solid #e2e2e2;

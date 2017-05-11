@@ -855,13 +855,14 @@
 				<div class="tab-content3 on">
 					<div class="tab-area">
 						<ul class="tab-styled4">
-							<!-- 2017-05-10 : em태그 추가 , 새글인겨ㅑ-->
+							<!-- 2017-05-10 : em태그 추가 , 새글인경우 new 클래스 추가 -->
 							<li class="item new on"><span class="text"><em>오늘의 물품소식</em></span></li>
 							<li class="item new"><span class="text"><em>공지사항</em></span></li>
 							<!--// 2017-05-10 : em태그 추가 -->
 						</ul>
 						<div class="tab-content4 on noty-area">
-							<div class="float-area mgT40 mgB15">
+							<p class="mgT20">새로운 물품소식을 알려드립니다.</p> <!--2017-05-11 : p 추가 -->
+							<div class="float-area mgT20 mgB15"> <!--2017-05-11 : 클래스변경 (mgT40 -> mgT20)-->
 								<div class="order-list f-left">
 									<button type="button" class="on">전체</button>
 									<button type="button">공급재개</button>
@@ -1128,7 +1129,8 @@
 							</div>
 						</div>
 						<div class="tab-content4 noty-area">
-							<div class="float-area mgT40 mgB15">
+							<p class="mgT20">꼭 필요한 소식을 전해드립니다. 장보기 이용에 참고하세요</p> <!--2017-05-11 : p 추가 -->
+							<div class="float-area mgT0 mgB15"> <!--2017-05-11 : 클래스 수정 (mgT40 -> mgT0)-->
 								<div class="search-input f-right">
 									<div class="inner-box">
 										<input type="text" class="query">
@@ -1796,6 +1798,16 @@
 						</ul>
 						<!--방사능검사-->
 						<div class="tab-content4 on">
+							<!--2017-05-11 : 추가 -->
+							<div class="noty-title-wrap pdT50">
+								<p class="cTitle4">한살림은 보다 상세하고 정확하게 완제품과 원료의 검사 내용을 알려드립니다.</p>
+								<ul class="bullet-list1 mgB0">
+									<li class="item">불검출의 경우에는 '불검출'로 표시하고, 검출한계치 <button type="button" class="btn-popup btn-question type01">툴팁</button> 를 함께 표시합니다. </li>
+									<li class="item">검출된 경우에는 '검출된 핵종(요오드,세슘) 및 검출량'을 함께 표시합니다.</li>
+									<li class="item">방사성물질이 검출된 원료를 사용하는 완제품에 경우 해당 원료의 방사성물질 검출량을 표시합니다.</li>
+								</ul>
+							</div>
+							<!--// 2017-05-11 : 추가 -->
 							<div class="radiation-area">
 								<div class="float-area mgB15">
 									<div class="search-input f-right">
@@ -1821,182 +1833,130 @@
 										<button type="button" class="btn-round-text btn-gray">조회</button>
 									</div>
 								</div>
+								<!--2017-05-11 : 테이블 전체수정-->
 								<div class="radiation-table">
 									<div class="board-lsit type2">
 										<table>
 											<colgroup>
-												<col style="width:140px;">
-												<col style="width:140px;">
-												<col style="width:140px;">
-												<col style="width:160px;">
-												<col style="width:75px;">
-												<col style="width:75px;">
-												<col style="width:75px;">
-												<col style="width:75px;">
-												<col style="width:75px;">
-												<col style="width:75px;">
-												<col style="width:75px;">
-												<col style="width:220px;">
+												<col style="width:11%;">
+												<col style="width:10%;">
+												<col style="width:15%;">
+												<col style="width:13%;">
+												<col style="width:13%;">
+												<col style="width:13%;">
+												<col style="width:7%;">
+												<col style="*">
 											</colgroup>
 											<thead>
 												<tr>
-													<th rowspan="2">날짜</th>
-													<th rowspan="2">시료명</th>
-													<th rowspan="2">생산지</th>
-													<th rowspan="2">검사기관</th>
-													<th colspan="2">I-131</th>
-													<th colspan="2">Cs-134</th>
-													<th colspan="2">Cs-137</th>
-													<th rowspan="2">총량</th>
-													<th rowspan="2">비고</th>
-												</tr>
-												<tr>
-													<th>검출한계</th>
-													<th>검사결과</th>
-													<th>검출한계</th>
-													<th>검사결과</th>
-													<th>검출한계</th>
-													<th>검사결과</th>
+													<th>시료명</th>
+													<th>생산지</th>
+													<th>검사기관</th>
+													<th>I-131<br>검출한계/검사결과</th>
+													<th>Cs-134<br>검출한계/검사결과</th>
+													<th>Cs-137<br>검출한계/검사결과</th>
+													<th>총량</th>
+													<th>비고</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
-													<td>2017-02-27(월)</td>
 													<td><a href="#">표고버섯 사각칩</a></td>
 													<td>에코푸드코리아</td>
 													<td>한살림농식품분석센터</td>
-													<td>1</td>
-													<td>불검출</td>
-													<td>1</td>
-													<td>불검출</td>
-													<td>1</td>
-													<td class="fColor3">검출(2.3)</td>
-													<td class="fColor3">검출(2.3)</td>
+													<td>1<br>불검출</td>
+													<td>1<br>불검출</td>
+													<td>1<br><span class="fColor3">검출(2.3)</span></td>
+													<td><span class="fColor3">검출(2.3)</span></td>
 													<td>우리밀라면, 감자라면 원료</td>
 												</tr>
 												<tr>
-													<td>2017-02-27(월)</td>
 													<td><a href="#">전어</a></td>
 													<td>해정씨푸드</td>
 													<td>기초과학지원연구원</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
 													<td>불검출</td>
 													<td>&nbsp;</td>
 												</tr>
 												<tr>
-													<td>2017-02-27(월)</td>
 													<td><a href="#">전어</a></td>
 													<td>해정씨푸드</td>
 													<td>기초과학지원연구원</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
 													<td>불검출</td>
 													<td>&nbsp;</td>
 												</tr>
 												<tr>
-													<td>2017-02-27(월)</td>
 													<td><a href="#">전어</a></td>
 													<td>해정씨푸드</td>
 													<td>기초과학지원연구원</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
 													<td>불검출</td>
 													<td>&nbsp;</td>
 												</tr>
 												<tr>
-													<td>2017-02-27(월)</td>
 													<td><a href="#">전어</a></td>
 													<td>해정씨푸드</td>
 													<td>기초과학지원연구원</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
 													<td>불검출</td>
 													<td>&nbsp;</td>
 												</tr>
 												<tr>
-													<td>2017-02-27(월)</td>
 													<td><a href="#">전어</a></td>
 													<td>해정씨푸드</td>
 													<td>기초과학지원연구원</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
 													<td>불검출</td>
 													<td>&nbsp;</td>
 												</tr>
 												<tr>
-													<td>2017-02-27(월)</td>
 													<td><a href="#">전어</a></td>
 													<td>해정씨푸드</td>
 													<td>기초과학지원연구원</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
 													<td>불검출</td>
 													<td>&nbsp;</td>
 												</tr>
 												<tr>
-													<td>2017-02-27(월)</td>
 													<td><a href="#">전어</a></td>
 													<td>해정씨푸드</td>
 													<td>기초과학지원연구원</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
 													<td>불검출</td>
 													<td>&nbsp;</td>
 												</tr>
 												<tr>
-													<td>2017-02-27(월)</td>
 													<td><a href="#">전어</a></td>
 													<td>해정씨푸드</td>
 													<td>기초과학지원연구원</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
 													<td>불검출</td>
 													<td>&nbsp;</td>
 												</tr>
 												<tr>
-													<td>2017-02-27(월)</td>
 													<td><a href="#">전어</a></td>
 													<td>해정씨푸드</td>
 													<td>기초과학지원연구원</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
-													<td>0.21</td>
-													<td>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
+													<td>0.21<br>불검출</td>
 													<td>불검출</td>
 													<td>&nbsp;</td>
 												</tr>
@@ -2004,6 +1964,7 @@
 										</table>
 									</div>
 								</div>
+								<!--// 2017-05-11 : 테이블 전체수정-->
 								<div class="pagenation">
 									<div class="page-list">
 										<a href="#none" class="button btn-first">맨앞</a>
@@ -2026,8 +1987,12 @@
 						</div>
 						<!--농식품안전센터-->
 						<div class="tab-content4">
+							<h3 class="cTitle3 mgT35">한살림 농식품 분석센터</h3> <!--2017-05-10 :align-center 클래스 삭제,추가 / 문구수정 / 위치이동 -->
 							<div class="agrofood-area">
-								<h3 class="cTitle3">한살림 농식품안전센터</h3> <!--2017-05-10 :align-center 클래스 삭제 -->
+								<!--2017-05-11 : 추가 -->
+								<h4 class="cTitle4 first">건강한 밥상이 더 안전 할 수 있도록, 꼼꼼이 검사합니다.</h4>
+								<p class="mgT5 fColor2">농축산물 분석을 위해 한살림과 한경대학교가 산학 협약하여, 한살림에서 공급되는 물품을 검사하고 있습니다.</p>
+								<!--// 2017-05-11 : 추가 -->
 								<div class="safety-img">
 									<img src="../../img/temp/@temp_safety01.jpg" alt="">
 								</div>
@@ -2072,7 +2037,8 @@
 								</div>
 								<h4 class="cTitle4 mgT45">한살림농식품분석센터 분석 프로세스</h4>
 								<div class="process-area">
-									<ul class="proce-list">
+									<!-- 2017-05-11 : 삭제
+									 <ul class="proce-list">
 										<li class="item">분석의뢰</li>
 										<li class="item">분석센터 시료 접수</li>
 										<li class="item">전처리</li>
@@ -2082,6 +2048,75 @@
 										<li class="item">성적서 검토 및 승인 성적서 발송</li>
 										<li class="item">[합격] 물품공급, [불합격] 공급중단</li>
 										<li class="item">검사결과 공시</li>
+									</ul>
+									<div class="proce-img">
+										<ul class="hide">
+											<li>한살림 농식품분석센터
+												<ul>
+													<li>환경분석센터 공동실험실습관농약 및 작물보호 실험실</li>
+													<li><span>생물안전성 관련</span>GRRC 연구센터( GMO/항생제/축산물 위생 )</li>
+													<li><span>인증 관련</span>친환경 농림축산물 인증센터</li>
+													<li><span>식품 및 기타 관련</span>스마트물류연구센터 식품생물산업연구소</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									-->
+									<ul class="process-list">
+										<li class="item">
+											<dl>
+												<dt>1단계</dt>
+												<dd>분석의뢰</dd>
+											</dl>
+										</li>
+										<li class="item">
+											<dl>
+												<dt>2단계</dt>
+												<dd>분석센터 시료 접수</dd>
+											</dl>
+										</li>
+										<li class="item">
+											<dl>
+												<dt>3단계</dt>
+												<dd>전처리</dd>
+											</dl>
+										</li>
+										<li class="item">
+											<dl>
+												<dt>4단계</dt>
+												<dd>잔류농약 검사, GMO/축산물/항생제검사, 미생물/벤조피렌검사, 방사성물질/수질검사</dd>
+											</dl>
+										</li>
+										<li class="item">
+											<dl>
+												<dt>5단계</dt>
+												<dd>분석 결과 취합</dd>
+											</dl>
+										</li>
+										<li class="item">
+											<dl>
+												<dt>6단계</dt>
+												<dd>분석 결과 보고</dd>
+											</dl>
+										</li>
+										<li class="item">
+											<dl>
+												<dt>7단계</dt>
+												<dd>성적 성적서 검토 및 승인 성적서 발송</dd>
+											</dl>
+										</li>
+										<li class="item">
+											<dl>
+												<dt>8단계</dt>
+												<dd>[합격] 물품공급, [불합격] 공급중단</dd>
+											</dl>
+										</li>
+										<li class="item">
+											<dl>
+												<dt>9단계</dt>
+												<dd>검사결과 공시</dd>
+											</dl>
+										</li>
 									</ul>
 									<div class="proce-img">
 										<ul class="hide">
@@ -2127,17 +2162,28 @@
 						</div>
 						<!--자주인증,자주점검-->
 						<div class="tab-content4">
-							<h3 class="cTitle3 mgT35">자주인증</h3>
+							<!-- <h3 class="cTitle3 mgT35">자주인증</h3> -->
+							<!-- 2017-05-11 : 추가 -->
+							<div class="often-title mgB30">
+								<h4 class="cTitle4 first">자주인증제도는 물품을 생산하고 소비하는 생산자, 조합원이 직접 참여합니다.</h4>
+								<p class="mgT5 fColor2">한살림 가치가 반영된 엄격한 기준으로 생산자와 소비자가 직접 참여하여 생산과정을 고민하고 대안을 만들어가고 있습니다.</p>
+							</div>
+							<!--// 2017-05-11 : 추가 -->
 							<div class="often-certifi">
 								<div class="certifi-box">
 									<div class="certifi-text">
 										<h4 class="cTitle4">자주인증이란?</h4>
+										<!-- 20017-05-11 : 삭제
 										<ul class="bullet-list1">
 											<li class="item">한살림과 한경대학교는 농축산물 분석연구를 위한 산학 협약을<br>
 											체결하고, 한살림농식품분석센터를 열었습니다.</li>
 											<li class="item">잔류농약 320여 성분 분석과 방사능 검사 등 독자적인 분석시스템을<br>
 											구축하여 안전성과 공신력을 높였습니다.</li>
 										</ul>
+										-->
+										<!--2017-05-11 : 추가-->
+										<p class="certifi-txt">조합원이 생산지를 직접 방문하여 한살림이 정한 생산기준에 따라 물품이<br>생산되고 있는지 확인하는 조합원 참여형 자체 인증시스템입니다.</p>
+										<!--// 2017-05-11 : 추가-->
 										<h4 class="cTitle4 mgT25">왜 시작했나요?</h4>
 										<p class="certifi-txt">광우병, 멜라닌, 조류독감 등 식품안전 관련 이슈들이 점차 증가되면서<br> 아래와 같은 이유로 자주인증을 시작하게 되었습니다</p>
 										<ul class="certifi-txt-list">
@@ -2174,7 +2220,7 @@
 									<h4 class="cTitle4 mgT45">국가에서 하는 인증과 어떻게 다른가요?</h4>
 									<p class="often-text mgB10">
 										자주인증제도는 물품을 생산하고 소비하는 생산자, 조합원이 직접 참여하여 한살림 가치가 반영된 엄격한 자주 기준에 따라 인증이 이루어집니다.
-										<span class="emphasis">※ 자주인증? : 한살림에서 자체적으로 운영하는 인증제도 입니다. 국가가 공인한 인증은 아닙니다.</span>
+										<!-- <span class="emphasis">※ 자주인증? : 한살림에서 자체적으로 운영하는 인증제도 입니다. 국가가 공인한 인증은 아닙니다.</span> 2017-05-11 : 삭제 -->
 									</p>
 									<div class="board-lsit type2">
 										<table>
@@ -2225,11 +2271,13 @@
 										</table>
 									</div>
 								</div>
-								<h4 class="cTitle4 mgT45">국가에서 하는 인증과 어떻게 다른가요?</h4>
+								<!--2017-05-11 :문구수정 -->
+								<h4 class="cTitle4 mgT45">어떤 물품이 대상인가요?</h4>
 								<p class="often-text mgT5">
 									한살림에서 농약을 사용할 수 있는 7개 품목의 과실에 대하여 자주인증을 진행하고 있습니다.<br>
 									사과, 배, 복숭아, 자두, 대추, 감(단감, 대봉)이며 앞으로 대상물품을 확대할 계획입니다.
 								</p>
+								<!--// 2017-05-11 :문구수정 -->
 							</div>
 							<h3 class="cTitle3 mgT65">자주관리·점검</h3>
 							<div class="often-certifi">
@@ -2276,7 +2324,13 @@
 						</div>
 						<!--축산물이력검사-->
 						<div class="tab-content4">
-							<div class="livesto-area mgT50">
+							<!-- 2017-05-11 : 추가-->
+							<div class="livesto-title">
+								<h4 class="cTitle4 first">공급되는 축산물의 정보를 조회 할 수 있습니다.</h4>
+								<p class="mgT5 fColor2">묶음번호나 개체식별번호로 축산물의 이력정보를 조회 할 수 있습니다</p>
+							</div>
+							<!--// 2017-05-11 : 추가-->
+							<div class="livesto-area mgT20"> <!--2017-05-11 : 클래스변경 (mgT50-> mgT20)-->
 								<h3 class="livesto-title">한살림 축산물<br>그 안전함을 확인하세요.</h3>
 								<p class="livesto-text">한살림 축산 생산자들이 생명을 존중하며 키운 한살림<br>축산물 생산이력을 확인하실 수 있습니다.</p>
 								<div class="search-livesto">
