@@ -195,6 +195,7 @@
 	.category-slide .bx-controls-direction .bx-next {right:-40px;background-image:url(../img/btn/btn_bx_next_12x21.png);}
 	.category-slide .bx-controls-direction .disabled {display:none;}
 
+.category-slide.brand .img-area {background-color:#f3f3f3}
 /* 컨텐츠 공통 영역 */
 .main-cont {padding:50px 0 60px;}
 	.main-cont .main-title {
