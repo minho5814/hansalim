@@ -581,7 +581,7 @@ html {
 	width:386px;
 	padding:0 15px 15px;
 	box-sizing:border-box;
-	box-shadow:4px 4px 0 rgba(0,0,0,.2);
+	/*box-shadow:4px 4px 0 rgba(0,0,0,.2);*/
 	border:2px solid #90c807;
 	background-color:#fff;
 }
@@ -644,7 +644,7 @@ html {
 	position:fixed;
 	left:0;top:0;
 	z-index:500;
-	box-shadow:4px 4px 0 rgba(0,0,0,.2);
+	/*box-shadow:4px 4px 0 rgba(0,0,0,.2);*/
 	border:2px solid #90c807;
 	background-color:#fff;
 }
