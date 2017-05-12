@@ -12255,6 +12255,47 @@ td .radish-bank-box span {display:block;}
 
 /* 물품소식*/
 .news-cont {margin-top:25px;}
+.news-cont .tab-content3 .bullet-list1 .item .tip {
+	position:relative;
+	display:inline-block;
+	width:18px;height:20px;
+	margin-left:3px;
+	background:url(../img/btn/btn_question.png) 0 0 no-repeat;
+	vertical-align:middle;
+}
+.news-cont .tab-content3 .bullet-list1 .item .tip:hover {background:url(../img/btn/btn_question_on.png) 0 0 no-repeat;}
+.news-cont .tab-content3 .bullet-list1 .item .tip .inner-box {
+	display:none;
+	position:absolute;
+	top:10px;left:-200px;
+	z-index:10;
+	transform:translateX(100px);
+	padding-top:14px;
+}
+.news-cont .tab-content3 .bullet-list1 .item .tip:hover .inner-box {
+	display:block;
+}
+.news-cont .tab-content3 .bullet-list1 .item .tip .inner-box:before {
+	content:'';
+	position:absolute;
+	top:10px;left:50%;
+	width:5px;height:4px;
+	margin-left:-2px;
+	background:url(../img/img/img_bubble02.png) 0 0 no-repeat;
+
+}
+.news-cont .tab-content3 .bullet-list1 .item .tip .inner-box div {
+	padding:11px 15px;
+	font-size:13px;
+	color:#666;
+	line-height:19px;
+	text-align:left;
+	background-color:#fff;
+	border:1px solid #60b015;
+	word-break: keep-all;
+}
+
+
 .news-cont .tab-styled4 .item {
 	width:170px;
 	height:40px;
@@ -12986,7 +13027,7 @@ td .radish-bank-box span {display:block;}
 }
 
 /* 축산물이력검사 */
-.livesto-title {
+.livesto-title2 {
 	margin-top:50px;
 }
 .livesto-title .cTitle4 {
@@ -13446,7 +13487,7 @@ td .radish-bank-box span {display:block;}
 }
 .agrofood-area .cTitle4.first,
 .often-title .cTitle4,
-.livesto-title .cTitle4  {line-height: inherit; margin-top:30px;}
+.livesto-title2 .cTitle4  {line-height: inherit;}
 .agrofood-area .safety-img {
 	height:454px;
 	margin-top:27px;
