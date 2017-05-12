@@ -404,8 +404,7 @@ $(window).load(function(){
 				$('html').removeClass('tab');
 			}
 
-			var left = $(window).scrollLeft();
-			$('.tab .tab-area').css({'left':-left});
+			
 		});
 
 	});
