@@ -3386,7 +3386,7 @@ table .good-table table th {padding:0;}
 	text-indent:-9999px;
 	line-height:0;
 }
-.search-box.focus .btn-search {background-position:0 -559px;}
+/*.search-box.focus .btn-search {background-position:0 -559px;}*/
 
 /* 셀렉트박스 */
 .select-box {
@@ -3885,7 +3885,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	height:32px;
 	padding:0 10px;
 	border:1px solid #8dc63f;
-	background-color:#f3f3f3;
+	background-color:#fff;
 	font-size:14px;
 }
 .calendar .ui-datepicker-trigger {
@@ -3916,11 +3916,12 @@ label.check-radio .radiobox {margin-right:8px;}
 	right:0;
 	top:47px;
 }
-.head-top .search-box .search-text {background-color:#f3f3f3;}
-.head-top .search-box input[type=text]:focus {
+.head-top .search-box .search-text {background-color:#fff;}
+.head-top .search-box input[type=text] {border-color: #91c90b;}
+/*.head-top .search-box input[type=text]:focus {
 	border:1px solid #90c807;
 	background-color:#fff;
-}
+}*/
 .head-top .search-box .inner-box {
 	position:relative;
 }
