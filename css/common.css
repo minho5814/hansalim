@@ -4695,7 +4695,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .login-wrap .box-content1 {margin-top:60px;}
 
 /* 조합원번호 찾기 (lo/IM-LO0501.html) */
-.login-wrap .tab-list1 {margin-top:-1px;}
+.login-wrap .tab-list1 {margin:-1px -3px 0 -1px;}
 .login-wrap .search-number {
 	padding:34px 0 30px;
 	border-bottom:1px solid #bbb;
