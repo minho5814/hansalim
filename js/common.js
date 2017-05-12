@@ -395,17 +395,25 @@ $(window).load(function(){
 				$('.quick-menu').stop().animate({top:145}, 200);// 퀵메뉴
 			}
 		}
-
-		$('.tab-wrap').each(function(){
-			var tabTop = $('.tab-wrap').offset().top - $('.gnb-list').outerHeight();
-			if(winTop >= tabTop){
-				$('html').addClass('tab');
-			}else{
-				$('html').removeClass('tab');
-			}
-
-			
-		});
+		function resizeTab(){
+			$('.tab-wrap').each(function(){
+				var tabTop = $('.tab-wrap').offset().top - $('.gnb-list').outerHeight();
+				if(winTop >= tabTop){
+					$('html').addClass('tab');
+					var winW = $(window).width();
+					if(winW <= 1120 ){
+						$('.tab .tab-area').css({'left':-winLeft, 'margin-left':'0'});
+					}else{
+						$('.tab .tab-area').css({'left':'50%', 'margin-left':'-560px'});
+					}
+				}else{
+					$('html').removeClass('tab');
+					$('.tab-area').removeAttr('style');
+				}
+			});
+		}
+		resizeTab();
+		$(window).resize(resizeTab);
 
 	});
 	$(window).scroll();

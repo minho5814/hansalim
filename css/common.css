@@ -3576,9 +3576,10 @@ label.check-radio .radiobox {margin-right:8px;}
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 .tab .tab-area {
 	position:fixed;
-	top:0;
+	left:50%;top:0;
 	z-index:10;
-	
+	width:1120px;
+	margin-left:-560px;
 	background-color:#555;
 }
 .tab-list1 {
