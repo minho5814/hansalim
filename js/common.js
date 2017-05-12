@@ -396,14 +396,17 @@ $(window).load(function(){
 			}
 		}
 
-		if($('.tab-wrap').length >= 1){
+		$('.tab-wrap').each(function(){
 			var tabTop = $('.tab-wrap').offset().top - $('.gnb-list').outerHeight();
 			if(winTop >= tabTop){
 				$('html').addClass('tab');
 			}else{
 				$('html').removeClass('tab');
 			}
-		}
+
+			var left = $(window).scrollLeft();
+			$('.tab .tab-area').css({'left':-left});
+		});
 
 	});
 	$(window).scroll();
