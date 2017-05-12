@@ -11757,18 +11757,18 @@ td .radish-bank-box span {display:block;}
 	padding-top:2px;
 	font-size:15px;
 	color:#666;
-	text-indent:46px;
+	text-indent:40px;
 	line-height:22px;
 }
 .ico-mark {
 	display:inline-block;
 	position:absolute;
 	left:0;top:0;
-	padding:0 6px 0 7px;
+	padding:0 6px;
 	border:1px solid #60b015;
 	box-sizing:border-box;
-	border-radius:10px;
-	font-size:15px;
+	border-radius:15px;
+	font-size:13px;
 	color:#60b015;
 	line-height:22px;
 	font-weight:bold;
@@ -11817,12 +11817,10 @@ td .radish-bank-box span {display:block;}
 	background:url(../img/icon/icon_revi02_on.png) no-repeat 0 0;
 }
 
-.review-sorting {
-	margin:0 0 15px;
-}
 .my-review-box {
 	position:relative;
 	padding:19px 189px 20px 29px;
+	margin-top:15px;
 	border:1px solid #ddd;
 	box-sizing:border-box;
 }
