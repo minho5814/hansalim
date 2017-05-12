@@ -1364,7 +1364,7 @@ $(window).load(function(){
 	//링크이동
 	$('.tab-styled5 .item').click(function(){
 		var idx = $(this).index();
-		var cont_height = $('.brand-wrap').eq(idx).offset().top - $('.head-btm').outerHeight() - $('.tab-styled5').outerHeight()+2;
+		var cont_height = $('.brand-wrap').eq(idx).offset().top  - $('.tab-styled5').outerHeight(); //2017-05-12 : 해당라인 수정
 		var wrap = $('.tab-styled5').outerHeight();
 
 		$('html, body').animate({scrollTop:cont_height});
@@ -1375,7 +1375,7 @@ $(window).load(function(){
 		var winTop = $(window).scrollTop();
 		/* 스크롤 다운시 해더 변경 */
 		if($('.tab-wrap').length >= 1){
-			var tabTop = $('.tab-wrap').offset().top - $('.gnb-list').outerHeight() - $('.tab-styled5').outerHeight();
+			var tabTop = $('.tab-wrap').offset().top - $('.tab-styled5').outerHeight(); //2017-05-12 : 해당라인 수정
 			if(winTop >= tabTop){
 				$('html').addClass('tab');
 			}else{
@@ -1384,7 +1384,7 @@ $(window).load(function(){
 		}
 
 		$('.brand-wrap').each(function(index){
-			$brandTop = $('.brand-wrap').eq(index).offset().top - $('.gnb-list').outerHeight() - $('.tab-styled5').outerHeight();
+			$brandTop = $('.brand-wrap').eq(index).offset().top - $('.tab-styled5').outerHeight(); //2017-05-12 : 해당라인 수정
 			if (winTop >= $brandTop){
 				$('.tab-styled5 .item').removeClass('on');
 				$('.tab-styled5 .item').eq(index).addClass('on');
