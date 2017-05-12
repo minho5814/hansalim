@@ -3346,7 +3346,7 @@ table .good-table table th {padding:0;}
 }
 .search-form .cont .calendar-area .calendar .ui-datepicker-trigger:before {
 	border-radius:2px;
-	background-color:#91c90b;
+	background-color:#999;
 }
 .search-form .cont .calendar-area .swung-dash {
 	float:left;
@@ -3360,7 +3360,7 @@ table .good-table table th {padding:0;}
 	margin-left:20px;
 	box-sizing:border-box;
 	border-radius:2px;
-	background-color:#60b015;
+	background-color:#97d20c;
 	color:#fff;
 	font-size:15px;
 	font-weight:bold;
@@ -6977,8 +6977,9 @@ label.check-radio .radiobox {margin-right:8px;}
 .delivery-date {
 	margin-top:40px;
 	padding:15px 22px;
-	background-color:#f4fcea;
-	border-top:1px solid #60b015;
+	background-color:#fff;
+	border:1px solid #ccc;
+	border-top-color:#5fb015;
 }
 .delivery-date dl dt,
 .delivery-date dl dd {
