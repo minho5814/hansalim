@@ -4657,7 +4657,8 @@ label.check-radio .radiobox {margin-right:8px;}
 	border-top:0;
 	background:url(../img/bg/bg_dot.gif) repeat-x left top;
 }
-.box-content1 .box-cont .item {
+.box-content1 .box-cont .item,
+.box-content1 .box-cont .item2 {
 	position:relative;
 	padding-left:11px;
 	color:#666;
