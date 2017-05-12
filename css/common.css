@@ -3346,7 +3346,7 @@ table .good-table table th {padding:0;}
 }
 .search-form .cont .calendar-area .calendar .ui-datepicker-trigger:before {
 	border-radius:2px;
-	background-color:#91c90b;
+	background-color:#999;
 }
 .search-form .cont .calendar-area .swung-dash {
 	float:left;
@@ -3360,7 +3360,7 @@ table .good-table table th {padding:0;}
 	margin-left:20px;
 	box-sizing:border-box;
 	border-radius:2px;
-	background-color:#60b015;
+	background-color:#97d20c;
 	color:#fff;
 	font-size:15px;
 	font-weight:bold;
@@ -3386,7 +3386,7 @@ table .good-table table th {padding:0;}
 	text-indent:-9999px;
 	line-height:0;
 }
-.search-box.focus .btn-search {background-position:0 -559px;}
+/*.search-box.focus .btn-search {background-position:0 -559px;}*/
 
 /* 셀렉트박스 */
 .select-box {
@@ -3576,8 +3576,10 @@ label.check-radio .radiobox {margin-right:8px;}
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 .tab .tab-area {
 	position:fixed;
-	top:0;
+	left:50%;top:0;
 	z-index:10;
+	width:1120px;
+	margin-left:-560px;
 	background-color:#555;
 }
 .tab-list1 {
@@ -3885,7 +3887,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	height:32px;
 	padding:0 10px;
 	border:1px solid #8dc63f;
-	background-color:#f3f3f3;
+	background-color:#fff;
 	font-size:14px;
 }
 .calendar .ui-datepicker-trigger {
@@ -3916,11 +3918,12 @@ label.check-radio .radiobox {margin-right:8px;}
 	right:0;
 	top:47px;
 }
-.head-top .search-box .search-text {background-color:#f3f3f3;}
-.head-top .search-box input[type=text]:focus {
+.head-top .search-box .search-text {background-color:#fff;}
+.head-top .search-box input[type=text] {border-color: #91c90b;}
+/*.head-top .search-box input[type=text]:focus {
 	border:1px solid #90c807;
 	background-color:#fff;
-}
+}*/
 .head-top .search-box .inner-box {
 	position:relative;
 }
@@ -6975,8 +6978,9 @@ label.check-radio .radiobox {margin-right:8px;}
 .delivery-date {
 	margin-top:40px;
 	padding:15px 22px;
-	background-color:#f4fcea;
-	border-top:1px solid #60b015;
+	background-color:#fff;
+	border:1px solid #ccc;
+	border-top-color:#5fb015;
 }
 .delivery-date dl dt,
 .delivery-date dl dd {
@@ -12252,6 +12256,47 @@ td .radish-bank-box span {display:block;}
 
 /* 물품소식*/
 .news-cont {margin-top:25px;}
+.news-cont .tab-content3 .bullet-list1 .item .tip {
+	position:relative;
+	display:inline-block;
+	width:18px;height:20px;
+	margin-left:3px;
+	background:url(../img/btn/btn_question.png) 0 0 no-repeat;
+	vertical-align:middle;
+}
+.news-cont .tab-content3 .bullet-list1 .item .tip:hover {background:url(../img/btn/btn_question_on.png) 0 0 no-repeat;}
+.news-cont .tab-content3 .bullet-list1 .item .tip .inner-box {
+	display:none;
+	position:absolute;
+	top:10px;left:-200px;
+	z-index:10;
+	transform:translateX(100px);
+	padding-top:14px;
+}
+.news-cont .tab-content3 .bullet-list1 .item .tip:hover .inner-box {
+	display:block;
+}
+.news-cont .tab-content3 .bullet-list1 .item .tip .inner-box:before {
+	content:'';
+	position:absolute;
+	top:10px;left:50%;
+	width:5px;height:4px;
+	margin-left:-2px;
+	background:url(../img/img/img_bubble02.png) 0 0 no-repeat;
+
+}
+.news-cont .tab-content3 .bullet-list1 .item .tip .inner-box div {
+	padding:11px 15px;
+	font-size:13px;
+	color:#666;
+	line-height:19px;
+	text-align:left;
+	background-color:#fff;
+	border:1px solid #60b015;
+	word-break: keep-all;
+}
+
+
 .news-cont .tab-styled4 .item {
 	width:170px;
 	height:40px;
@@ -12983,7 +13028,7 @@ td .radish-bank-box span {display:block;}
 }
 
 /* 축산물이력검사 */
-.livesto-title {
+.livesto-title2 {
 	margin-top:50px;
 }
 .livesto-title .cTitle4 {
@@ -13443,7 +13488,7 @@ td .radish-bank-box span {display:block;}
 }
 .agrofood-area .cTitle4.first,
 .often-title .cTitle4,
-.livesto-title .cTitle4  {line-height: inherit; margin-top:30px;}
+.livesto-title2 .cTitle4  {line-height: inherit;}
 .agrofood-area .safety-img {
 	height:454px;
 	margin-top:27px;
