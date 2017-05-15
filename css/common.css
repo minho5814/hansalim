@@ -11683,7 +11683,7 @@ td .radish-bank-box span {display:block;}
 }
 
 /* 1:1 상담 팝업 */
-.pop-consul {width:900px; left:-896px}
+.pop-consul {width:900px;}
 
 .pop-consul .quick-cont .board-write1 td .write-box {
 	position:relative;
