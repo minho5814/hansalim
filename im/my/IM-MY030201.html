@@ -1291,6 +1291,58 @@
 	</div>
 </div>
 
+
+<!-- 공급변동 -->
+<div class="layer-popup pop-supply-change">
+	<div class="pop-head">
+		<h1 class="pop-title">공급변동내역</h1>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<p class="pop-text1">공급 변동 내역을 확인할 수 있습니다.</p>
+		<div class="board-lsit type2">
+			<table>
+				<colgroup>
+					<col style="*">
+					<col style="width:14%;">
+					<col style="width:14%;">
+					<col style="width:14%;">
+					<col style="width:25%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>물품명</th>
+						<th>주문단가<br>(수량)</th>
+						<th>공급단가<br>(수량)</th>
+						<th>소계</th>
+						<th>변동사유</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>세발나물(200g) 세발나세발나</td>
+						<td>2,000원<br>(3개)</td>
+						<td>2,000원<br>(3개)</td>
+						<td>4,000원</td>
+						<td>공급단가 변경</td>
+					</tr>
+					<tr>
+						<td>자연산홍합(1.5kg)</td>
+						<td>2,000원<br>(3개)</td>
+						<td>2,000원<br>(3개)</td>
+						<td>4,000원</td>
+						<td>공급가능수량 부족</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="btn-bottom">
+			<a href="#" class="btn-text btn-green">확인</a>
+		</div>
+	</div>
+</div>
+
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.1.12.1.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
@@ -1309,6 +1361,11 @@ $(window).load(function(){
 	/* 운송장조회 닫기 버튼 */
 	$('.waybill-box .btn-close').click(function(){
 		$(this).parents('.waybill-box').hide();
+	});
+
+	/* 공급변동내역 */
+	$('.btn-supply-change').click(function(){
+		$('.pop-supply-change').fadeIn(200);
 	});
 });
 </script>
