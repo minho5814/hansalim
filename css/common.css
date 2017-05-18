@@ -14248,3 +14248,100 @@ td .radish-bank-box span {display:block;}
 .cs-top .fl {float:left}
 .cs-top .fr {float:right;}
 .cs-top .fr .inner-box {display: inline-block; vertical-align: top;}
+
+
+.cs-table .cs-faq-list {
+	width: 100%;
+	border-top:1px solid #666;
+}
+.cs-table .cs-faq-list .item {
+	width: 100%;
+	display: table;
+	border-bottom:1px solid #e3e3e3;
+	cursor: pointer;
+}
+.cs-table .cs-faq-list .item.on {
+	cursor: default;
+}
+.cs-table .cs-faq-list .item .question {
+	width: 100%;
+	display: table;
+	padding:20px 0;
+	box-sizing: border-box;
+}
+.cs-table .cs-faq-list .item .question > span {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+}
+
+.cs-table .cs-faq-list .item .item-area {width:15%}
+.cs-table .cs-faq-list .item .title {width:79%}
+.cs-table .cs-faq-list .item .button {width:6%;}
+
+
+
+
+.cs-table .cs-faq-list .item .question .item-area .img-area {
+	width:100px;
+	height:100px;
+	margin:0 auto;
+	border:1px solid #ddd;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.cs-table .cs-faq-list .item .question .item-area .img-area img {
+	width: 100%;
+	height:100%;
+}
+.cs-table .cs-faq-list .item .question .item-area .text-area {max-height:44px; margin-top:10px;}
+.cs-table .cs-faq-list .item .question .title {
+	font-size: 18px;
+	color:#000;
+	text-align: left;
+}
+
+.cs-table .cs-faq-list .item .question .button button {
+	position: relative;
+	width:100%;
+	height:54px;
+}
+.cs-table .cs-faq-list .item .question .button button:before {
+	content: '';
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    width: 12px;
+    height: 7px;
+    background: url(../img/icon/icon_down_arrow.png) 0 0 no-repeat;
+}
+.cs-table .cs-faq-list .item.on .question .button button:before {
+	background: url(../img/icon/icon_up_arrow.png) 0 0 no-repeat;
+}
+
+.cs-table .cs-faq-list .answer {
+	display: none;
+	width: 100%;
+	padding:20px;
+	border-top:1px solid #e3e3e3;
+	font-size: 16px;
+	color:#666;
+	line-height: 26px;
+	box-sizing: border-box;
+}
+.cs-table .cs-faq-list .item.on .answer {display:block;}
+/*.cs-table .cs-faq-list .item .title .text {
+	display:block;
+	overflow:hidden;
+	width:340px;
+	height: 22px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}*/
+/*.cs-table .cs-faq-list .item.on .title .text {
+	height: 100%;
+	overflow: inherit;
+	text-overflow: inherit;
+	white-space:inherit;
+}*/
