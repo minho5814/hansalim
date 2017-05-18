@@ -14200,3 +14200,259 @@ td .radish-bank-box span {display:block;}
 	color:#666;
 	line-height:24px;
 }
+
+/*조합원센터*/
+.lnb-container.cs .link {
+	color:#666;
+	font-size:14px;
+	line-height:26px;
+}
+.lnb-container.cs .link:hover,
+.lnb-container.cs .link.on .text {color:#60b015;}/* on */
+.lnb-container.cs .lnb-item .text {
+	display:inline-block;
+	position:relative;
+}
+.lnb-container.cs .link .text:before{
+	content:'';
+	position:absolute;
+	left:0;bottom:3px;
+	width:0;
+	height:1px;
+	background-color:#60b015;
+	opacity:0;
+}
+.lnb-container.cs .lnb-item .link:hover .text:before,
+.lnb-container.cs .link.on .text:before {
+	width:100%;
+	opacity:1;
+	-webkit-transition:width .2s;
+	-ms-transition:width .2s;
+	transition:width .2s;
+}/* on */
+
+.lnb-container.cs .left-content {
+	width: 180px;
+    float: left;
+
+}
+.lnb-container.cs .left-content .lnb {
+    border: 1px solid #505050;
+	float: initial;
+}
+.lnb-container.cs .left-content .cs-box {
+	clear:both;
+	margin-top:10px;
+	padding:20px;
+	border:1px solid #60b015;
+	box-sizing: border-box;
+}
+.lnb-container.cs .left-content .cs-box .box-top {
+	padding-bottom:20px;
+	border-bottom:1px solid #e3e3e3;
+}
+.lnb-container.cs .left-content .cs-box .box-bottom {
+	padding-top:20px;
+}
+.lnb-container.cs .left-content .cs-box .tit {
+	margin-bottom:7px;
+	color:#424242;
+	font-size: 15px;
+	line-height: 15px;
+}
+.lnb-container.cs .left-content .cs-box .call {
+	margin-top:8px;
+	color:#94ca11;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: bold;
+}
+.lnb-container.cs .left-content .cs-box dl {margin-top:8px;}
+.lnb-container.cs .left-content .cs-box dt,
+.lnb-container.cs .left-content .cs-box dd{
+	color:#666;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.cs-table .column-group {
+	overflow: hidden;
+	background-color: #f0f2ef;
+	border-top:1px solid #666;
+	border-bottom:1px solid #bbb;
+ }
+.cs-table .column-group span {
+	float: left;
+	display: inline-block;
+	padding:20px 0;
+	text-align: center;
+	font-size: 15px;
+	color: #000;
+	font-weight: bold;
+}
+.cs-table .column-group .column01 {width:7.5%}
+.cs-table .column-group .column02 {width:11.5%}
+.cs-table .column-group .column03 {width:40.5%}
+.cs-table .column-group .column04 {width:20%}
+.cs-table .column-group .column05 {width:12.5%}
+.cs-table .column-group .column06 {width:8%}
+
+.cs-table .cs-list .item {
+	display: table;
+	padding:20px 0;
+	border-bottom:1px solid #e3e3e3;
+	cursor: pointer;
+}
+.cs-table .cs-list .item.on {
+	cursor: default;
+}
+
+.cs-table .cs-list .item span,
+.cs-table .cs-list .item .title {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+}
+.cs-table .cs-list .item .number {width:7.5%}
+.cs-table .cs-list .item .item-area {width:11.5%}
+.cs-table .cs-list .item .title {width:40%; padding-left:20px; box-sizing: border-box;}
+.cs-table .cs-list .item .writer {width:20%}
+.cs-table .cs-list .item .date {width:12.5%}
+.cs-table .cs-list .item .status {width:8%}
+
+.cs-table .cs-list .item .title .text {text-align: left;}
+.cs-table .cs-list .item .title .btn-area {margin-top:10px; text-align: left;}
+
+.cs-table .cs-list .item .item-area .img-area {
+	width:100px;
+	height:100px;
+	border:1px solid #ddd;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.cs-table .cs-list .item .item-area .img-area img {
+	width: 100%;
+	height:100%;
+}
+.cs-table .cs-list .item .item-area .text-area {max-height:44px; margin-top:10px;}
+
+.cs-table .cs-list .item .title .text {
+	display:block;
+	overflow:hidden;
+	width:340px;
+	height: 22px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.cs-table .cs-list .item.on .title .text {
+	height: 100%;
+	overflow: inherit;
+	text-overflow: inherit;
+	white-space:inherit;
+}
+.cs-table .cs-list .item .title .btn-area {display: none;}
+.cs-table .cs-list .item.on .title .btn-area {display: block;}
+
+.cs-top {margin-top:90px;}
+.cs-top:after {content:''; display: block; clear: both;}
+.cs-top .fl {float:left}
+.cs-top .fr {float:right;}
+.cs-top .fr .inner-box {display: inline-block; vertical-align: top;}
+
+
+.cs-table .cs-faq-list {
+	width: 100%;
+	border-top:1px solid #666;
+}
+.cs-table .cs-faq-list .item {
+	width: 100%;
+	display: table;
+	border-bottom:1px solid #e3e3e3;
+	cursor: pointer;
+}
+.cs-table .cs-faq-list .item.on {
+	cursor: default;
+}
+.cs-table .cs-faq-list .item .question {
+	width: 100%;
+	display: table;
+	padding:20px 0;
+	box-sizing: border-box;
+}
+.cs-table .cs-faq-list .item .question > span {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+}
+
+.cs-table .cs-faq-list .item .item-area {width:15%}
+.cs-table .cs-faq-list .item .title {width:79%}
+.cs-table .cs-faq-list .item .button {width:6%;}
+
+
+
+
+.cs-table .cs-faq-list .item .question .item-area .img-area {
+	width:100px;
+	height:100px;
+	margin:0 auto;
+	border:1px solid #ddd;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.cs-table .cs-faq-list .item .question .item-area .img-area img {
+	width: 100%;
+	height:100%;
+}
+.cs-table .cs-faq-list .item .question .item-area .text-area {max-height:44px; margin-top:10px;}
+.cs-table .cs-faq-list .item .question .title {
+	font-size: 18px;
+	color:#000;
+	text-align: left;
+}
+
+.cs-table .cs-faq-list .item .question .button button {
+	position: relative;
+	width:100%;
+	height:54px;
+}
+.cs-table .cs-faq-list .item .question .button button:before {
+	content: '';
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    width: 12px;
+    height: 7px;
+    background: url(../img/icon/icon_down_arrow.png) 0 0 no-repeat;
+}
+.cs-table .cs-faq-list .item.on .question .button button:before {
+	background: url(../img/icon/icon_up_arrow.png) 0 0 no-repeat;
+}
+
+.cs-table .cs-faq-list .answer {
+	display: none;
+	width: 100%;
+	padding:20px;
+	border-top:1px solid #e3e3e3;
+	font-size: 16px;
+	color:#666;
+	line-height: 26px;
+	box-sizing: border-box;
+}
+.cs-table .cs-faq-list .item.on .answer {display:block;}
+/*.cs-table .cs-faq-list .item .title .text {
+	display:block;
+	overflow:hidden;
+	width:340px;
+	height: 22px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}*/
+/*.cs-table .cs-faq-list .item.on .title .text {
+	height: 100%;
+	overflow: inherit;
+	text-overflow: inherit;
+	white-space:inherit;
+}*/
