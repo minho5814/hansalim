@@ -14384,15 +14384,11 @@ td .radish-bank-box span {display:block;}
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-
 }
 
 .cs-table .cs-faq-list .item .item-area {width:15%}
 .cs-table .cs-faq-list .item .title {width:79%}
 .cs-table .cs-faq-list .item .button {width:6%;}
-
-
-
 
 .cs-table .cs-faq-list .item .question .item-area .img-area {
 	width:100px;
@@ -14441,18 +14437,18 @@ td .radish-bank-box span {display:block;}
 	line-height: 26px;
 	box-sizing: border-box;
 }
-/*.cs-table .cs-faq-list .item.on .answer {display:block;}*/
-/*.cs-table .cs-faq-list .item .title .text {
-	display:block;
-	overflow:hidden;
-	width:340px;
-	height: 22px;
-	text-overflow:ellipsis;
-	white-space:nowrap;
-}*/
-/*.cs-table .cs-faq-list .item.on .title .text {
-	height: 100%;
-	overflow: inherit;
-	text-overflow: inherit;
-	white-space:inherit;
-}*/
+
+.lnb-container.cs .cs-top .order-list {height:32px; line-height: 32px;}
+.lnb-container.cs .cs-top .order-list button {
+	vertical-align: bottom;
+}
+
+.lnb-container.cs .board-lsit tr.secret .title a{position:relative; padding-left:25px}
+.lnb-container.cs .board-lsit tr.secret .title a:before {
+	content:'';
+	position:absolute;
+	left:0; top:1px;
+	width:15px;
+	height:18px;
+	background: url(../img/icon/icon_secret.png) 0 0 no-repeat;
+}
