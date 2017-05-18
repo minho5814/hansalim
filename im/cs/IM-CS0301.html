@@ -917,7 +917,7 @@
 										<span class="title">휴지류 원지 수입국이 어디인가요? 일본산은 있나요?(방사능 검사 여부)</span>
 										<span class="button"><button type="button"><span class="hide">버튼</span></button></span>
 									</div>
-									<div class="answer">
+									<div class="answer"  style="display:block;">
 										안녕하세요.<br>
 										우유팩 주요 수입국은 미국입니다. 미국에서 대부분 수입하고 있으며 영국,독일 등 다른 나라에서도 일부 수입하기도 합니다.
 										상황에 따라 수입국이 변경됩니다. 주요 수입국이 미국이며, 일본산 우유팩은 사용하지 않습니다 휴지류는 방사능 검사를 진행하지 못하
@@ -1184,8 +1184,12 @@
 <script>
 	$(window).load(function(){
 		$(document).on('click', '.cs-faq-list .question button', function(){
-			$('.cs-faq-list .question').parents('li').removeClass('on').find('.answer').slideUp(100);
-			$(this).parents('li').addClass('on').find('.answer').slideDown(200);		
+			if($(this).parents('li').hasClass('on')){
+				$(this).parents('li').removeClass('on').find('.answer').slideUp(100);
+			}else{
+				$('.cs-faq-list .question').parents('li').removeClass('on').find('.answer').slideUp(100);
+				$(this).parents('li').addClass('on').find('.answer').slideDown(200);
+			}
 		});
 	});
 </script>
