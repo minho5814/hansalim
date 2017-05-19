@@ -14316,7 +14316,7 @@ td .radish-bank-box span {display:block;}
 }
 .cs-table .cs-list .item .number {width:7.5%}
 .cs-table .cs-list .item .item-area {width:11.5%}
-.cs-table .cs-list .item .title {width:40%; padding-left:20px; box-sizing: border-box;}
+.cs-table .cs-list .item .title {width:40%; box-sizing: border-box; padding:0 0 28px 20px;}
 .cs-table .cs-list .item .writer {width:20%}
 .cs-table .cs-list .item .date {width:12.5%}
 .cs-table .cs-list .item .status {width:8%}
@@ -14408,6 +14408,7 @@ td .radish-bank-box span {display:block;}
 }
 .cs-table .cs-faq-list .item .question .item-area .text-area {max-height:44px; margin-top:10px;}
 .cs-table .cs-faq-list .item .question .title {
+	padding-bottom:50px;
 	font-size: 18px;
 	color:#000;
 	text-align: left;
