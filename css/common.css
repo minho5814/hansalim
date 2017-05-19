@@ -1960,7 +1960,7 @@ table .good-table table th {padding:0;}
 .item-list .price {line-height:18px;font-size:18px;color:#000;font-weight:900;letter-spacing:-1px;}
 .item-list .price em {font-size:14px}
 
-/*sub-캠페인*/
+/*sub-가치살림*/
 .thumb-slide2.campaign {}
 .thumb-slide2.campaign .slide-area{border:1px solid #ddd;box-sizing:border-box;}
 .thumb-slide2.campaign:after {content:'';display:block;clear:both;}
@@ -12736,7 +12736,7 @@ td .radish-bank-box span {display:block;}
 		color:#09babc;
 	}
 
-/* 캠페인 상세 */
+/* 가치살림 상세 */
 .sub-cont.campaign {overflow:inherit;position:relative;}
 .sub-cont.campaign .symbol-item {top:37px;right:70px;}
 .campaign .view-area {
@@ -12946,7 +12946,7 @@ td .radish-bank-box span {display:block;}
 	top:0;
 }
 
-/*캠페인 심볼*/
+/*가치살림 심볼*/
 .symbol-item {
 	height:150px;
 	position:absolute;
