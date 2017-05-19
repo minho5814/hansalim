@@ -14316,13 +14316,31 @@ td .radish-bank-box span {display:block;}
 }
 .cs-table .cs-list .item .number {width:7.5%}
 .cs-table .cs-list .item .item-area {width:11.5%}
-.cs-table .cs-list .item .title {width:40%; padding-left:20px; box-sizing: border-box;}
+.cs-table .cs-list .item .title {width:40%; box-sizing: border-box; padding:0 0 28px 20px;}
 .cs-table .cs-list .item .writer {width:20%}
 .cs-table .cs-list .item .date {width:12.5%}
 .cs-table .cs-list .item .status {width:8%}
 
-.cs-table .cs-list .item .title .text {text-align: left;}
-.cs-table .cs-list .item .title .btn-area {margin-top:10px; text-align: left;}
+
+.cs-table .cs-list .item .title .text {
+	display:block;
+	overflow:hidden;
+	width:340px;
+	height: 22px;
+	text-align: left;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.cs-table .cs-list .item .title .btn-area {display: none;margin-top:10px; text-align: left;}
+/*.cs-table .cs-list .item.on .title {vertical-align: top;}*/
+.cs-table .cs-list .item.on .title .text {
+	height: 100%;
+	overflow: inherit;
+	text-overflow: inherit;
+	white-space:inherit;
+}
+
+.cs-table .cs-list .item.on .title .btn-area {display: block;}
 
 .cs-table .cs-list .item .item-area .img-area {
 	width:100px;
@@ -14337,22 +14355,8 @@ td .radish-bank-box span {display:block;}
 }
 .cs-table .cs-list .item .item-area .text-area {max-height:44px; margin-top:10px;}
 
-.cs-table .cs-list .item .title .text {
-	display:block;
-	overflow:hidden;
-	width:340px;
-	height: 22px;
-	text-overflow:ellipsis;
-	white-space:nowrap;
-}
-.cs-table .cs-list .item.on .title .text {
-	height: 100%;
-	overflow: inherit;
-	text-overflow: inherit;
-	white-space:inherit;
-}
-.cs-table .cs-list .item .title .btn-area {display: none;}
-.cs-table .cs-list .item.on .title .btn-area {display: block;}
+
+
 
 .cs-top {margin-top:90px;}
 .cs-top:after {content:''; display: block; clear: both;}
@@ -14404,6 +14408,7 @@ td .radish-bank-box span {display:block;}
 }
 .cs-table .cs-faq-list .item .question .item-area .text-area {max-height:44px; margin-top:10px;}
 .cs-table .cs-faq-list .item .question .title {
+	padding-bottom:50px;
 	font-size: 18px;
 	color:#000;
 	text-align: left;
