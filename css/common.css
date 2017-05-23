@@ -11660,6 +11660,7 @@ td .radish-bank-box span {display:block;}
 	overflow:hidden;
 	position:relative;
 	padding:20px 0;
+	border-top:1px solid #ddd;
 	background-color:#f7f7f7;
 }
 .qna-cont .qna-list .item .answer .text {
