@@ -527,6 +527,7 @@ html {height:100%;}
 /* 로케이션 */
 .container.category .location {margin-bottom:-16px;}
 .location {
+	position:relative;
 	width:1120px;
 	margin:0 auto;
 	padding:16px 0;
@@ -590,6 +591,16 @@ html {height:100%;}
 .fRight {float:right !important;}
 
 .location.select {padding:16px 0 !important;height:auto;}
+
+/* 로케이션 셀렉트 박스 포함 */
+.location .special-select {
+	position:absolute;
+	right:0;top:15px;
+	width:300px;
+}
+.location .special-select .item {
+	float:inherit;
+}
 
 /* 캘린더 */
 .ui-datepicker {
@@ -10633,12 +10644,17 @@ td .radish-bank-box span {display:block;}
 	color:#666;
 }
 /*특별품 주문일정 */
-.float-area.special .util {
-	margin:0;
-	padding-top:12px;
+.float-area.special .util {margin:0;}
+.float-area.special .text {
+	color:#000;
+	font-size:18px;
 }
 .float-area.special .util .date {font-size:14px; font-weight: bold;}
-	.float-area.special .util .date em {color:#000;}
+.float-area.special .util .date em {
+	display:inline-block;
+	margin-right:5px;
+	color:#000;
+}
 
 /* 새로 공급한 물품 이용후기 */
 .review-area {
