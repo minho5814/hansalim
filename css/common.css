@@ -3604,10 +3604,14 @@ label.check-radio .radiobox {margin-right:8px;}
 	margin-left:-1px;
 	cursor:pointer;
 }
-.tab-list1.wid50 .item {width:50% !important;}
 .tab-list1 .item:first-child {
 	width:34%;
 	margin-left:0;
+}
+.tab-list1.wid50 .item {width:50% !important;}
+.tab-list1.wid25 .item {width:25% !important;}
+.tab-list1.wid25 .item:first-child {
+	margin-left:1px;
 }
 .tab-list1 .item .text {
 	display:block;
@@ -12367,23 +12371,15 @@ td .radish-bank-box span {display:block;}
 	word-break: keep-all;
 }
 
-
-.news-cont .tab-styled4 .item {
-	width:170px;
-	height:40px;
-	margin-left:2px;
-}
-.news-cont .tab-styled4 .item span {height:40px;line-height:40px;font-size:15px;}
-.news-cont .tab-styled4 .item:first-child {margin-left:0;}
-.news-cont .tab-styled4 .item.new span em {
+.news-cont .tab-list1 .item span em {
 	position: relative;
 	margin-left:-15px;
 }
-.news-cont .tab-styled4 .item.new span em:after {
+.news-cont .tab-list1 .item span em:after {
 	content: 'N';
 	display: inline-block;
 	position: absolute;
-	top:3px;
+	top:2px;
 	right:-18px;
 	width: 15px;
 	height: 15px;
