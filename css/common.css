@@ -14039,7 +14039,8 @@ td .radish-bank-box span {display:block;}
 }
 .lnb-container.cs .left-content .lnb {
     border:1px solid #505050;
-	float:initial;
+	float: none !important;
+
 }
 .lnb-container.cs .left-content .cs-box {
 	clear:both;
