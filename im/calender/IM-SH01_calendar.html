@@ -43,7 +43,9 @@
 	<div class="calender-info">
 		<ul  class="list">
 			<li class="text">선택가능공급일</li>
-			<li class="text">희망배송일</li>
+			<!-- 2017-05-24 희망배송일 -> 공급일로 변경-->
+			<li class="text">공급일</li>
+			<!-- //2017-05-24 희망배송일 -> 공급일로 변경-->
 		</ul>
 		<dl class="date-area">
 			<dt>선택 공급일</dt>
@@ -99,7 +101,7 @@
 		// 캘린더
 		// - 선택가능공급일 : 오늘로부터 3일 이후(영업일 기준)부터 일주일간 선택 가능 마킹
 		// - 수정가능일 : 선택 공급일로부터 3일 전 마킹
-		// - 희망배송일 : 선택가능공급일 內 선택 가능, 선택한 날짜 마킹
+		// - 희망공급일 : 선택가능공급일 內 선택 가능, 선택한 날짜 마킹
 		setTimeout( function() {
 			// <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2017"><a class="ui-state-default" href="#">12</a></td>
 			$(".datepicker2 td[data-year=2017][data-month=4] > a:contains('16')").css('background-color', '#e3e3e3');
