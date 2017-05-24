@@ -908,13 +908,17 @@
 						<div class="tab-area">
 							<ul class="tab-list1 wid50 tab-styled3">
 								<li class="item"><a href="IM-MY020301-01.html" class="text">공급지 정보</a></li>
-								<li class="item on"><a href="#none" class="text">선물택배 배송지</a></li>
+								<!-- 2017-05-24 배송 -> 공급으로 변경1 -->
+								<li class="item on"><a href="#none" class="text">선물택배 공급지</a></li>
+								<!-- //2017-05-24 배송 -> 공급으로 변경1 -->
 							</ul>
 						</div>
 						<div class="tab-content3 on">
 							<div class="board-wrap">
 								<div class="title-wrap align-right">
-									<button type="button" class="btn-round-text btn-prev-shipping btn-popup btn-white">이전 배송지</button><!-- 2017-04-12 a -> button 으로 변경 -->
+									<!-- 2017-05-24 배송 -> 공급으로 변경2 -->
+									<button type="button" class="btn-round-text btn-prev-shipping btn-popup btn-white">이전 공급지</button><!-- 2017-04-12 a -> button 으로 변경 -->
+									<!-- //2017-05-24 배송 -> 공급으로 변경2 -->
 								</div>
 								<div class="board-write1 mgT10">
 									<table>
@@ -1064,14 +1068,18 @@
 </div>
 
 <!-- 레이어 팝업 영역 -->
-<!-- 이전 배송지 -->
+<!-- 이전 공급지 -->
 <div class="layer-popup pop-prev-shipping">
 	<div class="pop-head">
-		<h1 class="pop-title">선물택배 배송지</h1>
+		<!-- 2017-05-24 배송 -> 공급으로 변경3 -->
+		<h1 class="pop-title">선물택배 공급지</h1>
+		<!-- //2017-05-24 배송 -> 공급으로 변경3 -->
 		<button type="button" class="btn-close">닫기</button>
 	</div>
 	<div class="pop-content">
-		<p class="pop-text2">이전 배송지</p>
+		<!-- 2017-05-24 배송 -> 공급으로 변경4 -->
+		<p class="pop-text2">이전 공급지</p>
+		<!-- //2017-05-24 배송 -> 공급으로 변경4 -->
 		<div class="board-lsit type2">
 			<table>
 				<colgroup>
@@ -1291,7 +1299,7 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-	/* 이전 배송지 */
+	/* 이전 공급지 */
 	$('.btn-prev-shipping').click(function(){
 		$('.pop-prev-shipping').fadeIn(200);
 	});
