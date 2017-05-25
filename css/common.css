@@ -13398,10 +13398,9 @@ td .radish-bank-box span {display:block;}
 	line-height:26px;
 	font-weight:normal;
 }
-/* 농식품 안전센터 */
+/* 물품안정성 */
 .agrofood-area {
-	margin-top:10px;
-	padding:27px 39px 72px;
+	padding:56px 39px 60px;
 	border:1px solid #ddd;
 	box-sizing:border-box;
 }
@@ -13409,144 +13408,67 @@ td .radish-bank-box span {display:block;}
 .often-title .cTitle4,
 .livesto-title2 .cTitle4 {line-height:inherit;}
 .agrofood-area .safety-img {
-	height:454px;
-	margin-top:27px;
+	margin-top:25px;
 }
-.agrofood-area .safety-img img {vertical-align:top;}
-.agrofood-area .board-write5 tr:first-child th,
-.agrofood-area .board-write5 tr:first-child td {border-top:1px solid #ddd;}
-.agrofood-area .board-write5 tr:last-child th,
-.agrofood-area .board-write5 tr:last-child td {border-bottom:1px solid #ddd;}
-.agrofood-area .analysis-list {overflow:hidden;}
-.agrofood-area .analysis-list li {
-	float:left;
-	margin-right:29px;
-	padding:6px 0 6px 41px;
-}
-.agrofood-area .analysis-list li.item-analy01 {background:url(../img/icon/ico_analy01.png) no-repeat 0 0;}
-.agrofood-area .analysis-list li.item-analy02 {background:url(../img/icon/ico_analy02.png) no-repeat 0 0;}
-.agrofood-area .analysis-list li.item-analy03 {background:url(../img/icon/ico_analy03.png) no-repeat 0 0;}
-.agrofood-area .analysis-list li.item-analy04 {background:url(../img/icon/ico_analy04.png) no-repeat 0 0;}
-.agrofood-area .analysis-list li.item-analy05 {background:url(../img/icon/ico_analy05.png) no-repeat 0 0;}
-.agrofood-area .analysis-list li.item-analy06 {background:url(../img/icon/ico_analy06.png) no-repeat 0 0;}
-.agrofood-area .process-area {margin-top:6px;}
-/*.agrofood-area .process-area .proce-list {overflow:hidden;}
-.agrofood-area .process-area .proce-list li {
-	float:left;
-	position:relative;
-	height:40px;
-	margin:0 0 15px 36px;
-	padding:0 17px;
-	font-size:15px;
-	color:#666;
-	line-height:40px;
-	border:1px solid #ddd;
-	box-sizing:border-box;
-}
-.agrofood-area .process-area .proce-list li:first-child {margin:0 0 15px 0;}
-.agrofood-area .process-area .proce-list li:first-child:before {display:none;}
-.agrofood-area .process-area .proce-list li:before {
-	content:'';
-	display:block;
-	position:absolute;
-	left:-29px;top:50%;
-	width:20px;
-	height:20px;
-	margin-top:-10px;
-	background:url(../img/icon/icon_direc01.png) no-repeat 0 0;
-}*/
-.agrofood-area .proce-img {
-	width:742px;
-	height:660px;
-	margin:45px auto 0;
-	background:url(../img/temp/@temp_proce.jpg) no-repeat 0 0;
-	text-align:center;
-}
+.safety-img img {vertical-align:top;}
 
-.agrofood-area .process-list {
-	border:1px solid #ccc;
-	box-sizing:border-box;
+.safety-list {
+	margin-top:60px;
+	border-top:1px solid #ddd;
 }
-.agrofood-area .process-list .item {
-	position:relative;
-	border-top:1px solid #eee;
+.safety-list li {
+	position: relative;
+	padding:30px 0;
+	border-bottom:1px solid #ddd;
 }
-.agrofood-area .process-list .item:before {
-	content:'';
-	display:block;
+.safety-list dl {
+	overflow: hidden;
+	position: relative;
+}
+.safety-list dl dt {
 	position:absolute;
-	left:60px;bottom:-9px;
-	width:20px;
-	height:20px;
-	background:url(../img/icon/ico_bot.png) no-repeat 0 0;
-	z-index:10;
-}
-.agrofood-area .process-list .item:last-child:before {display:none;}
-.agrofood-area .process-list .item:first-child {border-top:0;}
-.agrofood-area .process-list .item dl {display:table;width:100%;}
-.agrofood-area .process-list .item dl dt,
-.agrofood-area .process-list .item dl dd {
-	display:table-cell;
-	padding:22px 15px;
-	background-color:#f7f7f7;
-	box-sizing:border-box;
-	font-size:15px;
-	color:#666;
-	line-height:19px;
-	vertical-align:middle;
-	text-align:center;
-}
-.agrofood-area .process-list .item dl dt {width:140px;color:#000;}
-.agrofood-area .process-list .item dl dd {
-	background-color:#fff;
-	text-align:left;
-	color:#666;
-}
-.vision-list {
-	overflow:hidden;
-	margin-top:22px;
-}
-.vision-list .item-vision {
-	float:left;
-	width:315px;
-	position:relative;
-	padding-left:30px;
-}
-.vision-list .item-vision:before {
-	content:'';
-	display:block;
-	position:absolute;
-	left:0;top:6px;
-	width:1px;
-	height:130px;
-	background-color:#ddd;
-}
-.vision-list .item-vision .vision-title {
-	display:block;
-	font-size:16px;
+	top:50%; left:0;
+	-ms-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:356px;
+	padding-left:110px;
 	color:#000;
-	line-height:24px;
-	font-weight:bold;
+	font-size:18px;
+	font-weight: bold;
+	line-height: 26px;
+	text-align: center;
+	box-sizing: border-box;
 }
-.vision-list .item-vision .vision-depth {
-	margin-top:14px;
-}
-.vision-list .item-vision .vision-depth li {
-	position:relative;
-	padding-left:10px;
-	font-size:15px;
+.safety-list dl dd {
+	width:100%;
+	padding-left:378px;
 	color:#666;
-	line-height:26px;
+	font-size:15px;
+	line-height: 26px;
+	box-sizing: border-box;
+	word-break: keep-all;
 }
-.vision-list .item-vision .vision-depth li:before {
-	content:'';
-	display:block;
-	position:absolute;
-	left:0;top:10px;
-	width:3px;
-	height:3px;
-	background-color:#666;
+.safety-list li:before {
+	content: '';
+	position: absolute;
+	top:50%; left:22px;
+	-ms-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:66px; height:60px;
+	background-image:url(../img/sprite/safety_icon.png);
+	background-repeat: no-repeat;
 }
+.safety-list .item01:before {background-position: 0 0;}
+.safety-list .item02:before {background-position: 0 -62px;}
+.safety-list .item03:before {background-position: 0 -124px;}
+.safety-list .item04:before {background-position: 0 -186px;}
+.safety-list .item05:before {background-position: 0 -248px;}
+.safety-list .item06:before {background-position: 0 -310px;}
+.safety-list .item07:before {background-position: 0 -372px;}
+.safety-list .item08:before {background-position: 0 -434px;}
+.safety-list .item09:before {background-position: 0 -496px;}
 
 /* 자주인증/자주관리·점검 */
  .often-title {
