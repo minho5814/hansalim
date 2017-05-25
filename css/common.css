@@ -13410,22 +13410,22 @@ td .radish-bank-box span {display:block;}
 .agrofood-area .safety-img {
 	margin-top:25px;
 }
-.agrofood-area .safety-img img {vertical-align:top;}
+.safety-img img {vertical-align:top;}
 
-.agrofood-area .safety-list {
+.safety-list {
 	margin-top:60px;
 	border-top:1px solid #ddd;
 }
-.agrofood-area .safety-list li {
+.safety-list li {
 	position: relative;
 	padding:30px 0;
 	border-bottom:1px solid #ddd;
 }
-.agrofood-area .safety-list dl {
+.safety-list dl {
 	overflow: hidden;
 	position: relative;
 }
-.agrofood-area .safety-list dl dt {
+.safety-list dl dt {
 	position:absolute;
 	top:50%; left:0;
 	-ms-transform:translateY(-50%);
@@ -13440,7 +13440,7 @@ td .radish-bank-box span {display:block;}
 	text-align: center;
 	box-sizing: border-box;
 }
-.agrofood-area .safety-list dl dd {
+.safety-list dl dd {
 	width:100%;
 	padding-left:378px;
 	color:#666;
@@ -13449,7 +13449,7 @@ td .radish-bank-box span {display:block;}
 	box-sizing: border-box;
 	word-break: keep-all;
 }
-.agrofood-area .safety-list li:before {
+.safety-list li:before {
 	content: '';
 	position: absolute;
 	top:50%; left:22px;
@@ -13460,15 +13460,15 @@ td .radish-bank-box span {display:block;}
 	background-image:url(../img/sprite/safety_icon.png);
 	background-repeat: no-repeat;
 }
-.agrofood-area .safety-list .item01:before {background-position: 0 0;}
-.agrofood-area .safety-list .item02:before {background-position: 0 -62px;}
-.agrofood-area .safety-list .item03:before {background-position: 0 -124px;}
-.agrofood-area .safety-list .item04:before {background-position: 0 -186px;}
-.agrofood-area .safety-list .item05:before {background-position: 0 -248px;}
-.agrofood-area .safety-list .item06:before {background-position: 0 -310px;}
-.agrofood-area .safety-list .item07:before {background-position: 0 -372px;}
-.agrofood-area .safety-list .item08:before {background-position: 0 -434px;}
-.agrofood-area .safety-list .item09:before {background-position: 0 -496px;}
+.safety-list .item01:before {background-position: 0 0;}
+.safety-list .item02:before {background-position: 0 -62px;}
+.safety-list .item03:before {background-position: 0 -124px;}
+.safety-list .item04:before {background-position: 0 -186px;}
+.safety-list .item05:before {background-position: 0 -248px;}
+.safety-list .item06:before {background-position: 0 -310px;}
+.safety-list .item07:before {background-position: 0 -372px;}
+.safety-list .item08:before {background-position: 0 -434px;}
+.safety-list .item09:before {background-position: 0 -496px;}
 
 /* 자주인증/자주관리·점검 */
  .often-title {
