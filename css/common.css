@@ -13344,7 +13344,7 @@ td .radish-bank-box span {display:block;}
 	line-height:24px;
 	padding:0 0 0 11px;
 }
-.noty-title-wrap  .bullet-list1 .item::before{top:10px;}
+.noty-title-wrap  .bullet-list1 .item:before{top:10px;}
 
 .improve-box.type1 .board-lsit td.title {padding-left:25px;}
 .improve-box.type1 .board-lsit td.title a {max-height:48px;}
@@ -14295,4 +14295,124 @@ td .radish-bank-box span {display:block;}
 	width:15px;
 	height:18px;
 	background:url(../img/icon/icon_secret.png) 0 0 no-repeat;
+}
+
+/*물품이야기*/
+
+.item-story-area {}
+.item-story-area .tab-list {overflow:hidden;}
+.item-story-area .tab-list .item {
+	float:left;
+	position:relative;
+	width:185px;
+	height:77px;
+	margin-left:2px;
+	background-color:#f3f3f3;
+	border:1px solid #ddd;
+	cursor:pointer;
+	box-sizing: border-box;
+}
+.item-story-area .tab-list .item:first-child {margin-left:0;}
+.item-story-area .tab-list .item.on {
+	background-color:#fff;
+}
+.item-story-area .tab-list .item:before {
+	content:'';
+	position: absolute;
+	top:13px;
+	left:50%;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+	width:24px;
+	background:url(../img/sprite/tab_img.png) no-repeat -25px 0;
+}
+
+.item-story-area .tab-list .item:nth-child(1):before {
+	height:25px;
+	background-position: -25px 0;
+}
+.item-story-area .tab-list .item:nth-child(2):before {
+	height:24px;
+	background-position: -25px -26px;
+}
+.item-story-area .tab-list .item:nth-child(3):before {
+	height:25px;
+	background-position: -25px -51px;
+}
+.item-story-area .tab-list .item:nth-child(4):before {
+	height:23px;
+	background-position: -25px -77px;
+}
+.item-story-area .tab-list .item:nth-child(5):before {
+	height:23px;
+	background-position: -25px -101px;
+}
+.item-story-area .tab-list .item:nth-child(6):before {
+	height:23px;
+	background-position: -25px -125px;
+}
+
+.item-story-area .tab-list .item.on:nth-child(1):before,
+.item-story-area .tab-list .item:hover:nth-child(1):before {background-position: 0 0;}
+.item-story-area .tab-list .item:hover:nth-child(2):before,
+.item-story-area .tab-list .item:hover:nth-child(2):before {background-position: 0 -26px;}
+.item-story-area .tab-list .item.on:nth-child(3):before,
+.item-story-area .tab-list .item:hover:nth-child(3):before {background-position: 0 -51px;}
+.item-story-area .tab-list .item.on:nth-child(4):before,
+.item-story-area .tab-list .item:hover:nth-child(4):before {background-position: 0 -77px;}
+.item-story-area .tab-list .item.on:nth-child(5):before,
+.item-story-area .tab-list .item:hover:nth-child(5):before {background-position: 0 -101px;}
+.item-story-area .tab-list .item.on:nth-child(6):before,
+.item-story-area .tab-list .item:hover:nth-child(6):before {background-position: 0 -125px;}
+
+.item-story-area .tab-list .item .text {
+	display: block;
+	height:77px;
+	text-align: center;
+	padding-top:45px;
+	font-size:15px;
+	color:#999;
+	box-sizing: border-box;
+	font-family:ns;
+}
+.item-story-area .tab-list .item.on .text {color:#000;}
+.item-story-area .tab-list .item:hover,
+.item-story-area .tab-list .item.on {z-index:1;cursor:default;}
+.tab-list .item:hover  {
+	border-color:#666;
+	background-color:#fff;
+	color:#000;
+	-webkit-transition:all .3s;
+	-ms-transition:all .3s;
+	transition:all .3s;
+}/* hover */
+.item-story-area .tab-list .item.on  {
+	border-color:#666;
+	background-color:#fff;
+	color:#000;
+}
+
+.item-story-area .tab-content4 {
+	padding-top:65px;
+}
+.item-story-area .tab-content4 .box {
+	padding:60px 40px;
+	border:1px solid #ddd;
+}
+.item-story-area .tab-content4 .box .group .cTitle4 {line-height: inherit;}
+
+.item-story-area .bullet-list1 {margin:15px 0 40px;}
+.item-story-area .bullet-list1 .item {
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+	padding:0 0 0 11px;
+}
+.item-story-area .bullet-list1 .item:before {top:10px;}
+.item-story-area .bullet-list1 .item span {display: block; margin:5px 0;}
+.item-story-area .bg-img {
+	width:1040px;
+	height:540px;
+	background:url(../img/img/img_footer_menu.png) #f7f7f7 no-repeat center;
 }
