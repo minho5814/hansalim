@@ -14205,8 +14205,9 @@ td .radish-bank-box span {display:block;}
 	background:url(../img/icon/icon_secret.png) 0 0 no-repeat;
 }
 
-/*물품이야기*/
+/*****물품이야기*/
 
+/*물품취급기준*/
 .item-story-area {}
 .item-story-area .tab-list {overflow:hidden;}
 .item-story-area .tab-list .item {
@@ -14263,7 +14264,7 @@ td .radish-bank-box span {display:block;}
 
 .item-story-area .tab-list .item.on:nth-child(1):before,
 .item-story-area .tab-list .item:hover:nth-child(1):before {background-position: 0 0;}
-.item-story-area .tab-list .item:hover:nth-child(2):before,
+.item-story-area .tab-list .item.on:nth-child(2):before,
 .item-story-area .tab-list .item:hover:nth-child(2):before {background-position: 0 -26px;}
 .item-story-area .tab-list .item.on:nth-child(3):before,
 .item-story-area .tab-list .item:hover:nth-child(3):before {background-position: 0 -51px;}
@@ -14324,3 +14325,77 @@ td .radish-bank-box span {display:block;}
 	height:540px;
 	background:url(../img/img/img_footer_menu.png) #f7f7f7 no-repeat center;
 }
+
+
+/*물품현황*/
+.item-story-area .vision-list .item-vision {width:25%; box-sizing: border-box;}
+
+.table-style {
+	overflow: hidden;
+	position:relative;
+	padding-left:115px;
+	margin-bottom: 40px;
+	border-top:1px solid #666;
+	border-bottom:1px solid #bbb;
+
+}
+.table-style p {
+	position:absolute;
+	left:0;top:0;
+	display: inline-block;
+	width:115px;
+	height:138px;
+	color: #000;
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 138px;
+	text-align: center;
+}
+.table-style dl {
+	float: left;
+}
+.table-style dl dt {
+	height:56px;
+	line-height: 56px;
+	font-size:15px;
+	color: #000;
+	text-align: center;
+	background:url(../img/bg/bg03.png) repeat-x left bottom;
+}
+.table-style dl dd {
+	height:80px;
+	line-height: 80px;
+	font-size: 20px;
+	font-weight: bold;
+	color:#000;
+	text-align: center;
+}
+.table-style dl dd span {font-weight: normal; font-size: 16px;}
+
+.table-style.type1 .item1 {width:190px;}
+.table-style.type1 .item2 {width:320px;}
+.table-style.type1 .item3 {width:213px;}
+.table-style.type1 .item4 {width:200px;}
+
+.table-style.type2 .item1 {width:233px;}
+.table-style.type2 .item2 {width:457px;}
+.table-style.type2 .item3 {width:233px;}
+
+.table-style.type3 .item1,
+.table-style.type3 .item2 {width: 50%;}
+
+.item-story-area .float-area .text-area,
+.item-story-area .float-area .img-area {
+	width:50%;
+}
+.item-story-area .float-area .text-area {
+	padding-right:25px;
+	box-sizing: border-box;
+	line-height: 26px;
+}
+.item-story-area .img-area {
+	font-size: 0;
+	margin-bottom:30px;
+}
+.table-style.type2,
+.table-style.type3 {margin-bottom:30px;}
