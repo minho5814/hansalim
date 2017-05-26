@@ -14297,13 +14297,14 @@ td .radish-bank-box span {display:block;}
 	box-sizing: border-box;
 	font-family:ns;
 }
-.item-story-area .tab-list .item.on .text {color:#fff;}
+.item-story-area .tab-list .item.on .text,
+.item-story-area .tab-list .item:hover .text {color:#fff;}
 .item-story-area .tab-list .item:hover  {
 	z-index:1;
 	cursor:default;
-	border-color:#666;
-	background-color:#fff;
-	color:#000;
+	border-color:#57a311;
+	background-color:#60b015;
+	color:#fff;
 	-webkit-transition:all .3s;
 	-ms-transition:all .3s;
 	transition:all .3s;
