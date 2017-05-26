@@ -14211,7 +14211,13 @@ td .radish-bank-box span {display:block;}
 /*물품취급기준*/
 .item-story-area {}
 .item-story-area p {color:#666}
-.item-story-area .tab-list {overflow:hidden;}
+.item-story-area .tab-list {overflow:hidden; background-color: #fff;}
+.tab .item-story-area .tab-list { /*탭링크 고정인경우*/
+	position: fixed;
+	top: 0;
+	width: 1120px;
+	z-index: 10;
+}
 .item-story-area .tab-list .item {
 	float:left;
 	position:relative;
@@ -14304,14 +14310,15 @@ td .radish-bank-box span {display:block;}
 	color:#000;
 }
 
-.item-story-area .tab-content4 {
+.item-story-area .item-cont-wrap {
 	padding-top:65px;
 }
-.item-story-area .tab-content4 .box {
+.item-story-area .item-cont-wrap .box {
 	padding:60px 40px;
 	border:1px solid #ddd;
 }
-.item-story-area .tab-content4 .box .group .cTitle4 {line-height: inherit;}
+.item-story-area .item-cont-wrap .box .group {margin-top:60px;}
+.item-story-area .item-cont-wrap .box .group .cTitle4 {line-height: inherit;}
 
 .item-story-area .bullet-list1 {margin:15px 0 40px;}
 .item-story-area .bullet-list1 .item {

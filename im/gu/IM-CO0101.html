@@ -842,15 +842,19 @@
 		</div>
 		<div class="content-w1120 mgT40">
 			<div class="item-story-area">
-				<ul class="tab-list">
-					<li class="item on"><span class="text">물품취급기준</span></li>
-					<li class="item"><span class="text">물품현황</span></li>
-					<li class="item"><span class="text">물품안전성</span></li>
-					<li class="item"><span class="text">생산자 자주관리</span></li>
-					<li class="item"><span class="text">조합원 자주점검</span></li>
-					<li class="item"><span class="text">한살림 자주인증</span></li>
-				</ul>
-				<div class="tab-content4 on">
+				<!-- 2017-05-26 : tab-list상위 tab-wrap div 추가-->
+				<div class="tab-wrap">
+					<ul class="tab-list">
+						<li class="item on"><span class="text">물품취급기준</span></li>
+						<li class="item"><span class="text">물품현황</span></li>
+						<li class="item"><span class="text">물품안전성</span></li>
+						<li class="item"><span class="text">생산자 자주관리</span></li>
+						<li class="item"><span class="text">조합원 자주점검</span></li>
+						<li class="item"><span class="text">한살림 자주인증</span></li>
+					</ul>
+				</div>
+				<!--// 2017-05-26 : tab-list상위 tab-wrap div 추가-->
+				<div class="item-cont-wrap"> <!--2017-05-26 : 클래스명 변경 (tab-content4 -> item-cont-wrap)-->
 					<h3 class="cTitle3">1. 물품취급기준</h3>
 					<div class="box">
 						<div class="group mgT0">
@@ -923,7 +927,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="tab-content4">
+				<div class="item-cont-wrap"> <!--2017-05-26 : 클래스명 변경 (tab-content4 -> item-cont-wrap)-->
 					<h3 class="cTitle3">2. 물품현황</h3>
 					<div class="box">
 						<div class="group mgT0">
@@ -1117,7 +1121,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="tab-content4">
+				<div class="item-cont-wrap"> <!--2017-05-26 : 클래스명 변경 (tab-content4 -> item-cont-wrap)-->
 					<h3 class="cTitle3">3. 물품안전성</h3>
 					<div class="box">
 						<div class="group mgT0">
@@ -1192,7 +1196,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="tab-content4">
+				<div class="item-cont-wrap"> <!--2017-05-26 : 클래스명 변경 (tab-content4 -> item-cont-wrap)-->
 					<h3 class="cTitle3">4. 생산자 자주관리</h3>
 					<div class="box">
 						<div class="group mgT0">
@@ -1222,7 +1226,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="tab-content4">
+				<div class="item-cont-wrap"> <!--2017-05-26 : 클래스명 변경 (tab-content4 -> item-cont-wrap)-->
 					<h3 class="cTitle3">5. 조합원 자주점검</h3>
 					<div class="box">
 						<div class="group mgT0">
@@ -1256,7 +1260,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="tab-content4">
+				<div class="item-cont-wrap"> <!--2017-05-26 : 클래스명 변경 (tab-content4 -> item-cont-wrap)-->
 					<h3 class="cTitle3">6. 한살림 자주인증</h3>
 					<div class="box">
 						<div class="group mgT0">
@@ -1359,7 +1363,6 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 
 	<div class="footer"><!-- 푸터 영역 전체 수정 -->
@@ -1460,11 +1463,48 @@
 <!-- 2017-04-12 스크립트 추가 -->
 <script>
 $(window).load(function(){
+	
+	/*2017-05-26 스크립트 삭제
 	$('.item-story-area .tab-list .item').click(function(){
 		var idx = $(this).index();
 		$('.tab-list .item').removeClass('on').eq(idx).addClass('on');
 		$('.tab-content4').removeClass('on').eq(idx).addClass('on');
 	});
+	*/
+	/* 2017-05-26 스크립트 추가 */
+	//링크이동
+	$('.tab-list .item').click(function(){
+		var idx = $(this).index();
+		var cont_height = $('.item-cont-wrap').eq(idx).offset().top  - $('.tab-list').outerHeight();
+		var wrap = $('.tab-list').outerHeight();
+
+		$('html, body').animate({scrollTop:cont_height});
+		$(this).parents('.tab-wrap').css('height',wrap);
+	});
+
+	$(window).scroll(function(){
+		var winTop = $(window).scrollTop();
+		/* 스크롤 다운시 해더 변경 */
+		if($('.tab-wrap').length >= 1){
+			var tabTop = $('.tab-wrap').offset().top - $('.tab-list').outerHeight();
+			if(winTop >= tabTop){
+				$('html').addClass('tab');
+			}else{
+				$('html').removeClass('tab');
+			}
+		}
+
+		$('.item-cont-wrap').each(function(index){
+			$brandTop = $('.item-cont-wrap').eq(index).offset().top - $('.tab-list').outerHeight();
+			if (winTop >= $brandTop){
+				$('.tab-list .item').removeClass('on');
+				$('.tab-list .item').eq(index).addClass('on');
+			}
+		});
+	});
+	$(window).scroll();
+
+	/* // 스크립트 추가 2017-05-26*/
 });
 </script>
 </body>
