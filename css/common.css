@@ -13484,6 +13484,7 @@ td .radish-bank-box span {display:block;}
 }
 .certifi-box .certifi-text {
 	float:left;
+	width:422px;
 }
 .item-story-area .certifi-text .bullet-list1 {margin-top:7px;}
 .item-story-area .certifi-text .bullet-list1 .item {
@@ -13507,7 +13508,7 @@ td .radish-bank-box span {display:block;}
 	color:#666;
 	line-height:28px;
 }
-.certifi-box .certifi-img {float:right;}
+.certifi-box .certifi-img {float:right; width:580px;}
 .certifi-box .certifi-img img {vertical-align:top;}
 .certifi-list {
 	overflow:hidden;
@@ -14210,7 +14211,10 @@ td .radish-bank-box span {display:block;}
 
 /*물품취급기준*/
 .item-story-area {}
-.item-story-area p {color:#666}
+.item-story-area p {
+	color:#666;
+	word-break:keep-all;
+}
 .item-story-area .tab-list {overflow:hidden; background-color: #fff;}
 .tab .item-story-area .tab-list { /*탭링크 고정인경우*/
 	position: fixed;
@@ -14221,17 +14225,17 @@ td .radish-bank-box span {display:block;}
 .item-story-area .tab-list .item {
 	float:left;
 	position:relative;
-	width:185px;
+	width:187px;
 	height:77px;
-	margin-left:2px;
-	background-color:#f3f3f3;
-	border:1px solid #ddd;
+	margin-left:-1px;
+	background-color:#fff;
+	border:1px solid #bbb;
 	cursor:pointer;
 	box-sizing: border-box;
 }
-.item-story-area .tab-list .item:first-child {margin-left:0;}
-.item-story-area .tab-list .item.on {
-	background-color:#fff;
+.item-story-area .tab-list .item:first-child {
+	width:190px;
+	margin-left:0;
 }
 .item-story-area .tab-list .item:before {
 	content:'';
@@ -14293,10 +14297,10 @@ td .radish-bank-box span {display:block;}
 	box-sizing: border-box;
 	font-family:ns;
 }
-.item-story-area .tab-list .item.on .text {color:#000;}
-.item-story-area .tab-list .item:hover,
-.item-story-area .tab-list .item.on {z-index:1;cursor:default;}
-.tab-list .item:hover  {
+.item-story-area .tab-list .item.on .text {color:#fff;}
+.item-story-area .tab-list .item:hover  {
+	z-index:1;
+	cursor:default;
 	border-color:#666;
 	background-color:#fff;
 	color:#000;
@@ -14305,9 +14309,11 @@ td .radish-bank-box span {display:block;}
 	transition:all .3s;
 }/* hover */
 .item-story-area .tab-list .item.on  {
-	border-color:#666;
-	background-color:#fff;
-	color:#000;
+	border-color:#57a311;
+	background-color:#60b015;
+	color:#fff;
+	z-index:1;
+	cursor:default;
 }
 
 .item-story-area .item-cont-wrap {
@@ -14326,6 +14332,7 @@ td .radish-bank-box span {display:block;}
 	color:#666;
 	line-height:24px;
 	padding:0 0 0 11px;
+	word-break: keep-all;
 }
 .item-story-area .bullet-list1 .item:before {top:10px;}
 .item-story-area .bullet-list1 .item span {display: block; margin:5px 0;}
