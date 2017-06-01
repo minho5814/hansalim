@@ -4436,7 +4436,7 @@ label.check-radio .radiobox {margin-right:8px;}
 .footer {
 	position:relative;
 	padding-top:80px;
-	background-color:#f7f7f7;
+	background-color:#fff;
 }
 .footer:before {
 	content:'';
@@ -4480,23 +4480,23 @@ label.check-radio .radiobox {margin-right:8px;}
 	margin:0 auto;
 	padding:34px 0;
 }
-.footer .map-list {overflow:hidden;}
+.footer .map-list {
+	overflow:hidden;
+	padding:0 85px;
+}
 .footer .map-item {
 	float:left;
 	overflow:hidden;
-	margin-left:70px;
+	margin-left:122px;
 }
 .footer .map-item:first-child {margin-left:0;}
 .footer .map-item .title {
-	float:left;
 	color:#000;
 	font-size:15px;
 	font-weight:bold;
 	line-height:25px;
 }
 .footer .map-item ul {
-	float:left;
-	margin-left:20px;
 	color:#666;
 	font-size:14px;
 	line-height:25px;
@@ -4509,7 +4509,10 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 .footer .sns .link {margin-left:4px;}
 
-.footer .address-area {background-color:#fff;}
+.footer .address-area {
+	border-top:1px solid #ddd;
+	background-color:#f7f7f7;
+}
 .footer .address-area .inner {
 	position:relative;
 	width:1120px;
