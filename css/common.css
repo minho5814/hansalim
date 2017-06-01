@@ -3102,6 +3102,14 @@ table .good-table table th {padding:0;}
 	height:28px;
 	background-position:0 -1026px;
 }
+
+.btn-image3.btn-ebook {background-color:#999;}
+.btn-image3.btn-ebook:before {
+	width:33px;
+	height:24px;
+	background-position:0 -1401px;
+}
+
 .btn-question {
 	display:inline-block;
 	width:18px;
@@ -14540,4 +14548,13 @@ td .radish-bank-box span {display:block;}
 .answer-text {
 	padding-left:42px;
 	background:url(../img/icon/icon_answer.gif) no-repeat 0 center;
+}
+.board-lsit.type2 table tbody td.no-result01 {
+	padding:35px 0 !important;
+	border:0;
+}
+.board-lsit.type2 td .text01 {
+	font-size:15px;
+	color:#999;
+	line-height:25px;
 }
