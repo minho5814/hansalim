@@ -14540,3 +14540,12 @@ td .radish-bank-box span {display:block;}
 	padding-left:42px;
 	background:url(../img/icon/icon_answer.gif) no-repeat 0 center;
 }
+.board-lsit.type2 table tbody td.no-result01 {
+	padding:35px 0 !important;
+	border:0;
+}
+.board-lsit.type2 td .text01 {
+	font-size:15px;
+	color:#999;
+	line-height:25px;
+}
