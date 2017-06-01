@@ -146,4 +146,22 @@ $(window).load(function(){
 		columnWidth:366,
 		gutter:11
 	});
+
+	/* 2017-06-01 : 한살림 장보기 소식  추가 */
+	var height =  $(".notice").height();
+	var num = $(".rolling li").length;
+	var max = height * num;
+	var move = 0;
+	function noticeRolling(){
+		move += height;
+		$(".rolling").animate({"top":-move},600,function(){
+			if( move >= max ){
+				$(this).css("top",0);
+				move = 0;
+			};
+		});
+	};
+	noticeRollingOff = setInterval(noticeRolling,4000);
+	$(".rolling").append($(".rolling li").first().clone());
+	/*// 2017-06-01 : 한살림 장보기 소식  추가 */
 });

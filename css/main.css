@@ -1,5 +1,6 @@
 /* 비주얼 슬라이드 */
 /*.visual-banner {background:url(../img/bg/bg_visual_back.jpg) no-repeat 50% 0;}*/
+.visual-banner {background-color: #dce8f2;}
 	.visual-banner .center-box {
 		position:relative;
 		width:1120px;
@@ -76,126 +77,7 @@
 		.visual-banner .btn-area .btn-stop {background-position:0 -240px;}
 		.visual-banner .btn-area .btn-stop.play {background-position:0 -282px;}
 
-/* 주요카테고리/테마관/서브브랜드 */
-.category-wrap {
-	position:relative;
-	height:357px;
-	padding-top:44px;
-	box-sizing:border-box;
-	background-color:#fff;
-}
-	.category-wrap .category-tab {
-		text-align:center;
-		font-size:0;
-		text-align:center;
-		line-height:0;
-	}
-		.category-wrap .category-tab .item {
-			display:inline-block;
-			position:relative;
-			width:140px;
-			height:40px;
-			margin-left:44px;
-			color:#999;
-			border:1px solid #ccc;
-			font-size:18px;
-			font-weight:bold;
-			line-height:40px;
-			cursor:pointer;
-		}
-		.category-wrap .category-tab .item:first-child {margin-left:0;}
-		.category-wrap .category-tab .item:hover {color:#60b015; border:1px solid #60b015;}/* hover */
-		.category-wrap .category-tab .item.on {
-			color:#60b015;
-			border:1px solid #60b015;
-			cursor:default;
-		}/* on */
-			.category-wrap .category-tab .item.on:before,
-			.category-wrap .category-tab .item.on:after {
-				content:'';
-				position:absolute;
-				left:0;right:0;
-			}/* on */
 
-			.category-wrap .category-tab .item.on:after {
-				bottom:-5px;
-				height:4px;
-				background:url(../img/icon/icon_tab_on.png) no-repeat 50% 0;
-			}/* on */
-.category-slide {
-	position:absolute;
-	left:50%;top:117px;
-	width:1075px;
-	margin-left:-522px;
-	opacity:0;
-}
-.category-slide.on {display:block;}
-.category-slide .bx-wrapper {margin:0 auto;}
-	.category-slide .slide-item {}
-	.category-slide .link {
-		display:block;
-		position:relative;
-		text-align:center;
-		font-size:0;
-		line-height:0;
-	}
-	.category-slide .link:hover .img-area:before {
-		content: '';
-		position: absolute;
-		left:0;
-		right:0;
-		top:0;
-		bottom:0;
-		background-color: #60b015;
-		opacity: 0.6;
-
-	}
-		.category-slide .link .img-area {
-			position: relative;
-			overflow:hidden;
-			width:180px;
-			height:180px;
-			margin:0 auto;
-		}
-		/*.category-slide .link .img-area img {
-			width:180px;
-			height:360px;
-			vertical-align:top;
-		}*/
-		/*.category-slide .link:hover .img-area img {margin-top:-180px;}*/
-		.category-slide .link .text {
-			position:absolute;
-			left:0;right:0;top:50%;
-			-webkit-transform:translateY(-50%);
-			-ms-transform:translateY(-50%);
-			transform:translateY(-50%);
-			color:#fff;
-			font-size:24px;
-			text-align:center;
-			/*text-shadow:2px 2px rgba(0,0,0,.4);*/
-			font-weight:bold;
-			line-height:28px;
-		}
-.category-slide .bx-pager {display:none;}
-.category-slide .bx-controls-direction {}
-	.category-slide .bx-controls-direction a {
-		position:absolute;
-		top:50%;
-		width:40px;
-		height:40px;
-		margin-top:-20px;
-		background-repeat:no-repeat;
-		background-position:50% 50%;
-		font-size:0;
-		text-indent:-9999px;
-		line-height:0;
-		opacity:.5;
-	}
-	.category-slide .bx-controls-direction .bx-prev {left:-40px;background-image:url(../img/btn/btn_bx_prev_12x21.png);}
-	.category-slide .bx-controls-direction .bx-next {right:-40px;background-image:url(../img/btn/btn_bx_next_12x21.png);}
-	.category-slide .bx-controls-direction .disabled {display:none;}
-
-.category-slide.brand .img-area {background-color:#f3f3f3}
 /* 컨텐츠 공통 영역 */
 .main-cont {padding:50px 0 60px;}
 	.main-cont .main-title {
@@ -225,7 +107,7 @@
 			padding:0 10px;
 			color:#666;
 			background-color:#fff;
-			font-size:14px;
+			font-size:15px;
 			line-height:22px;
 		}
 		.gray.main-cont .main-title .text {background-color:#f7f7f7;}
@@ -255,11 +137,13 @@
 /* 띠 배너 */
 .line-banner {position:relative;}
 	.line-banner .bxslider .slide-item {
-		background-color:#ffde00;
 		font-size:0;
 		text-align:center;
 		line-height:0;
 	}
+	.line-banner .bxslider .slide-item:nth-child(1) {background-color:#ffde00;}
+	.line-banner .bxslider .slide-item:nth-child(2) {background-color:#dce8f2;}
+	.line-banner .bxslider .slide-item:nth-child(3) {}
 	.line-banner .bx-pager {
 		position:absolute;
 		left:50%;top:11px;
@@ -481,11 +365,13 @@
 		margin-top:27px;
 	}
 		.recipe-cont .recipe-goods .goods-wrap {
-			overflow:hidden;
-			height:130px;
 			margin-top:7px;
 		}
-		.recipe-cont .recipe-goods .goods-item1 {border:0;}
+		.recipe-cont .recipe-goods .goods-item1 {
+			width: 272px;
+			border:1px solid #bbb;
+			margin:12px 0 0 11px;
+		}
 	.recipe-cont .recipe-goods .btn-more-area {
 		margin-top:20px;
 		border-top:1px solid #bbb;
@@ -556,3 +442,97 @@
 	width:1120px;
 	margin:0 auto;
 }
+
+/*새로 공급하는 물품*/
+.main-cont.new {padding-top: 30px;}
+.main-cont.new .thumb-list1 {border:1px solid #ddd;}
+
+/*서브브랜드*/
+.sub-brand {
+	overflow: hidden;
+	border: 1px solid #ddd;
+}
+.sub-brand .item {
+	float: left;
+	width: 20%;
+	min-height: 220px;
+	margin:35px 0;
+	/*padding:0 20px;*/
+	border-left:1px solid #eee;
+	box-sizing: border-box;
+}
+.sub-brand .item .img-area {
+	padding:15px 0 15px;
+}
+.sub-brand .item:first-child {border-left: 0}
+.sub-brand .item .text-area p {
+	position: relative;
+	padding:0 20px;
+	text-align: right;
+	color:#333;
+	font-weight: bold;
+	line-height: 26px;
+}
+.sub-brand .item .text-area p span {
+	position: absolute;
+	left:20px; top:0;
+	color:#666;
+	font-weight:normal
+}
+
+/*한살림 장보기 소식*/
+.main-cont .inner {width: 1120px; margin: 0 auto;}
+.notice-wrap {
+	position:relative;
+	border:1px solid #60b015;
+
+}
+.notice-wrap p {
+	position: absolute;
+	width:240px;
+	height:59px;
+	padding-left:25px;
+	border-right:1px solid #e9e9e9;
+	background:url(../img/icon/ico_bell.png) no-repeat 46px center #f7f7f7;
+	line-height: 59px;
+	font-size: 16px;
+	color:#000;
+	text-align: center;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+.notice-wrap .notice{
+	width:100%;
+	height:59px;
+	overflow:hidden;
+	background-color:#fff;
+}
+.notice-wrap .rolling{
+	position:relative;
+	width:100%;
+	height:auto;
+}
+.notice-wrap .rolling li{
+	width:100%;
+	height:59px;
+	padding-left:240px;
+	line-height:59px;
+	box-sizing: border-box;
+}
+.notice-wrap .rolling li a {
+	position: relative;
+	float: left;
+	display: inline-block;
+	width: 50%;
+	padding-left:15px;
+	box-sizing: border-box;
+}
+.rolling li a:first-child:before {
+	content: '';
+	position: absolute;
+	right:0; top:50%;
+	width:1px;
+	height: 29px;
+	margin-top:-14px;
+	background-color: #ddd;
+	}
