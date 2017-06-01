@@ -3102,6 +3102,14 @@ table .good-table table th {padding:0;}
 	height:28px;
 	background-position:0 -1026px;
 }
+
+.btn-image3.btn-ebook {background-color:#999;}
+.btn-image3.btn-ebook:before {
+	width:33px;
+	height:24px;
+	background-position:0 -1401px;
+}
+
 .btn-question {
 	display:inline-block;
 	width:18px;
