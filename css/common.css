@@ -4491,16 +4491,17 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 .footer .map-item:first-child {margin-left:0;}
 .footer .map-item .title {
-	color:#000;
+	color:#333;
 	font-size:15px;
 	font-weight:bold;
 	line-height:25px;
 }
 .footer .map-item ul {
-	color:#666;
+	color:#333;
 	font-size:14px;
 	line-height:25px;
 }
+.footer .map-item ul li a {color: #666;}
 .footer .sns {
 	position:absolute;
 	right:0;bottom:40px;
