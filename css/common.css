@@ -14490,10 +14490,10 @@ td .radish-bank-box span {display:block;}
 .natural-area {
 	padding-top:30px;
 }
-.natural-area .natural-title {
+.natural-title {
 	text-align:center;
 }
-.natural-area .natural-title .text {
+.natural-title .text {
 	display:inline-block;
 	padding-left:128px;
 	font-size:28px;
@@ -14521,4 +14521,22 @@ td .radish-bank-box span {display:block;}
 .natural-area .mg-box {
 	width:830px;
 	margin:0 auto;
+}
+.tab-list1.ty01 .item:first-child {
+	margin-left:1px;
+}
+.natural-area .search-box02 {
+	margin-bottom:10px;
+}
+.natural-area .search-box02 .inner-box02 {
+	display:inline-block;
+	width:160px;
+	vertical-align:top;
+}
+.natural-area .search-box02 .btn-round-text {
+	min-width:70px;
+}
+.answer-text {
+	padding-left:42px;
+	background:url(../img/icon/icon_answer.gif) no-repeat 0 center;
 }
