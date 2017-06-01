@@ -3813,13 +3813,13 @@ label.check-radio .radiobox {margin-right:8px;}
 	background-color:#fff;
 }
 .head-top .s-logo {
-	width:117px;
+	width:192px;
 	margin:0 auto;
 	padding:45px 0 0;
 }
 .head-top .s-logo a {
 	display:block;
-	height:32px;
+	height:31px;
 	font-size:0;
 	line-height:0;
 	background:url(../img/sprite/layout.png) no-repeat 0 0;
@@ -3951,29 +3951,43 @@ label.check-radio .radiobox {margin-right:8px;}
 .head-top .search-box .word-box ul li a span {color:#f56d24;}
 
 /* gnb 영역 */
-.head-btm {height:49px;}
+.head-btm {
+	height:49px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	box-sizing: border-box;
+}
 .gnb {
 	position:relative;
 	width:1120px;
 	height:49px;
 	margin:0 auto;
 	box-sizing:border-box;
-	border:1px solid #ddd;
+	/*border:1px solid #ddd;*/
 }
 .gnb .btn-menu {
 	position:absolute;
 	left:0;top:0;
-	width:58px;
+	width:145px;
 	height:47px;
+	padding-left:46px;
 	box-sizing:border-box;
-	/*border-right:1px solid #ddd;*/
-	background:url(../img/sprite/button.png) no-repeat 0 -34px;
-	font-size:0;
-	text-indent:-9999px;
-	line-height:0;
+	text-align: left;
+	font-size: 18px;
+	color:#333;
+	font-weight: bold;
+}
+.gnb .btn-menu:before {
+	content: '';
+	position: absolute;
+	left:6px; top:50%;
+	width:21px;
+	height:17px;
+	margin-top:-9px;
+	background:url(../img/sprite/button.png) no-repeat 0 -1378px;
 }
 .gnb-list {
-	padding-left:58px;
+	padding-left:175px;
 }
 .gnb-list:after {
 	color:'';
@@ -3985,7 +3999,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	position:relative;
 	display:inline-block;
 	height:47px;
-	margin:0 25px 0 20px;
+	margin:0 10px 0 5px;
 	padding:0 10px;
 	color:#333;
 	font-size:18px;
