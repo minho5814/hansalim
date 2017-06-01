@@ -12268,7 +12268,7 @@ td .radish-bank-box span {display:block;}
 	position:relative;
 	margin-left:-15px;
 }
-.news-cont .tab-list1 .item span em:after {
+.news-cont .tab-list1 .item.new span em:after {
 	content:'N';
 	display:inline-block;
 	position:absolute;
