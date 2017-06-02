@@ -4484,16 +4484,9 @@ label.check-radio .radiobox {margin-right:8px;}
 	푸터
 ========================================================================================================= */
 .footer {
-	position:relative;
+	position: relative;
 	padding-top:80px;
-	background-color:#fff;
-}
-.footer:before {
-	content:'';
-	position:absolute;
-	left:0;right:0;top:0;
-	height:80px;
-	background-color:#fff;
+
 }
 .footer.gray:before {background-color:#eee;}
 .footer.gray2:before {background-color:#f2efe8;}
