@@ -226,11 +226,13 @@ button {outline:0;vertical-align:top;}
 .quick-list .item {
 	display:block;
 	position:relative;
-	height:85px;
+	height:60px;
 	box-sizing:border-box;
 	border-left:1px solid #bbb;
 	cursor:pointer;
 }
+.quick-list .item:first-child {height:68px; padding-top:8px;}
+.quick-list .item:last-child {height:68px; padding-bottom:8px;}
 .quick-list .btn-group .item:before {
 	content:'';
 	position:absolute;
@@ -253,40 +255,47 @@ button {outline:0;vertical-align:top;}
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
 	height:18px;
+	padding-top:34px;
 	background-repeat:no-repeat;
-	background-position:50% 0;
+	background-position:50% 8px;
 	color:#505050;
 	font-size:13px;
 	font-weight:bold;
 	text-align:center;
 	line-height:18px;
 }
-.quick-list .item.item1 .text {padding-top:35px;background-image:url(../img/icon/ico_quick01_off.png);}
-.quick-list .item.item2 .text {padding-top:35px;background-image:url(../img/icon/ico_quick02_off.png);}
-.quick-list .item.item3 .text {padding-top:35px;background-image:url(../img/icon/ico_quick03_off.png);}
-.quick-list .item.item4 .text {padding-top:35px;background-image:url(../img/icon/ico_quick04_off.png);}
+.quick-list .item.item1 .text {background-image:url(../img/icon/ico_quick05_off.png);}
+.quick-list .item.item2 .text {background-image:url(../img/icon/ico_quick01_off.png);}
+.quick-list .item.item3 .text {background-image:url(../img/icon/ico_quick02_off.png);}
+.quick-list .item.item4 .text {background-image:url(../img/icon/ico_quick03_off.png);}
+.quick-list .item.item5 .text {background-image:url(../img/icon/ico_quick04_off.png);}
+.quick-list .item.item6 .text {background-image:url(../img/icon/ico_quick06_off.png); margin-top:-5px;}
 .quick-list .item:hover .text,
 .quick-list .item.on .text {color:#fff;}
 .quick-list .item.item1:hover .text,
-.quick-list .item.item1.on .text {background-image:url(../img/icon/ico_quick01_on.png);}
+.quick-list .item.item1.on .text {background-image:url(../img/icon/ico_quick05_on.png);}
 .quick-list .item.item2:hover .text,
-.quick-list .item.item2.on .text {background-image:url(../img/icon/ico_quick02_on.png);}
+.quick-list .item.item2.on .text {background-image:url(../img/icon/ico_quick01_on.png);}
 .quick-list .item.item3:hover .text,
-.quick-list .item.item3.on .text {background-image:url(../img/icon/ico_quick03_on.png);}
+.quick-list .item.item3.on .text {background-image:url(../img/icon/ico_quick02_on.png);}
 .quick-list .item.item4:hover .text,
-.quick-list .item.item4.on .text {background-image:url(../img/icon/ico_quick04_on.png);}
+.quick-list .item.item4.on .text {background-image:url(../img/icon/ico_quick03_on.png);}
+.quick-list .item.item5:hover .text,
+.quick-list .item.item5.on .text {background-image:url(../img/icon/ico_quick04_on.png);}
+.quick-list .item.item6:hover .text,
+.quick-list .item.item6.on .text {background-image:url(../img/icon/ico_quick06_on.png);}
 
 .quick-menu .btn-scroll-area {
 	position:relative;
 	background-color:#5a5b5d;
 }
-.quick-menu .btn-scroll-area:before {
+/*.quick-menu .btn-scroll-area:before {
 	content:'';
 	position:absolute;
 	left:10px;right:10px;top:50%;
 	height:1px;
 	background-color:#6b6c6e;
-}
+}*/
 .quick-menu .btn-scroll-area button {
 	height:30px;
 	margin-top:1px;
@@ -415,6 +424,28 @@ button {outline:0;vertical-align:top;}
 }
 
 .quick-menu-layer .quick-cont {padding:30px 30px 0;}
+.quick-menu-layer .quick-cont .cont-area {
+	color:#000;
+	text-align: center;
+}
+.quick-menu-layer .quick-cont .no-data {position: relative; height: 505px;}
+.quick-menu-layer .quick-cont .no-data .inner {
+	width: 100%;
+	position:absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+.quick-menu-layer .quick-cont .no-data p {
+	width: 100%;
+	font-size: 24px;
+	color:#000;
+	text-align: center;
+	line-height: 32px;
+	box-sizing: border-box;
+}
 .quick-menu-layer .quick-cont.type2 {padding:0 10px 0 30px;}
 .quick-menu-layer .quick-cont .scroll-box {
 	overflow:hidden;
@@ -2493,6 +2524,17 @@ table .good-table table th {padding:0;}
 .btn-text.btn-orange {
 	border-color:#e15f1a;
 	background-color:#f56d24;
+	color:#fff;
+}
+
+.btn-green4 {
+	width:126px;
+	height: 40px;
+	min-width: inherit;
+	padding:0;
+	line-height: 40px;
+	border-color:#7eb533;
+	background-color:#91c90b;
 	color:#fff;
 }
 

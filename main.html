@@ -13,23 +13,31 @@
 <!-- 퀵메뉴 -->
 <div class="quick-menu">
 	<div class="quick-list">
-		<!--2017-05-10 : 1:1문의 버튼 위치 수정-->
+		<!--2017-06-02 : btn-group 수정-->
 		<div class="btn-group">
-			<div class="item item1"><span class="text">1:1문의</span></div>
-			<div class="item item2"><span class="text">장바구니</span></div>
-			<div class="item item3"><span class="text">관심물품</span></div>
-			<div class="item item4"><span class="text">최근이력</span></div>
+			<div class="item item1"><a href="#" class="text">한살림연합</a></div>
+			<div class="item item2"><a href="#" class="text">조합원센터</a></div>
 		</div>
-		<!--// 2017-05-10 : 1:1문의 버튼 위치 수정-->
+		<div class="btn-group layer">
+			<div class="item item3"><span class="text">장바구니</span></div>
+			<div class="item item4"><span class="text">관심물품</span></div>
+			<div class="item item5"><span class="text">최근이력</span></div>
+		</div>
+		<!--  추후오픈
+		<div class="btn-group">
+			<div class="item item6"><a href="#" class="text">이용안내</a></div>
+		</div>
+		-->
+		<!--// 2017-06-02 : btn-group 수정-->
 	</div>
 	<div class="btn-scroll-area">
 		<button type="button" class="btn-top">상단으로</button>
-		<button type="button" class="btn-bottom">하단으로</button>
+		<!-- <button type="button" class="btn-bottom">하단으로</button>  2017-06-02 : 버튼 삭제-->
 	</div>
 
 	<div class="quick-menu-layer">
-		<!-- 2017-05-10 : 1:1 상담 추가 -->
-		<div class="quick-layer pop-consul">
+		<!-- 2017-06-02 : 1:1 상담 삭제 -->
+		<!-- <div class="quick-layer pop-consul">
 			<div class="head">
 				<h1 class="title">1:1상담</h1>
 				<button type="button" class="btn-close">닫기</button>
@@ -78,8 +86,8 @@
 					<a href="#" class="btn-text btn-green mgL10">확인</a>
 				</div>
 			</div>
-		</div>
-		<!--// 2017-05-10 : 1:1 상담 추가 -->
+		</div> -->
+		<!--// 2017-06-02 : 1:1 상담 삭제 -->
 
 		<!-- 장바구니 -->
 		<div class="quick-layer">
@@ -219,6 +227,23 @@
 						</li>
 					</ul>
 				</div>
+				<!-- 2017-06-02 : 장바구니 물건이 없을경우
+				<div class="no-data">
+					<div class="inner">
+						<p>	장바구니에 담긴 물품이 없습니다.</p>
+					</div>
+				</div>
+				-->
+				<!-- 2017-06-02 : 로그인안한경우
+				<div class="no-data">
+					<div class="inner">
+						<p>	로그인 하시면<br>장바구니를 확인할 수 있습니다.</p>
+						<div class="btn-center mgT20">
+							<a href="#" class="btn-text btn-green4">로그인</a>
+						</div>
+					</div>
+				</div>
+				-->
 			</div>
 			<div class="bottom">
 				<dl class="all-price">
