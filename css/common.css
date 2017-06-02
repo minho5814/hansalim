@@ -14674,11 +14674,21 @@ td .radish-bank-box span {display:block;}
 .search-box02 .btn-round-text {
 	min-width:70px;
 }
+.search-box02 .radio-check {
+	display:inline-block;
+	height:32px;
+	margin-right:20px;
+	line-height:32px;
+}
 .answer-text {
 	padding-left:42px;
 	background:url(../img/icon/icon_answer.gif) no-repeat 0 center;
 }
 .board-lsit.type2 table tbody td.no-result01 {
+	padding:35px 0 !important;
+	border:0;
+}
+.board-lsit table tbody td.no-result01 {
 	padding:35px 0 !important;
 	border:0;
 }
