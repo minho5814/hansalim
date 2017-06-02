@@ -31,7 +31,8 @@ $(window).load(function(){
 			$('html, body').stop().animate({scrollTop:sBtm},200);
 		}
 	});
-	// 메뉴 버튼
+
+	/*	2017-06-02 : 삭제
 	$('.quick-list .item1.btn-popup').click(function(){
 		$('.pop-consul').fadeIn(200);
 		$('.quick-list .item').removeClass('on');
@@ -41,9 +42,12 @@ $(window).load(function(){
 	$(document).on('click', '.popup-close, .btn-close', function(){
 		$('.quick-list .item1.btn-popup').removeClass('on');
 	});
-	$('.btn-group .item').click(function(){
+
+	*/
+	// 메뉴 버튼
+	$('.btn-group.layer .item').click(function(){ //2017-06-02 : 라인수정 (.layer 추가)
 		var idx = $(this).index();
-		$('.btn-group .item').removeClass('on').eq(idx).addClass('on');
+		$('.btn-group.layer .item').removeClass('on').eq(idx).addClass('on'); //2017-06-02 : 라인수정 (.layer 추가)
 		$('.quick-layer').hide().eq(idx).show();
 	});
 	$('.quick-menu-layer .head .btn-close').click(function(){
