@@ -7003,7 +7003,7 @@ label.check-radio .radiobox {margin-right:8px;}
 /* 공통 */
 .cart-wrap {
 	width:1120px;
-	margin:60px auto 80px;
+	margin:60px auto 0;
 }
 .cart-step-list {position:relative;}
 .cart-step-list .title-area {
