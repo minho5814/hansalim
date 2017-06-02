@@ -14680,6 +14680,12 @@ td .radish-bank-box span {display:block;}
 	margin-right:20px;
 	line-height:32px;
 }
+.search-box02 .radio-check .check-radio {
+	margin-left:30px;
+}
+.search-box02 .radio-check .check-radio:first-child {
+	margin-left:0;
+}
 .answer-text {
 	padding-left:42px;
 	background:url(../img/icon/icon_answer.gif) no-repeat 0 center;
