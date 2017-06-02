@@ -24,51 +24,45 @@
 			</div>
 
 			<div class="align-center mgT25">
-				<h2 class="cTitle1">물품상담관리</h2>
+				<h2 class="cTitle1">물품상담관리 글쓰기</h2>
 			</div>
 
 			<div class="tab-content3 on">
 				<div class="board-wrap">
-					<div class="search-box02">
-						<select class="styled1" style="width:130px;">
-							<option>작성자</option>
-							<option>내용</option>
-							<option>제목</option>
-							<option>제목+내용</option>
-							<option>작성일</option>
-						</select>
-						<div class="inner-box02">
-							<input type="text" class="query">
-						</div>
-						<button type="button" class="btn-round-text btn-green">조회</button>
-					</div>
-					<div class="board-lsit type2">
+					<div class="board-write1">
 					<table>
 						<colgroup>
-							<col style="width:8%;">
+							<col style="width:160px;">
 							<col style="*">
-							<col style="width:15%;">
-							<col style="width:15%;">
-							<col style="width:8%;">
+							<col style="width:160px;">
+							<col style="width:195px;">
 						</colgroup>
-						<thead>
-							<tr>
-								<th>번호</th>
-								<th>제목</th>
-								<th>작성자</th>
-								<th>작성일</th>
-								<th>조회</th>
-							</tr>
-						</thead>
 						<tbody>
 							<tr>
-								<td colspan="5" class="no-result01">
-									<p class="text01">물품 상담내역이 존재하지 않습니다.</p>
+								<th scope="row"><label for="title" class="text">제목</label></th>
+								<td colspan="3"><input type="text" id="title"></td>
+							</tr>
+							<tr>
+								<th scope="row"><div class="text">작성자</div></th>
+								<td><div class="text">에덴</div></td>
+								<th scope="row"><div class="text">작성일</div></th>
+								<td><div class="text">2017-03-23</div></td>
+							</tr>
+							<tr>
+								<th scope="row"><div class="text">내용</div></th>
+								<td colspan="3">
+									<div class="write-textarea">
+										<textarea></textarea>
+									</div>
 								</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
+				</div>
+				<div class="btn-center">
+					<a href="#" class="btn-text">취소</a>
+					<a href="#" class="btn-text btn-green">확인</a>
 				</div>
 			</div>
 		</div>
