@@ -735,9 +735,10 @@ html {height:100%;}
 .board-bottom {
 	overflow: hidden;
 	margin-top:10px;
+	text-align:right;
 }
 .board-bottom .total-area {
-	float: right;
+	display:inline-block;
 	color:#000;
 	font-size:15px;
 	line-height: 28px;
@@ -982,6 +983,8 @@ td.phone-area {
 }
 td.phone-area select {width:100px;}
 td.phone-area input {width:100px;margin-left:4px;}
+td.partner-area input {margin-left:4px;}
+td.partner-area input:first-child {margin-left:0;}
 
 /* 라디오, 체크박스 그룹 */
 td .radio-check {
@@ -14626,11 +14629,21 @@ td .radish-bank-box span {display:block;}
 .search-box02 .btn-round-text {
 	min-width:70px;
 }
+.search-box02 .radio-check {
+	display:inline-block;
+	height:32px;
+	margin-right:20px;
+	line-height:32px;
+}
 .answer-text {
 	padding-left:42px;
 	background:url(../img/icon/icon_answer.gif) no-repeat 0 center;
 }
 .board-lsit.type2 table tbody td.no-result01 {
+	padding:35px 0 !important;
+	border:0;
+}
+.board-lsit table tbody td.no-result01 {
 	padding:35px 0 !important;
 	border:0;
 }
@@ -14721,3 +14734,27 @@ td .radish-bank-box span {display:block;}
 	border-radius: 5px;
 	vertical-align: top;
 }
+.calendar-box {
+	height:32px;
+}
+.calendar-box .calendar {
+	display:inline-block;
+	width:180px;
+}
+.calendar-box .datepicker {
+	width:140px;
+	border:1px solid #bbb;
+}
+.volume-box.ty06 {
+	display:inline-block;
+}
+.sort-box .select-box {
+	text-align:left;
+}
+.sort-list {
+	padding:0 60px;
+}
+
+/* 조합원 검색 팝업 */
+.pop-partner-search {width:900px;}
+.pop-partner-search .pop-content {padding-bottom:45px;}
