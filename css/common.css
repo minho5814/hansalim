@@ -3507,6 +3507,11 @@ table .good-table table th {padding:0;}
 	border:1px solid #91c90b;
 	background-color:#fff;
 }
+.select-box .select-list.scroll-wrap {
+	overflow-x:hidden;
+	overflow-y:scroll;
+	height:144px;
+}
 .select-box .select-list .item {
 	margin-top:1px;
 	padding:2px 0 2px 13px;

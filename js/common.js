@@ -460,7 +460,13 @@ $(window).load(function(){
 		$(this).parents('.select-box').css({'width':wid}).append('<div class="select-title">');
 		$(this).parents('.select-box').find('.select-title').html(title);
 
-		$(this).parents('.select-box').append('<ul class="select-list">');
+		/* 스크롤이 있어야 하는 경우와 아닌 경우 */
+		if ($(this).hasClass('scroll')){
+			$(this).parents('.select-box').append('<ul class="select-list scroll-wrap">');
+		}else{
+			$(this).parents('.select-box').append('<ul class="select-list">');
+		}
+
 		var option = $(this).find('option');
 		$(option).each(function(){
 			var txt = $(this).html();
