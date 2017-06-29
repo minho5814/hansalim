@@ -11,21 +11,22 @@
 
 <body>
 <div class="btn-bottom pdT30" style="text-align:center;">
-	<a href="#" class="btn-text btn-green btn-popup btn-alert">alert</a>
-	<a href="#" class="btn-text btn-gray btn-popup btn-notice mgL10">notice</a>
+	<a href="#" class="btn-text btn-green btn-popup btn-confirm">alert</a>
+	<a href="#" class="btn-text btn-gray btn-popup btn-alert mgL10">notice</a>
 </div>
 
 
 <!-- 레이어 팝업 영역 -->
 <!-- alert -->
-<div class="layer-popup pop-alert">
+<div class="block-ui"></div>
+<div class="layer-popup pop-confirm">
 	<div class="pop-head">
 		<h1 class="pop-title">확인</h1>
 		<button type="button" class="btn-close">닫기</button>
 	</div>
 	<div class="pop-content">
 		<div class="notice-box">
-			<span class="text">선택된 장바구니 내역을 삭제하시겠습니까?</span>
+			<span class="text"><span class="ico-area"><img src="../../img/temp/pop_notice.jpg" alt="아이콘"></span>선택된 장바구니 내역을 삭제하시겠습니까?</span>
 		</div>
 		<div class="btn-bottom pdT30">
 			<a href="#" class="btn-text btn-gray02">취소</a>
@@ -34,14 +35,14 @@
 	</div>
 </div>
 <!-- notice -->
-<div class="layer-popup pop-notice">
+<div class="layer-popup pop-alert">
 	<div class="pop-head">
 		<h1 class="pop-title">알림</h1>
 		<button type="button" class="btn-close">닫기</button>
 	</div>
 	<div class="pop-content">
 		<div class="notice-box">
-			<span class="text">장바구니에 담을 물품을 하나 이상 선택해 주십시오.</span>
+			<span class="text"><span class="ico-area"><img src="../../img/temp/pop_notice.jpg" alt="아이콘"></span>장바구니에 담을 물품을 하나 이상 선택해 주십시오.</span>
 		</div>
 		<div class="btn-bottom pdT30">
 			<a href="#" class="btn-text btn-green">확인</a>
@@ -54,14 +55,16 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
+	/* confirm */
+	$('.btn-confirm').click(function(){
+		$('.pop-confirm').fadeIn(200);
+		$('.block-ui').fadeIn();
+	});
+
 	/* alert */
 	$('.btn-alert').click(function(){
 		$('.pop-alert').fadeIn(200);
-	});
-
-	/* notice */
-	$('.btn-notice').click(function(){
-		$('.pop-notice').fadeIn(200);
+		$('.block-ui').fadeIn();
 	});
 });
 </script>
