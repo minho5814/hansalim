@@ -822,7 +822,7 @@ $(window).load(function(){
 	});
 	$(document).on('click', '.layer-popup .btn-close, .popup-close', function(){
 		$('.layer-popup').fadeOut(200);
-		$('.block-ui').fadeOut(200);
+		$('.block-ui').fadeOut(200); //2017-06-29 추가
 		$('.popup-close').remove();
 		$('body').css({'overflow-y':'inherit'});
 	});
