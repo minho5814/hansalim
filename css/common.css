@@ -8928,7 +8928,20 @@ td .radish-bank-box span {display:block;}
 	font-size:14px;
 	color:#999;
 }
-
+/* alert, notice */
+.pop-alert {width:400px;}
+.pop-notice {width:400px;}
+.notice-box {
+	padding:25px 0 15px;
+	text-align:center;
+}
+.notice-box .text {
+	display:inline-block;
+	padding-left:50px;
+	font-size:15px;
+	color:#666;
+	line-height:25px;
+}
 /* ---------------------------------------------------------------------------------------------------------
 	로그인(lo)
 --------------------------------------------------------------------------------------------------------- */
