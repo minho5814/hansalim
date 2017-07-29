@@ -1257,6 +1257,25 @@ table .good-table table th {padding:0;}
 	line-height:26px;
 }
 
+.bullet-list6 {
+	color:#aaa;
+	font-size:15px;
+	line-height:22px;
+}
+.bullet-list6 .item {
+	position:relative;
+	padding-left:7px;
+}
+.bullet-list6 .item:first-child {margin-top:0;}
+.bullet-list6 .item:before {
+	content:'';
+	position:absolute;
+	left:0;top:9px;
+	width:2px;
+	height:2px;
+	background-color:#aaa;
+}
+
 /* 박스링크 리스트 */
 .box-link-list {border:1px solid #bbb;}
 .box-link-list .link {
