@@ -6027,17 +6027,35 @@ label.check-radio .radiobox {margin-right:8px;}
 	line-height:32px;
 }
 .standard .box {
-	margin-left:15px;
 	padding:0 14px;
 	border:1px solid #ddd;
+	font-size:0;
+	line-height:0;
 }
 .standard .box span {
 	position:relative;
+	color:#000;
+	margin-left:14px;
 	padding-left:17px;
 	font-weight:normal;
 	line-height:32px;
 }
-.standard .box span:first-child {margin-right:15px;}
+.standard .box span:first-child {margin-left:0;}
+.standard .box .normal {
+	padding-left:0;
+	padding-right:15px;
+	font-weight:600;
+}
+.standard .box .normal:before {
+	content:'';
+	position:absolute;
+	right:0;
+	top:50%;
+	width:1px;
+	height:14px;
+	margin-top:-7px;
+	background-color:#ddd;
+}
 .standard .box .kids:before {
 	content:'';
 	position:absolute;
@@ -6822,16 +6840,16 @@ label.check-radio .radiobox {margin-right:8px;}
     position: relative;
 }
 .board-lsit table tbody td .img-text .goods-text {
-    position: absolute;
-    left:110px; top:50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    line-height: 24px;
+	position: absolute;
+	left:110px; top:50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	line-height: 24px;
 }
 .board-lsit table tbody td .goods-img {
-    display: inline-block;
-    border:1px solid #ddd;
+	display: inline-block;
+	border:1px solid #ddd;
 }
 
 .board-lsit table tbody td img {vertical-align:middle;}
@@ -14084,6 +14102,31 @@ td .radish-bank-box span {display:block;}
 .page-link a {
 	display:inline-block;
 	padding:16px 0 16px 20px;
+	font-size:15px;
+	color:#666;
+	line-height:25px;
+}
+
+.page-link2 {
+	margin-top:40px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #bbb;
+}
+.page-link2 .next-page {
+	border-top:1px solid #ddd;
+}
+.page-link2 .page-tit {
+	display:inline-block;
+	width:110px;
+	padding:12px 0 12px 12px;
+	font-size:15px;
+	color:#333;
+	line-height:25px;
+	box-sizing:border-box;
+}
+.page-link2 a {
+	display:inline-block;
+	padding:12px 0 12px 20px;
 	font-size:15px;
 	color:#666;
 	line-height:25px;
