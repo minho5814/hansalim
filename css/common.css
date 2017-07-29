@@ -14089,6 +14089,31 @@ td .radish-bank-box span {display:block;}
 	line-height:25px;
 }
 
+.page-link2 {
+	margin-top:40px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #bbb;
+}
+.page-link2 .next-page {
+	border-top:1px solid #ddd;
+}
+.page-link2 .page-tit {
+	display:inline-block;
+	width:110px;
+	padding:12px 0 12px 12px;
+	font-size:15px;
+	color:#333;
+	line-height:25px;
+	box-sizing:border-box;
+}
+.page-link2 a {
+	display:inline-block;
+	padding:12px 0 12px 20px;
+	font-size:15px;
+	color:#666;
+	line-height:25px;
+}
+
 .answer-title span {
 	display:inline-block;
 	position:relative;
