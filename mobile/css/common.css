@@ -406,8 +406,8 @@ body,
 	right:0;
 	z-index:50;
 	height:55px;
-	background-color:rgba(255,255,255,.9);
 }
+.header.fix {background-color:rgba(255,255,255,.9);}
 .header .h-logo {
 	position:absolute;
 	left:0;
@@ -512,9 +512,10 @@ body,
 	transform:translate(-50%,-50%);
 	width:17px;
 	height:17px;
-	background:url(../images/common/sprite01.png) no-repeat -108px 0;
+	background:url(../images/common/sprite01.png) no-repeat -126px 0;
 	background-size:250px;
 }
+.white .header .btn-share:before {background-position:-108px 0;}
 .header .btn-close {
 	position:absolute;
 	right:0;
@@ -535,9 +536,10 @@ body,
 	transform:translate(-50%,-50%);
 	width:17px;
 	height:17px;
-	background:url(../images/common/sprite01.png) no-repeat -144px 0;
+	background:url(../images/common/sprite01.png) no-repeat -162px 0;
 	background-size:250px;
 }
+.white .header .btn-close:before {background-position:-144px 0;}
 
 /* 상단 비주얼영역이 있을경우 header */
 .top-visual-styled .header {background-color:transparent;}
@@ -557,7 +559,6 @@ body,
 .s-title-area .s-title {
 	position:relative;
 	font-size:28px;
-	font-weight:900;
 	line-height:60px;
 }
 .s-title-area .s-title:before {
