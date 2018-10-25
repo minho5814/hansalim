@@ -64,11 +64,12 @@ input[type=tel],
 input[type=number],
 input[type=password] {
 	width:100%;
-	height:25px;
-	padding:0 10px;
+	height:50px;
+	padding:0;
 	box-sizing:border-box;
 	border-radius:0;
 	border:0;
+	border-bottom:1px solid #b2b2b2;
 	background-color:#fff;
 	-webkit-appearance:none;
 	-moz-appearance:none;
@@ -82,11 +83,17 @@ input[type=password]:disabled {
 	
 }
 
+input[type=file] {
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+}
+
 textarea {
 	width:100%;
-	padding:10px 15px;
-	border:1px solid #cddeeb;
-	border-radius:5px;
+	padding:14px 19px;
+	border:1px solid #b2b2b2;
+	border-radius:0;
 	background-color:#fff;
 	box-sizing:border-box;
 	-webkit-appearance:none;
@@ -96,20 +103,35 @@ textarea {
 	word-wrap:break-word;
 	resize:none;
 }
-:-ms-input-placeholder {color:#737373;opacity:1;}
-::-webkit-input-placeholder {color:#737373;opacity:1;}
-::-moz-placeholder {color:#737373;opacity:1;}
+:-ms-input-placeholder {color:#b2b2b2;opacity:1;}
+::-webkit-input-placeholder {color:#b2b2b2;opacity:1;}
+::-moz-placeholder {color:#b2b2b2;opacity:1;}
 
 select {
-	height:25px;
-	padding:0 0 0 10px;
-	border-radius:0;
-	border:1px solid #e6e6e6;
-	background-color:#fff;
-	color:#666;
-	font-size:12px;
-	line-height:27px;
+	display:inline-block;
+	width:100%;
+	height:50px;
+	margin:0;
+	padding:0;
 	box-sizing:border-box;
+	border-radius:0;
+	border:0;
+	border-bottom:1px solid #d9d9d9;
+	background:url(../images/common/icon_select.png) no-repeat 100% 50%;
+	background-size:13px 6px;
+	text-align:left;
+	text-transform:none;
+	white-space:nowrap;
+	color:#111;
+	font-weight:600;
+	vertical-align:middle;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
 }
 
 /* ============================================================================================
@@ -301,9 +323,7 @@ select {
 }
 
 /* 버튼 리스트 */
-.btn-list {
-	overflow:hidden;
-}
+.btn-list {overflow:hidden;}
 .btn-list .btn-item {
 	float:left;
 	width:50%;

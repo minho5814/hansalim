@@ -52,6 +52,9 @@ $(document).ready(function(){
 			$(this).addClass('on').find('.answer').slideDown(200);
 		}
 	});
+
+	/* 폼요소 호출 */
+	form();
 });
 
 
@@ -89,3 +92,27 @@ $(window).scroll(function(){
 		}
 	});
 });
+
+
+
+
+/* ======================================================================
+		폼 요소
+====================================================================== */
+function form(){
+	/* 인풋 파일 */
+	$('input[type=file]').each(function(){
+		if(!$(this).parent().is('.filebox')){
+			$(this).wrap('<span class="filebox"></span>');
+			$(this).before('<span class="btn"></span>');
+			var txt = $(this).val();
+			var len = $(this).val().length;
+			console.log(txt);
+			if(len == 0){
+				$(this).closest('.filebox').find('.btn').text('첨부파일 찾기');// 추 후 베트남어 번역 후 텍스트 교체
+			}else{
+				$(this).closest('.filebox').find('.btn').text(txt);
+			}
+		}
+	});
+}
