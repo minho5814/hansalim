@@ -212,24 +212,27 @@ select {
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	버튼
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-.btn-w100-text {
+.bottom-fixed-area {
+	position:fixed;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:50;
+}
+
+/* 텍스트 버튼 */
+.btn-text {
 	display:inline-block;
 	width:100%;
 	height:55px;
-	background-color:#5d30a6;
+	background-color:#4b4b4b;
 	color:#fff;
 	font-size:16px;
 	font-weight:600;
 	text-align:center;
 	line-height:55px;
 }
-
-.bottom-fixed-area .btn-w100-text {
-	position:fixed;
-	left:0;
-	bottom:0;
-	z-index:50;
-}
+.btn-text.type1 {background-color:#5d30a6;}
 
 /* 아이콘 버튼 */
 .btn-icon {
@@ -295,6 +298,15 @@ select {
 	height:16px;
 	background:url(../images/common/sprite_icon.png) no-repeat -49px 0;
 	background-size:250px;
+}
+
+/* 버튼 리스트 */
+.btn-list {
+	overflow:hidden;
+}
+.btn-list .btn-item {
+	float:left;
+	width:50%;
 }
 
 
@@ -875,7 +887,21 @@ body,
 }
 .s-title-area.fix .s-title:before {display:none;}
 
-
+/* 상세 페이지 */
+.detail-page {}
+.detail-page .header {
+	background-color:#f7f7f7;
+	border-bottom:1px solid #e6e6e6;
+}
+.detail-page .header .h-title {
+	color:#111;
+	font-size:17px;
+	font-weight:900;
+	text-align:center;
+	line-height:55px;
+}
+.detail-page .header {}
+.detail-page {}
 
 /* ============================================================================================
 	이벤트
