@@ -330,10 +330,52 @@ select {
 .tab-wrap .tab-cont {display:none;}
 .tab-wrap .tab-cont.on {display:block;}
 
-.tab-list2 {}
+/* 슬라이드 탭 */
+.tab-scroll-x {
+	border-top:1px solid #737373;
+	border-bottom:1px solid #d9d9d9;
+}
+.tab-scroll-x .swiper-container {
+	padding-left:20px;
+	box-sizing:border-box;
+}
+.tab-scroll-x .swiper-slide {
+	display:inline-block;
+	width:auto;
+	padding:13px 22px 16px 0;
+}
+.tab-scroll-x .swiper-slide .text {
+	display:inline-block;
+	color:#999;
+	font-size:13px;
+	line-height:20px;
+}
+.tab-scroll-x .swiper-slide.on .text {
+	position:relative;
+	color:#5d30a6;
+	font-weight:900;
+}
+.tab-scroll-x .swiper-slide.on .text:before {
+	content:'';
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:-1px;
+	height:1px;
+	background-color:#5d30a6
+}
+
+.tab-scroll-x.fix {
+	position:fixed;
+	left:0;
+	right:0;
+	z-index:50;
+	border-top:0;
+	background-color:rgba(255,255,255,.9);
+}
+
 
 /* 소팅 */
-.sorting-box-area {height:60px;}
 .sorting-box {
 	overflow:hidden;
 	padding:15px 20px;
@@ -396,7 +438,7 @@ select {
 
 .search-area {
 	margin-top:37px;
-	padding:0 20px;
+	padding:0 20px 35px;
 }
 .search-area .recommend-area {margin-top:20px;}
 .search-area .recommend-area .title {
