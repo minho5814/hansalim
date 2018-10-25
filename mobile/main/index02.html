@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" class="login"><!-- 로그인 후 (class="login 추가") -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/swiper.min.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="h-logo"><a href="javascript:;">Lotte</a></h1>
+		<button type="button" class="btn-gnb">Menu Button</button>
+	</div>
+
+	<div class="container">
+		<!-- 상단 정보 출력 영역 -->
+		<div class="top-info-area">
+			<h2 class="t-title">LOAN</h2>
+			<div class="amount-area">
+				<p class="text">Amount to be paid in 10</p>
+				<a href="#" class="link-price"><span class="price">1,234,123</span> ₫</a>
+			</div>
+			<div class="text-area"><strong>15 times</strong> in total 60 payments<br>The loan has been repaid.</div>
+			<div class="payment-total">
+				<div class="item">
+					<span class="title">Payment interest</span>
+					<span class="price">100,000 ₫</span>
+				</div>
+				<div class="item">
+					<strong class="title">Total loan amount</strong>
+					<span class="price">50,000,000 ₫</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- 빠른 메뉴 영역 -->
+		<div class="quick-menu">
+			<a href="#" class="menu-item on">MY</a>
+			<a href="#" class="menu-item">LOAN</a>
+			<a href="#" class="menu-item">CARD</a>
+			<a href="#" class="menu-item">EVENT</a>
+		</div>
+
+		<!-- 박스 메뉴 영역 -->
+		<div class="box-menu-area">
+			<a href="#" class="menu-item item07">
+				<span class="text">Loan usage history</span>
+			</a>
+			<a href="#" class="menu-item item08">
+				<span class="text">Card usage history</span>
+			</a>
+			<a href="#" class="menu-item item09">
+				<span class="text">Emotion Card</span>
+			</a>
+			<a href="#" class="menu-item item10">
+				<span class="text">Expected<br>reimbursement<br>schedule</span>
+			</a>
+			<a href="#" class="menu-item item11">
+				<span class="text">Personal<br>Information<br>Management</span>
+			</a>
+			<a href="#" class="menu-item item12">
+				<span class="text">SNS</span>
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function(){
+		/* 상단 비주얼 슬라이드 */
+		var swiper = new Swiper('.top-visual-area .swiper-container', {
+			pagination: '.top-visual-area .swiper-pagination',
+		});
+	});
+</script>
+</body>
+
+</html>
