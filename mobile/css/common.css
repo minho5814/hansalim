@@ -1081,6 +1081,30 @@ body,
 /* 공지사항 목록 (MA-08.01.01) */
 .customer-view {margin-top:50px;}
 
+/* 공지사항 > 상세 (MA-08.01.02) */
+.notice-view .notice-text {padding:32px 20px 30px;}
+.notice-view .notice-text .tit {
+	color:#111;
+	font-size:17px;
+	font-weight:400;
+	line-height:1.2;
+}
+.notice-view .notice-text .info-list {margin-top:10px;}
+.notice-view .notice-text .info-list li {
+	color:#737373;
+	font-weight:400;
+}
+.notice-view .notice-info {
+	padding:0 20px; 
+	border-top:1px solid #d9d9d9;
+}
+.notice-view .notice-info .info-tit {
+	padding:18px 0 14px; 
+	color:#111;
+	font-size:19px;
+	font-weight:600;
+}
+
 /* 지점안내 (MA-08.04) */
 .point-box {border-top:1px solid #333;}
 .point-box .point-text {
