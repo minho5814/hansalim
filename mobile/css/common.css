@@ -521,6 +521,10 @@ select {
 	color:#737373;
 	font-size:15px;
 }
+.box-list1 .box-item .info-list .item.fcolor {
+	font-weight:600;
+	color:#e21c24;
+}
 
 .box-list2 {border-top:1px solid #333;}
 .box-list2 .box-item {
