@@ -540,6 +540,58 @@ select {
 	font-size:13px;
 }
 
+/* 아코디언 리스트 */
+.accordion-list1 {}
+.accordion-list1 .all-len {
+	padding:0 20px;
+	background-color:#f7f7f7;
+	font-size:12px;
+	font-weight:600;
+	line-height:34px;
+}
+.accordion-list1 .lists {}
+.accordion-list1 .lists .list-item {
+	border-top:1px solid #f2f2f2;
+}
+.accordion-list1 .lists .list-item:first-child {border-top:0;}
+.accordion-list1 .lists .list-item .inquiry {
+	position:relative;
+	padding:15px 40px 15px 95px;
+}
+.accordion-list1 .lists .list-item .inquiry:before {
+	content:'';
+	position:absolute;
+	right:20px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:14px;
+	height:8px;
+	background:url(../images/common/sprite_icon.png) no-repeat -66px 0;
+	background-size:250px;
+}
+.accordion-list1 .lists .list-item.on .inquiry:before {
+	background-position:-81px 0;
+}
+.accordion-list1 .lists .list-item .inquiry .value {
+	position:absolute;
+	left:20px;
+	top:15px;
+	color:#737373;
+	font-size:13px;
+}
+.accordion-list1 .lists .list-item .inquiry .text-area {
+	color:#111;
+	font-weight:600;
+	
+}
+.accordion-list1 .lists .list-item .answer {
+	display:none;
+	padding:14px 20px 40px 95px;
+}
+.accordion-list1 .lists .list-item {}
+
 /* ============================================================================================
 	Layout
 ============================================================================================ */

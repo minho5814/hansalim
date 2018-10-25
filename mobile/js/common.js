@@ -5,6 +5,15 @@ $(document).ready(function(){
 		window.open('about:blank','_self').self.close(); // IE에서 묻지 않고 창 닫기
 	});
 
+	/* 검색영역 (customer/MA-08.02.01.html) */
+	$('.search-form .btn-delete').click(function(){
+		$(this).closest('.search-form').find('input[type=text]').val('');
+	});
+	$('.search-area .hashtags .tag').click(function(){
+		var txt = $(this).text();
+		$(this).closest('.search-area').find('.search-form input[type=text]').val(txt);
+	});
+
 	/* 탭 스와이퍼 (MA-08.02.01.html) */
 	$('.tab-scroll-x').each(function(){
 		var tab = $(this).find('.swiper-container');
@@ -33,6 +42,15 @@ $(document).ready(function(){
 	$('.bottom-fixed-area').each(function(){
 		var hei = $(this).find('.height').outerHeight();
 		$('.container').css({'padding-bottom':hei + 35});
+	});
+
+	/* 아코디언 리스트 (customer/MA-08.02.01.html) */
+	$('.accordion-list1 .list-item').click(function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on').find('.answer').slideUp(100);
+		}else{
+			$(this).addClass('on').find('.answer').slideDown(200);
+		}
 	});
 });
 
