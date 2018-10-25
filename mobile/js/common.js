@@ -5,6 +5,19 @@ $(document).ready(function(){
 		window.open('about:blank','_self').self.close(); // IE에서 묻지 않고 창 닫기
 	});
 
+	/* 탭 스와이퍼 (MA-08.02.01.html) */
+	$('.tab-scroll-x').each(function(){
+		var tab = $(this).find('.swiper-container');
+		new Swiper(tab, {
+			slidesPerView: 'auto',
+			spaceBetween: 0
+		});
+
+		$(this).find('.swiper-slide').click(function(){
+			$(this).addClass('on').siblings('.swiper-slide').removeClass('on');
+		});
+	});
+
 	/* 소팅 영역 */
 	// 버튼 넓이
 	$('.sorting-box').each(function(){

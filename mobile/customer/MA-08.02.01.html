@@ -58,22 +58,6 @@
 		</div>
 	</div>
 </div>
-
-<script>
-$(document).ready(function(){
-	$('.tab-scroll-x').each(function(){
-		var tab = $(this).find('.swiper-container');
-		new Swiper(tab, {
-			slidesPerView: 'auto',
-			spaceBetween: 0
-		});
-
-		$(this).find('.swiper-slide').click(function(){
-			$(this).addClass('on').siblings('.swiper-slide').removeClass('on');
-		});
-	});
-});
-</script>
 </body>
 
 </html>
