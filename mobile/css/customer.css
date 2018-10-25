@@ -4,14 +4,14 @@
 	고객센터 (customer)
 ============================================================================================ */
 /* 고객상담 (MA-08.03.01) */
-.talk-box .talk-list {}
-.talk-box .talk-list .item {
+.advice-view {margin-top:10px;}
+.advice-box .advice-list .item {
 	position:relative;
-	padding:25px 36px 25px  97px;
+	padding:20px 36px 20px 97px;
 	border-bottom:1px solid #f2f2f2;
 }
-.talk-box .talk-list .item:after,
-.talk-box .talk-list .item::after {
+.advice-box .advice-list .item:after,
+.advice-box .advice-list .item::after {
 	content:'';
 	display:block;
 	position:absolute;
@@ -21,10 +21,11 @@
 	height:14px;
 	margin-top:-7px;
 	background:url(../images/common/sprite_icon.png) no-repeat 0 0;
-	background-position:0 0;
+	background-position:-96px 0;
+	background-size:250px;
 }
-.talk-box .talk-list .item:before,
-.talk-box .talk-list .item::before {
+.advice-box .advice-list .item:before,
+.advice-box .advice-list .item::before {
 	content:'';
 	display:block;
 	position:absolute;
@@ -33,30 +34,30 @@
 	background:url(../images/common/sprite_icon.png) no-repeat 0 0;
 	background-size:250px;
 }
-.talk-box .talk-list .item.talk1:before,
-.talk-box .talk-list .item.talk1::before {
+.advice-box .advice-list .item.advice1:before,
+.advice-box .advice-list .item.advice1::before {
 	left:34px;
 	width:35px;
 	height:39px;
 	background-position:-40px -99px;
 }
-.talk-box .talk-list .item.talk2:before,
-.talk-box .talk-list .item.talk2::before {
+.advice-box .advice-list .item.advice2:before,
+.advice-box .advice-list .item.advice2::before {
 	width:45px;
 	height:42px;
-	background-position:-151px -99px;
+	background-position:-76px -99px;
 }
-.talk-box .talk-list .item.talk3:before,
-.talk-box .talk-list .item.talk3::before {
+.advice-box .advice-list .item.advice3:before,
+.advice-box .advice-list .item.advice3::before {
 	width:41px;
 	height:37px;
-	background-position:-243px -99px;
+	background-position:-122px -99px;
 }
-.talk-box .talk-list .item .tit {
+.advice-box .advice-list .item .tit {
 	color:#111;
 	font-weight:600;
 }
-.talk-box .talk-list .item p {
+.advice-box .advice-list .item p {
 	color:#737373;
 	font-weight:400;
 }
