@@ -83,12 +83,6 @@ input[type=password]:disabled {
 	
 }
 
-input[type=file] {
-	-webkit-appearance:none;
-	-moz-appearance:none;
-	appearance:none;
-}
-
 textarea {
 	width:100%;
 	padding:14px 19px;
@@ -327,6 +321,37 @@ select {
 .btn-list .btn-item {
 	float:left;
 	width:50%;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	폼 요소
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 파일첨부 */
+.filebox {
+	display:inline-block;
+	width:100%;
+	position:relative;
+}
+.filebox .filename {
+	display:inline-block;
+	width:100%;
+	height:50px;
+	box-sizing:border-box;
+	border:1px solid #999;
+	background-color:#fff;
+	font-size:14px;
+	font-weight:600;
+	text-align:center;
+	line-height:48px;
+}
+.filebox input[type=file] {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:50px;
+	opacity:0;
 }
 
 
@@ -626,7 +651,20 @@ select {
 	display:none;
 	padding:14px 20px 40px 95px;
 }
-.accordion-list1 .lists .list-item {}
+
+/* 폼 리스트 */
+.form-list1 {}
+.form-list1 .form-item {margin-top:28px;}
+.form-list1 .form-item .title {
+	display:block;
+	font-size:13px;
+	padding-bottom:13px;
+}
+.form-list1 .form-item select,
+.form-list1 .form-item input[type=text],
+.form-list1 .form-item input[type=tel],
+.form-list1 .form-item input[type=number],
+.form-list1 .form-item input[type=password] {margin-top:-15px;}
 
 /* ============================================================================================
 	Layout
@@ -640,9 +678,7 @@ body,
 	padding-bottom:35px;
 }
 
-.content {
-	padding:0 20px;
-}
+.content {padding:0 20px;}
 .content.wide {
 	padding-left:0;
 	padding-right:0;

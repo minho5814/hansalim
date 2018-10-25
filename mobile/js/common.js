@@ -104,15 +104,14 @@ function form(){
 	$('input[type=file]').each(function(){
 		if(!$(this).parent().is('.filebox')){
 			$(this).wrap('<span class="filebox"></span>');
-			$(this).before('<span class="btn"></span>');
-			var txt = $(this).val();
-			var len = $(this).val().length;
-			console.log(txt);
-			if(len == 0){
-				$(this).closest('.filebox').find('.btn').text('첨부파일 찾기');// 추 후 베트남어 번역 후 텍스트 교체
-			}else{
-				$(this).closest('.filebox').find('.btn').text(txt);
-			}
+			$(this).before('<span class="filename"></span>');
+			$(this).closest('.filebox').find('.filename').text('첨부파일 찾기');// 추 후 베트남어 번역 후 텍스트 교체
 		}
+
+		$(this).change(function(){
+			var fileVal = $(this).val().split("\\");
+			var fileName = fileVal[fileVal.length-1];
+			$(this).closest('.filebox').find('.filename').text(fileName);
+		});
 	});
 }
