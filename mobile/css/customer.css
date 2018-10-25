@@ -24,3 +24,11 @@
 	color:#737373;
 	font-size:13px;
 }
+
+/* 지점안내 (MA-08.04) */
+.point-box {border-top:1px solid #333;}
+.point-box .point-text {margin-top:20px; padding:20px 20px;}
+.point-box .point-text .point-tit {color:#333;font-weight:600; line-height:1.5;}
+.point-box .point-text .point-list {margin-top:6px;}
+.point-box .point-text .point-list .item {color:#555; font-weight:400; line-height:1.5;}
+.point-box .point-map img {width:100%; vertical-align:top;}
