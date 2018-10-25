@@ -31,25 +31,26 @@
 	left:37px;
 	top:25px;
 	background:url(../images/common/sprite_icon.png) no-repeat 0 0;
+	background-size:250px;
 }
 .talk-box .talk-list .item.talk1:before,
 .talk-box .talk-list .item.talk1::before {
 	left:34px;
 	width:35px;
 	height:39px;
-	background-position:79px 198px;
+	background-position:-40px -99px;
 }
 .talk-box .talk-list .item.talk2:before,
 .talk-box .talk-list .item.talk2::before {
 	width:45px;
 	height:42px;
-	background-position:151px 198px;
+	background-position:-151px -99px;
 }
 .talk-box .talk-list .item.talk3:before,
 .talk-box .talk-list .item.talk3::before {
 	width:41px;
 	height:37px;
-	background-position:243px 198px;
+	background-position:-243px -99px;
 }
 .talk-box .talk-list .item .tit {
 	color:#111;
