@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
 	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/swiper.min.js"></script>
 </head>
 
 <body>
@@ -40,8 +41,15 @@
 
 		<!-- 스크롤시 고정 영역 -->
 		<div class="scroll-fix-tab">
-			<div class="fix-tab">
-				klfjdgklj
+			<div class="tab-scroll-x fix-tab">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<a href="#" class="swiper-slide on"><span class="text">TOP10</span></a>
+						<a href="#" class="swiper-slide"><span class="text">카드신청/발급/해지</span></a>
+						<a href="#" class="swiper-slide"><span class="text">신상정보변경</span></a>
+						<a href="#" class="swiper-slide"><span class="text">카드사용/결제</span></a>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -50,6 +58,22 @@
 		</div>
 	</div>
 </div>
+
+<script>
+$(document).ready(function(){
+	$('.tab-scroll-x').each(function(){
+		var tab = $(this).find('.swiper-container');
+		new Swiper(tab, {
+			slidesPerView: 'auto',
+			spaceBetween: 0
+		});
+
+		$(this).find('.swiper-slide').click(function(){
+			$(this).addClass('on').siblings('.swiper-slide').removeClass('on');
+		});
+	});
+});
+</script>
 </body>
 
 </html>

@@ -47,11 +47,14 @@ $(window).scroll(function(){
 
 	/* 소팅 영역 고정 */
 	$('.scroll-fix-tab').each(function(){
-		var sotTop =  $('.scroll-fix-tab').offset().top;
+		var sotTop =  $(this).offset().top;
+		var hei = $(this).find('.fix-tab').outerHeight();
+
+		$(this).css({'height':hei});
 		if(winTop > sotTop - headH){
-			$('.fix-tab').addClass('fix').css({'top':headH});
+			$(this).find('.fix-tab').addClass('fix').css({'top':headH});
 		}else{
-			$('.fix-tab').removeClass('fix').removeAttr('style');
+			$(this).find('.fix-tab').removeClass('fix').removeAttr('style');
 		}
 	});
 });
