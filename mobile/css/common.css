@@ -978,3 +978,63 @@ body,
 	line-height:1.5;
 }
 .point-box .point-map {margin-bottom:-35px;}
+
+/* 고객상담 (MA-08.03.01.html) */
+.advice-view {margin-top:10px;}
+.advice-box .advice-item {
+	display:block;
+	position:relative;
+	padding:20px 36px 20px 97px;
+	border-bottom:1px solid #f2f2f2;
+}
+.advice-box .advice-item:after,
+.advice-box .advice-item::after {
+	content:'';
+	display:block;
+	position:absolute;
+	right:20px;
+	top:50%;
+	width:8px;
+	height:14px;
+	margin-top:-7px;
+	background:url(../images/common/sprite_icon.png) no-repeat 0 0;
+	background-position:-96px 0;
+	background-size:250px;
+}
+.advice-box .advice-item:before,
+.advice-box .advice-item::before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:37px;
+	top:25px;
+	background:url(../images/common/sprite_icon.png) no-repeat 0 0;
+	background-size:250px;
+}
+.advice-box .advice-item.advice1:before,
+.advice-box .advice-item.advice1::before {
+	left:34px;
+	width:35px;
+	height:39px;
+	background-position:-40px -99px;
+}
+.advice-box .advice-item.advice2:before,
+.advice-box .advice-item.advice2::before {
+	width:45px;
+	height:42px;
+	background-position:-76px -99px;
+}
+.advice-box .advice-item.advice3:before,
+.advice-box .advice-item.advice3::before {
+	width:41px;
+	height:37px;
+	background-position:-122px -99px;
+}
+.advice-box .advice-item .tit {
+	color:#111;
+	font-weight:600;
+}
+.advice-box .advice-list .item p {
+	color:#737373;
+	font-weight:400;
+}
