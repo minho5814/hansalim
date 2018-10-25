@@ -231,6 +231,50 @@ select {
 	z-index:50;
 }
 
+/* 아이콘 버튼 */
+.btn-icon {
+	display:inline-block;
+	position:relative;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.btn-icon:before,
+.btn-icon::before {
+	content:'';
+	position:absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	background-image:url(../images/common/sprite_icon.png);
+	background-repeat:no-repeat;
+	background-size:250px;
+}
+
+.btn-delete {
+	width:20px;
+	height:20px;
+}
+.btn-delete:before,
+.btn-delete::before {
+	width:20px;
+	height:20px;
+	background-position:0 -99px;
+}
+
+.btn-search {
+	width:18px;
+	height:18px;
+}
+.btn-search:before,
+.btn-search::before {
+	width:18px;
+	height:18px;
+	background-position:-21px -99px;
+}
+
 /* 링크 */
 .link-type1 {
 	display:inline-block;
