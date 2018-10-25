@@ -96,9 +96,9 @@ textarea {
 	word-wrap:break-word;
 	resize:none;
 }
-:-ms-input-placeholder {color:#93a8b8;opacity:1;}
-::-webkit-input-placeholder {color:#93a8b8;opacity:1;}
-::-moz-placeholder {color:#93a8b8;opacity:1;}
+:-ms-input-placeholder {color:#737373;opacity:1;}
+::-webkit-input-placeholder {color:#737373;opacity:1;}
+::-moz-placeholder {color:#737373;opacity:1;}
 
 select {
 	height:25px;
@@ -302,9 +302,7 @@ select {
 	탭/소팅/검색
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* 탭 */
-.tab-list1 {
-	overflow:hidden;
-}
+.tab-list1 {overflow:hidden;}
 .tab-list1 .tab-item {
 	float:left;
 	position:relative;
@@ -329,10 +327,10 @@ select {
 	height:3px;
 	background-color:#5d30a6;
 }
-.tab-list1 .tab-item {}
-.tab-list1 {}
 .tab-wrap .tab-cont {display:none;}
 .tab-wrap .tab-cont.on {display:block;}
+
+.tab-list2 {}
 
 /* 소팅 */
 .sorting-box-area {height:60px;}
@@ -367,23 +365,64 @@ select {
 /* 검색 영역 */
 .search-form {
 	position:relative;
+	padding-right:60px;
 	border-bottom:1px solid #b2b2b2;
 }
 .search-form input[type=text] {
 	width:100%;
 	height:46px;
+	padding:0;
 }
-.search-form .btn-delete {}
-.search-form .btn-search {}
+.search-form .btn-icon {
+	position:absolute;
+	top:0;
+	height:46px;
+}
+.search-form .btn-delete {
+	right:25px;
+	width:34px;
+}
+.search-form .btn-search {
+	right:0;
+	width:25px;
+}
+.search-form .btn-search:before {
+	left:inherit;
+	right:0;
+	-webkit-transform:translate(0,-50%);
+	-ms-transform:translate(0,-50%);
+	transform:translate(0,-50%);
+}
 
-.search-area {}
-.search-area .recommend-area {}
-.search-area .recommend-area .title {}
-.search-area .recommend-area .hashtags {}
-.hashtags {}
-.hashtags .tag {}
-.hashtags .tag {}
-.search-area {}
+.search-area {
+	margin-top:37px;
+	padding:0 20px;
+}
+.search-area .recommend-area {margin-top:20px;}
+.search-area .recommend-area .title {
+	color:#665196;
+	font-size:13px;
+	font-weight:600;
+}
+.hashtags {
+	overflow:hidden;
+	margin:-5px 0 0 -10px;
+}
+.hashtags .tag {
+	float:left;
+	margin:5px 0 0 10px;
+	padding:0 10px;
+	border-radius:25px;
+	background-color:#f7f7f7;
+	color:#555;
+	font-size:13px;
+	line-height:24px;
+}
+.hashtags .tag:before {
+	content:'#';
+	display:inline-block;
+}
+.search-area .recommend-area .hashtags {padding-top:13px;}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	리스트

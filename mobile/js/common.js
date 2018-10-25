@@ -46,12 +46,12 @@ $(window).scroll(function(){
 	});
 
 	/* 소팅 영역 고정 */
-	$('.sorting-box-area').each(function(){
-		var sotTop =  $('.sorting-box-area').offset().top;
+	$('.scroll-fix-tab').each(function(){
+		var sotTop =  $('.scroll-fix-tab').offset().top;
 		if(winTop > sotTop - headH){
-			$('.sorting-box').addClass('fix').css({'top':headH});
+			$('.fix-tab').addClass('fix').css({'top':headH});
 		}else{
-			$('.sorting-box').removeClass('fix').removeAttr('style');
+			$('.fix-tab').removeClass('fix').removeAttr('style');
 		}
 	});
 });
