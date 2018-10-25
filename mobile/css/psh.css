@@ -3,6 +3,39 @@
 /* ============================================================================================
 	마이페이지
 ============================================================================================ */
-/* 이벤트참여내역 (MA-03.04.01.html) */
+/* 이벤트참여내역 > 목록 (MA-03.04.01.html) */
 .mypage-view {margin-top:35px;}
 .mypage-view .box-list1 {border-top:1px solid #dadada;}
+/* 이벤트참여내역 > 상세 (MA-03.04.02.html) */
+.details-box .notice-text {
+	height:56px;
+	color:#fff;
+	font-size:17px;
+	font-weight:900;
+	line-height:50px;
+	border-bottom:1px solid #e5e5e5;
+	background-color:#5d30a6;
+	box-sizing:border-box;
+	text-align:center;
+}
+.details-box .details-cont {
+	padding:31px 20px 0;
+}
+.details-box .details-cont .details-text .tit {
+	color:#111;
+	font-size:17px;
+	font-weight:400;
+	line-height:1.2;
+}
+.details-box .details-cont .details-text .info-list {
+	margin-top:10px;
+}
+.details-box .details-cont .details-text .info-list li {
+	color:#737373;
+	font-weight:400;
+}
+.details-box .details-cont .details-info {
+	margin-top:35px;
+	padding-top:20px;
+	border-top:1px solid #dadada;
+}
