@@ -5,13 +5,14 @@
 ============================================================================================ */
 /* 고객상담 (MA-08.03.01) */
 .advice-view {margin-top:10px;}
-.advice-box .advice-list .item {
+.advice-box .advice-item {
+	display:block;
 	position:relative;
 	padding:20px 36px 20px 97px;
 	border-bottom:1px solid #f2f2f2;
 }
-.advice-box .advice-list .item:after,
-.advice-box .advice-list .item::after {
+.advice-box .advice-item:after,
+.advice-box .advice-item::after {
 	content:'';
 	display:block;
 	position:absolute;
@@ -24,8 +25,8 @@
 	background-position:-96px 0;
 	background-size:250px;
 }
-.advice-box .advice-list .item:before,
-.advice-box .advice-list .item::before {
+.advice-box .advice-item:before,
+.advice-box .advice-item::before {
 	content:'';
 	display:block;
 	position:absolute;
@@ -34,26 +35,26 @@
 	background:url(../images/common/sprite_icon.png) no-repeat 0 0;
 	background-size:250px;
 }
-.advice-box .advice-list .item.advice1:before,
-.advice-box .advice-list .item.advice1::before {
+.advice-box .advice-item.advice1:before,
+.advice-box .advice-item.advice1::before {
 	left:34px;
 	width:35px;
 	height:39px;
 	background-position:-40px -99px;
 }
-.advice-box .advice-list .item.advice2:before,
-.advice-box .advice-list .item.advice2::before {
+.advice-box .advice-item.advice2:before,
+.advice-box .advice-item.advice2::before {
 	width:45px;
 	height:42px;
 	background-position:-76px -99px;
 }
-.advice-box .advice-list .item.advice3:before,
-.advice-box .advice-list .item.advice3::before {
+.advice-box .advice-item.advice3:before,
+.advice-box .advice-item.advice3::before {
 	width:41px;
 	height:37px;
 	background-position:-122px -99px;
 }
-.advice-box .advice-list .item .tit {
+.advice-box .advice-item .tit {
 	color:#111;
 	font-weight:600;
 }
