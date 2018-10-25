@@ -462,15 +462,11 @@ select {
 }
 
 /* 검색 영역 */
-.search-form {
-	position:relative;
-	padding-right:60px;
-	border-bottom:1px solid #b2b2b2;
-}
+.search-form {position:relative;}
 .search-form input[type=text] {
 	width:100%;
 	height:46px;
-	padding:0;
+	padding:0 60px 0 0;
 }
 .search-form .btn-icon {
 	position:absolute;
@@ -632,9 +628,7 @@ select {
 	background:url(../images/common/sprite_icon.png) no-repeat -66px 0;
 	background-size:250px;
 }
-.accordion-list1 .lists .list-item.on .inquiry:before {
-	background-position:-81px 0;
-}
+.accordion-list1 .lists .list-item.on .inquiry:before {background-position:-81px 0;}
 .accordion-list1 .lists .list-item .inquiry .value {
 	position:absolute;
 	left:20px;
@@ -647,9 +641,42 @@ select {
 	font-weight:600;
 	
 }
+.accordion-list1 .lists .list-item .inquiry .text-area .status {
+	display:inline-block;
+	height:18px;
+	margin-right:8px;
+	padding:0 8px;
+	border-radius:25px;
+	background-color:#e21c24;
+	color:#fff;
+	font-size:10px;
+	vertical-align:2px;
+}
+.accordion-list1 .lists .list-item .inquiry .text-area .status.type1 {background-color:#1681c4;}
 .accordion-list1 .lists .list-item .answer {
 	display:none;
 	padding:14px 20px 40px 95px;
+}
+
+.accordion-list1 .lists .list-item .answer.type2 {padding:0;}
+.accordion-list1 .lists .list-item .answer.type2 .text-box {
+	position:relative;
+	background-color:#f3f3f3;
+	padding:17px 20px 20px 45px;
+	color:#111;
+	font-size:13px;
+}
+.accordion-list1 .lists .list-item .answer.type2 .text-box.type2 {background-color:#ede4ea;}
+.accordion-list1 .lists .list-item .answer.type2 .text-box.type3 {
+	background-color:#d3cdd9;
+	font-weight:600;
+}
+.accordion-list1 .lists .list-item .answer.type2 .text-box .fcolor {color:#e21c24;}
+.accordion-list1 .lists .list-item .answer.type2 .text-box .label {
+	position:absolute;
+	left:20px;
+	top:16px;
+	font-weight:600;
 }
 
 /* 폼 리스트 */
@@ -962,7 +989,8 @@ body,
 ============================================================================================ */
 /* 이벤트참여내역 > 목록 (MA-03.04.01.html) */
 .mypage-view {margin-top:35px;}
-.mypage-view .box-list1 {border-top:1px solid #dadada;}
+.mypage-view .box-list1,
+.mypage-view .accordion-list1 {border-top:1px solid #dadada;}
 
 /* 이벤트참여내역 > 상세 (MA-03.04.02.html) */
 .details-box .notice-text {
