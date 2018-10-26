@@ -55,6 +55,13 @@ $(document).ready(function(){
 
 	/* 폼요소 호출 */
 	form();
+
+	/* 넓이 가변 셀렉트박스 */
+	$('.combobox select').change(function(){
+		var tit = $(this).val();
+		$(this).closest('.combobox').find('.title').text(tit);
+	});
+
 });
 
 

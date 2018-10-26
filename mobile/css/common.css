@@ -537,6 +537,15 @@ select {
 }
 .search-area .recommend-area .hashtags {padding-top:13px;}
 
+/* 고정일 경우 */
+.fix-tab.fix {
+	position:fixed;
+	left:0;
+	right:0;
+	z-index:50;
+	background-color:rgba(255,255,255,.9);
+}
+
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	리스트
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -1036,6 +1045,62 @@ body,
 /* ============================================================================================
 	마이페이지
 ============================================================================================ */
+/* 대출이용내역 (MA-03.02.01.html) */
+.mypage-view.tab-warp {margin-top:50px;}
+
+.combobox {
+	display:inline-block;
+	overflow:hidden;
+	position:relative;
+	vertical-align:top;
+}
+.combobox .title {
+	display:inline-block;
+	position:relative;
+	padding-right:20px;
+	color:#111;
+	font-size:13px;
+	font-weight:600;
+}
+.combobox .title:before {
+	content:'';
+	position:absolute;
+	right:5px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:8px;
+	height:5px;
+	background:url(../images/common/sprite_icon.png) no-repeat -130px 0;
+	background-size:250px;
+}
+.combobox select {
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	width:auto;
+	height:auto;
+	border:0;
+	background:none;
+	background-color:transparent;
+	font-size:13px;
+	opacity:0;
+}
+
+.info-select-area {
+	padding:16px 20px 18px;
+	font-size:13px;
+	line-height:1.7;
+}
+.info-select-area .fcolor {
+	color:#5d30a6;
+	font-weight:600;
+}
+.info-select-area {}
+
 /* 이벤트참여내역 > 목록 (MA-03.04.01.html) */
 .mypage-view {margin-top:35px;}
 .mypage-view .box-list1,
