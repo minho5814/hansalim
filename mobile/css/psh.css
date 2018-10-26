@@ -40,69 +40,10 @@
 	font-weight:600;
 	line-height:1.5;
 }
-/* 휴대폰인증 (MA-02.02.02.2.html) */
-.phone-certify {
-	margin-top:24px;
-	padding:0 20px;
-}
-.phone-certify .send-box {
-	width:100%;
-	padding:23px 0 35px;
-	background-color:#f2f2f2;
-	text-align:center;
-}
-.phone-certify .send-box .number {
-	display:block;
-	margin-bottom:20px;
-	color:#737373;
-	font-size:28px;
-	font-weight:900;
-}
-.phone-certify .send-box .btn-send {
-	height:40px;
-	padding:0 20px;
-	border:1px solid #999;
-	box-sizing:border-box;
-	text-align:center;
-	color:#333;
-	font-size:14px;
-	font-weight:600;
-	line-height:38px;
-}
-.phone-certify .otp-type {margin-top:35px;}
-.phone-certify .btn-text {margin-top:40px;}
-.notice-message {
-	margin-top:28px;
-	color:#5d30a6;
-	font-size:19px;
-	font-weight:900;
-	text-align:center;
-}
-/* 개인정보등록 (MA-02.02.02.3.html) */
-.registration-box {
-	margin-top:72px;
-	padding:0 20px;
-}
-.policy-text {
-	position:fixed;
-	left:20px; 
-	right:20px;
-	bottom:13%;
-	color:#737373;
-	font-size:13px;
-	font-weight:400;
-	line-height:1.5;
-}
-.policy-text em {
-	font-weight:600;
-}
+
+
 /* 비밀번호변경 (MA-02.03.04.html) */
 .password-box {
 	margin-top:50px;
 	padding:0 20px;
 }
-/* 본인인증 (MA-02.02.03.1.html) */
-.personally-box {
-	padding:0 20px;
-}
-.personally-box .btn-text {margin-top:40px;}
