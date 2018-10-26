@@ -69,8 +69,9 @@
 	font-weight:600;
 	line-height:38px;
 }
+.phone-certify .otp-type {margin-top:35px;}
 .phone-certify .btn-text {margin-top:40px;}
-.phone-certify .notice-message {
+.notice-message {
 	margin-top:28px;
 	color:#5d30a6;
 	font-size:19px;
@@ -82,7 +83,7 @@
 	margin-top:72px;
 	padding:0 20px;
 }
-.registration-box .policy-text {
+.policy-text {
 	position:fixed;
 	left:20px; 
 	right:20px;
@@ -92,6 +93,16 @@
 	font-weight:400;
 	line-height:1.5;
 }
-.registration-box .policy-text em {
+.policy-text em {
 	font-weight:600;
 }
+/* 비밀번호변경 (MA-02.03.04.html) */
+.password-box {
+	margin-top:50px;
+	padding:0 20px;
+}
+/* 본인인증 (MA-02.02.03.1.html) */
+.personally-box {
+	padding:0 20px;
+}
+.personally-box .btn-text {margin-top:40px;}
