@@ -82,16 +82,16 @@
 	margin-top:72px;
 	padding:0 20px;
 }
-.policy-text {
+.registration-box .policy-text {
 	position:fixed;
 	left:20px; 
 	right:20px;
-	bottom:17%;
+	bottom:13%;
 	color:#737373;
 	font-size:13px;
 	font-weight:400;
 	line-height:1.5;
 }
-.policy-text em {
+.registration-box .policy-text em {
 	font-weight:600;
 }
