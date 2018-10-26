@@ -42,18 +42,66 @@
 	font-weight:600;
 	line-height:1.2;
 }
-
-.btn-text.bnt-arrow {
-	position:relative;
-	padding-right:51px;
-	text-align:right;
+/* 간편회원가입 > SNS인증 (MA-02.02.02.1.html) */
+.join-certify {
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	padding:75px 0 134px;
+	background-color:#f4f4f4;
 }
-.btn-text.bnt-arrow:before,
-.btn-text.bnt-arrow::before {
+.join-certify .certify-list {
+	overflow:hidden;
+	position:absolute;
+	left:50%;
+	top:0;
+	width:280px;
+	margin-left:-140px;
+}
+.join-certify .certify-list .item {
+	float:left;
+	position:relative;
+	width:80px;
+	padding:70px 30px 0;
+	text-align:center;
+}
+.join-certify .certify-list .item:before,
+.join-certify .certify-list .item::before {
 	content:'';
 	display:block;
 	position:absolute;
-	right:0;
+	left:50%;
 	top:0;
-	background:url(../images/) no-repeat 0 0;
+	width:60px;
+	height:60px;
+	margin-left:-30px;
+	background:url(../images/common/sprite_icon.png) no-repeat 0 0;
+	background-size:250px;
+}
+.join-certify .certify-list .item.certify1:before {
+	background-position:0 -142px;
+}
+.join-certify .certify-list .item.certify2:before {
+	background-position:-61px -142px;
+}
+.join-certify .certify-list .item.certify3:before {
+	background-position:-122px -142px;
+}
+.join-certify .certify-list .item.certify4:before {
+	background-position:-183px -142px;
+}
+.join-certify .certify-list .item span {display:block;}
+.join-certify .certify-list .item .title {
+	color:#333;
+	font-size:19px;
+	font-weight:600;
+}
+.join-certify .certify-list .item .txt {
+	margin-bottom:4px;
+	color:#333;
+	font-size:13px;
+	font-weight:400;
+	line-height:1.2;
 }
