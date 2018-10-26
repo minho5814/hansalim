@@ -249,6 +249,24 @@ select {
 	line-height:55px;
 }
 .btn-text.type1 {background-color:#5d30a6;}
+.btn-text.type1.next {
+	position:relative;
+	padding-right:55px;
+	text-align:right;
+}
+.btn-text.type1.next:before {
+	content:'';
+	position:absolute;
+	right:20px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:24px;
+	height:16px;
+	background:url(../images/common/sprite_icon.png) no-repeat -105px 0;
+	background-size:250px;
+}
 
 /* 아이콘 버튼 */
 .btn-icon {
@@ -991,6 +1009,31 @@ body,
 }
 
 /* ============================================================================================
+	고객센터 (customer)
+============================================================================================ */
+/* 공통 */
+.wrapper.signup .container {padding-top:35px;}
+.wrapper.signup .s-title-area {margin-top:0;}
+.wrapper.signup .s-title-area .s-title:before {display:none;}
+
+.step-bar {
+	overflow:hidden;
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	z-index:55;
+	background-color:#ebebeb;
+}
+.step-bar .bar {
+	float:left;
+	width:33%;
+	height:3px;
+}
+.step-bar .bar:first-child {width:34%;}
+.step-bar .bar.on {background-color:#e21c24;}
+
+/* ============================================================================================
 	마이페이지
 ============================================================================================ */
 /* 이벤트참여내역 > 목록 (MA-03.04.01.html) */
@@ -1217,36 +1260,3 @@ body,
 	color:#737373;
 	font-weight:400;
 }
-
-
-/* */
-.wrapper.signup .container {
-	padding-top:35px;
-}
-.wrapper.signup .s-title-area {
-	margin-top:0;
-}
-
-.step-bar {
-	overflow:hidden;
-	position:fixed;
-	left:0;
-	right:0;
-	top:0;
-	z-index:55;
-	background-color:#ebebeb;
-}
-.step-bar .bar {
-	float:left;
-	width:33%;
-	height:3px;
-}
-.step-bar .bar:first-child {width:34%;}
-.step-bar .bar.on {background-color:#e21c24;}
-.step-bar .bar {}
-.step-bar {}
-
-.wrapper.signup {}
-.wrapper.signup {}
-.wrapper.signup {}
-.wrapper.signup {}
