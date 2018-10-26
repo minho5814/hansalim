@@ -71,11 +71,19 @@ $(window).scroll(function(){
 
 	/* 타이틀 스크롤시 고정 */
 	$('.s-title-area').each(function(){
-		var titTop =  $('.s-title-area').offset().top;
-		if(winTop > titTop - headH){
-			$('.header, .s-title-area').addClass('fix');
+		if($(this).closest('.wrapper').hasClass('scroll-type2')){
+			if(winTop == 0){
+				$('.header, .s-title-area').removeClass('fix');
+			}else{
+				$('.header, .s-title-area').addClass('fix');
+			}
 		}else{
-			$('.header, .s-title-area').removeClass('fix');
+			var titTop =  $('.s-title-area').offset().top;
+			if(winTop > titTop - headH){
+				$('.header, .s-title-area').addClass('fix');
+			}else{
+				$('.header, .s-title-area').removeClass('fix');
+			}
 		}
 	});
 
