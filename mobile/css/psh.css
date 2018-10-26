@@ -1,5 +1,41 @@
 @charset 'utf-8';
 
 /* ============================================================================================
-	고객센터
+	회원관리
 ============================================================================================ */
+/* 가입방법선택 (MA-02.02.01.html) */
+.join-way {
+	padding-top:px;
+}
+.join-way:before,
+.join-way::before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0;
+	top:0;
+	width:px;
+	height:px;
+	background:url(../images/) no-repeat 0 0;
+	background-position:px px;
+	background-size:250px;
+}
+.join-way .join-list {}
+.join-way .join-list .item {
+	text-align:center;
+}
+.join-way .join-list .item .btn-join {
+	display:block;
+	width:235px;
+	height:40px;
+	border:1px solid #111;
+	box-sizing:border-box;
+	color:#111;
+	font-size:13px;
+	font-weight:600;
+	line-height:40px;
+	text-align:center;
+}
+.join-way .join-list .item span {
+	
+}
