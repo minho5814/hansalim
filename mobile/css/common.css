@@ -276,6 +276,27 @@ select {
 	line-height:53px;
 }
 
+.btn-text.sm {
+	width:auto;
+	height:30px;
+	padding:0 15px;
+	font-size:14px;
+	font-weight:400;
+	line-height:30px;
+}
+.btn-text.type2.sm {line-height:28px;}
+
+.btn-text-round {
+	display:inline-block;
+	height:25px;
+	padding:0 9px;
+	border-radius:25px;
+	border:1px solid #111;
+	background-color:#fff;
+	font-size:13px;
+	line-height:23px;
+}
+
 /* 아이콘 버튼 */
 .btn-icon {
 	display:inline-block;
@@ -380,6 +401,50 @@ select {
 	opacity:0;
 }
 
+/* OTP 입력 타입 */
+.otp-type {
+	overflow:hidden;
+	position:relative;
+	height:50px;
+}
+.otp-type input.text {
+	position:absolute;
+	left:0;
+	top:0;
+	margin-top:0 !important;
+}
+.otp-type .btn-text-round {
+	float:right;
+	position:relative;
+	margin-top:12px;
+}
+.otp-type .time {
+	float:right;
+	position:relative;
+	margin:12px 20px 0 0;
+	padding-left:18px;
+	font-size:14px;
+	font-weight:600;
+	line-height:25px;
+}
+.otp-type .time:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:13px;
+	height:13px;
+	background:url(../images/common/sprite_icon.png) no-repeat -139px 0;
+	background-size:250px;
+}
+
+/* 340px 이하 */
+@media only screen and (max-width: 340px) {
+	.otp-type .time {margin-right:10px;}
+}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	탭/소팅/검색
@@ -716,6 +781,12 @@ select {
 
 /* 폼 리스트 */
 .form-list1 {}
+.form-list1 .info-text {
+	margin:10px 0 0 10px;
+	color:#737373;
+	font-size:13px;
+	text-indent:-10px;
+}
 .form-list1 .form-item {margin-top:28px;}
 .form-list1 .form-item .title {
 	display:block;
@@ -727,6 +798,38 @@ select {
 .form-list1 .form-item input[type=tel],
 .form-list1 .form-item input[type=number],
 .form-list1 .form-item input[type=password] {margin-top:-15px;}
+
+.form-list1 .form-item2 {
+	overflow:hidden;
+	margin-top:6px;
+	font-size:13px;
+}
+.form-list1 .form-item2 + .form-item {
+	margin-top:15px;
+}
+.form-list1 .form-item2 .title {
+	float:left;
+	margin-right:10px;
+	color:#737373;
+}
+.form-list1 .form-item2 .text {
+	float:right;
+	font-weight:600;
+}
+.form-list1 .otp-type {margin-top:-15px;}
+.form-list1 .otp-type + .otp-type {margin-top:14px;}
+
+.form-wrap {
+	padding:18px 20px 22px;
+	border-top:1px solid #767676;
+	border-bottom:1px solid #767676;
+}
+.form-wrap .form-title {
+	color:#111;
+	font-size:16px;
+	font-weight:600;
+}
+.form-wrap {}
 
 /* ============================================================================================
 	Layout
@@ -1150,6 +1253,55 @@ body,
 	font-weight:400;
 	line-height:1.2;
 }
+
+/* 개인정보관리 (MA-02.03.01.html) */
+.personal-info-area {
+	padding:50px 0 35px;
+	text-align:center;
+}
+.personal-info-area .img-change {
+	display:block;
+	position:relative;
+	width:70px;
+	height:70px;
+	padding-right:4px;
+	margin:0 auto;
+}
+.personal-info-area .img-change .img-area {
+	font-size:0;
+	line-height:0;
+}
+.personal-info-area .img-change .img-area img {
+	width:100%;
+}
+.personal-info-area .img-change .icon-camera {
+	position:absolute;
+	right:0;
+	bottom:2px;
+	width:24px;
+	height:24px;
+	border-radius:50%;
+	background-color:#737373;
+}
+.personal-info-area .img-change .icon-camera:before {
+	content:'';
+	position:absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	width:12px;
+	height:9px;
+	background:url(../images/common/sprite_icon.png) no-repeat -153px 0;
+	background-size:250px;
+}
+.personal-info-area .name {
+	margin-top:8px;
+	font-size:17px;
+	font-weight:900;
+}
+.personal-info-area .btn-pw {margin-top:23px;}
 
 /* ============================================================================================
 	마이페이지
