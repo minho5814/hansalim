@@ -5,27 +5,26 @@
 ============================================================================================ */
 /* 가입방법선택 (MA-02.02.01.html) */
 .join-way {
-	padding-top:px;
+	position:relative;
+	margin-top:80px;
+	padding-top:111px;
 }
 .join-way:before,
 .join-way::before {
 	content:'';
 	display:block;
 	position:absolute;
-	left:0;
+	left:50%;
 	top:0;
-	width:px;
-	height:px;
-	background:url(../images/) no-repeat 0 0;
-	background-position:px px;
-	background-size:250px;
+	width:76px;
+	height:76px;
+	margin-left:-38px;
+	background:url(../images/common/icon_logo.png) no-repeat 0 0;
+	background-size:76px 76px;
 }
-.join-way .join-list {}
-.join-way .join-list .item {
-	text-align:center;
-}
-.join-way .join-list .item .btn-join {
-	display:block;
+.join-way .join-box {text-align:center;}
+.join-way .join-box .btn-join {
+	display:inline-block;
 	width:235px;
 	height:40px;
 	border:1px solid #111;
@@ -33,9 +32,28 @@
 	color:#111;
 	font-size:13px;
 	font-weight:600;
-	line-height:40px;
-	text-align:center;
+	line-height:36px;
 }
-.join-way .join-list .item span {
-	
+.join-way .join-box span {
+	display:block;
+	padding:12px 0 14px;
+	color:#333;
+	font-size:12px;
+	font-weight:600;
+	line-height:1.2;
+}
+
+.btn-text.bnt-arrow {
+	position:relative;
+	padding-right:51px;
+	text-align:right;
+}
+.btn-text.bnt-arrow:before,
+.btn-text.bnt-arrow::before {
+	content:'';
+	display:block;
+	position:absolute;
+	right:0;
+	top:0;
+	background:url(../images/) no-repeat 0 0;
 }
