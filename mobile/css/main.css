@@ -352,9 +352,7 @@ body,
 	.quick-menu:before {right:5px;}
 	.quick-menu .menu-item {font-size:15px;}
 
-	.sign-box-area .sign-box .text {
-		font-size:13px;
-	}
+	.sign-box-area .sign-box .text {font-size:13px;}
 	.sign-box-area .sign-box .link-sign {font-size:13px;}
 	.sign-box-area .sign-box .btn-sign {font-size:12px;}
 }
