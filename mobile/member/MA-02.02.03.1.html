@@ -20,7 +20,7 @@
 	<div class="container">
 		<div class="s-title-area">
 			<p class="sm-text">Sign up</p>
-			<h1 class="s-title">Enter Information</h1>
+			<h1 class="s-title">본인인증</h1>
 		</div>
 
 		<div class="step-bar">
@@ -29,23 +29,30 @@
 			<div class="bar">step 3</div>
 		</div>
 
-		<div class="registration-box">
+		<div class="personally-box">
 			<div class="form-list1">
 				<div class="form-item">
-					<label for="Name" class="title">NAME</label>
-					<input type="text" id="Name" placeholder="Enter Your Name">
+					<label for="Banksel" class="title">금융상품선택</label>
+					<select id="Banksel">
+						<option>입력하실 금융상품을 선택하세요.</option>
+						<option>대출접수번호</option>
+						<option>대출계약번호</option>
+						<option>롯데카드번호</option>
+					</select>
 				</div>
 				<div class="form-item">
-					<label for="Email" class="title">E-Mail</label>
-					<input type="text" id="Email" placeholder="Enter Your E-Mail">
+					<label for="Banknumber" class="title">금융상품번호</label>
+					<input type="text" id="Banknumber" placeholder="금융상품번호를 입력하세요.">
 				</div>
 			</div>
-			<div class="policy-text"><a href="MA-02.02.04.1.html" target="_blank">I agree to the <em>Terms of Use</em> and have read and understand the <em>Privacy Policy.</em></a></div>
+			<a href="#" class="btn-text type2">금융상품번호확인</a>
+			<div class="notice-message">금융상품번호가 확인되었습니다.</div>
 		</div>
+
 	</div>
 
 	<div class="bottom-fixed-area">
-		<button type="button" class="btn-text type1 height">간편회원가입</button>
+		<button type="button" class="btn-text type1 next height">Next</button>
 	</div>
 </div>
 </body>
