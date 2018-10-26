@@ -824,12 +824,31 @@ select {
 	border-top:1px solid #767676;
 	border-bottom:1px solid #767676;
 }
-.form-wrap .form-title {
+.form-title {
 	color:#111;
 	font-size:16px;
 	font-weight:600;
+	margin-top:20px;
+	padding-bottom:10px;
 }
-.form-wrap {}
+.form-wrap .form-title:first-child {margin-top:0;}
+
+.form-list1 .form-item.false {position:relative;}
+.form-list1 .form-item.false .false-text {
+	position:absolute;
+	right:0;
+	top:0;
+	color:#e21c24;
+	font-size:13px;
+	font-weight:600;
+}
+.form-list1 .form-item.false input[type=text],
+.form-list1 .form-item.false input[type=tel],
+.form-list1 .form-item.false input[type=number],
+.form-list1 .form-item.false input[type=password] {border-bottom:1px solid #e21c24;}
+.form-list1 .false {}
+.form-list1 .false {}
+.form-list1 .false {}
 
 /* ============================================================================================
 	Layout
@@ -1034,6 +1053,8 @@ body,
 .s-text-area {padding:30px 20px 13px;}
 .s-text-area .s-text {color:#737373;}
 .s-text-area .s-text + .link-type1 {margin-top:12px;}
+
+.s-text-area.type2 .s-text {color:#111;}
 
 /* 상단 비주얼 영역 */
 .top-visual-box {
