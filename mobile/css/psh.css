@@ -4,10 +4,10 @@
 	회원관리
 ============================================================================================ */
 /* 회원가입완료 (MA-02.02.04.2.html) */
-.join-completion {}
+.join-completion {margin-top:56px;}
 .join-completion .completion-box {
 	position:relative;
-	padding-top:67px;
+	padding:67px 20px 0;
 	text-align:center;
 }
 .join-completion .completion-box:before {
@@ -42,22 +42,56 @@
 }
 /* 휴대폰인증 (MA-02.02.02.2.html) */
 .phone-certify {
+	margin-top:24px;
 	padding:0 20px;
 }
 .phone-certify .send-box {
 	width:100%;
-	height:160px;
+	padding:23px 0 35px;
 	background-color:#f2f2f2;
 	text-align:center;
 }
 .phone-certify .send-box .number {
 	display:block;
+	margin-bottom:20px;
 	color:#737373;
 	font-size:28px;
 	font-weight:900;
 }
 .phone-certify .send-box .btn-send {
-	border:1px slid #999;
+	height:40px;
+	padding:0 20px;
+	border:1px solid #999;
 	box-sizing:border-box;
 	text-align:center;
+	color:#333;
+	font-size:14px;
+	font-weight:600;
+	line-height:38px;
+}
+.phone-certify .btn-text {margin-top:40px;}
+.phone-certify .notice-message {
+	margin-top:28px;
+	color:#5d30a6;
+	font-size:19px;
+	font-weight:900;
+	text-align:center;
+}
+/* 개인정보등록 (MA-02.02.02.3.html) */
+.registration-box {
+	margin-top:72px;
+	padding:0 20px;
+}
+.policy-text {
+	position:fixed;
+	left:20px; 
+	right:20px;
+	bottom:17%;
+	color:#737373;
+	font-size:13px;
+	font-weight:400;
+	line-height:1.5;
+}
+.policy-text em {
+	font-weight:600;
 }
