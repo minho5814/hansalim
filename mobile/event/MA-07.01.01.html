@@ -109,7 +109,10 @@
 $(document).ready(function(){
 	/* 상단 비주얼 슬라이드 */
 	var swiper = new Swiper('.top-visual-box .swiper-container', {
-		pagination: '.top-visual-box .swiper-pagination',
+		pagination: {
+			el: '.top-visual-box .swiper-pagination',
+			clickable: true,
+		},
 	});
 });
 </script>

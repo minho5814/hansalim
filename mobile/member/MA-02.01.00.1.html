@@ -30,17 +30,44 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="slide-inner">
-								ddd
+								<div class="utill-menu">
+									<a href="#" class="item">Sign up</a>
+									<a href="#" class="item">Forgot your ID / password?</a>
+								</div>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="slide-inner">
-								ddd
+								<div class="utill-menu">
+									<a href="#" class="item">Sign up</a>
+									<a href="#" class="item">지문설정</a>
+								</div>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="slide-inner">
-								ddd
+								<div class="utill-menu">
+									<a href="#" class="item">Sign up</a>
+									<a href="#" class="item">PIN번호설정</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide-inner">
+								<div class="utill-menu">
+									<a href="#" class="item">Sign up</a>
+									<a href="#" class="item">OTP번호재발송</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide-inner">
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
 							</div>
 						</div>
 					</div>
@@ -65,6 +92,31 @@
 					<div class="swiper-pagination"></div>
 				</div>
 			</div>
+
+			<!-- 해시태그 -->
+			<div class="hashtag-list">
+				<a href="#" class="hashtag">Loan Simulation</a>
+				<a href="#" class="hashtag">Loan Receipt</a>
+			</div>
+
+			<!-- 이벤트 슬라이드 배너 -->
+			<div class="event-slide">
+				<div class="play-stop">
+					<button type="button" class="btn btn-stop">Stop</button>
+					<button type="button" class="btn btn-start">Start</button>
+				</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#"><img src="../images/temp/@img_sign01.jpg" alt=""></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"><img src="../images/temp/@img_sign02.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -73,16 +125,65 @@
 $(document).ready(function(){
 	/* 상단 슬라이드 영역 */
 	var swiper = new Swiper('.signin-slide .swiper-container', {
-		pagination: '.signin-slide .swiper-pagination',
-		onSlideChangeEnd:function(swiper){
-			
+		autoHeight: true,
+		pagination: {
+			el: '.signin-slide .swiper-pagination',
+			clickable: true,
 		},
+		on: {
+			init: function () {
+				
+			},
+		}
 	});
-	/*
 	swiper.on('slideChange', function () {
-		console.log('slide changed');
+		/* 슬라이드 높이 자동조절 */
+		var hei = $('.signin-slide .swiper-slide-active .slide-inner').outerHeight();
+		$('.signin-slide .swiper-slide').each(function(){
+		var hei = $(this).find('.slide-inner').outerHeight();
+			$(this).css({'height':hei});
+		});
+		$('.signin-slide .swiper-slide-active').css({'height':hei});
+
+		/* 하단 버튼 on/off */
+		var idx = $('.signin-slide .swiper-pagination-bullet-active').index();
+		$('.signin-slide .signin-item').removeClass('on').eq(idx).addClass('on');
 	});
-	*/
+
+
+	var eventSwiper = new Swiper('.event-slide .swiper-container', {
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.event-slide .swiper-pagination',
+			type: 'fraction',
+		},
+		/*
+		pagination: {
+			el: '.event-slide .swiper-pagination',
+			clickable: true,
+		},
+		*/
+		/*
+		on: {
+			init: function () {
+				
+			},
+		}
+		*/
+	});
+
+	$('.event-slide .btn').click(function(){
+		if($(this).hasClass('btn-stop')){
+			eventSwiper.autoplay.stop();
+			$(this).closest('.play-stop').removeClass('start').addClass('stop');
+		}else{
+			eventSwiper.autoplay.start();
+			$(this).closest('.play-stop').removeClass('stop').addClass('start');
+		}
+	});
 });
 </script>
 </body>

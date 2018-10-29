@@ -128,7 +128,10 @@
 $(document).ready(function(){
 	/* 상단 비주얼 슬라이드 */
 	var swiper = new Swiper('.top-visual-area .swiper-container', {
-		pagination: '.top-visual-area .swiper-pagination',
+		pagination: {
+			el: '.top-visual-area .swiper-pagination',
+			clickable: true,
+		},
 	});
 });
 </script>
