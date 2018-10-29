@@ -47,8 +47,57 @@
 
 	<div class="bottom-fixed-area">
 		<ul class="btn-list height">
-			<li class="btn-item"><a href="MA-08.03.01.html" class="btn-text">취소</a></li>
+			<!--
+			<li class="btn-item"><a href="MA-08.03.01.html" class="btn-text btn-popup" layer-name="Popup01">취소</a></li>
 			<li class="btn-item"><a href="MA-08.03.01.html" class="btn-text type1">확인</a></li>
+			-->
+			<li class="btn-item"><button type="button" class="btn-text btn-popup" layer-name="Popup01">취소</button></li>
+			<li class="btn-item"><button type="button" class="btn-text btn-popup type1" layer-name="Popup03">확인</button></li>
+		</ul>
+	</div>
+</div>
+
+<!-- 레이어 팝업 (취소 팝업) -->
+<div class="layer-popup" layer-name="Popup01">
+	<div class="dimmed"></div>
+	<div class="popup">
+		<div class="cont" style="height:400px;">
+			작성하신 이메일상담 접수를<br>
+			취소하시겠습니까?<br>
+			접수를 취소하시면 작성하신 상담요청<br>
+			내용은 삭제됩니다.
+		</div>
+		<ul class="btn-list">
+			<li class="btn-item"><a href="#" class="btn-pop-text popClose">취소</a></li>
+			<li class="btn-item"><button type="button" class="btn-pop-text popClose btn-popup" layer-name="Popup02">확인</a></li>
+		</ul>
+	</div>
+</div>
+<!-- 레이어 팝업 (취소확인 팝업) -->
+<div class="layer-popup" layer-name="Popup02">
+	<div class="dimmed"></div>
+	<div class="popup">
+		<div class="cont">
+			<div class="pos-y">
+				<p>이메일상담이 취소되었습니다.</p>
+			</div>
+		</div>
+		<ul class="btn-list one">
+			<li class="btn-item"><a href="MA-08.03.01.html" class="btn-pop-text">확인</a></li>
+		</ul>
+	</div>
+</div>
+<!-- 레이어 팝업 (확인 팝업) -->
+<div class="layer-popup" layer-name="Popup03">
+	<div class="dimmed"></div>
+	<div class="popup">
+		<div class="cont">
+			요청하신 이메일 상담이<br>
+			정상적으로 접수되었습니다.<br>
+			빠른 시간 내에 회신 드리도록 하겠습니다.
+		</div>
+		<ul class="btn-list one">
+			<li class="btn-item"><a href="MA-08.03.01.html" class="btn-pop-text">확인</a></li>
 		</ul>
 	</div>
 </div>

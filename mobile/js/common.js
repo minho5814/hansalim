@@ -62,6 +62,20 @@ $(document).ready(function(){
 		$(this).closest('.combobox').find('.title').text(tit);
 	});
 
+	/* 레이어팝업 */
+	popup();
+	$('.btn-popup').click(function(){
+		//$('html, body').css({'overflow':'hidden'});
+		var name = $(this).attr('layer-name');
+		$('.layer-popup[layer-name=' + name + ']').fadeIn(200);
+		popup();
+	});
+
+	$('.layer-popup .popClose').click(function(){
+		//$('html, body').removeAttr('style');
+		$(this).closest('.layer-popup').fadeOut(100);
+	});
+
 });
 
 
@@ -108,11 +122,15 @@ $(window).scroll(function(){
 	});
 });
 
+/* 리사이징 */
+$(window).resize(function(){
+	popup();// 레이어팝업
+});
 
 
 
 /* ======================================================================
-		폼 요소
+	폼 요소
 ====================================================================== */
 function form(){
 	/* 인풋 파일 */
@@ -128,5 +146,35 @@ function form(){
 			var fileName = fileVal[fileVal.length-1];
 			$(this).closest('.filebox').find('.filename').text(fileName);
 		});
+	});
+}
+
+/* ======================================================================
+	레이어팝업
+====================================================================== */
+function popup(){
+	/*
+	$('.layer-popup').each(function(){
+		var winH = $(window).height();
+		var popH = $(this).find('.popup').outerHeight();
+		if(popH + 60 > winH){
+			$(this).css({'padding-top':'20px', 'padding-bottom':'20px'});
+		}else{
+			var padg = (winH - popH) / 2;
+			console.log(padg);
+			$(this).css({'padding-top':padg + 'px'});
+		}
+	});
+	*/
+	$('.layer-popup').each(function(){
+		var winH = $(window).height();
+		var popH = $(this).find('.popup').outerHeight();
+		if(popH + 40 > winH){
+			$(this).addClass('h-full');
+		}else{
+			var padg = (winH - popH) / 2;
+			console.log(padg);
+			$(this).removeClass('h-full');
+		}
 	});
 }

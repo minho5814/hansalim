@@ -26,6 +26,15 @@
 		.title {height:30px;padding:0 10px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background-color:#ddd;line-height:30px;cursor:pointer;}
 		.title span {font-weight:normal;}
 
+		.stat-text {
+			padding:20px 20px 0;
+		}
+		.stat-text span {
+			display:inline-block;
+			padding:5px 10px;
+			margin-right:10px;
+		}
+
 		table {width:100%;border-collapse:collapse;border-spacing:0;}
 		table tr:hover {background-color:#fafafa;}
 		table tr:hover a {color:#e92e1a;}
@@ -36,6 +45,7 @@
 		.stat {text-align:center;}
 		.right {text-align:right;}
 		.line-through {text-decoration:line-through;}
+		.ing td {background-color:#f2f9c1;}
 	</style>
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -64,6 +74,9 @@
 <body>
 <div class="header">
 	<h1>롯데카드 작업현황 (2018-10-22) ｜ front_v1.00 [ 작업완료 : ☆ ] - [ 검수완료 : ★ ]</h1>
+	<div class="stat-text">
+		<span style="background-color:#f2f9c1;">진행중</span>
+	</div>
 </div>
 
 <div id="total">( Total : <span class="comple"></span> / <span class="total"></span> )</div>
@@ -266,16 +279,19 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
+				<tr class="ing">
 					<td>로그인</td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td>member/</td>
-					<td class="right"><a target="_blank" href="member/.html">.html</a></td>
+					<td class="right"><a target="_blank" href="member/MA-02.01.00.1.html">MA-02.01.00.1.html</a></td>
 					<td class="stat"></td>
 					<td class="date"></td>
-					<td></td>
+					<td>
+						최민호 진행중
+						!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+					</td>
 				</tr>
 				<tr>
 					<td rowspan="2">ID/PW 찾기</td>
@@ -409,7 +425,7 @@
 					<td class="date">2018-10-29</td>
 					<td>박수현</td>
 				</tr>
-				<tr>
+				<tr class="ing">
 					<td rowspan="2">회원탈회</td>
 					<td>안내</td>
 					<td></td>
@@ -485,7 +501,7 @@
 					<td class="date"></td>
 					<td></td>
 				</tr>
-				<tr>
+				<tr class="ing">
 					<td>대출이용내역</td>
 					<td></td>
 					<td></td>
@@ -681,7 +697,7 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td>목록</td>
+					<td>메인</td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -690,6 +706,17 @@
 					<td class="stat"></td>
 					<td class="date"></td>
 					<td></td>
+				</tr>
+				<tr class="ing">
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>loan/</td>
+					<td class="right"><a target="_blank" href="loan/MA-05.01.02.html">MA-05.01.02.html</a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td>최민호 진행중</td>
 				</tr>
 				<tr>
 					<td>상세</td>
@@ -713,9 +740,19 @@
 					<td class="date"></td>
 					<td></td>
 				</tr>
-				<tr>
-					<td>대출상품접수</td>
+				<tr class="ing">
+					<td rowspan="2">대출신청</td>
+					<td>입력</td>
 					<td></td>
+					<td></td>
+					<td>loan/</td>
+					<td class="right"><a target="_blank" href="loan/MA-05.03.01.html">MA-05.03.01.html</a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td>달력 부분 누락</td>
+				</tr>
+				<tr>
+					<td>완료</td>
 					<td></td>
 					<td></td>
 					<td>loan/</td>
@@ -741,7 +778,7 @@
 					<td></td>
 					<td></td>
 					<td>loan/</td>
-					<td class="right"><a target="_blank" href="loan/.html">.html</a></td>
+					<td class="right"><a target="_blank" href="loan/MA-05.05.01.html">MA-05.05.01.html</a></td>
 					<td class="stat"></td>
 					<td class="date"></td>
 					<td></td>
@@ -880,7 +917,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
+				<tr class="ing">
 					<td rowspan="6">이벤트</td>
 					<td rowspan="2">진행중이벤트</td>
 					<td>목록</td>
@@ -1015,8 +1052,8 @@
 					<td></td>
 					<td>customer/</td>
 					<td class="right"><a target="_blank" href="customer/MA-08.01.02.html">MA-08.01.02.html</a></td>
-					<td class="stat"></td>
-					<td class="date"></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-29</td>
 					<td>박수현</td>
 				</tr>
 				<tr>
@@ -1069,7 +1106,12 @@
 					<td class="right"><a target="_blank" href="customer/MA-08.03.04.html">MA-08.03.04.html</a></td>
 					<td class="stat">☆</td>
 					<td class="date">2018-10-26</td>
-					<td>폼 리스트</td>
+					<td>
+						폼 리스트<br>
+						취소 레이어팝업<br>
+						취소확인 레이어팝업<br>
+						확인 레이어팝업
+					</td>
 				</tr>
 				<tr class="line-through">
 					<td>전화상담예약</td>
@@ -1163,16 +1205,16 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
+				<tr class="ing">
 					<td>앱환경설정</td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td>setting/</td>
-					<td class="right"><a target="_blank" href="setting/.html">.html</a></td>
+					<td class="right"><a target="_blank" href="setting/MA-09.01.01.html">MA-09.01.01.html</a></td>
 					<td class="stat"></td>
 					<td class="date"></td>
-					<td></td>
+					<td>최민호 진행중</td>
 				</tr>
 			</tbody>
 		</table>
