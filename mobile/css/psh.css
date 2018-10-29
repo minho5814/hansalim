@@ -7,8 +7,9 @@
 .join-completion {margin-top:56px;}
 .join-completion .completion-box {
 	position:relative;
-	padding:67px 20px 0;
+	padding:67px 10px 0;
 	text-align:center;
+	letter-spacing:-1px;
 }
 .join-completion .completion-box:before {
 	content:'';
@@ -39,11 +40,4 @@
 	color:#737373;
 	font-weight:600;
 	line-height:1.5;
-}
-
-
-/* 비밀번호변경 (MA-02.03.04.html) */
-.password-box {
-	margin-top:50px;
-	padding:0 20px;
 }
