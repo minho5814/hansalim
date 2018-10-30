@@ -811,6 +811,46 @@ select {
 	font-weight:600;
 }
 
+.accordion-list2 {}
+.accordion-list2 .accordion-item {}
+.accordion-list2 .accordion-item .acc-title {
+	display:inline-block;
+	position:relative;
+	width:100%;
+	padding:12px 50px 14px 20px;
+	box-sizing:border-box;
+	border-top:1px solid #f2f2f2;
+	font-weight:600;
+	text-align:left;
+}
+.accordion-list2 .accordion-item .acc-title:before,
+.accordion-list2 .accordion-item .acc-title::before {
+	content:'';
+	position:absolute;
+	right:22px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:14px;
+	height:8px;
+	background-image:url(../images/common/sprite_icon.png);
+	background-repeat:no-repeat;
+	background-position:-66px 0;
+	background-size:250px;
+}
+.accordion-list2 .accordion-item a.acc-title:before,
+.accordion-list2 .accordion-item a.acc-title::before {
+	width:8px;
+	height:14px;
+	background-position:-96px 0;
+}
+.accordion-list2 .accordion-item .layer {
+	border-top:1px solid #f2f2f2;
+}
+.accordion-list2 {}
+.accordion-list2 {}
+
 /* 폼 리스트 */
 .form-list1 {}
 .form-list1:after {
