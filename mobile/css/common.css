@@ -656,6 +656,15 @@ select {
 	border-radius:50%;
 }
 
+.bullet-list2 {}
+.bullet-list2 li {
+	margin:7px 0 0 15px;
+	color:#737373;
+	font-size:13px;
+	text-indent:-15px;
+}
+.bullet-list2 li:first-child {margin-top:0;}
+
 /* 썸네일 리스트 */
 .thumb-list1 {padding-top:15px;}
 .thumb-list1 .thumb-item {
@@ -816,7 +825,7 @@ select {
 	font-weight:600;
 }
 
-.accordion-list2 {}
+.accordion-list2 {border-bottom:1px solid #f2f2f2;}
 .accordion-list2 .accordion-item {}
 .accordion-list2 .accordion-item .acc-title {
 	display:inline-block;
@@ -844,17 +853,19 @@ select {
 	background-position:-66px 0;
 	background-size:250px;
 }
+.accordion-list2 .accordion-item.on .acc-title:before,
+.accordion-list2 .accordion-item.on .acc-title::before {background-position:-81px 0;}
 .accordion-list2 .accordion-item a.acc-title:before,
 .accordion-list2 .accordion-item a.acc-title::before {
 	width:8px;
 	height:14px;
-	background-position:-96px 0;
+	background-position:-96px 0 !important;
 }
 .accordion-list2 .accordion-item .layer {
+	display:none;
+	padding:15px 20px;
 	border-top:1px solid #f2f2f2;
 }
-.accordion-list2 {}
-.accordion-list2 {}
 
 /* 폼 리스트 */
 .form-list1 {}
@@ -2111,6 +2122,64 @@ body,
 	background:url(../images/common/sprite_icon.png) no-repeat -182px 0;
 	background-size:250px;
 }
+
+.loan-list-wrap .loan-step-list {position:relative;}
+.loan-list-wrap .loan-step-list:before {
+	content:'';
+	position:absolute;
+	left:29px;
+	top:5px;
+	bottom:5px;
+	width:1px;
+	background-color:#e6e6e6;
+}
+.loan-list-wrap .loan-step-list .step-item {
+	position:relative;
+	min-height:60px;
+	margin-top:40px;
+	padding-left:82px;
+	color:#737373;
+	font-size:13px;
+}
+.loan-list-wrap .loan-step-list .step-item:first-child {margin-top:0;}
+.loan-list-wrap .loan-step-list .step-item .step {
+	position:absolute;
+	left:0;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:59px;
+	height:59px;
+	border-radius:50%;
+	background-color:#e6e6e6;
+}
+.loan-list-wrap .loan-step-list .step-item .step .inner {
+	position:absolute;
+	left:0;
+	right:0;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	color:#737373;
+	font-size:10px;
+	text-align:center;
+}
+.loan-list-wrap .loan-step-list .step-item .step .inner em {
+	display:block;
+	color:#111;
+	font-size:15px;
+	font-weight:900;
+}
+.loan-list-wrap .loan-step-list .step-item strong {
+	display:block;
+	color:#111;
+	font-size:15px;
+	font-weight:600;
+}
+
+.loan-list-wrap .notice-area {padding:15px 20px 0;}
 
 /* 340px 이하 */
 @media only screen and (max-width:340px) {
