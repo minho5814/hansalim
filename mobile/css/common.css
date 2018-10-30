@@ -1915,6 +1915,53 @@ body,
 }
 
 /* ============================================================================================
+	대출 (Loan)
+============================================================================================ */
+/* 목록 (MA-05.01.02.html) */
+.loan-list-wrap {}
+.loan-list-wrap .info-box {
+	overflow:hidden;
+	background-color:#f9f7ff;
+}
+.loan-list-wrap .info-box .box-item {
+	float:left;
+	position:relative;
+	width:50%;
+	padding:25px 0;
+	box-sizing:border-box;
+	text-align:center;
+}
+.loan-list-wrap .info-box .box-item:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:1px;
+	height:36px;
+	background-color:#ebe8f6;
+}
+.loan-list-wrap .info-box .box-item:first-child:before {display:none;}
+.loan-list-wrap .info-box .box-item .title {
+	color:#5d30a6;
+	font-size:14px;
+}
+.loan-list-wrap .info-box .box-item .cont {
+	color:#111;
+	font-size:14px;
+}
+.loan-list-wrap .info-box .box-item .cont .value {
+	font-size:25px;
+	font-weight:600;
+}
+
+.loan-list-wrap .info-box {}
+.loan-list-wrap {}
+.loan-list-wrap {}
+
+/* ============================================================================================
 	이벤트
 ============================================================================================ */
 /* 이벤트 상세 (MA-07.01.02) */
