@@ -1702,11 +1702,14 @@ body,
 }
 .phone-certify .form-list1 + .send-box {margin-top:20px;}
 .phone-certify .send-box .number {
-	display:block;
+	height:42px;
 	margin-bottom:20px;
+	border-bottom:0;
+	background-color:transparent;
 	color:#737373;
 	font-size:28px;
 	font-weight:900;
+	text-align:center;
 }
 .phone-certify .send-box .btn-send {
 	height:40px;
