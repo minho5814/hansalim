@@ -2322,6 +2322,7 @@ body,
 
 /* 고객상담 (MA-08.03.01.html) */
 .advice-view {margin-top:10px;}
+.advice-box {border-top:1px solid #333;}
 .advice-box .advice-item {
 	display:block;
 	position:relative;
