@@ -6,6 +6,42 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Lotte Finance Vietnam</title>
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<style>
+		.fake-select {
+			position:relative;
+			z-index:100;
+		}
+		.fake-select .stitle {
+			overflow:hidden;
+			height: 50px;
+			padding-right:20px;
+			border-bottom:1px solid #d9d9d9;
+			background: url(../images/common/icon_select.png) no-repeat 100% 50%;
+			background-size: 13px 6px;
+			color: #111;
+			font-weight: 600;
+			text-overflow:ellipsis;
+			line-height:50px;
+			white-space:nowrap;
+		}
+		.fake-select .layer {
+			display:none;
+			position:absolute;
+			left:0;
+			right:0;
+			top:50px;
+			border:1px solid #c7a054;
+			background-color:#fff;
+		}
+		.fake-select .layer div {
+			padding:7px 0;
+			line-height:1.2;
+		}
+		.fake-select .layer div.on {
+			background-color:#ade1f5;
+			color:#fff;
+		}
+	</style>
 	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
 </head>
@@ -32,11 +68,21 @@
 				</div>
 				<div class="form-item">
 					<label for="Document" class="title">Available documents to submit</label>
+					<!--
 					<select id="Document">
 						<option>Select available documents to submit</option>
 						<option>ID card + family record + confirmation of income</option>
 						<option>ID card + family record + issurance contract/electricity statement</option>
 					</select>
+					-->
+					<div class="fake-select">
+						<div class="stitle">Select available documents to submit</div>
+						<div class="layer">
+							<div class="on">Select available documents to submit</div>
+							<div>ID card + family record + confirmation of income</div>
+							<div>ID card + family record + issurance contract/electricity statement</div>
+						</div>
+					</div>
 				</div>
 				<div class="form-item">
 					<div class="title">
@@ -79,6 +125,21 @@
 <div class="bottom-fixed-area">
 	<a href="MA-05.03.01.html" class="btn-text type1 height">Loan apply</a>
 </div>
+
+<script>
+$(document).ready(function(){
+	$('.fake-select .stitle').click(function(){
+		$(this).closest('.fake-select').find('.layer').show();
+	});
+
+	$('.fake-select .layer div').click(function(){
+		var txt =  $(this).text();
+		$(this).addClass('on').siblings('div').removeClass('on');
+		$(this).closest('.fake-select').find('.layer').hide();
+		$(this).closest('.fake-select').find('.stitle').html(txt);
+	});
+});
+</script>
 </body>
 
 </html>
