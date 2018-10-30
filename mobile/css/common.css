@@ -1327,8 +1327,14 @@ body,
 	position:absolute;
 	top:0;
 }
-.menu-wrap .top-info-box .utill-btn-area .btn:first-child {left:25px;}
-.menu-wrap .top-info-box .utill-btn-area .btn:last-child {right:25px;}
+.menu-wrap .top-info-box .utill-btn-area .btn:first-child {
+	left:25px;
+	right:inherit;
+}
+.menu-wrap .top-info-box .utill-btn-area .btn:last-child {
+	left:inherit;
+	right:25px;
+}
 .menu-wrap .top-info-box .utill-btn-area .btn:before {
 	content:'';
 	position:absolute;
