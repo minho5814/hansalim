@@ -292,46 +292,26 @@ body,
 	color:#fff;
 	text-align:center;
 }
-.sign-box-area .title {
-	font-size:13px;
-	text-shadow:0 3px rgba(0,0,0,.2);
-}
-.sign-box-area .sign-box {
-	margin-top:13px;
-}
-.sign-box-area .sign-box .text {
+.sign-box-area .text {
 	font-size:15px;
 }
-.sign-box-area .sign-box .link-sign {
+.sign-box-area .link-sign {
 	display:inline-block;
 	color:#fff;
 	font-size:15px;
 	font-weight:600;
 }
-.sign-box-area .sign-box .btn-sign {
+.sign-box-area .btn-sign {
 	display:inline-block;
 	position:relative;
 	margin-left:10px;
-	padding:0 15px 0 35px;
+	padding:0 25px;
 	border-radius:25px;
 	border:1px solid #fff;
 	color:#fff;
 	font-size:14px;
 	font-weight:600;
 	line-height:25px;
-}
-.sign-box-area .sign-box .btn-sign:before {
-	content:'';
-	position:absolute;
-	left:14px;
-	top:50%;
-	-webkit-transform:translateY(-50%);
-	-ms-transform:translateY(-50%);
-	transform:translateY(-50%);
-	width:16px;
-	height:16px;
-	background:url(../images/common/sprite_icon.png) no-repeat -17px 0;
-	background-size:250px;
 }
 
 /* 340px 이하 */
