@@ -74,11 +74,190 @@
 </div>
 
 <div class="bottom-fixed-area">
-	<ul class="btn-list height">
-		<li class="btn-item"><button type="button" class="btn-text type1">초기화</button></li>
-		<li class="btn-item"><button type="button" class="btn-text type1">계산하기</button></li>
+	<ul class="btn-list type2 height">
+		<li class="btn-item"><button type="button" class="btn-text type1 btn-popup" layer-name="Popup01">Reset</button></li>
+		<li class="btn-item"><button type="button" class="btn-text type1 btn-popup" layer-name="Popup03">Caculation</button></li>
 	</ul>
 </div>
+
+<!-- 레이어 팝업 (초기화 팝업) -->
+<div class="layer-popup" layer-name="Popup01">
+	<div class="dimmed"></div>
+	<div class="popup">
+		<div class="cont">
+			Do you want to reset the estimated reimbursement information that was entered? If you reset it, the entered information will be deleted
+		</div>
+		<ul class="btn-list">
+			<li class="btn-item"><button type="button" class="btn-pop-text popClose">Cancel</button></li>
+			<li class="btn-item"><button type="button" class="btn-pop-text popClose btn-popup" layer-name="Popup02">Confirm</button></li>
+		</ul>
+	</div>
+</div>
+
+<!-- 레이어 팝업 (초기화 확인 팝업) -->
+<div class="layer-popup" layer-name="Popup02">
+	<div class="dimmed"></div>
+	<div class="popup">
+		<div class="cont">
+			<div class="pos-y">
+				<p>Reseting the information of expected reimbursement schedual</p>
+			</div>
+		</div>
+		<ul class="btn-list one">
+			<li class="btn-item"><button type="button" class="btn-pop-text popClose btn-reset">Confirm</button></li>
+		</ul>
+	</div>
+</div>
+
+<!-- 레이어 팝업 (예상 상환스케줄 팝업) -->
+<div class="layer-popup" layer-name="Popup03">
+	<div class="dimmed"></div>
+	<div class="popup">
+		<div class="pop-head">
+			<button type="button" class="btn-close popClose">Close</button>
+			<h1 class="p-title">예상 상환스케줄</h1>
+		</div>
+		<div class="pop-cont">
+			<div class="form-list-wrap2">
+				<h2 class="f-title">직장인을 위한 신용대출</h2>
+				<div class="form-list">
+					<div class="form-item fStyle">
+						<div class="title">신청금액</div>
+						<div class="text">5,000,000 VND</div>
+					</div>
+					<div class="form-item">
+						<div class="title">대출기간</div>
+						<div class="text">6 개월</div>
+					</div>
+					<div class="form-item">
+						<div class="title">적용이자율(년)</div>
+						<div class="text">4.95 %</div>
+					</div>
+					<div class="form-item">
+						<div class="title">대출일</div>
+						<div class="text">27.09.2018</div>
+					</div>
+					<div class="form-item">
+						<div class="title">최초상환일</div>
+						<div class="text">27.10.2018</div>
+					</div>
+					<div class="form-item">
+						<div class="title">상환방법</div>
+						<div class="text">1,000,000 VND</div>
+					</div>
+				</div>
+
+				<div class="form-list">
+					<div class="form-item">
+						<div class="title"><span class="label">1회차</span>27.10.2018</div>
+						<div class="text">5,000,000 VND</div>
+					</div>
+					<div class="form-item">
+						<div class="title">상환원금</div>
+						<div class="text">5,000,000 VND</div>
+					</div>
+					<div class="form-item">
+						<div class="title">상환이자</div>
+						<div class="text">0 VND</div>
+					</div>
+					<div class="form-item">
+						<div class="title">상환 후 잔액</div>
+						<div class="text">5,000,000 VND</div>
+					</div>
+				</div>
+
+				<div class="form-list">
+					<div class="form-item">
+						<div class="title"><span class="label">2회차</span>27.10.2018</div>
+						<div class="text">5,000,000 VND</div>
+					</div>
+					<div class="form-item">
+						<div class="title">상환원금</div>
+						<div class="text">5,000,000 VND</div>
+					</div>
+					<div class="form-item">
+						<div class="title">상환이자</div>
+						<div class="text">0 VND</div>
+					</div>
+					<div class="form-item">
+						<div class="title">상환 후 잔액</div>
+						<div class="text">5,000,000 VND</div>
+					</div>
+				</div>
+
+				<div class="form-list">
+					<div class="form-item">
+						<div class="title"><span class="label">3회차</span>27.10.2018</div>
+						<div class="text">5,000,000 VND</div>
+					</div>
+					<div class="form-item">
+						<div class="title">상환원금</div>
+						<div class="text">5,000,000 VND</div>
+					</div>
+					<div class="form-item">
+						<div class="title">상환이자</div>
+						<div class="text">0 VND</div>
+					</div>
+					<div class="form-item">
+						<div class="title">상환 후 잔액</div>
+						<div class="text">5,000,000 VND</div>
+					</div>
+				</div>
+
+				<div class="form-list">
+					<div class="form-item">
+						<div class="title"><span class="label">4회차</span>27.10.2018</div>
+						<div class="text">5,000,000 VND</div>
+					</div>
+					<div class="form-item">
+						<div class="title">상환원금</div>
+						<div class="text">5,000,000 VND</div>
+					</div>
+					<div class="form-item">
+						<div class="title">상환이자</div>
+						<div class="text">0 VND</div>
+					</div>
+					<div class="form-item">
+						<div class="title">상환 후 잔액</div>
+						<div class="text">5,000,000 VND</div>
+					</div>
+				</div>
+
+				<div class="form-list">
+					<div class="form-item">
+						<div class="title"><span class="label">5회차</span>27.10.2018</div>
+						<div class="text">5,000,000 VND</div>
+					</div>
+					<div class="form-item">
+						<div class="title">상환원금</div>
+						<div class="text">5,000,000 VND</div>
+					</div>
+					<div class="form-item">
+						<div class="title">상환이자</div>
+						<div class="text">0 VND</div>
+					</div>
+					<div class="form-item">
+						<div class="title">상환 후 잔액</div>
+						<div class="text">5,000,000 VND</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="btn-list">
+			<li class="btn-item"><button type="button" class="btn-pop-text popClose">즉시대출접수</button></li>
+			<li class="btn-item"><button type="button" class="btn-pop-text popClose">대출시뮬레이션</button></li>
+		</ul>
+	</div>
+</div>
+
+<script>
+$(document).ready(function(){
+	$('.btn-reset').click(function(){
+		$('.form-list1 input, .form-list1 select').val('');
+	});
+});
+</script>
+
 </body>
 
 </html>

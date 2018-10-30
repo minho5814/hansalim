@@ -130,6 +130,19 @@ $(window).scroll(function(){
 	});
 });
 
+/* 레이어팝업 스크롤 다운시 */
+$('.layer-popup .popup').scroll(function(){
+	console.log(0);
+	/*
+	var popTop = $(this).scrollTop();
+	if(popTop > 0){
+		$(this).addClass('scroll');
+	}else{
+		$(this).removeClass('scroll');
+	}
+	*/
+});
+
 /* 리사이징 */
 $(window).resize(function(){
 	popup();// 레이어팝업
@@ -181,7 +194,6 @@ function popup(){
 			$(this).addClass('h-full');
 		}else{
 			var padg = (winH - popH) / 2;
-			console.log(padg);
 			$(this).removeClass('h-full');
 		}
 	});

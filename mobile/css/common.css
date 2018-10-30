@@ -2481,6 +2481,58 @@ body,
 	bottom:20px;
 	transform:translateY(0);
 }
+
+.layer-popup .popup .pop-head {}
+.layer-popup .popup .pop-head .btn-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 55px;
+	height: 55px;
+	font-size: 0;
+	text-indent: -9999px;
+	line-height: 0;
+}
+.layer-popup .popup .pop-head .btn-close:before,
+.layer-popup .popup .pop-head .btn-close::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	width: 17px;
+	height: 17px;
+	background: url(../images/common/sprite01.png) no-repeat -162px 0;
+	background-size: 250px;
+}
+.layer-popup .popup .pop-head .p-title {
+	padding-top:28px;
+	color:#111;
+	font-size:17px;
+	font-weight:900;
+	text-align:center;
+}
+.layer-popup .popup.scroll .pop-head {
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	height:50px;
+	border-bottom:1px solid #e6e6e6;
+	background-color:rgba(255,255,255,.9);
+}
+.layer-popup .popup.scroll .pop-head .p-title {
+	padding:12px 0;
+}
+.layer-popup .popup.scroll .pop-head .btn-close {
+	height:50px;
+}
+.layer-popup .popup.scroll .pop-cont {
+	padding-top:51px;
+}
+
 .layer-popup .popup .cont {
 	position:relative;
 	padding:20px 20px 25px;
