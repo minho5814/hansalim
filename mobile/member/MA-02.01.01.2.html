@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title></title>
+	<title>Lotte Finance Vietnam</title>
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
 	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
@@ -19,32 +19,37 @@
 	<div class="container">
 		<div class="s-title-area">
 			<p class="sm-text">Sign up</p>
-			<h1 class="s-title">아이디찾기결과</h1>
+			<h1 class="s-title">휴대폰 OTP 인증</h1>
 		</div>
 
-		<div class="step-bar">
-			<div class="bar on">step 1</div>
-			<div class="bar on">step 2</div>
-			<div class="bar">step 3</div>
-		</div>
-
-		<div class="id-find">
-			<p class="find-text">개인정보 도용 방지를 위해 뒷자리는 ***로 표기하였습니다.</p>
-			<div class="exposure-box">
-				<input type="text" value="lot***" readonly>
+		<div class="phone-certify">
+			<div class="send-box">
+				<span class="number">012-1234-5678</span>
+				<button type="button" class="btn-send">Send OTP nember</button>
 			</div>
-			<p class="find-notice">고객님께서는 <em>2018년 10월 01일</em> lotte Finance 온라인회원으로 가입하셨습니다.</p>
+			<div class="otp-type">
+				<input type="text" class="text" placeholder="Enter OTP number">
+				<span class="time">02:48</span>
+			</div>
+			<a href="#" class="btn-text type2 btn-otp">Confirm OTP number</a>
+			<div class="notice-message">OTP인증이 확인되었습니다.</div>
 		</div>
 
 	</div>
 
 	<div class="bottom-fixed-area">
-		<ul class="btn-list height">
-			<li class="btn-item"><a href="MA-02.03.04.html" class="btn-text">비밀번호변경</a></li>
-			<li class="btn-item"><a href="MA-02.01.00.1.html" class="btn-text type1">로그인</a></li>
-		</ul>
+		<a href="MA-02.01.01.2_2.html" class="btn-text type1 next height">Next</a>
 	</div>
 </div>
+
+<script>
+$(document).ready(function(){
+	/* 인증완료 메세지 출력 */
+	$('.btn-otp').click(function(){
+		$('.notice-message').show();
+	});
+});
+</script>
 </body>
 
 </html>

@@ -31,25 +31,30 @@
 		<div class="password-box">
 			<div class="form-list1">
 				<div class="form-item">
-					<label for="Password1" class="title">기존비밀번호</label>
-					<input type="text" id="Password1" placeholder="*****************">
+					<label for="Id" class="title">아이디</label>
+				<input type="text" id="Id" value="lotte1">
 				</div>
 				<div class="form-item">
-					<label for="Password2" class="title">신규비밀번호</label>
-					<input type="text" id="Password2" placeholder="**********************">
-					<div class="info-text">* 영문과 숫자를 혼합하여 8자 이상 16자 이하 이어야 하며, 연속 문자 혹은 아이디와 동일하게 사용하실 수 없습니다.</div>
+					<label for="Password1" class="title">신규비밀번호</label>
+					<input type="text" id="Password1" placeholder="신규비밀번호를 입력하세요.">
 				</div>
 				<div class="form-item false"><!-- 사용불가일 경우 class="false" -->
 					<span class="false-text">비밀번호가 일치하지 않습니다.</span><!-- 사용불가일 경우 추가 -->
-					<label for="Password3" class="title">신규비밀번호확인</label>
-					<input type="text" id="Password3" placeholder="**********************">
+					<label for="Password2" class="title">신규비밀번호확인</label>
+					<input type="text" id="Password2" placeholder="신규비밀번호를 입력하세요.">
 				</div>
 			</div>
+		</div>
+		<div class="notice-bg">
+			<ul class="star-list">
+				<li>* 아이디와 동일한 비밀번호나 개인정보와 관련된 숫자, 연속된 숫자, 동일 반복된 숫자 등 다른 사람이 쉽게 알아 낼 수 있는 비밀번호는 유출의 위험이 있습니다.</li>
+				<li>* 쉬운 비밀번호나 자주 이용하는 홈페이지의 비밀번호가 같으면 도용되기 쉬우므로 주기적으로 변경 하시는 것이 좋습니다. </li>
+			</ul>
 		</div>
 	</div>
 
 	<div class="bottom-fixed-area">
-		<button type="button" class="btn-text type1 height">비밀번호변경</button>
+		<a href="MA-02.01.01.1.html" class="btn-text type1 height">비밀번호변경확인</a>
 	</div>
 </div>
 </body>
