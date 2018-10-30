@@ -1263,9 +1263,11 @@ body,
 	-webkit-transform:translateX(-50%);
 	-ms-transform:translateX(-50%);
 	transform:translateX(-50%);
+	padding:0;
 	color:#111;
 	font-size:17px;
 	line-height:55px;
+	white-space:nowrap;
 }
 .s-title-area.fix .s-title:before {display:none;}
 
