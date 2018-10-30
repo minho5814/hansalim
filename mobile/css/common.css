@@ -2514,24 +2514,24 @@ body,
 	font-weight:900;
 	text-align:center;
 }
-.layer-popup .popup.scroll .pop-head {
+
+.layer-popup.h-full .popup .pop-cont {
+	overflow-y:auto;
 	position:absolute;
 	left:0;
 	right:0;
-	top:0;
+	top:53px;
+	bottom:0;
+}
+
+.layer-popup .popup.scroll .pop-head {
 	height:50px;
 	border-bottom:1px solid #e6e6e6;
 	background-color:rgba(255,255,255,.9);
 }
-.layer-popup .popup.scroll .pop-head .p-title {
-	padding:12px 0;
-}
-.layer-popup .popup.scroll .pop-head .btn-close {
-	height:50px;
-}
-.layer-popup .popup.scroll .pop-cont {
-	padding-top:51px;
-}
+.layer-popup .popup.scroll .pop-head .p-title {padding:12px 0;}
+.layer-popup .popup.scroll .pop-head .btn-close {height:50px;}
+.layer-popup .popup.scroll .pop-cont {padding-top:51px;}
 
 .layer-popup .popup .cont {
 	position:relative;

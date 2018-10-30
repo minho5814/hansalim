@@ -75,13 +75,24 @@ $(document).ready(function(){
 	$('.btn-popup').click(function(){
 		//$('html, body').css({'overflow':'hidden'});
 		var name = $(this).attr('layer-name');
-		$('.layer-popup[layer-name=' + name + ']').fadeIn(200);
+		$('.layer-popup[layer-name=' + name + ']').show();
 		popup();
 	});
 
 	$('.layer-popup .popClose').click(function(){
 		//$('html, body').removeAttr('style');
-		$(this).closest('.layer-popup').fadeOut(100);
+		$(this).closest('.layer-popup').hide();
+		popup();
+	});
+
+	/* 레이어팝업 스크롤 다운시 */
+	$('.layer-popup .popup .pop-cont').scroll(function(){
+		var popTop = $(this).scrollTop();
+		if(popTop > 0){
+			$(this).closest('.popup').addClass('scroll');
+		}else{
+			$(this).closest('.popup').removeClass('scroll');
+		}
 	});
 
 });
@@ -128,19 +139,6 @@ $(window).scroll(function(){
 			$(this).find('.fix-tab').removeClass('fix').removeAttr('style');
 		}
 	});
-});
-
-/* 레이어팝업 스크롤 다운시 */
-$('.layer-popup .popup').scroll(function(){
-	console.log(0);
-	/*
-	var popTop = $(this).scrollTop();
-	if(popTop > 0){
-		$(this).addClass('scroll');
-	}else{
-		$(this).removeClass('scroll');
-	}
-	*/
 });
 
 /* 리사이징 */
