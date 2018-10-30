@@ -1918,7 +1918,7 @@ body,
 	대출 (Loan)
 ============================================================================================ */
 /* 목록 (MA-05.01.02.html) */
-.loan-list-wrap {}
+.loan-list-wrap {margin-top:32px;}
 .loan-list-wrap .info-box {
 	overflow:hidden;
 	background-color:#f9f7ff;
@@ -1957,9 +1957,67 @@ body,
 	font-weight:600;
 }
 
-.loan-list-wrap .info-box {}
-.loan-list-wrap {}
-.loan-list-wrap {}
+.loan-list-wrap .call-info {padding:30px 20px 42px;}
+.loan-list-wrap .call-info .call-number {
+	display:inline-block;
+	position:relative;
+	padding-right:53px;
+	color:#111;
+	font-size:30px;
+	font-weight:900;
+	line-height:40px;
+}
+.loan-list-wrap .call-info .call-number:before {
+	content:'';
+	position:absolute;
+	right:0;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:40px;
+	height:40px;
+	background:url(../images/common/sprite_icon.png) no-repeat -164px -98px;
+	background-size:250px;
+}
+.loan-list-wrap .call-info .call-list {margin-top:15px;}
+.loan-list-wrap .call-info .call-list .item {
+	position:relative;
+	margin-top:2px;
+	padding-left:125px;
+	color:#737373;
+	font-size:14px;
+	font-weight:900;
+}
+.loan-list-wrap .call-info .call-list .item:first-child {margin-top:0;}
+.loan-list-wrap .call-info .call-list .item .title {
+	position:absolute;
+	left:0;
+	top:0;
+	padding-left:18px;
+	font-weight:400;
+}
+.loan-list-wrap .call-info .call-list .item .title:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:12px;
+	height:12px;
+	background:url(../images/common/sprite_icon.png) no-repeat -182px 0;
+	background-size:250px;
+}
+
+/* 340px 이하 */
+@media only screen and (max-width:340px) {
+	.loan-list-wrap .info-box .box-item .cont .value {
+		letter-spacing:-1px;
+		font-size:22px;
+	}
+}
 
 /* ============================================================================================
 	이벤트
