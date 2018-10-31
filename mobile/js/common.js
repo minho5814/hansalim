@@ -15,6 +15,17 @@ $(document).ready(function(){
 			spaceBetween: 0
 		});
 	});
+	$('.menu-wrap').css({'opacity':'1', 'display':'none'});
+	/* 열기 */
+	$('.btn-gnb').click(function(){
+		$('.menu-wrap, .menu-list-box .left-menu').show().animate({left:0}, 200);
+	});
+	/* 닫기 */
+	$('.menu-wrap .btn-close').click(function(){
+		$('.menu-wrap, .menu-list-box .left-menu').animate({left:'100%'}, 100, function(){
+			$('.menu-wrap, .menu-list-box .left-menu').hide();
+		});
+	});
 	/* 탭 영역 */
 	$('.menu-tab .item').click(function(){
 		var idx= $(this).index();
@@ -91,6 +102,14 @@ $(document).ready(function(){
 			$(this).closest('.accordion-item').removeClass('on').find('.layer').slideUp(100);
 		}else{
 			$(this).closest('.accordion-item').addClass('on').find('.layer').slideDown(200);
+		}
+	});
+	/* 마이메뉴설정 (MA-01.02.02.html) */
+	$('.accordion-list3 button.a-title').click(function(){
+		if($(this).closest('.accordion-item').hasClass('off')){
+			$(this).closest('.accordion-item').removeClass('off').find('.layer').slideDown(200);
+		}else{
+			$(this).closest('.accordion-item').addClass('off').find('.layer').slideUp(100);
 		}
 	});
 

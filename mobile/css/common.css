@@ -391,6 +391,32 @@ select {
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	폼 요소
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 체크박스 */
+input[type=checkbox].styled1 {
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	position:relative;
+	width:22px;
+	height:22px;
+	border:0;
+	background:transparent;
+	vertical-align:middle;
+}
+input[type=checkbox].styled1:after {
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:22px;
+	height:22px;
+	background-image:url(../images/common/sprite_icon.png);
+	background-repeat:no-repeat;
+	background-size:250px;
+	background-position:-200px -203px;
+}
+input[type=checkbox]:checked.styled1:after {background-position:-223px -203px;}
+
 /* 파일첨부 */
 .filebox {
 	display:inline-block;
@@ -870,6 +896,75 @@ select {
 	border-top:1px solid #f2f2f2;
 }
 
+.accordion-list3 {}
+.accordion-list3 .accordion-item {
+	border-top:1px solid #e1e1e1;
+}
+.accordion-list3 .accordion-item:first-child {border-top:0;}
+.accordion-list3 .accordion-item .a-title {
+	display:block;
+	position:relative;
+	width:100%;
+	padding:0 20px;
+	height:40px;
+	box-sizing:border-box;
+	color:#111;
+	font-weight:600;
+	text-align:left;
+	line-height:40px;
+}
+.accordion-list3 .accordion-item button.a-title:before {
+	content: '';
+	position: absolute;
+	right: 25px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 15px;
+	height: 8px;
+	background: url(../images/common/sprite_icon.png) no-repeat -226px 0;
+	background-size: 250px;
+}
+.accordion-list3 .accordion-item.off button.a-title:before {background-position:-210px 0;}
+.accordion-list3 .accordion-item div.a-title input[type=checkbox] {
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.accordion-list3 .accordion-item div.a-title label {
+	display: block;
+	padding: 12px 20px 10px 35px;
+	line-height: 1.3;
+}
+.accordion-list3 .accordion-item .layer {}
+.accordion-list3 .accordion-item .layer .item {
+	position:relative;
+	padding-left:20px;
+}
+.accordion-list3 .accordion-item .layer .item input[type=checkbox] {
+	position:absolute;
+	left:20px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+.accordion-list3 .accordion-item .layer .item label {
+	display:block;
+	padding:12px 20px 10px 35px;
+	border-top:1px solid #f2f2f2;
+	color:#111;
+	font-size:13px;
+	line-height:1.3;
+}
+.accordion-list3 {
+	border-bottom:1px solid #e1e1e1;
+}
+
 /* 폼 리스트 */
 .form-list1 {}
 .form-list1:after {
@@ -1288,12 +1383,13 @@ body,
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .menu-wrap {
 	position:fixed;
-	right:0;
+	left:100%;
 	top:0;
 	bottom:0;
 	z-index:65;
 	width:100%;
 	background-color:#fff;
+	opacity:0;
 }
 
 .menu-wrap .top-info-box {
@@ -1517,11 +1613,8 @@ body,
 	font-weight:600;
 	line-height:28px;
 }
-.quick-menu-area .hashtag-list {}
 
-.menu-wrap .menu-tab-wrap {
-	border-top:10px solid #f4f4f4;
-}
+.menu-wrap .menu-tab-wrap {border-top:10px solid #f4f4f4;}
 .menu-wrap .menu-tab-wrap .menu-tab {
 	position:relative;
 	border-bottom:1px solid #ebebeb;
@@ -1594,7 +1687,7 @@ body,
 .menu-wrap .menu-list-box {padding:0 0 0 145px;}
 .menu-wrap .menu-list-box .left-menu {
 	position:fixed;
-	left:0;
+	left:100%;
 	top:311px;
 	bottom:0;
 	width:145px;
@@ -1725,8 +1818,14 @@ body,
 	background:url(../images/common/sprite_icon.png) no-repeat -205px -111px;
 	background-size:250px;
 }
-.menu-wrap .my-menu {}
-.menu-wrap {}
+
+/* 마이메뉴설정 (MA-01.02.02.html) */
+.sub-box-title {
+	padding:12px 20px 9px;
+	background-color:#f1f1f1;
+	font-size:13px;
+	font-weight:600;
+}
 
 /* ============================================================================================
 	회원관리
