@@ -5,6 +5,39 @@ $(document).ready(function(){
 		window.open('about:blank','_self').self.close(); // IE에서 묻지 않고 창 닫기
 	});
 
+	/*
+		전체 메뉴 영역
+	*/
+	$('.quick-menu-area .swiper-container').each(function(){
+		var menu = $(this);
+		new Swiper(menu, {
+			slidesPerView: 'auto',
+			spaceBetween: 0
+		});
+	});
+	/* 탭 영역 */
+	$('.menu-tab .item').click(function(){
+		var idx= $(this).index();
+		$(this).addClass('on').siblings('.item').removeClass('on');
+		$(this).closest('.menu-tab-wrap').find('.menu-tab-cont').removeClass('on').eq(idx).addClass('on');
+	});
+	/* 왼쪽 메뉴 클릭 */
+	$('.menu-wrap .left-menu button.item').click(function(){
+		var idx = $(this).index();
+		var min = $(this).prevAll('a').length;
+		$(this).addClass('on').siblings('.item').removeClass('on');
+		$(this).closest('.menu-wrap').find('.right-menu .menu').removeClass('on').eq(idx - min).addClass('on');
+	});
+	/* 오른쪽메뉴 클릭 아코디언 */
+	$('.menu-wrap .m-title').click(function(){
+		if($(this).closest('.list-item').hasClass('on')){
+			$(this).closest('.list-item').removeClass('on').find('.list').slideUp(100);
+		}else{
+			$(this).closest('.menu-list').find('.list-item').removeClass('on').find('.list').slideUp(100);
+			$(this).closest('.list-item').addClass('on').find('.list').slideDown(100);
+		}
+	});
+
 	/* 검색영역 (customer/MA-08.02.01.html) */
 	$('.search-form .btn-delete').click(function(){
 		$(this).closest('.search-form').find('input[type=text]').val('');
