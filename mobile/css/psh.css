@@ -1,5 +1,258 @@
 @charset 'utf-8';
 
 /* ============================================================================================
-	롯데카드소개
+	설정
 ============================================================================================ */
+/* 설정 기본정의 (MA-09.01.01.html) */
+.setting-box {margin-top:50px;}
+.setting-title {
+	height:34px;
+	padding:0 20px;
+	border-top:1px solid #d9d9d9;
+	background-color:#f7f7f7;
+	color:#333;
+	font-size:12px;
+	font-weight:600;
+	line-height:34px;
+}
+.setting-list .setting-item {
+	position:relative;
+	height:56px;
+	padding:0 20px;
+	border-top:1px solid #f2f2f2;
+}
+.setting-list .setting-item:first-child {margin-top:0;}
+.setting-list .setting-item.sign:before {
+	content:'';
+	display:block;
+	position:absolute;
+	right:20px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:9px;
+	height:17px;
+	background:url(../images/common/) no-repeat 0 0;
+	background-size:250px;
+}
+.setting-list .setting-item a {display:block;}
+.setting-list .setting-item .tit {
+	color:#333;
+	font-weight:600;
+	line-height:56px;
+}
+.setting-list .setting-item .tit .btn-icon {
+	margin-left:7px;
+	vertical-align:middle;
+}
+.setting-list .setting-item .switch-box {
+	position:absolute;
+	right:20px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:46px;
+	height:24px;
+}
+.setting-list .setting-item .letter-size {
+	position:absolute;
+	right:41px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	color:#333;
+	font-weight:600;
+}
+.setting-list .setting-item .version-text {
+	position:absolute;
+	right:20px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	color:#333;
+	font-size:13px;
+	font-weight:600;
+}
+.setting-list .setting-item .version-number {
+	display:inline-block;
+	position:relative;
+	margin-left:8px;
+	padding-left:9px;
+	color:#737373;
+	font-size:13px;
+	font-weight:400;
+}
+.setting-list .setting-item .version-number:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0;
+	top:50%;
+	width:1px;
+	height:12px;
+	margin-top:-6px;
+	background-color:#737373;
+}
+
+/* 지문인증등록 (MA-09.02.03.html) */
+.fingerprint-box {	margin-top:20px;}
+.fingerprint-box .fingerprint-area {
+	position:relative;
+	padding:133px 20px 0;
+	text-align:center;
+}
+.fingerprint-box .fingerprint-area .fingerprint {
+	display:block;
+	position:absolute;
+	left:50%;
+	top:0;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+	width:115px;
+	height:115px;
+}
+.fingerprint-box .fingerprint-area p{
+	color:#111;
+	font-size:16px;
+	font-weight:600;
+}
+.fingerprint-box .fingerprint-area .fingerprint img {width:100%;}
+.fingerprint-box .fingerprint-text {
+	margin-top:33px;
+	padding:18px 20px 0;
+	border-top:1px solid #e6e6e6;
+}
+.fingerprint-box .fingerprint-text .bullet-list1 li {
+	margin-top:7px;
+	color:#111;
+	font-size:15px;
+	font-weight:400;
+	line-height:1.5;
+}
+.fingerprint-box .fingerprint-text .bullet-list1 li:first-child {margin-top:0;}
+
+/* 자동로그인설정 (MA-09.03.01.html) */
+.letter-set {
+	margin-top:20px;
+	padding:0 20px;
+}
+.letter-set .btn-letter {
+	position:relative;
+	width:100%;
+	height:50px;
+	margin-top:20px;
+	padding:0 25px 0 48px;
+	border:1px solid #e6e6e6;
+	box-sizing:border-box;
+	color:#333;
+	font-size:16px;
+	font-weight:400;
+	line-height:48px;
+	text-align:left;
+}
+.letter-set .btn-letter:first-child {margin-top:0;}
+.letter-set .btn-letter:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:25px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:13px;
+	height:10px;
+	background:url(../images/) no-repeat 0 0;
+	background-size:250px;
+}
+.letter-set .btn-letter.on {
+	border-color:#111;
+}
+.letter-set .btn-letter.on:before {
+	background-position:px px;
+}
+.letter-set .bullet-list1 {margin-top:16px;}
+
+/* 정보확인 (MA-09.06.02.html) */
+.info-reset {
+	margin-top:20px;
+	padding:0 20px;
+}
+.info-reset .reset-box {
+	padding:30px 10px;
+	background-color:#f2f2f2;
+	text-align:center;
+}
+.info-reset .reset-box .tit {
+	display:block;
+	margin-bottom:10px;
+	color:#333;
+	font-size:16px;
+	font-weight:600;
+}
+.info-reset .reset-box p {
+	color:#555;
+	font-size:14px;
+	font-weight:400;
+}
+.info-reset .form-wrap {
+	margin-top:28px;
+	padding:0;
+	border:0;
+}
+
+/* PIN번호등록 (MA-09.02.02.html) */
+.pin-cont {
+	margin-top:20px;
+	padding:0 20px;
+}
+
+/* 자동로그인설정 (MA-09.02.01.1.html,MA-09.02.02.1.html,MA-09.02.03.1.html,MA-09.02.04.1.html,MA-09.02.05.1.html) */
+.set-complete {margin-top:120px;}
+.complete-area {
+	position:relative;
+	padding:67px 10px 0;
+	text-align:center;
+	letter-spacing:-1px;
+}
+.complete-area:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:50%;
+	top:0;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+	width:50px;
+	height:50px;
+	background:url(../images/common/sprite_icon.png) no-repeat 0 -203px;
+	background-size:250px;
+}
+.complete-area .title {
+	display:block;
+	color:#333;
+	font-size:22px;
+	font-weight:400;
+	line-height:1.3;
+}
+.complete-area .title em {font-weight:900;}
+.complete-area p {
+	margin-top:10px;
+	color:#737373;
+	font-weight:600;
+	line-height:1.5;
+}
+/* 팝업 */
+.layer-popup .popup .cont .tit {
+	display:block;
+	margin-bottom:5px;
+	color:#333;
+	font-size:18px;
+	font-weight:600;
+}
