@@ -30,6 +30,13 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="slide-inner">
+								<div class="form-write-box type1">
+									<input type="text" placeholder="Enter Your ID">
+									<input type="password" placeholder="Enter Your Password">
+									<div class="btn-area">
+										<a href="#" class="btn-signin">SIGN IN</a>
+									</div>
+								</div>
 								<div class="utill-menu">
 									<a href="#" class="item">Sign up</a>
 									<a href="#" class="item">Forgot your ID / password?</a>
@@ -54,6 +61,14 @@
 						</div>
 						<div class="swiper-slide">
 							<div class="slide-inner">
+								<div class="form-write-box type2">
+									<input type="text" placeholder="Enter Your ID">
+									<input type="password" placeholder="Enter Your Password">
+									<div class="btn-area">
+										<a href="#" class="btn-signin2">OTP번호발송</a>
+										<a href="#" class="btn-signin2">인증확인</a>
+									</div>
+								</div>
 								<div class="utill-menu">
 									<a href="#" class="item">Sign up</a>
 									<a href="#" class="item">OTP번호재발송</a>
@@ -160,19 +175,6 @@ $(document).ready(function(){
 			el: '.event-slide .swiper-pagination',
 			type: 'fraction',
 		},
-		/*
-		pagination: {
-			el: '.event-slide .swiper-pagination',
-			clickable: true,
-		},
-		*/
-		/*
-		on: {
-			init: function () {
-				
-			},
-		}
-		*/
 	});
 
 	$('.event-slide .btn').click(function(){
