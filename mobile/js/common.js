@@ -122,6 +122,22 @@ $(document).ready(function(){
 		$(this).closest('.combobox').find('.title').text(tit);
 	});
 
+	/* 핀 입력 */
+	$('.pin-area').each(function(){
+		$(this).find('.write-box').click(function(){
+			$(this).closest('.pin-area').find('.pin-filed').focus();
+		});
+		$(this).find('.pin-filed').keyup(function(){
+			var len = $(this).val().length;
+			if(len < 7){
+				$(this).closest('.pin-area').find('.point').removeClass('on').eq(len - 1).addClass('on').prevAll('.point').addClass('on');
+			}
+			if(len == 0){
+				$(this).closest('.pin-area').find('.point').removeClass('on');
+			}
+		});
+	});
+
 	/* 레이어팝업 */
 	popup();
 	$('.btn-popup').click(function(){
