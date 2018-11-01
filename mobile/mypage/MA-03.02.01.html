@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Lotte Finance Vietnam</title>
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/psh.css"><!-- 박수현 -->
 	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
 	<script type="text/javascript" src="../js/swiper.min.js"></script>
@@ -27,13 +28,13 @@
 			<div class="mypage-view tab-warp">
 				<div class="scroll-fix-tab">
 					<div class="tab-list1 fix-tab">
-						<span class="tab-item on">이용내역조회</span>
-						<a href="#" class="tab-item">신청내역조회</a>
+						<span class="tab-item">이용내역조회</span>
+						<span class="tab-item on">신청내역조회</span>
 					</div>
 				</div>
 				<div class="tab-content">
 					<!-- 이용내역조회 -->
-					<div class="tab-cont on">
+					<div class="tab-cont" style="display:none;">
 						<div class="info-select-area">
 							<span class="combobox">
 								<span class="title">직장인 신용대출</span>
@@ -47,10 +48,51 @@
 							총 대출기간 Apl.10.2018 ~ Oct.10.2018 중<br>
 							남은 대출금액은 <span class="fcolor">140,000 ₫</span> 입니다.
 						</div>
+						<div class="use-history">
+							<div class="use-title">
+								<h2>조회기간</h2>
+								<span class="term">Nov.07.2018 ~ Nov.10.2018</span>
+							</div>
+							<div class="use-list">
+								<div class="use-item">
+									<div class="text-box">
+										<span class="tit">13 회차</span>
+										<span class="txt">대출상품명 : 직장인 신용 대출</span>
+									</div>
+									<div class="price-date">
+										<span class="price">140,000 ₫</span>
+										<span class="date">(Sep.20.2018)</span>
+									</div>
+								</div>
+								<div class="use-item">
+									<div class="text-box">
+										<span class="tit">12 회차</span>
+										<span class="txt">대출상품명 : 직장인 신용 대출</span>
+									</div>
+									<div class="price-date">
+										<span class="price">140,000 ₫</span>
+										<span class="date">(Aug.20.2018)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 아코디언 -->
+
+						<!-- //아코디언 -->
 					</div>
 					<!-- 신청내역조회 -->
-					<div class="tab-cont">
-						
+					<div class="tab-cont on" style="display:block;">
+						<div class="apply-history">
+							<div class="apply-title">
+								<span class="product">직장인 신용 대출</span>
+								<span class="date">Sep.20.2018</span>
+							</div>
+							<div class="apply-cont">
+								<p class="notice-text">대출 승인 검토 진행 중</p>
+								<p>50,000,000<span class="sign">₫</span></p>
+								<p class="term">대출기간 : 12 개월</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
