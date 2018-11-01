@@ -44,14 +44,16 @@
 }
 .setting-list .setting-item .btn-icon {
 	position:absolute;
-	left:132px;
+	left:127px;
 	top:50%;
 	-webkit-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
+	width:26px;
+	height:22px;
 }
 .setting-list .setting-item.ty2 .btn-icon {
-	left:160px;
+	left:155px;
 }
 .setting-list .setting-item .switch-box {
 	position:absolute;
