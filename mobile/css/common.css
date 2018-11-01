@@ -2806,6 +2806,58 @@ body,
 	font-weight:400;
 }
 
+.apply-history {margin-top:25px;}
+.apply-history .apply-title {
+	overflow:hidden;
+	padding:10px 20px;
+}
+.apply-history .apply-title .product {
+	float:left;
+	color:#111;
+	font-size:14px;
+	font-weight:600;
+}
+.apply-history .apply-title .date {
+	float:right;
+	color:#737373;
+	font-size:13px;
+	font-weight:600;
+}
+.apply-history .apply-cont {
+	margin-top:12px;
+	padding:0 20px;
+	text-align:center;
+}
+.apply-history .apply-cont .notice-text {
+	color:#e21c24;
+	font-weight:600;
+}
+.apply-history .apply-cont .apply-price {
+	display:inline-block;
+	position:relative;
+	padding-right:16px;
+	color:#111;
+	font-size:28px;
+	font-weight:900;
+	line-height:1.6;
+}
+.apply-history .apply-cont .apply-price .sign {
+	position:absolute;
+	right:0;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	font-size:18px;
+	font-weight:900;
+}
+.apply-history .apply-cont .term {
+	color:#737373;
+	font-size:13px;
+	font-weight:600;
+	line-height:1.2;
+}
+
 /* 이벤트참여내역 > 목록 (MA-03.04.01.html) */
 .mypage-view {margin-top:35px;}
 .mypage-view .box-list1,
