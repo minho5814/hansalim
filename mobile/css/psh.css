@@ -264,3 +264,8 @@
 	width:100%;
 	vertical-align:top;
 }
+/* 대출프로세스 (MA-05.04.html) */
+.loan-process {
+	margin-top:50px;
+	padding:0 20px;
+}
