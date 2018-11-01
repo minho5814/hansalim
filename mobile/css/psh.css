@@ -269,3 +269,70 @@
 	margin-top:50px;
 	padding:0 20px;
 }
+/* 대출이용내역 이용내역조회 (MA-03.02.01.html) */
+.use-history {}
+.use-history .use-title {
+	overflow:hidden;
+	height:36px;
+	padding:0 20px;
+	border-top:1px solid #dadada;
+	background-color:#f7f7f7;
+	box-sizing:border-box;
+	color:#333;
+	font-size:12px;
+	font-weight:600;
+	line-height:36px;
+}
+.use-history .use-title h2 {float:left;}
+.use-history .use-title .term {
+	display:block;
+	float:right;
+}
+.use-history .use-list .use-item {
+	overflow:hidden;
+	padding:17px 20px 20px;
+	border-top:1px solid #dadada;
+}
+.use-history .use-list .use-item:first-child {border-top:0;}
+.use-history .use-list .use-item .text-box {
+	float:left;
+	width:60%;
+	text-align:left;
+}
+.use-history .use-list .use-item .price-date {
+	float:right;
+	width:40%;
+	text-align:right;
+}
+.use-history .use-list .use-item .text-box span,
+.use-history .use-list .use-item .price-date span {display:block;}
+.use-history .use-list .use-item .text-box .tit,
+.use-history .use-list .use-item .price-date .price {
+	color:#111;
+	font-weight:600;
+}
+.use-history .use-list .use-item .text-box .txt,
+.use-history .use-list .use-item .price-date .date {
+	margin-top:3px;
+	color:#737373;
+	font-size:12px;
+	font-weight:400;
+}
+/* 대출이용내역 신청내역조회 (MA-03.02.01.html) */
+.apply-history {}
+.apply-history .apply-title {
+	overflow:hidden;
+	padding:0 20px;
+}
+.apply-history .apply-title .product {
+	float:left;
+	color:#111;
+	font-size:14px;
+	font-weight:600;
+}
+.apply-history .apply-title .date {
+	float:right;
+	color:#737373;
+	font-size:13px;
+	font-weight:600;
+}
