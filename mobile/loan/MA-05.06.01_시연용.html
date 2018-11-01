@@ -7,7 +7,6 @@
 	<title>Lotte Finance Vietnam</title>
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
 	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="../js/jquery-ui.1.12.1.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
 	<script type="text/javascript" src="../js/plugin_set.js"></script>
 </head>
@@ -20,52 +19,55 @@
 
 	<div class="container">
 		<div class="s-title-area">
-			<p class="sm-text">신용대출</p>
-			<h1 class="s-title">예상상환스케줄</h1>
+			<p class="sm-text">Credit Loan</p>
+			<h1 class="s-title">Expected reimbursement schedule</h1>
 		</div>
 
 		<div class="content pd-type1">
 			<div class="form-list1">
 				<div class="form-item">
-					<label for="Application" class="title">대출신청상품</label>
+					<label for="Application" class="title">Applying loan product</label>
 					<select id="Application">
-						<option>S대출신청상품을 선택하세요.</option>
-						<option>직장인을 위한 신용대출</option>
+						<option>Select applying loan product</option>
+						<option>Credit Loan for worker</option>
 					</select>
 				</div>
 				<div class="form-item">
-					<label for="Price" class="title">대출신청금액</label>
+					<div class="title">
+						<label for="Price">Applying loan amount</label>
+						<button type="button" class="btn-icon btn-tool">i</button>
+					</div>
 					<div class="unit-text">
-						<input type="text" id="Price" placeholder="대출신청금액을 입력하세요.">
+						<input type="text" id="Price" placeholder="Enter the applying loan amount">
 						<div class="unit">VND</div>
 					</div>
 				</div>
 				<div class="form-item left">
-					<label for="Term" class="title">대출기간</label>
+					<label for="Term" class="title">Loan period</label>
 					<select id="Term">
-						<option>대출기간선택</option>
-						<option>6 개월</option>
-						<option>12 개월</option>
-						<option>18 개월</option>
-						<option>24 개월</option>
-						<option>30 개월</option>
-						<option>36 개월</option>
-						<option>42 개월</option>
-						<option>48 개월</option>
-						<option>60 개월</option>
+						<option>Select loan period</option>
+						<option>6 of months</option>
+						<option>12 of months</option>
+						<option>18 of months</option>
+						<option>24 of months</option>
+						<option>30 of months</option>
+						<option>36 of months</option>
+						<option>42 of months</option>
+						<option>48 of months</option>
+						<option>60 of months</option>
 					</select>
 				</div>
 				<div class="form-item right">
-					<label for="Date01" class="title">생년월일</label>
-					<input type="text" id="Date01" placeholder="dd.mm.yy" readonly class="date-form" data-name="date01">
+					<label for="Date01" class="title">Birth year month day</label>
+					<input type="text" id="Date01" placeholder="29.10.2018">
 				</div>
 				<div class="form-item left">
-					<label for="Date02" class="title">대출일</label>
-					<input type="text" id="Date02" placeholder="dd.mm.yy" value="27.09.2018" readonly class="date-form" data-name="date02">
+					<label for="Date02" class="title">Loan effecting date</label>
+					<input type="text" id="Date02" placeholder="29.10.2018">
 				</div>
 				<div class="form-item right">
-					<label for="Date03" class="title">최초상환일</label>
-					<input type="text" id="Date03" placeholder="dd.mm.yy" value="27.09.2018" readonly class="date-form" data-name="date03">
+					<label for="Date03" class="title">Initial reimbursement date</label>
+					<input type="text" id="Date03" placeholder="29.10.2018">
 				</div>
 			</div>
 		</div>
@@ -74,8 +76,8 @@
 
 <div class="bottom-fixed-area">
 	<ul class="btn-list type2 height">
-		<li class="btn-item"><button type="button" class="btn-text type1 btn-popup" layer-name="Popup01">초기화</button></li>
-		<li class="btn-item"><button type="button" class="btn-text type1 btn-popup" layer-name="Popup03">계산하기</button></li>
+		<li class="btn-item"><button type="button" class="btn-text type1 btn-popup" layer-name="Popup01">Reset</button></li>
+		<li class="btn-item"><button type="button" class="btn-text type1 btn-popup" layer-name="Popup03">Caculation</button></li>
 	</ul>
 </div>
 
@@ -84,8 +86,7 @@
 	<div class="dimmed"></div>
 	<div class="popup">
 		<div class="cont">
-			작성하신 예상상환스케줄 정보를 초기화하시겠습니까?<br>
-			초기화를 진행하시면 작성하신 내용은 삭제됩니다.
+			Do you want to reset the estimated reimbursement information that was entered? If you reset it, the entered information will be deleted
 		</div>
 		<ul class="btn-list">
 			<li class="btn-item"><button type="button" class="btn-pop-text popClose">Cancel</button></li>
@@ -100,7 +101,7 @@
 	<div class="popup">
 		<div class="cont">
 			<div class="pos-y">
-				<p>예상상환스케줄 정보가 초기화되었습니다.</p>
+				<p>Reseting the information of expected reimbursement schedual</p>
 			</div>
 		</div>
 		<ul class="btn-list one">
@@ -119,10 +120,10 @@
 			<h1 class="p-title">예상 상환스케줄</h1>
 		</div>
 		<div class="pop-cont">
-			<div class="form-list-wrap3">
+			<div class="form-list-wrap2">
 				<h2 class="f-title">직장인을 위한 신용대출</h2>
-				<div class="form-list type2">
-					<div class="form-item">
+				<div class="form-list">
+					<div class="form-item fStyle">
 						<div class="title">신청금액</div>
 						<div class="text">5,000,000 VND</div>
 					</div>
@@ -150,7 +151,7 @@
 
 				<div class="form-list">
 					<div class="form-item">
-						<div class="title"><span class="label">1회차</span><strong>27.10.2018</strong></div>
+						<div class="title"><span class="label">1회차</span>27.10.2018</div>
 						<div class="text">5,000,000 VND</div>
 					</div>
 					<div class="form-item">
@@ -169,7 +170,7 @@
 
 				<div class="form-list">
 					<div class="form-item">
-						<div class="title"><span class="label">2회차</span><strong>27.10.2018</strong></div>
+						<div class="title"><span class="label">2회차</span>27.10.2018</div>
 						<div class="text">5,000,000 VND</div>
 					</div>
 					<div class="form-item">
@@ -188,7 +189,7 @@
 
 				<div class="form-list">
 					<div class="form-item">
-						<div class="title"><span class="label">3회차</span><strong>27.10.2018</strong></div>
+						<div class="title"><span class="label">3회차</span>27.10.2018</div>
 						<div class="text">5,000,000 VND</div>
 					</div>
 					<div class="form-item">
@@ -207,7 +208,7 @@
 
 				<div class="form-list">
 					<div class="form-item">
-						<div class="title"><span class="label">4회차</span><strong>27.10.2018</strong></div>
+						<div class="title"><span class="label">4회차</span>27.10.2018</div>
 						<div class="text">5,000,000 VND</div>
 					</div>
 					<div class="form-item">
@@ -226,7 +227,7 @@
 
 				<div class="form-list">
 					<div class="form-item">
-						<div class="title"><span class="label">5회차</span><strong>27.10.2018</strong></div>
+						<div class="title"><span class="label">5회차</span>27.10.2018</div>
 						<div class="text">5,000,000 VND</div>
 					</div>
 					<div class="form-item">
@@ -253,7 +254,6 @@
 
 <script>
 $(document).ready(function(){
-	/* 초기화 버튼 */
 	$('.btn-reset').click(function(){
 		$('.form-list1 input, .form-list1 select').val('');
 	});

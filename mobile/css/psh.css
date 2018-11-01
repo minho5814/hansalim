@@ -221,40 +221,7 @@
 
 /* 자동로그인설정 (MA-09.02.01.1.html,MA-09.02.02.1.html,MA-09.02.03.1.html,MA-09.02.04.1.html,MA-09.02.05.1.html) */
 .set-complete {margin-top:120px;}
-.complete-area {
-	position:relative;
-	padding:67px 10px 0;
-	text-align:center;
-	letter-spacing:-1px;
-}
-.complete-area:before {
-	content:'';
-	display:block;
-	position:absolute;
-	left:50%;
-	top:0;
-	-webkit-transform:translateX(-50%);
-	-ms-transform:translateX(-50%);
-	transform:translateX(-50%);
-	width:50px;
-	height:50px;
-	background:url(../images/common/sprite_icon.png) no-repeat 0 -203px;
-	background-size:250px;
-}
-.complete-area .title {
-	display:block;
-	color:#333;
-	font-size:22px;
-	font-weight:400;
-	line-height:1.3;
-}
-.complete-area .title em {font-weight:900;}
-.complete-area p {
-	margin-top:10px;
-	color:#737373;
-	font-weight:600;
-	line-height:1.5;
-}
+
 /* 팝업 */
 .layer-popup .popup .cont .tit {
 	display:block;
@@ -264,67 +231,7 @@
 	font-weight:600;
 }
 
-/* 대출접수완료 (MA-05.03.02.html) */
-.loan-completion {margin-top:54px;}
-.loan-completion .img-area {margin-top:68px;}
-.loan-completion .img-area img {
-	width:100%;
-	vertical-align:top;
-}
-/* 대출프로세스 (MA-05.04.html) */
-.loan-process {
-	margin-top:50px;
-	padding:0 20px;
-}
-/* 대출이용내역 이용내역조회 (MA-03.02.01.html) */
-.use-history {}
-.use-history .use-title {
-	overflow:hidden;
-	height:36px;
-	padding:0 20px;
-	border-top:1px solid #dadada;
-	background-color:#f7f7f7;
-	box-sizing:border-box;
-	color:#333;
-	font-size:12px;
-	font-weight:600;
-	line-height:36px;
-}
-.use-history .use-title h2 {float:left;}
-.use-history .use-title .term {
-	display:block;
-	float:right;
-}
-.use-history .use-list .use-item {
-	overflow:hidden;
-	padding:17px 20px 20px;
-	border-top:1px solid #dadada;
-}
-.use-history .use-list .use-item:first-child {border-top:0;}
-.use-history .use-list .use-item .text-box {
-	float:left;
-	width:60%;
-	text-align:left;
-}
-.use-history .use-list .use-item .price-date {
-	float:right;
-	width:40%;
-	text-align:right;
-}
-.use-history .use-list .use-item .text-box span,
-.use-history .use-list .use-item .price-date span {display:block;}
-.use-history .use-list .use-item .text-box .tit,
-.use-history .use-list .use-item .price-date .price {
-	color:#111;
-	font-weight:600;
-}
-.use-history .use-list .use-item .text-box .txt,
-.use-history .use-list .use-item .price-date .date {
-	margin-top:3px;
-	color:#737373;
-	font-size:12px;
-	font-weight:400;
-}
+
 /* 대출이용내역 신청내역조회 (MA-03.02.01.html) */
 .apply-history {margin-top:25px;}
 .apply-history .apply-title {

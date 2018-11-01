@@ -71,6 +71,17 @@
 		</div>
 	</div>
 </div>
+
+<script>
+$(window).scroll(function(){
+	var winTop = $(window).scrollTop();
+	var wihH = $(window).height();
+	var docH = $(document).height();
+	if(winTop == docH - wihH){
+		alert('스크롤 마지막에 왔을 경우 이벤트');
+	}
+});
+</script>
 </body>
 
 </html>

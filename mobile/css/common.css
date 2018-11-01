@@ -69,7 +69,7 @@ input[type=password] {
 	box-sizing:border-box;
 	border-radius:0;
 	border:0;
-	border-bottom:1px solid #b2b2b2;
+	border-bottom:1px solid #d9d9d9;
 	background-color:#fff;
 	-webkit-appearance:none;
 	-moz-appearance:none;
@@ -387,6 +387,24 @@ select {
 	float:left;
 	width:50%;
 }
+.btn-list.type2 .btn-item {
+	position:relative;
+	width:60%;
+}
+.btn-list.type2 .btn-item:first-child {width:40%;}
+.btn-list.type2 .btn-item:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:1px;
+	height:20px;
+	background-color:rgba(255,255,255,.4);
+}
+.btn-list.type2 .btn-item:first-child:before {display:none;}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	폼 요소
@@ -484,6 +502,12 @@ input[type=checkbox]:checked.styled1:after {background-position:-223px -203px;}
 	background-size:250px;
 }
 
+/* 달력 입력 폼 */
+.date-form {
+	background:url(../images/common/icon_calendar.png) no-repeat 100% 50%;
+	background-size:23px 18px;
+}
+
 /* 340px 이하 */
 @media only screen and (max-width:340px) {
 	.otp-type .time {margin-right:10px;}
@@ -565,6 +589,8 @@ input[type=checkbox]:checked.styled1:after {background-position:-223px -203px;}
 	background-color:rgba(255,255,255,.9);
 }
 
+.tab-cont {display:none;}
+.tab-cont.on {display:block;}
 
 /* 소팅 */
 .sorting-box {
@@ -1080,6 +1106,55 @@ input[type=checkbox]:checked.styled1:after {background-position:-223px -203px;}
 .form-list1 .form-item.false input[type=tel],
 .form-list1 .form-item.false input[type=number],
 .form-list1 .form-item.false input[type=password] {border-bottom:1px solid #e21c24;}
+
+.form-list-wrap3 {
+	padding:33px 25px 0;
+}
+.form-list-wrap3 .f-title {
+	padding-bottom:13px;
+	color:#111;
+	font-size:16px;
+	font-weight:600;
+}
+.form-list-wrap3 .form-list {
+	padding:18px 0 20px;
+	border-top:1px solid #e6e6e6;
+}
+.form-list-wrap3 .form-list .form-item {
+	overflow:hidden;
+	margin-top:10px;
+	font-size:14px;
+}
+.form-list-wrap3 .form-list .form-item:first-child {margin-top:0;}
+.form-list-wrap3 .form-list .form-item .title {
+	float:left;
+	margin-right:10px;
+	color:#737373;
+}
+.form-list-wrap3 .form-list .form-item .title .label {
+	display:inline-block;
+	margin-right:5px;
+	padding:0 4px 2px;
+	background-color:#111;
+	color:#fff;
+	font-size:13px;
+}
+.form-list-wrap3 .form-list .form-item .title .label + strong {color:#111;}
+.form-list-wrap3 .form-list .form-item .text {
+	float:right;
+	color:#111;
+	font-weight:600;
+}
+.form-list-wrap3 .form-list.type2 {}
+.form-list-wrap3 .form-list.type2 .form-item .text {
+	color:#737373;
+	font-weight:400;
+}
+.form-list-wrap3 .form-list.type2 .form-item:first-child .title,
+.form-list-wrap3 .form-list.type2 .form-item:first-child .text {
+	color:#5d30a6;
+	font-weight:900;
+}
 
 /* ============================================================================================
 	레이아웃
@@ -2681,7 +2756,55 @@ body,
 	color:#5d30a6;
 	font-weight:600;
 }
-.info-select-area {}
+
+.use-history {}
+.use-history .use-title {
+	overflow:hidden;
+	height:36px;
+	padding:0 20px;
+	border-top:1px solid #dadada;
+	background-color:#f7f7f7;
+	box-sizing:border-box;
+	color:#333;
+	font-size:12px;
+	font-weight:600;
+	line-height:36px;
+}
+.use-history .use-title h2 {float:left;}
+.use-history .use-title .term {
+	display:block;
+	float:right;
+}
+.use-history .use-list .use-item {
+	overflow:hidden;
+	padding:17px 20px 20px;
+	border-top:1px solid #dadada;
+}
+.use-history .use-list .use-item:first-child {border-top:0;}
+.use-history .use-list .use-item .text-box {
+	float:left;
+	width:60%;
+	text-align:left;
+}
+.use-history .use-list .use-item .price-date {
+	float:right;
+	width:40%;
+	text-align:right;
+}
+.use-history .use-list .use-item .text-box span,
+.use-history .use-list .use-item .price-date span {display:block;}
+.use-history .use-list .use-item .text-box .tit,
+.use-history .use-list .use-item .price-date .price {
+	color:#111;
+	font-weight:600;
+}
+.use-history .use-list .use-item .text-box .txt,
+.use-history .use-list .use-item .price-date .date {
+	margin-top:3px;
+	color:#737373;
+	font-size:12px;
+	font-weight:400;
+}
 
 /* 이벤트참여내역 > 목록 (MA-03.04.01.html) */
 .mypage-view {margin-top:35px;}
@@ -2879,6 +3002,55 @@ body,
 		letter-spacing:-1px;
 		font-size:22px;
 	}
+}
+
+/* 대출접수완료 (MA-05.03.02.html) */
+.loan-completion {margin-top:54px;}
+.loan-completion .img-area {margin-top:68px;}
+.loan-completion .img-area img {
+	width:100%;
+	vertical-align:top;
+}
+
+.complete-area {
+	position:relative;
+	padding:67px 10px 0;
+	text-align:center;
+	letter-spacing:-1px;
+}
+.complete-area:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:50%;
+	top:0;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+	width:50px;
+	height:50px;
+	background:url(../images/common/sprite_icon.png) no-repeat 0 -203px;
+	background-size:250px;
+}
+.complete-area .title {
+	display:block;
+	color:#333;
+	font-size:22px;
+	font-weight:400;
+	line-height:1.3;
+}
+.complete-area .title em {font-weight:900;}
+.complete-area p {
+	margin-top:10px;
+	color:#737373;
+	font-weight:600;
+	line-height:1.5;
+}
+
+/* 대출프로세스 (MA-05.04.html) */
+.loan-process {
+	margin-top:50px;
+	padding:0 20px;
 }
 
 /* 대출시물레이션 (MA-05.05.01.html) */
@@ -3181,7 +3353,7 @@ body,
 }
 .layer-popup .popup.scroll .pop-head .p-title {padding:12px 0;}
 .layer-popup .popup.scroll .pop-head .btn-close {height:50px;}
-.layer-popup .popup.scroll .pop-cont {padding-top:51px;}
+.layer-popup .popup.scroll .pop-cont {}
 
 .layer-popup .popup .cont {
 	position:relative;
@@ -3230,6 +3402,108 @@ body,
 	text-align:center;
 	line-height:50px;
 }
+
+/* 달력 팝업 */
+.popup-datepicker {
+	display:none;
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:60;
+}
+.popup-datepicker .dimmed {
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color:rgba(0,0,0,.8);
+}
+.popup-datepicker .datepicker {
+	position:absolute;
+	left:20px;
+	right:20px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	max-width:320px;
+	padding:3px 3px 20px;
+	background-color:#fff;
+}
+.popup-datepicker .ui-datepicker-header {
+	position:relative;
+	padding:6px 0;
+	border:1px solid #ddd;
+	background-color:#e9e9e9;
+}
+.popup-datepicker .ui-datepicker-header .ui-corner-all {
+	position:absolute;
+	top:50%;
+	width:30px;
+	height:30px;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+.popup-datepicker .ui-datepicker-header .ui-datepicker-prev {left:10px;}
+.popup-datepicker .ui-datepicker-header .ui-datepicker-next {right:10px;}
+.popup-datepicker .ui-datepicker-header .ui-corner-all .ui-icon {
+	position:absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:12px;
+	height:12px;
+	background-image:url(../images/common/sprite_icon.png);
+	background-repeat:no-repeat;
+	background-size:250px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.popup-datepicker .ui-datepicker-header .ui-datepicker-prev .ui-icon {background-position:-238px -29px;}
+.popup-datepicker .ui-datepicker-header .ui-datepicker-next .ui-icon {background-position:-238px -42px;}
+.popup-datepicker .ui-datepicker-header .ui-datepicker-title {text-align:center;}
+.popup-datepicker .ui-datepicker-header .ui-datepicker-title select {
+	width:80px;
+	height:30px;
+	padding:0 10px;
+	border:1px solid #aaa;
+	background-color:#fff;
+	font-size:12px;
+	font-weight:400;
+}
+.popup-datepicker .ui-datepicker-header .ui-datepicker-title select.ui-datepicker-month {width:60px;}
+.popup-datepicker .ui-datepicker-calendar {margin-top:10px;}
+.popup-datepicker .ui-datepicker-calendar thead {}
+.popup-datepicker .ui-datepicker-calendar thead th {
+	color:#111;
+	height:40px;
+}
+.popup-datepicker .ui-datepicker-calendar thead th:first-child {color:#d93e5f;}
+.popup-datepicker .ui-datepicker-calendar tbody td {text-align:center;}
+.popup-datepicker .ui-datepicker-calendar tbody td .ui-state-default {
+	display:block;
+	width:30px;
+	height:30px;
+	margin:0 auto;
+	padding:6px 0;
+	box-sizing:border-box;
+	border-radius:50%;
+	font-size:12px;
+}
+.popup-datepicker .ui-datepicker-calendar tbody td:first-child a {color:#d93e5f;}
+.popup-datepicker .ui-datepicker-calendar tbody td.ui-datepicker-today a {background-color:#fffa90;}
+.popup-datepicker .ui-datepicker-calendar tbody td.ui-datepicker-current-day a {
+	color:#fff;
+	background-color:#5d30a6;
+}
+.popup-datepicker .ui-datepicker-calendar tbody td.ui-state-disabled span {color:#dadada;}
 
 /* 이벤트 팝업 */
 .popup-event {
@@ -3291,4 +3565,3 @@ body,
 }
 .popup-event .banner-list a:first-child {margin-top:0;}
 .popup-event .banner-list a img {width:100%;}
-.popup-event {}

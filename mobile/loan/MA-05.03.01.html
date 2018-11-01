@@ -7,6 +7,7 @@
 	<title>Lotte Finance Vietnam</title>
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
 	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.1.12.1.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
 	<script type="text/javascript" src="../js/plugin_set.js"></script>
 </head>
@@ -19,64 +20,61 @@
 
 	<div class="container">
 		<div class="s-title-area">
-			<p class="sm-text">Credit Loan</p>
-			<h1 class="s-title">Loan apply</h1>
+			<p class="sm-text">신용대출</p>
+			<h1 class="s-title">대출접수</h1>
 		</div>
 
 		<div class="content pd-type1">
 			<div class="form-list1">
 				<div class="form-item">
-					<label for="Application" class="title">Applying loan product</label>
+					<label for="Application" class="title">대출신청상품</label>
 					<select id="Application">
-						<option>Select applying loan product</option>
-						<option>Credit Loan for worker</option>
+						<option>대출신청상품을 선택하세요.</option>
+						<option>직장인을 위한 신용대출</option>
 					</select>
 				</div>
 				<div class="form-item">
-					<label for="Name" class="title">Name of applicant</label>
-					<input type="text" id="Name" placeholder="Enter name">
+					<label for="Name" class="title">신청자명</label>
+					<input type="text" id="Name" placeholder="이름을 입력하세요.">
 				</div>
 				<div class="form-item">
-					<label for="Phone" class="title">Mobile phone number</label>
-					<input type="text" id="Phone" placeholder="Please insert phone number which can contact">
+					<label for="Phone" class="title">휴대폰번호</label>
+					<input type="tel" id="Phone" placeholder="연락 가능한 전화번호를 입력하세요.">
 				</div>
 				<div class="form-item">
-					<label for="Number" class="title">CMND</label><!-- 주민등록 번호 -->
-					<input type="text" id="Number" placeholder="Enter CMND">
+					<label for="Number" class="title">주민등록번호</label>
+					<input type="text" id="Number" placeholder="주민등록번호를 입력하세요.">
 				</div>
 				<div class="form-item">
-					<div class="title">
-						<label for="Price">Applying loan amount</label>
-						<button type="button" class="btn-icon btn-tool">i</button>
-					</div>
+					<label for="Price" class="title">대출신청금액</label>
 					<div class="unit-text">
-						<input type="text" id="Price" placeholder="Enter the applying loan amount">
+						<input type="text" id="Price" placeholder="대출신청금액을 입력하세요.">
 						<div class="unit">VND</div>
 					</div>
 				</div>
 				<div class="form-item left">
-					<label for="Term" class="title">Loan period</label>
+					<label for="Term" class="title">대출기간</label>
 					<select id="Term">
-						<option>Select loan period</option>
-						<option>6 of months</option>
-						<option>12 of months</option>
-						<option>18 of months</option>
-						<option>24 of months</option>
-						<option>30 of months</option>
-						<option>36 of months</option>
-						<option>42 of months</option>
-						<option>48 of months</option>
-						<option>60 of months</option>
+						<option>대출기간선택</option>
+						<option>6 개월</option>
+						<option>12 개월</option>
+						<option>18 개월</option>
+						<option>24 개월</option>
+						<option>30 개월</option>
+						<option>36 개월</option>
+						<option>42 개월</option>
+						<option>48 개월</option>
+						<option>60 개월</option>
 					</select>
 				</div>
 				<div class="form-item right">
-					<label for="Date" class="title">Birth year month day</label>
-					<input type="text" id="Date" placeholder="29.10.2018">
+					<label for="Date" class="title">생년월일</label>
+					<input type="text" id="Date" placeholder="dd.mm.yy" readonly class="date-form" data-name="date01">
 				</div>
 				<div class="form-item">
-					<label for="Purpose" class="title">using purpose of the loan</label>
+					<label for="Purpose" class="title">대출목적</label>
 					<select id="Purpose">
-						<option>Credit loan</option>
+						<option>대출받는 목적을 입력하세요.</option>
 						<option>household loan</option>
 						<option>other</option>
 					</select>
@@ -87,7 +85,7 @@
 </div>
 
 <div class="bottom-fixed-area">
-	<a href="MA-05.03.01.html" class="btn-text type1 height">Loan apply</a>
+	<a href="MA-05.03.02.html" class="btn-text type1 height">대출접수</a>
 </div>
 </body>
 
