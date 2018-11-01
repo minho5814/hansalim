@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Lotte Finance Vietnam</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/psh.css"><!-- 박수현 -->
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/swiper.min.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="h-logo"><a href="javascript:;">Lotte</a></h1>
+		<button type="button" class="btn-gnb">Menu Button</button>
+	</div>
+
+	<div class="container">
+		<!-- 상단 슬라이드 영역 -->
+		<div class="top-visual-area">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						
+					</div>
+					<div class="swiper-slide">
+						
+					</div>
+					<div class="swiper-slide">
+						
+					</div>
+					<div class="swiper-slide">
+						
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+
+		<!-- 빠른 메뉴 영역 -->
+		<div class="quick-menu">
+			<a href="#" class="menu-item on">MY</a>
+			<a href="#" class="menu-item">LOAN</a>
+			<a href="#" class="menu-item">CARD</a>
+			<a href="#" class="menu-item">EVENT</a>
+		</div>
+
+	</div>
+</div>
+
+<script>
+$(document).ready(function(){
+	/* 상단 비주얼 슬라이드 */
+	var swiper = new Swiper('.top-visual-area .swiper-container', {
+		pagination: {
+			el: '.top-visual-area .swiper-pagination',
+			clickable: true,
+		},
+	});
+});
+</script>
+</body>
+
+</html>
