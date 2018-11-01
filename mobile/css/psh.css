@@ -20,6 +20,7 @@
 	height:56px;
 	padding:0 20px;
 	border-top:1px solid #f2f2f2;
+	box-sizing:border-box;
 }
 .setting-list .setting-item:first-child {margin-top:0;}
 .setting-list .setting-item.sign:before {
@@ -38,6 +39,7 @@
 }
 .setting-list .setting-item a {display:block;}
 .setting-list .setting-item .tit {
+	display:inline-block;
 	color:#333;
 	font-weight:600;
 	line-height:56px;
