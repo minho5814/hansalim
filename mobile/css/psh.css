@@ -256,3 +256,11 @@
 	font-size:18px;
 	font-weight:600;
 }
+
+/* 대출접수완료 (MA-05.03.02.html) */
+.loan-completion {margin-top:54px;}
+.loan-completion .img-area {margin-top:68px;}
+.loan-completion .img-area img {
+	width:100%;
+	vertical-align:top;
+}
