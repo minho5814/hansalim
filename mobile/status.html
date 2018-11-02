@@ -44,7 +44,7 @@
 		.date,
 		.stat {text-align:center;}
 		.right {text-align:right;}
-		.line-through {text-decoration:line-through;}
+		.False {background-color:#efbdbd !important;}
 		.ing td {background-color:#f2f9c1;}
 	</style>
 
@@ -53,7 +53,7 @@
 		$(document).ready(function(){
 			/* 작업페이지/전체 페이지 */
 			var txtAll = $('.stat').text().length;
-			var minLen = $('.Guide tbody tr').length + $('.line-through').length;
+			var minLen = $('.Guide tbody tr').length + $('.False').length;
 			$('#total .total').text($('tbody tr').length - minLen);
 			$('#total .comple').text(txtAll);
 
@@ -63,6 +63,12 @@
 				var txtLengs = $(this).find('tbody tr').length;
 				$(this).find('.title').append(' <span>(' + txtIdx + '/' + txtLengs + ')</span>');
 			});
+
+			/* 진행중 페이지 */
+			var FalseLen = $('.IngLen').html($('.ing').length);
+
+			/* 진행불가 */
+			$('.stat-text').append('<span class="False">진행불가</span> ' + $('.False').length);
 
 			/* Toggle */
 			$('.title').click(function(){
@@ -76,7 +82,7 @@
 <div class="header">
 	<h1>롯데카드 작업현황 (2018-10-22) ｜ front_v1.00 [ 작업완료 : ☆ ] - [ 검수완료 : ★ ]</h1>
 	<div class="stat-text">
-		<span style="background-color:#f2f9c1;">진행중</span>
+		<span style="background-color:#f2f9c1;">진행중</span><span class="IngLen">0</span>
 	</div>
 </div>
 
@@ -627,41 +633,39 @@
 					<td class="date">2018-10-26</td>
 					<td></td>
 				</tr>
-				<tr>
+				<tr class="False">
 					<td>MY카드발급조회</td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td>mypage/</td>
-					<td class="right"><a target="_blank" href="mypage/.html">.html</a></td>
+					<td class="right"><a target="_blank" href="mypage/.html"></a></td>
 					<td class="stat"></td>
 					<td class="date"></td>
-					<td></td>
+					<td>2차 진행</td>
 				</tr>
-				<tr>
+				<tr class="False">
 					<td>MY카드설정관리</td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td>mypage/</td>
-					<td class="right"><a target="_blank" href="mypage/.html">.html</a></td>
+					<td class="right"><a target="_blank" href="mypage/.html"></a></td>
 					<td class="stat"></td>
 					<td class="date"></td>
-					<td></td>
+					<td>2차 진행</td>
 				</tr>
-				<tr>
+				<tr class="False">
 					<td>카드분실신고</td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td>mypage/</td>
-					<td class="right"><a target="_blank" href="mypage/.html">.html</a></td>
+					<td class="right"><a target="_blank" href="mypage/.html"></a></td>
 					<td class="stat"></td>
 					<td class="date"></td>
-					<td></td>
+					<td>2차 진행</td>
 				</tr>
-				
-				
 			</tbody>
 		</table>
 	</div>
@@ -722,23 +726,23 @@
 					<td class="date">2018-10-24</td>
 					<td></td>
 				</tr>
-				<tr>
+				<tr class="False">
 					<td>Lotte Finance Vietnam</td>
 					<td></td>
 					<td></td>
 					<td>company/</td>
-					<td class="right"><a target="_blank" href="company/.html">.html</a></td>
+					<td class="right"><a target="_blank" href="company/.html"></a></td>
 					<td class="stat"></td>
 					<td class="date"></td>
 					<td></td>
 				</tr>
-				<tr>
+				<tr class="ing">
 					<td>회사연혁</td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td>company/</td>
-					<td class="right"><a target="_blank" href="company/.html">.html</a></td>
+					<td class="right"><a target="_blank" href="company/MA-04.03.html">MA-04.03.html</a></td>
 					<td class="stat"></td>
 					<td class="date"></td>
 					<td></td>
@@ -802,13 +806,13 @@
 						상품안내 및 레이어 내용 수급 대기
 					</td>
 				</tr>
-				<tr class="line-through">
+				<tr class="False">
 					<td>대출약관안내</td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td>loan/</td>
-					<td class="right"><a target="_blank" href="loan/.html">.html</a></td>
+					<td class="right"><a target="_blank" href="loan/.html"></a></td>
 					<td class="stat"></td>
 					<td class="date"></td>
 					<td>컨텐츠 추후 추가 예정</td>
@@ -967,13 +971,13 @@
 					<td class="date">2018-10-26</td>
 					<td>박수현</td>
 				</tr>
-				<tr class="line-through">
+				<tr class="False">
 					<td>프로모션</td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td>event/</td>
-					<td class="right"><a target="_blank" href="event/.html">.html</a></td>
+					<td class="right"><a target="_blank" href="event/.html"></a></td>
 					<td class="stat"></td>
 					<td class="date"></td>
 					<td></td>
@@ -1059,22 +1063,22 @@
 					<td class="date">2018-10-25</td>
 					<td>박수현</td>
 				</tr>
-				<tr class="line-through">
+				<tr class="False">
 					<td>전화상담</td>
 					<td></td>
 					<td></td>
 					<td>customer/</td>
-					<td class="right"><a target="_blank" href="customer/.html">.html</a></td>
+					<td class="right"><a target="_blank" href="customer/.html"></a></td>
 					<td class="stat"></td>
 					<td class="date"></td>
 					<td></td>
 				</tr>
-				<tr class="line-through">
+				<tr class="False">
 					<td>챗팅상담</td>
 					<td></td>
 					<td></td>
 					<td>customer/</td>
-					<td class="right"><a target="_blank" href="customer/.html">.html</a></td>
+					<td class="right"><a target="_blank" href="customer/.html"></a></td>
 					<td class="stat"></td>
 					<td class="date"></td>
 					<td></td>
@@ -1108,35 +1112,35 @@
 						구글맵 영역
 					</td>
 				</tr>
-				<tr class="line-through">
+				<tr class="False">
 					<td>App이용안내</td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td>customer/</td>
-					<td class="right"><a target="_blank" href="customer/.html">.html</a></td>
+					<td class="right"><a target="_blank" href="customer/.html"></a></td>
 					<td class="stat"></td>
 					<td class="date"></td>
 					<td>콘텐츠 추후 추가 예정</td>
 				</tr>
-				<tr class="line-through">
+				<tr class="False">
 					<td>Web이용안내</td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td>customer/</td>
-					<td class="right"><a target="_blank" href="customer/.html">.html</a></td>
+					<td class="right"><a target="_blank" href="customer/.html"></a></td>
 					<td class="stat"></td>
 					<td class="date"></td>
 					<td>콘텐츠 추후 추가 예정</td>
 				</tr>
-				<tr class="line-through">
+				<tr class="False">
 					<td>푸시알림</td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td>customer/</td>
-					<td class="right"><a target="_blank" href="customer/.html">.html</a></td>
+					<td class="right"><a target="_blank" href="customer/.html"></a></td>
 					<td class="stat"></td>
 					<td class="date"></td>
 					<td></td>
