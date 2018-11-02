@@ -16,7 +16,7 @@
 			padding:0 20px 100px;
 			box-sizing:border-box;
 		}
-		h1 {
+		.h1 {
 			margin:30px -20px 0;
 			padding:0 20px;
 			background-color:#000;
@@ -24,7 +24,7 @@
 			font-weight:600;
 			line-height:50px;
 		}
-		h1:first-child {margin-top:0;}
+		.h1:first-child {margin-top:0;}
 		h2 {
 			padding:20px 0;
 			font-weight:600;
@@ -33,7 +33,7 @@
 </head>
 
 <body>
-<h1 style="margin-top:0;">버튼</h1>
+<h1 class="h1" style="margin-top:0;">버튼</h1>
 
 <h2>* 텍스트 타입</h2>
 
@@ -64,18 +64,19 @@
 
 <button type="button" class="btn-icon btn-delete">Delete</button>
 <button type="button" class="btn-icon btn-search">Search</button>
-<button type="button" class="btn-icon btn-tool">i</button>
+<button type="button" class="btn-icon btn-tool" tool-name="Tooltip01">i</button>
 
 <h2>* 온/오프 스위치</h2>
 <button type="button" class="btn-switch">On/Off</button>
-<button type="button" class="btn-switch on btn-popup">On/Off</button>
+<button type="button" class="btn-switch on">On/Off</button>
+<button type="button" class="btn-switch btn-popup" layer-name="Popup01">On/Off</button>
 
 
-<h1>링크</h1>
+<h1 class="h1">링크</h1>
 <a href="#" class="link-type1">링크 스타일 01</a>
 
 
-<h1>폼</h1>
+<h1 class="h1">폼</h1>
 <h2>* 체크박스</h2>
 <input type="checkbox" class="styled1">
 <input type="checkbox" class="styled1" checked>
@@ -91,6 +92,44 @@
 	<ul class="btn-list height">
 		<li class="btn-item"><a href="MA-08.03.01.html" class="btn-text">취소</a></li>
 		<li class="btn-item"><a href="MA-08.03.01.html" class="btn-text type1">확인</a></li>
+	</ul>
+</div>
+
+
+<!-- 레이어 팝업 (시작화면 건너뛰기 팝업) -->
+<div class="layer-popup" layer-name="Popup01">
+	<div class="dimmed"></div>
+	<div class="popup">
+		<div class="cont">
+			<h1 class="c-title">시작화면 건너뛰기</h1>
+			스위치 ON 시 LOTTE Finance에서 제공하는 브리핑 정보를 받을 수 없습니다.<br>
+			설정을 ON으로 변경하시겠습니까?
+		</div>
+		<ul class="btn-list">
+			<li class="btn-item"><button class="btn-pop-text popClose">취소</button></li>
+			<li class="btn-item"><button class="btn-pop-text popClose btnConfirm">확인</button></li>
+		</ul>
+	</div>
+</div>
+
+<!-- 툴팁 레이어 (자동로그인 설정) -->
+<div class="tooltip-layer" tool-name="Tooltip01">
+	<button type="button" class="btn-close">Close</button>
+	<ul class="tool-list01">
+		<li class="item">1인1기기 한정 서비스 이용이 가능합니다.</li>
+		<li class="item">
+			서비스 등록 후 휴대폰 화면 잠금설정<br>
+			(지문/비밀번호/패턴)이 되어 있을 경우에만 자동로그인이 가능합니다.
+		</li>
+		<li class="item">
+			아래의 경우 서비스 재등록이 필요합니다.
+			<ul>
+				<li>- 앱 삭제 후 재설치</li>
+				<li>- 앱 데이터 삭제</li>
+				<li>- 휴대폰 번호 또는 기기 변경</li>
+				<li>- 계정 초기화</li>
+			</ul>
+		</li>
 	</ul>
 </div>
 </body>

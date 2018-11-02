@@ -31,7 +31,7 @@
 				<div class="setting-list">
 					<div class="setting-item">
 						<span class="s-title"><em class="text">자동로그인 설정</em></span>
-						<button type="button" class="btn-icon btn-tool">i</button>
+						<button type="button" class="btn-icon btn-tool" tool-name="Tooltip01">i</button>
 						<button type="button" class="btn-switch on">On/Off</button>
 					</div>
 					<div class="setting-item arro-type">
@@ -49,11 +49,11 @@
 						</a>
 					</div>
 					<div class="setting-item arro-type">
-						<button type="button" class="s-title"><em class="text">앱 접근권한 설정</em></button>
+						<button type="button" class="s-title btn-popup" layer-name="Popup01"><em class="text">앱 접근권한 설정</em></button>
 					</div>
 					<div class="setting-item">
 						<span class="s-title"><em class="text">시작화면 건너뛰기</em></span>
-						<button type="button" class="btn-switch btn-popup" layer-name="">On/Off</button>
+						<button type="button" class="btn-switch btn-popup" layer-name="Popup02">On/Off</button>
 					</div>
 				</div>
 
@@ -73,7 +73,7 @@
 						<a href="MA-09.06.02.html" target="_blank" class="s-title">
 							<em class="text">App 등록계정초기화</em>
 						</a>
-						<button type="button" class="btn-icon btn-tool">i</button>
+						<button type="button" class="btn-icon btn-tool" tool-name="Tooltip02">i</button>
 					</div>
 				</div>
 			</div>
@@ -81,41 +81,72 @@
 	</div>
 </div>
 
-<!-- 레이어 팝업 (시작화면 건너뛰기 팝업) -->
+
+<!-- 레이어 팝업 (앱 접근권한 설정 팝업) -->
 <div class="layer-popup" layer-name="Popup01">
 	<div class="dimmed"></div>
 	<div class="popup">
 		<div class="cont">
-			<span class="tit">시작화면 건너뛰기</span>
-			스위치 ON 시 LOTTE Finance에서<br>
-			제공하는 브리핑 정보를 받을 수 없습니다.<br>
-			설정을 ON으로 변경하시겠습니까?
+			<h1 class="c-title">앱 접근권한 설정</h1>
+			휴대폰의 설정 화면으로 이동하시겠습니까?<br>
+			권한메뉴에서 앱권한을 변경할 수 있습니다.
 		</div>
 		<ul class="btn-list">
-			<li class="btn-item"><a href="MA-02.03.01.html" class="btn-pop-text popClose">취소</a></li>
-			<li class="btn-item"><a href="MA-02.03.05.2.html" class="btn-pop-text popClose">확인</a></li>
-		</ul>
-	</div>
-</div>
-<!-- 레이어 팝업 (앱 접근권한 설정 팝업) -->
-<div class="layer-popup" layer-name="Popup02">
-	<div class="dimmed"></div>
-	<div class="popup">
-		<div class="cont">
-			<span class="tit">앱 접근권한 설정</span>
-			스위치 ON 시 LOTTE Finance에서<br>
-			제공하는 브리핑 정보를 받을 수 없습니다.<br>
-			설정을 ON으로 변경하시겠습니까?
-		</div>
-		<ul class="btn-list">
-			<li class="btn-item"><a href="MA-02.03.01.html" class="btn-pop-text popClose">취소</a></li>
+			<li class="btn-item"><button class="btn-pop-text popClose">취소</button></li>
 			<li class="btn-item"><a href="MA-02.03.05.2.html" class="btn-pop-text popClose">확인</a></li>
 		</ul>
 	</div>
 </div>
 
+<!-- 레이어 팝업 (시작화면 건너뛰기 팝업) -->
+<div class="layer-popup" layer-name="Popup02">
+	<div class="dimmed"></div>
+	<div class="popup">
+		<div class="cont">
+			<h1 class="c-title">시작화면 건너뛰기</h1>
+			스위치 ON 시 LOTTE Finance에서 제공하는 브리핑 정보를 받을 수 없습니다.<br>
+			설정을 ON으로 변경하시겠습니까?
+		</div>
+		<ul class="btn-list">
+			<li class="btn-item"><button class="btn-pop-text popClose">취소</button></li>
+			<li class="btn-item"><button class="btn-pop-text popClose btnConfirm">확인</button></li>
+		</ul>
+	</div>
+</div>
+
+<!-- 툴팁 레이어 (자동로그인 설정) -->
+<div class="tooltip-layer" tool-name="Tooltip01">
+	<button type="button" class="btn-close">Close</button>
+	<ul class="tool-list01">
+		<li class="item">1인1기기 한정 서비스 이용이 가능합니다.</li>
+		<li class="item">
+			서비스 등록 후 휴대폰 화면 잠금설정<br>
+			(지문/비밀번호/패턴)이 되어 있을 경우에만 자동로그인이 가능합니다.
+		</li>
+		<li class="item">
+			아래의 경우 서비스 재등록이 필요합니다.
+			<ul>
+				<li>- 앱 삭제 후 재설치</li>
+				<li>- 앱 데이터 삭제</li>
+				<li>- 휴대폰 번호 또는 기기 변경</li>
+				<li>- 계정 초기화</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<!-- 툴팁 레이어 (App 등록계정초기화) -->
+<div class="tooltip-layer" tool-name="Tooltip02">
+	<button type="button" class="btn-close">Close</button>
+	<ul class="tool-list01">
+		<li class="item">APP에 등록된 사용자 계정을 초기화하여 신규 APP으로 변경할 수 있습니다.</li>
+		<li class="item">계정 초기화 시 로그인된 정보는 모두 삭제되며, 인증수단은 재등록하셔야 합니다. (PIN번호, 지문인증 등)</li>
+	</ul>
+</div>
+
 <script>
 $(document).ready(function(){
+	/* 툴팁 버튼 위치 조정 */
 	$('.btn-tool').each(function(){
 		var left = $(this).closest('.setting-item').find('.s-title .text').outerWidth();
 		$(this).css({'left':left});

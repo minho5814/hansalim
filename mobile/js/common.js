@@ -198,6 +198,11 @@ $(document).ready(function(){
 			$(this).toggleClass('on');
 		}
 	});
+	// 스위치 레이어 팝업으로 제어
+	$('.btnConfirm').click(function(){
+		var name = $(this).closest('.layer-popup').attr('layer-name');
+		$('.btn-switch[layer-name=' + name + ']').addClass('on');
+	});
 
 	/* 레이어팝업 */
 	popup();
@@ -224,6 +229,29 @@ $(document).ready(function(){
 		}
 	});
 
+	/* 툴팁 레이어 */
+	toolLayer();// 툴팁 레이어 위치 조정
+	$('.btn-tool').click(function(){
+		var name = $(this).attr('tool-name');
+		var btnT = $(this).offset().top + 32;
+		toolLayer();
+
+
+		$('.tooltip-layer[tool-name=' + name + ']').show();
+
+
+		var docH =  $(document).height();
+		var layerT = $('.tooltip-layer[tool-name=' + name + ']').offset().top;
+		var layerH = $('.tooltip-layer[tool-name=' + name + ']').outerHeight();
+
+		console.log(layerT + layerH);
+		if(layerT + layerH > docH){
+			$('.tooltip-layer[tool-name=' + name + ']').addClass('bottom').css({'margin-top':-(layerH+32)});
+		}
+	});
+	$('.tooltip-layer .btn-close').click(function(){
+		$(this).closest('.tooltip-layer').hide();
+	});
 });
 
 
@@ -268,6 +296,8 @@ $(window).scroll(function(){
 			$(this).find('.fix-tab').removeClass('fix').removeAttr('style');
 		}
 	});
+
+	toolLayer();// 툴팁 레이어 위치 조정
 });
 
 /* 리사이징 */
@@ -332,5 +362,15 @@ function share(){
 	$('.top-visual-box').each(function(){
 		var hei = $(this).outerHeight();
 		$('.share-layer').css({'height':hei});
+	});
+}
+
+/* 툴팁 레이어 위치 조정 */
+function toolLayer(){
+	$('.btn-tool').each(function(){
+		var name = $(this).attr('tool-name');
+		var btnT = $(this).offset().top + 32;
+		var winTop = $(window).scrollTop();
+		$('.tooltip-layer[tool-name=' + name + ']').css({'top':btnT - winTop});
 	});
 }

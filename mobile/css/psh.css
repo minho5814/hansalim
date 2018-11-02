@@ -120,15 +120,6 @@
 /* 자동로그인설정 (MA-09.02.01.1.html,MA-09.02.02.1.html,MA-09.02.03.1.html,MA-09.02.04.1.html,MA-09.02.05.1.html) */
 .set-complete {margin-top:120px;}
 
-/* 팝업 */
-.layer-popup .popup .cont .tit {
-	display:block;
-	margin-bottom:5px;
-	color:#333;
-	font-size:18px;
-	font-weight:600;
-}
-
 
 /* 대출이용내역 신청내역조회 (MA-03.02.01.html) */
 
