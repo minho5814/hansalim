@@ -192,6 +192,13 @@ $(document).ready(function(){
 		});
 	});
 
+	/* 스위치 (on/off) */
+	$('.btn-switch').click(function(){
+		if(!$(this).hasClass('btn-popup')){
+			$(this).toggleClass('on');
+		}
+	});
+
 	/* 레이어팝업 */
 	popup();
 	$('.btn-popup').click(function(){
