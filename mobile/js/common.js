@@ -180,6 +180,18 @@ $(document).ready(function(){
 		$('.popup-datepicker').hide();
 	});
 
+	/* 공유하기 버튼 */
+	share();
+	$('.btn-share').click(function(){
+		share();
+		$('.share-layer').show().animate({left:0}, 200);
+	});
+	$('.share-layer .btn-s-close').click(function(){
+		$('.share-layer').animate({left:'-100%'}, 100, function(){
+			$(this).hide();
+		});
+	});
+
 	/* 레이어팝업 */
 	popup();
 	$('.btn-popup').click(function(){
@@ -254,6 +266,7 @@ $(window).scroll(function(){
 /* 리사이징 */
 $(window).resize(function(){
 	popup();// 레이어팝업
+	share();// 공유하기 레이어 높이 설정
 });
 
 
@@ -304,5 +317,13 @@ function popup(){
 			var padg = (winH - popH) / 2;
 			$(this).removeClass('h-full');
 		}
+	});
+}
+
+/* 공유하기 (event/MA-07.01.02.html, event/MA-07.02.02.html) */
+function share(){
+	$('.top-visual-box').each(function(){
+		var hei = $(this).outerHeight();
+		$('.share-layer').css({'height':hei});
 	});
 }

@@ -1,13 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="mypage-wrap">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Lotte Finance Vietnam</title>
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
-	<link rel="stylesheet" type="text/css" href="../css/psh.css"><!-- 박수현 -->
-	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="../js/jquery-ui.1.12.1.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
@@ -23,17 +21,56 @@
 
 	<div class="container">
 		<!-- 상단 슬라이드 영역 -->
-		<div class="top-visual-area">
+		<div class="swiper-basic">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						
+						<div class="info-box">
+							<div class="user-img"><img src="../images/img/img_user.png" alt=""></div>
+							<div class="loan-price">
+								<div class="title">대출</div>
+								<div class="price-area">
+									<div class="text">2018년 10월 대출 상환 금액</div>
+									<div class="price">1,234,123<span class="unit">₫</span></div>
+								</div>
+							</div>
+							<div class="text-right">
+								<div class="text">
+									이자
+									<span class="right">100,000 ₫</span>
+								</div>
+								<div class="text">
+									( 남은 대출잔액
+									<span class="right">50,000,000 ₫ )</span>
+								</div>
+							</div>
+							<div class="text-area">
+								총 60회 상환 계획 중<br>
+								<strong>15회</strong> 대출상환이 진행되었습니다.
+							</div>
+						</div>
 					</div>
 					<div class="swiper-slide">
-						
-					</div>
-					<div class="swiper-slide">
-						
+						<div class="info-box">
+							<div class="user-img"><img src="../images/img/img_user.png" alt=""></div>
+							<div class="loan-price">
+								<div class="title">카드</div>
+								<div class="price-area">
+									<div class="text">2018년 10월 결제 예정 금액</div>
+									<div class="price">1,234,123<span class="unit">₫</span></div>
+								</div>
+							</div>
+							<div class="text-right">
+								<div class="text">
+									( 총 카드 한도<span class="right">50,000,000 ₫ )</span>
+								</div>
+							</div>
+							<div class="text-area">
+								지난 달보다 <strong>123,123 ₫</strong><br>
+								만큼 지출이 늘었습니다.<br>
+								결제대금을 나눠서 내시겠습니까?
+							</div>
+						</div>
 					</div>
 					<div class="swiper-slide">
 						
@@ -57,9 +94,9 @@
 <script>
 $(document).ready(function(){
 	/* 상단 비주얼 슬라이드 */
-	var swiper = new Swiper('.top-visual-area .swiper-container', {
+	var swiper = new Swiper('.swiper-basic .swiper-container', {
 		pagination: {
-			el: '.top-visual-area .swiper-pagination',
+			el: '.swiper-basic .swiper-pagination',
 			clickable: true,
 		},
 	});

@@ -5,9 +5,7 @@
 ============================================================================================ */
 html,
 body,
-.wrapper {
-	background-color:#5d30a6;
-}
+.wrapper {background-color:#5d30a6;}
 
 /* Header */
 .header {background-color:transparent;}
@@ -126,40 +124,6 @@ body,
 	height:16px;
 	background:url(../images/common/sprite_icon.png) no-repeat 0 0;
 	background-size:250px;
-}
-
-/* 빠른 메뉴 */
-.quick-menu {
-	position:relative;
-	padding-left:9px;
-	background-color:#f1f1f1;
-}
-.quick-menu:before {
-	content:'';
-	position:absolute;
-	right:10px;
-	bottom:0;
-	width:98px;
-	height:96px;
-	background:url(../images/main/img_loca.png) no-repeat 0 0;
-	background-size:100% 100%;
-}
-.quick-menu:after {
-	content:'';
-	display:block;
-	clear:both;
-}
-.quick-menu .menu-item {
-	float:left;
-	height:50px;
-	padding:0 10px;
-	color:#737373;
-	font-size:17px;
-	line-height:50px;
-}
-.quick-menu .menu-item.on {
-	color:#111;
-	font-weight:600;
 }
 
 /* 박스 메뉴 영역 */
