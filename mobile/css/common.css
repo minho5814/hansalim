@@ -795,6 +795,46 @@ input[type=checkbox]:checked.styled1:after {background-position:-223px -203px;}
 	font-size:13px;
 }
 
+.box-list3 {margin-top:55px;}
+.box-list3 .box-item {
+	margin-top:10px;
+	padding:25px 20px 34px;
+	background-color:#fff;
+	color:#111;
+}
+.box-list3 .box-item:first-child {margin-top:0;}
+.box-list3 .box-item .value-text {font-size:13px;}
+.box-list3 .box-item .b-title {
+	margin-top:-2px;
+	font-size:17px;
+	font-weight:600;
+}
+.box-list3 .box-item .price-area {margin-top:8px;}
+.box-list3 .box-item .price-area .text {
+	color:#333;
+	font-size:13px;
+}
+.box-list3 .box-item .price-area .price {
+	font-size:25px;
+	font-weight:900;
+	line-height:1.4;
+}
+.box-list3 .box-item .price-area .price .unit {
+	font-weight:15px;
+	font-weight:400;
+}
+.box-list3 .box-item .price-area .link-area {
+	overflow:hidden;
+	margin-top:10px;
+}
+.box-list3 .box-item .price-area .link-area .link-type1 {
+	float:left;
+	margin-left:20px;
+	font-size:15px;
+	font-weight:600;
+}
+.box-list3 .box-item .price-area .link-area .link-type1:first-child {margin-left:0;}
+
 /* 아코디언 리스트 */
 .accordion-list1 {}
 .accordion-list1 .all-len {
@@ -3012,6 +3052,80 @@ body,
 /* ============================================================================================
 	대출 (Loan)
 ============================================================================================ */
+/* 메인 (MA-05.01.01.html) */
+.loan-wrap {
+	background-color:#eaeaea;
+}
+.loan-wrap .top-menu-list {
+	overflow:hidden;
+	padding:0 10px;
+}
+.loan-wrap .top-menu-list.fix {border-bottom:1px solid #e5e5e5;}
+.loan-wrap .top-menu-list .link {
+	float:left;
+	margin-left:2px;
+	padding:0 10px;
+	color:#737373;
+	font-size:17px;
+	line-height:55px;
+}
+.loan-wrap .top-menu-list .link:first-child {margin-left:0;}
+.loan-wrap .top-menu-list .link.on {
+	color:#111;
+	font-weight:900;
+}
+
+.loan-wrap .shadow-box {
+	margin:30px 0 0 20px;
+	padding:35px 20px 40px 25px;
+	background-color:#fff;
+	box-shadow:0 0 50px rgba(0,0,0,.2);
+}
+.loan-wrap .shadow-box .select-area {}
+.loan-wrap .shadow-box .select-area select {margin-top:20px;}
+.loan-wrap .shadow-box .select-area select:first-child {margin-top:0;}
+.loan-wrap .shadow-box .price-area {
+	margin-top:35px;
+	color:#111;
+	text-align:center;
+}
+.loan-wrap .shadow-box .price-area .text {}
+.loan-wrap .shadow-box .price-area .price {
+	display:inline-block;
+	position:relative;
+	padding-right:17px;
+	font-size:40px;
+	font-weight:900;
+	line-height:1.1;
+}
+.loan-wrap .shadow-box .price-area .price .unit {
+	position:absolute;
+	right:0;
+	bottom:7px;
+	font-size:22px;
+	font-weight:400;
+}
+.loan-wrap .shadow-box .text-area {
+	margin-top:20px;
+	color:#737373;
+	font-size:13px;
+	text-align:center;
+}
+.loan-wrap .shadow-box .btn-area {
+	margin-top:28px;
+	text-align:center;
+}
+.loan-wrap .shadow-box .btn-area .btn-text {
+	width:auto;
+	height:40px;
+	padding:0 20px;
+	font-size:15px;
+	line-height:38px;
+}
+.loan-wrap .shadow-box {}
+.loan-wrap {}
+.loan-wrap {}
+
 /* 목록 (MA-05.01.02.html) */
 .loan-list-wrap {margin-top:32px;}
 .loan-list-wrap .info-box {
