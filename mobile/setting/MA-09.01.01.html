@@ -30,52 +30,49 @@
 				<h2 class="setting-title">로그인·인증</h2>
 				<div class="setting-list">
 					<div class="setting-item">
-						<span class="s-title">자동로그인 설정</span>
+						<span class="s-title"><em class="text">자동로그인 설정</em></span>
 						<button type="button" class="btn-icon btn-tool">i</button>
-						<button type="button" class="btn-switch">On/Off</button>
+						<button type="button" class="btn-switch on">On/Off</button>
 					</div>
-					<div class="setting-item">
-						<a href="#" target="_blank" class="s-title">PIN번호설정</a>
-						<button type="button" class="btn-icon btn-tool">i</button>
-					</div>
-
-
-
-					<div class="setting-item sign">
-						<a href="#"><span class="tit">PIN번호설정</span></a>
-					</div>
-					<div class="setting-item sign">
-						<a href="#"><span class="tit">아이디·비밀번호 설정</span></a>
-					</div>
-				</div>
-				<h2 class="setting-title">편의기능</h2>
-				<div class="setting-list">
-					<div class="setting-item sign">
-						<a href="#">
-							<span class="tit">글자크기 설정</span>
-							<div class="letter-size">보통</div>
+					<div class="setting-item arro-type">
+						<a href="MA-09.02.02.html" target="_blank" class="s-title">
+							<em class="text">PIN번호 설정</em>
 						</a>
 					</div>
-					<div class="setting-item sign">
-						<a href="#" class="btn-popup" layer-name="Popup02"><span class="tit">앱 접근권한 설정</span></a>
+				</div>
+
+				<h2 class="setting-title">편의기능</h2>
+				<div class="setting-list">
+					<div class="setting-item arro-type">
+						<a href="MA-09.03.01.html" target="_blank" class="s-title">
+							<em class="text">글자크기 설정</em><span class="font-size">보통</span>
+						</a>
+					</div>
+					<div class="setting-item arro-type">
+						<button type="button" class="s-title"><em class="text">앱 접근권한 설정</em></button>
 					</div>
 					<div class="setting-item">
-						<span class="tit">시작화면 건너뛰기</span>
-						<div class="switch-box">스위치</div>
+						<span class="s-title"><em class="text">시작화면 건너뛰기</em></span>
+						<button type="button" class="btn-switch btn-popup" layer-name="">On/Off</button>
 					</div>
 				</div>
+
 				<h2 class="setting-title">버전정보</h2>
 				<div class="setting-list">
 					<div class="setting-item">
-						<span class="tit">현재버전</span>
-						<span class="version-number">5.0.12</span>
-						<div class="version-text">최신 버전입니다.</div>
+						<span class="s-title">
+							<em class="text">현재버전<em class="ver-number">5.0.12</em></em>
+							<span class="ver-text">최신 버전입니다.</span>
+						</span>
 					</div>
 				</div>
-				<h2 class="setting-title">계정초기화</h2>
+
+				<h2 class="setting-title reset">계정초기화</h2>
 				<div class="setting-list">
-					<div class="setting-item sign ty2">
-						<a href="#"><span class="tit">App 등록계정초기화</span></a>
+					<div class="setting-item arro-type">
+						<a href="MA-09.06.02.html" target="_blank" class="s-title">
+							<em class="text">App 등록계정초기화</em>
+						</a>
 						<button type="button" class="btn-icon btn-tool">i</button>
 					</div>
 				</div>
@@ -116,6 +113,15 @@
 		</ul>
 	</div>
 </div>
+
+<script>
+$(document).ready(function(){
+	$('.btn-tool').each(function(){
+		var left = $(this).closest('.setting-item').find('.s-title .text').outerWidth();
+		$(this).css({'left':left});
+	});
+});
+</script>
 
 </body>
 
