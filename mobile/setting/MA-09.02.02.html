@@ -6,7 +6,6 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Lotte Finance Vietnam</title>
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
-	<link rel="stylesheet" type="text/css" href="../css/psh.css"><!-- 박수현 -->
 	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="../js/jquery-ui.1.12.1.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
@@ -28,23 +27,59 @@
 		<div class="pin-cont">
 			<div class="form-list1">
 				<div class="form-item">
-					<label for="Pin1" class="title">PIN번호 입력</label>
-					<input type="password" id="Pin1">
+					<label for="Pin01" class="title">PIN번호 입력</label>
+					<div class="pin-area">
+						<input type="tel" id="Pin01" maxlength="6" class="pin-filed">
+						<div class="write-box">
+							<span class="point"></span>
+							<span class="point"></span>
+							<span class="point"></span>
+							<span class="point"></span>
+							<span class="point"></span>
+							<span class="point"></span>
+						</div>
+					</div>
 				</div>
 				<div class="form-item">
-					<label for="Pin2" class="title">PIN번호 확인</label>
-					<input type="password" id="Pin2">
+					<label for="Pin02" class="title">PIN번호 확인</label>
+					<div class="pin-area">
+						<input type="tel" id="Pin02" maxlength="6" class="pin-filed">
+						<div class="write-box">
+							<span class="point"></span>
+							<span class="point"></span>
+							<span class="point"></span>
+							<span class="point"></span>
+							<span class="point"></span>
+							<span class="point"></span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-
 	</div>
 
 	<div class="bottom-fixed-area">
-		<button type="button" class="btn-text type1 next">Next</button>
+		<div class="next-btn-area">
+			<span class="btn-text next height disabled">Next</span>
+			<a href="MA-09.02.02.1.html" class="btn-text type1 next height">Next</a>
+		</div>
 	</div>
 </div>
 
+<script>
+$(document).ready(function(){
+	/* 핀 번호 모두 입력시 하단 next 버튼활성화 */
+	$('.pin-area .pin-filed').keyup(function(){
+		var len = $('.pin-area .point').length;
+		var aLen = $('.pin-area .point.on').length;
+		if(aLen == len){
+			$('.next-btn-area').addClass('on');
+		}else{
+			$('.next-btn-area').removeClass('on');
+		}
+	});
+});
+</script>
 </body>
 
 </html>

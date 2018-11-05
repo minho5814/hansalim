@@ -1185,6 +1185,37 @@ input[type=checkbox]:checked.styled1:after {background-position:-223px -203px;}
 .form-list1 .form-item.false input[type=number],
 .form-list1 .form-item.false input[type=password] {border-bottom:1px solid #e21c24;}
 
+.form-list1 .form-item .pin-area {}
+.form-list1 .form-item .pin-area .pin-filed {
+	position:fixed;
+	left:-9999px;
+	top:-9999px;
+	text-indent:-9999px;
+	opacity:0;
+}
+.form-list1 .form-item .pin-area .write-box {
+	display:inline-block;
+	width: 100%;
+	height: 50px;
+	padding-top:18px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #d9d9d9;
+	background-color: #fff;
+	font-size:0;
+	line-height:0;
+}
+.form-list1 .form-item .pin-area .write-box .point {
+	display:inline-block;
+	width:15px;
+	height:15px;
+	margin-left:23px;
+	border-radius:50%;
+	background-color:#e6e6e6;
+}
+.form-list1 .form-item .pin-area .write-box .point:first-child {margin-left:0;}
+.form-list1 .form-item .pin-area .write-box .point.on {background-color:#000;}
+.form-list1 .form-item .pin-area .write-box {}
+
 .form-list-wrap3 {
 	padding:33px 25px 0;
 }
@@ -3676,6 +3707,8 @@ body,
 /* ============================================================================================
 	설정
 ============================================================================================ */
+.set-complete {margin-top:120px;}
+
 /* 메인 (MA-09.01.01.html) */
 .setting-box {margin-top:50px;}
 .setting-title {
@@ -3751,6 +3784,125 @@ body,
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
 	width:40px;
+}
+
+/* PIN번호등록 (MA-09.02.02.html) */
+.pin-cont {
+	margin-top:20px;
+	padding:0 20px;
+}
+
+/* 지문인증등록 (MA-09.02.03.html) */
+.fingerprint-box {	margin-top:20px;}
+.fingerprint-box .fingerprint-area {
+	position:relative;
+	padding:133px 20px 0;
+	text-align:center;
+}
+.fingerprint-box .fingerprint-area .fingerprint {
+	display:block;
+	position:absolute;
+	left:50%;
+	top:0;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+	width:115px;
+	height:115px;
+}
+.fingerprint-box .fingerprint-area p{
+	color:#111;
+	font-size:16px;
+	font-weight:600;
+}
+.fingerprint-box .fingerprint-area .fingerprint img {width:100%;}
+.fingerprint-box .fingerprint-text {
+	margin-top:33px;
+	padding:18px 20px 0;
+	border-top:1px solid #e6e6e6;
+}
+.fingerprint-box .fingerprint-text .bullet-list1 li {
+	margin-top:7px;
+	color:#111;
+	font-size:15px;
+	font-weight:400;
+	line-height:1.5;
+}
+.fingerprint-box .fingerprint-text .bullet-list1 li:first-child {margin-top:0;}
+
+/* 자동로그인설정 (MA-09.03.01.html) */
+.letter-set {
+	margin-top:20px;
+	padding:0 20px;
+}
+.letter-set .btn-letter {
+	position:relative;
+	width:100%;
+	height:50px;
+	margin-top:20px;
+	padding:0 25px 0 48px;
+	border:1px solid #e6e6e6;
+	box-sizing:border-box;
+	color:#333;
+	font-size:16px;
+	font-weight:400;
+	line-height:48px;
+	text-align:left;
+}
+.letter-set .btn-letter:first-child {margin-top:0;}
+.letter-set .btn-letter:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:25px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:13px;
+	height:10px;
+	background-image:url(../images/common/sprite_icon.png);
+	background-repeat:no-repeat;
+	background-position:-200px -226px;
+	background-size:250px;
+	
+}
+.letter-set .btn-letter.on {
+	border-color:#111;
+	font-size:14px;
+	font-weight:600;
+}
+.letter-set .btn-letter.on:before {
+	background-position:-214px -226px;
+}
+.letter-set .bullet-list1 {margin-top:16px;}
+
+/* 정보확인 (MA-09.06.02.html) */
+.info-reset {
+	margin-top:20px;
+	padding:0 20px;
+}
+.info-reset .reset-box {
+	padding:30px 10px;
+	background-color:#f2f2f2;
+	text-align:center;
+}
+.info-reset .reset-box .tit {
+	display:block;
+	margin-bottom:10px;
+	color:#333;
+	font-size:16px;
+	font-weight:600;
+}
+.info-reset .reset-box p {
+	color:#555;
+	font-size:14px;
+	font-weight:400;
+}
+.info-reset .form-wrap {
+	margin-top:28px;
+	padding:0;
+	border:0;
 }
 
 /* ============================================================================================
