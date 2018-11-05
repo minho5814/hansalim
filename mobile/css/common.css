@@ -1317,7 +1317,7 @@ input[type=checkbox]:checked.styled1:after {background-position:-223px -203px;}
 }
 .quick-menu .menu-item.on {
 	color:#111;
-	font-weight:600;
+	font-weight:900;
 }
 
 /* ============================================================================================
@@ -1990,6 +1990,7 @@ body,
 	box-sizing:border-box;
 	color:#000;
 	font-size:16px;
+	font-weight:600;
 	text-align:left;
 }
 .menu-wrap .menu-list-box .right-menu .menu .menu-list .list-item button.m-title:before {
