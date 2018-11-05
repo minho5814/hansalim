@@ -304,17 +304,35 @@ body,
 	border-left:1px solid #e5e5e5;
 }
 
-/*  */
+/* 스크롤시 고정되는 영역 */
 .head-fix-box {
 	position:fixed;
 	left:0;
+	right:0;
 	top:110px;
 	background-color:#fff;
+	height:40px;
 }
-.head-fix-box .Breadcrumbs {}
-.head-fix-box .Breadcrumbs .crumb-item {}
-.head-fix-box .Breadcrumbs .crumb-item .crumb {}
-.head-fix-box .Breadcrumbs .crumb-item .menu-list {}
+.head-fix-box .Breadcrumbs {
+	overflow:hidden;
+	width:100%;
+	max-width:1300px;
+	margin:0 auto;
+}
+.head-fix-box .Breadcrumbs .crumb-item {
+	float:left;
+}
+.head-fix-box .Breadcrumbs .crumb-item .crumb {
+	display:block;
+	height:40px;
+	padding:0 20px 0 14px;
+	background:url(../images/icon/icon_arr01.png) no-repeat 100% 50%;
+	line-height:40px;
+}
+.head-fix-box .Breadcrumbs .crumb-item:first-child .crumb {padding-left:0;}
+.head-fix-box .Breadcrumbs .crumb-item .menu-list {
+	display:none;
+}
 .head-fix-box .Breadcrumbs .crumb-item .menu-list .menu-item {}
 .head-fix-box .Breadcrumbs .crumb-item .menu-list .menu-item .title {}
 .head-fix-box .Breadcrumbs .crumb-item .menu-list .menu-item .list {}
