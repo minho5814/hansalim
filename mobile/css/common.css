@@ -758,6 +758,24 @@ input[type=checkbox]:checked.styled1:after {background-position:-223px -203px;}
 }
 .bullet-list2 li:first-child {margin-top:0;}
 
+.bullet-list3 li {
+	position:relative;
+	margin-top:7px;
+	padding-left:8px;
+}
+.bullet-list3 li:first-child {margin-top:0;}
+.bullet-list3 li:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0;
+	top:10px;
+	width:3px;
+	height:3px;
+	background-color:#555;
+	border-radius:50%;
+}
+
 /* 썸네일 리스트 */
 .thumb-list1 {padding-top:15px;}
 .thumb-list1 .thumb-item {
@@ -3401,9 +3419,8 @@ body,
 }
 .complete-area .title em {font-weight:900;}
 .complete-area p {
-	margin-top:10px;
+	margin-top:14px;
 	color:#737373;
-	font-weight:600;
 	line-height:1.5;
 }
 
@@ -3850,7 +3867,8 @@ body,
 	text-align:left;
 }
 .letter-set .btn-letter:first-child {margin-top:0;}
-.letter-set .btn-letter:before {
+.letter-set .btn-letter:before,
+.letter-set .btn-letter::before {
 	content:'';
 	display:block;
 	position:absolute;
@@ -3872,10 +3890,9 @@ body,
 	font-size:14px;
 	font-weight:600;
 }
-.letter-set .btn-letter.on:before {
-	background-position:-214px -226px;
-}
-.letter-set .bullet-list1 {margin-top:16px;}
+.letter-set .btn-letter.on:before,
+.letter-set .btn-letter.on::before {background-position:-214px -226px;}
+.letter-set .bullet-list3 {margin-top:18px;}
 
 /* 정보확인 (MA-09.06.02.html) */
 .info-reset {
