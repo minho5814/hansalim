@@ -6,7 +6,6 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Lotte Finance Vietnam</title>
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
-	<link rel="stylesheet" type="text/css" href="../css/psh.css"><!-- 박수현 -->
 	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="../js/jquery-ui.1.12.1.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
@@ -31,7 +30,7 @@
 				<button type="button" class="btn-letter">큰 글자</button>
 				<button type="button" class="btn-letter">아주 큰 글자</button>
 			</div>
-			<ul class="bullet-list1">
+			<ul class="bullet-list3">
 				<li>설정된 글자 크기는 일부 특정화면에만 적용되며, 버튼혹은 제목 등의 크기에는 적용되지 않습니다.</li>
 				<li>글자크기 확대 시, 의도되지 않은 줄내림 등으로 일부영역이 다소 어긋나 보일 수 있습니다.</li>
 			</ul>
@@ -39,10 +38,19 @@
 	</div>
 
 	<div class="bottom-fixed-area">
-		<a href="#" class="btn-text type1 height">확인</a>
+		<a href="MA-09.03.01.1.html" class="btn-text type1 height">확인</a>
 	</div>
 
 </div>
+
+<script>
+$(document).ready(function(){
+	$('.btn-letter').click(function(){
+		/* 글자크기 버튼 */
+		$(this).addClass('on').siblings('.btn-letter').removeClass('on');
+	});
+});
+</script>
 
 </body>
 
