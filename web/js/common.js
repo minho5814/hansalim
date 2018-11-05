@@ -255,7 +255,7 @@ $(document).ready(function(){
 });
 
 
-$(window).on('load', function(){
+$(window).load(function(){
 	/* 화면 로드시 노출되는 팝업 */
 	$('.loadPopup').show();
 });

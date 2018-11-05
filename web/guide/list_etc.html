@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Lotte Finance Vietnam</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.1.12.1.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/plugin_set.js"></script>
+
+	<style>
+		body {
+			padding:0 20px 100px;
+			box-sizing:border-box;
+		}
+		h1 {
+			margin:30px -20px 0;
+			padding:0 20px;
+			background-color:#000;
+			color:#fff;
+			font-weight:600;
+			line-height:50px;
+		}
+		h1:first-child {margin-top:0;}
+		h2 {
+			padding:20px 0;
+			font-weight:600;
+		}
+	</style>
+</head>
+
+<body>
+<h1 style="margin-top:0;">소팅영역</h1>
+
+<div class="sorting-box">
+	<button type="button" class="btn on">최신순</button>
+	<button type="button" class="btn">조회순</button>
+	<button type="button" class="btn">마감순</button>
+</div>
+
+<h1>탭</h1>
+<div class="tab-warp">
+	<div class="tab-list1">
+		<span class="tab-item on">tab 01</span>
+		<span class="tab-item">tab 02</span>
+	</div>
+	<div class="tab-content">
+		<div class="tab-cont on">
+			탭 내용 01
+		</div>
+		<div class="tab-cont">
+			탭 내용 02
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<!-- 폼 리스트 -->
+<h1>폼 리스트</h1>
+<div class="form-list1">
+	<div class="form-item false"><!-- 사용불가일 경우 class="false" -->
+		<span class="false-text">사용불가</span><!-- 사용불가일 경우 추가 -->
+		<label for="Id" class="title">ID</label>
+		<input type="text" id="Id" placeholder="아이디를 입려하세요.">
+		<div class="info-text">* 영문과 숫자를 혼합하여 6자 이상이어야 합니다.</div>
+	</div>
+	<div class="form-item2">
+		<span class="title">ID</span>
+		<span class="text">lotte1</span>
+	</div>
+	<div class="form-item2">
+		<span class="title">주소</span>
+		<span class="text">360 Kim Mã, Ngọc Khánh, Ba Đình, Hà Nội</span>
+	</div>
+	<div class="form-item">
+		<label for="Advice" class="title">상담구분</label>
+		<select id="Advice">
+			<option>상담구분 선택</option>
+			<option>카드신청/발급/해지</option>
+			<option>신상정보변경</option>
+			<option>카드사용/결제</option>
+		</select>
+	</div>
+	<div class="form-item">
+		<label for="Title" class="title">상담제목</label>
+		<input type="text" id="Title" placeholder="제목을 입력해주세요.">
+		<div class="info-text">* 영문과 숫자를 혼합하여 8자 이상 16자 이하 이어야 하며, 연속 문자 혹은 아이디와 동일하게 사용하실 수 없습니다.</div>
+	</div>
+	<div class="form-item">
+		<p class="title">휴대폰번호</p>
+		<div class="otp-type">
+			<input type="text" class="text" value="089-1234-5678" readonly>
+			<a href="#" class="btn-text-round">OTP번호발급요청</a>
+		</div>
+		<div class="otp-type">
+			<input type="text" class="text" placeholder="OTP번호를 입력하세요.">
+			<a href="#" class="btn-text-round">인증확인</a>
+			<span class="time">02:48</span>
+		</div>
+	</div>
+	<div class="form-item">
+		<label for="Content" class="title">상담요청내용</label>
+		<textarea cols="" rows="" id="Content" placeholder="상담요청내용을 입력해 주세요." style="height:155px;"></textarea>
+	</div>
+	<div class="form-item">
+		<label for="File" class="title">첨부파일</label>
+		<input type="file" id="File">
+	</div>
+	<div class="form-item">
+		<div class="title">
+			<label for="Price">대출신청금액</label>
+			<button type="button" class="btn-icon btn-tool">i</button>
+		</div>
+		<div class="unit-text">
+			<input type="text" id="Price" placeholder="대출신청금액을 입력하세요.">
+			<div class="unit">VND</div>
+		</div>
+	</div>
+</div>
+
+<!-- 불릿 리스트 -->
+<h1>불릿 리스트</h1><br>
+
+<ul class="bullet-list1">
+	<li>탈퇴 시 이용하셨던 온라인서비스정보는 즉시 자동 삭제됩니다.</li>
+	<li>탈퇴하신 아이디는 영구 재가입이 불가합니다.</li>
+	<li>기타 탈퇴와 관련된 모든 정책은 Lotte Finance 온라인 회원가입 시 동의하신 이용약관과 개인정보지침 동의 내용에 따릅니다</li>
+</ul>
+
+<br></br>
+
+<ul class="bullet-list2">
+	<li>※ 연체이자율: 회원별·이용상품별 약정이율 + 최대 3%, 법정 최고금리(연 24%) 이내</li>
+	<li>※ <strong>여신금융상품 이용 시 귀하의 신용등급이 하락할 수 있습니다.</strong></li>
+	<li>※ <strong>과도한 빚, 고통의 시작입니다.</strong></li>
+	<li>※ 준법감시인 심의필 제2018-E05637호 (2018.09.18)</li>
+	<li>※ 여신금융협회 심의필 제 2018-L1h - 11680호 ( 2018.09.20 )</li>
+</ul>
+
+
+
+
+<br><br>
+<!-- 스크롤시 고정 영역 -->
+<div class="scroll-fix-tab">
+	<div class="tab-scroll-x fix-tab">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<a href="#" class="swiper-slide on"><span class="text">TOP10</span></a>
+				<a href="#" class="swiper-slide"><span class="text">카드신청/발급/해지</span></a>
+				<a href="#" class="swiper-slide"><span class="text">신상정보변경</span></a>
+				<a href="#" class="swiper-slide"><span class="text">카드사용/결제</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>

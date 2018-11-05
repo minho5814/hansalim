@@ -1,0 +1,1342 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!--
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+	-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>롯데카드 작업현황판</title>
+
+	<style type="text/css">
+		body,div,h1,h2,th,td {margin:0;padding:0;color:#333;font-size:12px;line-height:1.5;font-family:'돋움',dotum,sans-serif;}
+		a {color:#2277ee;text-decoration:none;}
+		a:hover,
+		a:focus {color:#e92e1a;text-decoration:underline;}
+		a:active {text-decoration:underline;}
+
+		.header h1 {margin:10px 10px 0;font-size:20px;color:#000;}
+
+		#total {margin:0 50px 10px 0;color:#999;font-size:15px;text-align:right;}
+		#total .comple {color:#000;}
+
+		body {padding-bottom:30px;}
+
+		.section {margin-top:-1px;}
+		.title {height:30px;padding:0 10px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background-color:#ddd;line-height:30px;cursor:pointer;}
+		.title span {font-weight:normal;}
+
+		.stat-text {
+			padding:20px 20px 0;
+		}
+		.stat-text span {
+			display:inline-block;
+			padding:5px 10px;
+			margin-right:10px;
+		}
+
+		table {width:100%;border-collapse:collapse;border-spacing:0;}
+		table tr:hover {background-color:#fafafa;}
+		table tr:hover a {color:#e92e1a;}
+		table th,
+		table td {padding:5px;border-bottom:1px solid #ddd;border-left:1px solid #ddd;}
+		table th {background-color:#eee;}
+		.date,
+		.stat {text-align:center;}
+		.right {text-align:right;}
+		.False {background-color:#efbdbd !important;}
+		.ing td {background-color:#f2f9c1;}
+	</style>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			/* 작업페이지/전체 페이지 */
+			var txtAll = $('.stat').text().length;
+			var minLen = $('.Guide tbody tr').length + $('.False').length;
+			$('#total .total').text($('tbody tr').length - minLen);
+			$('#total .comple').text(txtAll);
+
+			/* 작업페이지/섹션별 페이지 */
+			$('.section').each(function(){
+				var txtIdx = $(this).find('.stat').text().length;
+				var txtLengs = $(this).find('tbody tr').length;
+				$(this).find('.title').append(' <span>(' + txtIdx + '/' + txtLengs + ')</span>');
+			});
+
+			/* 진행중 페이지 */
+			var FalseLen = $('.IngLen').html($('.ing').length);
+
+			/* 진행불가 */
+			$('.stat-text').append('<span class="False">진행불가</span> ' + $('.False').length);
+
+			/* Toggle */
+			$('.title').click(function(){
+				$(this).parent().find('.content').slideToggle(200);
+			});
+		});
+	</script>
+</head>
+
+<body>
+<div class="header">
+	<h1>롯데카드 작업현황 (2018-10-22) ｜ front_v1.00 [ 작업완료 : ☆ ] - [ 검수완료 : ★ ]</h1>
+	<div class="stat-text">
+		<span style="background-color:#f2f9c1;">진행중</span><span class="IngLen">0</span>
+	</div>
+</div>
+
+<div id="total">( Total : <span class="comple"></span> / <span class="total"></span> )</div>
+
+
+<!-- 가이드 -->
+<div class="section Guide">
+	<h2 class="title">Guide</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:10%;">
+				<col style="width:18%;">
+				<col style="width:10%;">
+				<col style="width:10%;">
+				<col style="width:12%;">
+				<col style="width:12%;">
+				<col style="width:7%;">
+				<col style="width:7%;">
+				<col style="width:14%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">2depth</th>
+					<th scope="col">3depth</th>
+					<th scope="col">4depth</th>
+					<th scope="col">5depth</th>
+					<th scope="col">path</th>
+					<th scope="col">file</th>
+					<th scope="col">stat</th>
+					<th scope="col">date</th>
+					<th scope="col">note</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="3">레이아웃</td>
+					<td>기본</td>
+					<td></td>
+					<td></td>
+					<td>guide/</td>
+					<td class="right"><a target="_blank" href="guide/layout01.html">layout01.html</a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>상세 - 기본</td>
+					<td></td>
+					<td></td>
+					<td>guide/</td>
+					<td class="right"><a target="_blank" href="guide/layout02.html">layout02.html</a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>상세 - 비주얼영역</td>
+					<td></td>
+					<td></td>
+					<td>guide/</td>
+					<td class="right"><a target="_blank" href="guide/layout03.html">layout03.html</a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>버튼/아이콘</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>guide/</td>
+					<td class="right"><a target="_blank" href="guide/button_icon.html">button_icon.html</a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>팝업</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>guide/</td>
+					<td class="right"><a target="_blank" href="guide/popup.html">popup.html</a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>리스트/타이틀/기타</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>guide/</td>
+					<td class="right"><a target="_blank" href="guide/list_etc.html">list_etc.html</a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!-- 메인 -->
+<div class="section">
+	<h2 class="title">Main</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:10%;">
+				<col style="width:18%;">
+				<col style="width:10%;">
+				<col style="width:10%;">
+				<col style="width:12%;">
+				<col style="width:12%;">
+				<col style="width:7%;">
+				<col style="width:7%;">
+				<col style="width:14%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">2depth</th>
+					<th scope="col">3depth</th>
+					<th scope="col">4depth</th>
+					<th scope="col">5depth</th>
+					<th scope="col">path</th>
+					<th scope="col">file</th>
+					<th scope="col">stat</th>
+					<th scope="col">date</th>
+					<th scope="col">note</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>로그인전</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>main/</td>
+					<td class="right"><a target="_blank" href="main/index01.html">index01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-24</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>로그인후</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>main/</td>
+					<td class="right"><a target="_blank" href="main/index02.html">index02.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-24</td>
+					<td>박스 메뉴 아이콘 변경될 수 있음</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!-- 메뉴 -->
+<div class="section">
+	<h2 class="title">메뉴</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:10%;">
+				<col style="width:18%;">
+				<col style="width:10%;">
+				<col style="width:10%;">
+				<col style="width:12%;">
+				<col style="width:12%;">
+				<col style="width:7%;">
+				<col style="width:7%;">
+				<col style="width:14%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">2depth</th>
+					<th scope="col">3depth</th>
+					<th scope="col">4depth</th>
+					<th scope="col">5depth</th>
+					<th scope="col">path</th>
+					<th scope="col">file</th>
+					<th scope="col">stat</th>
+					<th scope="col">date</th>
+					<th scope="col">note</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>로그인전</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>menu/</td>
+					<td class="right"><a target="_blank" href="menu/MA-01.01.01.html">MA-01.01.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-31</td>
+					<td>
+						상단 오른쪽 메뉴 버튼 클릭 후 확인<br>
+						링크 미연결
+					</td>
+				</tr>
+				<tr>
+					<td>로그인후</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>menu/</td>
+					<td class="right"><a target="_blank" href="menu/MA-01.02.01.html">MA-01.02.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-31</td>
+					<td>
+						상단 오른쪽 메뉴 버튼 클릭 후 확인<br>
+						링크 미연결
+					</td>
+				</tr>
+				<tr>
+					<td>마이메뉴 설정</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>menu/</td>
+					<td class="right"><a target="_blank" href="menu/MA-01.02.02.html">MA-01.02.02.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-31</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!-- 회원관리 -->
+<div class="section">
+	<h2 class="title">회원관리</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:10%;">
+				<col style="width:18%;">
+				<col style="width:10%;">
+				<col style="width:10%;">
+				<col style="width:12%;">
+				<col style="width:12%;">
+				<col style="width:7%;">
+				<col style="width:7%;">
+				<col style="width:14%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">2depth</th>
+					<th scope="col">3depth</th>
+					<th scope="col">4depth</th>
+					<th scope="col">5depth</th>
+					<th scope="col">path</th>
+					<th scope="col">file</th>
+					<th scope="col">stat</th>
+					<th scope="col">date</th>
+					<th scope="col">note</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="5">로그인</td>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.01.00.1.html">MA-02.01.00.1.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-01</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="4">ID/PW 로그인</td>
+					<td rowspan="2">아이디찾기</td>
+					<td>휴대폰OTP인증</td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.01.01.2.html">MA-02.01.01.2.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-30</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>결과</td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.01.01.2_2.html">MA-02.01.01.2_2.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-30</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td rowspan="2">비밀번호변경</td>
+					<td>휴대폰OTP인증</td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.01.01.3.html">MA-02.01.01.3.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-30</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>결과</td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.01.01.3_2.html">MA-02.01.01.3_2.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-30</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td rowspan="7">회원가입</td>
+					<td>가입방법선택</td>
+					<td></td>
+					<td></td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.02.01.html">MA-02.02.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-29</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td rowspan="3">간편회원가입</td>
+					<td>SNS인증</td>
+					<td></td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.02.02.1.html">MA-02.02.02.1.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-26</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td>휴대폰OTP인증</td>
+					<td></td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.02.02.2.html">MA-02.02.02.2.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-29</td>
+					<td>
+						박수현<br>
+						하단 Confirm OTP number 버튼 클릭시 메세지 출력
+					</td>
+				</tr>
+				<tr>
+					<td>개인정보등록</td>
+					<td></td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.02.02.3.html">MA-02.02.02.3.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-29</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td rowspan="3">정식회원가입</td>
+					<td>본인인증</td>
+					<td></td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.02.03.1.html">MA-02.02.03.1.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-29</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td>휴대폰OTP인증</td>
+					<td></td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.02.03.2.html">MA-02.02.03.2.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-29</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>개인정보등록</td>
+					<td></td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.02.03.3.html">MA-02.02.03.3.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-29</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="6">개인정보관리</td>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.03.01.html">MA-02.03.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-29</td>
+					<td>폼 리스트 타이틀 포함</td>
+				</tr>
+				<tr>
+					<td>본인인증</td>
+					<td></td>
+					<td></td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.03.02.html">MA-02.03.02.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-29</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td>개인정보변경</td>
+					<td></td>
+					<td></td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.03.03.html">MA-02.03.03.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-29</td>
+					<td>폼 리스트 타이틀 포함</td>
+				</tr>
+				<tr>
+					<td>비밀번호변경</td>
+					<td></td>
+					<td></td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.03.04.html">MA-02.03.04.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-29</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td rowspan="2">회원탈회</td>
+					<td>안내</td>
+					<td></td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.03.05.1.html">MA-02.03.05.1.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-30</td>
+					<td>
+						박수현<br>
+						온라인회원탈퇴 레이어팝업
+					</td>
+				</tr>
+				<tr>
+					<td>완료</td>
+					<td></td>
+					<td>member/</td>
+					<td class="right"><a target="_blank" href="member/MA-02.03.05.2.html">MA-02.03.05.2.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-29</td>
+					<td>박수현</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!-- 마이페이지 -->
+<div class="section">
+	<h2 class="title">마이페이지</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:10%;">
+				<col style="width:18%;">
+				<col style="width:10%;">
+				<col style="width:10%;">
+				<col style="width:12%;">
+				<col style="width:12%;">
+				<col style="width:7%;">
+				<col style="width:7%;">
+				<col style="width:14%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">2depth</th>
+					<th scope="col">3depth</th>
+					<th scope="col">4depth</th>
+					<th scope="col">5depth</th>
+					<th scope="col">path</th>
+					<th scope="col">file</th>
+					<th scope="col">stat</th>
+					<th scope="col">date</th>
+					<th scope="col">note</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="ing">
+					<td>마이페이지메인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>mypage/</td>
+					<td class="right"><a target="_blank" href="mypage/MA-03.01.html">MA-03.01.html</a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td>이벤트 슬라이드 영역 협의 후 진행</td>
+				</tr>
+				<tr>
+					<td>대출이용내역</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>mypage/</td>
+					<td class="right"><a target="_blank" href="mypage/MA-03.02.01.html">MA-03.02.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-02</td>
+					<td>
+						박수현<br>
+						탭 스크립트 영역
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">이벤트참여내역</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td>mypage/</td>
+					<td class="right"><a target="_blank" href="mypage/MA-03.04.01.html">MA-03.04.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-26</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td>mypage/</td>
+					<td class="right"><a target="_blank" href="mypage/MA-03.04.02.html">MA-03.04.02.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-26</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td>상담내역조회</td>
+					<td>아코디언</td>
+					<td></td>
+					<td></td>
+					<td>mypage/</td>
+					<td class="right"><a target="_blank" href="mypage/MA-03.05.html">MA-03.05.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-26</td>
+					<td></td>
+				</tr>
+				<tr class="False">
+					<td>MY카드발급조회</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>mypage/</td>
+					<td class="right"><a target="_blank" href="mypage/.html"></a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td>2차 진행</td>
+				</tr>
+				<tr class="False">
+					<td>MY카드설정관리</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>mypage/</td>
+					<td class="right"><a target="_blank" href="mypage/.html"></a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td>2차 진행</td>
+				</tr>
+				<tr class="False">
+					<td>카드분실신고</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>mypage/</td>
+					<td class="right"><a target="_blank" href="mypage/.html"></a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td>2차 진행</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!-- 롯데카드소개 -->
+<div class="section">
+	<h2 class="title">롯데카드소개</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:10%;">
+				<col style="width:18%;">
+				<col style="width:10%;">
+				<col style="width:10%;">
+				<col style="width:12%;">
+				<col style="width:12%;">
+				<col style="width:7%;">
+				<col style="width:7%;">
+				<col style="width:14%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">2depth</th>
+					<th scope="col">3depth</th>
+					<th scope="col">4depth</th>
+					<th scope="col">5depth</th>
+					<th scope="col">path</th>
+					<th scope="col">file</th>
+					<th scope="col">stat</th>
+					<th scope="col">date</th>
+					<th scope="col">note</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>CEO인사말</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>company/</td>
+					<td class="right"><a target="_blank" href="company/MA-04.01.html">MA-04.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-31</td>
+					<td>
+						박수현<br>
+						서명 이미지 png로 수급필요
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">회사개요</td>
+					<td>롯데카드</td>
+					<td></td>
+					<td></td>
+					<td>company/</td>
+					<td class="right"><a target="_blank" href="company/MA-04.02.01.html">MA-04.02.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-24</td>
+					<td></td>
+				</tr>
+				<tr class="False">
+					<td>Lotte Finance Vietnam</td>
+					<td></td>
+					<td></td>
+					<td>company/</td>
+					<td class="right"><a target="_blank" href="company/.html"></a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr class="ing">
+					<td>회사연혁</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>company/</td>
+					<td class="right"><a target="_blank" href="company/MA-04.03.html">MA-04.03.html</a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!-- 대출 -->
+<div class="section">
+	<h2 class="title">대출</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:10%;">
+				<col style="width:18%;">
+				<col style="width:10%;">
+				<col style="width:10%;">
+				<col style="width:12%;">
+				<col style="width:12%;">
+				<col style="width:7%;">
+				<col style="width:7%;">
+				<col style="width:14%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">2depth</th>
+					<th scope="col">3depth</th>
+					<th scope="col">4depth</th>
+					<th scope="col">5depth</th>
+					<th scope="col">path</th>
+					<th scope="col">file</th>
+					<th scope="col">stat</th>
+					<th scope="col">date</th>
+					<th scope="col">note</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>loan/</td>
+					<td class="right"><a target="_blank" href="loan/MA-05.01.01.html">MA-05.01.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-02</td>
+					<td>상단 메뉴 고정영역</td>
+				</tr>
+				<tr>
+					<td>목록</td>
+					<td>아코디언2</td>
+					<td></td>
+					<td></td>
+					<td>loan/</td>
+					<td class="right"><a target="_blank" href="loan/MA-05.01.02.html">MA-05.01.02.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-01</td>
+					<td>
+						상품안내 및 레이어 내용 수급 대기
+					</td>
+				</tr>
+				<tr class="False">
+					<td>대출약관안내</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>loan/</td>
+					<td class="right"><a target="_blank" href="loan/.html"></a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td>컨텐츠 추후 추가 예정</td>
+				</tr>
+				<tr>
+					<td rowspan="2">대출접수</td>
+					<td>입력</td>
+					<td></td>
+					<td></td>
+					<td>loan/</td>
+					<td class="right"><a target="_blank" href="loan/MA-05.03.01.html">MA-05.03.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-02</td>
+					<td>달력 팝업</td>
+				</tr>
+				<tr>
+					<td>완료</td>
+					<td></td>
+					<td></td>
+					<td>loan/</td>
+					<td class="right"><a target="_blank" href="loan/MA-05.03.02.html">MA-05.03.02.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-02</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td>대출프로세스</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>loan/</td>
+					<td class="right"><a target="_blank" href="loan/MA-05.04.html">MA-05.04.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-02</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td>대출시물레이션</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>loan/</td>
+					<td class="right"><a target="_blank" href="loan/MA-05.05.01.html">MA-05.05.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-02</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>예상상환스케줄</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>loan/</td>
+					<td class="right"><a target="_blank" href="loan/MA-05.06.01.html">MA-05.06.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-02</td>
+					<td>
+						초기화 레이어팝업<br>
+						초기화확인 레이어팝업<br>
+						계산하기 레이어팝업
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!-- 이벤트 -->
+<div class="section">
+	<h2 class="title">이벤트</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:10%;">
+				<col style="width:18%;">
+				<col style="width:10%;">
+				<col style="width:10%;">
+				<col style="width:12%;">
+				<col style="width:12%;">
+				<col style="width:7%;">
+				<col style="width:7%;">
+				<col style="width:14%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">2depth</th>
+					<th scope="col">3depth</th>
+					<th scope="col">4depth</th>
+					<th scope="col">5depth</th>
+					<th scope="col">path</th>
+					<th scope="col">file</th>
+					<th scope="col">stat</th>
+					<th scope="col">date</th>
+					<th scope="col">note</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="6">이벤트</td>
+					<td rowspan="2">진행중이벤트</td>
+					<td>목록</td>
+					<td></td>
+					<td>event/</td>
+					<td class="right"><a target="_blank" href="event/MA-07.01.01.html">MA-07.01.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-24</td>
+					<td>상단 소팅 고정영역</td>
+				</tr>
+				<tr>
+					<td>상세</td>
+					<td></td>
+					<td>event/</td>
+					<td class="right"><a target="_blank" href="event/MA-07.01.02.html">MA-07.01.02.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-24</td>
+					<td>
+						공유하기 레이어<br>
+						하단 버튼 고정 영역
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">지난이벤트</td>
+					<td>목록</td>
+					<td></td>
+					<td>event/</td>
+					<td class="right"><a target="_blank" href="event/MA-07.02.01.html">MA-07.02.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-24</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>상세</td>
+					<td></td>
+					<td>event/</td>
+					<td class="right"><a target="_blank" href="event/MA-07.02.02.html">MA-07.02.02.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-24</td>
+					<td>공유하기 레이어</td>
+				</tr>
+				<tr>
+					<td rowspan="2">당첨자발표</td>
+					<td>목록</td>
+					<td></td>
+					<td>event/</td>
+					<td class="right"><a target="_blank" href="event/MA-07.03.01.html">MA-07.03.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-02</td>
+					<td>
+						탭 고정영역<br>
+						당첨된 이벤트 탭 이동 경로 확인 요망
+					</td>
+				</tr>
+				<tr>
+					<td>상세</td>
+					<td></td>
+					<td>event/</td>
+					<td class="right"><a target="_blank" href="event/MA-07.03.02.html">MA-07.03.02.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-26</td>
+					<td>박수현</td>
+				</tr>
+				<tr class="False">
+					<td>프로모션</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>event/</td>
+					<td class="right"><a target="_blank" href="event/.html"></a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!-- 고객센터 -->
+<div class="section">
+	<h2 class="title">고객센터</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:10%;">
+				<col style="width:18%;">
+				<col style="width:10%;">
+				<col style="width:10%;">
+				<col style="width:12%;">
+				<col style="width:12%;">
+				<col style="width:7%;">
+				<col style="width:7%;">
+				<col style="width:14%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">2depth</th>
+					<th scope="col">3depth</th>
+					<th scope="col">4depth</th>
+					<th scope="col">5depth</th>
+					<th scope="col">path</th>
+					<th scope="col">file</th>
+					<th scope="col">stat</th>
+					<th scope="col">date</th>
+					<th scope="col">note</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="2">공지사항</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td>customer/</td>
+					<td class="right"><a target="_blank" href="customer/MA-08.01.01.html">MA-08.01.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-25</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td>customer/</td>
+					<td class="right"><a target="_blank" href="customer/MA-08.01.02.html">MA-08.01.02.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-29</td>
+					<td>
+						박수현<br>
+						상단 해더 회색영역
+					</td>
+				</tr>
+				<tr>
+					<td>FAQ</td>
+					<td>아코디언</td>
+					<td></td>
+					<td></td>
+					<td>customer/</td>
+					<td class="right"><a target="_blank" href="customer/MA-08.02.01.html">MA-08.02.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-25</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="4">고객상담</td>
+					<td>안내 페이지</td>
+					<td></td>
+					<td></td>
+					<td>customer/</td>
+					<td class="right"><a target="_blank" href="customer/MA-08.03.01.html">MA-08.03.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-25</td>
+					<td>박수현</td>
+				</tr>
+				<tr class="False">
+					<td>전화상담</td>
+					<td></td>
+					<td></td>
+					<td>customer/</td>
+					<td class="right"><a target="_blank" href="customer/.html"></a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr class="False">
+					<td>챗팅상담</td>
+					<td></td>
+					<td></td>
+					<td>customer/</td>
+					<td class="right"><a target="_blank" href="customer/.html"></a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>이메일상담</td>
+					<td></td>
+					<td></td>
+					<td>customer/</td>
+					<td class="right"><a target="_blank" href="customer/MA-08.03.04.html">MA-08.03.04.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-26</td>
+					<td>
+						폼 리스트<br>
+						취소 레이어팝업<br>
+						취소확인 레이어팝업<br>
+						확인 레이어팝업
+					</td>
+				</tr>
+				<tr>
+					<td>지점안내</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>customer/</td>
+					<td class="right"><a target="_blank" href="customer/MA-08.04.html">MA-08.04.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-10-25</td>
+					<td>
+						박수현<br>
+						구글맵 영역
+					</td>
+				</tr>
+				<tr class="False">
+					<td>App이용안내</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>customer/</td>
+					<td class="right"><a target="_blank" href="customer/.html"></a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td>콘텐츠 추후 추가 예정</td>
+				</tr>
+				<tr class="False">
+					<td>Web이용안내</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>customer/</td>
+					<td class="right"><a target="_blank" href="customer/.html"></a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td>콘텐츠 추후 추가 예정</td>
+				</tr>
+				<tr class="False">
+					<td>푸시알림</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>customer/</td>
+					<td class="right"><a target="_blank" href="customer/.html"></a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!-- 설정 -->
+<div class="section">
+	<h2 class="title">설정</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:10%;">
+				<col style="width:18%;">
+				<col style="width:10%;">
+				<col style="width:10%;">
+				<col style="width:12%;">
+				<col style="width:12%;">
+				<col style="width:7%;">
+				<col style="width:7%;">
+				<col style="width:14%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">2depth</th>
+					<th scope="col">3depth</th>
+					<th scope="col">4depth</th>
+					<th scope="col">5depth</th>
+					<th scope="col">path</th>
+					<th scope="col">file</th>
+					<th scope="col">stat</th>
+					<th scope="col">date</th>
+					<th scope="col">note</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>setting/</td>
+					<td class="right"><a target="_blank" href="setting/MA-09.01.01.html">MA-09.01.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-05</td>
+					<td>
+						자동로그인설정 툴팁팝업<br>
+						앱접근권한설정 레이어팝업<br>
+						시작화면건너뛰기 레이어팝업<br>
+						App등록계정초기화 툴팁팝업<br>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="6">로그인.인증 </td>
+					<td rowspan="2">자동로그인설정</td>
+					<td>휴대폰OTP인증</td>
+					<td></td>
+					<td>setting/</td>
+					<td class="right"><a target="_blank" href="setting/MA-09.02.01.html">MA-09.02.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-05</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td>완료</td>
+					<td></td>
+					<td>setting/</td>
+					<td class="right"><a target="_blank" href="setting/MA-09.02.01.1.html">MA-09.02.01.1.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-05</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td rowspan="2">PIN번호설정</td>
+					<td>입력</td>
+					<td></td>
+					<td>setting/</td>
+					<td class="right"><a target="_blank" href="setting/MA-09.02.02.html">MA-09.02.02.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-05</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td>완료</td>
+					<td></td>
+					<td>setting/</td>
+					<td class="right"><a target="_blank" href="setting/MA-09.02.02.1.html">MA-09.02.02.1.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-05</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td rowspan="2">지문인증설정</td>
+					<td>등록</td>
+					<td></td>
+					<td>setting/</td>
+					<td class="right"><a target="_blank" href="setting/MA-09.02.03.html">MA-09.02.03.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-05</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td>완료</td>
+					<td></td>
+					<td>setting/</td>
+					<td class="right"><a target="_blank" href="setting/MA-09.02.03.1.html">MA-09.02.03.1.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-05</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td rowspan="2">편의기능</td>
+					<td>글자크기설정</td>
+					<td></td>
+					<td></td>
+					<td>setting/</td>
+					<td class="right"><a target="_blank" href="setting/MA-09.03.01.html">MA-09.03.01.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-05</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td>완료</td>
+					<td></td>
+					<td></td>
+					<td>setting/</td>
+					<td class="right"><a target="_blank" href="setting/MA-09.03.01.1.html">MA-09.03.01.1.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-05</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td rowspan="2">계정초기화</td>
+					<td>APP등록계정초기화</td>
+					<td></td>
+					<td></td>
+					<td>setting/</td>
+					<td class="right"><a target="_blank" href="setting/MA-09.06.02.html">MA-09.06.02.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-05</td>
+					<td>박수현</td>
+				</tr>
+				<tr>
+					<td>완료</td>
+					<td></td>
+					<td></td>
+					<td>setting/</td>
+					<td class="right"><a target="_blank" href="setting/MA-09.06.02.1.html">MA-09.06.02.1.html</a></td>
+					<td class="stat">☆</td>
+					<td class="date">2018-11-05</td>
+					<td>박수현</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!-- 기타 -->
+<div class="section">
+	<h2 class="title">기타</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:10%;">
+				<col style="width:18%;">
+				<col style="width:10%;">
+				<col style="width:10%;">
+				<col style="width:12%;">
+				<col style="width:12%;">
+				<col style="width:7%;">
+				<col style="width:7%;">
+				<col style="width:14%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">2depth</th>
+					<th scope="col">3depth</th>
+					<th scope="col">4depth</th>
+					<th scope="col">5depth</th>
+					<th scope="col">path</th>
+					<th scope="col">file</th>
+					<th scope="col">stat</th>
+					<th scope="col">date</th>
+					<th scope="col">note</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>에러페이지</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>etc/</td>
+					<td class="right"><a target="_blank" href="etc/.html">.html</a></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+</body>
+
+</html>

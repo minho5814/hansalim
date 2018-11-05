@@ -1513,7 +1513,6 @@ body,
 	position:relative;
 	padding:12px 0;
 	font-size:28px;
-	font-weight:900;
 	line-height:1.3;
 }
 .s-title-area .s-title:before {
@@ -2886,6 +2885,38 @@ body,
 	padding-top:5px;
 	color:#555;
 }
+
+/* 회사연혁 (MA-04.03.html) */
+.history-wrap,
+.history-wrap body,
+.history-wrap .wrapper {
+	background-color:#f1f1f1;
+}
+
+.history-swiper {
+	overflow:hidden;
+}
+.history-swiper .swiper-container {
+	width:200%;
+	margin-left:-50%;
+}
+.history-swiper .swiper-slide {
+	padding:10px 10px 30px;
+}
+.history-swiper .history-item {
+	overflow:hidden;
+	height:320px;
+	border-radius:10px;
+	background-color:#fff;
+	box-shadow:3px 3px 6px 1px rgba(0,0,0,.2);
+}
+.history-swiper .history-item .date {}
+.history-swiper .history-item .text-area {}
+.history-swiper .history-item .text-area strong {}
+.history-swiper .history-item .img-area {}
+.history-swiper .history-item .img-area img {}
+.history-swiper {}
+.history-swiper {}
 
 /* ============================================================================================
 	마이페이지

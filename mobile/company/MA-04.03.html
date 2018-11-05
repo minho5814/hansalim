@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en" class="history-wrap">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Lotte Finance Vietnam</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.1.12.1.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/plugin_set.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<a href="#" class="btn-page-prev">Back</a>
+		<button type="button" class="btn-gnb">Menu Button</button>
+	</div>
+
+	<div class="container">
+		<div class="s-title-area">
+			<h1 class="s-title">회사연혁</h1>
+		</div>
+
+		<div class="content wide">
+			<div class="history-swiper">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" data="Oct.2017">
+							<div class="history-item">
+								<div class="date">Oct.07</div>
+								<div class="text-area">
+									동계올림픽<br>
+									최초, 평창올림픽<br>
+									<strong>비자 롯데카드<br>
+									웨어러블</strong> 출시
+								</div>
+								<div class="img-area">
+									<img src="../images/temp/@img_history01.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide" data="Oct.2018">
+							<div class="history-item">
+								<div class="date">Oct.08</div>
+								<div class="text-area">
+									롯데카드,<br>
+									글로벌 신용카드<br>
+									데이터 보안 인증<br>
+									<strong>PIC DSS 인증</strong> 획득
+								</div>
+								<div class="img-area">
+									<img src="../images/temp/@img_history01.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide" data="Oct.2019">
+							<div class="history-item">
+								<div class="date">Oct.09</div>
+								<div class="text-area">
+									아주경제<br>
+									금융증권 대상<br>
+									사회공헌부문<br>
+									<strong>대상 수상</strong>
+								</div>
+								<div class="img-area">
+									<img src="../images/temp/@img_history01.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="now-years">
+					<div class="label">Oct.2018</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+$(document).ready(function(){
+	$('.history-swiper').each(function(){
+		var slide = $(this).find('.swiper-container');
+		var swiper = new Swiper(slide, {
+			slidesPerView: 3,
+			spaceBetween: 0,
+			centeredSlides: true,
+			on: {
+				init: function () {
+					
+				},
+			}
+		});
+
+		var nowData = $(this).find('.swiper-slide-active').attr('data');
+		$('.now-years .label').html(nowData);
+
+		swiper.on('slideChangeTransitionEnd', function () {
+			var data = $('.swiper-slide-active').attr('data');
+			$('.now-years .label').html(data);
+			console.log(data);
+		});
+	});
+
+});
+</script>
+</body>
+
+</html>
