@@ -1,2 +1,44 @@
 @charset 'utf-8';
 
+.signin-content .botton-menu .link:first-child {font-weight:900;}
+
+.exposure-box input {font-weight:600;}
+/* 개인정보등록 */
+s-text-area type2 .s-text strong {font-weight:600;}
+/* //개인정보등록 */
+.btn-text.type2.sm {font-weight:600;}
+
+.tab-list1 .tab-item.on {font-weight:600;}
+
+.info-select-area .fcolor {font-weight:900;}
+
+.use-history .use-title h2 {font-weight:600;}
+
+.accordion-list1 .lists .list-item .answer.type2 .text-box.type2 {font-weight:600;}
+/* CEO 인사말, 회사소개 */
+.s-title-area .s-title {font-weight:900;}
+/* //CEO 인사말, 회사소개 */
+
+/* font-size 오타 */
+.box-list3 .box-item .price-area .price .unit {}
+/* //font-size 오타 */
+
+.loan-list-wrap .info-box .box-item .title {font-weight:600;}
+
+.loan-list-wrap .info-box .box-item .cont {font-weight:600;}
+
+.loan-list-wrap .info-box .box-item .cont .value {font-weight:900;}
+
+.complete-area p {font-weight:400;}
+
+.form-list-wrap3 .form-list .form-item .title .label + strong {font-weight:600;}
+
+.sorting-box .btn.on {font-weight:900;}
+
+/* 공지사항 */
+.box-list2 .box-item .b-title p {font-weight:600;}
+/* //공지사항 */
+
+/* 디자인 | 5.0.12 (짝대기) 없음 */
+.setting-list .setting-item .s-title .text .ver-number {font-weight:400;}
+/* //디자인 | 5.0.12 (짝대기) 없음 */
