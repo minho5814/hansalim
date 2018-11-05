@@ -255,6 +255,11 @@ $(document).ready(function(){
 });
 
 
+$(window).load(function(){
+	/* 화면 로드시 노출되는 팝업 */
+	$('.loadPopup').show();
+});
+
 $(window).scroll(function(){
 	var winTop = $(window).scrollTop();
 	var headH = $('.header').outerHeight();

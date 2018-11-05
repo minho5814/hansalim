@@ -2317,10 +2317,12 @@ body,
 	position:absolute;
 	left:0;
 	right:0;
-	bottom:-20px;
+	top:96px;
 	font-size:10px;
 	font-weight:600;
+	line-height:1.2;
 }
+.signin-slide .form-write-box.type2 .info-text {top:108px;}
 .signin-slide .form-write-box .info-text.error {color:#d93e5f;}
 
 .signin-slide .fingerprint-area {
