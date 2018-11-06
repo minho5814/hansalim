@@ -170,6 +170,10 @@ body,
 	min-width:1260px;
 }
 
+.container {
+	padding-top:240px;
+}
+
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	해더
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -187,7 +191,7 @@ body,
 	position:relative;
 	width:100%;
 	height:110px;
-	max-width:1300px;
+	max-width:1280px;
 	margin:0 auto;
 }
 .header .head-inner .h-logo {
@@ -322,7 +326,6 @@ body,
 	width:100%;
 	max-width:1300px;
 	margin:0 auto;
-	background-color:#fff;
 }
 .header .Breadcrumbs .crumb-item {
 	float:left;
@@ -347,49 +350,99 @@ body,
 .header .Breadcrumbs .crumb-item {}
 .header .Breadcrumbs .crumb-item {}
 .header .Breadcrumbs {}
-.header.page-title-area {}
-.header .page-title-area {}
 
 .header .page-title-area {
+	height:90px;
+	background-color:#fff;
+	font-size:30px;
 	text-align:center;
+	line-height:90px;
 }
-.head-fix-box .page-title-area .inner-box {
+.header .page-title-area .inner-box {
 	display:inline-block;
 	padding-right:38px;
 	background:url(../images/icon/icon_arr_bottom01.png) no-repeat 100% 50%;
 }
-.head-fix-box .page-title-area .page-title {
-	height:90px;
+.header .page-title-area .page-title {
 	color:#111;
-	font-size:30px;
 	font-weight:600;
-	line-height:90px;
 	cursor:pointer;
 }
-.head-fix-box .page-title-area .layer {
+.header .page-title-area .layer {
 	display:none;
+}
+
+.header .btn-allmenu {
+	position:absolute;
+	right:0;
+	top:67px;
+	z-index:5;
+	width:27px;
+	height:20px;
+	box-sizing:border-box;
+	border-top:2px solid #fff;
+	border-bottom:2px solid #fff;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.header .btn-allmenu:before,
+.header .btn-allmenu::before {
+	content:'';
+	position:absolute;
+	top:50%;
+	right:0;
+	width:21px;
+	height:2px;
+	margin-top:-1px;
+	background-color:#fff;
 }
 
 /*
 	스크롤시 해더 변환
 */
-.header {
+.container,
+.header,
+.header .btn-allmenu {
 	transition:top .2s;
 }
-.scroll .header .Breadcrumbs {
+.scroll .header .head-fix-box,
+.scroll .header .page-title-area {
 	transition:all .5s;
+}
+
+.scroll .container {
+	padding-top:220px;
 }
 .scroll .header {
 	top:-110px;
 }
-.scroll .header .Breadcrumbs {
+.scroll .header .head-fix-box {
 	background-color:#653c9e;
 }
-.scroll ..header .page-title-area {
+.scroll .header .Breadcrumbs {}
+.scroll .header .page-title-area {
 	height:85px;
+	font-size:26px;
 	line-height:85px;
 	box-shadow:2px 2px 2px rgba(0,0,0,.1);
 }
+.scroll .header .page-title-area .inner-box {
+	padding-right:28px;
+	background:url(../images/icon/icon_arr_bottom02.png) no-repeat 100% 50%;
+}
+.scroll .header .Breadcrumbs .crumb-item .crumb {
+	background:url(../images/icon/icon_arr_right02.png) no-repeat 100% 50%;
+	color:#fff;
+}
+.scroll .header .Breadcrumbs .crumb-item:last-child .crumb {background:none;}
+
+.scroll .header .btn-allmenu {top:120px;}
+
+.scroll .header {}
+.scroll .header {}
+.scroll .header {}
+.scroll .header {}
 .scroll .header {}
 
 
