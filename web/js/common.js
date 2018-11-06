@@ -2,13 +2,20 @@ $(document).ready(function(){
 	/*
 		Gnb
 	*/
-	$('.gnb-area .gnb-list .item').click(function(){
-		if($(this).closest('.gnb-item').hasClass('on')){
-			
+	$('.gnb-area .gnb-list .item').mouseenter(function(){
+		$('.gnb-close').show();
+		if($('.gnb-item').hasClass('on')){
+			$('.gnb-item').removeClass('on').find('.gnb-depth').hide();
+			$(this).closest('.gnb-item').addClass('on').find('.gnb-depth').show();
 		}else{
 			$('.gnb-item').removeClass('on').find('.gnb-depth').hide();
 			$(this).closest('.gnb-item').addClass('on').find('.gnb-depth').slideDown(200);
 		}
+	});
+
+	$('.gnb-close').mouseenter(function(){
+		$('.gnb-item').removeClass('on').find('.gnb-depth').hide();
+		$('.gnb-close').hide();
 	});
 });
 

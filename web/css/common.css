@@ -251,10 +251,20 @@ body,
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	전체메뉴
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.gnb-close {
+	display:none;
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:5;
+}
 .gnb-area {
 	position:absolute;
 	right:120px;
 	bottom:0;
+	z-index:10;
 }
 .gnb-area .gnb-list {}
 .gnb-area .gnb-list:after {
@@ -274,18 +284,26 @@ body,
 	font-size:18px;
 	font-weight:600;
 	line-height:66px;
+	cursor:pointer;
+	transition:all .3s;
 }
-.gnb-area .gnb-list .gnb-item.on .item {
-	color:#ef8ffa;
-}/* on */
-.gnb-area .gnb-list .gnb-item.on .item:before {
+.gnb-area .gnb-list .gnb-item .item:before {
 	content:'';
 	position:absolute;
 	left:22px;
 	right:22px;
 	bottom:0;
-	height:5px;
+	height:0;
 	background-color:#ef8ffa;
+	opacity:0;
+	transition:all .3s;
+}
+.gnb-area .gnb-list .gnb-item.on .item {
+	color:#ef8ffa;
+}/* on */
+.gnb-area .gnb-list .gnb-item.on .item:before {
+	height:5px;
+	opacity:1;
 }
 
 .gnb-area .gnb-list .gnb-item .gnb-depth {
@@ -340,7 +358,6 @@ body,
 	line-height:40px;
 }
 .header .Breadcrumbs .crumb-item:first-child .crumb {padding-left:0;}
-.header .Breadcrumbs .crumb-item:last-child .crumb {background:none;}
 .header .Breadcrumbs .crumb-item .menu-list {
 	display:none;
 }
@@ -355,7 +372,7 @@ body,
 
 .header .page-title-area {
 	height:90px;
-	background-color:#fff;
+	background-color:rgba(255,255,255,.98);
 	font-size:30px;
 	text-align:center;
 	line-height:90px;
@@ -428,7 +445,7 @@ body,
 	height:85px;
 	font-size:26px;
 	line-height:85px;
-	box-shadow:2px 2px 2px rgba(0,0,0,.1);
+	box-shadow:2px 3px 8px rgba(0,0,0,.1);
 }
 .scroll .header .page-title-area .inner-box {
 	padding-right:28px;
@@ -438,7 +455,6 @@ body,
 	background:url(../images/icon/icon_arr_right02.png) no-repeat 100% 50%;
 	color:#fff;
 }
-.scroll .header .Breadcrumbs .crumb-item:last-child .crumb {background:none;}
 
 .scroll .header .btn-allmenu {top:120px;}
 

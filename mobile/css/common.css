@@ -395,10 +395,7 @@ select {
 	border-color:#5d30a6;
 	background-color:#5d30a6;
 }
-.btn-switch.on:before {
-	left:22px;
-}
-.btn-switch {}
+.btn-switch.on:before {left:22px;}
 
 /* 링크 */
 .link-type1 {
@@ -412,7 +409,7 @@ select {
 	content:'';
 	position:absolute;
 	right:0;
-	top:57%;
+	top:50%;
 	-webkit-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
@@ -3287,6 +3284,8 @@ body,
 ============================================================================================ */
 /* 메인 (MA-05.01.01.html) */
 .loan-wrap {
+	margin-top:-55px;
+	padding-top:55px;
 	background-color:#eaeaea;
 }
 .loan-wrap .top-menu-list {
@@ -3310,13 +3309,10 @@ body,
 
 .loan-wrap .shadow-box {
 	margin:30px 0 0 20px;
-	padding:35px 20px 40px 25px;
+	padding:25px 20px 40px 25px;
 	background-color:#fff;
 	box-shadow:0 0 50px rgba(0,0,0,.2);
 }
-.loan-wrap .shadow-box .select-area {}
-.loan-wrap .shadow-box .select-area select {margin-top:20px;}
-.loan-wrap .shadow-box .select-area select:first-child {margin-top:0;}
 .loan-wrap .shadow-box .price-area {
 	margin-top:35px;
 	color:#111;
