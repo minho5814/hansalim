@@ -165,16 +165,20 @@ select {
 ============================================================================================ */
 html,
 body,
-.wrapper {
-	min-width:1280px;
-	overflow-y:auto;
+.wrapper {height:10000px;
+	overflow-x:auto;
+	min-width:1260px;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	해더
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .header {
-	position:relative;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	min-width:1260px;
 	height:110px;
 	background-color:#2c203b;
 	z-index:50;
@@ -306,44 +310,87 @@ body,
 
 /* 스크롤시 고정되는 영역 */
 .head-fix-box {
-	position:fixed;
+	position:absolute;
 	left:0;
 	right:0;
 	top:110px;
 	background-color:#fff;
 	height:40px;
 }
-.head-fix-box .Breadcrumbs {
+.header .Breadcrumbs {
 	overflow:hidden;
 	width:100%;
 	max-width:1300px;
 	margin:0 auto;
+	background-color:#fff;
 }
-.head-fix-box .Breadcrumbs .crumb-item {
+.header .Breadcrumbs .crumb-item {
 	float:left;
 }
-.head-fix-box .Breadcrumbs .crumb-item .crumb {
+.header .Breadcrumbs .crumb-item .crumb {
 	display:block;
 	height:40px;
 	padding:0 20px 0 14px;
-	background:url(../images/icon/icon_arr01.png) no-repeat 100% 50%;
+	background:url(../images/icon/icon_arr_right01.png) no-repeat 100% 50%;
 	line-height:40px;
 }
-.head-fix-box .Breadcrumbs .crumb-item:first-child .crumb {padding-left:0;}
-.head-fix-box .Breadcrumbs .crumb-item .menu-list {
+.header .Breadcrumbs .crumb-item:first-child .crumb {padding-left:0;}
+.header .Breadcrumbs .crumb-item:last-child .crumb {background:none;}
+.header .Breadcrumbs .crumb-item .menu-list {
 	display:none;
 }
-.head-fix-box .Breadcrumbs .crumb-item .menu-list .menu-item {}
-.head-fix-box .Breadcrumbs .crumb-item .menu-list .menu-item .title {}
-.head-fix-box .Breadcrumbs .crumb-item .menu-list .menu-item .list {}
-.head-fix-box .Breadcrumbs .crumb-item .menu-list .menu-item .list .link {}
-.head-fix-box .Breadcrumbs .crumb-item .menu-list {}
-.head-fix-box .Breadcrumbs .crumb-item {}
-.head-fix-box .Breadcrumbs .crumb-item {}
-.head-fix-box .Breadcrumbs {}
-.head-fix-box .page-title-area {}
-.head-fix-box .page-title-area {}
-.head-fix-box {}
+.header .Breadcrumbs .crumb-item .menu-list .menu-item {}
+.header .Breadcrumbs .crumb-item .menu-list .menu-item .title {}
+.header .Breadcrumbs .crumb-item .menu-list .menu-item .list {}
+.header .Breadcrumbs .crumb-item .menu-list .menu-item .list .link {}
+.header .Breadcrumbs .crumb-item .menu-list {}
+.header .Breadcrumbs .crumb-item {}
+.header .Breadcrumbs .crumb-item {}
+.header .Breadcrumbs {}
+.header.page-title-area {}
+.header .page-title-area {}
+
+.header .page-title-area {
+	text-align:center;
+}
+.head-fix-box .page-title-area .inner-box {
+	display:inline-block;
+	padding-right:38px;
+	background:url(../images/icon/icon_arr_bottom01.png) no-repeat 100% 50%;
+}
+.head-fix-box .page-title-area .page-title {
+	height:90px;
+	color:#111;
+	font-size:30px;
+	font-weight:600;
+	line-height:90px;
+	cursor:pointer;
+}
+.head-fix-box .page-title-area .layer {
+	display:none;
+}
+
+/*
+	스크롤시 해더 변환
+*/
+.header {
+	transition:top .2s;
+}
+.scroll .header .Breadcrumbs {
+	transition:all .5s;
+}
+.scroll .header {
+	top:-110px;
+}
+.scroll .header .Breadcrumbs {
+	background-color:#653c9e;
+}
+.scroll ..header .page-title-area {
+	height:85px;
+	line-height:85px;
+	box-shadow:2px 2px 2px rgba(0,0,0,.1);
+}
+.scroll .header {}
 
 
 /* ============================================================================================
