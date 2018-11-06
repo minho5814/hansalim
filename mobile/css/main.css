@@ -21,18 +21,41 @@ body,
 
 /* 상단 슬라이드 영역 */
 .top-visual-area {
-	min-height:300px;
 	background-image:url(../images/bg/bg_main_top.png), linear-gradient(#5f3492, #49479b);
 	background-repeat:no-repeat;
 	background-position:0 0;
 	background-size:100%;
 }
-.top-visual-area .swiper-container {padding-bottom:40px;}
-.top-visual-area .swiper-slide {padding:65px 25px 0;}
+.top-visual-area .swiper-container {
+	padding-bottom:40px;
+	box-sizing:border-box;
+}
+.top-visual-area .swiper-slide {
+	height:100%;
+	padding:65px 25px 0;
+	box-sizing:border-box;
+}
 .top-visual-area .swiper-slide.type2 {padding-top:110px;}
+/*
 .top-visual-area .card-box {
 	position:relative;
 	height:195px;
+	border-radius:5px;
+	background-color:#bc396e;
+	box-shadow:0px 0px 16px 4px rgba(0,0,0,.3);
+}
+*/
+.top-visual-area .card-box {
+	position:absolute;
+	left:25px;
+	right:25px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	height:100%;
+	max-height:195px;
+	margin-top:32px;
 	border-radius:5px;
 	background-color:#bc396e;
 	box-shadow:0px 0px 16px 4px rgba(0,0,0,.3);
@@ -256,9 +279,7 @@ body,
 	color:#fff;
 	text-align:center;
 }
-.sign-box-area .text {
-	font-size:15px;
-}
+.sign-box-area .text {font-size:15px;}
 .sign-box-area .link-sign {
 	display:inline-block;
 	color:#fff;
@@ -278,30 +299,6 @@ body,
 	line-height:25px;
 }
 
-/* 340px 이하 */
-@media only screen and (max-width: 340px) {
-	/* 상단 슬라이드 영역 */
-	.top-visual-area .swiper-slide {
-		padding-left:15px;
-		padding-right:15px;
-	}
-	.top-visual-area .card-box .box-inner .title {font-size:18px;}
-	.top-visual-area .card-box .box-inner .text {font-size:12px;}
-	.top-visual-area .card-box .write-box .label {font-size:11px;}
-	.top-visual-area .card-box .write-box input[type=text],
-	.top-visual-area .card-box .write-box input[type=number],
-	.top-visual-area .card-box .write-box input[type=tel] {font-size:13px;}
-
-	/* 빠른 메뉴 */
-	.quick-menu:before {right:5px;}
-	.quick-menu .menu-item {font-size:15px;}
-
-	.sign-box-area .sign-box .text {font-size:13px;}
-	.sign-box-area .sign-box .link-sign {font-size:13px;}
-	.sign-box-area .sign-box .btn-sign {font-size:12px;}
-}
-
-
 /* ============================================================================================
 	로그인 후
 ============================================================================================ */
@@ -313,9 +310,14 @@ html.login ,
 
 /* 상단 정보 출력 영역 */
 .top-info-area {
-	margin-top:-5px;
-	color:#fff;
-	text-align:center;
+	margin-top: 30px;
+	position: absolute;
+	left: 25px;
+	right: 25px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	text-align: center;
 }
 .top-info-area .photo-area {
 	width:45px;
@@ -378,3 +380,114 @@ html.login ,
 .top-info-area .payment-total .item strong {font-weight:600;}
 .top-info-area .payment-total .item .title {float:left;}
 .top-info-area .payment-total .item .price {float:right;}
+
+
+/* 340px 이하 */
+@media only screen and (max-width: 340px) {
+	/* 상단 슬라이드 영역 */
+	.top-visual-area .swiper-slide {
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.top-visual-area .card-box {max-height:160px;}
+	.top-visual-area .card-box .box-inner .title {font-size:18px;}
+	.top-visual-area .card-box .box-inner .text {font-size:12px;}
+	.top-visual-area .card-box .write-box .label {font-size:11px;}
+	.top-visual-area .card-box .write-box input[type=text],
+	.top-visual-area .card-box .write-box input[type=number],
+	.top-visual-area .card-box .write-box input[type=tel] {font-size:13px;}
+
+	.top-info-area .photo-area {
+		width:40px;
+		height:40px;
+	}
+	.top-info-area .t-title {
+		margin-top:10px;
+		font-size:20px;
+	}
+	.top-info-area .amount-area {margin-top:5px;}
+	.top-info-area .amount-area .text {font-size:13px;}
+	.top-info-area .amount-area .link-price {font-size:15px;}
+	.top-info-area .amount-area .link-price .price {font-size:28px;}
+	.top-info-area .text-area {
+		margin-top:15px;
+		font-size:13px;
+	}
+	.top-info-area .payment-total {margin-top:15px;}
+	.top-info-area .payment-total .item {font-size:13px;}
+
+	/* 빠른 메뉴 */
+	.quick-menu:before {
+		right:5px;
+		width:80px;
+		height:78px;
+	}
+	.quick-menu .menu-item {
+		height:40px;
+		font-size:15px;
+		line-height:40px;
+	}
+	.sign-box-area .sign-box .text {font-size:13px;}
+	.sign-box-area .sign-box .link-sign {font-size:13px;}
+	.sign-box-area .sign-box .btn-sign {font-size:12px;}
+
+	/* 박스 메뉴 영역 */
+	.box-menu-area .menu-item {height:100px;}
+	.box-menu-area .menu-item .text {padding-top:45px;}
+	.box-menu-area .menu-item .text:before {margin-top:-8px;}
+}
+
+/* 높이 640px 이하 */
+@media only screen and (max-height: 620px) {
+	/* 상단 슬라이드 영역 */
+	.top-visual-area .swiper-slide {
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.top-visual-area .card-box {max-height:160px;}
+	.top-visual-area .card-box .box-inner .title {font-size:18px;}
+	.top-visual-area .card-box .box-inner .text {font-size:12px;}
+	.top-visual-area .card-box .write-box .label {font-size:11px;}
+	.top-visual-area .card-box .write-box input[type=text],
+	.top-visual-area .card-box .write-box input[type=number],
+	.top-visual-area .card-box .write-box input[type=tel] {font-size:13px;}
+
+	.top-info-area .photo-area {
+		width:40px;
+		height:40px;
+	}
+	.top-info-area .t-title {
+		margin-top:10px;
+		font-size:20px;
+	}
+	.top-info-area .amount-area {margin-top:5px;}
+	.top-info-area .amount-area .text {font-size:13px;}
+	.top-info-area .amount-area .link-price {font-size:15px;}
+	.top-info-area .amount-area .link-price .price {font-size:28px;}
+	.top-info-area .text-area {
+		margin-top:15px;
+		font-size:13px;
+	}
+	.top-info-area .payment-total {margin-top:15px;}
+	.top-info-area .payment-total .item {font-size:13px;}
+
+	/* 빠른 메뉴 */
+	.quick-menu:before {
+		right:5px;
+		width:80px;
+		height:78px;
+	}
+	.quick-menu .menu-item {
+		height:40px;
+		font-size:15px;
+		line-height:40px;
+	}
+	.sign-box-area .sign-box .text {font-size:13px;}
+	.sign-box-area .sign-box .link-sign {font-size:13px;}
+	.sign-box-area .sign-box .btn-sign {font-size:12px;}
+
+	/* 박스 메뉴 영역 */
+	.box-menu-area .menu-item {height:100px;}
+	.box-menu-area .menu-item .text {padding-top:45px;}
+	.box-menu-area .menu-item .text:before {margin-top:-8px;}
+}

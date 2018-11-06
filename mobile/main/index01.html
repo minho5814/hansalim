@@ -83,41 +83,43 @@
 			</div>
 		</div>
 
-		<!-- 빠른 메뉴 영역 -->
-		<div class="quick-menu">
-			<a href="#" class="menu-item on">MY</a>
-			<a href="#" class="menu-item">LOAN</a>
-			<a href="#" class="menu-item">CARD</a>
-			<a href="#" class="menu-item">EVENT</a>
-		</div>
+		<div class="fix-bottom-area">
+			<!-- 빠른 메뉴 영역 -->
+			<div class="quick-menu">
+				<a href="#" class="menu-item on">MY</a>
+				<a href="#" class="menu-item">LOAN</a>
+				<a href="#" class="menu-item">CARD</a>
+				<a href="#" class="menu-item">EVENT</a>
+			</div>
 
-		<!-- 박스 메뉴 영역 -->
-		<div class="box-menu-area">
-			<a href="#" class="menu-item item01">
-				<span class="text">Credit Loan</span>
-			</a>
-			<a href="#" class="menu-item item02">
-				<span class="text">Loan Simulation</span>
-			</a>
-			<a href="#" class="menu-item item03">
-				<span class="text">Loan Receipt</span>
-			</a>
-			<a href="#" class="menu-item item04">
-				<span class="text">Tel. consultation<br>(reservation)</span>
-			</a>
-			<a href="#" class="menu-item item05">
-				<span class="text">Lotte Finance<br>Introduce</span>
-			</a>
-			<a href="#" class="menu-item item06">
-				<span class="text">Loan process</span>
-			</a>
-		</div>
+			<!-- 박스 메뉴 영역 -->
+			<div class="box-menu-area">
+				<a href="#" class="menu-item item01">
+					<span class="text">Credit Loan</span>
+				</a>
+				<a href="#" class="menu-item item02">
+					<span class="text">Loan Simulation</span>
+				</a>
+				<a href="#" class="menu-item item03">
+					<span class="text">Loan Receipt</span>
+				</a>
+				<a href="#" class="menu-item item04">
+					<span class="text">Tel. consultation<br>(reservation)</span>
+				</a>
+				<a href="#" class="menu-item item05">
+					<span class="text">Lotte Finance<br>Introduce</span>
+				</a>
+				<a href="#" class="menu-item item06">
+					<span class="text">Loan process</span>
+				</a>
+			</div>
 
-		<!-- 하단 sign 영역 -->
-		<div class="sign-box-area">
-			<span class="text">New to Lotte Finance?</span>
-			<a href="#" class="link-sign">SIGN UP</a>
-			<a href="#" class="btn-sign">SIGN IN</a>
+			<!-- 하단 sign 영역 -->
+			<div class="sign-box-area">
+				<span class="text">New to Lotte Finance?</span>
+				<a href="#" class="link-sign">SIGN UP</a>
+				<a href="#" class="btn-sign">SIGN IN</a>
+			</div>
 		</div>
 	</div>
 </div>
@@ -131,7 +133,24 @@ $(document).ready(function(){
 			clickable: true,
 		},
 	});
+
+	resizeMid();
 });
+
+$(window).load(function(){
+	resizeMid();
+});
+
+$(window).resize(function(){
+	resizeMid();
+});
+
+function resizeMid(){
+	var winH = $(window).height();
+	var btmH = $('.fix-bottom-area').outerHeight();
+
+	$('.top-visual-area .swiper-container').css({'height':winH - btmH});
+}
 </script>
 </body>
 

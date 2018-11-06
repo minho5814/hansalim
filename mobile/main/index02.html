@@ -65,34 +65,36 @@
 			</div>
 		</div>
 
-		<!-- 빠른 메뉴 영역 -->
-		<div class="quick-menu">
-			<a href="#" class="menu-item on">MY</a>
-			<a href="#" class="menu-item">LOAN</a>
-			<a href="#" class="menu-item">CARD</a>
-			<a href="#" class="menu-item">EVENT</a>
-		</div>
+		<div class="fix-bottom-area">
+			<!-- 빠른 메뉴 영역 -->
+			<div class="quick-menu">
+				<a href="#" class="menu-item on">MY</a>
+				<a href="#" class="menu-item">LOAN</a>
+				<a href="#" class="menu-item">CARD</a>
+				<a href="#" class="menu-item">EVENT</a>
+			</div>
 
-		<!-- 박스 메뉴 영역 -->
-		<div class="box-menu-area">
-			<a href="#" class="menu-item item07">
-				<span class="text">Loan usage history</span>
-			</a>
-			<a href="#" class="menu-item item08">
-				<span class="text">Card usage history</span>
-			</a>
-			<a href="#" class="menu-item item09">
-				<span class="text">Emotion Card</span>
-			</a>
-			<a href="#" class="menu-item item10">
-				<span class="text">Expected<br>reimbursement<br>schedule</span>
-			</a>
-			<a href="#" class="menu-item item11">
-				<span class="text">Personal<br>Information<br>Management</span>
-			</a>
-			<a href="#" class="menu-item item12">
-				<span class="text">SNS</span>
-			</a>
+			<!-- 박스 메뉴 영역 -->
+			<div class="box-menu-area">
+				<a href="#" class="menu-item item07">
+					<span class="text">Loan usage history</span>
+				</a>
+				<a href="#" class="menu-item item08">
+					<span class="text">Card usage history</span>
+				</a>
+				<a href="#" class="menu-item item09">
+					<span class="text">Emotion Card</span>
+				</a>
+				<a href="#" class="menu-item item10">
+					<span class="text">Expected<br>reimbursement<br>schedule</span>
+				</a>
+				<a href="#" class="menu-item item11">
+					<span class="text">Personal<br>Information<br>Management</span>
+				</a>
+				<a href="#" class="menu-item item12">
+					<span class="text">SNS</span>
+				</a>
+			</div>
 		</div>
 	</div>
 </div>
@@ -126,7 +128,23 @@ $(document).ready(function(){
 		$('.top-visual-area .swiper-slide-active').css({'height':hei});
 	});
 	*/
+	resizeMid();
 });
+
+$(window).load(function(){
+	resizeMid();
+});
+
+$(window).resize(function(){
+	resizeMid();
+});
+
+function resizeMid(){
+	var winH = $(window).height();
+	var btmH = $('.fix-bottom-area').outerHeight();
+
+	$('.top-visual-area .swiper-container').css({'height':winH - btmH});
+}
 </script>
 </body>
 
