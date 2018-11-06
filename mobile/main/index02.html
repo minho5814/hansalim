@@ -21,23 +21,47 @@
 	</div>
 
 	<div class="container">
-		<!-- 상단 정보 출력 영역 -->
-		<div class="top-info-area">
-			<h2 class="t-title">LOAN</h2>
-			<div class="amount-area">
-				<p class="text">Amount to be paid in 10</p>
-				<a href="#" class="link-price"><span class="price">1,234,123</span> ₫</a>
-			</div>
-			<div class="text-area"><strong>15 times</strong> in total 60 payments<br>The loan has been repaid.</div>
-			<div class="payment-total">
-				<div class="item">
-					<span class="title">Payment interest</span>
-					<span class="price">100,000 ₫</span>
+		<!-- 상단 슬라이드 영역 -->
+		<div class="top-visual-area">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="top-info-area">
+							<div class="photo-area">
+								<img src="../images/img/img_user.png" alt="">
+							</div>
+							<h2 class="t-title">LOAN</h2>
+							<div class="amount-area">
+								<p class="text">Amount to be paid in 10</p>
+								<a href="#" class="link-price"><span class="price">1,234,123</span> ₫</a>
+							</div>
+							<div class="text-area"><strong>15 times</strong> in total 60 payments<br>The loan has been repaid.</div>
+							<div class="payment-total">
+								<div class="item">
+									<span class="title">Payment interest</span>
+									<span class="price">100,000 ₫</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide type2">
+						<div class="card-box box4">
+							<div class="box-inner">
+								<h2 class="title">Welcome to<br> Hoan Kiem.</h2>
+								<p class="text">The place where you are<br> now is Hoan Kiem, which<br> has the passion of Vietnam.</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide type2">
+						<div class="card-box box5">
+							<div class="box-inner">
+								<h2 class="title">Lotte Finance<br> Introduce</h2>
+								<p class="text">Lotte Finance is a helpful<br> companion for our customers’ life.<br> We shall give you the highest<br> benefit with our constant devotion.</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="item">
-					<strong class="title">Total loan amount</strong>
-					<span class="price">50,000,000 ₫</span>
-				</div>
+				<div class="swiper-pagination"></div>
 			</div>
 		</div>
 
@@ -72,6 +96,38 @@
 		</div>
 	</div>
 </div>
+
+<script>
+$(document).ready(function(){
+	/* 상단 비주얼 슬라이드 */
+	var swiper = new Swiper('.top-visual-area .swiper-container', {
+		pagination: {
+			el: '.top-visual-area .swiper-pagination',
+			clickable: true,
+		},
+		/*
+		autoHeight: true,
+		on: {
+			init: function () {
+				
+			},
+		}
+		*/
+	});
+
+	/*
+	swiper.on('slideChange', function () {
+		/* 슬라이드 높이 자동조절 *
+		var hei = $('.top-visual-area .swiper-slide-active .card-box').outerHeight();
+		$('.top-visual-area .swiper-slide').each(function(){
+		var hei = $(this).find('.card-box').outerHeight();
+			$(this).css({'height':hei});
+		});
+		$('.top-visual-area .swiper-slide-active').css({'height':hei});
+	});
+	*/
+});
+</script>
 </body>
 
 </html>

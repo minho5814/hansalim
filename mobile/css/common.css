@@ -2234,6 +2234,7 @@ body,
 
 .signin-slide .form-write-box {position:relative;}
 .signin-slide .form-write-box input[type=text],
+.signin-slide .form-write-box input[type=tel],
 .signin-slide .form-write-box input[type=password] {
 	height:40px;
 	font-size:14px;
