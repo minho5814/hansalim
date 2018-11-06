@@ -1417,6 +1417,23 @@ body,
 	height:1px;
 	background:#000;
 }
+
+.header .btn-lang {
+	position:absolute;
+	right:60px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:40px;
+	height:40px;
+	color:#fff;
+	font-size:18px;
+	text-align:center;
+	line-height:40px;
+
+}
+
 .header .btn-share {
 	position:absolute;
 	left:0;
