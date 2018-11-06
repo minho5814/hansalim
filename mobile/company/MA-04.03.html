@@ -38,7 +38,7 @@
 									웨어러블</strong> 출시
 								</div>
 								<div class="img-area">
-									<img src="../images/temp/@img_history01.png" alt="">
+									<img src="../images/temp/@img_history01.jpg" alt="">
 								</div>
 							</div>
 						</div>
@@ -52,7 +52,7 @@
 									<strong>PIC DSS 인증</strong> 획득
 								</div>
 								<div class="img-area">
-									<img src="../images/temp/@img_history01.png" alt="">
+									<img src="../images/temp/@img_history02.jpg" alt="">
 								</div>
 							</div>
 						</div>
@@ -66,7 +66,7 @@
 									<strong>대상 수상</strong>
 								</div>
 								<div class="img-area">
-									<img src="../images/temp/@img_history01.png" alt="">
+									<img src="../images/temp/@img_history01.jpg" alt="">
 								</div>
 							</div>
 						</div>
@@ -85,9 +85,9 @@ $(document).ready(function(){
 	$('.history-swiper').each(function(){
 		var slide = $(this).find('.swiper-container');
 		var swiper = new Swiper(slide, {
-			slidesPerView: 3,
-			spaceBetween: 0,
+			slidesPerView: 'auto',
 			centeredSlides: true,
+			spaceBetween: 0,
 			on: {
 				init: function () {
 					
@@ -101,7 +101,6 @@ $(document).ready(function(){
 		swiper.on('slideChangeTransitionEnd', function () {
 			var data = $('.swiper-slide-active').attr('data');
 			$('.now-years .label').html(data);
-			console.log(data);
 		});
 	});
 

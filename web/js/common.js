@@ -1,5 +1,15 @@
 $(document).ready(function(){
-	
+	/*
+		Gnb
+	*/
+	$('.gnb-area .gnb-list .item').click(function(){
+		if($(this).closest('.gnb-item').hasClass('on')){
+			
+		}else{
+			$('.gnb-item').removeClass('on').find('.gnb-depth').hide();
+			$(this).closest('.gnb-item').addClass('on').find('.gnb-depth').slideDown(200);
+		}
+	});
 });
 
 
