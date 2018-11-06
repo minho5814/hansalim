@@ -319,6 +319,7 @@ body,
 	right:0;
 	top:110px;
 	background-color:#fff;
+	background-position:200% 50%;
 	height:40px;
 }
 .header .Breadcrumbs {
@@ -418,7 +419,7 @@ body,
 	top:-110px;
 }
 .scroll .header .head-fix-box {
-	background-color:#653c9e;
+	background:#653c9e url(../images/bg/bg_header01.png) no-repeat 100% 50%;
 }
 .scroll .header .Breadcrumbs {}
 .scroll .header .page-title-area {
