@@ -313,22 +313,66 @@ body,
 	right:0;
 	top:110px;
 	z-index:5;
+	padding:40px 0;
 	background-color:#fff;
 	box-shadow:0 7px 21px 0 rgba(0,0,0,.1);
 }
 .gnb-area .gnb-list .gnb-item .gnb-depth .depth-inner {
 	overflow:hidden;
+	position:relative;
 	width:100%;
 	max-width:1150px;
 	margin:0 auto;
-	padding:40px 0;
+	border-left:1px solid #e5e5e5;
+	border-right:1px solid #e5e5e5;
 }
 .gnb-area .gnb-list .gnb-item .gnb-depth .depth {
 	float:left;
-	position:relative;
 	width:16.66666666666667%;
+	padding:0 20px 2px;
 	box-sizing:border-box;
-	border-left:1px solid #e5e5e5;
+}
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth:first-child {
+	border-right:1px solid #e5e5e5;
+}
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth-inner:before,
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth-inner:after,
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth:first-child:before,
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth:first-child:after,
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth:nth-child(2):before {
+	content:'';
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:1px;
+	background-color:#e5e5e5;
+}
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth-inner:before {left:33.33333333333333%;}
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth-inner:after {left:50%;}
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth:first-child:before {left:66.66666666666667%;}
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth:first-child:after {left:83.33333333333333%;}
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth:nth-child(2):before {left:16.66666666666667%;margin-left:-1px;}
+
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth .title {
+	display:block;
+	padding:6px 0;
+	color:#111;
+	font-weight:600;
+}
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth a.title:after {
+	content:'';
+	display:inline-block;
+	width:20px;
+	height:22px;
+	margin-left:4px;
+	background:url(../images/icon/icon_arr_right03.png) no-repeat 50% 50%;
+	vertical-align:top;
+}
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth .list {margin-top:5px;}
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth .link {
+	display:block;
+	padding:4px 0;
+	color:#777;
 }
 
 /* 스크롤시 고정되는 영역 */

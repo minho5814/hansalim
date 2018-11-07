@@ -442,6 +442,8 @@ select {
 }
 .btn-list.type2 .btn-item:first-child:before {display:none;}
 
+.btn-list .btn-item.one {width:100%;}
+
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	폼 요소
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -470,6 +472,41 @@ input[type=checkbox].styled1:after {
 	background-position:-200px -203px;
 }
 input[type=checkbox]:checked.styled1:after {background-position:-223px -203px;}
+
+/* 체크박스 */
+input[type=radio].styled1 {
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	position:relative;
+	width:22px;
+	height:22px;
+	border:0;
+	background:transparent;
+	vertical-align:middle;
+}
+input[type=radio].styled1:after {
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:22px;
+	height:22px;
+	background-image:url(../images/common/sprite_icon.png);
+	background-repeat:no-repeat;
+	background-size:250px;
+	background-position:-200px -248px;
+}
+input[type=radio]:checked.styled1:after {background-position:-223px -248px;}
+input[type=radio] + label {
+	margin-left:9px;
+	color:#737373;
+	vertical-align:middle;
+}
+input[type=radio]:checked + label {
+	color:#111;
+	font-weight:600;
+}
 
 /* 파일첨부 */
 .filebox {
@@ -1417,6 +1454,23 @@ body,
 	height:1px;
 	background:#000;
 }
+
+.header .btn-lang {
+	position:absolute;
+	right:60px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:40px;
+	height:40px;
+	color:#fff;
+	font-size:18px;
+	text-align:center;
+	line-height:40px;
+
+}
+
 .header .btn-share {
 	position:absolute;
 	left:0;
@@ -2008,10 +2062,7 @@ body,
 	content:'';
 	position:absolute;
 	left:35px;
-	top:50%;
-	-webkit-transform:translateY(-50%);
-	-ms-transform:translateY(-50%);
-	transform:translateY(-50%);
+	top:15px;
 	width:6px;
 	height:6px;
 	box-sizing:border-box;
@@ -4094,6 +4145,18 @@ body,
 	font-weight:900;
 	text-align:center;
 }
+
+.layer-popup .popup .pop-cont .cont-text {
+	padding:23px 25px;
+	color:#555;
+}
+.layer-popup .popup .pop-cont .cont-text .text1 {
+	margin-bottom:10px;
+	color:#333;
+	font-size:17px;
+	font-weight:600;
+}
+.layer-popup .popup .pop-cont .cont-text .f-color1 {color:#e22d8b;}
 
 .layer-popup.h-full .popup .pop-cont {
 	overflow-y:auto;

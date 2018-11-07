@@ -491,3 +491,70 @@ html.login ,
 	.box-menu-area .menu-item .text {padding-top:45px;}
 	.box-menu-area .menu-item .text:before {margin-top:-8px;}
 }
+
+
+/* 대출 시물레이션 팝업 */
+.loan-simulation-wrap {padding:30px 20px 20px;}
+.loan-simulation-wrap .radio-list {
+	overflow:hidden;
+	margin:0 -10px;
+}
+.loan-simulation-wrap .radio-list .radio-item {
+	float:left;
+	position:relative;
+	width:50%;
+	padding-left:42px;
+	box-sizing:border-box;
+	word-break:break-word;
+}
+.loan-simulation-wrap .radio-list .radio-item input[type=radio] {
+	position:absolute;
+	left:10px;
+	top:2px;
+}
+.loan-simulation-wrap .radio-list .radio-item label {margin:0;}
+
+.loan-simulation-wrap .gauge-list {margin-top:10px;}
+.loan-simulation-wrap .gauge-item {margin-top:35px;}
+.loan-simulation-wrap .gauge-item:first-child {margin-top:0;}
+.loan-simulation-wrap .gauge-item .title {font-size:13px;}
+.loan-simulation-wrap .gauge-item .gauge-box {
+	overflow:hidden;
+	height:35px;
+	margin-top:17px;
+	border-radius:25px;
+	background-color:#f2f2f2;
+}
+.loan-simulation-wrap .gauge-item .gauge-box .gauge {
+	position:relative;
+	width:0;
+	height:35px;
+	border-radius:25px;
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+.loan-simulation-wrap .gauge-item.item1 .gauge-box .gauge {background-image:linear-gradient(to right, #533b94 , #de2e8b);}
+.loan-simulation-wrap .gauge-item.item2 .gauge-box .gauge {background-image:linear-gradient(to right, #ef7f2f , #da3e5f);}
+.loan-simulation-wrap .gauge-item .gauge-box .gauge .text {
+	position:absolute;
+	right:20px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	color:#fff;
+	font-weight:900;
+}
+.loan-simulation-wrap .text-area {
+	margin-top:23px;
+	text-align:center;
+}
+.loan-simulation-wrap .text-area .title {
+	font-size:17px;
+	font-weight:900;
+}
+.loan-simulation-wrap .text-area .text {
+	margin-top:10px;
+	color:#737373;
+	font-size:14px;
+}
