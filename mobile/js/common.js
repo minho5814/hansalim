@@ -318,7 +318,7 @@ $(window).resize(function(){
 ====================================================================== */
 function form(){
 	/* 인풋 파일 */
-	$('input[type=file]').each(function(){
+	$('input[type=file].styled1').each(function(){
 		if(!$(this).parent().is('.filebox')){
 			$(this).wrap('<span class="filebox"></span>');
 			$(this).before('<span class="filename"></span>');
