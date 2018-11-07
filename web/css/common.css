@@ -646,8 +646,6 @@ body,
 	color:#777;
 	line-height:1.2;
 }
-.all-menu-layer {}
-.all-menu-layer {}
 
 /*
 	스크롤시 해더 변환
@@ -664,15 +662,9 @@ body,
 	transition:all .5s;
 }
 
-.scroll .container {
-	padding-top:220px;
-}
-.scroll .header {
-	top:-110px;
-}
-.scroll .header .head-fix-box {
-	background:#653c9e url(../images/bg/bg_header01.png) no-repeat 100% 50%;
-}
+.scroll .container {padding-top:220px;}
+.scroll .header {top:-110px;}
+.scroll .header .head-fix-box {background:#653c9e url(../images/bg/bg_header01.png) no-repeat 100% 50%;}
 .scroll .header .breadcrumbs {}
 .scroll .header .page-title-area {box-shadow:2px 3px 8px rgba(0,0,0,.1);}
 .scroll .header .page-title-area .page-title {
@@ -688,16 +680,9 @@ body,
 	background:url(../images/icon/icon_arr_right02.png) no-repeat 100% 50%;
 	color:#fff;
 }
-
 .scroll .header .btn-allmenu {top:99px;}
-
 .scroll .gnb-area .gnb-list .gnb-item .gnb-depth {top:40px;}
 
-.scroll .header {}
-.scroll .header {}
-.scroll .header {}
-.scroll .header {}
-.scroll .header {}
 
 
 /* ============================================================================================
