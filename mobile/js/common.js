@@ -209,13 +209,13 @@ $(document).ready(function(){
 	$('.btn-popup').click(function(){
 		//$('html, body').css({'overflow':'hidden'});
 		var name = $(this).attr('layer-name');
-		$('.layer-popup[layer-name=' + name + ']').show();
+		$('.layer-popup[layer-name=' + name + ']').addClass('show');
 		popup();
 	});
 
 	$('.layer-popup .popClose').click(function(){
 		//$('html, body').removeAttr('style');
-		$(this).closest('.layer-popup').hide();
+		$(this).closest('.layer-popup').removeClass('show');
 		popup();
 	});
 
@@ -257,7 +257,7 @@ $(document).ready(function(){
 
 $(window).on('load', function(){
 	/* 화면 로드시 노출되는 팝업 */
-	$('.loadPopup').show();
+	$('.loadPopup').addClass('show');
 });
 
 $(window).scroll(function(){

@@ -102,33 +102,10 @@ textarea {
 ::-moz-placeholder {color:#b2b2b2;}
 
 select {
-	display:inline-block;
-	overflow:hidden;
-	width:100%;
-	height:50px;
-	margin:0;
-	padding-right:20px;
-	padding:0;
-	box-sizing:border-box;
-	border-radius:0;
-	border:0;
-	border-bottom:1px solid #d9d9d9;
-	background:url(../images/common/icon_select.png) no-repeat 100% 50%;
-	background-size:13px 6px;
-	text-overflow:ellipsis;
-	text-align:left;
-	text-transform:none;
-	white-space:nowrap;
-	color:#111;
-	font-weight:600;
-	vertical-align:middle;
-	-webkit-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none;
-	-webkit-appearance:none;
-	-moz-appearance:none;
-	appearance:none;
+	height:56px;
+	padding:0 37px 0 14px;
+	border:1px solid #ccc;
+	background-color:#fff;
 }
 
 /* ============================================================================================
@@ -207,6 +184,26 @@ select {
 .btn-text.sm.type1.link:before {background-image:url(../images/icon/icon_arr_right07.png);}
 .btn-text.sm.type1.link:hover:before {background-image:url(../images/icon/icon_arr_right07_hover.png);}
 
+/* 텍스트 + 아이콘 */
+.btn-icon-text {
+	display:inline-block;
+	height:32px;
+	padding:0 15px 0 38px;
+	box-sizing:border-box;
+	border-radius:2px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	background-repeat:no-repeat;
+	background-position:14px 50%;
+	color:#777;
+	font-size:14px;
+	line-height:30px;
+}
+.btn-icon-text.icon1 {background-image:url(../images/icon/icon_btn01.png);}
+.btn-icon-text.icon2 {background-image:url(../images/icon/icon_btn02.png);}
+.btn-icon-text.icon3 {background-image:url(../images/icon/icon_btn03.png);}
+.btn-icon-text.icon4 {background-image:url(../images/icon/icon_btn04.png);}
+
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	폼 요소
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -215,6 +212,54 @@ select {
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	탭/소팅/검색
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 탭 */
+.tab-list1 {
+	border-top:1px solid #e0e0e0;
+	border-right:1px solid #e0e0e0;
+}
+.tab-list1:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.tab-list1 .tab-item {
+	float:left;
+	position:relative;
+	width:50%;
+	height:50px;
+	box-sizing:border-box;
+	border-left:1px solid #e0e0e0;
+	border-bottom:1px solid #e0e0e0;
+	color:#4c4c4c;
+	font-size:16px;
+	text-align:center;
+	line-height:48px;
+	cursor:pointer;
+}
+.tab-list1 .tab-item.on {
+	border-bottom-color:#fff;
+	color:#111;
+	font-weight:900;
+	transition:all .3s;
+}/* on */
+.tab-list1 .tab-item:after {
+	content:'';
+	position:absolute;
+	left:0;
+	width:0;
+	top:-1px;
+	height:2px;
+	background-color:#262626;
+	opacity:0;
+}
+.tab-list1 .tab-item.on:after {
+	opacity:1;
+	width:100%;
+	transition:all .2s;
+}/* on */
+
+.tab-cont {display:none;}
+.tab-cont.on {display:block;}
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -288,9 +333,7 @@ table .a-right {
 	리스트
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* 아코디언 */
-.accordion-list1 {
-	border-top:1px solid #262626;
-}
+.accordion-list1 {border-top:1px solid #262626;}
 .accordion-list1 .accordion-item {}
 .accordion-list1 .accordion-item .btn-tog {
 	position:relative;
@@ -329,9 +372,6 @@ table .a-right {
 	border-top:0;
 	background-color:#fafafa;
 }
-.accordion-list1 {}
-.accordion-list1 {}
-.accordion-list1 {}
 
 /* ============================================================================================
 	기타
@@ -495,7 +535,7 @@ body,
 	overflow:hidden;
 	position:relative;
 	width:100%;
-	max-width:1150px;
+	max-width:1280px;
 	margin:0 auto;
 	border-left:1px solid #e5e5e5;
 	border-right:1px solid #e5e5e5;
@@ -752,7 +792,7 @@ body,
 	overflow:hidden;
 	position:relative;
 	width:100%;
-	max-width:1150px;
+	max-width:1280px;
 	margin:0 auto;
 	border-left:1px solid #e5e5e5;
 	border-right:1px solid #e5e5e5;

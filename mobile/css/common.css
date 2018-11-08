@@ -4139,6 +4139,7 @@ body,
 	padding:0 20px;
 	background-color:rgba(0,0,0,.8);
 }
+.layer-popup.show {display:block;}
 .layer-popup .dimmed {
 	position:absolute;
 	left:0;
