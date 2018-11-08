@@ -138,7 +138,74 @@ select {
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	버튼
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 텍스트 */
+.btn-text {
+	display:inline-block;
+	position:relative;
+	min-width:160px;
+	height:50px;
+	padding:0 25px;
+	box-sizing:border-box;
+	border-radius:4px;
+	background-color:#503799;
+	color:#fff;
+	font-size:18px;
+	text-align:center;
+	vertical-align:middle;
+	line-height:50px;
+	cursor:pointer;
+	-webkit-transition:background-color .3s;
+	-ms-transition:background-color .3s;
+	transition:background-color .3s;
+}
+.btn-text:hover {background-color:#3d2e68;}
 
+.btn-text.type1 {
+	border:1px solid #503799;
+	background-color:#fff;
+	color:#503799;
+	line-height:48px;
+}
+.btn-text.type1:hover {background-color:#f7f7f7;}
+
+.btn-text.link {padding-right:58px;}
+.btn-text.link:before {
+	content:'';
+	position:absolute;
+	right:25px;
+	top:0;
+	bottom:0;
+	width:8px;
+	background-image:url(../images/icon/icon_arr_right04.png);
+	background-repeat:no-repeat;
+	background-position:0 50%;
+}
+.btn-text.type1.link:before {background-image:url(../images/icon/icon_arr_right05.png);}
+.btn-text.type1.link:hover:before {background-image:url(../images/icon/icon_arr_right05_hover.png);}
+
+.btn-text.disabled {
+	background-color:#e6e6e6;
+	color:#b3b3b3;
+	cursor:not-allowed;
+}
+
+.btn-text.sm {
+	min-width:auto;
+	padding:0 20px;
+	height:40px;
+	line-height:40px;
+}
+.btn-text.sm.type1 {
+	line-height:38px;
+}
+.btn-text.sm.link {padding-right:36px;}
+.btn-text.sm.link:before {
+	width:5px;
+	right:10px;
+	background-image:url(../images/icon/icon_arr_right06.png);
+}
+.btn-text.sm.type1.link:before {background-image:url(../images/icon/icon_arr_right07.png);}
+.btn-text.sm.type1.link:hover:before {background-image:url(../images/icon/icon_arr_right07_hover.png);}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	폼 요소
@@ -151,9 +218,120 @@ select {
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	게시판 테이블
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+table .btn-text {
+	min-width:auto;
+	height:32px;
+	margin-left:9px;
+	padding:0 15px;
+	border:1px solid #444;
+	background-color:#fff;
+	color:#444;
+	font-size:14px;
+	line-height:30px;
+}
+
+table .a-left {
+	padding-left:30px !important;
+	padding-right:30px !important;
+	text-align:left !important;
+}
+
+table .a-right {
+	padding-left:25px !important;
+	padding-right:25px !important;
+	text-align:right !important;
+}
+
+/* 리스트 형식 */
+.board-list1 {
+	border-top:1px solid #262626;
+}
+.board-list1 table {}
+.board-list1 table th,
+.board-list1 table td {
+	height:32px;
+	padding:9px 15px;
+	border-left:1px solid #e0e0e0;
+	border-bottom:1px solid #e0e0e0;
+	font-weight:400;
+	text-align:center;
+}
+.board-list1 table th:first-child,
+.board-list1 table td:first-child {border-left:0;}
+.board-list1 table th {
+	padding-left:50px;
+	background-color:#f7f7f7;
+	color:#4c4c4c;
+	text-align:left;
+}
+.board-list1 table td {
+	padding-left:30px;
+	color:#111;
+	text-align:left;
+}
+.board-list1 table thead th,
+.board-list1 table thead + tbody td {
+	padding-left:15px;
+	text-align:center;
+}
+.board-list1 table td.link-type {padding:0;}
+.board-list1 table td.link-type .link-text {
+	display:block;
+	padding:14px 30px;
+	text-align:left;
+}
+.board-list1 table td.link-type .link-text:hover {text-decoration:underline;}/* hover */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	리스트
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
+/* 아코디언 */
+.accordion-list1 {
+	border-top:1px solid #262626;
+}
+.accordion-list1 .accordion-item {}
+.accordion-list1 .accordion-item .btn-tog {
+	position:relative;
+	padding:15px 86px 15px 50px;
+	border-bottom:1px solid #e0e0e0;
+	color:#111;
+	font-size:16px;
+	cursor:pointer;
+}
+.accordion-list1 .accordion-item .btn-tog:before {
+	content:'';
+	overflow:hidden;
+	position:absolute;
+	right:50px;
+	top:50%;
+	width:26px;
+	height:26px;
+	margin-top:-13px;
+	background-image:url(../images/icon/icon_accor01.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+.accordion-list1 .accordion-item.on .btn-tog {
+	border-bottom:0;
+	color:#7451c0;
+	font-weight:600;
+}/* on */
+.accordion-list1 .accordion-item.on .btn-tog:before {background-position:0 -26px;}/* on */
+.accordion-list1 .accordion-item .layer {
+	display:none;
+	padding:36px 50px;
+	border-top:1px solid #e0e0e0;
+	border-bottom:1px solid #b3b3b3;
+}
+.accordion-list1 .accordion-item .layer.bg-gray {
+	border-top:0;
+	background-color:#fafafa;
+}
+.accordion-list1 {}
+.accordion-list1 {}
+.accordion-list1 {}
 
 /* ============================================================================================
 	기타
@@ -165,7 +343,7 @@ select {
 ============================================================================================ */
 html,
 body,
-.wrapper {height:10000px;
+.wrapper {
 	overflow-x:auto;
 	min-width:1260px;
 }
@@ -272,9 +450,7 @@ body,
 	display:block;
 	clear:both;
 }
-.gnb-area .gnb-list .gnb-item {
-	float:left;
-}
+.gnb-area .gnb-list .gnb-item {float:left;}
 .gnb-area .gnb-list .gnb-item .item {
 	display:block;
 	position:relative;
@@ -298,9 +474,7 @@ body,
 	opacity:0;
 	transition:all .3s;
 }
-.gnb-area .gnb-list .gnb-item.on .item {
-	color:#ef8ffa;
-}/* on */
+.gnb-area .gnb-list .gnb-item.on .item {color:#ef8ffa;}/* on */
 .gnb-area .gnb-list .gnb-item.on .item:before {
 	height:5px;
 	opacity:1;
@@ -332,9 +506,7 @@ body,
 	padding:0 20px 2px;
 	box-sizing:border-box;
 }
-.gnb-area .gnb-list .gnb-item .gnb-depth .depth:first-child {
-	border-right:1px solid #e5e5e5;
-}
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth:first-child {border-right:1px solid #e5e5e5;}
 .gnb-area .gnb-list .gnb-item .gnb-depth .depth-inner:before,
 .gnb-area .gnb-list .gnb-item .gnb-depth .depth-inner:after,
 .gnb-area .gnb-list .gnb-item .gnb-depth .depth:first-child:before,
@@ -472,10 +644,6 @@ body,
 	color:#7451c0;
 	font-weight:600;
 }/* hover */
-.header .breadcrumbs .crumb-item .menu-list {}
-.header .breadcrumbs .crumb-item {}
-.header .breadcrumbs .crumb-item {}
-.header .breadcrumbs {}
 
 .header .page-title-area {
 	background-color:rgba(255,255,255,.98);
@@ -521,8 +689,6 @@ body,
 	color:#fff;
 	background-color:#7451c0;
 }/* hover */
-
-.header .page-title-area .layer {}
 
 .header .btn-allmenu {
 	position:absolute;
@@ -637,9 +803,7 @@ body,
 	background:url(../images/icon/icon_arr_right03.png) no-repeat 50% 50%;
 	vertical-align:top;
 }
-.all-menu-layer .menu-box .list-area .list {
-	padding-bottom:8px;
-}
+.all-menu-layer .menu-box .list-area .list {padding-bottom:8px;}
 .all-menu-layer .menu-box .list-area .link {
 	display:block;
 	padding:3px 20px;
@@ -653,19 +817,14 @@ body,
 .container,
 .header,
 .header .btn-allmenu,
-.gnb-area .gnb-list .gnb-item .gnb-depth {
-	transition:top .2s;
-}
+.gnb-area .gnb-list .gnb-item .gnb-depth {transition:top .2s;}
 .header .head-fix-box,
 .header .page-title-area,
-.header .page-title-area .page-title {
-	transition:all .5s;
-}
+.header .page-title-area .page-title {transition:all .5s;}
 
 .scroll .container {padding-top:220px;}
 .scroll .header {top:-110px;}
 .scroll .header .head-fix-box {background:#653c9e url(../images/bg/bg_header01.png) no-repeat 100% 50%;}
-.scroll .header .breadcrumbs {}
 .scroll .header .page-title-area {box-shadow:2px 3px 8px rgba(0,0,0,.1);}
 .scroll .header .page-title-area .page-title {
 	height:85px;
@@ -682,8 +841,6 @@ body,
 }
 .scroll .header .btn-allmenu {top:99px;}
 .scroll .gnb-area .gnb-list .gnb-item .gnb-depth {top:40px;}
-
-
 
 /* ============================================================================================
 	회원관리

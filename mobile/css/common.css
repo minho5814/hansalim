@@ -234,6 +234,9 @@ select {
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	버튼
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+a,
+button {-webkit-tap-highlight-color:transparent;}
+
 .bottom-fixed-area {
 	position:fixed;
 	left:0;
@@ -243,7 +246,8 @@ select {
 }
 
 /* 텍스트 버튼 */
-.btn-text {
+.btn-text,
+.btn-text:visited {
 	display:inline-block;
 	width:100%;
 	height:55px;
@@ -254,7 +258,9 @@ select {
 	font-weight:600;
 	text-align:center;
 	line-height:55px;
+	-webkit-tap-highlight-color:transparent;
 }
+
 .btn-text.next {
 	position:relative;
 	padding-right:55px;
@@ -443,6 +449,16 @@ select {
 .btn-list.type2 .btn-item:first-child:before {display:none;}
 
 .btn-list .btn-item.one {width:100%;}
+
+/* 버튼 클릭시 색상 변환 */
+.btn-text:active {background-color:#000;}
+.btn-text.type1:active {background-color:#3d2e68;}
+.btn-text.type2:active,
+.btn-text-round:active {
+	border-color:#503799;
+	background-color:#f7f7f7;
+	color:#503799;
+}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	폼 요소
@@ -1987,11 +2003,11 @@ body,
 .menu-wrap .menu-tab-cont.on {display:block;}
 .menu-wrap .menu-list-box {padding:0 0 0 145px;}
 .menu-wrap .menu-list-box .left-menu {
-	position:fixed;
-	left:100%;
-	top:311px;
-	bottom:0;
+	position:absolute;
+	left:0;
+	top:0;
 	width:145px;
+	min-height:100%;
 	padding:25px 0 25px 10px;
 	box-sizing:border-box;
 }
@@ -2021,6 +2037,16 @@ body,
 	box-shadow:2px 4px 30px rgba(0,0,0,.3);
 	background-color:#5732a0;
 	color:#fff;
+}
+.menu-wrap .menu-list-box .left-menu .btn-area {
+	position:relative;
+	margin-top:30px;
+	padding-right:20px;
+	text-align:right;
+}
+.menu-wrap .menu-list-box .left-menu .btn-area .btn {
+	color:#111;
+	font-weight:600;
 }
 
 .menu-wrap .menu-list-box .right-menu .menu {

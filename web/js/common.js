@@ -1,7 +1,7 @@
 $(document).ready(function(){
-	/*
+	/* ------------------------------------------------------------------------------------------------------------------
 		Gnb
-	*/
+	------------------------------------------------------------------------------------------------------------------ */
 	$('.gnb-area .gnb-list .item').mouseenter(function(){
 		// 전체메뉴 닫기
 		$('.all-menu-layer').hide();
@@ -40,9 +40,9 @@ $(document).ready(function(){
 		}
 	});
 
-	/*
+	/* ------------------------------------------------------------------------------------------------------------------
 		로케이션
-	*/
+	------------------------------------------------------------------------------------------------------------------ */
 	// 넓이 제한
 	$('.breadcrumbs .menu-list').each(function(){
 		var wid = $(this).outerWidth();
@@ -69,9 +69,9 @@ $(document).ready(function(){
 		}
 	});
 
-	/*
+	/* ------------------------------------------------------------------------------------------------------------------
 		페이지 타이틀
-	*/
+	------------------------------------------------------------------------------------------------------------------ */
 	// 넓이 제한
 	$('.page-title-area .layer').each(function(){
 		var wid = $(this).outerWidth();
@@ -95,6 +95,17 @@ $(document).ready(function(){
 		var page = $('.page-title-area .inner-box');
 		if (!page.is(e.target) && page.has(e.target).length === 0){
 			$('.page-title-area .inner-box').removeClass('on').find('.layer').slideUp(100);
+		}
+	});
+
+	/*
+		아코디언
+	*/
+	$('.btn-tog').click(function(){
+		if($(this).parent().hasClass('on')){
+			$(this).parent().removeClass('on').find('.layer').slideUp(100);
+		}else{
+			$(this).parent().addClass('on').find('.layer').slideDown(200);
 		}
 	});
 });
