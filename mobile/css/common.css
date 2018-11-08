@@ -678,6 +678,9 @@ input[type=radio]:checked + label {
 	-webkit-transition:all .3s;
 	-ms-transition:all .3s;
 	transition:all .3s;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #333;
 }
 .sorting-box .btn.on {
 	background-color:#5a30a6;
