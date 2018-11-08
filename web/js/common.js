@@ -8,9 +8,6 @@ $(document).ready(function(){
 		$('.btn-allmenu').removeClass('close');
 		$('.menu-dimmed').hide();
 
-		var idx = $(this).closest('.gnb-item').index();
-		$(this).closest('.header').addClass('bgColor' + idx);
-
 		$('.gnb-close').show();
 		if($('.gnb-item').hasClass('on')){
 			$('.gnb-item').removeClass('on').find('.gnb-depth').hide();
@@ -98,6 +95,17 @@ $(document).ready(function(){
 		var page = $('.page-title-area .inner-box');
 		if (!page.is(e.target) && page.has(e.target).length === 0){
 			$('.page-title-area .inner-box').removeClass('on').find('.layer').slideUp(100);
+		}
+	});
+
+	/*
+		아코디언
+	*/
+	$('.btn-tog').click(function(){
+		if($(this).parent().hasClass('on')){
+			$(this).parent().removeClass('on').find('.layer').slideUp(100);
+		}else{
+			$(this).parent().addClass('on').find('.layer').slideDown(200);
 		}
 	});
 });
