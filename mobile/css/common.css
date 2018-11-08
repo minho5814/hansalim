@@ -1489,7 +1489,7 @@ body,
 	transform:translateY(-50%);
 	width:40px;
 	height:40px;
-	color:#fff;
+	color:#000;
 	font-size:18px;
 	text-align:center;
 	line-height:40px;
@@ -3442,6 +3442,20 @@ body,
 	font-size:25px;
 	font-weight:900;
 }
+
+/* 스크롤시 */
+.loan-list-wrap.fix .info-box {
+	position:fixed;
+	left:0;
+	right:0;
+	top:56px;
+	z-index:50;
+	background-color:rgba(246,247,255,.98);
+}
+.loan-list-wrap.fix .info-box .box-item {padding:11px 0;}
+.loan-list-wrap.fix .info-box .box-item .title {font-size:12px;}
+.loan-list-wrap.fix .info-box .box-item .cont {font-size:12px;}
+.loan-list-wrap.fix .info-box .box-item .cont .value {font-size:20px;}
 
 .loan-list-wrap .call-info {padding:30px 20px 42px;}
 .loan-list-wrap .call-info .call-number {

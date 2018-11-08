@@ -99,11 +99,11 @@ $(document).ready(function(){
 	});
 
 	/* 아코디언 리스트 (customer/MA-08.02.01.html) */
-	$('.accordion-list1 .list-item').click(function(){
-		if($(this).hasClass('on')){
-			$(this).removeClass('on').find('.answer').slideUp(100);
+	$('.accordion-list1 .list-item .inquiry').click(function(){
+		if($(this).closest('.list-item').hasClass('on')){
+			$(this).closest('.list-item').removeClass('on').find('.answer').slideUp(100);
 		}else{
-			$(this).addClass('on').find('.answer').slideDown(200);
+			$(this).closest('.list-item').addClass('on').find('.answer').slideDown(200);
 		}
 	});
 	/*  */

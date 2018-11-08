@@ -12,6 +12,7 @@ body,
 .header .h-logo a:before {background-position:-79px 0;}
 .header .btn-gnb:before {border-color:#fff;}
 .header .btn-gnb:after {background-color:#fff;}
+.header .btn-lang {color:#fff;}
 
 /* Container */
 .container {

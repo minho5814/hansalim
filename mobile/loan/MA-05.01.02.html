@@ -33,17 +33,19 @@
 
 		<div class="content wide">
 			<div class="loan-list-wrap">
-				<div class="info-box">
-					<div class="box-item">
-						<div class="title">이용가능금액</div>
-						<div class="cont">
-							최대 <span class="value">1,000</span> ₫
+				<div class="info-box-wrap">
+					<div class="info-box">
+						<div class="box-item">
+							<div class="title">이용가능금액</div>
+							<div class="cont">
+								최대 <span class="value">1,000</span> ₫
+							</div>
 						</div>
-					</div>
-					<div class="box-item">
-						<div class="title">연 이자율</div>
-						<div class="cont">
-							<span class="value">6.00~23.50</span>% / 년
+						<div class="box-item">
+							<div class="title">연 이자율</div>
+							<div class="cont">
+								<span class="value">6.00~23.50</span>% / 년
+							</div>
 						</div>
 					</div>
 				</div>
@@ -136,6 +138,25 @@
 		<li class="btn-item"><a href="MA-05.03.01.html" target="_blank" class="btn-text type1">대출접수</a></li>
 	</ul>
 </div>
+
+
+<script>
+$(window).scroll(function(){
+	// 스크롤시 해당 영역을 지날 때 상단 고정
+	var winTop = $(window).scrollTop();
+	var headH = $('.header').outerHeight();
+	var infoH = $('.info-box-wrap').outerHeight();
+	var infoT = $('.info-box-wrap').offset().top;
+
+	$('.info-box-wrap').css({'height':infoH});
+	
+	if(infoT - headH < winTop){
+		$('.loan-list-wrap').addClass('fix');
+	}else{
+		$('.loan-list-wrap').removeClass('fix');
+	}
+});
+</script>
 </body>
 
 </html>
