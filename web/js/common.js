@@ -117,6 +117,31 @@ $(document).ready(function(){
 			$(this).parent().addClass('on').find('.layer').slideDown(200);
 		}
 	});
+
+	/* ------------------------------------------------------------------------------------------------------------------
+		폼
+	------------------------------------------------------------------------------------------------------------------ */
+	form();
+
+	/* 데이트피커 */
+	$('.datepicker').each(function(){
+		var data = $(this).closest('.popup-datepicker').attr('data-name');
+		$(this).datepicker({
+			yearRange: '1900:2030',// 연도 법위
+			changeMonth: true,
+			changeYear: true,
+			firstDay: 0,
+			//altField: '.date-form[data-name=' + data + ']',
+			dateFormat: 'dd.mm.yy',
+			showOtherMonths: true,
+			monthNames : ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+			monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+			onSelect: function(dateText, inst) {
+				
+			}
+		});
+		$(this).find('td').removeClass('ui-datepicker-current-day');
+	});
 });
 
 
@@ -149,7 +174,18 @@ $(window).resize(function(){
 	폼 요소
 ====================================================================== */
 function form(){
-	
+	$('select.styled1').each(function(){
+		if(!$(this).parent().is('.selectbox')){
+			var sel = $(this).find('option:selected').text();
+			$(this).wrap('<span class="selectbox"></span>');
+			$(this).closest('.selectbox').prepend('<em class="sel-text">' + sel + '</em>');
+		}
+
+		$(this).change(function(){
+			var sel = $(this).find('option:selected').text();
+			$(this).closest('.selectbox').find('.sel-text').html(sel);
+		});
+	});
 }
 
 /* ======================================================================
