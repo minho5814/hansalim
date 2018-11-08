@@ -3334,8 +3334,8 @@ body,
 ============================================================================================ */
 /* 메인 (MA-05.01.01.html) */
 .loan-wrap {
-	margin-top:-55px;
-	padding-top:55px;
+	margin:-55px 0 -90px;
+	padding:55px 0 90px;
 	background-color:#eaeaea;
 }
 .loan-wrap .top-menu-list {
