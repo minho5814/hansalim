@@ -2201,14 +2201,16 @@ body,
 	background-color:#fff;
 }
 .signin-slide .signin-list {
-	overflow:hidden;
 	position:relative;
 	z-index:5;
 	padding:0 25px 15px;
 	background-color:#fff;
+	font-size:0;
+	text-align:center;
+	line-height:0;
 }
 .signin-slide .signin-list .signin-item {
-	float:left;
+	display:inline-block;
 	position:relative;
 	width:20%;
 }
