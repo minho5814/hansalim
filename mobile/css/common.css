@@ -4023,6 +4023,23 @@ body,
 	top:0;
 	font-size:13px;
 }
+.setting-list .setting-item .s-title .btn-update {
+	display:inline-block;
+	position:absolute;
+	right:20px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	height:24px;
+	padding:0 10px;
+	border-radius:5px;
+	background-color:#5d30a6;
+	color:#fff;
+	font-size:13px;
+	font-weight:600;
+	line-height:24px;
+}
 .setting-list .setting-item .btn-switch {
 	position:absolute;
 	right:20px;
