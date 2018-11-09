@@ -1047,7 +1047,9 @@ body,
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	메뉴별 색상 변환
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-/* 금융 */
+/*
+	금융
+*/
 .bgColor2 .header,
 .bgColor2 .header .breadcrumbs .crumb-item .menu-list .menu-item:hover .title,
 .bgColor2 .header .page-title-area .layer .link:hover {background-color:#27393d;}
@@ -1059,6 +1061,26 @@ body,
 .bgColor2 .header .breadcrumbs .crumb-item .menu-list .menu-item .list .link:hover {color:#27393d;}
 .bgColor2 .header .btn-allmenu.close {background-image:url(../images/icon/btn_close02.png);}
 .bgColor2.scroll .header .head-fix-box {background:#18a5b6 url(../images/bg/bg_header02.png) no-repeat 100% 50%;}
+/* 버튼 */
+.bgColor2 .btn-text {background-color:#216871;}
+.bgColor2 .btn-text:hover {background-color:#27474b;}
+.bgColor2 .btn-text.type1 {
+	border-color:#216871;
+	background-color:#fff;
+	color:#216871;
+}
+.bgColor2 .btn-text.type1:hover {
+	border-color:#274755;
+	background-color:#f7f7f7;
+	color:#274755;
+}
+.bgColor2 .btn-text.disabled {
+	background-color:#e6e6e6;
+	color:#b3b3b3;
+	cursor:not-allowed;
+}
+/* 달력 */
+.ui-datepicker-calendar tbody td.ui-datepicker-current-day a {background-color:#27393d;}
 
 /* 이벤트 */
 .bgColor3 .header,
