@@ -209,6 +209,23 @@ select {
 	text-align:center;
 }
 
+/* 하단 버튼 고정 스타일 */
+.fix-btm-area {
+	position:fixed;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:50;
+	height:110px;
+	padding-top:30px;
+	box-shadow:0 0 22px 2px rgba(0,0,0,.1);
+	box-sizing:border-box;
+	text-align:center;
+}
+.fix-btm-area .btn-text {margin-left:13px;}
+.fix-btm-area .btn-text:first-child {margin-left:0;}
+.fix-btm-area {}
+
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	폼 요소
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -776,6 +793,11 @@ body,
 	color:#7451c0;
 	background:url(../images/icon/icon_arr_bottom03.png) no-repeat 99% 50%;
 }/* on */
+
+.header .breadcrumbs .crumb-item.no-link .crumb {
+	background:none !important;
+	cursor:text;
+}
 .header .breadcrumbs .crumb-item:first-child .crumb {padding-left:0;}
 .header .breadcrumbs .crumb-item .menu-list {
 	display:none;
@@ -818,6 +840,7 @@ body,
 	position:absolute;
 	left:100%;
 	top:0;
+	min-width:140px;
 	margin-left:-1px;
 	padding:15px 0;
 	border:1px solid #c2c2c2;
@@ -1039,7 +1062,7 @@ body,
 }
 .scroll .header .breadcrumbs .crumb-item .crumb {
 	background:url(../images/icon/icon_arr_right02.png) no-repeat 100% 50%;
-	color:#fff;
+	color:#fff !important;
 }
 .scroll .header .btn-allmenu {top:99px;}
 .scroll .gnb-area .gnb-list .gnb-item .gnb-depth {top:40px;}
@@ -1105,5 +1128,87 @@ body,
 }
 
 /* ============================================================================================
-	회원관리
+	MY
+============================================================================================ */
+
+
+/* ============================================================================================
+	Loan
+============================================================================================ */
+/* 예상상환스케줄 (MA-05.06.01.html) */
+.searth-box {
+	padding-top:15px;
+	border-radius:10px;
+	background-color:#f7f7f7;
+}
+.searth-box .board {
+	padding-left:40px;
+}
+.searth-box .board th,
+.searth-box .board td {
+	height:40px;
+	padding:15px 0;
+	text-align:left;
+}
+.searth-box .board th {
+	padding-left:10px;
+}
+.searth-box .board th label {line-height:40px;}
+.searth-box .board td {
+	padding-right:50px;
+}
+.searth-box .board td input[type=text],
+.searth-box .board td input[type=number],
+.searth-box .board td input[type=tel],
+.searth-box .board td input[type=password],
+.searth-box .board td select {width:100%;}
+.searth-box .board .unit-area {
+	position:relative;
+	padding-right:40px;
+}
+.searth-box .board .unit-area .unit-text {
+	color:#4c4c4c;
+	position:absolute;
+	right:0;
+	top:50%;
+	min-width:28px;
+	margin-top:-11px;
+}
+.searth-box .board .info-text {
+	padding:5px 0 5px 10px;
+	color:#111;
+	font-size:18px;
+	font-weight:900;
+}
+.searth-box .btn-area {
+	margin:0 50px;
+	padding:15px 0 30px;
+	border-top:1px solid #e0e0e0;
+	text-align:center;
+}
+.searth-box .btn-text {margin-left:8px;}
+.searth-box .btn-text:first-chid {margin-left:0;}
+
+/* ============================================================================================
+	카드
+============================================================================================ */
+
+
+/* ============================================================================================
+	이벤트
+============================================================================================ */
+
+
+/* ============================================================================================
+	고객센터
+============================================================================================ */
+
+
+/* ============================================================================================
+	회사소개
+============================================================================================ */
+
+
+/* ============================================================================================
+	레이어팝업
 ============================================================================================ */
