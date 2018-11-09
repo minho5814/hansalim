@@ -218,8 +218,9 @@ select {
 	z-index:50;
 	height:110px;
 	padding-top:30px;
-	box-shadow:0 0 22px 2px rgba(0,0,0,.1);
 	box-sizing:border-box;
+	box-shadow:0 0 22px 2px rgba(0,0,0,.1);
+	background-color:#fff;
 	text-align:center;
 }
 .fix-btm-area .btn-text {margin-left:13px;}
@@ -465,12 +466,9 @@ table .a-right {
 .board-list1 table td.link-type .link-text:hover {text-decoration:underline;}/* hover */
 
 /* 입력형식 */
-.board-write1 {}
 .board-write1 .unit-text {margin-left:15px;}
 .board-write1 + .board-write1 {margin-top:40px;}
-.board-write1 .title-area {
-	padding:9px 0;
-}
+.board-write1 .title-area {padding:9px 0;}
 .board-write1 .board-title {
 	color:#111;
 	font-size:20px;
@@ -496,6 +494,35 @@ table .a-right {
 	padding:9px 0;
 }
 .board-write1 .board td {color:#4c4c4c;}
+
+/* 데이타 형식 */
+.board-data1 {margin-top:36px;}
+.board-data1 .board {border-top:1px solid #111;}
+.board-data1 .board th,
+.board-data1 .board td {
+	padding:24px 0 20px;
+	border-bottom:1px solid #f2f2f2;
+	color:#777;
+	font-size:14px;
+	font-weight:400;
+}
+.board-data1 .board td {padding-left:40px;}
+.board-data1 .board .label {
+	display:inline-block;
+	height:28px;
+	margin-bottom:5px;
+	padding:0 15px;
+	border-radius:3px;
+	background-color:#1b1b1b;
+	color:#fff;
+	line-height:28px;
+}
+.board-data1 .board .price {
+	margin-top:4px;
+	color:#111;
+	font-size:18px;
+	font-weight:600;
+}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	리스트
@@ -1189,6 +1216,32 @@ body,
 }
 .searth-box .btn-text {margin-left:8px;}
 .searth-box .btn-text:first-chid {margin-left:0;}
+
+.searth-box .result-area {
+	margin:0 50px;
+	padding:38px 0 47px;
+	border-top:1px solid #e0e0e0;
+	text-align:center;
+}
+.searth-box .result-area .price {
+	color:#111;
+	font-size:40px;
+	font-weight:900;
+}
+.searth-box .result-area .text {
+	margin-top:8px;
+	color:#737373;
+	font-size:16px;
+}
+
+.searth-box .result-area .interest {
+	padding-top:10px;
+	color:#111;
+	font-weight:600;
+}
+.searth-box .result-area .interest .price {font-weight:400;}
+.searth-box .result-area .interest .price strong {font-weight:900;}
+.searth-box .result-area .btn-text {margin:27px 0 -17px;}
 
 /* ============================================================================================
 	카드

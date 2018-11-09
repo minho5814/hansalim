@@ -362,13 +362,13 @@
 					</div>
 				</div>
 				<div class="crumb-item no-link">
-					<span class="crumb">예상상환스케줄</span>
+					<span class="crumb">대출시뮬레이션</span>
 				</div>
 			</div>
 
 			<div class="page-title-area no-link">
 				<div class="inner-box">
-					<h2 class="page-title">예상상환스케줄</h2>
+					<h2 class="page-title">대출시뮬레이션</h2>
 				</div>
 			</div>
 		</div>
@@ -381,28 +381,29 @@
 				<div class="board">
 					<table>
 						<colgroup>
-							<col style="width:130px;">
-							<col style="width:340px;">
-							<col style="width:130px;">
+							<col style="width:90px;">
+							<col style="width:410px;">
+							<col style="width:90px;">
 							<col>
 						</colgroup>
 						<tbody>
 							<tr>
-								<th scope="row"><label for="Product">대출신청상품</label></th>
+								<th scope="row"><label for="User">신청자</label></th>
 								<td>
-									<select id="Product" class="styled1">
-										<option>대출신청상품을 선택하세요</option>
+									<select id="User" class="styled1">
+										<option>직장인이</option>
 									</select>
 								</td>
+								<td colspan="2"></td>
+							</tr>
+							<tr>
 								<th scope="row"><label for="Price">신청금액</label></th>
 								<td>
 									<div class="unit-area">
 										<input type="text" id="Price"><span class="unit-text">VND</span>
 									</div>
 								</td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="Month">대출기간</label></th>
+								<th scope="row"><label for="Month">신청기간</label></th>
 								<td>
 									<select id="Month" class="styled1">
 										<option>대출기간선택</option>
@@ -417,156 +418,20 @@
 										<option>60 개월</option>
 									</select>
 								</td>
-								<th scope="row"><label for="Interest">적용이자율(연)</label></th>
-								<td>
-									<div class="unit-area">
-										<input type="text" id="Interest"><span class="unit-text">%</span>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="Date01">대출일</label></th>
-								<td>
-									<input type="text" id="Date01" class="datepicker" placeholder="dd.mm.yy" value="05.11.2018">
-								</td>
-								<th scope="row"><label for="Date02">최초상환일</label></th>
-								<td>
-									<input type="text" id="Date02" class="datepicker" placeholder="dd.mm.yy" value="05.11.2018">
-								</td>
 							</tr>
 						</tbody>
 					</table>
-					<div class="info-text">상환방법 : 원리금균등상환</div>
 				</div>
-				<div class="btn-area">
-					<button type="button" class="btn-text type1">초기화</button>
-					<a href="MA-05.06.01.html" class="btn-text">계산하기</a>
-				</div>
-			</div>
-
-			<div class="board-data1">
-				<div class="board">
-					<table>
-						<colgroup>
-							<col style="width:20%;">
-							<col style="width:20%;">
-							<col style="width:20%;">
-							<col style="width:20%;">
-							<col>
-						</colgroup>
-						<tbody>
-							<tr>
-								<th scope="row">
-									<span class="label">1회차</span><br>
-									27. 10. 2018
-								</th>
-								<td>
-									상환원금
-									<div class="price">1,000,000 VND</div>
-								</td>
-								<td>
-									상환이자
-									<div class="price">5,000 VND</div>
-								</td>
-								<td>
-									이자율
-									<div class="price">5.95%</div>
-								</td>
-								<td>
-									상환 후 잔액
-									<div class="price">4,000,000 VND</div>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">
-									<span class="label">2회차</span><br>
-									27. 10. 2018
-								</th>
-								<td>
-									상환원금
-									<div class="price">1,000,000 VND</div>
-								</td>
-								<td>
-									상환이자
-									<div class="price">5,000 VND</div>
-								</td>
-								<td>
-									이자율
-									<div class="price">5.95%</div>
-								</td>
-								<td>
-									상환 후 잔액
-									<div class="price">4,000,000 VND</div>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">
-									<span class="label">3회차</span><br>
-									27. 10. 2018
-								</th>
-								<td>
-									상환원금
-									<div class="price">1,000,000 VND</div>
-								</td>
-								<td>
-									상환이자
-									<div class="price">5,000 VND</div>
-								</td>
-								<td>
-									이자율
-									<div class="price">5.95%</div>
-								</td>
-								<td>
-									상환 후 잔액
-									<div class="price">4,000,000 VND</div>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">
-									<span class="label">4회차</span><br>
-									27. 10. 2018
-								</th>
-								<td>
-									상환원금
-									<div class="price">1,000,000 VND</div>
-								</td>
-								<td>
-									상환이자
-									<div class="price">5,000 VND</div>
-								</td>
-								<td>
-									이자율
-									<div class="price">5.95%</div>
-								</td>
-								<td>
-									상환 후 잔액
-									<div class="price">4,000,000 VND</div>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">
-									<span class="label">5회차</span><br>
-									27. 10. 2018
-								</th>
-								<td>
-									상환원금
-									<div class="price">1,000,000 VND</div>
-								</td>
-								<td>
-									상환이자
-									<div class="price">5,000 VND</div>
-								</td>
-								<td>
-									이자율
-									<div class="price">5.95%</div>
-								</td>
-								<td>
-									상환 후 잔액
-									<div class="price">0 VND</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+				<div class="result-area">
+					<div class="interest">
+						빌리면 1일 이자는?
+						<div class="price"><strong>201</strong> VND</div>
+					</div>
+					<div class="text">
+						최저 연 6.01% 기준<br>
+						* 대출심사에 따라 금리가 달라질 수 있습니다.
+					</div>
+					<button type="button" class="btn-text">추천 대출상품 보기</button>
 				</div>
 			</div>
 		</div>
@@ -575,8 +440,8 @@
 
 	<!-- 하단 고정 영역 -->
 	<div class="fix-btm-area">
-		<a href="#" class="btn-text type1">즉시대출접수</a>
-		<a href="#" class="btn-text">대출시뮬레이션</a>
+		<a href="MA-05.06.01.html" class="btn-text type1">예상 상환 스케줄</a>
+		<a href="MA-05.03.01.html" class="btn-text">대출 신청</a>
 	</div>
 	<!-- // 하단 고정 영역 -->
 </div>
