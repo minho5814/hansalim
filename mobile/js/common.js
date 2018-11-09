@@ -99,7 +99,7 @@ $(document).ready(function(){
 	});
 
 	/* 아코디언 리스트 (customer/MA-08.02.01.html) */
-	$('.accordion-list1 .list-item .inquiry').click(function(){
+	$(document).on('click', '.accordion-list1 .list-item .inquiry', function(){
 		if($(this).closest('.list-item').hasClass('on')){
 			$(this).closest('.list-item').removeClass('on').find('.answer').slideUp(100);
 		}else{

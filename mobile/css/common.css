@@ -2040,13 +2040,16 @@ body,
 }
 .menu-wrap .menu-list-box .left-menu .btn-area {
 	position:relative;
-	margin-top:30px;
+	margin-top:40px;
 	padding-right:20px;
-	text-align:right;
 }
 .menu-wrap .menu-list-box .left-menu .btn-area .btn {
-	color:#111;
-	font-weight:600;
+	display:inline-block;
+	position:relative;
+	padding-left:22px;
+	color:#737373;
+	font-size:14px;
+	text-align:center;
 }
 
 .menu-wrap .menu-list-box .right-menu .menu {
