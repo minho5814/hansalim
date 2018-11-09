@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="bgColor1">
+<html lang="en" class="bgColor2">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -71,7 +71,7 @@
 						</div>
 					</div>
 					<!-- 금융 -->
-					<div class="gnb-item" data="bgColor2">
+					<div class="gnb-item active" data="bgColor2">
 						<span class="item">금융</span>
 						<div class="gnb-depth">
 							<div class="depth-inner">
@@ -375,25 +375,95 @@
 				</div>
 			</div>
 
-			<div class="page-title-area">
+			<div class="page-title-area no-link">
 				<div class="inner-box">
 					<h2 class="page-title">대출이용내역</h2>
-					<div class="layer">
-						<a href="" class="link">해당 Depth 메뉴 명</a>
-						<a href="" class="link">해당 Depth 메뉴 명 해당 Depth 메뉴 명 해당 Depth 메뉴 명 해당 Depth 메뉴 명</a>
-						<a href="" class="link">해당 Depth 메뉴 명</a>
-						<a href="" class="link">해당 Depth 메뉴 명</a>
-					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<!-- 컨텐츠 영역 -->
 	<div class="container">
 		<div class="content">
-			
+			<div class="board-write1">
+				<div class="board">
+					<table>
+						<colgroup>
+							<col style="width:220px;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row"><label for="Product">대출신청상품</label></th>
+								<td>
+									<select id="Product" style="width:555px;">
+										<option>대출신청상품을 선택하세요</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Name">신청자 명</label></th>
+								<td>
+									<input type="text" id="Name" placeholder="이름을 입력하세요" style="width:276px;">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Birth">생년월일</label></th>
+								<td>
+									<input type="text" id="Birth" class="datepicker" placeholder="dd.mm.yy" value="05.19.1984" style="width:276px;">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Phone">휴대폰번호</label></th>
+								<td>
+									<input type="text" id="Phone" placeholder=" 연락 가능한 전화번호를 입력하세요" style="width:276px;">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Price">대출신청금액</label></th>
+								<td>
+									<input type="text" id="Price" placeholder="" class="false-form" style="width:276px;"><span class="unit-text">VND</span>
+									<div class="false-text">최소 000,000 VND부터 대출이 가능합니다.</div>
+									<!--
+										<div class="false-text">최대  000,000 VND까지 대출이 가능합니다.</div>
+									-->
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Month">대출기간</label></th>
+								<td>
+									<select id="Month" style="width:276px;">
+										<option>대출기간선택</option>
+										<option>6 개월</option>
+										<option>12 개월</option>
+										<option>18 개월</option>
+										<option>24 개월</option>
+										<option>30 개월</option>
+										<option>36 개월</option>
+										<option>42 개월</option>
+										<option>48 개월</option>
+										<option>60 개월</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Purpose">대출목적</label></th>
+								<td>
+									<textarea cols="" rows="" id="Purpose" style="height:115px;"></textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="btn-btm-area">
+				<a href="MA-05.03.01.html" class="btn-text">대출 접수</a>
+			</div>
 		</div>
 	</div>
+	<!-- // 컨텐츠 영역 -->
 </div>
 </body>
 
