@@ -1161,6 +1161,7 @@ body,
 .searth-box .board td input[type=number],
 .searth-box .board td input[type=tel],
 .searth-box .board td input[type=password],
+.searth-box .board td .selectbox,
 .searth-box .board td select {width:100%;}
 .searth-box .board .unit-area {
 	position:relative;
