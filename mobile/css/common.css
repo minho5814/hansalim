@@ -954,7 +954,7 @@ input[type=radio]:checked + label {
 .accordion-list1 .lists .list-item:first-child {border-top:0;}
 .accordion-list1 .lists .list-item .inquiry {
 	position:relative;
-	padding:15px 40px 15px 95px;
+	padding:18px 40px 19px 20px;
 }
 .accordion-list1 .lists .list-item .inquiry:before {
 	content:'';
@@ -971,13 +971,12 @@ input[type=radio]:checked + label {
 }
 .accordion-list1 .lists .list-item.on .inquiry:before {background-position:-81px 0;}
 .accordion-list1 .lists .list-item .inquiry .value {
-	position:absolute;
-	left:20px;
-	top:15px;
+	display:block;
 	color:#737373;
 	font-size:13px;
 }
 .accordion-list1 .lists .list-item .inquiry .text-area {
+	margin-top:5px;
 	color:#111;
 	font-weight:600;
 }
