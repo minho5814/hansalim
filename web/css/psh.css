@@ -158,7 +158,8 @@
 }
 /* 롯데카드소개 (Web-04.02.01.html) */
 .intro-visual {width:100%;}
-.intro-visual.intro2 {background:#f0f0f8 url(../images/img/intro_img02.png) no-repeat right 0;}
+.intro-visual.intro1 {background:#f0f0f8 url(../images/img/intro_img01.png) no-repeat right 0;}
+.intro-visual.intro2 {background:#f0f0f8;}
 .intro-visual .box-inner {
 	position:relative;
 	width:1000px;
