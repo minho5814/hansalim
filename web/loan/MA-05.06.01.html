@@ -362,13 +362,13 @@
 					</div>
 				</div>
 				<div class="crumb-item no-link">
-					<span class="crumb">대출접수</span>
+					<span class="crumb">예상상환스케줄</span>
 				</div>
 			</div>
 
 			<div class="page-title-area no-link">
 				<div class="inner-box">
-					<h2 class="page-title">대출접수</h2>
+					<h2 class="page-title">예상상환스케줄</h2>
 				</div>
 			</div>
 		</div>
@@ -377,54 +377,34 @@
 	<!-- 컨텐츠 영역 -->
 	<div class="container">
 		<div class="content">
-			<div class="board-write1">
+			<div class="searth-box">
 				<div class="board">
 					<table>
 						<colgroup>
-							<col style="width:220px;">
+							<col style="width:130px;">
+							<col style="width:340px;">
+							<col style="width:130px;">
 							<col>
 						</colgroup>
 						<tbody>
 							<tr>
 								<th scope="row"><label for="Product">대출신청상품</label></th>
 								<td>
-									<select id="Product" style="width:555px;">
+									<select id="Product">
 										<option>대출신청상품을 선택하세요</option>
 									</select>
 								</td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="Name">신청자 명</label></th>
+								<th scope="row"><label for="Price">신청금액</label></th>
 								<td>
-									<input type="text" id="Name" placeholder="이름을 입력하세요" style="width:276px;">
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="Birth">생년월일</label></th>
-								<td>
-									<input type="text" id="Birth" class="datepicker" placeholder="dd.mm.yy" value="19.05.1984" style="width:276px;">
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="Phone">휴대폰번호</label></th>
-								<td>
-									<input type="text" id="Phone" placeholder=" 연락 가능한 전화번호를 입력하세요" style="width:276px;">
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="Price">대출신청금액</label></th>
-								<td>
-									<input type="text" id="Price" placeholder="" class="false-form" style="width:276px;"><span class="unit-text">VND</span>
-									<div class="false-text">최소 000,000 VND부터 대출이 가능합니다.</div>
-									<!--
-										<div class="false-text">최대  000,000 VND까지 대출이 가능합니다.</div>
-									-->
+									<div class="unit-area">
+										<input type="text" id="Price"><span class="unit-text">VND</span>
+									</div>
 								</td>
 							</tr>
 							<tr>
 								<th scope="row"><label for="Month">대출기간</label></th>
 								<td>
-									<select id="Month" style="width:276px;">
+									<select id="Month">
 										<option>대출기간선택</option>
 										<option>6 개월</option>
 										<option>12 개월</option>
@@ -437,15 +417,30 @@
 										<option>60 개월</option>
 									</select>
 								</td>
+								<th scope="row"><label for="Interest">적용이자율(연)</label></th>
+								<td>
+									<div class="unit-area">
+										<input type="text" id="Interest"><span class="unit-text">%</span>
+									</div>
+								</td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="Purpose">대출목적</label></th>
+								<th scope="row"><label for="Date01">대출일</label></th>
 								<td>
-									<textarea cols="" rows="" id="Purpose" style="height:115px;"></textarea>
+									<input type="text" id="Date01" class="datepicker" placeholder="dd.mm.yy" value="05.11.2018">
+								</td>
+								<th scope="row"><label for="Date02">최초상환일</label></th>
+								<td>
+									<input type="text" id="Date02" class="datepicker" placeholder="dd.mm.yy" value="05.11.2018">
 								</td>
 							</tr>
 						</tbody>
 					</table>
+					<div class="info-text">상환방법 : 원리금균등상환</div>
+				</div>
+				<div class="btn-area">
+					<button type="button" class="btn-text type1">초기화</button>
+					<a href="MA-05.06.01.html" class="btn-text">계산하기</a>
 				</div>
 			</div>
 
@@ -455,6 +450,13 @@
 		</div>
 	</div>
 	<!-- // 컨텐츠 영역 -->
+
+	<!-- 하단 고정 영역 -->
+	<div class="fix-btm-area">
+		<a href="#" class="btn-text type1">즉시대출접수</a>
+		<a href="#" class="btn-text">대출시뮬레이션</a>
+	</div>
+	<!-- // 하단 고정 영역 -->
 </div>
 </body>
 
