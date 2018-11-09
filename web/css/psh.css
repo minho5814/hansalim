@@ -111,75 +111,78 @@
 	롯데카드소개
 ============================================================================================ */
 /* CEO인사말 (Web-04.01.html) */
-.ceo-cont {}
-.ceo-cont .ceo-visual {
+.ceo-visual {
 	width:100%;
 	background-color:#f0f0f8;
 }
-.ceo-cont .ceo-visual .inner {
+.ceo-visual .box-inner {
 	position:relative;
-	width:1200px;
+	width:1000px;
 	height:434px;
 	margin:0 auto;
-	padding:105px 0 130px;
+	padding:196px 0 104px;
 	box-sizing:border-box;
-	text-align:center;
 }
-.ceo-cont .ceo-visual .title {
-	position:relative;
-	padding-bottom:28px;
-	color:#111;
-	font-size:30px;
-	font-weight:600;
-	line-height:36px;
-}
-.ceo-cont .ceo-visual .title:before {
-	content:'';
-	display:block;
-	position:absolute;
-	left:50%;
-	bottom:0;
-	-webkit-transform:translateX(-50%);
-	-ms-transform:translateX(-50%);
-	transform:translateX(-50%);
-	width:30px;
-	height:2px;
-	background-color:#d93e5f;
-}
-.ceo-cont .ceo-visual .visual-text {margin-top:30px;}
-.ceo-cont .ceo-visual .visual-text .tit {
+.ceo-visual .visual-text {}
+.ceo-visual .visual-text .tit {
 	display:block;
 	vertical-align:top;
 }
-.ceo-cont .ceo-visual .visual-text p {
-	margin-top:12px;
+.ceo-visual .visual-text p {
+	margin-top:14px;
 	color:#111;
 	font-size:18px;
 	font-weight:400px;
 	line-height:25px;
 }
-.ceo-cont .ceo-visual .ceo-img {
+.ceo-visual .visual-img {
 	position:absolute;
-	right:-20px;
+	right:72px;
 	bottom:0;
 }
-.ceo-cont .ceo-visual .ceo-img img {vertical-align:top;}
-.ceo-cont .ceo-text {}
-.ceo-cont .ceo-text .inner {
-	width:1200px;
-	margin:45px auto 0;
-}
+.ceo-visual .visual-img img {vertical-align:top;}
 
-.ceo-cont .ceo-text .text1 {
+.intro-text {margin-top:45px;}
+.intro-text .text1 {
 	color:#111;
 	font-size:18px;
 	font-weight:600;
 	line-height:24px;
 }
-.ceo-cont .ceo-text .text2 {
+.intro-text .text2 {
 	margin-top:18px;
 	color:#4c4c4c;
 	font-size:15px;
 	font-weight:400;
 	line-height:24px;
 }
+/* 롯데카드소개 (Web-04.02.01.html) */
+.intro-visual {width:100%;}
+.intro-visual.intro2 {background:#f0f0f8 url(../images/img/intro_img02.png) no-repeat right 0;}
+.intro-visual .box-inner {
+	position:relative;
+	width:1000px;
+	height:434px;
+	margin:0 auto;
+	padding:197px 0 133px;
+	box-sizing:border-box;
+	text-align:center;
+}
+.intro-visual .visual-text {}
+.intro-visual .visual-text .tit {
+	display:block;
+	vertical-align:top;
+}
+.intro-visual .visual-text p {
+	margin-top:14px;
+	color:#111;
+	font-size:18px;
+	font-weight:400px;
+	line-height:25px;
+}
+.intro-visual .visual-img {
+	position:absolute;
+	right:72px;
+	bottom:0;
+}
+.intro-visual .visual-img img {vertical-align:top;}
