@@ -6,7 +6,11 @@
 
 .fColor1 {color:#e21c24 !important;}
 
-/* 고객센터 지점안내 (Web-08.04.html) */
+/* ============================================================================================
+	고객센터
+============================================================================================ */
+
+/* 지점안내 (Web-08.04.html) */
 .point-area {
 	padding-top:20px;
 	border-top:1px solid #111;
@@ -34,7 +38,7 @@
 }
 .point-area .map-area {margin-top:10px;}
 
-/* 고객센터 공지사항 목록 (Web-08.01.01.html) */
+/* 공지사항 목록 (Web-08.01.01.html) */
 .customer-notice {}
 .search-form {
 	padding:30px 120px;
@@ -74,7 +78,7 @@
 	color:#777;
 	font-size:15px;
 }
-/* 고객센터 공지사항 상세 (Web-08.01.02.html) */
+/* 공지사항 상세 (Web-08.01.02.html) */
 .view-form .view-text .view-list {border-top:1px solid #333;}
 .view-form .view-text .view-list .item-view {
 	padding:20px 0;
@@ -102,3 +106,59 @@
 	text-align:center;
 }
 .view-form .view-cont {margin-top:45px;}
+
+/* ============================================================================================
+	롯데카드소개
+============================================================================================ */
+/* CEO인사말 (Web-04.01.html) */
+.ceo-cont {}
+.ceo-cont .ceo-visual {
+	width:100%;
+	background-color:#f0f0f8;
+}
+.ceo-cont .ceo-visual .inner {
+	position:relative;
+	width:1200px;
+	height:434px;
+	margin:0 auto;
+	padding:105px 0 130px;
+	box-sizing:border-box;
+	text-align:center;
+}
+.ceo-cont .ceo-visual .visual-text {margin-top:30px;}
+.ceo-cont .ceo-visual .visual-text .tit {
+	display:block;
+	vertical-align:top;
+}
+.ceo-cont .ceo-visual .visual-text p {
+	margin-top:12px;
+	color:#111;
+	font-size:18px;
+	font-weight:400px;
+	line-height:25px;
+}
+.ceo-cont .ceo-visual .ceo-img {
+	position:absolute;
+	right:-20px;
+	bottom:0;
+}
+.ceo-cont .ceo-visual .ceo-img img {vertical-align:top;}
+.ceo-cont .ceo-text {}
+.ceo-cont .ceo-text .inner {
+	width:1200px;
+	margin:45px auto 0;
+}
+
+.ceo-cont .ceo-text .text1 {
+	color:#111;
+	font-size:18px;
+	font-weight:600;
+	line-height:24px;
+}
+.ceo-cont .ceo-text .text2 {
+	margin-top:18px;
+	color:#4c4c4c;
+	font-size:15px;
+	font-weight:400;
+	line-height:24px;
+}
