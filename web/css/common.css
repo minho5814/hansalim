@@ -239,7 +239,6 @@ select {
 }
 .fix-btm-area .btn-text {margin-left:13px;}
 .fix-btm-area .btn-text:first-child {margin-left:0;}
-.fix-btm-area {}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	폼 요소
@@ -1325,3 +1324,79 @@ body,
 /* ============================================================================================
 	레이어팝업
 ============================================================================================ */
+.layer-popup {
+	display:none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 60;
+	background-color: rgba(0,0,0,.7);
+}
+.layer-popup.show {display:block;}
+.layer-popup .dimmed {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.layer-popup .popup {
+	overflow-y: auto;
+	position: absolute;
+	left:50%;
+	top:50%;
+	box-sizing:border-box;
+	background-color: #fff;
+	padding:40px 20px;
+}
+.layer-popup .popup .cont {
+	color:#4c4c4c;
+	text-align:center;
+}
+.layer-popup .popup .btn-close {
+	position:absolute;
+	right:20px;
+	top:20px;
+	width:60px;
+	height:60px;
+	background:url(../images/icon/btn_close04.png) no-repeat 50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.layer-popup .popup .btn-bottom-area {
+	margin-top:40px;
+	text-align:center;
+}
+.layer-popup .popup .btn-bottom-area .btn-text {
+	min-width:130px;
+	height:45px;
+	margin-left:8px;
+	line-height:45px;
+}
+.layer-popup .popup .btn-bottom-area .btn-text:first-child {margin-left:0;}
+.layer-popup .popup .btn-bottom-area .btn-text.type1 {
+	line-height:43px;
+}
+
+/* 대출접수 (loan/MA-05.03.01.html) */
+.layer-popup .complated {
+	color:#737373;
+	font-weight:600;
+}
+.layer-popup .complated .icon-text {
+	padding:90px 0 13px;
+	background:url(../images/icon/icon_complated.png) no-repeat 50% 0;
+	color:#333;
+	font-size:26px;
+	font-weight:400;
+}
+.layer-popup .complated .icon-text strong {
+	font-weight:900;
+}
+.layer-popup .complated {
+	
+}
+.layer-popup .complated {}

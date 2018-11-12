@@ -162,6 +162,25 @@ $(document).ready(function(){
 		});
 		$(this).find('td').removeClass('ui-datepicker-current-day');
 	});
+
+
+
+	/* ------------------------------------------------------------------------------------------------------------------
+		레이어팝업
+	------------------------------------------------------------------------------------------------------------------ */
+	popup();
+	$('.btn-popup').click(function(){
+		//$('html, body').css({'overflow':'hidden'});
+		var name = $(this).attr('layer-name');
+		$('.layer-popup[layer-name=' + name + ']').addClass('show');
+		popup();
+	});
+
+	$('.layer-popup .popClose').click(function(){
+		//$('html, body').removeAttr('style');
+		$(this).closest('.layer-popup').removeClass('show');
+		popup();
+	});
 });
 
 
@@ -185,7 +204,7 @@ $(window).scroll(function(){
 
 /* 리사이징 */
 $(window).resize(function(){
-	
+	popup();// 레이어팝업
 });
 
 
@@ -208,9 +227,37 @@ function form(){
 	});
 }
 
+
+
 /* ======================================================================
 	레이어팝업
 ====================================================================== */
 function popup(){
-	
+	/*
+	$('.layer-popup').each(function(){
+		var winH = $(window).height();
+		var popH = $(this).find('.popup').outerHeight();
+		if(popH + 60 > winH){
+			$(this).css({'padding-top':'20px', 'padding-bottom':'20px'});
+		}else{
+			var padg = (winH - popH) / 2;
+			console.log(padg);
+			$(this).css({'padding-top':padg + 'px'});
+		}
+	});
+	*/
+	$('.layer-popup .popup').each(function(){
+		var popW = $(this).outerWidth();
+		var popH = $(this).outerHeight();
+		$(this).css({'margin-left':-popW/2, 'margin-top':-popH/2}).attr('data', popH);
+
+		var winH = $(window).height();
+		var data = $(this).attr('data');
+		if(data > winH){
+			$(this).closest('.layer-popup').addClass('h-full');
+		}else{
+			$(this).closest('.layer-popup').removeClass('h-full');
+		}
+		console.log(winH);
+	});
 }
