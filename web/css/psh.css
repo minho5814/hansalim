@@ -5,10 +5,33 @@
 .mgT65 {margin-top:65px !important;}
 
 .fColor1 {color:#e21c24 !important;}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	리스트
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 불릿 리스트 */
+.bullet-list1 li {
+	position:relative;
+	padding-left:13px;
+	color:#4c4c4c;
+	font-size:15px;
+	font-weight:400;
+	line-height:33px;
+}
+.bullet-list1 li:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0;
+	top:15px;
+	width:3px;
+	height:3px;
+	background-color:#111;
+	border-radius:50%;
+}
 
 /* ============================================================================================
 	고객센터
-============================================================================================ */
+=========================================================================================== */
 
 /* 지점안내 (Web-08.04.html) */
 .point-area {
@@ -259,5 +282,90 @@
 	color:#737373;
 	font-size:16px;
 	font-weight:400;
+	line-height:24px;
+}
+
+/* ============================================================================================
+	회원관리
+============================================================================================ */
+/* 정식회원관리 (Web-02.02.02.3.html) */
+.member-cont {}
+.member-cont .txt-box {
+	padding:63px 0 40px;
+	border-top:1px solid #e0e0e0;
+	text-align:center;
+}
+.member-cont .txt-box .title {
+	color:#111;
+	font-size:26px;
+	font-weight:900;
+	line-height:32px;
+}
+.member-cont .txt-box p {
+	margin-top:24px;
+	color:#4c4c4c;
+	font-size:17px;
+	font-weight:400;
+	line-height:27px;
+}
+.member-cont .txt-box p.f-style {
+	color:#e43762;
+	font-weight:600;
+}
+.member-cont .txt-box p em {
+	color:#111;
+	font-weight:900;
+}
+.policy-box {
+	margin-top:40px;
+	text-align:center;
+}
+.policy-text {
+	color:#4c4c4c;
+	font-size:15px;
+	font-weight:400;
+	line-height:22px;
+}
+.policy-text em {
+	color:#333;
+	font-weight:600;
+}
+/* 회원탈퇴안내 (Web-02.03.05.html) */
+.matters-box1 {
+	padding:24px 0 24px 30px;
+	border:1px solid #e0e0e0;
+	box-sizing:border-box;
+}
+.matters-box1 .matters-title {
+	position:relative;
+	margin-bottom:26px;
+	padding-bottom:22px;
+	border-bottom:1px solid #e0e0e0;
+	color:#111;
+	font-size:18px;
+	font-weight:600;
+	line-height:24px;
+}
+.matters-box1 .matters-title:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0;
+	bottom:-1px;
+	width:60px;
+	height:1px;
+	background-color:#111;
+}
+.matters-box2 {
+	margin-top:45px;
+	padding:24px 0 24px 30px;
+	border:1px solid #e0e0e0;
+	box-sizing:border-box;
+}
+.matters-box2 .matters-title {
+	margin-bottom:17px;
+	color:#111;
+	font-size:18px;
+	font-weight:600;
 	line-height:24px;
 }
