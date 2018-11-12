@@ -540,6 +540,16 @@ table .a-right {
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	리스트
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 불릿 */
+.bullet-list1 {}
+.bullet-list1 .item {
+	margin:10px 0 0 16px;
+	color:#111;
+	text-indent:-16px;
+}
+.bullet-list1 .item:first-child {margin-top:0;}
+.bullet-list1 .item strong {font-weight:600;}
+
 /* 아코디언 */
 .accordion-list1 {border-top:1px solid #262626;}
 .accordion-list1 .accordion-item {}
@@ -1329,8 +1339,8 @@ body,
 	margin-left:9px;
 	color:#111;
 }
-.customer-call-box .list {}
-.customer-call-box {}
+
+.notice-area {padding:20px 50px 0;}
 
 /* 예상상환스케줄 (MA-05.06.01.html) */
 .searth-box {
