@@ -111,6 +111,17 @@
 		<button type="button" class="btn-text type1 next height">Next</button>
 	</div>
 </div>
+
+<script>
+$(document).ready(function(){
+	/* 입력폼 포커스시 스크롤 이동 */
+	$('.form-item input').focus(function(){
+		var winH = ($(window).height() / 2) - 200;
+		var inTop = $(this).offset().top;
+		$('html, body').animate({scrollTop:inTop - winH});
+	});
+});
+</script>
 </body>
 
 </html>
