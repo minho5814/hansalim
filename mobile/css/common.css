@@ -910,12 +910,41 @@ input[type=radio]:checked + label {
 	color:#111;
 }
 .box-list3 .box-item:first-child {margin-top:0;}
+.box-list3 .box-item .link {
+	display:block;
+	position:relative;
+	padding-right:40px;
+}
+.box-list3 .box-item .link:before {
+	content:'';
+	position:absolute;
+	right:20px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:8px;
+	height:14px;
+	background:url(../images/common/sprite_icon.png) no-repeat -96px 0;
+	background-size:250px;
+}
 .box-list3 .box-item .value-text {font-size:13px;}
 .box-list3 .box-item .b-title {
 	margin-top:-2px;
 	font-size:17px;
 	font-weight:600;
 }
+/*
+.box-list3 .box-item .b-title:after {
+	content:'';
+	display:inline-block;
+	width:6px;
+	height:10px;
+	margin-left:10px;
+	background:url(../images/common/sprite_icon.png) no-repeat -42px 0;
+	background-size:250px;
+}
+*/
 .box-list3 .box-item .price-area {margin-top:8px;}
 .box-list3 .box-item .price-area .text {
 	color:#333;
