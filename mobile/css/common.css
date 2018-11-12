@@ -913,12 +913,12 @@ input[type=radio]:checked + label {
 .box-list3 .box-item .link {
 	display:block;
 	position:relative;
-	padding-right:40px;
+	padding-right:20px;
 }
 .box-list3 .box-item .link:before {
 	content:'';
 	position:absolute;
-	right:20px;
+	right:0;
 	top:50%;
 	-webkit-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
@@ -934,17 +934,6 @@ input[type=radio]:checked + label {
 	font-size:17px;
 	font-weight:600;
 }
-/*
-.box-list3 .box-item .b-title:after {
-	content:'';
-	display:inline-block;
-	width:6px;
-	height:10px;
-	margin-left:10px;
-	background:url(../images/common/sprite_icon.png) no-repeat -42px 0;
-	background-size:250px;
-}
-*/
 .box-list3 .box-item .price-area {margin-top:8px;}
 .box-list3 .box-item .price-area .text {
 	color:#333;
