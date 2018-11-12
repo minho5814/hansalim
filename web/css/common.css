@@ -204,12 +204,14 @@ select {
 .btn-icon-text.icon4 {background-image:url(../images/icon/icon_btn04.png);}
 
 .btn-icon-link1 {
+	display:inline-block;
 	padding:9px 32px 9px 0;
 	background:url(../images/icon/btn_link01.png) no-repeat 100% 50%;
 	color:#7451c0;
 	font-weight:600;
 }
 .btn-icon-link2 {
+	display:inline-block;
 	padding:9px 16px 9px 0;
 	background:url(../images/icon/btn_link02.png) no-repeat 100% 50%;
 	color:#7451c0;
@@ -1172,8 +1174,53 @@ body,
 
 
 /* ============================================================================================
-	Loan
+	Loan (대출)
 ============================================================================================ */
+/* 메인 (MA-05.01.01.html) */
+.box-list-wrap1 {margin-top:35px;}
+.box-list-wrap1 .number-box {
+	padding:18px 50px;
+	border-top:1px solid #111;
+	border-bottom:1px solid #111;
+	color:#111;
+	font-size:16px;
+}
+.box-list-wrap1 .box-list {}
+.box-list-wrap1 .box-list .box-item {
+	position:relative;
+	padding:20px 320px 20px 50px;
+	border-bottom:1px solid #f2f2f2;
+}
+.box-list-wrap1 .box-list .box-item .title {
+	color:#111;
+	font-size:18px;
+	font-weight:600;
+}
+.box-list-wrap1 .box-list .box-item .text {
+	margin-top:4px;
+	color:#777;
+	font-size:14px;
+}
+.box-list-wrap1 .box-list .box-item .btn-area {
+	position:absolute;
+	right:50px;
+	top:50%;
+	margin-top:-20px;
+}
+.box-list-wrap1 .box-list .box-item .btn-area .btn-icon-link1 {margin-left:32px;}
+.box-list-wrap1 .box-list .box-item .btn-area .btn-icon-link1:first-child {margin-left:0;}
+
+.no-result {
+	margin-top:35px;
+	padding:150px 0 75px;
+	border-top:1px solid #262626;
+	border-bottom:1px solid #e0e0e0;
+	background:url(../images/icon/icon_noresult.png) no-repeat 50% 80px;
+	color:#4c4c4c;
+	font-size:16px;
+	text-align:center;
+}
+
 /* 예상상환스케줄 (MA-05.06.01.html) */
 .searth-box {
 	padding-top:15px;
@@ -1256,22 +1303,22 @@ body,
 .searth-box .result-area .btn-text {margin:27px 0 -17px;}
 
 /* ============================================================================================
-	카드
+	화원관리
 ============================================================================================ */
 
 
 /* ============================================================================================
-	이벤트
-============================================================================================ */
-
-
-/* ============================================================================================
-	고객센터
+	마이페이지
 ============================================================================================ */
 
 
 /* ============================================================================================
 	회사소개
+============================================================================================ */
+
+
+/* ============================================================================================
+	대출
 ============================================================================================ */
 
 
