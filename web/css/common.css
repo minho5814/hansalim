@@ -203,6 +203,18 @@ select {
 .btn-icon-text.icon3 {background-image:url(../images/icon/icon_btn03.png);}
 .btn-icon-text.icon4 {background-image:url(../images/icon/icon_btn04.png);}
 
+.btn-icon-link1 {
+	padding:9px 32px 9px 0;
+	background:url(../images/icon/btn_link01.png) no-repeat 100% 50%;
+	color:#7451c0;
+	font-weight:600;
+}
+.btn-icon-link2 {
+	padding:9px 16px 9px 0;
+	background:url(../images/icon/btn_link02.png) no-repeat 100% 50%;
+	color:#7451c0;
+}
+
 /* 버튼정렬 */
 .btn-btm-area {
 	margin-top:50px;
