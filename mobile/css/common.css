@@ -1215,7 +1215,6 @@ input[type=radio]:checked + label {
 .form-wrap {
 	padding:18px 20px 22px;
 	border-top:1px solid #767676;
-	border-bottom:1px solid #767676;
 }
 .form-title {
 	color:#111;
@@ -1360,6 +1359,16 @@ input[type=radio]:checked + label {
 .quick-menu .menu-item.on {
 	color:#111;
 	font-weight:900;
+}
+
+/* 결과 없음 */
+.no-result {
+	padding-top:70px;
+	background:url(../images/common/icon_noresult.png) no-repeat 50% 35px;
+	background-size:30px;
+	font-size:12px;
+	font-weight:600;
+	text-align:center;
 }
 
 /* ============================================================================================
