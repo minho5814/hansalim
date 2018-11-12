@@ -884,13 +884,13 @@ body,
 }
 .header .breadcrumbs .crumb-item .menu-list .menu-item span.title {padding-right:65px;}
 .header .breadcrumbs .crumb-item .menu-list .menu-item span.title:after {
-	content: '';
-	display: inline-block;
-	width: 20px;
-	height: 22px;
-	margin-left: 4px;
-	background: url(../images/icon/icon_arr_right02.png) no-repeat 50% 50%;
-	vertical-align: top;
+	content:'';
+	display:inline-block;
+	width:20px;
+	height:22px;
+	margin-left:4px;
+	background:url(../images/icon/icon_arr_right02.png) no-repeat 50% 50%;
+	vertical-align:top;
 }
 .header .breadcrumbs .crumb-item .menu-list .menu-item .list {
 	display:none;
@@ -1342,6 +1342,28 @@ body,
 
 .notice-area {padding:20px 50px 0;}
 
+/* 대출접수완료 (MA-05.03.02.html) */
+.complated-img-cont {
+	padding-bottom:207px;
+	background:url(../images/bg/bg_complate02.jpg) no-repeat 50% bottom;
+	text-align:center;
+}
+.complated-img-cont .title {
+	padding-top:85px;
+	color:#111;
+	font-size:28px;
+	font-weight:600;
+	line-height:34px;
+	background:url(../images/bg/bg_complate01.png) no-repeat 50% 0;
+}
+.complated-img-cont .text {
+	margin-top:5px;
+	color:#737373;
+	font-size:16px;
+	font-weight:400;
+	line-height:24px;
+}
+
 /* 예상상환스케줄 (MA-05.06.01.html) */
 .searth-box {
 	padding-top:15px;
@@ -1442,29 +1464,29 @@ body,
 ============================================================================================ */
 .layer-popup {
 	display:none;
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	z-index: 60;
-	background-color: rgba(0,0,0,.7);
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:60;
+	background-color:rgba(0,0,0,.7);
 }
 .layer-popup.show {display:block;}
 .layer-popup .dimmed {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
 }
 .layer-popup .popup {
-	overflow-y: auto;
-	position: absolute;
+	overflow-y:auto;
+	position:absolute;
 	left:50%;
 	top:50%;
 	box-sizing:border-box;
-	background-color: #fff;
+	background-color:#fff;
 	padding:40px 20px;
 }
 .layer-popup .popup .cont {

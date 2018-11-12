@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Lotte Finance Vietnam</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.1.12.1.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/plugin_set.js"></script>
+</head>
+
+<body>
+<div class="wrapper signup scroll-type2">
+	<div class="header">
+		<button type="button" class="btn-close btn-page-close">Menu Button</button>
+	</div>
+
+	<div class="container">
+		<div class="s-title-area">
+			<h1 class="s-title">오픈소스라이선스</h1>
+		</div>
+
+		<div class="content">
+			<!-- 임시 영역 -->
+			<div style="padding:100px 0;background-color:#eee;font-size:22px;text-align:center;">
+				APP에 사용된<br>오픈소스라이선스<br>고지정보 노출
+			</div>
+			<!-- // 임시 영역 -->
+		</div>
+	</div>
+</div>
+
+<script>
+$(document).ready(function(){
+	$('.btn-otp').click(function(){
+		/* 인증완료 메세지 출력 */
+		$('.notice-message').show();
+
+		/* Next 버튼 활성화 */
+		$('.next-btn-area').addClass('on');
+	});
+});
+</script>
+</body>
+
+</html>
