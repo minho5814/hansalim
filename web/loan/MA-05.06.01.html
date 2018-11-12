@@ -439,7 +439,7 @@
 					<div class="info-text">상환방법 : 원리금균등상환</div>
 				</div>
 				<div class="btn-area">
-					<button type="button" class="btn-text type1">초기화</button>
+					<button type="button" class="btn-text type1 btn-popup" layer-name="Popup01">초기화</button>
 					<a href="MA-05.06.01.html" class="btn-text">계산하기</a>
 				</div>
 			</div>
@@ -569,16 +569,52 @@
 					</table>
 				</div>
 			</div>
+
+			<!-- 결과 없음 -->
+			<div class="no-result">조회된 결과가 없습니다.</div>
+			<!-- // 결과 없음 -->
 		</div>
 	</div>
 	<!-- // 컨텐츠 영역 -->
 
 	<!-- 하단 고정 영역 -->
 	<div class="fix-btm-area">
-		<a href="#" class="btn-text type1">즉시대출접수</a>
-		<a href="#" class="btn-text">대출시뮬레이션</a>
+		<a href="MA-05.03.01.html" class="btn-text type1">즉시대출접수</a>
+		<a href="MA-05.05.01.html" class="btn-text">대출시뮬레이션</a>
 	</div>
 	<!-- // 하단 고정 영역 -->
+</div>
+
+
+<!-- 레이어 팝업 (초기화) -->
+<div class="layer-popup" layer-name="Popup01">
+	<div class="dimmed"></div>
+	<div class="popup" style="width:450px;">
+		<button type="button" class="btn-close popClose">Close</button>
+		<div class="cont">
+			작성하신 예상상환스케줄 정보를<br>
+			초기화하시겠습니까?<br>
+			초기화를 진행하시면 작성하신 내용은 삭제됩니다.
+		</div>
+		<ul class="btn-bottom-area">
+			<button type="button" class="btn-text type1 popClose">취소</button>
+			<button type="button" class="btn-text popClose btn-popup" layer-name="Popup02">확인</button>
+		</ul>
+	</div>
+</div>
+<!-- 레이어 팝업 (초기화 확인) -->
+<div class="layer-popup" layer-name="Popup02">
+	<div class="dimmed"></div>
+	<div class="popup" style="width:450px;">
+		<button type="button" class="btn-close popClose">Close</button>
+		<div class="cont">
+			예상상환스케줄 정보가<br>
+			초기화되었습니다.
+		</div>
+		<ul class="btn-bottom-area">
+			<button type="button" class="btn-text popClose">확인</button>
+		</ul>
+	</div>
 </div>
 </body>
 
