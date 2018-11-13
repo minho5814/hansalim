@@ -123,6 +123,7 @@ $(document).ready(function(){
 		}
 	});
 	/* 지점안내 (MA-08.04.html) */
+	$('.accordion-list4 .accordion-item.on .layer').show();
 	$('.accordion-list4 .acc-title').click(function(){
 		if($(this).closest('.accordion-item').hasClass('on')){
 			$(this).closest('.accordion-item').removeClass('on').find('.layer').slideUp(100);
