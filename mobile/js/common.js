@@ -124,10 +124,10 @@ $(document).ready(function(){
 	});
 	/* 지점안내 (MA-08.04.html) */
 	$('.accordion-list4 .acc-title').click(function(){
-		if($(this).closest('.accordion-item').hasClass('off')){
-			$(this).closest('.accordion-item').removeClass('off').find('.layer').slideDown(200);
+		if($(this).closest('.accordion-item').hasClass('on')){
+			$(this).closest('.accordion-item').removeClass('on').find('.layer').slideUp(100);
 		}else{
-			$(this).closest('.accordion-item').addClass('off').find('.layer').slideUp(100);
+			$(this).closest('.accordion-item').addClass('on').find('.layer').slideDown(200);
 		}
 	});
 
