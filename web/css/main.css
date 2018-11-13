@@ -82,11 +82,10 @@ body {}
 .top-visual-slider .bx-pager .bx-pager-item .bx-pager-link.active:before {background-color:#fff;}
 .top-visual-slider .bx-controls-direction {
 	overflow:hidden;
-	position:absolute;
-	left:50%;
-	bottom:130px;
-	width:1394px;
-	margin-left:-697px;
+	padding-bottom:130px;
+	width:100%;
+	max-width:1394px;
+	margin:0 auto;
 }
 .top-visual-slider .bx-controls-direction a {
 	display:block;

@@ -340,13 +340,23 @@
 		</div>
 	</div>
 	<!-- // 컨텐츠 영역 -->
+
+	<div class="footer">
+		<div class="inner-box">
+			<div class="info-area">
+				<div class="customer-call">고객상담전화 1588-8100</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <script>
 $(document).ready(function(){
+	/* 상단 슬라이더 */
 	$('.top-visual-slider').each(function(){
 		VisualSlider = $(this).find('.bxslider').bxSlider({
 			auto:true,
+			autoHover:false,
 			autoControls:true,
 			pause:7000,
 			speed:700,
@@ -358,10 +368,14 @@ $(document).ready(function(){
 				motionTxt();
 			}
 		});
+		// 버튼 순서 바꾸기
+		$(this).find('.bx-pager').appendTo('.bx-controls');
+		$(this).find('.bx-controls-auto').appendTo('.bx-controls');
 	});
 	motionTxt();
 });
 
+/* 상단 슬라이더 모션 */
 function motionTxt() {
 	$('.top-visual-slider .slide-item .text-area .title').animate({'margin-left':'0','opacity':'1'},500);
 	$('.top-visual-slider .slide-item .text-area .text').delay(200).animate({'margin-left':'0','opacity':'1'},300);
