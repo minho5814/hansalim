@@ -846,8 +846,27 @@ input[type=radio]:checked + label {
 	top:0;
 	width:125px;
 	height:100px;
+	background-color:#e1e1e1;
 }
-.thumb-list1 .thumb-item .img-area img {width:100%;}
+.thumb-list1 .thumb-item .img-area:before {
+	content:'No Image';
+	position:absolute;
+	left:0;
+	top:50%;
+	right:0;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	color:#7b7b7b;
+	font-size:10px;
+	font-weight:900;
+	text-align:center;
+}
+.thumb-list1 .thumb-item .img-area img {
+	position:relative;
+	z-index:5;
+	width:100%;
+}
 .thumb-list1 .thumb-item .text-area .t-title {
 	padding-top:7px;
 	font-size:17px;
