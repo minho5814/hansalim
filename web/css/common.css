@@ -1673,6 +1673,48 @@ body,
 .login-box .sns-box-list .sns-item.item3 .sns {background:#314a7e url(../images/member/icon_sns03.png) no-repeat 30px 50%;}
 .login-box .sns-box-list .sns-item.item4 .sns {background:#fae100 url(../images/member/icon_sns04.png) no-repeat 18px 50%;color:#2f262a;}
 
+/* 정식회원가입 (Web-02.02.02.3.html) */
+.member-cont {}
+.sub-txt-box {
+	padding:63px 0 40px;
+	border-top:1px solid #e0e0e0;
+	text-align:center;
+}
+.sub-txt-box .title {
+	color:#111;
+	font-size:26px;
+	font-weight:900;
+	line-height:32px;
+}
+.sub-txt-box p {
+	margin-top:24px;
+	color:#4c4c4c;
+	font-size:17px;
+	font-weight:400;
+	line-height:27px;
+}
+.sub-txt-box p.f-style {
+	color:#e43762;
+	font-weight:600;
+}
+.sub-txt-box p em {
+	color:#111;
+	font-weight:900;
+}
+.popup-text-area {
+	margin-top:40px;
+	color:#4c4c4c;
+	font-size:15px;
+	text-align:center;
+	font-weight:400;
+	line-height:22px;
+}
+.popup-text-area .f-style {
+	color:#333;
+	font-weight:600;
+}
+.popup-text-area .f-style:hover {text-decoration:underline;}/* hover */
+
 /* ============================================================================================
 	마이페이지
 ============================================================================================ */
@@ -1716,7 +1758,7 @@ body,
 	top:50%;
 	box-sizing:border-box;
 	background-color:#fff;
-	padding:40px 20px;
+	padding:40px;
 }
 .layer-popup .popup .cont {
 	color:#4c4c4c;
@@ -1746,8 +1788,25 @@ body,
 .layer-popup .popup .btn-bottom-area .btn-text:first-child {margin-left:0;}
 .layer-popup .popup .btn-bottom-area .btn-text.type1 {line-height:43px;}
 
+/* 스크롤 방식 */
+.layer-popup .popup .title-area {
+	height:100px;
+	margin-top:-40px;
+}
+.layer-popup .popup .title-area .p-title {
+	color:#111;
+	font-size:26px;
+	font-weight:600;
+	line-height:100px;
+	text-align:center;
+}
+.layer-popup .popup .scoll-cont {
+	overflow-y:auto;
+	max-height:350px;
+}
+
 /* 대출접수 (loan/MA-05.03.01.html) */
-.layer-popup .complated {
+.layer-popup .popup .complated {
 	color:#737373;
 	font-weight:600;
 }
