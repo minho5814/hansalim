@@ -273,6 +273,37 @@ body,
 	height:35px;
 	background-position:-180px -62px;
 }
+.box-menu-area .menu-item.item12.on .text:before {background-position:0 -271px;}/* on */
+
+.box-menu-area .menu-item .sns-layer {
+	display:none;
+	position:absolute;
+	right:11px;
+	top:-100px;
+	width:237px;
+	height:113px;
+	padding-top:20px;
+	box-sizing:border-box;
+	background:url(../images/bg/bg_sns_layer.png) no-repeat 0 0;
+	background-size:237px;
+	font-size:0;
+}
+.box-menu-area .menu-item .sns-layer .sns {
+	display:inline-block;
+	width:60px;
+	height:60px;
+	margin:0 5px;
+	background:url(../images/common/sprite_icon.png);
+	background-repeat:no-repeat;
+	background-size:250px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.box-menu-area .menu-item .sns-layer .sns.sns1 {background-position:0 -142px;}
+.box-menu-area .menu-item .sns-layer .sns.sns2 {background-position:-61px -142px;}
+.box-menu-area .menu-item .sns-layer .sns.sns3 {background-position:-122px -142px;}
+.box-menu-area .menu-item .sns-layer {}
 
 /* 하단 sign 영역 */
 .sign-box-area {

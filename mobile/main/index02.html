@@ -92,9 +92,14 @@
 				<a href="#" class="menu-item item11">
 					<span class="text">Personal<br>Information<br>Management</span>
 				</a>
-				<a href="#" class="menu-item item12">
+				<div class="menu-item item12">
 					<span class="text">SNS</span>
-				</a>
+					<div class="sns-layer">
+						<a href="#" class="sns sns1">Zalo</a>
+						<a href="#" class="sns sns2">facebook</a>
+						<a href="#" class="sns sns3">kakao talk</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -111,6 +116,24 @@ $(document).ready(function(){
 	});
 
 	resizeMid();
+
+	/* sns 레이어 열기 */
+	$('.menu-item.item12').click(function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on');
+			$('.sns-layer').hide();
+		}else{
+			$(this).addClass('on');
+			$('.sns-layer').show();
+		}
+	});
+	/* sns 레이어 닫기 */
+	$(document).mouseup(function(e){
+		var snsLayer = $('.menu-item.item12');
+		if (!snsLayer.is(e.target) && snsLayer.has(e.target).length === 0){
+			snsLayer.removeClass('on').find('.sns-layer').hide();
+		}
+	});
 });
 
 $(window).load(function(){
