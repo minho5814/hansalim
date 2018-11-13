@@ -47,6 +47,13 @@
 
 	<button type="button" class="btn-text btn-popup" layer-name="Popup01">팝업 01</button>
 	<button type="button" class="btn-text btn-popup" layer-name="Popup02">팝업 02</button>
+	<button type="button" class="btn-text btn-popup" layer-name="Popup03">팝업 03</button>
+
+	<div class="STitle">* 상단 타이틀 영역</div>
+	<button type="button" class="btn-text btn-popup" layer-name="Popup03">팝업 03</button>
+
+	<div class="STitle">* 팝업 내 팝업 호출</div>
+	<button type="button" class="btn-text btn-popup" layer-name="Popup04">팝업 03</button>
 </div>
 
 
@@ -93,6 +100,73 @@
 		</div>
 		<ul class="btn-bottom-area">
 			<button type="button" class="btn-text popClose">돌아가기</button>
+		</ul>
+	</div>
+</div>
+
+<!-- 타이틀 영역 있음/스크롤 -->
+<div class="layer-popup" layer-name="Popup03">
+	<div class="dimmed"></div>
+	<div class="popup" style="width:740px;">
+		<button type="button" class="btn-close popClose">Close</button>
+		<div class="title-area">
+			<h1 class="p-title">Terms of Use</h1>
+		</div>
+		<div class="scoll-cont">
+			관리자 입력된 약관내용 표시Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellent esque erat arcu, bibendum quis purus eu, ullamcorper malesuada quam. Nam vitae tellus lectus. Sed porttitor nec massa eu faucibus. Maecenas at justo nisi.<br>
+			Fusce eget turpis lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+			Pellentesque erat arcu, bibendum quis purus eu, ullamcorper malesuada quam. Nam vitae tellus lectus. Sed porttitornec massa eu faucibus. Maecenas at justo nisi. Fusce eget turp is lorem.<br>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque erat arcu, bibendum quis purus eu, ullamcorper malesuada quam.<br>
+			Nam vitae tellus lectus. Sed porttitor nec massa eu faucibus. Maecenas at justo nisi.<br>
+			Fusce eget turpis lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque erat arcu, bibendum quis purus eu, ullamcorper malesuada quam.<br>
+			Nam vitae tellus lectus. Sed porttitor nec massa eu faucibus. Maecenas at justo nisi.<br>
+			Fusce eget turpis lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque erat arcu, bibendum quis purus eu, ullamcorper malesuada quam.<br>
+			Nam vitae tellus lectus. Sed porttitor nec massa eu faucibus. Maecenas at justo nisi.<br>
+			Fusce eget turpis lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque erat arcu, bibendum quis purus eu, ullamcorper malesuada quam.<br>
+			Nam vitae tellus lectus. Sed porttitor nec massa eu faucibus. Maecenas at justo nisi.<br>
+			Fusce eget turpis lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque erat arcu, bibendum quis purus eu, ullamcorper malesuada quam.<br>
+			Nam vitae tellus lectus. Sed porttitor nec massa eu faucibus. Maecenas at justo nisi.<br>
+			Fusce eget turpis lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque erat arcu, bibendum quis purus eu, ullamcorper malesuada quam.
+		</div>
+		<ul class="btn-bottom-area">
+			<button type="button" class="btn-text popClose">확인</button>
+		</ul>
+	</div>
+</div>
+
+
+<!-- 레이어 팝업 (회원탈퇴) -->
+<div class="layer-popup" layer-name="Popup04">
+	<div class="dimmed"></div>
+	<div class="popup" style="width:380px;">
+		<button type="button" class="btn-close popClose">Close</button>
+		<div class="cont">
+			회원탈퇴를 진행하시겠습니까?<br>
+			지금 회원탈퇴를 하시면<br>
+			회원님의 모든 정보는 삭제됩니다.
+		</div>
+		<ul class="btn-bottom-area">
+			<button type="button" class="btn-text type1 popClose">취소</button>
+			<button type="button" class="btn-text popClose btn-popup" layer-name="Popup05">확인</button>
+		</ul>
+	</div>
+</div>
+
+<!-- 레이어 팝업 (회원탈퇴롹인) -->
+<div class="layer-popup" layer-name="Popup05">
+	<div class="dimmed"></div>
+	<div class="popup" style="width:450px;">
+		<button type="button" class="btn-close popClose">Close</button>
+		<div class="title-area">
+			<h1 class="p-title">회원탈퇴완료</h1>
+		</div>
+		<div class="cont">
+			그 동안 Lotte Finance 온라인 서비스를 이용해 주셔서<br>
+			진심으로 감사합니다.<br>
+			앞으로 더욱 좋은 모습으로 다시 만나 뵙길 희망합니다.
+		</div>
+		<ul class="btn-bottom-area">
+			<button type="button" class="btn-text popClose">확인</button>
 		</ul>
 	</div>
 </div>

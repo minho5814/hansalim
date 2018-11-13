@@ -1715,6 +1715,46 @@ body,
 }
 .popup-text-area .f-style:hover {text-decoration:underline;}/* hover */
 
+/* 회원탈퇴안내 (Web-02.03.05.html) */
+.matters-box1 {
+	padding:24px 0 24px 30px;
+	border:1px solid #e0e0e0;
+	box-sizing:border-box;
+}
+.matters-box1 .matters-title {
+	position:relative;
+	margin-bottom:26px;
+	padding-bottom:22px;
+	border-bottom:1px solid #e0e0e0;
+	color:#111;
+	font-size:18px;
+	font-weight:600;
+	line-height:24px;
+}
+.matters-box1 .matters-title:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0;
+	bottom:-1px;
+	width:60px;
+	height:1px;
+	background-color:#111;
+}
+.matters-box2 {
+	margin-top:45px;
+	padding:24px 0 24px 30px;
+	border:1px solid #e0e0e0;
+	box-sizing:border-box;
+}
+.matters-box2 .matters-title {
+	margin-bottom:17px;
+	color:#111;
+	font-size:18px;
+	font-weight:600;
+	line-height:24px;
+}
+
 /* ============================================================================================
 	마이페이지
 ============================================================================================ */
