@@ -122,6 +122,14 @@ $(document).ready(function(){
 			$(this).closest('.accordion-item').addClass('off').find('.layer').slideUp(100);
 		}
 	});
+	/* 지점안내 (MA-08.04.html) */
+	$('.accordion-list4 .acc-title').click(function(){
+		if($(this).closest('.accordion-item').hasClass('on')){
+			$(this).closest('.accordion-item').removeClass('on').find('.layer').slideUp(100);
+		}else{
+			$(this).closest('.accordion-item').addClass('on').find('.layer').slideDown(200);
+		}
+	});
 
 	/* 폼요소 호출 */
 	form();
