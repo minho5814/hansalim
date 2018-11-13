@@ -321,22 +321,22 @@
 	<div class="container">
 		<div class="content tab-wrap">
 			<div class="tab-list1">
-				<span class="tab-item on">아이디</span>
-				<a href="Web-02.01.01.2.html" class="tab-item">휴대폰OTP</a>
+				<a href="Web-02.01.01.1.html" class="tab-item">아이디</a>
+				<span class="tab-item on">휴대폰OTP</span>
 				<a href="Web-02.01.01.3.html" class="tab-item">SNS</a>
 			</div>
 
 			<div class="login-box">
-				<div class="form-area">
+				<div class="form-area2">
 					<div class="form-item">
-						<label for="Id">아이디</label>
-						<input type="text" id="Id" placeholder="아이디 입력">
+						<input type="text" placeholder="휴대폰 번호 입력">
+						<a href="#" class="btn btn-popup" layer-name="Popup01">OTP번호 발급요청</a>
 					</div>
-					<div class="form-item">
-						<label for="Pw">비밀번호</label>
-						<input type="password" id="Pw" placeholder="비밀번호 입력">
+					<div class="form-item certification">
+						<input type="password" placeholder="인증 번호 입력">
+						<div class="time">02:58</div>
+						<a href="#" class="btn">인증하기</a>
 					</div>
-					<a href="#" class="btn-login">SIGN IN</a>
 				</div>
 
 				<div class="link-area">
@@ -381,6 +381,24 @@
 		</div>
 	</div>
 
+</div>
+
+
+<!-- 레이어 팝업 -->
+<div class="layer-popup" layer-name="Popup01">
+	<div class="dimmed"></div>
+	<div class="popup" style="width:570px;">
+		<button type="button" class="btn-close popClose">Close</button>
+		<div class="cont">
+			요청하신 휴대폰정보를 확인할 수 없습니다.<br>
+			ID/PW로그인을 하신 후 개인정보관리에서 개인정보변경을 통해<br>
+			휴대폰번호를 변경해 주시기 바랍니다.
+		</div>
+		<ul class="btn-bottom-area">
+			<button type="button" class="btn-text type1 popClose">취소</button>
+			<a href="Web-02.01.01.1.html" class="btn-text">확인</a>
+		</ul>
+	</div>
 </div>
 
 

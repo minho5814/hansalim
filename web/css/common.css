@@ -1445,10 +1445,10 @@ body,
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	로그인
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-/* 메인 (Web-02.01.01.1.html) */
+/* 아이디 (Web-02.01.01.1.html) */
 .login-box {
 	margin-top:60px;
-	padding:70px 230px 35px;
+	padding:70px 230px 70px;
 	border:1px solid #ccc;
 }
 
@@ -1468,8 +1468,8 @@ body,
 	top:0;
 	line-height:40px;
 }
-.login-box .form-area .form-item input {width:100%;}
-.login-box .form-area .form-item input:focus {
+.login-box input {width:100%;}
+.login-box input:focus {
 	padding:0 14px;
 	border:2px solid #e43762;
 }
@@ -1490,7 +1490,6 @@ body,
 
 .login-box .link-area {
 	margin-top:10px;
-	padding-bottom:32px;
 	line-height:40px;
 	text-align:center;
 }
@@ -1517,14 +1516,15 @@ body,
 
 .login-box .hashtags {
 	overflow:hidden;
-	padding:28px 0;
+	margin-top:32px;
+	padding:21px 0 0;
 	border-top:1px solid #e0e0e0;
 	font-size:0;
 	margin-left:-7px;
 }
 .login-box .hashtags .tag {
 	display:inline-block;
-	margin:7px;
+	margin:14px 7px 0;
 	padding:0 14px;
 	border-radius:25px;
 	border:1px solid #7451c0;
@@ -1612,6 +1612,43 @@ body,
 .banner-slider .bx-controls-auto a.active {display:none;}
 .banner-slider .bx-controls-auto .bx-start {background-image:url(../images/icon/bx_start02.png);}
 .banner-slider .bx-controls-auto .bx-stop {background-image:url(../images/icon/bx_stop02.png);}
+
+/* 휴대폰OTP (Web-02.01.01.2.html) */
+.login-box .form-area2 {}
+.login-box .form-area2 .form-item {
+	position:relative;
+	margin-top:10px;
+	padding-right:170px;
+}
+.login-box .form-area2 .form-item:first-child {margin-top:0;}
+.login-box .form-area2 .form-item .btn {
+	display:inline-block;
+	position:absolute;
+	right:0;
+	top:0;
+	width:160px;
+	height:40px;
+	box-sizing:border-box;
+	border-radius:3px;
+	background-color:#7b7b7b;
+	color:#fff;
+	text-align:center;
+	line-height:40px;
+}
+.login-box .form-area2 .form-item.certification {padding-right:238px;}
+.login-box .form-area2 .form-item .time {
+	position:absolute;
+	right:170px;
+	top:0;
+	font-size:20px;
+	font-weight:600;
+	line-height:40px;
+}
+.login-box .form-area2 .form-item input:focus + .btn,
+.login-box .form-area2 .form-item input:focus + .time + .btn {background-color:#7451c0;transition:all .3s;}
+.login-box .form-area2 .form-item input:focus + .time {color:#e43762;transition:all .3s;}
+
+.login-box .form-area2 .form-item {}
 
 /* ============================================================================================
 	마이페이지
