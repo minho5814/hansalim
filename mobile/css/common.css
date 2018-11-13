@@ -1197,7 +1197,6 @@ input[type=radio]:checked + label {
 .accordion-list4 .accordion-item a.acc-title:before,
 
 .accordion-list4 .accordion-item .layer {display:none;}
-.accordion-list4 .accordion-item.on .layer {display:block;}
 
 /* 폼 리스트 */
 .form-list1:after {

@@ -113,6 +113,12 @@ $(document).ready(function(){
 	/* ------------------------------------------------------------------------------------------------------------------
 		탭
 	------------------------------------------------------------------------------------------------------------------ */
+	$('.tab-list1').each(function(){
+		var len = $(this).find('.tab-item').length;
+		var wid = 100/len + '%';
+		$(this).find('.tab-item').css({'width':wid});
+	});
+
 	$('.tab-item').click(function(){
 		var idx = $(this).index();
 		$(this).addClass('on').siblings('.tab-item').removeClass('on');
