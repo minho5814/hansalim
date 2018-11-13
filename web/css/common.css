@@ -1614,7 +1614,6 @@ body,
 .banner-slider .bx-controls-auto .bx-stop {background-image:url(../images/icon/bx_stop02.png);}
 
 /* 휴대폰OTP (Web-02.01.01.2.html) */
-.login-box .form-area2 {}
 .login-box .form-area2 .form-item {
 	position:relative;
 	margin-top:10px;
@@ -1648,7 +1647,31 @@ body,
 .login-box .form-area2 .form-item input:focus + .time + .btn {background-color:#7451c0;transition:all .3s;}
 .login-box .form-area2 .form-item input:focus + .time {color:#e43762;transition:all .3s;}
 
-.login-box .form-area2 .form-item {}
+/* SNS (Web-02.01.01.3.html) */
+.login-box .sns-box-list {
+	overflow:hidden;
+	margin:-5px -42px 0;
+}
+.login-box .sns-box-list .sns-item {
+	float:left;
+	width:50%;
+	padding:10px 5px 0;
+	box-sizing:border-box;
+}
+.login-box .sns-box-list .sns-item .sns {
+	display:block;
+	height:55px;
+	padding-left:77px;
+	border-radius:2px;
+	color:#fff;
+	font-weight:600;
+	text-align:center;
+	line-height:55px;
+}
+.login-box .sns-box-list .sns-item.item1 .sns {background:#1180c4 url(../images/member/icon_sns01.png) no-repeat 20px 50%;}
+.login-box .sns-box-list .sns-item.item2 .sns {background:#de4535 url(../images/member/icon_sns02.png) no-repeat 25px 50%;}
+.login-box .sns-box-list .sns-item.item3 .sns {background:#314a7e url(../images/member/icon_sns03.png) no-repeat 30px 50%;}
+.login-box .sns-box-list .sns-item.item4 .sns {background:#fae100 url(../images/member/icon_sns04.png) no-repeat 18px 50%;color:#2f262a;}
 
 /* ============================================================================================
 	마이페이지
