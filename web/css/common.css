@@ -1266,6 +1266,37 @@ body,
 }
 .box-list2 .box-item .info-list .item.fcolor {color:#e21c24;}
 
+/* 이벤트상세 (MA-03.04.02.html) */
+.board-view {
+	margin-top:70px;
+	border-top:1px solid #262626;
+}
+.board-view .title-area {
+	padding:24px 0 20px;
+	border-bottom:1px solid #e0e0e0;
+}
+.board-view .title-area .title {
+	margin-bottom:10px;
+	color:#111;
+	font-size:23px;
+	font-weight:600;
+}
+.board-view .title-area .text-area {
+	overflow:hidden;
+	color:#777;
+}
+.board-view .title-area .text-area.f-color {color:#e21c24;}
+.board-view .title-area .text-area dt {
+	clear:both;
+	float:left;
+}
+.board-view .title-area .text-area dd {
+	float:left;
+	margin-left:4px;
+}
+.board-view .title-area .btn-icon-link2 {margin-top:7px;}
+.board-view .b-cont {padding-top:65px;}
+
 
 /* ============================================================================================
 	Loan (대출)
