@@ -173,7 +173,7 @@
 				</div>
 			</div>
 			<ul class="btn-list">
-				<li class="btn-item one"><button type="button" class="btn-pop-text popClose">View results</button></li>
+				<li class="btn-item one"><a href="../loan/MA-05.01.01.html" class="btn-pop-text">View results</a></li>
 			</ul>
 		</div>
 	</div>
@@ -229,7 +229,7 @@ $(document).ready(function(){
 		range: "min",
 		create: function(){
 			for (i=0; i<handle1.length; i++){
-				handle1.text($( this ).slider('value') + 'K');
+				handle1.text($(this).slider('value') + 'K');
 				handle1.eq(i).text(commaNum(handle1.eq(i).text()));
 			}
 		},
