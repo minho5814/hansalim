@@ -110,6 +110,11 @@ select {
 /* ============================================================================================
 	공통
 ============================================================================================ */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	마진/패딩
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 마진 */
+.mgT65 {margin-top:65px !important;}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	버튼
@@ -178,10 +183,10 @@ select {
 .btn-text.sm.link:before {
 	width:5px;
 	right:10px;
-	background-image:url(../images/icon/icon_arr_right06.png);
+	background-image:url(../images/icon/icon_arr_right02.png);
 }
-.btn-text.sm.type1.link:before {background-image:url(../images/icon/icon_arr_right07.png);}
-.btn-text.sm.type1.link:hover:before {background-image:url(../images/icon/icon_arr_right07_hover.png);}
+.btn-text.sm.type1.link:before {background-image:url(../images/icon/icon_arr_right01.png);opacity:.6;}
+.btn-text.sm.type1.link:hover:before {opacity:.7;}
 
 /* 텍스트 + 아이콘 */
 .btn-icon-text {
@@ -216,6 +221,32 @@ select {
 	background:url(../images/icon/btn_link02.png) no-repeat 100% 50%;
 	color:#7451c0;
 }
+.btn-icon-link3 {
+	display:inline-block;
+	position:relative;
+	padding:0 36px 0 19px;
+	height:40px;
+	box-sizing:border-box;
+	border-radius:3px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	color:#7b7b7b;
+	line-height:38px;
+}
+.btn-icon-link3:before {
+	content:'';
+	position:absolute;
+	right:11px;
+	top:0;
+	bottom:0;
+	width:5px;
+	background:url(../images/icon/icon_arr_right01.png) no-repeat 0 50%;
+	opacity:.6;
+}
+.btn-icon-link3:hover {
+	background-color:#f7f7f7;
+	color:#4c4c4c
+}/* hover */
 
 /* 버튼정렬 */
 .btn-btm-area {
@@ -966,6 +997,7 @@ body,
 	position:absolute;
 	left:0;
 	top:75px;
+	min-width:100%;
 	padding:24px 0;
 	border:1px solid #c2c2c2;
 	background-color:#fff;
@@ -1212,8 +1244,27 @@ body,
 }
 
 /* ============================================================================================
-	MY
+	MY (마이페이지)
 ============================================================================================ */
+/* 이벤트 참여내역 (MA-03.04.01.html) */
+.box-list2 .box-item {
+	display:block;
+	padding:13px 50px 19px;
+	border-bottom:1px solid #e0e0e0;
+}
+.box-list2 .box-item .b-title {
+	color:#111;
+	font-size:16px;
+	font-weight:400;
+	line-height:32px;
+}
+.box-list2 .box-item .info-list .item {
+	color:#777;
+	font-size:15px;
+	font-weight:400;
+	line-height:23px;
+}
+.box-list2 .box-item .info-list .item.fcolor {color:#e21c24;}
 
 
 /* ============================================================================================
@@ -1221,6 +1272,8 @@ body,
 ============================================================================================ */
 /* 메인 (MA-05.01.01.html) */
 .box-list-wrap1 {margin-top:35px;}
+.box-list-wrap1 .btn-top-area {margin-bottom:30px;}
+.box-list-wrap1 .btn-top-area.right {text-align:right;}
 .box-list-wrap1 .number-box {
 	padding:18px 50px;
 	border-top:1px solid #111;

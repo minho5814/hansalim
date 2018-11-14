@@ -214,6 +214,11 @@ $(document).ready(function(){
 	});
 
 	resizeMid();
+
+	$('.top-visual-area .card-box').each(function(){
+		var hei = $(this).outerHeight();
+		$(this).css({'max-height':hei});
+	});
 });
 
 $(window).load(function(){

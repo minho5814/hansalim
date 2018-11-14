@@ -4255,7 +4255,6 @@ body,
 }
 .letter-set .btn-letter.on {
 	border-color:#111;
-	font-size:14px;
 	font-weight:600;
 }
 .letter-set .btn-letter.on:before,

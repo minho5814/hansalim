@@ -117,6 +117,11 @@ $(document).ready(function(){
 
 	resizeMid();
 
+	$('.top-visual-area .card-box').each(function(){
+		var hei = $(this).outerHeight();
+		$(this).css({'max-height':hei});
+	});
+
 	/* sns 레이어 열기 */
 	$('.menu-item.item12').click(function(){
 		if($(this).hasClass('on')){
