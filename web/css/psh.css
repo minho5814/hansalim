@@ -611,9 +611,7 @@
 .cardon-slider {
 	position:relative;
 }
-.cardon-slider .slide-item {
-	
-}
+.cardon-slider .slide-item {}
 .cardon-slider .slide-item a {display:block;}
 .cardon-slider .slide-item img {width:100%;}
 

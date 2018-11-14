@@ -561,7 +561,7 @@
 $(document).ready(function(){
 	/* 슬라이드 상환월 상환 총 금액 */
 	$('.status-slider').each(function(){
-		StatusSlider = $(this).find('.bxslider').bxSlider({
+		statusSlider = $(this).find('.bxslider').bxSlider({
 			auto:true,
 			autoHover:false,
 			autoControls:true,
@@ -572,8 +572,9 @@ $(document).ready(function(){
 
 	/*슬라이드 스마트 카드론 */
 	$('.cardon-slider').each(function(){
-		CardonSlider = $(this).find('.bxslider').bxSlider({
-			autoHover:false,
+		cardonSlider = $(this).find('.bxslider').bxSlider({
+			auto:true,
+			autoHover:true,
 			autoControls:true,
 			pause:3000,
 			speed:400,
