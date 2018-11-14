@@ -169,6 +169,39 @@ $(document).ready(function(){
 		$(this).find('td').removeClass('ui-datepicker-current-day');
 	});
 
+	/* ------------------------------------------------------------------------------------------------------------------
+		슬라이더
+	------------------------------------------------------------------------------------------------------------------ */
+	/* 휠 제어 
+	$('.bxslider').on('mousewheel', function(e) {
+		if(event.deltaY > 0){
+			wheelSlider.goToNextSlide();
+		} else {
+			wheelSlider.goToPrevSlide();
+		}
+		console.log(event.deltaY);
+	});
+	*/
+
+	$('.bxslider').on('mousewheel DOMMouseScroll', function(event) {
+		if(event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+			wheelSlider.goToPrevSlide();
+		}
+		else {
+			wheelSlider.goToNextSlide();
+		}
+		return false;
+	});
+
+	// 슬라이더 위에서 스크롤 금지
+	$('.bxslider').on('scroll touchmove mousewheel', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		return false;
+	});
+	/* 스크롤 허용
+	$('.bxslider').off('scroll touchmove mousewheel');
+	*/
 
 
 	/* ------------------------------------------------------------------------------------------------------------------

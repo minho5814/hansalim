@@ -550,33 +550,57 @@ html.login ,
 .loan-simulation-wrap .gauge-item {margin-top:35px;}
 .loan-simulation-wrap .gauge-item:first-child {margin-top:0;}
 .loan-simulation-wrap .gauge-item .title {font-size:13px;}
-.loan-simulation-wrap .gauge-item .gauge-box {
-	overflow:hidden;
+
+.drag-slider-wrap {
+	position:relative;
+	margin-top:35px;
+	padding:0 25px;
+}
+.drag-slider-wrap:before {
+	content:'';
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
 	height:35px;
-	margin-top:17px;
 	border-radius:25px;
 	background-color:#f2f2f2;
 }
-.loan-simulation-wrap .gauge-item .gauge-box .gauge {
+.drag-slider-wrap .drag-slider {
 	position:relative;
-	width:0;
 	height:35px;
+}
+.drag-slider-wrap .custom-handle {
+	display:inline-block;
+	position:absolute;
+	left:0;
+	top:-29px;
+	width:50px;
+	height:22px;
+	margin-left:-25px;
+	padding-bottom:50px;
+	background-repeat:no-repeat;
+	background-position:0 100%;
+	background-size:50px;
+	color:#5d30a6;
+	font-weight:900;
+	text-align:center;
+	outline:0;
+}
+.item1 .drag-slider-wrap .custom-handle {background-image:url(../images/main/btn_drag01.png);}
+.item2 .drag-slider-wrap .custom-handle {background-image:url(../images/main/btn_drag02.png);}
+.drag-slider-wrap .ui-slider-range {
+	height:35px;
+	margin-left:-25px;
+	padding-right:25px;
 	border-radius:25px;
 	background-repeat:no-repeat;
 	background-position:0 0;
+	background-size:300px 35px;
 }
-.loan-simulation-wrap .gauge-item.item1 .gauge-box .gauge {background-image:linear-gradient(to right, #533b94 , #de2e8b);}
-.loan-simulation-wrap .gauge-item.item2 .gauge-box .gauge {background-image:linear-gradient(to right, #ef7f2f , #da3e5f);}
-.loan-simulation-wrap .gauge-item .gauge-box .gauge .text {
-	position:absolute;
-	right:20px;
-	top:50%;
-	-webkit-transform:translateY(-50%);
-	-ms-transform:translateY(-50%);
-	transform:translateY(-50%);
-	color:#fff;
-	font-weight:900;
-}
+.item1 .drag-slider-wrap .ui-slider-range {background-image:url(../images/main/bg_bar01.png);}
+.item2 .drag-slider-wrap .ui-slider-range {background-image:url(../images/main/bg_bar02.png);}
+
 .loan-simulation-wrap .text-area {
 	margin-top:23px;
 	text-align:center;
