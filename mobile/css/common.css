@@ -1455,6 +1455,7 @@ body,
 
 .content {padding:0 20px;}
 .content.pd-type1 {padding-top:20px;}
+.content.text-type {padding:20px;}
 
 .content.wide {
 	padding-left:0;
