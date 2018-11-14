@@ -149,18 +149,14 @@
 				<div class="gauge-list">
 					<div class="gauge-item item1">
 						<div class="title">Loan amount</div>
-						<div class="drag-slider-wrap">
-							<div class="drag-slider">
-								<div class="custom-handle ui-slider-handle"></div>
-							</div>
+						<div class="gauge-box" >
+							<div class="gauge" max-data="50,000"><span class="text"><em class="data">40,000</em>K</span></div>
 						</div>
 					</div>
 					<div class="gauge-item item2">
 						<div class="title">Months</div>
-						<div class="drag-slider-wrap">
-							<div class="drag-slider">
-								<div class="custom-handle ui-slider-handle"></div>
-							</div>
+						<div class="gauge-box">
+							<div class="gauge" max-data="20"><span class="text"><em class="data">12</em>M</span></div>
 						</div>
 					</div>
 				</div>
@@ -212,48 +208,16 @@ $(document).ready(function(){
 		},
 	});
 
+	/* 대출시물레이션 레이어팝업 */
+	$('.menu-item.item02.btn-popup').click(function(){
+		gaugeBar();
+	});
+
 	resizeMid();
 
 	$('.top-visual-area .card-box').each(function(){
 		var hei = $(this).outerHeight();
 		$(this).css({'max-height':hei});
-	});
-
-	/* 대출 시물레이션 팝업 내 드래그 */
-	var handle1 = $('.item1 .custom-handle');
-	$('.item1 .drag-slider').slider({
-		value: 4000,
-		min: 1000,
-		max: 5500,
-		step: 100,
-		range: "min",
-		create: function(){
-			for (i=0; i<handle1.length; i++){
-				handle1.text($( this ).slider('value') + 'K');
-				handle1.eq(i).text(commaNum(handle1.eq(i).text()));
-			}
-		},
-		slide: function( event, ui){
-			for (i=0; i<handle1.length; i++){
-				handle1.text(ui.value + 'K');
-				handle1.eq(i).text(commaNum(handle1.eq(i).text()));
-			}
-		}
-	});
-
-	var handle2 = $('.item2 .custom-handle');
-	$('.item2 .drag-slider').slider({
-		value: 12,
-		min: 3,
-		max: 36,
-		step: 3,
-		range: "min",
-		create: function(){
-			handle2.text($(this).slider('value') + 'M');
-		},
-		slide: function(event, ui){
-			handle2.text(ui.value + 'M');
-		}
 	});
 });
 
@@ -268,23 +232,16 @@ function resizeMid(){
 	$('.top-visual-area .swiper-container').css({'height':winH - btmH});
 }
 
-
-/* 숫자 세자리 콤마 */
-function commaNum(num) {
-	var len, point, str;
-	num = num + "";
-	point = num.length % 4
-	len = num.length;
-
-	str = num.substring(0, point);
-	while (point < len) {
-		if (str != "") str += ",";
-		str += num.substring(point, point + 4);
-		point += 4;
-	}
-	return str;
+/* 대출시물레이션 팝업 */
+function gaugeBar(){
+	$('.gauge-box .gauge').each(function(){
+		$(this).css({'width':'0'});
+		var max = $(this).attr('max-data').replace(',','');
+		var data = $(this).find('.data').text().replace(',','');
+		var result = (data/max) * 100 + '%';
+		$(this).animate({'width':result}, 700);
+	});
 }
-
 </script>
 </body>
 
