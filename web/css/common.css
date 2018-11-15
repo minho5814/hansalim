@@ -114,7 +114,12 @@ select {
 	마진/패딩
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* 마진 */
+.mgA0 {margin:0 !important;}
+.mgT0 {margin-top:0 !important;}
 .mgT65 {margin-top:65px !important;}
+
+/* 패딩 */
+.pdA0 {padding:0 !important;}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	버튼
@@ -263,8 +268,11 @@ select {
 
 .btn-btm-area {
 	margin-top:50px;
+	font-size:0;
 	text-align:center;
 }
+.btn-btm-area .btn-text {margin-left:30px;}
+.btn-btm-area .btn-text:first-child {margin-left:0;}
 
 /* 하단 버튼 고정 스타일 */
 .fix-btm-area {
@@ -1858,6 +1866,10 @@ body,
 	top:0;
 	line-height:40px;
 }
+
+.login-box .form-area.type2 {padding-right:0;}
+.login-box .form-area.type2 .form-item {padding-left:70px;}
+
 .login-box input {width:100%;}
 .login-box input:focus {
 	padding:0 14px;
@@ -2004,23 +2016,52 @@ body,
 .btns-type1 .bx-controls-auto .bx-stop {background-image:url(../images/icon/bx_stop02.png);}
 
 /* 아이디찾기 (Web-02.01.01.2.html) */
-.login-box.type2 {
-	padding:60px 280px 70px;
-}
+.login-box.type2 {padding:60px 280px 70px;}
 .login-box .find-title-area {
 	margin-top:-10px;
+	padding-bottom:30px;
 	text-align:center;
 }
 .login-box .find-title-area .f-title {
+	padding-bottom:148px;
+	background-image:url(../images/bg/bg_find01.png);
+	background-repeat:no-repeat;
+	background-position:50% 100%;
 	color:#111;
 	font-size:26px;
 	font-weight:900;
 }
+.login-box .find-title-area.type2 .f-title {background-image:url(../images/bg/bg_find02.png);}
 .login-box .find-title-area .text {
+	margin-top:28px;
 	color:#4c4c4c;
 	font-size:17px;
 }
-.login-box .find-title-area {}
+
+/* 비밀번호찾기 > 비밀번호변경 (Web-02.01.01.1.4.html) */
+.login-box.type2 {padding:60px 280px 70px;}
+
+.login-box .find-idpw-box .id-text {
+	width:100%;
+	height:50px;
+	box-sizing:border-box;
+	border:2px solid #333;
+	color:#333;
+	font-size:18px;
+	font-weight:600;
+	text-align:center;
+	line-height:46px;
+}
+.login-box .find-idpw-box .list {margin-top:15px;}
+.login-box .find-idpw-box .list li {
+	margin-left:8px;
+	color:#777;
+	font-size:14px;
+	text-indent:-8px;
+}
+.login-box .find-idpw-box .input-area {margin-top:38px;}
+.login-box .find-idpw-box .input-area input {margin-top:10px;}
+.login-box .find-idpw-box .input-area input:first-child {margin-top:0;}
 
 /* 휴대폰OTP (Web-02.01.01.2.html) */
 .login-box .form-area2 .form-item {
@@ -2048,6 +2089,7 @@ body,
 	position:absolute;
 	right:170px;
 	top:0;
+	color:#999;
 	font-size:20px;
 	font-weight:600;
 	line-height:40px;
@@ -2081,6 +2123,20 @@ body,
 .login-box .sns-box-list .sns-item.item2 .sns {background:#de4535 url(../images/member/icon_sns02.png) no-repeat 25px 50%;}
 .login-box .sns-box-list .sns-item.item3 .sns {background:#314a7e url(../images/member/icon_sns03.png) no-repeat 30px 50%;}
 .login-box .sns-box-list .sns-item.item4 .sns {background:#fae100 url(../images/member/icon_sns04.png) no-repeat 18px 50%;color:#2f262a;}
+
+/* 간편회원가입 (Web-02.02.01.1.html) */
+.login-box .top-title {
+	margin:-5px 0 24px;
+	color:#4c4c4c;
+	font-size:17px;
+	font-weight:600;
+	text-align:center;
+}
+
+.login-box .popup-text-area {
+	margin-left:-250px;
+	margin-right:-250px;
+}
 
 /* 정식회원가입 (Web-02.02.02.3.html) */
 .member-cont {}
