@@ -1729,7 +1729,7 @@ body,
 	transition:all 2s;
 }/* hover */
 .thumb-list1 .thumb-item .text-area {
-	height:145px;
+	min-height:145px;
 	padding-top:28px;
 	box-sizing:border-box;
 	text-align:center;
@@ -1745,6 +1745,24 @@ body,
 	margin-top:10px;
 	color:#777;
 }
+
+.thumb-list1 .ico-division {
+	display:inline-block;
+	min-width:94px;
+	height:25px;
+	margin:15px 0 32px;
+	padding:0 20px;
+	border-radius:4px;
+	box-sizing:border-box;
+	color:#fff;
+	font-size:14px;
+	font-weight:600;
+	line-height:25px;
+	text-align:center;
+}
+.thumb-list1 .ico-division.bg-color1 {background-color:#e43762;}
+.thumb-list1 .ico-division.bg-color2 {background-color:#4b68a3;}
+.thumb-list1 .ico-division.bg-color3 {background-color:#acacac;}
 
 /* 이벤트 상세 (Web-07.01.02.html) */
 .view-edit-cont {}
