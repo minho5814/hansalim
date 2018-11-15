@@ -249,6 +249,18 @@ select {
 }/* hover */
 
 /* 버튼정렬 */
+
+.btn-top-area {
+	margin-bottom:45px;
+	text-align:right;
+	font-size:0;
+}
+.btn-top-area .btn-icon-link3 {
+	margin-left:10px;
+	font-size:15px;
+}
+.btn-top-area .btn-icon-link3:first-child {margin-left:0;}
+
 .btn-btm-area {
 	margin-top:50px;
 	text-align:center;
@@ -1267,10 +1279,7 @@ body,
 .box-list2 .box-item .info-list .item.fcolor {color:#e21c24;}
 
 /* 이벤트상세 (MA-03.04.02.html) */
-.board-view {
-	margin-top:70px;
-	border-top:1px solid #262626;
-}
+.board-view {border-top:1px solid #262626;}
 .board-view .title-area {
 	position:relative;
 	padding:24px 0 20px;
@@ -1298,7 +1307,6 @@ body,
 .board-view .title-area .btn-icon-link2 {margin-top:7px;}
 .board-view .b-cont {padding-top:65px;}
 
-.board-view.type2 {margin-top:0;}
 .board-view.type2 .title-area {
 	padding-right:100px;
 	padding-bottom:25px;
@@ -1618,18 +1626,6 @@ body,
 .thumb-list-wrap .sorting-list .btn.on {color:#7451c0;}/* on */
 .thumb-list-wrap .sorting-list .btn.on:before {background-color:#7451c0;}/* on */
 
-.thumb-list-wrap .btn-top-area {
-	margin-bottom:45px;
-	text-align:right;
-	font-size:0;
-}
-.thumb-list-wrap .btn-top-area .btn-icon-link3 {
-	margin-left:10px;
-	font-size:15px;
-}
-.thumb-list-wrap .btn-top-area .btn-icon-link3:first-child {margin-left:0;}
-.thumb-list-wrap .btn-top-area {}
-
 .thumb-list1 {
 	margin:-60px 0 0 -35px;
 	width:1050px;
@@ -1809,8 +1805,28 @@ body,
 }
 .view-edit-cont .notice-box .gray-box .list2 li:first-child,
 .view-edit-cont .notice-box .gray-box .list3 li:first-child {margin-top:0;}
-.view-edit-cont {}
-.view-edit-cont {}
+
+/* 이벤트당첨확인 (Web-07.03.01.html) */
+.box-list3 {
+	margin-top:60px;
+	border-top:1px solid #333;
+}
+.box-list3 .box-item {
+	display:block;
+	padding:21px 50px;
+	border-bottom:1px solid #f2f2f2;
+	font-weight:400;
+	line-height:1.4;
+}
+.box-list3 .box-item p {
+	color:#111;
+	font-size:16px;
+}
+.box-list3 .box-item .list {margin-top:5px;}
+.box-list3 .box-item .list .item {
+	color:#777;
+	font-size:15px;
+}
 
 /* ============================================================================================
 	화원관리
@@ -1824,6 +1840,7 @@ body,
 	padding:70px 230px 70px;
 	border:1px solid #ccc;
 }
+.login-box:first-child {margin-top:0;}
 
 .login-box .form-area {
 	position:relative;
@@ -1985,6 +2002,25 @@ body,
 .btns-type1 .bx-controls-auto a.active {display:none;}
 .btns-type1 .bx-controls-auto .bx-start {background-image:url(../images/icon/bx_start02.png);}
 .btns-type1 .bx-controls-auto .bx-stop {background-image:url(../images/icon/bx_stop02.png);}
+
+/* 아이디찾기 (Web-02.01.01.2.html) */
+.login-box.type2 {
+	padding:60px 280px 70px;
+}
+.login-box .find-title-area {
+	margin-top:-10px;
+	text-align:center;
+}
+.login-box .find-title-area .f-title {
+	color:#111;
+	font-size:26px;
+	font-weight:900;
+}
+.login-box .find-title-area .text {
+	color:#4c4c4c;
+	font-size:17px;
+}
+.login-box .find-title-area {}
 
 /* 휴대폰OTP (Web-02.01.01.2.html) */
 .login-box .form-area2 .form-item {
