@@ -306,131 +306,103 @@
 				<div class="crumb-item">
 					<a href="#" class="crumb">Home</a>
 				</div>
+				<div class="crumb-item">
+					<span class="crumb">회원가입</span>
+					<div class="menu-list">
+						<div class="menu-item">
+							<a href="#" class="title">로그인</a>
+						</div>
+						<div class="menu-item">
+							<a href="#" class="title">회원가입</a>
+						</div>
+						<div class="menu-item">
+							<a href="#" class="title">개인정보관리</a>
+						</div>
+					</div>
+				</div>
 				<div class="crumb-item no-link">
-					<span class="crumb">로그인</span>
+					<span class="crumb">간편회원가입</span>
+					<div class="menu-list">
+						<div class="menu-item">
+							<a href="#" class="title">간편회원가입</a>
+						</div>
+						<div class="menu-item">
+							<a href="#" class="title">정식회원가입</a>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="page-title-area no-link">
+			<div class="page-title-area">
 				<div class="inner-box">
-					<h2 class="page-title">로그인</h2>
+					<h2 class="page-title">간편회원가입</h2>
+					<div class="layer">
+						<a href="" class="link">간편회원가입</a>
+						<a href="" class="link">정식회원가입</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="container">
-		<div class="content tab-wrap">
-			<div class="tab-list1">
-				<a href="Web-02.01.01.1.html" class="tab-item">아이디</a>
-				<span class="tab-item on">휴대폰OTP</span>
-				<a href="Web-02.01.01.3.html" class="tab-item">SNS</a>
-			</div>
-
-			<div class="login-box">
-				<div class="form-area2">
+		<div class="content">
+			<div class="login-box type2">
+				<div class="find-title-area">
+					<h3 class="f-title">개인정보등록</h3>
+				</div>
+				<div class="form-area type2">
 					<div class="form-item">
-						<input type="text" placeholder="휴대폰 번호 입력">
-						<button type="button" class="btn btn-popup" layer-name="Popup01">OTP번호 발급요청</button>
+						<label for="Name">이름</label>
+						<input type="text" id="Name" placeholder="이름 입력">
 					</div>
-					<div class="form-item certification">
-						<input type="password" placeholder="인증 번호 입력">
-						<div class="time">02:58</div>
-						<button type="button" class="btn btn-popup" layer-name="Popup02">인증하기</button>
+					<div class="form-item">
+						<label for="Mail">이메일</label>
+						<input type="text" id="Mail" placeholder="  E-Mail 주소 입력 (예: lotte@gmail.com)">
 					</div>
 				</div>
 
-				<div class="link-area">
-					<span class="link"><a href="Web-02.01.01.2.html">아이디</a>/<a href="Web-02.01.01.3.html">비밀번호 찾기</a></span>
-					<a href="Web-02.02.01.1.html" class="link">회원가입</a>
+				<div class="popup-text-area">
+					I agree to the <button type="button" class="f-style btn-popup" layer-name="Popup01">Terms of Use</button> and have read and understand the <em class="f-style">Privacy Policy.</em>
 				</div>
 
-				<div class="hashtags">
-					<a href="#" class="tag">#대출시뮬레이션</a>
-					<a href="#" class="tag">#대출상담접수</a>
-					<a href="#" class="tag">#대출상담접수</a>
-					<a href="#" class="tag">#대출상담접수</a>
+				<div class="btn-btm-area">
+					<a href="Web-02.02.01.1.html" class="btn-text">간편회원 가입</a>
 				</div>
 			</div>
-
-			<!-- 슬라이드 배너 -->
-			<div class="banner-slider  btns-type1">
-				<ul class="bxslider">
-					<li class="slide-item">
-						<a href="#">
-							<img src="../images/temp/@img_banner01.jpg" alt="">
-						</a>
-					</li>
-					<li class="slide-item">
-						<a href="#">
-							<img src="../images/temp/@img_banner02.jpg" alt="">
-						</a>
-					</li>
-					<li class="slide-item">
-						<a href="#">
-							<img src="../images/temp/@img_banner01.jpg" alt="">
-						</a>
-					</li>
-					<li class="slide-item">
-						<a href="#">
-							<img src="../images/temp/@img_banner02.jpg" alt="">
-						</a>
-					</li>
-				</ul>
-			</div>
-			<!-- // 슬라이드 배너 -->
 		</div>
 	</div>
-
 </div>
 
 
-<!-- 레이어 팝업 (OTP번호 발급요청) -->
+<!-- 레이어팝업 (Terms of Use) -->
 <div class="layer-popup" layer-name="Popup01">
 	<div class="dimmed"></div>
-	<div class="popup" style="width:570px;">
+	<div class="popup" style="width: 740px;">
 		<button type="button" class="btn-close popClose">Close</button>
-		<div class="cont">
-			요청하신 휴대폰정보를 확인할 수 없습니다.<br>
-			ID/PW로그인을 하신 후 개인정보관리에서 개인정보변경을 통해<br>
-			휴대폰번호를 변경해 주시기 바랍니다.
+		<div class="title-area">
+			<h1 class="p-title">Terms of Use</h1>
 		</div>
-		<ul class="btn-bottom-area">
-			<button type="button" class="btn-text type1 popClose">취소</button>
-			<a href="Web-02.01.01.1.html" class="btn-text">확인</a>
-		</ul>
-	</div>
-</div>
-
-<!-- 레이어 팝업 (인증하기) -->
-<div class="layer-popup" layer-name="Popup02">
-	<div class="dimmed"></div>
-	<div class="popup" style="width:450px;">
-		<button type="button" class="btn-close popClose">Close</button>
-		<div class="cont">
-			인증이 실패하였습니다.<br>
-			다시 한번 OTP 번호를 입력해 주세요.
+		<div class="scoll-cont">
+			관리자 입력된 약관내용 표시Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellent esque erat arcu, bibendum quis purus eu, ullamcorper malesuada quam. Nam vitae tellus lectus. Sed porttitor nec massa eu faucibus. Maecenas at justo nisi.<br>
+			Fusce eget turpis lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+			Pellentesque erat arcu, bibendum quis purus eu, ullamcorper malesuada quam. Nam vitae tellus lectus. Sed porttitornec massa eu faucibus. Maecenas at justo nisi. Fusce eget turp is lorem.<br>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque erat arcu, bibendum quis purus eu, ullamcorper malesuada quam.<br>
+			Nam vitae tellus lectus. Sed porttitor nec massa eu faucibus. Maecenas at justo nisi.<br>
+			Fusce eget turpis lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque erat arcu, bibendum quis purus eu, ullamcorper malesuada quam.<br>
+			Nam vitae tellus lectus. Sed porttitor nec massa eu faucibus. Maecenas at justo nisi.<br>
+			Fusce eget turpis lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque erat arcu, bibendum quis purus eu, ullamcorper malesuada quam.<br>
+			Nam vitae tellus lectus. Sed porttitor nec massa eu faucibus. Maecenas at justo nisi.<br>
+			Fusce eget turpis lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque erat arcu, bibendum quis purus eu, ullamcorper malesuada quam.<br>
+			Nam vitae tellus lectus. Sed porttitor nec massa eu faucibus. Maecenas at justo nisi.<br>
+			Fusce eget turpis lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque erat arcu, bibendum quis purus eu, ullamcorper malesuada quam.<br>
+			Nam vitae tellus lectus. Sed porttitor nec massa eu faucibus. Maecenas at justo nisi.<br>
+			Fusce eget turpis lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque erat arcu, bibendum quis purus eu, ullamcorper malesuada quam.
 		</div>
 		<ul class="btn-bottom-area">
 			<button type="button" class="btn-text popClose">확인</button>
 		</ul>
 	</div>
 </div>
-
-
-<script>
-$(document).ready(function(){
-	/* 배너 슬라이더 */
-	$('.banner-slider').each(function(){
-		BannerSlider = $(this).find('.bxslider').bxSlider({
-			auto:true,
-			autoHover:false,
-			autoControls:true,
-			pause:3000,
-			speed:400,
-		});
-	});
-});
-</script>
 </body>
 
 </html>

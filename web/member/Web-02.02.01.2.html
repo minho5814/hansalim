@@ -306,27 +306,50 @@
 				<div class="crumb-item">
 					<a href="#" class="crumb">Home</a>
 				</div>
+				<div class="crumb-item">
+					<span class="crumb">회원가입</span>
+					<div class="menu-list">
+						<div class="menu-item">
+							<a href="#" class="title">로그인</a>
+						</div>
+						<div class="menu-item">
+							<a href="#" class="title">회원가입</a>
+						</div>
+						<div class="menu-item">
+							<a href="#" class="title">개인정보관리</a>
+						</div>
+					</div>
+				</div>
 				<div class="crumb-item no-link">
-					<span class="crumb">로그인</span>
+					<span class="crumb">간편회원가입</span>
+					<div class="menu-list">
+						<div class="menu-item">
+							<a href="#" class="title">간편회원가입</a>
+						</div>
+						<div class="menu-item">
+							<a href="#" class="title">정식회원가입</a>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="page-title-area no-link">
+			<div class="page-title-area">
 				<div class="inner-box">
-					<h2 class="page-title">로그인</h2>
+					<h2 class="page-title">간편회원가입</h2>
+					<div class="layer">
+						<a href="" class="link">간편회원가입</a>
+						<a href="" class="link">정식회원가입</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="container">
-		<div class="content tab-wrap">
-			<div class="tab-list1">
-				<a href="Web-02.01.01.1.html" class="tab-item">아이디</a>
-				<span class="tab-item on">휴대폰OTP</span>
-				<a href="Web-02.01.01.3.html" class="tab-item">SNS</a>
-			</div>
-
-			<div class="login-box">
+		<div class="content">
+			<div class="login-box type2">
+				<div class="find-title-area">
+					<h3 class="f-title">본인인증</h3>
+				</div>
 				<div class="form-area2">
 					<div class="form-item">
 						<input type="text" placeholder="휴대폰 번호 입력">
@@ -339,48 +362,12 @@
 					</div>
 				</div>
 
-				<div class="link-area">
-					<span class="link"><a href="Web-02.01.01.2.html">아이디</a>/<a href="Web-02.01.01.3.html">비밀번호 찾기</a></span>
-					<a href="Web-02.02.01.1.html" class="link">회원가입</a>
-				</div>
-
-				<div class="hashtags">
-					<a href="#" class="tag">#대출시뮬레이션</a>
-					<a href="#" class="tag">#대출상담접수</a>
-					<a href="#" class="tag">#대출상담접수</a>
-					<a href="#" class="tag">#대출상담접수</a>
+				<div class="btn-btm-area">
+					<a href="Web-02.02.01.3.html" class="btn-text">개인정보등록하기</a>
 				</div>
 			</div>
-
-			<!-- 슬라이드 배너 -->
-			<div class="banner-slider  btns-type1">
-				<ul class="bxslider">
-					<li class="slide-item">
-						<a href="#">
-							<img src="../images/temp/@img_banner01.jpg" alt="">
-						</a>
-					</li>
-					<li class="slide-item">
-						<a href="#">
-							<img src="../images/temp/@img_banner02.jpg" alt="">
-						</a>
-					</li>
-					<li class="slide-item">
-						<a href="#">
-							<img src="../images/temp/@img_banner01.jpg" alt="">
-						</a>
-					</li>
-					<li class="slide-item">
-						<a href="#">
-							<img src="../images/temp/@img_banner02.jpg" alt="">
-						</a>
-					</li>
-				</ul>
-			</div>
-			<!-- // 슬라이드 배너 -->
 		</div>
 	</div>
-
 </div>
 
 
@@ -415,22 +402,6 @@
 		</ul>
 	</div>
 </div>
-
-
-<script>
-$(document).ready(function(){
-	/* 배너 슬라이더 */
-	$('.banner-slider').each(function(){
-		BannerSlider = $(this).find('.bxslider').bxSlider({
-			auto:true,
-			autoHover:false,
-			autoControls:true,
-			pause:3000,
-			speed:400,
-		});
-	});
-});
-</script>
 </body>
 
 </html>
