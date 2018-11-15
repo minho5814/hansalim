@@ -607,3 +607,23 @@
 	font-size:0;
 	line-height:0;
 }
+.mypage-cont .thumb-list1 .thumb-item .text-area {height:185px;}
+.mypage-cont .thumb-list-wrap {margin-top:45px;}
+.mypage-cont .thumb-list-wrap .sorting-box {margin-bottom:12px;}
+.ico-division {
+	display:inline-block;
+	min-width:94px;
+	height:25px;
+	margin-top:15px;
+	padding:0 20px;
+	border-radius:4px;
+	box-sizing:border-box;
+	color:#fff;
+	font-size:14px;
+	font-weight:600;
+	line-height:25px;
+	text-align:center;
+}
+.ico-division.fcolor1 {background-color:#e43762;}
+.ico-division.fcolor2 {background-color:#4b68a3;}
+.ico-division.fcolor3 {background-color:#acacac;}
