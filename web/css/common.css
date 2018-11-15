@@ -673,7 +673,9 @@ table .a-right {
 	color:#7451c0;
 	font-weight:600;
 }/* on */
+.accordion-list1 .accordion-item .btn-popup.btn-tog:hover,
 .accordion-list1 .accordion-item a.btn-tog:hover {text-decoration:underline;}/* hover */
+.accordion-list1 .accordion-item .btn-popup.btn-tog:before,
 .accordion-list1 .accordion-item a.btn-tog:before {background-image:url(../images/icon/btn_link03.png);}
 
 .accordion-list1 .accordion-item.on .btn-tog:before {background-position:0 -26px;}/* on */
@@ -2075,7 +2077,10 @@ body,
 	text-align:center;
 	line-height:46px;
 }
-.login-box .find-idpw-box .list {margin-top:15px;}
+.login-box .find-idpw-box .list {
+	margin-top:15px;
+	padding:0 14px;
+}
 .login-box .find-idpw-box .list li {
 	margin-left:8px;
 	color:#777;
@@ -2217,6 +2222,9 @@ body,
 	margin:30px 0 40px;
 	text-align:center;
 }
+.photo-change-area + .board-list1 {
+	margin-top:60px;
+}
 .photo-change-area .photo-change {
 	display:block;
 	position:relative;
@@ -2260,8 +2268,6 @@ body,
 }
 
 /* 개인정보관리 > 개인정보변경 (Web-02.03.03.1.html) */
-.phone-change {}
-.phone-change .phone-number {}
 .phone-change .phone-number input {
 	width:115px;
 	padding:0;
@@ -2271,8 +2277,12 @@ body,
 	display:none;
 	margin-top:15px;
 }
-.phone-change {}
-.phone-change {}
+
+/* 개인정보관리 > 비밀번호변경 (Web-02.03.04.html) */
+.login-box.type4 {
+	padding:205px 250px 70px;
+	background:url(../images/bg/bg_find02.png) no-repeat 50% 70px;
+}
 
 /* 회원탈퇴안내 (Web-02.03.05.html) */
 .matters-box1 {

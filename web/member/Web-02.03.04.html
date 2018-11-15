@@ -320,13 +320,13 @@
 					</div>
 				</div>
 				<div class="crumb-item no-link">
-					<span class="crumb">개인정보변경</span>
+					<span class="crumb">비밀번호변경</span>
 				</div>
 			</div>
 
 			<div class="page-title-area no-link">
 				<div class="inner-box">
-					<h2 class="page-title">개인정보변경</h2>
+					<h2 class="page-title">비밀번호변경</h2>
 				</div>
 			</div>
 		</div>
@@ -334,182 +334,38 @@
 
 	<div class="container">
 		<div class="content">
-			<div class="board-write1">
-				<div class="board-title-area">
-					<h2 class="board-title">기본정보</h2>
+			<div class="login-box type4">
+				<div class="find-idpw-box">
+					<ul class="list">
+						<li>* 아이디와 동일한 비밀번호나 개인정보와 관련된 숫자, 연속된 숫자, 동일 반복된 숫자 등 다른 사람이 쉽게 알아 낼 수 있는 비밀번호는 유출의 위험이 있습니다.</li>
+						<li>* 쉬운 비밀번호나 자주 이용하는 홈페이지의 비밀번호가 같으면 도용되기 쉬우므로 주기적으로 변경 하시는 것이 좋습니다.</li>
+					</ul>
+					<div class="input-area">
+						<input type="password" placeholder="기존 비밀번호 입력">
+						<input type="password" placeholder="변경 비밀번호 입력">
+						<input type="password" placeholder="변경 비밀번호 확인">
+					</div>
 				</div>
-				<div class="board">
-					<table>
-						<colgroup>
-							<col style="width:220px;">
-							<col>
-						</colgroup>
-						<tbody>
-							<tr>
-								<th scope="row"><label for="Name" class="th">ID</label></th>
-								<td>
-									<input type="text" id="Name" placeholder="이름 입력" value="김*카" style="width:500px;" disabled>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="Id" class="th">ID</label></th>
-								<td>
-									<input type="text" id="Id" placeholder="영문, 숫자 혼합(6자 이상)" value="lot***" style="width:500px;" disabled>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="Email" class="th">이메일</label></th>
-								<td>
-									<input type="text" id="Email" placeholder="이메일 주소 입력" value="lot***@gmail.com" style="width:500px;">
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><span class="th">휴대폰번호</span></th>
-								<td class="phone-change">
-									<div class="phone-number">
-										<input type="text" value="010-1234-****" readonly>
-										<button type="button" class="btn-text sm type2 btn">휴대폰 번호 변경하기</button>
-									</div>
-									<div class="form-area2">
-										<div class="form-item">
-											<input type="text" placeholder="휴대폰 번호 입력">
-											<button type="button" class="btn btn-popup" layer-name="Popup01">OTP번호 발급요청</button>
-										</div>
-										<div class="form-item certification">
-											<input type="password" placeholder="인증 번호 입력">
-											<div class="time">02:58</div>
-											<button type="button" class="btn btn-popup" layer-name="Popup02">인증하기</button>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<div class="board-write1">
-				<div class="board-title-area">
-					<h2 class="board-title">자택정보</h2>
-				</div>
-				<div class="board">
-					<table>
-						<colgroup>
-							<col style="width:220px;">
-							<col>
-						</colgroup>
-						<tbody>
-							<tr>
-								<th scope="row"><label for="Ad1" class="th">주소</label></th>
-								<td>
-									<input type="text" id="Ad1" class="bg1" value="54 Liễu Giai Ngọc Khánh Ba Đình Hà Nội" style="width:500px;">
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="Tel1" class="th">전화번호</label></th>
-								<td>
-									<input type="text" id="Tel1" class="bg1" value="089-1234-5789" style="width:500px;">
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<div class="board-write1">
-				<div class="board-title-area">
-					<h2 class="board-title">직장정보</h2>
-				</div>
-				<div class="board">
-					<table>
-						<colgroup>
-							<col style="width:220px;">
-							<col>
-						</colgroup>
-						<tbody>
-							<tr>
-								<th scope="row"><label for="Ad2" class="th">주소</label></th>
-								<td>
-									<input type="text" id="Ad2" class="bg1" value="54 Liễu Giai Ngọc Khánh Ba Đình Hà Nội" style="width:500px;">
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="Tel2" class="th">전화번호</label></th>
-								<td>
-									<input type="text" id="Tel2" class="bg1" value="089-1234-5789" style="width:500px;">
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="Company" class="th">회사명</label></th>
-								<td>
-									<input type="text" id="Company" class="bg1" value="Lotte Finance" style="width:500px;">
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="Post" class="th">부서</label></th>
-								<td>
-									<input type="text" id="Post" class="bg1" value="Product Team" style="width:500px;">
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><label for="Position" class="th">직책</label></th>
-								<td>
-									<input type="text" id="Position" class="bg1" value="Manager" style="width:500px;">
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
 
-			<div class="btn-btm-area">
-				<button type="button" class="btn-text btn-popup" layer-name="Popup03">개인정보 변경</button>
+				<div class="btn-btm-area">
+					<button type="button" class="btn-text btn-popup" layer-name="Popup01">비밀번호 변경 확인</button>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
 
-<!-- 레이어 팝업 (OTP번호 발급요청) -->
+<!-- 레이어 팝업 (비밀번호 변경 확인) -->
 <div class="layer-popup" layer-name="Popup01">
-	<div class="dimmed"></div>
-	<div class="popup" style="width:570px;">
-		<button type="button" class="btn-close popClose">Close</button>
-		<div class="cont">
-			요청하신 휴대폰정보를 확인할 수 없습니다.<br>
-			ID/PW로그인을 하신 후 개인정보관리에서 개인정보변경을 통해<br>
-			휴대폰번호를 변경해 주시기 바랍니다.
-		</div>
-		<ul class="btn-bottom-area">
-			<button type="button" class="btn-text type1 popClose">취소</button>
-			<a href="Web-02.01.01.1.html" class="btn-text">확인</a>
-		</ul>
-	</div>
-</div>
-
-<!-- 레이어 팝업 (인증하기) -->
-<div class="layer-popup" layer-name="Popup02">
-	<div class="dimmed"></div>
-	<div class="popup" style="width:450px;">
-		<button type="button" class="btn-close popClose">Close</button>
-		<div class="cont">
-			인증이 실패하였습니다.<br>
-			다시 한번 OTP 번호를 입력해 주세요.
-		</div>
-		<ul class="btn-bottom-area">
-			<button type="button" class="btn-text popClose">확인</button>
-		</ul>
-	</div>
-</div>
-
-<!-- 레이어 팝업 (개인정보 변경) -->
-<div class="layer-popup" layer-name="Popup03">
 	<div class="dimmed"></div>
 	<div class="popup" style="width:380px;">
 		<button type="button" class="btn-close popClose">Close</button>
 		<div class="cont">
-			개인정보변경이 정상 처리되었습니다.
+			비밀번호변경이 정상 처리되었습니다.
 		</div>
 		<ul class="btn-bottom-area">
-			<a href="Web-02.03.01.html" class="btn-text popClose">확인</a>
+			<a href="Web-02.03.01.html" class="btn-text">확인</a>
 		</ul>
 	</div>
 </div>
