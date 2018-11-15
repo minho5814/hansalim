@@ -3229,7 +3229,7 @@ body,
 }
 .mypage-wrap .info-box .text-right .right {
 	float:right;
-	width:110px;
+	width:130px;
 	box-sizing:border-box;
 }
 .mypage-wrap .info-box .text-right .text:first-child .right {padding-right:8px;}
@@ -3373,7 +3373,7 @@ body,
 .apply-history .apply-cont .apply-price {
 	display:inline-block;
 	position:relative;
-	padding-right:16px;
+	padding-right:40px;
 	color:#111;
 	font-size:28px;
 	font-weight:900;
@@ -3473,7 +3473,7 @@ body,
 .loan-wrap .shadow-box .price-area .price {
 	display:inline-block;
 	position:relative;
-	padding-right:17px;
+	padding-right:35px;
 	font-size:40px;
 	font-weight:900;
 	line-height:1.1;
@@ -3482,7 +3482,7 @@ body,
 	position:absolute;
 	right:0;
 	bottom:7px;
-	font-size:22px;
+	font-size:18px;
 	font-weight:400;
 }
 .loan-wrap .shadow-box .text-area {
@@ -4686,8 +4686,8 @@ body,
 	text-align:center;
 }
 .update-cont .update-guid {
-	overflow:auto;
-	height:146px;
+	overflow-y:auto;
+	min-height:146px;
 	margin-top:10px;
 }
 .update-cont .guid-text {
