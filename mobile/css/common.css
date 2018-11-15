@@ -4686,8 +4686,8 @@ body,
 	text-align:center;
 }
 .update-cont .update-guid {
-	overflow:auto;
-	height:146px;
+	overflow-y:auto;
+	min-height:146px;
 	margin-top:10px;
 }
 .update-cont .guid-text {
