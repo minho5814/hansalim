@@ -568,14 +568,6 @@
 }
 
 .cardon-slider {position:relative;}
-.cardon-slider .bx-pager {
-	display:none;
-	position:absolute;
-	left:-9999px;
-	top:-9999px;
-	font-size:0;
-	line-height:0;
-}
 .cardon-slider .bx-controls-direction {
 	position:absolute;
 	right:0;
@@ -600,6 +592,14 @@
 .cardon-slider .bx-controls-direction .bx-next:hover {background-image:url(../images/icon/bx_click_next03.png);}
 
 .cardon-slider .bx-controls-auto {
+	display:none;
+	position:absolute;
+	left:-9999px;
+	top:-9999px;
+	font-size:0;
+	line-height:0;
+}
+.cardon-slider .bx-pager {
 	display:none;
 	position:absolute;
 	left:-9999px;
