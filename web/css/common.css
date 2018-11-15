@@ -1840,6 +1840,7 @@ body,
 	padding:70px 230px 70px;
 	border:1px solid #ccc;
 }
+.login-box:first-child {margin-top:0;}
 
 .login-box .form-area {
 	position:relative;
@@ -2001,6 +2002,25 @@ body,
 .btns-type1 .bx-controls-auto a.active {display:none;}
 .btns-type1 .bx-controls-auto .bx-start {background-image:url(../images/icon/bx_start02.png);}
 .btns-type1 .bx-controls-auto .bx-stop {background-image:url(../images/icon/bx_stop02.png);}
+
+/* 아이디찾기 (Web-02.01.01.2.html) */
+.login-box.type2 {
+	padding:60px 280px 70px;
+}
+.login-box .find-title-area {
+	margin-top:-10px;
+	text-align:center;
+}
+.login-box .find-title-area .f-title {
+	color:#111;
+	font-size:26px;
+	font-weight:900;
+}
+.login-box .find-title-area .text {
+	color:#4c4c4c;
+	font-size:17px;
+}
+.login-box .find-title-area {}
 
 /* 휴대폰OTP (Web-02.01.01.2.html) */
 .login-box .form-area2 .form-item {
