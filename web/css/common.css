@@ -74,6 +74,11 @@ input[type=password] {
 	-moz-appearance:none;
 	appearance:none;
 }
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
 input[type=text]:disabled,
 input[type=tel]:disabled,
 input[type=number]:disabled,
@@ -299,6 +304,8 @@ select {
 	display:inline-block;
 	position:relative;
 }
+.selectbox.full,
+.selectbox.full select {width:100%;}
 .selectbox .sel-text {
 	display:inline-block;
 	position:absolute;
@@ -1864,11 +1871,15 @@ body,
 	position:absolute;
 	left:0;
 	top:0;
+	font-size:18px;
+	font-weight:600;
 	line-height:40px;
 }
 
 .login-box .form-area.type2 {padding-right:0;}
 .login-box .form-area.type2 .form-item {padding-left:70px;}
+.login-box .form-area.type3 {padding-right:0;}
+.login-box .form-area.type3 .form-item {padding-left:130px;}
 
 .login-box input {width:100%;}
 .login-box input:focus {
@@ -2138,7 +2149,13 @@ body,
 	margin-right:-250px;
 }
 
-/* 정식회원가입 (Web-02.02.02.3.html) */
+/* 정식회원가입 > 본인인증 (Web-02.02.02.1.html) */
+.login-box.type3 {
+	padding-left:250px;
+	padding-right:250px;
+}
+
+/* 정식회원가입 > 개인정보등록 (Web-02.02.02.3.html) */
 .member-cont {}
 .sub-txt-box {
 	padding:63px 0 40px;

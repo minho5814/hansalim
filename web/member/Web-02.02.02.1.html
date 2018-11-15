@@ -320,24 +320,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="crumb-item">
-					<span class="crumb">간편회원가입</span>
-					<div class="menu-list">
-						<div class="menu-item">
-							<a href="#" class="title">간편회원가입</a>
-						</div>
-						<div class="menu-item">
-							<a href="#" class="title">정식회원가입</a>
-						</div>
-					</div>
-				</div>
 			</div>
 			<div class="page-title-area">
 				<div class="inner-box">
-					<h2 class="page-title">간편회원가입</h2>
+					<h2 class="page-title">회원가입</h2>
 					<div class="layer">
-						<a href="" class="link">간편회원가입</a>
-						<a href="" class="link">정식회원가입</a>
+						<a href="" class="link">로그인</a>
+						<a href="" class="link">회원가입</a>
+						<a href="" class="link">개인정보관리</a>
 					</div>
 				</div>
 			</div>
@@ -346,24 +336,30 @@
 
 	<div class="container">
 		<div class="content">
-			<div class="login-box type2">
-				<div class="find-title-area">
-					<h3 class="f-title">본인인증</h3>
-				</div>
-				<div class="form-area2">
-					<div class="form-item">
-						<input type="text" placeholder="휴대폰 번호 입력">
-						<button type="button" class="btn btn-popup" layer-name="Popup01">OTP번호 발급요청</button>
-					</div>
-					<div class="form-item certification">
-						<input type="password" placeholder="인증 번호 입력">
-						<div class="time">02:58</div>
-						<button type="button" class="btn btn-popup" layer-name="Popup02">인증하기</button>
-					</div>
-				</div>
+			<div class="tab-list1">
+				<a href="Web-02.02.01.1.html" class="tab-item">간편회원 가입</a>
+				<span class="tab-item on">정식회원 가입</span>
+			</div>
 
+			<div class="login-box type3">
+				<div class="top-title">
+					고객님께서 가지고 계신 Lotte Finance 금융상품번호<br>
+					(대출접수번호, 대출계약번호, 롯데카드번호 등)을 입력해 주세요.
+				</div>
+				<div class="form-area type3">
+					<div class="form-item">
+						<label for="Product">금융 상품 선택</label>
+						<select id="Product" class="styled1 full">
+							<option>입력할 금융상품을 선택하세요.</option>
+						</select>
+					</div>
+					<div class="form-item">
+						<label for="Number">금융 상품 번호</label>
+						<input type="number" id="Number" placeholder="  금융상품번호를 입력하세요.">
+					</div>
+				</div>
 				<div class="btn-btm-area">
-					<a href="Web-02.02.01.3.html" class="btn-text">개인정보등록하기</a>
+					<button type="button" class="btn-text btn-popup" layer-name="Popup01">금융상품 번호 확인</button>
 				</div>
 			</div>
 		</div>
@@ -371,31 +367,12 @@
 </div>
 
 
-<!-- 레이어 팝업 (OTP번호 발급요청) -->
 <div class="layer-popup" layer-name="Popup01">
 	<div class="dimmed"></div>
-	<div class="popup" style="width:570px;">
+	<div class="popup" style="width: 380px;">
 		<button type="button" class="btn-close popClose">Close</button>
 		<div class="cont">
-			요청하신 휴대폰정보를 확인할 수 없습니다.<br>
-			ID/PW로그인을 하신 후 개인정보관리에서 개인정보변경을 통해<br>
-			휴대폰번호를 변경해 주시기 바랍니다.
-		</div>
-		<ul class="btn-bottom-area">
-			<button type="button" class="btn-text type1 popClose">취소</button>
-			<a href="Web-02.01.01.1.html" class="btn-text">확인</a>
-		</ul>
-	</div>
-</div>
-
-<!-- 레이어 팝업 (인증하기) -->
-<div class="layer-popup" layer-name="Popup02">
-	<div class="dimmed"></div>
-	<div class="popup" style="width:450px;">
-		<button type="button" class="btn-close popClose">Close</button>
-		<div class="cont">
-			인증이 실패하였습니다.<br>
-			다시 한번 OTP 번호를 입력해 주세요.
+			금융상품번호가 확인되었습니다.
 		</div>
 		<ul class="btn-bottom-area">
 			<button type="button" class="btn-text popClose">확인</button>
