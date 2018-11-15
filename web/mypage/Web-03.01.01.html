@@ -635,28 +635,18 @@ $(document).ready(function(){
 	/* 슬라이드 스마트 카드론 */
 	$('.cardon-slider').each(function(){
 		cardonSliderr = $(this).find('.bxslider').bxSlider({
-			auto:true,
-			autoControls:true,
-			autoHover:false,
-			pause:3000,
-			speed:400,
+			infiniteLoop:false,
+			hideControlOnEnd:true,
 		});
 	});
 
 	/* 슬라이드 상환월 상환 총 금액 */
 	$('.status-slider').each(function(){
 		statusSlider = $(this).find('.bxslider').bxSlider({
-			auto:true,
-			autoControls:true,
-			autoHover:false,
-			pause:3000,
-			speed:400,
+			infiniteLoop:false,
+			controls:false,
 		});
-		// 버튼 순서 바꾸기
-		$(this).find('.bx-pager').appendTo('.bx-controls');
-		$(this).find('.bx-controls-auto').appendTo('.bx-controls');
 	});
-
 });
 </script>
 </body>
