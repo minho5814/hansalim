@@ -83,7 +83,7 @@ input[type=text]:disabled,
 input[type=tel]:disabled,
 input[type=number]:disabled,
 input[type=password]:disabled {
-	
+	background-color:#f3f3f3;
 }
 
 textarea {
@@ -159,6 +159,15 @@ select {
 }
 .btn-text.type1:hover {background-color:#f7f7f7;}
 
+html .btn-text.type2 {
+	border-radius:2px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	color:#7b7b7b;
+	line-height:48px;
+}
+html .btn-text.type2:hover {background-color:#f7f7f7;}
+
 .btn-text.link {padding-right:58px;}
 .btn-text.link:before {
 	content:'';
@@ -186,9 +195,8 @@ select {
 	height:40px;
 	line-height:40px;
 }
-.btn-text.sm.type1 {
-	line-height:38px;
-}
+.btn-text.sm.type1,
+.btn-text.sm.type2 {line-height:38px;}
 .btn-text.sm.link {padding-right:36px;}
 .btn-text.sm.link:before {
 	width:5px;
@@ -463,6 +471,16 @@ input.datepicker {
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	게시판 테이블
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 타이틀 영역 */
+.board-title-area {padding:9px 0;}
+.board-title-area .board-title {
+	color:#111;
+	font-size:20px;
+	font-weight:900;
+}
+.board-wrap .board-title-area {margin-top:45px;}
+.board-wrap .board-title-area:first-child {margin-top:0;}
+
 /* 입력 오류 */
 input.false-form {
 	border-color:#e43762;
@@ -539,12 +557,6 @@ table .a-right {
 /* 입력형식 */
 .board-write1 .unit-text {margin-left:15px;}
 .board-write1 + .board-write1 {margin-top:40px;}
-.board-write1 .title-area {padding:9px 0;}
-.board-write1 .board-title {
-	color:#111;
-	font-size:20px;
-	font-weight:900;
-}
 .board-write1 .board {
 	border-top:1px solid #262626;
 }
@@ -560,7 +572,7 @@ table .a-right {
 	font-weight:400;
 	text-align:left;
 }
-.board-write1 .board th label {
+.board-write1 .board th .th {
 	display:block;
 	padding:9px 0;
 }
@@ -2075,13 +2087,13 @@ body,
 .login-box .find-idpw-box .input-area input:first-child {margin-top:0;}
 
 /* 휴대폰OTP (Web-02.01.01.2.html) */
-.login-box .form-area2 .form-item {
+.form-area2 .form-item {
 	position:relative;
 	margin-top:10px;
 	padding-right:170px;
 }
-.login-box .form-area2 .form-item:first-child {margin-top:0;}
-.login-box .form-area2 .form-item .btn {
+.form-area2 .form-item:first-child {margin-top:0;}
+.form-area2 .form-item .btn {
 	display:inline-block;
 	position:absolute;
 	right:0;
@@ -2095,8 +2107,8 @@ body,
 	text-align:center;
 	line-height:40px;
 }
-.login-box .form-area2 .form-item.certification {padding-right:238px;}
-.login-box .form-area2 .form-item .time {
+.form-area2 .form-item.certification {padding-right:238px;}
+.form-area2 .form-item .time {
 	position:absolute;
 	right:170px;
 	top:0;
@@ -2105,9 +2117,12 @@ body,
 	font-weight:600;
 	line-height:40px;
 }
-.login-box .form-area2 .form-item input:focus + .btn,
-.login-box .form-area2 .form-item input:focus + .time + .btn {background-color:#7451c0;transition:all .3s;}
-.login-box .form-area2 .form-item input:focus + .time {color:#e43762;transition:all .3s;}
+.form-area2 .form-item input:focus + .btn,
+.form-area2 .form-item input:focus + .time + .btn {background-color:#7451c0;transition:all .3s;}
+.form-area2 .form-item input:focus + .time {color:#e43762;transition:all .3s;}
+
+.board .form-area2 {max-width:444px;}
+.board .form-area2 input {width:100%;}
 
 /* SNS (Web-02.01.01.3.html) */
 .login-box .sns-box-list {
@@ -2196,6 +2211,68 @@ body,
 	font-weight:600;
 }
 .popup-text-area .f-style:hover {text-decoration:underline;}/* hover */
+
+/* 개인정보관리 > 메인 (Web-02.03.01.html) */
+.photo-change-area {
+	margin:30px 0 40px;
+	text-align:center;
+}
+.photo-change-area .photo-change {
+	display:block;
+	position:relative;
+	width:120px;
+	margin:0 auto;
+}
+.photo-change-area .photo-change:before {
+	content:'';
+	position:absolute;
+	right:0;
+	bottom:0;
+	width:40px;
+	height:40px;
+	background:url(../images/icon/icon_camera.png) no-repeat 0 0;
+}
+.photo-change-area .photo-change .img-area {
+	display:block;
+	overflow:hidden;
+	height:120px;
+	margin:0 auto;
+	border-radius:50%;
+	font-size:0;
+}
+.photo-change-area .photo-change .img-area img {
+	width:100%;
+	height:100%;
+}
+.photo-change-area .photo-change input[type=file] {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:5;
+	width:100%;
+	height:100%;
+	opacity:0;
+}
+.photo-change-area .name {
+	margin-top:15px;
+	font-size:24px;
+	font-weight:900;
+}
+
+/* 개인정보관리 > 개인정보변경 (Web-02.03.03.1.html) */
+.phone-change {}
+.phone-change .phone-number {}
+.phone-change .phone-number input {
+	width:115px;
+	padding:0;
+	border:0;
+}
+.phone-change .form-area2 {
+	display:none;
+	margin-top:15px;
+}
+.phone-change {}
+.phone-change {}
 
 /* 회원탈퇴안내 (Web-02.03.05.html) */
 .matters-box1 {
