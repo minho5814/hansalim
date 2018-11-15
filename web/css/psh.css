@@ -197,14 +197,6 @@
 /* ============================================================================================
 	마이페이지
 =========================================================================================== */
-.btn-icon-link4 {
-	display: inline-block;
-	padding: 5px 27px 5px 0;
-	background: url(../images/icon/btn_link04.png) no-repeat 100% 50%;
-	color:#111;
-	font-size:20px;
-	font-weight: 600;
-}
 /* MY 한눈에 보기 (MA-03.01.01.html) */
 .mypage-cont {}
 .mypage-cont .infor-area {position:relative;}
@@ -214,6 +206,7 @@
 }
 .mypage-cont .infor-area .profile-box .profile-photo {
 	display:inline-block;
+	overflow:hidden;
 	position:absolute;
 	left:0;
 	top:0;
@@ -224,7 +217,7 @@
 }
 .mypage-cont .infor-area .profile-box .profile-photo img {
 	width:100%;
-	vertical-align:top;
+	height:100%;
 }
 .mypage-cont .infor-area .profile-box .profile-text {
 	display:inline-block;
