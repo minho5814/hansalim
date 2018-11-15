@@ -3721,6 +3721,9 @@ body,
 	font-weight:400;
 	line-height:1.5;
 }
+.complete-area.type02:before {
+	background-position:0 -271px;
+}
 
 /* 대출프로세스 (MA-05.04.html) */
 .loan-process {
@@ -4670,3 +4673,53 @@ body,
 	text-indent:-7px;
 	font-weight:400;
 }
+/* ============================================================================================
+	기타
+============================================================================================ */
+/* 에러페이지 (MA-10.05.1.html) */
+.update-cont {padding:12px 25px 30px;}
+.update-cont .notice-txt {
+	margin-top:12px;
+	color:#111;
+	font-size:14px;
+	line-height:1.3;
+	text-align:center;
+}
+.update-cont .update-guid {
+	overflow:auto;
+	height:146px;
+	margin-top:10px;
+}
+.update-cont .guid-text {
+	margin-bottom:10px;
+	color:#737373;
+	font-size:14px;
+	line-height:1.3;
+}
+.notice-pop {
+	padding:10px 25px 35px;
+}
+.notice-pop .title {
+	display:block;
+	color:#111;
+	font-size:14px;
+	line-height:20px;
+}
+.notice-pop .img-area {margin-top:15px;}
+.notice-pop .img-area img {
+	width:100%;
+	vertical-align:top;
+}
+.notice-pop .text-area {
+	margin-top:15px;
+	color:#737373;
+	font-size:14px;
+	line-height:1.3;
+}
+.notice-pop .checked-box {margin-top:20px;}
+.notice-pop .checked-box label {
+	margin-left:14px;
+	color:#111;
+	font-size:13px;
+}
+.notice-pop .btn-area {margin-top:30px;}

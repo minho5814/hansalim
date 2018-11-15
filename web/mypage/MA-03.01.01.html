@@ -559,13 +559,12 @@
 </div>
 <script>
 $(document).ready(function(){
-
-	/*슬라이드 스마트 카드론 */
+	/* 슬라이드 상환월 상환 총 금액 */
 	$('.cardon-slider').each(function(){
 		cardonSlider = $(this).find('.bxslider').bxSlider({
 			auto:true,
-			autoHover:true,
 			autoControls:true,
+			autoHover:false,
 			pause:3000,
 			speed:400,
 		});
@@ -575,8 +574,8 @@ $(document).ready(function(){
 	$('.status-slider').each(function(){
 		statusSlider = $(this).find('.bxslider').bxSlider({
 			auto:true,
-			autoHover:false,
 			autoControls:true,
+			autoHover:false,
 			pause:3000,
 			speed:400,
 		});
