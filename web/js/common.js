@@ -260,7 +260,11 @@ function form(){
 	$('select.styled1').each(function(){
 		if(!$(this).parent().is('.selectbox')){
 			var sel = $(this).find('option:selected').text();
-			$(this).wrap('<span class="selectbox"></span>');
+			if($(this).hasClass('full')){
+				$(this).wrap('<span class="selectbox full"></span>');
+			}else{
+				$(this).wrap('<span class="selectbox"></span>');
+			}
 			$(this).closest('.selectbox').prepend('<em class="sel-text">' + sel + '</em>');
 		}
 
