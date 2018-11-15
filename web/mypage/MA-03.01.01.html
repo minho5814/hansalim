@@ -652,6 +652,9 @@ $(document).ready(function(){
 			pause:3000,
 			speed:400,
 		});
+		// 버튼 순서 바꾸기
+		$(this).find('.bx-pager').appendTo('.bx-controls');
+		$(this).find('.bx-controls-auto').appendTo('.bx-controls');
 	});
 
 });
