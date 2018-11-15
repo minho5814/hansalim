@@ -2909,6 +2909,8 @@ body,
 	margin:0 auto;
 }
 .personal-info-area .img-change .img-area {
+	overflow:hidden;
+	border-radius:50%;
 	font-size:0;
 	line-height:0;
 }

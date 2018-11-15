@@ -398,31 +398,108 @@
 			</div>
 
 			<!-- 슬라이드 배너 -->
-			<div class="event-banner-slider">
+			<div class="event-banner-slider btns-type1">
 				<ul class="bxslider">
 					<li class="slide-item">
 						<a href="#">
-							<img src="../images/temp/@img_banner01.jpg" alt="">
+							<img src="../images/temp/@img_event_banner01.jpg" alt="">
 						</a>
 					</li>
 					<li class="slide-item">
 						<a href="#">
-							<img src="../images/temp/@img_banner02.jpg" alt="">
+							<img src="../images/temp/@img_event_banner01.jpg" alt="">
 						</a>
 					</li>
 					<li class="slide-item">
 						<a href="#">
-							<img src="../images/temp/@img_banner01.jpg" alt="">
+							<img src="../images/temp/@img_event_banner01.jpg" alt="">
 						</a>
 					</li>
 					<li class="slide-item">
 						<a href="#">
-							<img src="../images/temp/@img_banner02.jpg" alt="">
+							<img src="../images/temp/@img_event_banner01.jpg" alt="">
 						</a>
 					</li>
 				</ul>
 			</div>
 			<!-- // 슬라이드 배너 -->
+
+			<div class="thumb-list-wrap">
+				<div class="sorting-list">
+					<button type="button" class="btn on">최신순</button>
+					<button type="button" class="btn">조회순</button>
+					<button type="button" class="btn">마감순</button>
+				</div>
+
+				<div class="thumb-list1">
+					<div class="thumb-item">
+						<a href="#" class="inner-box">
+							<div class="img-area">
+								<img src="../images/temp/@img_event_thumb01.jpg" alt="">
+							</div>
+							<div class="text-area">
+								<div class="title">Lotte Finance Vietnam<br>런칭 축하</div>
+								<div class="text">Oct.01.2018~Oct.31.2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="thumb-item">
+						<a href="#" class="inner-box">
+							<div class="img-area">
+								<img src="../images/temp/@img_event_thumb02.jpg" alt="">
+							</div>
+							<div class="text-area">
+								<div class="title">L.DERAM FESTA 2018. 롯데가 드림!<br>국민께 드림!</div>
+								<div class="text">Oct.01.2018~Oct.31.2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="thumb-item">
+						<a href="#" class="inner-box">
+							<div class="img-area">
+								<img src="../images/temp/@img_event_thumb03.jpg" alt="">
+							</div>
+							<div class="text-area">
+								<div class="title">Lotte Finance Vietnam<br>런칭 축하</div>
+								<div class="text">Oct.01.2018~Oct.31.2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="thumb-item">
+						<a href="#" class="inner-box">
+							<div class="img-area">
+								<img src="../images/temp/@img_event_thumb02.jpg" alt="">
+							</div>
+							<div class="text-area">
+								<div class="title">L.DERAM FESTA 2018. 롯데가 드림!<br>국민께 드림!</div>
+								<div class="text">Oct.01.2018~Oct.31.2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="thumb-item">
+						<a href="#" class="inner-box">
+							<div class="img-area">
+								<img src="../images/temp/@img_event_thumb03.jpg" alt="">
+							</div>
+							<div class="text-area">
+								<div class="title">Lotte Finance Vietnam<br>런칭 축하</div>
+								<div class="text">Oct.01.2018~Oct.31.2018</div>
+							</div>
+						</a>
+					</div>
+					<div class="thumb-item">
+						<a href="#" class="inner-box">
+							<div class="img-area">
+								<img src="../images/temp/@img_event_thumb01.jpg" alt="">
+							</div>
+							<div class="text-area">
+								<div class="title">L.DERAM FESTA 2018. 롯데가 드림!<br>국민께 드림!</div>
+								<div class="text">Oct.01.2018~Oct.31.2018</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- // 컨텐츠 영역 -->
@@ -435,11 +512,14 @@ $(document).ready(function(){
 	$('.event-banner-slider').each(function(){
 		wheelSlider = $(this).find('.bxslider').bxSlider({
 			auto:true,
-			autoHover:false,
+			autoHover:true,
 			autoControls:true,
 			pause:3000,
 			speed:400,
 		});
+
+		var control = $(this).find('.bx-controls');
+		$(this).find('.bx-controls-auto').appendTo(control);
 	});
 });
 </script>
