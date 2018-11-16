@@ -5,6 +5,16 @@ $(document).ready(function(){
 		window.open('about:blank','_self').self.close(); // IE에서 묻지 않고 창 닫기
 	});
 
+
+	/*
+	$('input[type=text], input[type=number], input[type=tel], input[type=password]').focus(function(){
+		var winTop = $(window).scrollTop();
+		$('html').css({'overflow-y':'auto', 'position':'fixed', 'left':'0', 'right':'0', 'top':-winTop, 'bottom':'0'});
+	}).blur(function(){
+		$('html, body').css({'overflow': 'auto'});
+	});
+	*/
+
 	/*
 		전체 메뉴 영역
 	*/
