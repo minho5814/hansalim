@@ -517,6 +517,86 @@ input.datepicker {
 	transition:all .2s;
 }/* on */
 
+.tab-list2 {
+	position:relative;
+	margin-top:50px;
+	border:1px solid #e0e0e0;
+	border-left:0;
+}
+.tab-list2:before {
+	content:'';
+	position:absolute;
+	left:50%;
+	right:25%;
+	top:0;
+	bottom:0;
+	margin-right:-1px;
+	border-left:1px solid #e0e0e0;
+	border-right:1px solid #e0e0e0;
+}
+.tab-list2:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.tab-list2 .tab-item {
+	float:left;
+	position:relative;
+	width:25%;
+	height:50px;
+	margin-bottom:-1px;
+	border-left:1px solid #e0e0e0;
+	border-bottom:1px solid #e0e0e0;
+	box-sizing:border-box;
+	text-align:center;
+	cursor:pointer;
+}
+.tab-list2 .tab-item:before {
+	content:'';
+	position:absolute;
+	right:-1px;
+	top:0;
+	bottom:0;
+	width:1px;
+	background-color:#e0e0e0;
+	color:#4c4c4c;
+	font-size:16px;
+	line-height:1;
+}
+.tab-list2 .tab-item:after {
+	content:'';
+	position:absolute;
+	left:-1px;
+	top:-1px;
+	z-index:5;
+	width:0;
+	height:4px;
+	padding:0 1px;
+	background-color:#7451c0;
+	opacity:0;
+}
+.tab-list2 .tab-item.on {
+	color:#7451c0;
+	font-weight:900;
+	cursor:default;
+	transition:color .5s;
+}/* on */
+.tab-list2 .tab-item.on:after {
+	width:100%;
+	opacity:1;
+	transition:all .2s;
+}/* on */
+.tab-list2 .tab-item .text {
+	position:absolute;
+	left:0;
+	right:0;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	padding:0 10px;
+}
+
 .tab-cont {display:none;}
 .tab-cont.on {display:block;}
 
@@ -726,6 +806,17 @@ table .a-right {
 	color:#7451c0;
 	font-weight:600;
 }/* on */
+
+.accordion-list1 .accordion-item .btn-tog .value-text {
+	display:inline-block;
+	position:absolute;
+	left:0;
+	top:15px;
+	padding:0 50px;
+	color:#737373;
+	font-weight:400;
+}
+
 .accordion-list1 .accordion-item .btn-popup.btn-tog:hover,
 .accordion-list1 .accordion-item a.btn-tog:hover {text-decoration:underline;}/* hover */
 .accordion-list1 .accordion-item .btn-popup.btn-tog:before,
@@ -738,8 +829,9 @@ table .a-right {
 	border-top:1px solid #e0e0e0;
 	border-bottom:1px solid #b3b3b3;
 }
-.accordion-list1 .accordion-item .layer.bg-gray {
-	border-top:0;
+
+.accordion-list1.type2 .layer {
+	padding-left:160px;
 	background-color:#fafafa;
 }
 
@@ -1433,17 +1525,17 @@ body,
 	Loan (대출)
 ============================================================================================ */
 /* 메인 (MA-05.01.01.html) */
-.box-list-wrap1 {margin-top:35px;}
-.box-list-wrap1 .btn-top-area {margin-bottom:30px;}
-.box-list-wrap1 .btn-top-area.right {text-align:right;}
-.box-list-wrap1 .number-box {
+.number-len-box {
 	padding:18px 50px;
 	border-top:1px solid #111;
-	border-bottom:1px solid #111;
 	color:#111;
 	font-size:16px;
 }
-.box-list-wrap1 .box-list {}
+
+.box-list-wrap1 {margin-top:35px;}
+.box-list-wrap1 .btn-top-area {margin-bottom:30px;}
+.box-list-wrap1 .btn-top-area.right {text-align:right;}
+.box-list-wrap1 .box-list {border-top:1px solid #111;}
 .box-list-wrap1 .box-list .box-item {
 	position:relative;
 	padding:20px 320px 20px 50px;
@@ -2838,6 +2930,71 @@ body,
 	right:0;
 	top:0;
 	min-width:130px;
+}
+
+/* FAQ (Web-08.02.01.html) */
+.sorting-select {padding:40px 15px 20px 0;}
+.sorting-select .title {
+	display:inline-block;
+	margin-right:15px;
+	font-size:18px;
+	font-weight:900;
+	line-height:40px;
+	vertical-align:top;
+}
+
+/* 지점안내 (Web-08.04.html) */
+.point-list {border-top:1px solid #111;}
+.point-list .item-point {border-bottom: 1px solid #e0e0e0;}
+.point-list .item-point .btn-tog {
+	display:block;
+	position:relative;
+	width:100%;
+	padding:15px 86px 15px 50px;
+	box-sizing:border-box;
+	color:#111;
+	font-size:16px;
+	text-align:left;
+	cursor:pointer;
+}
+.point-list .item-point .btn-tog:before{
+	content:'';
+	overflow:hidden;
+	position:absolute;
+	right:50px;
+	top:50%;
+	width:26px;
+	height:26px;
+	margin-top:-13px;
+	background-image:url(../images/icon/icon_accor01.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+.point-list .item-point.on .btn-tog:before {background-position:0 -26px;}
+.point-list .item-point .btn-tog p {
+	color:#111;
+	font-size:20px;
+	font-weight:600;
+	line-height:1.3;
+}
+.point-list .item-point .btn-tog .infor-list {margin-top:15px;}
+.point-list .item-point .btn-tog .infor-list .item {
+	position:relative;
+	padding-left:30px;
+	color:#4c4c4c;
+	font-size:15px;
+	font-weight:400;
+	line-height:2.1;
+}
+.point-list .item-point .btn-tog .infor-list .item .tit {
+	display:block;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.point-list .item-point .layer {
+	display:none;
+	border-top:1px solid #e0e0e0;
 }
 
 

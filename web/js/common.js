@@ -128,12 +128,24 @@ $(document).ready(function(){
 	/* ------------------------------------------------------------------------------------------------------------------
 		아코디언
 	------------------------------------------------------------------------------------------------------------------ */
+	$('div.btn-tog, span.btn-tog').each(function(){
+		if($(this).parent().hasClass('on')){
+			$(this).parent().find('.layer').show();
+		}
+	});
 	$('div.btn-tog, span.btn-tog').click(function(){
 		if($(this).parent().hasClass('on')){
 			$(this).parent().removeClass('on').find('.layer').slideUp(100);
 		}else{
 			$(this).parent().addClass('on').find('.layer').slideDown(200);
 		}
+	});
+
+	$('.accordion-item .btn-tog .value-text').each(function(){
+		var len = $(this).text().length;
+		var wid = $(this).outerWidth() - len;
+		//$(this).html(len);
+		$(this).closest('.btn-tog').css({'padding-left':wid});
 	});
 
 	/* ------------------------------------------------------------------------------------------------------------------
@@ -147,6 +159,16 @@ $(document).ready(function(){
 	/* 리스트 소팅 */
 	$('.sorting-list .btn').click(function(){
 		$(this).addClass('on').siblings('.btn').removeClass('on');
+	});
+
+	$('.sortingChange').each(function(){
+		var onText = $(this).find('.tab-item.on').text();
+		$(this).closest('.sortingChange').find('.sorting-select .title').html(onText);
+		$(this).find('.tab-item').click(function(){
+			var text = $(this).text();
+			$(this).closest('.sortingChange').find('.sorting-select .title').html(text);
+			form();
+		});
 	});
 
 	/* 휴대폰 번호 변경하기 (Web-02.03.03.1.html) */
@@ -395,6 +417,5 @@ function popup(){
 		}else{
 			$(this).closest('.layer-popup').removeClass('h-full');
 		}
-		console.log(winH);
 	});
 }
