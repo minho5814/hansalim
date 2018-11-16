@@ -159,24 +159,52 @@ $(document).ready(function(){
 	------------------------------------------------------------------------------------------------------------------ */
 	form();
 
-	/* 데이트피커 */
+	/* ------------------------------------------------------------------------------------------------------------------
+		데이트피커
+	------------------------------------------------------------------------------------------------------------------ */
 	$('.datepicker').each(function(){
 		var data = $(this).closest('.popup-datepicker').attr('data-name');
-		$(this).datepicker({
-			yearRange: '1900:2030',// 연도 법위
-			changeMonth: true,
-			changeYear: true,
-			firstDay: 0,
-			//altField: '.date-form[data-name=' + data + ']',
-			dateFormat: 'dd.mm.yy',
-			showOtherMonths: true,
-			monthNames : ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
-			monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
-			onSelect: function(dateText, inst) {
-				
-			}
-		});
+		if(!$(this).hasClass('afterDis')){
+			/* 기본 */
+			$(this).datepicker({
+				yearRange: '1900:2030',// 연도 법위
+				changeMonth: true,
+				changeYear: true,
+				firstDay: 0,
+				//altField: '.date-form[data-name=' + data + ']',
+				dateFormat: 'dd.mm.yy',
+				showOtherMonths: true,
+				monthNames : ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+				monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+				onSelect: function(dateText, inst) {
+					
+				},
+			});
+		}else{
+			/* 오늘날짜 이후 선택금지 */
+			$(this).datepicker({
+				changeMonth: true,
+				changeYear: true,
+				firstDay: 0,
+				dateFormat: 'dd.mm.yy',
+				showOtherMonths: true,
+				monthNames : ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+				monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+				maxDate:'0',
+			});
+		}
+
 		$(this).find('td').removeClass('ui-datepicker-current-day');
+	});
+
+	monthData();
+
+	/* 조회기간 설정 (Web-03.02.01.html) */
+	$('.search-date .btn-text2').click(function(){
+		var data= $(this).attr('data');
+		$(this).addClass('on').siblings('.btn-text2').removeClass('on');
+		$('.change-month').removeClass('month-1 month-3 month-6').addClass(data);
+		monthData();
 	});
 
 	/* ------------------------------------------------------------------------------------------------------------------
@@ -277,6 +305,62 @@ function form(){
 			var sel = $(this).find('option:selected').text();
 			$(this).closest('.selectbox').find('.sel-text').html(sel);
 		});
+	});
+}
+
+/* ======================================================================
+	데이트피커
+====================================================================== */
+function getDateStr(myDate){
+	return (myDate.getDate() + '.' + (myDate.getMonth() + 1) + '.' + myDate.getFullYear());
+}
+
+/* 오늘날짜 */
+function today(){
+	var d = new Date()
+	return getDateStr(d)
+}
+
+/* 1개월전 */
+function month01(){
+	var d = new Date();
+	var monthOfYear = d.getMonth();
+	d.setMonth(monthOfYear - 1);
+	return getDateStr(d);
+}
+
+/* 3개월전 */
+function month03(){
+	var d = new Date();
+	var monthOfYear = d.getMonth();
+	d.setMonth(monthOfYear - 3);
+	return getDateStr(d);
+}
+
+/* 6개월전 */
+function month06(){
+	var d = new Date();
+	var monthOfYear = d.getMonth();
+	d.setMonth(monthOfYear - 6);
+	return getDateStr(d);
+}
+
+function monthData(){
+	/* 오늘 */
+	$('.today').each(function(){
+		$(this).val(today());
+	});
+	/* 1개월전 */
+	$('.month-1').each(function(){
+		$(this).val(month01());
+	});
+	/* 3개월전 */
+	$('.month-3').each(function(){
+		$(this).val(month03());
+	});
+	/* 6개월전 */
+	$('.month-6').each(function(){
+		$(this).val(month06());
 	});
 }
 

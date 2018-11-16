@@ -34,6 +34,7 @@
 		}
 		.box-list-wrap1,
 		.thumb-list-wrap {margin-top:0;}
+		.searth-box {width:1000px;}
 	</style>
 	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="../js/jquery-ui.1.12.1.js"></script>
@@ -147,10 +148,8 @@
 	<br><br><br>
 
 	<div class="thumb-list-wrap">
-		<div class="sorting-list">
-			<button type="button" class="btn on">최신순</button>
-			<button type="button" class="btn">조회순</button>
-			<button type="button" class="btn">마감순</button>
+		<div class="btn-area">
+			<a href="#" class="btn-icon-link4">나만의 추천이벤트</a>
 		</div>
 
 		<div class="thumb-list1">
@@ -246,6 +245,127 @@
 </div>
 
 
+<div class="Title">검색</div>
+<div class="BoxWrap">
+	<div class="STitle">* 기본</div>
+
+	<div class="searth-box">
+		<div class="board">
+			<table>
+				<colgroup>
+					<col style="width:130px;">
+					<col style="width:350px;">
+					<col style="width:130px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row"><label for="Product">대출신청상품</label></th>
+						<td>
+							<select id="Product" class="styled1 full">
+								<option>대출신청상품을 선택하세요</option>
+							</select>
+						</td>
+						<th scope="row"><label for="Price">신청금액</label></th>
+						<td>
+							<div class="unit-area">
+								<input type="text" id="Price"><span class="unit-text">VND</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="Month">대출기간</label></th>
+						<td>
+							<select id="Month" class="styled1 full">
+								<option>대출기간선택</option>
+								<option>6 개월</option>
+								<option>12 개월</option>
+								<option>18 개월</option>
+								<option>24 개월</option>
+								<option>30 개월</option>
+								<option>36 개월</option>
+								<option>42 개월</option>
+								<option>48 개월</option>
+								<option>60 개월</option>
+							</select>
+						</td>
+						<th scope="row"><label for="Interest">적용이자율(연)</label></th>
+						<td>
+							<div class="unit-area">
+								<input type="text" id="Interest"><span class="unit-text">%</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="Date01">대출일</label></th>
+						<td>
+							<input type="text" id="Date01" class="datepicker" placeholder="dd.mm.yy" value="05.11.2018">
+						</td>
+						<th scope="row"><label for="Date02">최초상환일</label></th>
+						<td>
+							<input type="text" id="Date02" class="datepicker" placeholder="dd.mm.yy" value="05.11.2018">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="info-text">상환방법 : 원리금균등상환</div>
+		</div>
+		<div class="btn-area">
+			<button type="button" class="btn-text type1 btn-popup" layer-name="Popup01">초기화</button>
+			<a href="MA-05.06.01.html" class="btn-text">계산하기</a>
+		</div>
+	</div>
+
+	<br><br>
+
+	<div class="searth-box">
+		<div class="board">
+			<table>
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row"><label for="">상품명</label></th>
+						<td>
+							<select id="" class="styled1" style="width:350px;">
+								<option>상품을 선택하세요.</option>
+								<option>직장인 신용대출</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="Month">대출기간</label></th>
+						<td>2010.01.01 ~ 2020.12.01 (총 60개월)</td>
+					</tr>
+					<tr>
+						<th scope="row">조회기간</th>
+						<td>
+							<div class="search-date">
+								<div class="data-set">
+									<input type="text" class="datepicker month-1 afterDis change-month" placeholder="dd.mm.yy">
+									<span class="swung">~</span>
+									<input type="text" class="datepicker today afterDis" placeholder="dd.mm.yy" value="">
+								</div>
+								<div class="btn-list">
+									<button type="button" class="btn-text2 on" data="month-1">1개월</button>
+									<button type="button" class="btn-text2" data="month-3">3개월</button>
+									<button type="button" class="btn-text2" data="month-6">6개월</button>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="btn-area">
+			<button type="button" class="btn-text">조회</button>
+		</div>
+	</div>
+</div>
+
+
 <div class="Title">기타</div>
 <div class="BoxWrap">
 	<div class="STitle">* 고객센터</div>
@@ -256,6 +376,41 @@
 			<li>대출접수시간<span class="f-color">365일 (24시간)</span></li>
 			<li>대출금입금시간<span class="f-color">09:00~18:00(영업일)</span></li>
 			<li>대출상담시간<span class="f-color">09:00~18:00(영업일)</span></li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+
+<!-- 레이어 팝업 (초기화) -->
+<div class="layer-popup" layer-name="Popup01">
+	<div class="dimmed"></div>
+	<div class="popup" style="width:450px;">
+		<button type="button" class="btn-close popClose">Close</button>
+		<div class="cont">
+			작성하신 예상상환스케줄 정보를<br>
+			초기화하시겠습니까?<br>
+			초기화를 진행하시면 작성하신 내용은 삭제됩니다.
+		</div>
+		<ul class="btn-bottom-area">
+			<button type="button" class="btn-text type1 popClose">취소</button>
+			<button type="button" class="btn-text popClose btn-popup" layer-name="Popup02">확인</button>
+		</ul>
+	</div>
+</div>
+<!-- 레이어 팝업 (초기화 확인) -->
+<div class="layer-popup" layer-name="Popup02">
+	<div class="dimmed"></div>
+	<div class="popup" style="width:450px;">
+		<button type="button" class="btn-close popClose">Close</button>
+		<div class="cont">
+			예상상환스케줄 정보가<br>
+			초기화되었습니다.
+		</div>
+		<ul class="btn-bottom-area">
+			<button type="button" class="btn-text popClose">확인</button>
 		</ul>
 	</div>
 </div>
