@@ -238,42 +238,42 @@ body,
 	background-position:-199px -16px;
 }
 .box-menu-area .menu-item.item07 .text:before {
-	top:10px;
-	width:39px;
+	top:9px;
+	width:41px;
 	height:32px;
 	background-position:0 -62px;
 }
 .box-menu-area .menu-item.item08 .text:before {
 	top:7px;
-	width:34px;
-	height:36px;
-	background-position:-40px -62px;
+	width:36px;
+	height:38px;
+	background-position:-45px -57px;
 }
 .box-menu-area .menu-item.item09 .text:before {
-	top:10px;
-	width:37px;
-	height:35px;
-	background-position:-75px -62px;
+	top:15px;
+	width: 35px;
+	height: 35px;
+	background-position: -163px -16px;
 }
 .box-menu-area .menu-item.item10 .text:before {
-	top:15px;
-	width:34px;
-	height:35px;
-	background-position:-113px -62px;
+	top:18px;
+	width:35px;
+	height:33px;
+	background-position:-82px -57px;
 }
 .box-menu-area .menu-item.item11 .text:before {
-	top:20px;
-	width:31px;
-	height:31px;
-	background-position:-148px -62px;
+	top:18px;
+	width:41px;
+	height:33px;
+	background-position:-118px -57px;
 }
 .box-menu-area .menu-item.item12 .text:before {
-	top:16px;
-	width:33px;
-	height:35px;
-	background-position:-180px -62px;
+	top:8px;
+	width:42px;
+	height:33px;
+	background-position:-160px -57px;
 }
-.box-menu-area .menu-item.item12.on .text:before {background-position:0 -271px;}/* on */
+.box-menu-area .menu-item.item12.on .text:before {background-position:-51px -271px;}/* on */
 
 .box-menu-area .menu-item .sns-layer {
 	display:none;
