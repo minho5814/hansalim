@@ -1,11 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bgColor1">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Lotte Finance Vietnam</title>
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
-	<link rel="stylesheet" type="text/css" href="../css/psh.css">
 	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="../js/jquery-ui.1.12.1.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
@@ -72,7 +71,7 @@
 						</div>
 					</div>
 					<!-- 금융 -->
-					<div class="gnb-item active" data="bgColor2">
+					<div class="gnb-item" data="bgColor2">
 						<span class="item">금융</span>
 						<div class="gnb-depth">
 							<div class="depth-inner">
@@ -113,7 +112,7 @@
 						</div>
 					</div>
 					<!-- 고객센터 -->
-					<div class="gnb-item" data="bgColor1">
+					<div class="gnb-item active" data="bgColor1">
 						<span class="item">고객센터</span>
 						<div class="gnb-depth">
 							<div class="depth-inner">
@@ -377,80 +376,107 @@
 
 	<div class="container">
 		<div class="content">
-			<div class="counsel-cont">
-				<div class="board-write1">
-					<div class="title-area">
-						<h2 class="board-title">접수내용</h2>
-					</div>
-					<div class="board">
-						<table>
-							<colgroup>
-								<col style="width:220px;">
-								<col>
-							</colgroup>
-							<tbody>
-								<tr>
-									<th scope="row"><label for="Division" class="th">상담구분</label></th>
-									<td>
-										<select class="styled1 full" id="Division">
-											<option>상담구분 선택</option>
-											<option>상담구분 선택</option>
-											<option>상담구분 선택</option>
-											<option>상담구분 선택</option>
-										</select>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row"><label for="Title" class="th">상담제목</label></th>
-									<td>
-										<input type="text" id="Title" class="bg1" value="제목을 입력하세요." style="width:100%;">
-									</td>
-								</tr>
-								<tr>
-									<th scope="row"><label for="Content" class="th">상담요청내용</label></th>
-									<td>
-										<textarea cols="" rows="" id="Content" placeholder="내용을 입력하세요." style="height:240px;"></textarea>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<div class="board-write1">
-					<div class="title-area">
-						<h2 class="board-title">회원정보</h2>
-					</div>
-					<div class="board">
-						<table>
-							<colgroup>
-								<col style="width:220px;">
-								<col>
-							</colgroup>
-							<tbody>
-								<tr>
-									<th scope="row"><label for="Cellphone" class="th">휴대폰번호</label></th>
-									<td>
-										<input type="text" id="Cellphone" class="bg1" value="010-1234-1234" style="width:305px;">
-									</td>
-								</tr>
-								<tr>
-									<th scope="row"><label for="Email" class="th">이메일</label></th>
-									<td>
-										<input type="text" id="Email" class="bg1" value="lotte123@lotte.vn" style="width:305px;">
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				
-				<div class="btn-btm-area">
-					<a href="Web-08.03.01.html" class="btn-text disabled">접수</a>
-				</div>
-
-				
-
+			<div class="sub-text-area">
+				<span class="f-style">김*카님</span><br>
+				Lotte Finance 이용 및 서비스에 대해 문의하시면 친절하게 답변 드리겠습니다.<br>
+				이메일 상담을 통한 전화상담요청은 불가하오니 이점 양해하여 주시기 바랍니다.
 			</div>
+
+			<div class="board-write1 mgT30">
+				<div class="board-title-area">
+					<h3 class="board-title">접수내용</h3>
+				</div>
+				<div class="board">
+					<table>
+						<colgroup>
+							<col style="width:220px;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row"><label for="Division" class="th">상담구분</label></th>
+								<td>
+									<select class="styled1 full" id="Division">
+										<option>상담구분 선택</option>
+										<option>상담구분 선택</option>
+										<option>상담구분 선택</option>
+										<option>상담구분 선택</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Title" class="th">상담제목</label></th>
+								<td>
+									<input type="text" id="Title" placeholder="제목을 입력하세요." style="width:100%;">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Content" class="th">상담요청내용</label></th>
+								<td>
+									<textarea cols="" rows="" id="Content" placeholder="내용을 입력하세요." style="height:240px;"></textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="board-write1">
+				<div class="board-title-area">
+					<h3 class="board-title">회원정보</h3>
+				</div>
+				<div class="board">
+					<table>
+						<colgroup>
+							<col style="width:220px;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row"><label for="Cellphone" class="th">휴대폰번호</label></th>
+								<td>
+									<input type="text" id="Cellphone" value="010-1234-1234" style="width:305px;">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Email" class="th">이메일</label></th>
+								<td>
+									<input type="text" id="Email" value="lotte123@lotte.vn" style="width:305px;">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="btn-btm-area">
+				<button type="button" class="btn-text btn-popup" layer-name="Popup01">접수</button>
+			</div>
+
+			<div class="customer-call-box type2">
+				<div class="phone-number">고객상담전화<div class="number">1588-8100</div></div>
+				<ul class="list">
+					<li>대출접수시간<span class="f-color">365일 (24시간)</span></li>
+					<li>대출금입금시간<span class="f-color">09:00~18:00(영업일)</span></li>
+					<li>대출상담시간<span class="f-color">09:00~18:00(영업일)</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- 레이어 팝업 -->
+<div class="layer-popup" layer-name="Popup01">
+	<div class="dimmed"></div>
+	<div class="popup" style="width:380px;">
+		<button type="button" class="btn-close popClose">Close</button>
+		<div class="cont">
+			요청하신 고객상담이<br>
+			정상적으로 접수되었습니다.<br>
+			빠른 시간 내에 회신 드리도록 하겠습니다.
+		</div>
+		<div class="btn-bottom-area">
+			<a href="Web-08.03.01.html" class="btn-text">확인</a>
 		</div>
 	</div>
 </div>

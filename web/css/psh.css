@@ -39,30 +39,8 @@
 }
 .point-area .map-area {margin-top:10px;}
 
-/* 공지사항 목록 (Web-08.01.01.html) */
-.customer-notice {}
-.search-form {
-	padding:30px 120px;
-	background-color:#f7f7f7;
-	box-sizing:border-box;
-}
-.search-form .search-box {
-	position:relative;
-	padding-right:160px;
-}
-.search-form .search-box input {
-	width:100%;
-	height: 40px;
-	padding: 0 25px 0 50px;
-	border: 1px solid #c9c9c9;
-	background:#fff url(../images/common/icon_search.png) no-repeat 15px 10px;
-}
-.search-form .search-box .btn-text {
-	position:absolute;
-	right:0;
-	top:0;
-	min-width:130px;
-}
+
+
 
 
 /* 고객상담 (Web-08.03.01.html) */

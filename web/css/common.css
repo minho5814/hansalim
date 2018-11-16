@@ -121,6 +121,7 @@ select {
 /* 마진 */
 .mgA0 {margin:0 !important;}
 .mgT0 {margin-top:0 !important;}
+.mgT30 {margin-top:30px !important;}
 .mgT65 {margin-top:65px !important;}
 
 /* 패딩 */
@@ -1244,6 +1245,10 @@ body,
 	font-size:18px;
 	text-align:center;
 }
+.sub-text-area .f-style {
+	font-size:18px;
+	font-weight:900;
+}
 
 /*
 	스크롤시 해더 변환
@@ -1387,6 +1392,14 @@ body,
 }
 .board-view .title-area .btn-icon-link2 {margin-top:7px;}
 .board-view .b-cont {padding-top:65px;}
+.board-view .b-cont .b-title {
+	margin-top:-65px;
+	padding:44px 20px;
+	color:#111;
+	font-size:25px;
+	font-weight:600;
+	text-align:center;
+}
 
 .board-view.type2 .title-area {
 	padding-right:100px;
@@ -1513,6 +1526,11 @@ body,
 	position:relative;
 	padding-left:220px;
 }
+
+.btn-btm-area + .customer-call-box.type2 {margin-top:80px;}
+.customer-call-box.type2 {background-color:#fafafa;}
+.customer-call-box.type2 .phone-number {left:20px;}
+
 .customer-call-box .phone-number {
 	position:absolute;
 	left:0;
@@ -2796,8 +2814,31 @@ body,
 
 
 /* ============================================================================================
-	대출
+	고객센터
 ============================================================================================ */
+/* 공지사항 목록 (Web-08.01.01.html) */
+.search-form {
+	padding:30px 120px;
+	background-color:#f7f7f7;
+	box-sizing:border-box;
+}
+.search-form .search-box {
+	position:relative;
+	padding-right:160px;
+}
+.search-form .search-box input {
+	width:100%;
+	height: 40px;
+	padding: 0 25px 0 50px;
+	border: 1px solid #c9c9c9;
+	background:#fff url(../images/common/icon_search.png) no-repeat 15px 10px;
+}
+.search-form .search-box .btn-text {
+	position:absolute;
+	right:0;
+	top:0;
+	min-width:130px;
+}
 
 
 /* ============================================================================================
