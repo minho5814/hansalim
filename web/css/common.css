@@ -1574,6 +1574,30 @@ body,
 	color:#e43762;
 }
 
+.box-list-wrap1 .box-list .box-item .btn-area .box-color-stat {
+	display:inline-block;
+	position:relative;
+	width:110px;
+	height:40px;
+	box-sizing:border-box;
+	border-radius:4px;
+	background-color:#4b68a3;
+	color:#fff;
+	text-align:center;
+}
+.box-list-wrap1 .box-list .box-item .btn-area .box-color-stat.type2 {background-color:#e43762;}
+.box-list-wrap1 .box-list .box-item .btn-area .box-color-stat.type3 {background-color:#acacac;}
+.box-list-wrap1 .box-list .box-item .btn-area .box-color-stat em {
+	position:absolute;
+	left:0;
+	right:0;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	line-height:17px;
+}
+
 .box-list-wrap1 .box-list .box-item .price-info {
 	position:absolute;
 	left:230px;
