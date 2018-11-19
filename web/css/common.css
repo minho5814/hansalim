@@ -774,6 +774,7 @@ table .a-right {
 }
 
 /* 아코디언 */
+.btn-tog {cursor:pointer;}
 .accordion-list1 {border-top:1px solid #262626;}
 .accordion-list1 .accordion-item {}
 .accordion-list1 .accordion-item .btn-tog {
@@ -853,6 +854,13 @@ body,
 .container {
 	padding:255px 0 110px;
 }
+
+/* 상단에 비주얼 영역이 있을경우 */
+.visual-type .head-fix-box {background-color:transparent;}
+.visual-type .header .page-title-area {background-color:transparent;}
+.visual-type .container {padding-top:110px;}
+.scroll .visual-type  .container {padding-top:70px;}
+.scroll .visual-type .header .page-title-area {background-color:rgba(255,255,255,.98);}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	해더
@@ -2995,6 +3003,7 @@ body,
 
 /* 상담내역조회 >  상세 (Web-03.05.02.html) */
 .qna-box-area {
+	display:none;
 	position:relative;
 	margin-top:-1px;
 	border-top:1px solid #424242;
