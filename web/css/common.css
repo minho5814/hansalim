@@ -298,7 +298,7 @@ html .btn-text.type2:hover {background-color:#f7f7f7;}
 /* 버튼정렬 */
 
 .btn-top-area {
-	margin-bottom:45px;
+	margin-bottom:30px;
 	text-align:right;
 	font-size:0;
 }
@@ -1537,6 +1537,7 @@ body,
 .box-list-wrap1 .btn-top-area.right {text-align:right;}
 .box-list-wrap1 .box-list {border-top:1px solid #111;}
 .box-list-wrap1 .box-list .box-item {
+	display:block;
 	position:relative;
 	padding:20px 320px 20px 50px;
 	border-bottom:1px solid #f2f2f2;
@@ -1559,6 +1560,61 @@ body,
 }
 .box-list-wrap1 .box-list .box-item .btn-area .btn-icon-link1 {margin-left:32px;}
 .box-list-wrap1 .box-list .box-item .btn-area .btn-icon-link1:first-child {margin-left:0;}
+.box-list-wrap1 .box-list .box-item .btn-area .box-stat {
+	display:inline-block;
+	height:40px;
+	padding:0 15px;
+	box-sizing:border-box;
+	border-radius:4px;
+	border:1px solid #7b7b7b;
+	line-height:38px;
+}
+.box-list-wrap1 .box-list .box-item .btn-area .box-stat.type2 {
+	border-color:#e43762;
+	color:#e43762;
+}
+
+.box-list-wrap1 .box-list .box-item .price-info {
+	overflow:hidden;
+	position:absolute;
+	left:230px;
+	top:50%;
+	margin-top:-15px;
+}
+.box-list-wrap1 .box-list .box-item .price-info .price {
+	float:left;
+	position:relative;
+	padding-left:31px;
+	line-height:30px;
+}
+.box-list-wrap1 .box-list .box-item .price-info .price:before {
+	content:'';
+	position:absolute;
+	left:15px;
+	top:50%;
+	width:1px;
+	height:12px;
+	margin-top:-6px;
+	background-color:#a9a9a9;
+}
+.box-list-wrap1 .box-list .box-item .price-info .price:first-child {padding-left:0;}
+.box-list-wrap1 .box-list .box-item .price-info .price:first-child:before {display:none;}
+
+.box-list-wrap1 .box-list .box-item .all-price {
+	position:absolute;
+	right:50px;
+	top:50%;
+	margin-top:-20px;
+	color:#111;
+	font-size:20px;
+	font-weight:600;
+	line-height:40px;
+}
+.box-list-wrap1 .box-list .box-item .all-price em {
+	margin-left:4px;
+	font-size:16px;
+	font-weight:400;
+}
 
 .no-result {
 	margin-top:35px;
@@ -1815,12 +1871,14 @@ body,
 .thumb-list-wrap .sorting-list .btn.on {color:#7451c0;}/* on */
 .thumb-list-wrap .sorting-list .btn.on:before {background-color:#7451c0;}/* on */
 
-.thumb-list-wrap .btn-area {margin-bottom:10px;}
+.thumb-list-wrap .btn-area,
+.box-list-wrap1 .btn-area {margin-bottom:10px;}
 
 .thumb-list1 {
 	margin:-60px 0 0 -35px;
 	width:1050px;
 }
+.btn-top-area + .thumb-list1 {margin-top:-45px;}
 .thumb-list1:after {
 	content:'';
 	display:block;
