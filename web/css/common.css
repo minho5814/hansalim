@@ -1537,6 +1537,7 @@ body,
 .box-list-wrap1 .btn-top-area.right {text-align:right;}
 .box-list-wrap1 .box-list {border-top:1px solid #111;}
 .box-list-wrap1 .box-list .box-item {
+	display:block;
 	position:relative;
 	padding:20px 320px 20px 50px;
 	border-bottom:1px solid #f2f2f2;
@@ -1559,6 +1560,15 @@ body,
 }
 .box-list-wrap1 .box-list .box-item .btn-area .btn-icon-link1 {margin-left:32px;}
 .box-list-wrap1 .box-list .box-item .btn-area .btn-icon-link1:first-child {margin-left:0;}
+.box-list-wrap1 .box-list .box-item .btn-area .box-stat {
+	display:inline-block;
+	height:40px;
+	padding:0 15px;
+	box-sizing:border-box;
+	border-radius:4px;
+	border:1px solid #7b7b7b;
+	line-height:38px;
+}
 
 .no-result {
 	margin-top:35px;
