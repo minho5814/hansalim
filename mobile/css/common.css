@@ -2901,7 +2901,7 @@ body,
 	left:39px;
 	background-color:rgba(255,255,255,.3);
 }
-.join-certify .certify-list .item .txt {font-weight:600;}
+.join-certify .certify-list .item .title {font-weight:600;}
 
 /* 개인정보관리 (MA-02.03.01.html) */
 .personal-info-area {
