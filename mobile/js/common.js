@@ -392,7 +392,7 @@ function toolLayer(){
 
 
 
-/* 앱으로 접근시 사용될 구문 */
+/* 앱으로 접근시 사용될 구문 
 function app(){
 	$('input[type=text], input[type=number], input[type=tel], input[type=password]').focus(function(){
 		$('.header, .s-title-area.fix .s-title, .bottom-fixed-area').css({'position':'absolute'});
@@ -400,3 +400,4 @@ function app(){
 		$('.header, .s-title-area.fix .s-title, .bottom-fixed-area').css({'position':'fixed'});
 	});
 }
+*/
