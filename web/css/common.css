@@ -2992,6 +2992,26 @@ body,
 }
 .mypage-cont .thumb-list-wrap .sorting-box {margin-bottom:12px;}
 
+/* 상담내역조회 >  상세 (Web-03.05.02.html) */
+.qna-box-area {
+	position:relative;
+	margin-top:-1px;
+	border-top:1px solid #424242;
+}
+.qna-box-area .box-item {
+	padding:20px 30px 30px;
+	border-bottom:1px solid #e0e0e0;
+}
+.qna-box-area .box-item .label {
+	display:block;
+	margin-bottom:8px;
+	font-size:23px;
+	font-weight:900;
+}
+.qna-box-area .box-item.q-box .label {color:#7451c0;}
+.qna-box-area .box-item.a-box {background-color:#f7f7f7;}
+.qna-box-area .box-item.a-box .label {color:#e43762;}
+
 
 /* ============================================================================================
 	회사소개
