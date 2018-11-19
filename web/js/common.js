@@ -307,6 +307,11 @@ function form(){
 			var sel = $(this).find('option:selected').text();
 			$(this).closest('.selectbox').find('.sel-text').html(sel);
 		});
+		$(this).focus(function(){
+			$(this).closest('.selectbox').addClass('focus');
+		}).blur(function(){
+			$(this).closest('.selectbox').removeClass('focus');
+		});
 	});
 }
 

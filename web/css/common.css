@@ -364,6 +364,7 @@ html .btn-text.type2:hover {background-color:#f7f7f7;}
 	white-space:nowrap;
 	line-height:38px;
 }
+.selectbox.focus .sel-text {border-color:#111;}
 .selectbox select {
 	position:relative;
 	z-index:5;
@@ -1570,11 +1571,13 @@ body,
 	padding:20px 320px 20px 50px;
 	border-bottom:1px solid #f2f2f2;
 }
+.box-list-wrap1 .box-list .box-item .inner-link {display:block;}
 .box-list-wrap1 .box-list .box-item .title {
 	color:#111;
 	font-size:18px;
 	font-weight:600;
 }
+.box-list-wrap1 .box-list .box-item .inner-link:hover .title {text-decoration:underline;}
 .box-list-wrap1 .box-list .box-item .text {
 	margin-top:4px;
 	color:#777;
