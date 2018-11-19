@@ -774,6 +774,7 @@ table .a-right {
 }
 
 /* 아코디언 */
+.btn-tog {cursor:pointer;}
 .accordion-list1 {border-top:1px solid #262626;}
 .accordion-list1 .accordion-item {}
 .accordion-list1 .accordion-item .btn-tog {
@@ -853,6 +854,13 @@ body,
 .container {
 	padding:255px 0 110px;
 }
+
+/* 상단에 비주얼 영역이 있을경우 */
+.visual-type .head-fix-box {background-color:transparent;}
+.visual-type .header .page-title-area {background-color:transparent;}
+.visual-type .container {padding-top:110px;}
+.scroll .visual-type  .container {padding-top:70px;}
+.scroll .visual-type .header .page-title-area {background-color:rgba(255,255,255,.98);}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	해더
@@ -1436,6 +1444,9 @@ body,
 /* ============================================================================================
 	MY (마이페이지)
 ============================================================================================ */
+/* 대출이용내역 */
+.mypage-cont .box-list-wrap1 .number-len-box {border-top:0;}
+
 /* 이벤트 참여내역 (MA-03.04.01.html) */
 .box-list2 {border-top:1px solid #111;}
 .box-list2 .box-item {
@@ -2560,12 +2571,13 @@ body,
 
 /* 회원탈퇴안내 (Web-02.03.05.html) */
 .matters-box1 {
-	padding:24px 0 24px 30px;
+	padding:24px 30px 24px 30px;
 	border:1px solid #e0e0e0;
 	box-sizing:border-box;
 }
 .matters-box1 .matters-title {
 	position:relative;
+	margin-right:-30px;
 	margin-bottom:26px;
 	padding-bottom:22px;
 	border-bottom:1px solid #e0e0e0;
@@ -2586,7 +2598,7 @@ body,
 }
 .matters-box2 {
 	margin-top:45px;
-	padding:24px 65px 30px;
+	padding:24px 30px 30px;
 	border:1px solid #e0e0e0;
 	box-sizing:border-box;
 }
@@ -2995,6 +3007,7 @@ body,
 
 /* 상담내역조회 >  상세 (Web-03.05.02.html) */
 .qna-box-area {
+	display:none;
 	position:relative;
 	margin-top:-1px;
 	border-top:1px solid #424242;
