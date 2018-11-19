@@ -1575,30 +1575,41 @@ body,
 }
 
 .box-list-wrap1 .box-list .box-item .price-info {
-	overflow:hidden;
 	position:absolute;
 	left:230px;
 	top:50%;
-	margin-top:-15px;
+	margin-top:-12px;
+}
+.box-list-wrap1 .box-list .box-item .price-info:after {
+	content:'';
+	display:block;
+	clear:both;
 }
 .box-list-wrap1 .box-list .box-item .price-info .price {
 	float:left;
 	position:relative;
-	padding-left:31px;
-	line-height:30px;
+	padding-right:31px;
+	line-height:24px;
 }
 .box-list-wrap1 .box-list .box-item .price-info .price:before {
 	content:'';
 	position:absolute;
-	left:15px;
+	right:15px;
 	top:50%;
 	width:1px;
 	height:12px;
 	margin-top:-6px;
 	background-color:#a9a9a9;
 }
-.box-list-wrap1 .box-list .box-item .price-info .price:first-child {padding-left:0;}
-.box-list-wrap1 .box-list .box-item .price-info .price:first-child:before {display:none;}
+.box-list-wrap1 .box-list .box-item .price-info .price.wid {
+	width:100%;
+	margin-top:-12px;
+}
+.box-list-wrap1 .box-list .box-item .price-info .price.wid,
+.box-list-wrap1 .box-list .box-item .price-info .price:last-child {padding-right:0;}
+.box-list-wrap1 .box-list .box-item .price-info .price.wid:before,
+.box-list-wrap1 .box-list .box-item .price-info .price:last-child:before {display:none;}
+.box-list-wrap1 .box-list .box-item .price-info strong {font-weight:600;}
 
 .box-list-wrap1 .box-list .box-item .all-price {
 	position:absolute;
