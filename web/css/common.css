@@ -101,7 +101,8 @@ textarea {
 	word-wrap:break-word;
 	resize:none;
 }
-:-ms-input-placeholder {color:#b3b3b3;}
+input:-ms-input-placeholder {color:#b3b3b3;}
+textarea:-ms-input-placeholder {color:#b3b3b3;}
 ::-webkit-input-placeholder {color:#b3b3b3;}
 ::-moz-placeholder {color:#b3b3b3;}
 
