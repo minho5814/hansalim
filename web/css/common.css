@@ -3043,6 +3043,108 @@ body,
 /* ============================================================================================
 	회사소개
 ============================================================================================ */
+/* CEO인사말 (Web-04.01.html) */
+.ceo-visual {
+	width:100%;
+	background-color:#f0f0f8;
+}
+.ceo-visual .box-inner {
+	position:relative;
+	width:1000px;
+	height:434px;
+	margin:0 auto;
+	padding:196px 0 104px;
+	box-sizing:border-box;
+}
+.ceo-visual .visual-text {}
+.ceo-visual .visual-text .tit {
+	display:block;
+	vertical-align:top;
+}
+.ceo-visual .visual-text p {
+	margin-top:14px;
+	color:#111;
+	font-size:18px;
+	font-weight:400;
+	line-height:25px;
+}
+.ceo-visual .visual-text .name-box {
+	margin-top:20px;
+	color:#908f95;
+	font-size:18px;
+	font-weight:600;
+}
+.ceo-visual .visual-text .name-box .name {
+	display:inline-block;
+	margin-left:15px;
+	vertical-align:middle;
+}
+.ceo-visual .visual-img {
+	position:absolute;
+	right:72px;
+	bottom:0;
+}
+.ceo-visual .visual-img img {vertical-align:top;}
+
+.intro-text {margin-top:45px;}
+.intro-text .text1 {
+	color:#111;
+	font-size:18px;
+	font-weight:600;
+	line-height:24px;
+}
+.intro-text .text2 {
+	margin-top:18px;
+	color:#4c4c4c;
+	font-size:15px;
+	font-weight:400;
+	line-height:24px;
+}
+
+/* 롯데카드소개 (Web-04.02.01.html) */
+.intro-visual {
+	position:relative;
+	width:100%;
+}
+.intro-visual.intro1 {background:#f2f8fd url(../images/img/intro_img01.png) no-repeat right 0;}
+.intro-visual.intro1:before {
+	content:'';
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	height:300px;
+	background:url(../images/img/intro_x_01.png) repeat-x 0 0;
+}
+.intro-visual.intro2 {background:#000 url(../images/img/intro_img04.jpg) no-repeat 50% 0;background-size:cover;}
+.intro-visual.intro3 {background:url(../images/img/intro_img03.jpg) no-repeat 0 0;background-size:cover;}
+.intro-visual .box-inner {
+	position:relative;
+	width:1000px;
+	height:434px;
+	margin:0 auto;
+	padding:197px 0 133px;
+	box-sizing:border-box;
+	text-align:center;
+}
+.intro-visual .visual-text {}
+.intro-visual .visual-text .tit {
+	display:block;
+	vertical-align:top;
+}
+.intro-visual .visual-text p {
+	margin-top:14px;
+	color:#111;
+	font-size:18px;
+	font-weight:400px;
+	line-height:25px;
+}
+.intro-visual .visual-img {
+	position:absolute;
+	right:72px;
+	bottom:0;
+}
+.intro-visual .visual-img img {vertical-align:top;}
 
 
 /* ============================================================================================
