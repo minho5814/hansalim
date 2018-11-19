@@ -79,6 +79,7 @@ input[type=number]::-webkit-inner-spin-button {
 	-webkit-appearance:none;
 	margin:0;
 }
+input::-ms-clear {display:none;}
 input[type=text]:disabled,
 input[type=tel]:disabled,
 input[type=number]:disabled,
@@ -419,7 +420,7 @@ input.datepicker {
 .ui-datepicker-header .ui-datepicker-title select {
 	width:80px;
 	height:30px;
-	padding:0 10px;
+	padding:0 0 0 10px;
 	border:1px solid #aaa;
 	background-color:#fff;
 	font-size:12px;
