@@ -2275,6 +2275,7 @@ body,
 .banner-slider .slide-item img {width:100%;}
 
 .banner-slider .bx-controls {margin:-38px 0 0 15px;}
+.btns-type1 .bx-controls {font-size:0;}
 .btns-type1 .bx-pager {
 	display:inline-block;
 	overflow:hidden;
@@ -2320,11 +2321,13 @@ body,
 }
 .btns-type1 .bx-controls-direction .bx-prev {left:0;background-image:url(../images/icon/bx_prev02.png);}
 .btns-type1 .bx-controls-direction .bx-next {right:0;background-image:url(../images/icon/bx_next02.png);}
+.btns-type1 .bx-controls-direction a.disabled {display:none;}
 
 .btns-type1 .bx-controls-auto {
 	display:inline-block;
 	position:relative;
 	z-index:5;
+	vertical-align:top;
 }
 .btns-type1 .bx-controls-auto a {
 	display:block;
@@ -3145,6 +3148,97 @@ body,
 	bottom:0;
 }
 .intro-visual .visual-img img {vertical-align:top;}
+
+/* 회사연혁 (Web-04.03.html) */
+.history-wrap {position:relative;}
+.history-wrap:before {
+	content:'';
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:15px;
+	height:1px;
+	background-color:#b2b2b2;
+}
+.history-slider {
+	position:relative;
+	width:1038px;
+	margin:70px auto 0;
+}
+.history-slider.btns-type1 .bx-controls-direction a {margin-top:-115px;}
+.history-slider.btns-type1 .bx-controls-direction .bx-next {right:20px;}
+.history-slider.btns-type1 .bx-controls-direction .bx-prev {left:20px;}
+.history-slider .slide-item {
+	box-sizing:border-box;
+	padding:20px 20px 0;
+}
+.history-slider .slide-item .history-item {
+	padding:23px 30px 30px;
+	border-radius:9px;
+	background-color:#fff;
+	box-shadow:1px 2px 8px 3px rgba(0,0,0,.1);
+}
+.history-slider .slide-item .history-item .date {
+	color:#555;
+	font-size:18px;
+	font-weight:600;
+	text-align:right;
+}
+.history-slider .slide-item .history-item .text-area {
+	height:115px;
+	margin-top:20px;
+	font-size:20px;
+	font-weight:600;
+}
+.history-slider .slide-item .history-item .text-area .f-color {color:#5d30a6;}
+.history-slider .slide-item .history-item .img-area {
+	overflow:hidden;
+	width:243px;
+	height:162px;
+	margin:0 auto;
+	font-size:0;
+}
+.history-slider .slide-item .history-item .img-area {width:100%;}
+
+.history-slider .years-area {
+	position:relative;
+	margin-top:60px;
+	padding-bottom:67px;
+	text-align:center;
+}
+.history-slider .years-area:before {
+	content:'';
+	position:absolute;
+	left:50%;
+	bottom:0;
+	width:30px;
+	height:30px;
+	margin-left:-15px;
+	background:url(../images/icon/icon_history.png) no-repeat 0 0;
+}
+.history-slider .slide-item .years-area .text {
+	display:inline-block;
+	position:relative;
+	width:140px;
+	height:50px;
+	box-sizing:border-box;
+	border-radius:25px;
+	background-color:#5d30a6;
+	color:#fff;
+	font-size:18px;
+	font-weight:600;
+	text-align:center;
+	line-height:50px;
+}
+.history-slider .slide-item .years-area .text:before {
+	content:'';
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:-12px;
+	height:12px;
+	background:url(../images/icon/icon_history_arr.png) no-repeat 50% 0;
+}
 
 
 /* ============================================================================================

@@ -362,7 +362,7 @@
 					</div>
 				</div>
 				<div class="crumb-item">
-					<span class="crumb">회사개요</span>
+					<span class="crumb">회사연혁</span>
 					<div class="menu-list">
 						<div class="menu-item">
 							<a href="#" class="title">CEO인사말</a>
@@ -375,25 +375,15 @@
 						</div>
 					</div>
 				</div>
-				<div class="crumb-item">
-					<span class="crumb">Lotte Finance Vietnam</span>
-					<div class="menu-list">
-						<div class="menu-item">
-							<a href="#" class="title">롯데카드소개</a>
-						</div>
-						<div class="menu-item">
-							<a href="#" class="title">Lotte Finance Vietnam</a>
-						</div>
-					</div>
-				</div>
 			</div>
 
 			<div class="page-title-area">
 				<div class="inner-box">
-					<h2 class="page-title">Lotte Finance Vietnam</h2>
+					<h2 class="page-title">회사연혁</h2>
 					<div class="layer">
-						<a href="" class="link">롯데카드소개</a>
-						<a href="" class="link">Lotte Finance Vietnam</a>
+						<a href="" class="link">CEO인사말</a>
+						<a href="" class="link">회사개요</a>
+						<a href="" class="link">회사연혁</a>
 					</div>
 				</div>
 			</div>
@@ -410,15 +400,97 @@
 				</div>
 			</div>
 		</div>
-		<div class="content">
-			<div class="history-swiper">
-				<div class="swiper-container"></div>
-				<div class="now-years"></div>
+
+		<div class="history-wrap">
+			<div class="history-slider btns-type1">
+				<ul class="bxslider">
+					<li class="slide-item">
+						<div class="history-item">
+							<div class="date">Oct.09</div>
+							<div class="text-area">
+								동계올림픽 최초,<br>
+								평창올림픽 비자 <span class="f-color">롯데카드<br>
+								웨어러블 출시</span>
+							</div>
+							<div class="img-area">
+								<img src="../images/temp/@img_history01.jpg" alt="">
+							</div>
+						</div>
+						<div class="years-area">
+							<span class="text">Sep.2018</span>
+						</div>
+					</li>
+					<li class="slide-item">
+						<div class="history-item">
+							<div class="date">Oct.08</div>
+							<div class="text-area">
+								롯데카드,<br>
+								글로벌 신용카드 데이터<br>
+								보안 인증 <span class="f-color">PIC DSS</span> 인증 획득
+							</div>
+							<div class="img-area">
+								<img src="../images/temp/@img_history02.jpg" alt="">
+							</div>
+						</div>
+						<div class="years-area">
+							<span class="text">Oct.2018</span>
+						</div>
+					</li>
+					<li class="slide-item">
+						<div class="history-item">
+							<div class="date">Oct.08</div>
+							<div class="text-area">
+								아주경제<br>
+								금융증권 대상<br>
+								사회공헌부문 <span class="f-color">대상 수상</span>
+							</div>
+							<div class="img-area">
+								<img src="../images/temp/@img_history03.jpg" alt="">
+							</div>
+						</div>
+						<div class="years-area">
+							<span class="text">Oct.2018</span>
+						</div>
+					</li>
+					<li class="slide-item">
+						<div class="history-item">
+							<div class="date">Oct.09</div>
+							<div class="text-area">
+								동계올림픽 최초,<br>
+								평창올림픽 비자 <span class="f-color">롯데카드<br>
+								웨어러블 출시</span>
+							</div>
+							<div class="img-area">
+								<img src="../images/temp/@img_history01.jpg" alt="">
+							</div>
+						</div>
+						<div class="years-area">
+							<span class="text">Sep.2018</span>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
 	<!-- // 컨텐츠 영역 -->
 </div>
+
+
+<script>
+$(document).ready(function(){
+	/* 배너 슬라이더 */
+	$('.history-slider').each(function(){
+		historySlider = $(this).find('.bxslider').bxSlider({
+			infiniteLoop:false,
+			hideControlOnEnd:true,
+			slideWidth:346,
+			minSlides:3,
+			maxSlides:3,
+			pager:false
+		});
+	});
+});
+</script>
 </body>
 
 </html>
