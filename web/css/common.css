@@ -1815,7 +1815,8 @@ body,
 .thumb-list-wrap .sorting-list .btn.on {color:#7451c0;}/* on */
 .thumb-list-wrap .sorting-list .btn.on:before {background-color:#7451c0;}/* on */
 
-.thumb-list-wrap .btn-area {margin-bottom:10px;}
+.thumb-list-wrap .btn-area,
+.box-list-wrap1 .btn-area {margin-bottom:10px;}
 
 .thumb-list1 {
 	margin:-60px 0 0 -35px;
