@@ -183,6 +183,7 @@ body {}
 	white-space:nowrap;
 }
 .footer .notice-list .list .item:first-child {margin-top:0;}
+.footer .notice-list .list .item:hover {text-decoration:underline;}
 
 .footer .foot-bottom {
 	height:62px;
