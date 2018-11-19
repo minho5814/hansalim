@@ -709,6 +709,7 @@ table .a-right {
 	font-weight:400;
 	text-align:left;
 }
+.board-write1 .board th label,
 .board-write1 .board th .th {
 	display:block;
 	padding:9px 0;
