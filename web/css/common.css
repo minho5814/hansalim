@@ -2571,12 +2571,13 @@ body,
 
 /* 회원탈퇴안내 (Web-02.03.05.html) */
 .matters-box1 {
-	padding:24px 0 24px 30px;
+	padding:24px 30px 24px 30px;
 	border:1px solid #e0e0e0;
 	box-sizing:border-box;
 }
 .matters-box1 .matters-title {
 	position:relative;
+	margin-right:-30px;
 	margin-bottom:26px;
 	padding-bottom:22px;
 	border-bottom:1px solid #e0e0e0;
@@ -2597,7 +2598,7 @@ body,
 }
 .matters-box2 {
 	margin-top:45px;
-	padding:24px 65px 30px;
+	padding:24px 30px 30px;
 	border:1px solid #e0e0e0;
 	box-sizing:border-box;
 }
