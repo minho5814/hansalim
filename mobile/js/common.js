@@ -7,15 +7,6 @@ $(document).ready(function(){
 
 
 	/*
-	$('input[type=text], input[type=number], input[type=tel], input[type=password]').focus(function(){
-		var winTop = $(window).scrollTop();
-		$('html').css({'overflow-y':'auto', 'position':'fixed', 'left':'0', 'right':'0', 'top':-winTop, 'bottom':'0'});
-	}).blur(function(){
-		$('html, body').css({'overflow': 'auto'});
-	});
-	*/
-
-	/*
 		전체 메뉴 영역
 	*/
 	$('.quick-menu-area .swiper-container').each(function(){
@@ -396,5 +387,16 @@ function toolLayer(){
 		var btnT = $(this).offset().top + 32;
 		var winTop = $(window).scrollTop();
 		$('.tooltip-layer[tool-name=' + name + ']').css({'top':btnT - winTop});
+	});
+}
+
+
+
+
+function app(){
+	$('input[type=text], input[type=number], input[type=tel], input[type=password]').focus(function(){
+		$('.header, .s-title-area.fix .s-title, .bottom-fixed-area').css({'position':'absolute'});
+	}).blur(function(){
+		$('.header, .s-title-area.fix .s-title, .bottom-fixed-area').css({'position':'fixed'});
 	});
 }
