@@ -244,25 +244,13 @@ $(window).load(function(){
 	/* ------------------------------------------------------------------------------------------------------------------
 		아코디언
 	------------------------------------------------------------------------------------------------------------------ */
-	$('div.btn-tog, span.btn-tog').each(function(){
-		if($(this).parent().hasClass('on')){
-			$(this).parent().find('.layer').show();
-		}
-	});
-
+	accordion();
 	$(document).on('click', 'div.btn-tog, span.btn-tog', function(){
 		if($(this).parent().hasClass('on')){
 			$(this).parent().removeClass('on').find('.layer').slideUp(100);
 		}else{
 			$(this).parent().addClass('on').find('.layer').slideDown(200);
 		}
-	});
-
-	$('.accordion-item .btn-tog .value-text').each(function(){
-		var len = $(this).text().length;
-		var wid = $(this).outerWidth() - len;
-		//$(this).html(len);
-		$(this).closest('.btn-tog').css({'padding-left':wid});
 	});
 });
 
@@ -401,5 +389,21 @@ function popup(){
 		}else{
 			$(this).closest('.layer-popup').removeClass('h-full');
 		}
+	});
+}
+
+
+/* 아코디언 패딩 (Web-08.02.01.html) */
+function accordion(){
+	$('div.btn-tog, span.btn-tog').each(function(){
+		if($(this).parent().hasClass('on')){
+			$(this).parent().find('.layer').show();
+		}
+	});
+
+	$('.accordion-item .btn-tog .value-text').each(function(){
+		var len = $(this).text().length;
+		var wid = $(this).outerWidth() - len;
+		$(this).closest('.btn-tog').css({'padding-left':wid});
 	});
 }
