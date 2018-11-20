@@ -469,9 +469,9 @@ html.login ,
 	.box-menu-area .menu-item .text:before {margin-top:-8px;}
 }
 
-/* 높이 640px 이하 */
+/* 높이 640px 이하 
 @media only screen and (max-height:620px) {
-	/* 상단 슬라이드 영역 */
+	/* 상단 슬라이드 영역 *
 	.top-visual-area .swiper-slide {
 		padding-left:15px;
 		padding-right:15px;
@@ -503,7 +503,7 @@ html.login ,
 	.top-info-area .payment-total {margin-top:15px;}
 	.top-info-area .payment-total .item {font-size:13px;}
 
-	/* 빠른 메뉴 */
+	/* 빠른 메뉴 *
 	.quick-menu:before {
 		right:5px;
 		width:80px;
@@ -518,11 +518,12 @@ html.login ,
 	.sign-box-area .sign-box .link-sign {font-size:13px;}
 	.sign-box-area .sign-box .btn-sign {font-size:12px;}
 
-	/* 박스 메뉴 영역 */
+	/* 박스 메뉴 영역 *
 	.box-menu-area .menu-item {height:100px;}
 	.box-menu-area .menu-item .text {padding-top:45px;}
 	.box-menu-area .menu-item .text:before {margin-top:-8px;}
 }
+*/
 
 
 /* 대출 시물레이션 팝업 */
