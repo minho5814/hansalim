@@ -126,29 +126,6 @@ $(document).ready(function(){
 	});
 
 	/* ------------------------------------------------------------------------------------------------------------------
-		아코디언
-	------------------------------------------------------------------------------------------------------------------ */
-	$('div.btn-tog, span.btn-tog').each(function(){
-		if($(this).parent().hasClass('on')){
-			$(this).parent().find('.layer').show();
-		}
-	});
-	$('div.btn-tog, span.btn-tog').click(function(){
-		if($(this).parent().hasClass('on')){
-			$(this).parent().removeClass('on').find('.layer').slideUp(100);
-		}else{
-			$(this).parent().addClass('on').find('.layer').slideDown(200);
-		}
-	});
-
-	$('.accordion-item .btn-tog .value-text').each(function(){
-		var len = $(this).text().length;
-		var wid = $(this).outerWidth() - len;
-		//$(this).html(len);
-		$(this).closest('.btn-tog').css({'padding-left':wid});
-	});
-
-	/* ------------------------------------------------------------------------------------------------------------------
 		버튼
 	------------------------------------------------------------------------------------------------------------------ */
 	/* 하단에 고정 버튼 영역이 있을경우 */
@@ -264,7 +241,29 @@ $(document).ready(function(){
 
 
 $(window).load(function(){
-	
+	/* ------------------------------------------------------------------------------------------------------------------
+		아코디언
+	------------------------------------------------------------------------------------------------------------------ */
+	$('div.btn-tog, span.btn-tog').each(function(){
+		if($(this).parent().hasClass('on')){
+			$(this).parent().find('.layer').show();
+		}
+	});
+
+	$(document).on('click','div.btn-tog, span.btn-tog',function(){
+		if($(this).parent().hasClass('on')){
+			$(this).parent().removeClass('on').find('.layer').slideUp(100);
+		}else{
+			$(this).parent().addClass('on').find('.layer').slideDown(200);
+		}
+	});
+
+	$('.accordion-item .btn-tog .value-text').each(function(){
+		var len = $(this).text().length;
+		var wid = $(this).outerWidth() - len;
+		//$(this).html(len);
+		$(this).closest('.btn-tog').css({'padding-left':wid});
+	});
 });
 
 $(window).scroll(function(){
