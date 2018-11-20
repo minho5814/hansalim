@@ -338,62 +338,90 @@
 		<div class="content">
 			<div class="loan-simulation">
 				<h3 class="l-title">대출시뮬레이션</h3>
-				<table>
-					<colgroup>
-						<col style="width:120px;">
-						<col style="width:383px;">
-						<col style="width:96px;">
-						<col>
-					</colgroup>
-					<tbody>
-						<tr>
-							<th scope="row"><label for="Area">거주지역</label></th>
-							<td>
-								<select id="Area" class="styled1 full">
-									<option>현재 거주지역을 선택하세요.</option>
-									<option>지역 01</option>
-									<option>지역 02</option>
-									<option>지역 03</option>
-								</select>
-							</td>
-							<th scope="row"><label for="Product">대출상품</label></th>
-							<td>
-								<select id="Product" class="styled1 full">
-									<option>대출상품을 선택하세요.</option>
-									<option></option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><label for=""></label></th>
-							<td>
-								<select id="" class="styled1 full">
-									<option></option>
-								</select>
-							</td>
-							<th scope="row"><label for=""></label></th>
-							<td>
-								<select id="" class="styled1 full">
-									<option></option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><label for=""></label></th>
-							<td>
-								<select id="" class="styled1 full">
-									<option></option>
-								</select>
-							</td>
-							<th scope="row"><label for=""></label></th>
-							<td>
-								<select id="" class="styled1 full">
-									<option></option>
-								</select>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+				<div class="searth-box">
+					<div class="board">
+						<table>
+							<colgroup>
+								<col style="width:120px;">
+								<col style="width:383px;">
+								<col style="width:136px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="Area">거주지역</label></th>
+									<td>
+										<select id="Area" class="styled1 full">
+											<option>현재 거주지역을 선택하세요.</option>
+											<option>지역 01</option>
+											<option>지역 02</option>
+											<option>지역 03</option>
+										</select>
+									</td>
+									<th scope="row"><label for="Product">대출상품</label></th>
+									<td>
+										<select id="Product" class="styled1 full">
+											<option>대출상품을 선택하세요.</option>
+											<option>대출상품 01</option>
+											<option>대출상품 02</option>
+											<option>대출상품 03</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="Document">제출가능서류</label></th>
+									<td>
+										<select id="Document" class="styled1 full">
+											<option>제출 가능한 서류를 선택하세요.</option>
+											<option>서류 01</option>
+											<option>서류 02</option>
+											<option>서류 03</option>
+										</select>
+									</td>
+									<th scope="row"><label for="Price">대출금액</label></th>
+									<td>
+										<div class="unit-area">
+										<input type="text" id="Price" placeholder="대출신청금액을 입력하세요" style="width:255px;"><span class="unit-text">VND</span>
+									</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="Purpose">대출목적</label></th>
+									<td>
+										<select id="Purpose" class="styled1 full">
+											<option>대출목적을 선택하세요.</option>
+											<option>대출목적 01</option>
+											<option>대출목적 02</option>
+											<option>대출목적 03</option>
+										</select>
+									</td>
+									<th scope="row"><label for="Month">대출기간</label></th>
+									<td>
+										<select id="Month" class="styled1 full">
+											<option>대출기간선택</option>
+											<option>6 개월</option>
+											<option>12 개월</option>
+											<option>18 개월</option>
+											<option>24 개월</option>
+											<option>30 개월</option>
+											<option>36 개월</option>
+											<option>42 개월</option>
+											<option>48 개월</option>
+											<option>60 개월</option>
+										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="result-area">
+						<div class="price">매월 2,000,000 VND</div>
+						<div class="text">
+							최저 연 6.01% 기준<br>
+							* 대출심사에 따라 금리가 달라질 수 있습니다.
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

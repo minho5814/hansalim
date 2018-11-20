@@ -110,9 +110,31 @@ body {}
 .top-visual-slider .bx-controls-auto .bx-controls-auto-item .bx-start {background-image:url(../images/icon/bx_start.png);}
 .top-visual-slider .bx-controls-auto .bx-controls-auto-item .bx-stop {background-image:url(../images/icon/bx_stop.png);}
 
+/* 대출시물레이션 */
+.loan-simulation {}
+.loan-simulation .searth-box {
+	padding:0;
+	margin:0;
+	background-color:#fff;
+}
+.loan-simulation .searth-box .board {
+	padding:0;
+}
+.loan-simulation .searth-box .board th {padding-left:40px;}
+.loan-simulation .searth-box .board th:first-child {padding-left:0;}
+.loan-simulation .searth-box .board td {padding-right:0;}
+.loan-simulation .searth-box .board .unit-area .unit-text {right:68px;}
+.loan-simulation .searth-box .result-area {
+	margin:12px 0 0;
+}
+.loan-simulation .searth-box .result-area {}
+.loan-simulation .searth-box .result-area {}
+.loan-simulation .searth-box .result-area {}
+.loan-simulation {}
+
 
 /*
-	픗터
+	풋터
 */
 .footer {
 	position:relative;
