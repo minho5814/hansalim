@@ -226,10 +226,10 @@ body {}
 	font-size:18px;
 	font-weight:900;
 	line-height:60px;
-	transition:all .8s;
 }
 .recommend-box .text-area .btn-list .btn:hover span {
-	padding-right:36px;
+	padding-right:34px;
+	transition:all .5s;
 }/* hover */
 .recommend-box .text-area .btn-list .btn span:before {
 	content:'';
