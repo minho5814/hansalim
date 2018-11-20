@@ -16,7 +16,7 @@
 <div class="wrapper">
 	<div class="header">
 		<div class="head-inner">
-			<h1 class="h-logo"><a href="#">LOTTE CARD</a></h1>
+			<h1 class="h-logo"><span>LOTTE CARD</span></h1>
 			<div class="utill">
 				<a href="#" class="link">로그인</a>
 				<a href="#" class="link">회원가입</a>
@@ -336,7 +336,8 @@
 		</div>
 
 		<div class="content">
-			<div class="loan-simulation">
+			<!-- 대출시뮬레이션 -->
+			<div class="loan-box">
 				<h3 class="l-title">대출시뮬레이션</h3>
 				<div class="searth-box">
 					<div class="board">
@@ -349,18 +350,18 @@
 							</colgroup>
 							<tbody>
 								<tr>
-									<th scope="row"><label for="Area">거주지역</label></th>
+									<th scope="row"><label for="Area01">거주지역</label></th>
 									<td>
-										<select id="Area" class="styled1 full">
+										<select id="Area01" class="styled1 full">
 											<option>현재 거주지역을 선택하세요.</option>
 											<option>지역 01</option>
 											<option>지역 02</option>
 											<option>지역 03</option>
 										</select>
 									</td>
-									<th scope="row"><label for="Product">대출상품</label></th>
+									<th scope="row"><label for="Product01">대출상품</label></th>
 									<td>
-										<select id="Product" class="styled1 full">
+										<select id="Product01" class="styled1 full">
 											<option>대출상품을 선택하세요.</option>
 											<option>대출상품 01</option>
 											<option>대출상품 02</option>
@@ -381,14 +382,14 @@
 									<th scope="row"><label for="Price">대출금액</label></th>
 									<td>
 										<div class="unit-area">
-										<input type="text" id="Price" placeholder="대출신청금액을 입력하세요" style="width:255px;"><span class="unit-text">VND</span>
-									</div>
+											<input type="text" id="Price" placeholder="대출신청금액을 입력하세요" style="width:255px;"><span class="unit-text">VND</span>
+										</div>
 									</td>
 								</tr>
 								<tr>
-									<th scope="row"><label for="Purpose">대출목적</label></th>
+									<th scope="row"><label for="Purpose01">대출목적</label></th>
 									<td>
-										<select id="Purpose" class="styled1 full">
+										<select id="Purpose01" class="styled1 full">
 											<option>대출목적을 선택하세요.</option>
 											<option>대출목적 01</option>
 											<option>대출목적 02</option>
@@ -415,14 +416,161 @@
 						</table>
 					</div>
 					<div class="result-area">
-						<div class="price">매월 2,000,000 VND</div>
+						<div class="month">매월</div>
+						<div class="price">2,000,000 <em>VND</em></div>
 						<div class="text">
 							최저 연 6.01% 기준<br>
 							* 대출심사에 따라 금리가 달라질 수 있습니다.
 						</div>
 					</div>
 				</div>
+				<div class="btn-area">
+					<button type="button" class="btn-text type1">예상상환스케줄</button>
+					<button type="button" class="btn-text btn-recommend">추천상품보기</button>
+				</div>
 			</div>
+
+			<div class="recommend-box">
+				<div class="bg-area"></div>
+				<div class="inner-box">
+					<div class="text-area">
+						<div class="text">
+							<strong>Lotte<br>
+							Finance</strong>가<br>
+							제시하는<br>
+							합리적인<br>
+							금융서비스
+						</div>
+						<div class="btn-list">
+							<button type="button" class="btn"><span>대출계약철회권 안내</span></button>
+							<button type="button" class="btn"><span>대출약관안내</span></button>
+						</div>
+					</div>
+					<div class="product-list">
+						<div class="product-item">
+							<div class="inner">
+								<div class="title">직장인<br>신용대출</div>
+								<div class="text">
+									롯데카드 없어도<br>
+									신용만으로!<br>
+									무서류/무방문으로<br>
+									신용대출접수가<br>
+									가능합니다.
+								</div>
+								<a href="../loan/Web-05.03.01.html" class="btn">대출상담접수</a>
+							</div>
+						</div>
+						<div class="product-item">
+							<div class="inner">
+								<div class="title">자영업<br>신용대출</div>
+								<div class="text">
+									롯데카드 없어도<br>
+									신용만으로!<br>
+									무서류/무방문으로<br>
+									신용대출접수가<br>
+									가능합니다.
+								</div>
+								<a href="../loan/Web-05.03.01.html" class="btn">대출상담접수</a>
+							</div>
+						</div>
+						<div class="product-item">
+							<div class="inner">
+								<div class="title">바로바로<br>신용대출</div>
+								<div class="text">
+									롯데카드 없어도<br>
+									신용만으로!<br>
+									무서류/무방문으로<br>
+									신용대출접수가<br>
+									가능합니다.
+								</div>
+								<a href="../loan/Web-05.03.01.html" class="btn">대출상담접수</a>
+							</div>
+						</div>
+						<div class="product-item">
+							<div class="inner">
+								<div class="title">공무원<br>신용대출</div>
+								<div class="text">
+									롯데카드 없어도<br>
+									신용만으로!<br>
+									무서류/무방문으로<br>
+									신용대출접수가<br>
+									가능합니다.
+								</div>
+								<a href="../loan/Web-05.03.01.html" class="btn">대출상담접수</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // 대출시뮬레이션 -->
+
+			<!-- 대출상담접수 -->
+			<div class="loan-box">
+				<h3 class="l-title">대출상담접수</h3>
+				<div class="searth-box">
+					<div class="board">
+						<table>
+							<colgroup>
+								<col style="width:120px;">
+								<col style="width:383px;">
+								<col style="width:136px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="Name">이름</label></th>
+									<td>
+										<input type="text" id="Name" placeholder="이름을 입력하세요.">
+									</td>
+									<th scope="row"><label for="Product02">대출상품</label></th>
+									<td>
+										<select id="Product02" class="styled1 full">
+											<option>대출상품을 선택하세요.</option>
+											<option>대출상품 01</option>
+											<option>대출상품 02</option>
+											<option>대출상품 03</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="Area02">거주지역</label></th>
+									<td>
+										<select id="Area02" class="styled1 full">
+											<option>현재 거주지역을 선택하세요.</option>
+											<option>지역 01</option>
+											<option>지역 02</option>
+											<option>지역 03</option>
+										</select>
+									</td>
+									<th scope="row"><label for="Phone">연락처</label></th>
+									<td>
+										<input type="tel" id="Phone" placeholder="연락처를 입력하세요.">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="Cmnd">CMND</label></th>
+									<td>
+										<input type="text" id="Cmnd" placeholder="CMND를 입력하세요.">
+									</td>
+									<th scope="row"><label for="Purpose02">대출목적</label></th>
+									<td>
+										<select id="Purpose02" class="styled1 full">
+											<option>대출목적을 선택하세요.</option>
+											<option>대출목적 01</option>
+											<option>대출목적 02</option>
+											<option>대출목적 03</option>
+										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="btn-area">
+						<a href="#" class="btn-text">대출상담접수하기</a>
+					</div>
+				</div>
+			</div>
+			<!-- // 대출상담접수 -->
 		</div>
 	</div>
 	<!-- // 컨텐츠 영역 -->
@@ -500,6 +648,27 @@ $(document).ready(function(){
 	});
 	motionTxt();
 
+	/* 추천상품보기 */
+	$('.btn-recommend').click(function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on');
+			$('.recommend-box').slideUp(100, function(){
+				$(this).removeClass('on');
+				$('.btn-recommend').html('추천상품보기');
+			});
+		}else{
+			var btnTop = $(this).offset().top;
+			$('html, body').animate({scrollTop:btnTop - 20}, 200, function(){
+				$('.btn-recommend').addClass('on');
+				$('.recommend-box').delay(100).slideDown(200, function(){
+					$(this).addClass('on');
+					$('.btn-recommend').html('추천상품닫기');
+				});
+			});
+		}
+	});
+
+	/* 푸터 */
 	$('.leng-select .btn').click(function(){
 		if($(this).closest('.leng-select').hasClass('on')){
 			$(this).closest('.leng-select').removeClass('on');
@@ -507,6 +676,19 @@ $(document).ready(function(){
 			$(this).closest('.leng-select').addClass('on');
 		}
 	});
+
+	$(document).mouseup(function(e){
+		var select = $('.leng-select');
+		if (!select.is(e.target) && select.has(e.target).length === 0){
+			select.removeClass('on');
+		}
+	});
+});
+
+$(window).scroll(function(){
+	$('.main').removeClass('scroll');
+	$('.btn-allmenu').removeClass('close');
+	$('.menu-dimmed, .all-menu-layer').hide();
 });
 
 /* 상단 슬라이더 모션 */

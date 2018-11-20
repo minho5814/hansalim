@@ -74,7 +74,7 @@ $(document).ready(function(){
 		}
 	});
 	// 닫기
-	$(document).mouseup(function (e){
+	$(document).mouseup(function(e){
 		var bread = $('.breadcrumbs .crumb-item');
 		if (!bread.is(e.target) && bread.has(e.target).length === 0){
 			$('.breadcrumbs .crumb-item').removeClass('on').find('.menu-list').slideUp(100);
@@ -103,7 +103,7 @@ $(document).ready(function(){
 		}
 	});
 	// 닫기
-	$(document).mouseup(function (e){
+	$(document).mouseup(function(e){
 		var page = $('.page-title-area .inner-box');
 		if (!page.is(e.target) && page.has(e.target).length === 0){
 			$('.page-title-area .inner-box').removeClass('on').find('.layer').slideUp(100);
