@@ -26,11 +26,11 @@
 	리스트
 =========================================================================================== */
 .sub-list {}
-.sub-list li {
+.sub-list .item {
 	position:relative;
 	padding-left:12px;
 }
-.sub-list li:before {
+.sub-list .item:before {
 	content:'';
 	display:block;
 	position:absolute;
