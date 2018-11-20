@@ -1549,6 +1549,22 @@ body,
 }
 .board-view.type2 .b-cont {padding-top:0;}
 
+.sub-list {}
+.sub-list .item {
+	position:relative;
+	padding-left:12px;
+}
+.sub-list .item:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0;
+	top:15px;
+	width:3px;
+	height:1px;
+	background-color:#4c4c4c;
+}
+
 
 /* ============================================================================================
 	Loan (대출)
