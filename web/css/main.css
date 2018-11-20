@@ -339,6 +339,7 @@ body {}
 	background-color:#503799;
 	color:#fff;
 	margin-top:-10px;
+	transition:margin .5s;
 }
 .recommend-box .product-list .product-item .inner:hover:before {
 	width:100%;
