@@ -250,7 +250,7 @@ $(window).load(function(){
 		}
 	});
 
-	$(document).on('click','div.btn-tog, span.btn-tog',function(){
+	$(document).on('click', 'div.btn-tog, span.btn-tog', function(){
 		if($(this).parent().hasClass('on')){
 			$(this).parent().removeClass('on').find('.layer').slideUp(100);
 		}else{
