@@ -511,7 +511,12 @@ body {}
 .footer .foot-bottom .leng-select .layer .leng:hover {
 	background-color:#eee;
 }
-.footer .foot-bottom .leng-select .layer .leng.on {}
+.footer .foot-bottom .leng-select .layer .leng.on {
+	/*
+	background-color:#503799;
+	color:#fff;
+	*/
+}
 .footer .foot-bottom .sns-list {
 	float:right;
 	font-size:0;
