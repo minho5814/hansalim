@@ -1113,6 +1113,7 @@ body,
 	position:absolute;
 	left:0;
 	top:40px;
+	min-width:160px;
 	padding:15px 0;
 	box-sizing:border-box;
 	border:1px solid #c2c2c2;
