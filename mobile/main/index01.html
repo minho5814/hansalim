@@ -243,16 +243,24 @@ $(document).ready(function(){
 
 	var handle2 = $('.item2 .custom-handle');
 	$('.item2 .drag-slider').slider({
-		value: 12,
-		min: 3,
-		max: 36,
-		step: 3,
+		value: 0,
+		min: 0,
+		max: 60,
+		step: 12,
 		range: "min",
 		create: function(){
-			handle2.text($(this).slider('value') + 'M');
+			if($(this).slider('value') == 0){
+				handle2.text('6M');
+			}else{
+				handle2.text($(this).slider('value') + 'M');
+			}
 		},
 		slide: function(event, ui){
-			handle2.text(ui.value + 'M');
+			if(ui.value == 0){
+				handle2.text('6M');
+			}else{
+				handle2.text(ui.value + 'M');
+			}
 		}
 	});
 });
