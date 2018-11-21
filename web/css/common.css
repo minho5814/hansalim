@@ -1841,16 +1841,22 @@ body,
 	border-radius:10px;
 	background-color:#f7f7f7;
 }
+.searth-box .false-text {
+	padding-top:3px;
+	margin-bottom:-31px;
+}
 .searth-box .board {padding-left:40px;}
 .searth-box .board th,
 .searth-box .board td {
 	height:40px;
 	padding:15px 0;
 	text-align:left;
-	vertical-align:top;
 }
 .searth-box .board th {padding-left:10px;}
-.searth-box .board th label {line-height:40px;}
+.searth-box .board th label {
+	display:inline-block;
+	padding:9px 0;
+}
 .searth-box .board td {padding-right:50px;}
 .searth-box .board td input[type=text],
 .searth-box .board td input[type=number],
