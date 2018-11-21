@@ -631,7 +631,8 @@ input.false-form {
 	font-size:14px;
 }
 
-table .btn-text {
+table .btn-text,
+table .btn-text:hover {
 	min-width:auto;
 	height:32px;
 	margin-left:9px;
@@ -641,6 +642,11 @@ table .btn-text {
 	color:#444;
 	font-size:14px;
 	line-height:30px;
+}
+table .btn-text.sm.type2:hover {
+	padding:0 20px;
+	height:40px;
+	line-height:38px;
 }
 
 table .a-left {
