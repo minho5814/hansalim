@@ -5,7 +5,7 @@
 ============================================================================================ */
 html,
 body,
-.wrapper {background-color:#5d30a6;}
+.wrapper {background-color:#e60039;}
 
 /* Header */
 .header {background-color:transparent;}
@@ -22,7 +22,7 @@ body,
 
 /* 상단 슬라이드 영역 */
 .top-visual-area {
-	background-image:url(../images/bg/bg_main_top.png), linear-gradient(#5f3492, #49479b);
+	background-image:url(../images/bg/bg_main_top.png), linear-gradient(#e60039, #aa0275);
 	background-repeat:no-repeat;
 	background-position:0 0;
 	background-size:100%;
@@ -58,7 +58,7 @@ body,
 	max-height:195px;
 	margin-top:32px;
 	border-radius:5px;
-	background-color:#bc396e;
+	background-color:#9c0383;
 	box-shadow:0px 0px 16px 4px rgba(0,0,0,.3);
 }
 .top-visual-area .card-box.box1 {}
@@ -405,7 +405,7 @@ html.login ,
 .top-info-area .payment-total {margin-top:25px;}
 .top-info-area .payment-total .item {
 	overflow:hidden;
-	color:#9191c4;
+	color:#a99bc5;
 	font-size:14px;
 	line-height:2;
 }

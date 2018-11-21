@@ -280,7 +280,7 @@ button {-webkit-tap-highlight-color:transparent;}
 	background-size:250px;
 }
 
-.btn-text.type1 {background-color:#5d30a6;}
+.btn-text.type1 {background-color:#e60039;}
 
 .btn-text.type2 {
 	border:1px solid #999;
@@ -619,7 +619,7 @@ input[type=radio]:checked + label {
 	line-height:50px;
 }
 .tab-list1 .tab-item.on {
-	color:#5d30a6;
+	color:#e60039;
 	font-weight:600;
 }
 .tab-list1 .tab-item.on:before {
@@ -629,7 +629,7 @@ input[type=radio]:checked + label {
 	right:0;
 	bottom:-1px;
 	height:3px;
-	background-color:#5d30a6;
+	background-color:#e60039;
 }
 .tab-wrap .tab-cont {display:none;}
 .tab-wrap .tab-cont.on {display:block;}
@@ -656,7 +656,7 @@ input[type=radio]:checked + label {
 }
 .tab-scroll-x .swiper-slide.on .text {
 	position:relative;
-	color:#5d30a6;
+	color:#e60039;
 	font-weight:900;
 }
 .tab-scroll-x .swiper-slide.on .text:before {
@@ -666,7 +666,7 @@ input[type=radio]:checked + label {
 	right:0;
 	bottom:-1px;
 	height:1px;
-	background-color:#5d30a6
+	background-color:#e60039
 }
 
 .tab-scroll-x.fix {
@@ -699,7 +699,7 @@ input[type=radio]:checked + label {
 	color: #333;
 }
 .sorting-box .btn.on {
-	background-color:#5a30a6;
+	background-color:#e60039;
 	color:#fff;
 	font-weight:900;
 	text-align:center;
@@ -1027,6 +1027,7 @@ input[type=radio]:checked + label {
 	color:#fff;
 	font-size:10px;
 	vertical-align:2px;
+	line-height:18px;
 }
 .accordion-list1 .lists .list-item .inquiry .text-area .status.type1 {background-color:#1681c4;}
 .accordion-list1 .lists .list-item .answer {
@@ -1727,7 +1728,7 @@ body,
 	margin:5px 8px 0 0;
 	padding:0 10px;
 	border-radius:25px;
-	background-color:#5d30a6;
+	background-color:#e60039;
 	font-size:10px;
 	vertical-align:top;
 	line-height:16px;
@@ -3172,8 +3173,8 @@ body,
 .mypage-wrap,
 .mypage-wrap body,
 .mypage-wrap .wrapper {
-	background-color:#49479b;
-	background-image:url(../images/bg/bg_main_top.png), linear-gradient(#5f3492, #49479b);
+	background-color:#9c0383;
+	background-image:url(../images/bg/bg_main_top.png), linear-gradient(#df003f, #9c0383);
 	background-repeat:no-repeat;
 	background-position:0 0;
 	background-size:100%;
@@ -3861,7 +3862,7 @@ body,
 	width:5px;
 	height:5px;
 	border-radius:50%;
-	background-color:#5d30a6;
+	background-color:#e60039;
 }
 .bullet-dl dt.none {padding-left:0;}
 .bullet-dl dt.none:before {display:none;}
@@ -4553,7 +4554,7 @@ body,
 .popup-datepicker .ui-datepicker-calendar tbody td.ui-datepicker-today a {background-color:#fffa90;}
 .popup-datepicker .ui-datepicker-calendar tbody td.ui-datepicker-current-day a {
 	color:#fff;
-	background-color:#5d30a6;
+	background-color:#e60039;
 }
 .popup-datepicker .ui-datepicker-calendar tbody td.ui-state-disabled span {color:#dadada;}
 
