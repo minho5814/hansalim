@@ -7,11 +7,15 @@
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
 	<style>
 		.Title {
-			padding:10px;
+			padding:10px 0;
 			background-color:#000;
 			color:#fff;
 			font-size:28px;
 			font-weight:900;
+		}
+		.Title div {
+			width:1000px;
+			margin:0 auto;
 		}
 		.STitle {
 			font-size:20px;
@@ -20,10 +24,9 @@
 		}
 		.BoxWrap {
 			width:100%;
-			max-width:1300px;
+			max-width:1000px;
 			margin:0 auto;
 			padding:0 10px 50px;
-			box-sizing:border-box
 		}
 		.InfoText {
 			margin:30px 0;
@@ -34,7 +37,6 @@
 		}
 		.box-list-wrap1,
 		.thumb-list-wrap {margin-top:0;}
-		.searth-box {width:1000px;}
 	</style>
 	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="../js/jquery-ui.1.12.1.js"></script>
@@ -43,7 +45,7 @@
 </head>
 
 <body>
-<div class="Title">리스트</div>
+<div class="Title"><div>리스트</div></div>
 
 <div class="BoxWrap">
 	<div class="STitle">* 불릿</div>
@@ -61,35 +63,57 @@
 		<div class="number-len-box">전체 3건</div>
 		<div class="box-list">
 			<div class="box-item">
-				<div class="title">급할 때 유용한 소액 비상금 대출</div>
-				<div class="text">이자율 6.00 ~ 23.50% / year</div>
+				<a href="../loan/Web-05.01.02.html" class="inner-link">
+					<div class="title">급할 때 유용한 소액 비상금 대출</div>
+					<div class="text">이자율 6.00 ~ 23.50% / year</div>
+				</a>
 				<div class="btn-area">
 					<a href="#" class="btn-icon-link1">대출 시뮬레이션</a>
 					<a href="#" class="btn-icon-link1">대출 접수</a>
 				</div>
 			</div>
-			<div class="box-item">
-				<div class="title">급할 때 유용한 소액 비상금 대출</div>
-				<div class="text">이자율 6.00 ~ 23.50% / year</div>
-				<div class="btn-area">
-					<a href="#" class="btn-icon-link1">대출 시뮬레이션</a>
-					<a href="#" class="btn-icon-link1">대출 접수</a>
+			<div class="accordion">
+				<div class="box-item btn-tog">
+					<div class="title">[문의] 카드 청구일이 궁금합니다.</div>
+					<div class="text">OCT. 01. 2018</div>
+					<div class="btn-area">
+						<span class="box-stat">접수완료</span>
+					</div>
+				</div>
+				<div class="qna-box-area layer">
+					<div class="box-item q-box">
+						<span class="label">Q.</span>
+						상담내역상세 상담내용<br>
+						상담내역상세 상담내용 상담내역상세 상담내용 상담내역상세 상담내용
+					</div>
+					<div class="box-item a-box">
+						<span class="label">A.</span>
+						상담내역상세 답변내용상담내역상세 답변내용<br>
+						상담내역상세 답변내용상담내역상세 답변내용상담내역상세 답변내용
+					</div>
 				</div>
 			</div>
-			<a class="box-item" href="Web-03.05.02.html">
-				<div class="title">[문의]카드 청구일이 궁금합니다.</div>
-				<div class="text">OCT. 01. 2018</div>
-				<div class="btn-area">
-					<span class="box-stat">접수완료</span>
+			<div class="accordion">
+				<div class="box-item btn-tog">
+					<div class="title">[문의] OOO행사 당첨자 발표일이 언제인가요?</div>
+					<div class="text">OCT. 01. 2018</div>
+					<div class="btn-area">
+						<span class="box-stat type2">답변완료</span>
+					</div>
 				</div>
-			</a>
-			<a class="box-item" href="Web-03.05.02.html">
-				<div class="title">[문의]카드 청구일이 궁금합니다.</div>
-				<div class="text">OCT. 01. 2018</div>
-				<div class="btn-area">
-					<span class="box-stat type2">답변완료</span>
+				<div class="qna-box-area layer">
+					<div class="box-item q-box">
+						<span class="label">Q.</span>
+						상담내역상세 상담내용<br>
+						상담내역상세 상담내용 상담내역상세 상담내용 상담내역상세 상담내용
+					</div>
+					<div class="box-item a-box">
+						<span class="label">A.</span>
+						상담내역상세 답변내용상담내역상세 답변내용<br>
+						상담내역상세 답변내용상담내역상세 답변내용상담내역상세 답변내용
+					</div>
 				</div>
-			</a>
+			</div>
 
 			<div class="box-item">
 				<div class="title">13회차</div>
@@ -149,14 +173,14 @@
 
 
 	<div class="box-list3">
-		<a href="Web-07.03.02.html" class="box-item">
+		<a href="../event/Web-07.03.02.html" class="box-item">
 			<div class="title">[당첨자발표] 롯데카드 무브:페스티벌 디네앙블랑 서울 2018</div>
 			<ul class="list">
 				<li class="item">발표일자 : Aug.03.2018</li>
 				<li class="item">당첨내용 : [당첨자발표] 롯데카드 무브:페스티벌 디네앙블랑 서울 2018</li>
 			</ul>
 		</a>
-		<a href="Web-07.03.02.html" class="box-item">
+		<a href="../event/Web-07.03.02.html" class="box-item">
 			<div class="title">[당첨자발표] 롯데카드 무브:페스티벌 디네앙블랑 서울 2018</div>
 			<ul class="list">
 				<li class="item">발표일자 : Aug.03.2018</li>
@@ -178,7 +202,7 @@
 
 		<div class="thumb-list1">
 			<div class="thumb-item">
-				<a href="#" class="inner-box">
+				<a href="../event/Web-07.01.02.html" class="inner-box">
 					<div class="img-area">
 						<img src="../images/temp/@img_event_thumb01.jpg" alt="">
 					</div>
@@ -189,7 +213,7 @@
 				</a>
 			</div>
 			<div class="thumb-item">
-				<a href="#" class="inner-box">
+				<a href="../event/Web-07.01.02.html" class="inner-box">
 					<div class="img-area">
 						<img src="../images/temp/@img_event_thumb02.jpg" alt="">
 					</div>
@@ -200,7 +224,7 @@
 				</a>
 			</div>
 			<div class="thumb-item">
-				<a href="#" class="inner-box">
+				<a href="../event/Web-07.01.02.html" class="inner-box">
 					<div class="img-area">
 						<img src="../images/temp/@img_event_thumb03.jpg" alt="">
 					</div>
@@ -217,24 +241,23 @@
 
 	<div class="thumb-list-wrap">
 		<div class="btn-area">
-			<a href="#" class="btn-icon-link4">나만의 추천이벤트</a>
+			<a href="../mypage/Web-03.04.01.html" class="btn-icon-link4">나만의 추천이벤트</a>
 		</div>
-
 		<div class="thumb-list1">
 			<div class="thumb-item">
-				<a href="#" class="inner-box">
+				<a href="../event/Web-07.01.02.html" class="inner-box">
 					<div class="img-area">
 						<img src="../images/temp/@img_event_thumb01.jpg" alt="">
 					</div>
 					<div class="text-area">
 						<div class="title">Lotte Finance Vietnam<br>런칭 축하</div>
 						<div class="text">Oct.01.2018~Oct.31.2018</div>
-						<span class="ico-division bg-color1">당첨</span>
+						<span class="ico-division bg-color1">담첨</span>
 					</div>
 				</a>
 			</div>
 			<div class="thumb-item">
-				<a href="#" class="inner-box">
+				<a href="../event/Web-07.01.02.html" class="inner-box">
 					<div class="img-area">
 						<img src="../images/temp/@img_event_thumb02.jpg" alt="">
 					</div>
@@ -246,7 +269,7 @@
 				</a>
 			</div>
 			<div class="thumb-item">
-				<a href="#" class="inner-box">
+				<a href="../event/Web-07.01.02.html" class="inner-box">
 					<div class="img-area">
 						<img src="../images/temp/@img_event_thumb03.jpg" alt="">
 					</div>
@@ -266,7 +289,7 @@
 
 
 
-<div class="Title">아코디언</div>
+<div class="Title"><div>아코디언</div></div>
 
 <div class="BoxWrap">
 	<div class="STitle">* 기본</div>
@@ -292,7 +315,7 @@
 	</div>
 </div>
 
-<div class="Title">탭</div>
+<div class="Title"><div>탭</div></div>
 <div class="BoxWrap">
 	<div class="STitle">* 기본</div>
 
@@ -347,7 +370,7 @@
 </div>
 
 
-<div class="Title">검색</div>
+<div class="Title"><div>검색</div></div>
 <div class="BoxWrap">
 	<div class="STitle">* 기본</div>
 
@@ -415,7 +438,7 @@
 		</div>
 		<div class="btn-area">
 			<button type="button" class="btn-text type1 btn-popup" layer-name="Popup01">초기화</button>
-			<a href="MA-05.06.01.html" class="btn-text">계산하기</a>
+			<a href="../loan/Web-05.06.01.html" class="btn-text">계산하기</a>
 		</div>
 	</div>
 
@@ -469,7 +492,7 @@
 </div>
 
 
-<div class="Title">기타</div>
+<div class="Title"><div>기타</div></div>
 <div class="BoxWrap">
 	<div class="STitle">* 고객센터</div>
 
