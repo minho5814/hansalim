@@ -2192,6 +2192,7 @@ body,
 	border:1px solid #ccc;
 }
 .login-box:first-child {margin-top:0;}
+.login-box.on {margin-top:60px;}
 
 .login-box .form-area {
 	position:relative;
