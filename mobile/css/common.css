@@ -1200,6 +1200,11 @@ input[type=radio]:checked + label {
 .accordion-list4 .accordion-item .layer {display:none;}
 
 /* 폼 리스트 */
+.error-text {
+	margin-top:5px;
+	color:#e21c24;
+	font-size:13px;
+}
 .form-list1:after {
 	content:'';
 	display:block;

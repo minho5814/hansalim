@@ -1434,7 +1434,7 @@ body,
 	cursor:not-allowed;
 }
 /* 달력 */
-.ui-datepicker-calendar tbody td.ui-datepicker-current-day a {background-color:#27393d;}
+.bgColor2 .ui-datepicker-calendar tbody td.ui-datepicker-current-day a {background-color:#27393d;}
 
 /* 이벤트 */
 .bgColor3 .header,
