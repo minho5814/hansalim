@@ -881,7 +881,7 @@ body,
 	min-width:1260px;
 	height:110px;
 	background-color:#2c203b;
-	z-index:50;
+	z-index:55;
 }
 .header .head-inner {
 	position:relative;
@@ -1813,6 +1813,63 @@ body,
 }
 
 .notice-area {padding:20px 50px 0;}
+
+.loan-step-list {position:relative;}
+.loan-step-list:before {
+	content:'';
+	position:absolute;
+	left:29px;
+	top:5px;
+	bottom:5px;
+	width:1px;
+	background-color:#e6e6e6;
+}
+.loan-step-list .step-item {
+	position:relative;
+	min-height:60px;
+	margin-top:40px;
+	padding-left:82px;
+	color:#737373;
+}
+.loan-step-list .step-item:first-child {margin-top:0;}
+.loan-step-list .step-item .step {
+	position:absolute;
+	left:0;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	background-color:#e6e6e6;
+}
+.loan-step-list .step-item .step .inner {
+	position:absolute;
+	left:0;
+	right:0;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	color:#737373;
+	font-size:13px;
+	text-align:center;
+}
+.loan-step-list .step-item .step .inner em {
+	display:block;
+	color:#111;
+	font-size:15px;
+	font-weight:900;
+}
+.loan-step-list .step-item strong {
+	display:block;
+	color:#111;
+	font-size:18px;
+	font-weight:600;
+}
+
+.loan-list-wrap .notice-area {padding:15px 20px 0;}
 
 /* 대출접수완료 (MA-05.03.02.html) */
 .complated-img-cont {
