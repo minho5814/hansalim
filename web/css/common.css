@@ -3396,6 +3396,11 @@ body,
 	background-color:#fff;
 	padding:40px;
 }
+.h-full.layer-popup .popup {
+	margin-top:0 !important;
+	top:20px;
+	bottom:20px;
+}
 .layer-popup .popup .cont {
 	color:#4c4c4c;
 	text-align:center;

@@ -5,7 +5,7 @@
 ============================================================================================ */
 html,
 body,
-.wrapper {background-color:#e60039;}
+.wrapper {background-color:#c80040;}
 
 /* Header */
 .header {background-color:transparent;}
@@ -22,7 +22,7 @@ body,
 
 /* 상단 슬라이드 영역 */
 .top-visual-area {
-	background-image:url(../images/bg/bg_main_top.png), linear-gradient(#e60039, #aa0275);
+	background-image:url(../images/bg/bg_main_top.png), linear-gradient(#e3003b, #a80377);
 	background-repeat:no-repeat;
 	background-position:0 0;
 	background-size:100%;
@@ -58,16 +58,23 @@ body,
 	max-height:195px;
 	margin-top:32px;
 	border-radius:5px;
-	background-color:#9c0383;
+	/*
 	box-shadow:0px 0px 16px 4px rgba(0,0,0,.3);
+	*/
+	background-color:#773a94;
+	background-repeat:no-repeat;
+	background-position:100% 100%;
 }
-.top-visual-area .card-box.box1 {}
+.top-visual-area .card-box.box1 {
+	background-image:url(../images/main/bg_visual05.png);
+	background-size:cover;
+}
 .top-visual-area .card-box.box2 {
-	background:#bc396e url(../images/main/bg_visual01.png) no-repeat 100% 100%;
+	background-image:url(../images/main/bg_visual01.png);
 	background-size:138px;
 }
 .top-visual-area .card-box.box3 {
-	background:#bc396e url(../images/main/bg_visual02.png) no-repeat 100% 100%;
+	background-image:url(../images/main/bg_visual02.png);
 	background-size:120px;
 }
 .top-visual-area .card-box.box4 {

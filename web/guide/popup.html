@@ -36,7 +36,7 @@
 			border:1px solid #eaeaea;
 			color:#000;
 		}
-		.popup-text-area {text-align:left;}
+		.popup-text-area {margin-top:0;text-align:left;}
 	</style>
 	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="../js/jquery-ui.1.12.1.js"></script>
@@ -51,17 +51,30 @@
 
 	<button type="button" class="btn-text btn-popup" layer-name="Popup01">팝업 01</button>
 	<button type="button" class="btn-text btn-popup" layer-name="Popup02">팝업 02</button>
-	<button type="button" class="btn-text btn-popup" layer-name="Popup03">팝업 03</button>
+
+	<br><br>
 
 	<div class="STitle">* 상단 타이틀 영역</div>
 	<button type="button" class="btn-text btn-popup" layer-name="Popup03">팝업 03</button>
 
+	<br><br>
+
 	<div class="STitle">* 팝업 내 팝업 호출</div>
 	<button type="button" class="btn-text btn-popup" layer-name="Popup04">팝업 04</button>
+
+	<br><br>
 
 	<div class="STitle">* 개인정보 관련</div>
 	<div class="popup-text-area">
 		I agree to the <button type="button" class="f-style btn-popup" layer-name="Popup03">Terms of Use</button> and have read and understand the <button type="button" class="f-style btn-popup" layer-name="Popup06">Privacy Policy.</button>
+	</div>
+
+	<br><br>
+
+	<div class="InfoText">
+		- 팝업 호출할 버튼에 class=&quot;btn-popup&quot; layer-name=&quot;Popup01&quot; 추가<br>
+		- 호출할 팝업에는 같은 값으로 layer-name=&quot;Popup01&quot; 추가<br>
+		- 팝업 닫을 버튼네 class=&quot;popClose&quot; 추가
 	</div>
 </div>
 

@@ -690,13 +690,12 @@ input[type=radio]:checked + label {
 .sorting-box .btn {
 	float:left;
 	border-radius:25px;
+	color: #333;
+	font-size: 15px;
 	line-height:30px;
 	-webkit-transition:all .3s;
 	-ms-transition:all .3s;
 	transition:all .3s;
-	font-size: 15px;
-	line-height: 1.5;
-	color: #333;
 }
 .sorting-box .btn.on {
 	background-color:#e60039;
@@ -1732,7 +1731,7 @@ body,
 	display:inline-block;
 	margin:5px 8px 0 0;
 	padding:0 10px;
-	border-radius:25px;
+	border-radius:5px;
 	background-color:#e60039;
 	font-size:10px;
 	vertical-align:top;
@@ -1797,7 +1796,7 @@ body,
 .menu-wrap .top-info-box {
 	position:relative;
 	padding:30px 0 15px;
-	background-image:url(../images/bg/bg_main_top.png), linear-gradient(#5a3994, #49459c);
+	background-image:url(../images/bg/bg_main_top.png), linear-gradient(#e3003b, #a80377);
 	background-repeat:no-repeat;
 	background-position:0 0;
 	background-size:100%;
@@ -1852,7 +1851,7 @@ body,
 	width:45px;
 	height:45px;
 	border-radius:50%;
-	background-color:#926bd0;
+	background-color:#ff82a1;
 }
 .menu-wrap .top-info-box .user-info .photo img {
 	width:100%;
@@ -2073,8 +2072,8 @@ body,
 	background-color:transparent;
 	transition:all .3;
 }
-.menu-wrap .menu-tab-wrap .menu-tab .item.on {color:#5732a0;}
-.menu-wrap .menu-tab-wrap .menu-tab .item.on:before {background-color:#5732a0;}
+.menu-wrap .menu-tab-wrap .menu-tab .item.on {color:#c80040;}
+.menu-wrap .menu-tab-wrap .menu-tab .item.on:before {background-color:#c80040;}
 
 .menu-wrap .menu-tab-cont {
 	display:none;
@@ -2120,7 +2119,7 @@ body,
 }
 .menu-wrap .menu-list-box .left-menu .item.on {
 	box-shadow:2px 4px 30px rgba(0,0,0,.3);
-	background-color:#5732a0;
+	background-color:#c80040;
 	color:#fff;
 }
 .menu-wrap .menu-list-box .left-menu .btn-area {
@@ -3179,7 +3178,7 @@ body,
 .mypage-wrap body,
 .mypage-wrap .wrapper {
 	background-color:#9c0383;
-	background-image:url(../images/bg/bg_main_top.png), linear-gradient(#df003f, #9c0383);
+	background-image:url(../images/bg/bg_main_top.png), linear-gradient(#db0044, #9c0383);
 	background-repeat:no-repeat;
 	background-position:0 0;
 	background-size:100%;
