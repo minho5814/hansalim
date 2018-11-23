@@ -1074,9 +1074,9 @@ body,
 	right:0;
 	top:110px;
 	background-color:#fff;
+	background-position:500% 50%;
 	height:40px;
 }
-.head-fix-box .breadcrumbs {background-position:500% 50%;}
 .header .breadcrumbs {
 	width:100%;
 	max-width:1300px;
@@ -1366,14 +1366,13 @@ body,
 .container,
 .header .btn-allmenu,
 .gnb-area .gnb-list .gnb-item .gnb-depth {transition:top .2s;}
-.header .head-fix-box .breadcrumbs,
+.header .head-fix-box,
 .header .page-title-area,
 .header .page-title-area .page-title {transition:all .5s;}
 
 .scroll .container {padding-top:220px;}
 .scroll .header {top:-110px;}
-.scroll .header .head-fix-box {height:125px;}
-.scroll .header .head-fix-box .breadcrumbs {background:#653c9e url(../images/bg/bg_header01.png) no-repeat 100% 50%;}
+.scroll .header .head-fix-box {background:#653c9e url(../images/bg/bg_header01.png) no-repeat 100% 50%;}
 .scroll .header .page-title-area {box-shadow:2px 3px 8px rgba(0,0,0,.1);}
 .scroll .header .page-title-area .page-title {
 	height:85px;
@@ -1415,7 +1414,7 @@ body,
 .bgColor2 .header .breadcrumbs .crumb-item.on .crumb,
 .bgColor2 .header .breadcrumbs .crumb-item .menu-list .menu-item .list .link:hover {color:#27393d;}
 .bgColor2 .header .btn-allmenu.close {background-image:url(../images/icon/btn_close02.png);}
-.bgColor2.scroll .header .head-fix-box .breadcrumbs {background:#18a5b6 url(../images/bg/bg_header02.png) no-repeat 100% 50%;}
+.bgColor2.scroll .header .head-fix-box {background:#18a5b6 url(../images/bg/bg_header02.png) no-repeat 100% 50%;}
 /* 버튼 */
 .bgColor2 .btn-text {background-color:#216871;}
 .bgColor2 .btn-text:hover {background-color:#27474b;}
@@ -1448,7 +1447,7 @@ body,
 .bgColor3 .header .breadcrumbs .crumb-item.on .crumb,
 .bgColor3 .header .breadcrumbs .crumb-item .menu-list .menu-item .list .link:hover {color:#27393d;}
 .bgColor3 .header .btn-allmenu.close {background-image:url(../images/icon/btn_close03.png);}
-.bgColor3.scroll .header .head-fix-box .breadcrumbs {background:#4b589c url(../images/bg/bg_header03.png) no-repeat 100% 50%;}
+.bgColor3.scroll .header .head-fix-box {background:#4b589c url(../images/bg/bg_header03.png) no-repeat 100% 50%;}
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------

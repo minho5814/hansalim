@@ -431,9 +431,7 @@ button {-webkit-tap-highlight-color:transparent;}
 }
 .btn-list.type2 .btn-item {
 	position:relative;
-	width:60%;
 }
-.btn-list.type2 .btn-item:first-child {width:40%;}
 .btn-list.type2 .btn-item:before {
 	content:'';
 	position:absolute;
