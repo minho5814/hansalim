@@ -451,8 +451,8 @@ button {-webkit-tap-highlight-color:transparent;}
 .btn-list .btn-item.one {width:100%;}
 
 /* 버튼 클릭시 색상 변환 */
-.btn-text:active {background-color:#000;}
-.btn-text.type1:active {background-color:#3d2e68;}
+.btn-text:active {background-color:#111;}
+.btn-text.type1:active {background-color:#960629;}
 .btn-text.type2:active,
 .btn-text-round:active {
 	border-color:#503799;

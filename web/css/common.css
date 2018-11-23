@@ -891,7 +891,7 @@ body,
 	margin:0 auto;
 }
 .header .head-inner .h-logo {
-	width:160px;
+	width:140px;
 	position:absolute;
 	left:0;
 	bottom:0;
@@ -932,11 +932,11 @@ body,
 	background-color:rgba(255,255,255,.1);
 }
 .header .head-inner .utill .link:first-child:before {display:none;}
-.header .head-inner .utill .btn-mobile {
+.header .head-inner .utill .btn-leng {
 	display:inline-block;
 	height:20px;
 	margin-left:15px;
-	padding:0 5px;
+	padding:0 6px;
 	box-sizing:border-box;
 	border:1px solid #c6a9c8;
 	color:#c09bde;
@@ -1074,9 +1074,9 @@ body,
 	right:0;
 	top:110px;
 	background-color:#fff;
-	background-position:500% 50%;
 	height:40px;
 }
+.head-fix-box .breadcrumbs {background-position:500% 50%;}
 .header .breadcrumbs {
 	width:100%;
 	max-width:1300px;
@@ -1366,13 +1366,14 @@ body,
 .container,
 .header .btn-allmenu,
 .gnb-area .gnb-list .gnb-item .gnb-depth {transition:top .2s;}
-.header .head-fix-box,
+.header .head-fix-box .breadcrumbs,
 .header .page-title-area,
 .header .page-title-area .page-title {transition:all .5s;}
 
 .scroll .container {padding-top:220px;}
 .scroll .header {top:-110px;}
-.scroll .header .head-fix-box {background:#653c9e url(../images/bg/bg_header01.png) no-repeat 100% 50%;}
+.scroll .header .head-fix-box {height:125px;}
+.scroll .header .head-fix-box .breadcrumbs {background:#653c9e url(../images/bg/bg_header01.png) no-repeat 100% 50%;}
 .scroll .header .page-title-area {box-shadow:2px 3px 8px rgba(0,0,0,.1);}
 .scroll .header .page-title-area .page-title {
 	height:85px;
@@ -1414,7 +1415,7 @@ body,
 .bgColor2 .header .breadcrumbs .crumb-item.on .crumb,
 .bgColor2 .header .breadcrumbs .crumb-item .menu-list .menu-item .list .link:hover {color:#27393d;}
 .bgColor2 .header .btn-allmenu.close {background-image:url(../images/icon/btn_close02.png);}
-.bgColor2.scroll .header .head-fix-box {background:#18a5b6 url(../images/bg/bg_header02.png) no-repeat 100% 50%;}
+.bgColor2.scroll .header .head-fix-box .breadcrumbs {background:#18a5b6 url(../images/bg/bg_header02.png) no-repeat 100% 50%;}
 /* 버튼 */
 .bgColor2 .btn-text {background-color:#216871;}
 .bgColor2 .btn-text:hover {background-color:#27474b;}
@@ -1447,7 +1448,7 @@ body,
 .bgColor3 .header .breadcrumbs .crumb-item.on .crumb,
 .bgColor3 .header .breadcrumbs .crumb-item .menu-list .menu-item .list .link:hover {color:#27393d;}
 .bgColor3 .header .btn-allmenu.close {background-image:url(../images/icon/btn_close03.png);}
-.bgColor3.scroll .header .head-fix-box {background:#4b589c url(../images/bg/bg_header03.png) no-repeat 100% 50%;}
+.bgColor3.scroll .header .head-fix-box .breadcrumbs {background:#4b589c url(../images/bg/bg_header03.png) no-repeat 100% 50%;}
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1752,7 +1753,7 @@ body,
 	font-weight:900;
 }
 .price-box-area .box:first-child .number-area .number {margin:0 0 0 10px;}
-.price-box-area .box .number-area .number em {font-weight:600;}
+.price-box-area .box .number-area .number em {font-weight:400;}
 
 .customer-call-box {
 	position:relative;
@@ -2656,6 +2657,7 @@ body,
 	font-size:24px;
 	font-weight:900;
 }
+.photo-change-area .btn-text {margin-top:15px;}
 
 /* 개인정보관리 > 개인정보변경 (Web-02.03.03.1.html) */
 .phone-change .phone-number input {
