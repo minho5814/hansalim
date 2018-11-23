@@ -2227,6 +2227,8 @@ body,
 	position:absolute;
 	left:50%;
 	top:40px;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
 	transform:translateX(-50%);
 	width:30px;
 	height:30px;
@@ -2318,9 +2320,9 @@ body,
 	position:absolute;
 	left:-1px;
 	top:50%;
-	transform:translateY(-50%);
 	-webkit-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
 	width:1px;
 	height:16px;
 	background-color:#e6e6e6;
@@ -4333,6 +4335,8 @@ body,
 	left:20px;
 	right:20px;
 	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
 	max-width:340px;
 	margin:0 auto;
@@ -4341,6 +4345,8 @@ body,
 .layer-popup.h-full .popup {
 	top:20px;
 	bottom:20px;
+	-webkit-transform:translateY(0);
+	-ms-transform:translateY(0);
 	transform:translateY(0);
 }
 

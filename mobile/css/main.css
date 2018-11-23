@@ -351,6 +351,8 @@ html.login ,
 	left:25px;
 	right:25px;
 	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
 	color:#fff;
 	text-align:center;
