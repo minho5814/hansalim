@@ -620,8 +620,14 @@
 				<div class="leng-select">
 					<button type="button" class="btn">FAMILY SITE</button>
 					<div class="layer">
-						<a href="#" class="leng on">FAMILY SITE</a>
-						<a href="#" class="leng">FAMILY SITE FAMILY SITE FAMILY SITE</a>
+						<a href="http://www.lotte.co.kr/global/en/main.do" target="_blank" class="leng">LOTTE GROUP</a>
+						<a href="https://www.lotteshopping.com.vn/" target="_blank" class="leng">LOTTE DEPARTMENT STORE</a>
+						<a href="http://www.lottemart.com.vn/" target="_blank" class="leng">LOTTE MART</a>
+						<a href="http://www.lottecinemavn.com/LCHS/index.aspx" target="_blank" class="leng">LOTTE CINEMA</a>
+						<a href="https://www.lottehotel.com/hanoi-hotel/vi.html" target="_blank" class="leng">LOTTE HOTEL</a>
+						<a href="http://www.llive.vn/index.do" target="_blank" class="leng">LOTTE DATVIET HOMESHOPPING</a>
+						<a href="http://www.lotteria.vn/" target="_blank" class="leng">LOTTERIA</a>
+						<a href="https://www.lpoint.com.vn/WebContent/main.aspx" target="_blank" class="leng">L.POINT</a>
 					</div>
 				</div>
 
@@ -692,8 +698,12 @@ $(document).ready(function(){
 	/* 푸터 */
 	$('.leng-select .btn').click(function(){
 		if($(this).closest('.leng-select').hasClass('on')){
+			$(this).removeAttr('style');
 			$(this).closest('.leng-select').removeClass('on');
 		}else{
+			$('.leng-select').removeClass('on').find('.btn').removeAttr('style');
+			var wid = $(this).closest('.leng-select').find('.layer').outerWidth();
+			$(this).css({'width':wid});
 			$(this).closest('.leng-select').addClass('on');
 		}
 	});

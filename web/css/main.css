@@ -484,9 +484,10 @@
 	display:none;
 	position:absolute;
 	left:0;
-	right:0;
 	bottom:29px;
+	min-width:100%;
 	padding:14px 0;
+	box-sizing:border-box;
 	border:1px solid #111;
 	border-bottom:0;
 	background-color:#fff;
@@ -495,11 +496,12 @@
 .footer .foot-bottom .leng-select .layer .leng {
 	display:block;
 	margin-top:5px;
-	padding:5px 0 5px 10px;
+	padding:5px 10px;
 	color:#111;
 	font-size:13px;
 	font-weight:400;
 	line-height:18px;
+	white-space:nowrap;
 }
 .footer .foot-bottom .leng-select .layer .leng:first-child {margin-top:0;}
 .footer .foot-bottom .leng-select .layer .leng:hover {background-color:#eee;}
