@@ -134,7 +134,10 @@
 	margin:43px 0 0;
 	background-color:#fff;
 }
-.loan-box .searth-box .board {padding:0;}
+.loan-box .searth-box .board {
+	width:auto;
+	padding:0;
+}
 .loan-box .searth-box .board th {padding-left:40px;}
 .loan-box .searth-box .board th:first-child {padding-left:0;}
 .loan-box .searth-box .board td {padding-right:0;}
