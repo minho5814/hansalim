@@ -381,9 +381,7 @@
 		<div class="board">
 			<table>
 				<colgroup>
-					<col style="width:130px;">
-					<col style="width:350px;">
-					<col style="width:130px;">
+					<col style="width:250px;">
 					<col>
 				</colgroup>
 				<tbody>
@@ -394,6 +392,8 @@
 								<option>대출신청상품을 선택하세요</option>
 							</select>
 						</td>
+					</tr>
+					<tr>
 						<th scope="row"><label for="Price">신청금액</label></th>
 						<td>
 							<div class="unit-area">
@@ -415,6 +415,8 @@
 								<option>60 개월</option>
 							</select>
 						</td>
+					</tr>
+					<tr>
 						<th scope="row"><label for="Interest">적용이자율(연)</label></th>
 						<td>
 							<div class="unit-area">
@@ -427,6 +429,8 @@
 						<td>
 							<input type="text" id="Date01" class="datepicker" placeholder="dd.mm.yy" value="05.11.2018" readonly>
 						</td>
+					</tr>
+					<tr>
 						<th scope="row"><label for="Date02">최초상환일</label></th>
 						<td>
 							<input type="text" id="Date02" class="datepicker" placeholder="dd.mm.yy" value="05.11.2018" readonly>
@@ -444,49 +448,51 @@
 
 	<br><br>
 
-	<div class="searth-box">
-		<div class="board">
-			<table>
-				<colgroup>
-					<col style="width:170px;">
-					<col>
-				</colgroup>
-				<tbody>
-					<tr>
-						<th scope="row"><label for="">상품명</label></th>
-						<td>
-							<select id="" class="styled1" style="width:350px;">
-								<option>상품을 선택하세요.</option>
-								<option>직장인 신용대출</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row"><label for="Month">대출기간</label></th>
-						<td>2010.01.01 ~ 2020.12.01 (총 60개월)</td>
-					</tr>
-					<tr>
-						<th scope="row">조회기간</th>
-						<td>
-							<div class="search-date">
-								<div class="data-set">
-									<input type="text" class="datepicker month-1 afterDis change-month" placeholder="dd.mm.yy">
-									<span class="swung">~</span>
-									<input type="text" class="datepicker today afterDis" placeholder="dd.mm.yy" value="">
+	<div class="mypage-cont">
+		<div class="searth-box">
+			<div class="board">
+				<table>
+					<colgroup>
+						<col style="width:170px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="">상품명</label></th>
+							<td>
+								<select id="" class="styled1" style="width:350px;">
+									<option>상품을 선택하세요.</option>
+									<option>직장인 신용대출</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="Month">대출기간</label></th>
+							<td>2010.01.01 ~ 2020.12.01 (총 60개월)</td>
+						</tr>
+						<tr>
+							<th scope="row">조회기간</th>
+							<td>
+								<div class="search-date">
+									<div class="data-set">
+										<input type="text" class="datepicker month-1 afterDis change-month" placeholder="dd.mm.yy">
+										<span class="swung">~</span>
+										<input type="text" class="datepicker today afterDis" placeholder="dd.mm.yy" value="">
+									</div>
+									<div class="btn-list">
+										<button type="button" class="btn-text2 on" data="month-1">1개월</button>
+										<button type="button" class="btn-text2" data="month-3">3개월</button>
+										<button type="button" class="btn-text2" data="month-6">6개월</button>
+									</div>
 								</div>
-								<div class="btn-list">
-									<button type="button" class="btn-text2 on" data="month-1">1개월</button>
-									<button type="button" class="btn-text2" data="month-3">3개월</button>
-									<button type="button" class="btn-text2" data="month-6">6개월</button>
-								</div>
-							</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="btn-area">
-			<button type="button" class="btn-text">조회</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btn-area">
+				<button type="button" class="btn-text">조회</button>
+			</div>
 		</div>
 	</div>
 </div>

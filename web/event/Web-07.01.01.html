@@ -514,6 +514,10 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="btn-btm-area">
+				<button type="button" class="btn-text type1">더보기</button>
+			</div>
 		</div>
 	</div>
 	<!-- // 컨텐츠 영역 -->
@@ -555,17 +559,6 @@ $(document).ready(function(){
 	/* 스크롤 허용
 	$('.bxslider').off('scroll touchmove mousewheel');
 	*/
-});
-
-
-/* 스크롤 마지막 */
-$(window).scroll(function(){
-	var winTop = $(window).scrollTop();
-	var wihH = $(window).height();
-	var docH = $(document).height();
-	if(winTop == docH - wihH){
-		alert('스크롤 마지막에 왔을 경우 이벤트');
-	}
 });
 </script>
 </body>
