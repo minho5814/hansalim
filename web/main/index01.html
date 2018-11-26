@@ -711,7 +711,7 @@ $(document).ready(function(){
 	$(document).mouseup(function(e){
 		var select = $('.leng-select');
 		if (!select.is(e.target) && select.has(e.target).length === 0){
-			select.removeClass('on');
+			$('.leng-select').removeClass('on').find('.btn').removeAttr('style');
 		}
 	});
 });

@@ -437,10 +437,12 @@ function scrollO(){
 
 /* 폼 라벨 넓이 자동 조절 */
 function formArea(){
-	var $item = $('.form-item label');
-	var boxArray = $item.map(function(){
-		return $(this).outerWidth();
+	$('.form-area').each(function(){
+		var $item = $(this).find('.form-item label');
+		var boxArray = $item.map(function(){
+			return $(this).outerWidth();
+		});
+		var moreWid = Math.max.apply(Math , boxArray);
+		$item.closest('.form-item').css('padding-left', moreWid + 20);
 	});
-	var moreWid = Math.max.apply(Math , boxArray);
-	$item.closest('.form-item').css('padding-left', moreWid + 20);
 }
