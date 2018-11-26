@@ -2851,6 +2851,19 @@ body,
 	font-weight:400;
 	line-height:30px;
 }
+.mypage-cont .infor-box .infor-list .infor-item .btn-pay {
+	display:inline-block;
+	height:32px;
+	margin-top:42px;
+	padding:0 15px;
+	box-sizing:border-box;
+	border-radius:2px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	color:#777;
+	font-size:14px;
+	line-height:30px;
+}
 .mypage-cont .infor-box .infor-list .infor-item .specification .number {
 	color:#7451c0;
 	font-size:25px;
