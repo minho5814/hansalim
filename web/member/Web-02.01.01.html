@@ -381,7 +381,7 @@
 							<label for="Pw">비밀번호</label>
 							<input type="password" id="Pw" placeholder="비밀번호 입력">
 						</div>
-						<a href="#" class="btn-login">SIGN IN</a>
+						<a href="#" class="btn-login btn-popup"  layer-name="Popup01">SIGN IN</a>
 					</div>
 
 					<div class="link-area">
@@ -402,12 +402,12 @@
 					<div class="form-area2">
 						<div class="form-item">
 							<input type="text" placeholder="휴대폰 번호 입력">
-							<button type="button" class="btn btn-popup" layer-name="Popup01">OTP번호 발급요청</button>
+							<button type="button" class="btn btn-popup" layer-name="Popup02">OTP번호 발급요청</button>
 						</div>
 						<div class="form-item certification">
 							<input type="password" placeholder="인증 번호 입력">
 							<div class="time">02:58</div>
-							<button type="button" class="btn btn-popup" layer-name="Popup02">인증하기</button>
+							<button type="button" class="btn btn-popup" layer-name="Popup03">인증하기</button>
 						</div>
 					</div>
 
@@ -471,6 +471,54 @@
 		</div>
 	</div>
 
+</div>
+
+
+<!-- 레이어 팝업 (아이디 사인인) -->
+<div class="layer-popup" layer-name="Popup01">
+	<div class="dimmed"></div>
+	<div class="popup" style="width:570px;">
+		<button type="button" class="btn-close popClose">Close</button>
+		<div class="cont">
+			아이디를 입력해 주세요.
+		</div>
+		<div class="btn-bottom-area">
+			<button type="button" class="btn-text type1 popClose">취소</button>
+			<a href="../member/Web-02.01.01.html" class="btn-text">확인</a>
+		</div>
+	</div>
+</div>
+
+<!-- 레이어 팝업 (OTP번호 발급요청) -->
+<div class="layer-popup" layer-name="Popup02">
+	<div class="dimmed"></div>
+	<div class="popup" style="width:570px;">
+		<button type="button" class="btn-close popClose">Close</button>
+		<div class="cont">
+			요청하신 휴대폰정보를 확인할 수 없습니다.<br>
+			ID/PW로그인을 하신 후 개인정보관리에서 개인정보변경을 통해<br>
+			휴대폰번호를 변경해 주시기 바랍니다.
+		</div>
+		<div class="btn-bottom-area">
+			<button type="button" class="btn-text type1 popClose">취소</button>
+			<a href="../member/Web-02.01.01.html" class="btn-text">확인</a>
+		</div>
+	</div>
+</div>
+
+<!-- 레이어 팝업 (인증하기) -->
+<div class="layer-popup" layer-name="Popup03">
+	<div class="dimmed"></div>
+	<div class="popup" style="width:450px;">
+		<button type="button" class="btn-close popClose">Close</button>
+		<div class="cont">
+			인증이 실패하였습니다.<br>
+			다시 한번 OTP 번호를 입력해 주세요.
+		</div>
+		<div class="btn-bottom-area">
+			<button type="button" class="btn-text popClose">확인</button>
+		</div>
+	</div>
 </div>
 
 
