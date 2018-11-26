@@ -2577,8 +2577,8 @@ body,
 
 /* 정식회원가입 > 본인인증 (Web-02.02.02.html) */
 .login-box.type3 {
-	padding-left:250px;
-	padding-right:250px;
+	padding-left:200px;
+	padding-right:200px;
 }
 
 /* 정식회원가입 > 개인정보등록 (Web-02.02.02.3.html) */
