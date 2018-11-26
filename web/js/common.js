@@ -428,22 +428,3 @@ function scrollX(){
 function scrollO(){
 	$('.wrapper').off('scroll touchmove mousewheel');
 }
-
-
-
-
-/*
-function allMenu(){
-	var menuH = $('.all-menu-layer').outerHeight();
-	var winH = $(window).height();
-	var winTop = $(window).scrollTop();
-	var menuT = $('.all-menu-layer').offset().top;
-	//console.log(winH - (menuT - winTop));
-
-	if(menuH < winH - (menuT - winTop)){
-		
-	}else{
-		
-	}
-}
-*/
