@@ -2489,6 +2489,14 @@ body,
 	background-size:37px 45px;
 }
 
+.signin-slide .fingerprint-area .info-text {
+	margin-top:5px;
+	font-size: 10px;
+	font-weight: 600;
+	line-height: 1.2;
+}
+.signin-slide .fingerprint-area .info-text.error {color:#d93e5f;}
+
 .signin-slide .pin-area {
 	position:relative;
 	min-height:104px;
@@ -2524,7 +2532,13 @@ body,
 	font-size:10px;
 	text-align:center;
 }
-.signin-slide .pin-area .info-text.error {color:#d93e5f;}
+.signin-slide .pin-area .info-text.error {
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:-20px;
+	color:#d93e5f;
+}
 
 .signin-slide .sns-area {
 	padding-top:30px;
