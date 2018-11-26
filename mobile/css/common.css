@@ -2013,6 +2013,15 @@ body,
 	line-height:28px;
 }
 
+.menu-wrap .menu-content:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:311px;
+	bottom:0;
+	width:135px;
+	background-color:#f0f0f0;
+}
 .menu-wrap .menu-tab-wrap {border-top:10px solid #f4f4f4;}
 .menu-wrap .menu-tab-wrap .menu-tab {
 	position:relative;
@@ -2092,15 +2101,6 @@ body,
 	min-height:100%;
 	padding:25px 0 25px 10px;
 	box-sizing:border-box;
-}
-.menu-wrap .menu-list-box .left-menu:before {
-	content:'';
-	position:absolute;
-	left:0;
-	right:10px;
-	top:0;
-	bottom:0;
-	background-color:#f0f0f0;
 }
 .menu-wrap .menu-list-box .left-menu .item {
 	position:relative;
