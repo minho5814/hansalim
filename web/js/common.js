@@ -127,6 +127,7 @@ $(document).ready(function(){
 		var idx = $(this).index();
 		$(this).addClass('on').siblings('.tab-item').removeClass('on');
 		$(this).closest('.tab-wrap').find('.tab-cont').removeClass('on').eq(idx).addClass('on');
+		formArea();// 폼 라벨 넓이 자동 조절
 	});
 
 	/* ------------------------------------------------------------------------------------------------------------------
@@ -241,6 +242,8 @@ $(document).ready(function(){
 		$(this).closest('.layer-popup').removeClass('show');
 		popup();
 	});
+
+	formArea();// 폼 라벨 넓이 자동 조절
 });
 
 
@@ -256,6 +259,8 @@ $(window).load(function(){
 			$(this).parent().addClass('on').find('.layer').slideDown(200);
 		}
 	});
+
+	formArea();// 폼 라벨 넓이 자동 조절
 });
 
 $(window).scroll(function(){
@@ -427,4 +432,15 @@ function scrollX(){
 /* 페이지 스크롤 허용 */
 function scrollO(){
 	$('.wrapper').off('scroll touchmove mousewheel');
+}
+
+
+/* 폼 라벨 넓이 자동 조절 */
+function formArea(){
+	var $item = $('.form-item label');
+	var boxArray = $item.map(function(){
+		return $(this).outerWidth();
+	});
+	var moreWid = Math.max.apply(Math , boxArray);
+	$item.closest('.form-item').css('padding-left', moreWid + 20);
 }
