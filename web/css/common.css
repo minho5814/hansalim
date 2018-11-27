@@ -1478,6 +1478,27 @@ body,
 .bgColor3 .header .btn-allmenu.close {background-image:url(../images/icon/btn_close03.png);}
 .bgColor3.scroll .header .head-fix-box {background:#4b589c url(../images/bg/bg_header03.png) no-repeat 100% 50%;}
 
+/* 버튼 */
+.bgColor3 .btn-text {background-color:#4e5999;}
+.bgColor3 .btn-text:hover {background-color:#3f4366;}/* hover */
+.bgColor3 .btn-text.type1 {
+	border-color:#216871;
+	background-color:#fff;
+	color:#216871;
+}
+.bgColor3 .btn-text.type1:hover {
+	border-color:#4e5999;
+	background-color:#f7f7f7;
+	color:#4e5999;
+}/* hover */
+.bgColor3 .btn-text.disabled {
+	background-color:#e6e6e6;
+	color:#b3b3b3;
+	cursor:not-allowed;
+}
+/* 달력 */
+.bgColor3 .ui-datepicker-calendar tbody td.ui-datepicker-current-day a {background-color:#27393d;}
+
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	컨텐츠
@@ -1967,58 +1988,58 @@ body,
 .price-box-area .box .number-area .number em {font-weight:400;}
 
 .customer-call-box {
-	padding:43px 0 48px;
-	text-align:center;
+	position:relative;
+	padding:50px 0 50px 280px;
 }
 
 .btn-btm-area + .customer-call-box.type2 {margin-top:80px;}
 .customer-call-box.type2 {background-color:#fafafa;}
-.customer-call-box.type2 .phone-number {left:20px;}
 
 .customer-call-box .phone-number {
+	position:absolute;
+	left:50px;
+	top:50px;
 	display:inline-block;
+	height:45px;
 	background:url(../images/icon/icon_call.png) no-repeat 0 50%;
-	padding:2px 0 0 55px;
+	padding:0 0 0 55px;
 	color:#111;
-	font-weight:600;
-}
-.customer-call-box .phone-number .number {
 	font-size:25px;
+	font-weight:600;
 	font-weight:900;
-	line-height:1.4;
+	line-height:45px;
 }
 .customer-call-box .list {
-	margin:15px -15px 0;
+	display:inline-block;
+	position:relative;
+	padding:4px 0 3px 37px;
 	font-size:0;
+}
+.customer-call-box .list:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:10px;
+	bottom:10px;
+	width:1px;
+	background-color:#b2b2b2;
 }
 .customer-call-box .list li {
 	display:inline-block;
 	position:relative;
-	padding-left:58px;
+	margin-left:35px;
+	padding-left:27px;
 	background-image:url(../images/icon/icon_time.png);
 	background-repeat:no-repeat;
-	background-position:31px 50%;
+	background-position:0 2px;
 	color:#434343;
 	font-size:15px;
+	text-align:left;
+	line-height:1.3;
 }
-.customer-call-box .list li:before {
-	content:'';
-	position:absolute;
-	left:15px;
-	top:50%;
-	width:1px;
-	height:10px;
-	margin-top:-5px;
-	background-color:#b2b2b2;
-}
-.customer-call-box .list li:first-child {
-	padding-left:27px;
-	background-position:0 50%;
-}
-.customer-call-box .list li:first-child:before {display:none;}
+.customer-call-box .list li:first-child {margin-left:0;}
 .customer-call-box .list li .f-color {
-	display:inline-block;
-	margin-left:9px;
+	display:block;
 	color:#111;
 }
 
