@@ -1297,7 +1297,7 @@ body,
 }
 .all-menu-layer {
 	display:none;
-	position:fixed;
+	position:absolute;
 	left:0;
 	right:0;
 	top:110px;
@@ -1306,7 +1306,7 @@ body,
 	padding:40px 0;
 	background-color:#fff;
 }
-.scroll .all-menu-layer {top:40px;}/* scroll */
+.scroll .all-menu-layer {position:fixed;top:40px;}/* scroll */
 .all-menu-layer .inner-box {
 	overflow:hidden;
 	position:relative;
