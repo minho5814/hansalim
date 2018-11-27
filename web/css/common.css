@@ -142,7 +142,7 @@ select {
 	padding:0 25px;
 	box-sizing:border-box;
 	border-radius:4px;
-	background-color:#503799;
+	background-color:#e60039;
 	color:#fff;
 	font-size:18px;
 	text-align:center;
@@ -153,15 +153,19 @@ select {
 	-ms-transition:background-color .3s;
 	transition:background-color .3s;
 }
-.btn-text:hover {background-color:#3d2e68;}/* hover */
+.btn-text:hover {background-color:#a1183a;}/* hover */
 
 .btn-text.type1 {
-	border:1px solid #503799;
+	border:1px solid #e60039;
 	background-color:#fff;
-	color:#503799;
+	color:#e60039;
 	line-height:48px;
 }
-.btn-text.type1:hover {background-color:#f7f7f7;}/* hover */
+.btn-text.type1:hover {
+	border-color:#a1183a;
+	background-color:#f7f7f7;
+	color:#a1183a;
+}/* hover */
 
 html .btn-text.type2 {
 	border-radius:2px;
@@ -226,7 +230,7 @@ html .btn-text.type2:hover {background-color:#f7f7f7;}/* hover */
 	-ms-transition:background-color .3s;
 	transition:background-color .3s;
 }
-.btn-text2.on {background-color:#7451c0;}/* on */
+.btn-text2.on {background-color:#e60039;}/* on */
 
 /* 텍스트 + 아이콘 */
 .btn-icon-text {
@@ -870,6 +874,7 @@ body,
 
 .container {
 	padding:255px 0 110px;
+	box-sizing:border-box;
 }
 
 /* 상단에 비주얼 영역이 있을경우 */
@@ -2510,7 +2515,7 @@ body,
 	width:100px;
 	height:90px;
 	box-sizing:border-box;
-	background-color:#7451c0;
+	background-color:#e60039;
 	color:#fff;
 	font-size:17px;
 	font-weight:600;
@@ -2557,14 +2562,14 @@ body,
 	margin:14px 7px 0;
 	padding:0 14px;
 	border-radius:25px;
-	border:1px solid #7451c0;
-	color:#7451c0;
+	border:1px solid #e60039;
+	color:#e60039;
 	font-size:15px;
 	line-height:28px;
 }
 .login-box .hashtags .tag:hover {
 	color:#fff;
-	background-color:#7451c0;
+	background-color:#e60039;
 	transition:all .3s;
 }/* hover */
 
@@ -2729,7 +2734,7 @@ body,
 	line-height:40px;
 }
 .form-area2 .form-item input:focus + .btn,
-.form-area2 .form-item input:focus + .time + .btn {background-color:#7451c0;transition:all .3s;}
+.form-area2 .form-item input:focus + .time + .btn {background-color:#e60039;transition:all .3s;}
 .form-area2 .form-item input:focus + .time {color:#e43762;transition:all .3s;}
 
 .board .form-area2 {max-width:444px;}

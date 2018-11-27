@@ -270,6 +270,7 @@ $(document).ready(function(){
 	});
 
 	formArea();// 폼 라벨 넓이 자동 조절
+	contHei();// 컨텐츠 최소 높이
 });
 
 
@@ -287,6 +288,7 @@ $(window).load(function(){
 	});
 
 	formArea();// 폼 라벨 넓이 자동 조절
+	contHei();// 컨텐츠 최소 높이
 });
 
 $(window).scroll(function(){
@@ -308,8 +310,17 @@ $(window).scroll(function(){
 /* 리사이징 */
 $(window).resize(function(){
 	popup();// 레이어팝업
+
+	contHei();// 컨텐츠 최소 높이
 });
 
+
+/* 컨텐츠 최소 높이 */
+function contHei(){
+	var winH = $(window).height();
+	var footH = $('.footer').outerHeight();
+	$('.container').css({'min-height':winH - footH});
+}
 
 
 /* ======================================================================
