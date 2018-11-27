@@ -2,7 +2,9 @@
 
 .container {padding:110px 0 0;}
 
-.header {position:absolute;}
+.header {
+	position:absolute;
+}
 .header .head-inner .h-logo span {
 	display:block;
 	height: 62px;

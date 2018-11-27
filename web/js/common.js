@@ -7,6 +7,9 @@ $(document).ready(function(){
 		$(this).attr('data', color);
 	});
 
+	// 스크롤시다운시 사용할 전체메뉴 버튼 생성
+	$('.header .breadcrumbs').append('<button type="button" class="btn-allmenu"><span class="icon">All Menu</span></button>');
+
 	// 메뉴 레이어 열기
 	$('.gnb-area .gnb-list .item').mouseenter(function(){
 		scrollX();
@@ -267,10 +270,12 @@ $(window).scroll(function(){
 	var winTop = $(window).scrollTop();
 	var winLft = $(window).scrollLeft();
 
-	/* 가로 스크롤시 해더도 같이 이동 */
-	$('.header').css({'left':-winLft});
+	/* 가로 스크롤시 전체메뉴도 같이 이동 */
+	$('.all-menu-layer').css({'left':-winLft});
 
-	if(winTop > 10){
+
+	var headH = $('.head-inner').outerHeight();
+	if(winTop > headH){
 		$('html').addClass('scroll');
 	}else{
 		$('html').removeClass('scroll');

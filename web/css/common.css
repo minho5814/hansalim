@@ -883,7 +883,7 @@ body,
 	해더
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .header {
-	position:fixed;
+	position:absolute;
 	left:0;
 	top:0;
 	width:100%;
@@ -915,7 +915,7 @@ body,
 }
 .header .head-inner .utill {
 	height:44px;
-	padding-top:12px;
+	padding:12px 20px 0 0;
 	box-sizing:border-box;
 	font-size:0;
 	text-align:right;
@@ -1087,6 +1087,7 @@ body,
 	height:40px;
 }
 .header .breadcrumbs {
+	position:relative;
 	width:100%;
 	max-width:1340px;
 	margin:0 auto;
@@ -1183,6 +1184,14 @@ body,
 	color:#7451c0;
 	font-weight:600;
 }/* hover */
+
+.header .breadcrumbs .btn-allmenu {
+	display:none;
+	top:-10px;
+}
+.scroll .header .breadcrumbs .btn-allmenu {
+	display:block;
+}
 
 .header .page-title-area {
 	background-color:rgba(255,255,255,.98);
@@ -1293,6 +1302,7 @@ body,
 	right:0;
 	top:110px;
 	z-index:55;
+	min-width:1280px;
 	padding:40px 0;
 	background-color:#fff;
 }
@@ -1378,13 +1388,16 @@ body,
 .container,
 .header .btn-allmenu,
 .gnb-area .gnb-list .gnb-item .gnb-depth {transition:top .2s;}
-.header .head-fix-box,
 .header .page-title-area,
 .header .page-title-area .page-title {transition:all .5s;}
+.header .head-fix-box {transition:background .5s;}
 
-.scroll .container {padding-top:220px;}
 .scroll .header {top:-110px;}
-.scroll .header .head-fix-box {background:#653c9e url(../images/bg/bg_header01.png) no-repeat 100% 50%;}
+.scroll .header .head-fix-box {
+	position:fixed;
+	top:0;
+	background:#653c9e url(../images/bg/bg_header01.png) no-repeat 100% 50%;
+}
 .scroll .header .page-title-area {box-shadow:2px 3px 8px rgba(0,0,0,.1);}
 .scroll .header .page-title-area .page-title {
 	height:85px;
@@ -1399,7 +1412,6 @@ body,
 	background:url(../images/icon/icon_arr_right02.png) no-repeat 100% 50%;
 	color:#fff !important;
 }
-.scroll .header .btn-allmenu {top:99px;}
 .scroll .gnb-area .gnb-list .gnb-item .gnb-depth {top:40px;}
 
 .scroll .header .head-inner .utill .link.login {
