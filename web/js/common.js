@@ -118,6 +118,28 @@ $(document).ready(function(){
 	});
 
 	/* ------------------------------------------------------------------------------------------------------------------
+		푸터
+	------------------------------------------------------------------------------------------------------------------ */
+	$('.leng-select .btn').click(function(){
+		if($(this).closest('.leng-select').hasClass('on')){
+			$(this).removeAttr('style');
+			$(this).closest('.leng-select').removeClass('on');
+		}else{
+			$('.leng-select').removeClass('on').find('.btn').removeAttr('style');
+			var wid = $(this).closest('.leng-select').find('.layer').outerWidth();
+			$(this).css({'width':wid});
+			$(this).closest('.leng-select').addClass('on');
+		}
+	});
+
+	$(document).mouseup(function(e){
+		var select = $('.leng-select');
+		if (!select.is(e.target) && select.has(e.target).length === 0){
+			$('.leng-select').removeClass('on').find('.btn').removeAttr('style');
+		}
+	});
+
+	/* ------------------------------------------------------------------------------------------------------------------
 		탭
 	------------------------------------------------------------------------------------------------------------------ */
 	$('.tab-list1').each(function(){
@@ -138,7 +160,8 @@ $(document).ready(function(){
 	------------------------------------------------------------------------------------------------------------------ */
 	/* 하단에 고정 버튼 영역이 있을경우 */
 	$('.fix-btm-area').each(function(){
-		$('.container').css({'padding-bottom':'220px'})
+		var fHei = $(this).outerHeight();
+		$('.wrapper').css({'padding-bottom':fHei})
 	});
 
 	/* 리스트 소팅 */
