@@ -319,7 +319,13 @@ $(window).resize(function(){
 function contHei(){
 	var winH = $(window).height();
 	var footH = $('.footer').outerHeight();
+
 	$('.container').css({'min-height':winH - footH});
+
+	$('.fix-btm-area').each(function(){
+		var hei = $(this).outerHeight();
+		$('.container').css({'min-height':winH - footH - hei});
+	});
 }
 
 
