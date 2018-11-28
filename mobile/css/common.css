@@ -4025,9 +4025,14 @@ body,
 	width:100%;
 	vertical-align:top;
 }
-.customer-view .btn-point {
-	margin-top:30px;
-	padding:0 20px;
+.accordion-list4 .accordion-item .btn-point {
+	padding:30px 20px 40px;
+	text-align:center;
+}
+.accordion-list4 .accordion-item .btn-point .btn-text {
+	width:160px;
+	height:45px;
+	line-height:45px;
 }
 
 /* 고객상담 (MA-08.03.01.html) */
