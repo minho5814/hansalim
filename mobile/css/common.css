@@ -1190,6 +1190,7 @@ input[type=radio]:checked + label {
 	background-position:-66px 0;
 	background-size:250px;
 }
+.accordion-list4 .accordion-item.on {border-color:#333;}
 .accordion-list4 .accordion-item.on .acc-title:before,
 .accordion-list4 .accordion-item.on .acc-title::before {background-position:-81px 0;}
 .accordion-list4 .accordion-item a.acc-title:before,
