@@ -171,7 +171,6 @@
 
 /* 추천 상품 영역 */
 .recommend-box {
-	display:none;
 	position:relative;
 	margin-bottom:100px;
 	background-color:#798082;
@@ -193,11 +192,12 @@
 	height:100%;
 	background:url(../images/main/bg_recommend.jpg) no-repeat 0 0;
 	background-size:cover;
-	opacity:0;
 }
 .recommend-box .inner-box {
 	position:relative;
-	width:1180px;
+	width:100%;
+	max-width:1180px;
+	min-width:1000px;
 	margin:0 auto;
 	padding:88px 0 100px;
 }
@@ -245,7 +245,7 @@
 .recommend-box .product-list {
 	overflow:hidden;
 	position:absolute;
-	left:290px;
+	left:25%;
 	right:-10px;
 	top:90px;
 	bottom:100px;
@@ -337,7 +337,7 @@
 /* hover */
 .recommend-box .product-list .product-item .inner {transition:all .2s;}
 .recommend-box .product-list .product-item .inner:hover {
-	background-color:#503799;
+	background-color:#6a258a;
 	color:#fff;
 	margin-top:-10px;
 	transition:margin .5s;

@@ -678,22 +678,13 @@ $(document).ready(function(){
 
 	/* 추천상품보기 */
 	$('.btn-recommend').click(function(){
-		if($(this).hasClass('on')){
-			$(this).removeClass('on');
-			$('.recommend-box').slideUp(100, function(){
-				$(this).removeClass('on');
-				$('.btn-recommend').html('추천상품보기');
+		$('.recommend-box').removeClass('on');
+		var btnTop = $(this).offset().top;
+		$('html, body').animate({scrollTop:btnTop - 20}, 200, function(){
+			$('.recommend-box').delay(100).slideDown(200, function(){
+				$(this).addClass('on');
 			});
-		}else{
-			var btnTop = $(this).offset().top;
-			$('html, body').animate({scrollTop:btnTop - 20}, 200, function(){
-				$('.btn-recommend').addClass('on');
-				$('.recommend-box').delay(100).slideDown(200, function(){
-					$(this).addClass('on');
-					$('.btn-recommend').html('추천상품닫기');
-				});
-			});
-		}
+		});
 	});
 });
 
@@ -701,12 +692,26 @@ $(window).scroll(function(){
 	$('.main').removeClass('scroll');
 	$('.btn-allmenu').removeClass('close');
 	$('.menu-dimmed, .all-menu-layer').hide();
+
+	var winTop = $(window).scrollTop();
+	var loanTop = $('.loan-box').offset().top;
+	if(loanTop < winTop){
+		$('.recommend-box').addClass('on');
+	}else{
+		$('.recommend-box').removeClass('on');
+	}
 });
 
 /* 상단 슬라이더 모션 */
 function motionTxt() {
 	$('.top-visual-slider .slide-item .text-area .title').animate({'margin-left':'0','opacity':'1'},500);
 	$('.top-visual-slider .slide-item .text-area .text').delay(200).animate({'margin-left':'0','opacity':'1'},300);
+}
+
+
+/* 추천상품 보기 애니메이션 */
+function proAnimate(){
+	$('.recommend-box').addClass('on');
 }
 </script>
 </body>

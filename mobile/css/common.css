@@ -2355,40 +2355,40 @@ body,
 }
 .signin-slide .signin-list .signin-item.item1 .text:after {
 	top:7px;
-	width:28px;
-	height:29px;
+	width:29px;
+	height:27px;
 	background-position:-51px -203px;
 }
 .signin-slide .signin-list .signin-item.item2 .text:after {
-	top:4px;
-	width:24px;
-	height:32px;
-	background-position:-80px -203px;
+	top:9px;
+	width:20px;
+	height:25px;
+	background-position:-81px -203px;
 }
 .signin-slide .signin-list .signin-item.item3 .text:after {
 	top:6px;
 	width:29px;
-	height:30px;
-	background-position:-105px -203px;
+	height:28px;
+	background-position:-102px -203px;
 }
 .signin-slide .signin-list .signin-item.item4 .text:after {
-	top:7px;
-	width:29px;
+	top:6px;
+	width:23px;
 	height:29px;
-	background-position:-135px -203px;
+	background-position:-132px -203px;
 }
 .signin-slide .signin-list .signin-item.item5 .text:after {
-	top:4px;
-	width:34px;
-	height:34px;
-	background-position:-165px -203px;
+	top:6px;
+	width:35px;
+	height:28px;
+	background-position:-156px -203px;
 }
 /* on */
-.signin-slide .signin-list .signin-item.item1.on .text:after {background-position:-51px -238px;}
-.signin-slide .signin-list .signin-item.item2.on .text:after {background-position:-80px -238px;}
-.signin-slide .signin-list .signin-item.item3.on .text:after {background-position:-105px -238px;}
-.signin-slide .signin-list .signin-item.item4.on .text:after {background-position:-135px -238px;}
-.signin-slide .signin-list .signin-item.item5.on .text:after {background-position:-165px -238px;}
+.signin-slide .signin-list .signin-item.item1.on .text:after {background-position:-51px -203px;}
+.signin-slide .signin-list .signin-item.item2.on .text:after {background-position:-81px -203px;}
+.signin-slide .signin-list .signin-item.item3.on .text:after {background-position:-102px -203px;}
+.signin-slide .signin-list .signin-item.item4.on .text:after {background-position:-132px -203px;}
+.signin-slide .signin-list .signin-item.item5.on .text:after {background-position:-156px -203px;}
 
 .signin-slide .swiper-pagination {
 	z-index:10;
