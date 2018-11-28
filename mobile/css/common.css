@@ -4027,6 +4027,10 @@ body,
 	width:100%;
 	vertical-align:top;
 }
+.customer-view .btn-point {
+	margin-top:60px;
+	padding:0 20px;
+}
 
 /* 고객상담 (MA-08.03.01.html) */
 .advice-view {margin-top:10px;}
