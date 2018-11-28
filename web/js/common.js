@@ -43,6 +43,21 @@ $(document).ready(function(){
 	/*
 		전체메뉴
 	*/
+
+	// 스크롤 디자인
+	$('.all-menu-layer .inner-box').each(function(){
+		var allH = $(this).closest('.all-menu-layer').outerHeight();
+		$(this).closest('.all-menu-layer').attr('data', allH).css({'max-height':allH});
+
+		$(this).wrap('<div class="all-menu-box"></div>');
+		$(this).enscroll({
+			verticalHandleClass: 'handle',
+			minScrollbarLength: 28
+		});
+
+		$(this).next('div').addClass('handle-box');
+	});
+
 	$('.btn-allmenu').click(function(){
 		if($(this).hasClass('close')){
 			scrollO();
@@ -271,6 +286,7 @@ $(document).ready(function(){
 
 	formArea();// 폼 라벨 넓이 자동 조절
 	contHei();// 컨텐츠 최소 높이
+	allMenu();// 전체메뉴 리사이징시 스크롤 생성
 });
 
 
@@ -310,10 +326,17 @@ $(window).scroll(function(){
 /* 리사이징 */
 $(window).resize(function(){
 	popup();// 레이어팝업
-
 	contHei();// 컨텐츠 최소 높이
+	allMenu();// 전체메뉴 리사이징시 스크롤 생성
 });
 
+/* 전체메뉴 리사이징시 스크롤 생성 */
+function allMenu(){
+	var winH = $(window).height();
+	var headH = $('.header').outerHeight();
+
+	$('.all-menu-layer').css({'height':winH - headH});
+}
 
 /* 컨텐츠 최소 높이 */
 function contHei(){

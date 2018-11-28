@@ -1320,14 +1320,23 @@ body,
 	/*min-width:1280px;*/
 	min-width:1005px;
 	padding:40px 0;
+	box-sizing:border-box;
 	background-color:#fff;
 }
 .scroll .all-menu-layer {position:fixed;top:40px;}/* scroll */
-.all-menu-layer .inner-box {
-	overflow:hidden;
+.all-menu-layer .all-menu-box {
 	position:relative;
 	width:100%;
 	max-width:1280px;
+	height:100%;
+	margin:0 auto;
+}
+.all-menu-layer .inner-box {
+	overflow:hidden;
+	position:relative;
+	width:100% !important;
+	max-width:1280px;
+	height:100%;
 	margin:0 auto;
 	box-sizing:border-box;
 	border-left:1px solid #e5e5e5;
@@ -1365,10 +1374,11 @@ body,
 .all-menu-layer .menu-box .list-area .title {
 	display:block;
 	position:relative;
-	padding:10px 10px 10px 20px;
+	padding:13px 10px 13px 20px;
 	color:#111;
 	font-size:16px;
 	font-weight:600;
+	line-height:1.2;
 }
 .all-menu-layer .menu-box .list-area a.title .txt {
 	display:inline-block;
@@ -1392,6 +1402,25 @@ body,
 	padding:3px 20px;
 	color:#777;
 	line-height:1.2;
+}
+
+.all-menu-layer .handle-box {
+	left:inherit !important;
+	right:0;
+	opacity:0;
+}
+.all-menu-layer .all-menu-box:hover .handle-box {opacity:1;}
+.all-menu-layer .enscroll-track {
+	width:8px;
+	background-color:#f1f1f1;
+}
+.all-menu-layer .enscroll-track .handle {
+	display:block;
+	width:8px;
+	background-color:#c1c1c1;
+}
+.all-menu-layer .enscroll-track .handle div {
+	display:none;
 }
 
 .sub-text-area {
