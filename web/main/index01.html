@@ -696,8 +696,6 @@ $(window).scroll(function(){
 	var loanTop = $('.loan-box').offset().top;
 	if(loanTop < winTop){
 		$('.recommend-box').addClass('on');
-	}else{
-		$('.recommend-box').removeClass('on');
 	}
 });
 
@@ -705,12 +703,6 @@ $(window).scroll(function(){
 function motionTxt() {
 	$('.top-visual-slider .slide-item .text-area .title').animate({'margin-left':'0','opacity':'1'},500);
 	$('.top-visual-slider .slide-item .text-area .text').delay(200).animate({'margin-left':'0','opacity':'1'},300);
-}
-
-
-/* 추천상품 보기 애니메이션 */
-function proAnimate(){
-	$('.recommend-box').addClass('on');
 }
 </script>
 </body>
