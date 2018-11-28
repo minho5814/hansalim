@@ -199,10 +199,11 @@
 .recommend-box .inner-box {
 	position:relative;
 	width:100%;
-	max-width:1180px;
+	max-width:1200px;
 	min-width:1000px;
 	margin:0 auto;
-	padding:88px 0 100px;
+	padding:88px 10px 100px;
+	box-sizing:border-box;
 }
 .recommend-box .text-area {
 	width:240px;
@@ -249,7 +250,7 @@
 	overflow:hidden;
 	position:absolute;
 	left:25%;
-	right:-10px;
+	right:0;
 	top:90px;
 	bottom:100px;
 	padding-top:10px;
