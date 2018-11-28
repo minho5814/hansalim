@@ -3546,11 +3546,11 @@ body,
 .loan-list-wrap {margin-top:32px;}
 .loan-list-wrap .info-box {
 	overflow:hidden;
+	position:relative;
 	background-color:#f9f7ff;
 }
 .loan-list-wrap .info-box .box-item {
 	float:left;
-	position:relative;
 	width:50%;
 	padding:25px 0;
 	box-sizing:border-box;
@@ -3559,13 +3559,10 @@ body,
 .loan-list-wrap .info-box .box-item:before {
 	content:'';
 	position:absolute;
-	left:0;
-	top:50%;
-	-webkit-transform:translateY(-50%);
-	-ms-transform:translateY(-50%);
-	transform:translateY(-50%);
+	left:50%;
+	top:35px;
+	bottom:35px;
 	width:1px;
-	height:36px;
 	background-color:#ebe8f6;
 }
 .loan-list-wrap .info-box .box-item:first-child:before {display:none;}
@@ -3629,6 +3626,7 @@ body,
 	color:#737373;
 	font-size:14px;
 	font-weight:900;
+	text-align:right;
 }
 .loan-list-wrap .call-info .call-list .item:first-child {margin-top:0;}
 .loan-list-wrap .call-info .call-list .item .title {
