@@ -708,6 +708,14 @@ table .a-right {
 .board-list1 table td.link-type .link-text:hover {text-decoration:underline;}/* hover */
 
 /* 입력형식 */
+table .possible-text {
+	margin-left:8px;
+	color:#0589e5;
+}
+table .fail-text {
+	margin-left:8px;
+	color:#e21c24;
+}
 .board-write1 .unit-text {margin-left:15px;}
 .board-write1 + .board-write1 {margin-top:40px;}
 .board-write1 .board {
