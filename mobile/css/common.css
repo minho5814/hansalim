@@ -2384,11 +2384,11 @@ body,
 	background-position:-156px -203px;
 }
 /* on */
-.signin-slide .signin-list .signin-item.item1.on .text:after {background-position:-51px -203px;}
-.signin-slide .signin-list .signin-item.item2.on .text:after {background-position:-81px -203px;}
-.signin-slide .signin-list .signin-item.item3.on .text:after {background-position:-102px -203px;}
-.signin-slide .signin-list .signin-item.item4.on .text:after {background-position:-132px -203px;}
-.signin-slide .signin-list .signin-item.item5.on .text:after {background-position:-156px -203px;}
+.signin-slide .signin-list .signin-item.item1.on .text:after {background-position:-51px -233px;}
+.signin-slide .signin-list .signin-item.item2.on .text:after {background-position:-81px -233px;}
+.signin-slide .signin-list .signin-item.item3.on .text:after {background-position:-102px -233px;}
+.signin-slide .signin-list .signin-item.item4.on .text:after {background-position:-132px -233px;}
+.signin-slide .signin-list .signin-item.item5.on .text:after {background-position:-156px -233px;}
 
 .signin-slide .swiper-pagination {
 	z-index:10;
