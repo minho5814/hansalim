@@ -176,6 +176,13 @@ $(document).ready(function(){
 		$(this).css({'left':left});
 	});
 });
+
+function toolLft(){
+	$('.btn-tool').each(function(){
+		var left = $(this).closest('.setting-item').find('.s-title .text').outerWidth();
+		$(this).css({'left':left + 10});
+	});
+}
 </script>
 
 </body>

@@ -1047,7 +1047,7 @@ body,
 .gnb-area .gnb-list .gnb-item .gnb-depth .depth {
 	float:left;
 	width:16.66666666666667%;
-	padding:0 20px 2px;
+	padding:0 15px 2px 20px;
 	box-sizing:border-box;
 }
 .gnb-area .gnb-list .gnb-item .gnb-depth .depth:first-child {border-right:1px solid #e5e5e5;}
@@ -1071,17 +1071,21 @@ body,
 
 .gnb-area .gnb-list .gnb-item .gnb-depth .depth .title {
 	display:block;
-	padding:6px 0;
+	position:relative;
+	padding:6px 18px 6px 0;
 	color:#111;
 	font-weight:600;
 }
 .gnb-area .gnb-list .gnb-item .gnb-depth .depth a.title:after {
 	content:'';
-	display:inline-block;
-	width:20px;
-	height:22px;
+	position:absolute;
+	right:0;
+	top:50%;
+	transform:translateY(-50%);
+	width:8px;
+	height:14px;
 	margin-left:4px;
-	background:url(../images/icon/icon_arr_right03.png) no-repeat 50% 50%;
+	background:url(../images/icon/icon_arr_right03.png) no-repeat 0 0;
 	vertical-align:top;
 }
 .gnb-area .gnb-list .gnb-item .gnb-depth .depth .list {margin-top:5px;}
