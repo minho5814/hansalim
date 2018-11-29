@@ -1764,6 +1764,7 @@ body,
 	white-space:nowrap;
 }
 .s-title-area.fix .s-title:before {display:none;}
+.s-title-area.fix .s-title br {display:none;}
 
 /* 상세 페이지 */
 .detail-page .header {
