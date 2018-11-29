@@ -1449,7 +1449,10 @@ body,
 .scroll .header .head-fix-box {
 	position:fixed;
 	top:0;
-	background:#653c9e url(../images/bg/bg_header01.png) no-repeat 100% 50%;
+	background:linear-gradient(to right, #a2027d , #dd0042) no-repeat 0 0;
+}
+.bgColor1.scroll .header .breadcrumbs {
+	background:url(../images/bg/bg_header01.png) no-repeat 100% 50%;
 }
 .scroll .header .page-title-area {box-shadow:2px 3px 8px rgba(0,0,0,.1);}
 .scroll .header .page-title-area .page-title {
