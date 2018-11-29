@@ -3731,15 +3731,9 @@ body,
 	기타
 ============================================================================================ */
 /* 서비스접속에러 (Web-10.05.1.html) */
-.error-page {
-	padding:235px 0 125px;
-}
-.error-page .error-content {
-	text-align:center;
-}
-.error-page .error-content .img-area {
-	font-size:0;
-}
+.error-page {padding:235px 0 125px;}
+.error-page .error-content {text-align:center;}
+.error-page .error-content .img-area {font-size:0;}
 .error-page .error-content .text1 {
 	margin-top:40px;
 	color:#111;
@@ -3751,10 +3745,6 @@ body,
 	color:#111;
 	font-size:18px;
 }
-.error-page .error-content {}
-.error-page {}
-.error-page {}
-.error-page {}
 
 /* 페이지링크에러 (Web-10.05.2.html) */
 
@@ -3787,7 +3777,7 @@ body,
 	top:50%;
 	box-sizing:border-box;
 	background-color:#fff;
-	padding:40px;
+	padding:40px 80px;
 }
 .h-full.layer-popup .popup {
 	margin-top:0 !important;
@@ -3812,6 +3802,8 @@ body,
 .layer-popup .popup .btn-bottom-area {
 	margin-top:40px;
 	text-align:center;
+	margin-left:-80px;
+	margin-right:-80px;
 }
 .layer-popup .popup .btn-bottom-area .btn-text {
 	min-width:130px;
@@ -3837,6 +3829,8 @@ body,
 .layer-popup .popup .scoll-cont {
 	overflow-y:auto;
 	max-height:350px;
+	margin:0 -40px;
+	border:1px solid #eee;
 }
 
 /* 대출접수 (loan/MA-05.03.01.html) */
