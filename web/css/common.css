@@ -1331,6 +1331,7 @@ body,
 	height:100%;
 	margin:0 auto;
 }
+.all-menu-layer a:hover {text-decoration:underline !important;}/* hover */
 .all-menu-layer .inner-box {
 	overflow:hidden;
 	position:relative;
@@ -1358,11 +1359,11 @@ body,
 	width:1px;
 	background-color:#e5e5e5;
 }
-.all-menu-layer .inner-box:before {left:16.66666666666667%;}
-.all-menu-layer .inner-box:after {left:33.33333333333333%;}
-.all-menu-layer .menu-box:first-child:before {left:50%;}
-.all-menu-layer .menu-box:first-child:after {left:66.66666666666667%;}
-.all-menu-layer .menu-box:last-child:before {left:83.33333333333333%;}
+.all-menu-layer .inner-box:before {left:16.5%;}
+.all-menu-layer .inner-box:after {left:33.2%;}
+.all-menu-layer .menu-box:first-child:before {left:49.7%;}
+.all-menu-layer .menu-box:first-child:after {left:66.2%;}
+.all-menu-layer .menu-box:last-child:before {left:82.8%;}
 
 .all-menu-layer .menu-box .b-title {
 	padding:2px 20px;
@@ -1382,14 +1383,13 @@ body,
 }
 .all-menu-layer .menu-box .list-area a.title .txt {
 	display:inline-block;
-	position:relative;
 	padding-right:18px;
 }
 .all-menu-layer .menu-box .list-area a.title .txt:after {
 	content:'';
 	display:inline-block;
 	position:absolute;
-	right:0;
+	right:20px;
 	top:50%;
 	width:8px;
 	height:14px;
