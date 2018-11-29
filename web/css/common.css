@@ -865,10 +865,6 @@ table .fail-text {
 	background-color:#fafafa;
 }
 
-/* ============================================================================================
-	기타
-============================================================================================ */
-
 
 /* ============================================================================================
 	레이아웃
@@ -1441,7 +1437,6 @@ body,
 /*
 	스크롤시 해더 변환
 */
-.header {transition:top .2s, background-color .5s;}
 .container,
 .header .btn-allmenu,
 .gnb-area .gnb-list .gnb-item .gnb-depth {transition:top .2s;}
@@ -1449,7 +1444,6 @@ body,
 .header .page-title-area .page-title {transition:all .5s;}
 .header .head-fix-box {transition:background .5s;}
 
-.scroll .header {top:-110px;}
 .scroll .header .head-fix-box {
 	position:fixed;
 	top:0;
@@ -3731,6 +3725,38 @@ body,
 	display:none;
 	border-top:1px solid #e0e0e0;
 }
+
+
+/* ============================================================================================
+	기타
+============================================================================================ */
+/* 서비스접속에러 (Web-10.05.1.html) */
+.error-page {
+	padding:235px 0 125px;
+}
+.error-page .error-content {
+	text-align:center;
+}
+.error-page .error-content .img-area {
+	font-size:0;
+}
+.error-page .error-content .text1 {
+	margin-top:40px;
+	color:#111;
+	font-size:30px;
+	font-weight:600;
+}
+.error-page .error-content .text2 {
+	margin-top:15px;
+	color:#111;
+	font-size:18px;
+}
+.error-page .error-content {}
+.error-page {}
+.error-page {}
+.error-page {}
+
+/* 페이지링크에러 (Web-10.05.2.html) */
 
 
 /* ============================================================================================
