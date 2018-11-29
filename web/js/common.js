@@ -141,6 +141,13 @@ $(document).ready(function(){
 	/* ------------------------------------------------------------------------------------------------------------------
 		푸터
 	------------------------------------------------------------------------------------------------------------------ */
+	/* 공지사항 */
+	$('.notice-list').each(function(){
+		var tit = $(this).find('.title').outerWidth();
+		$(this).css({'padding-left':tit + 8});
+	});
+
+	/* 패밀리사이트, 언어 */
 	$('.leng-select .btn').click(function(){
 		if($(this).closest('.leng-select').hasClass('on')){
 			$(this).removeAttr('style');
