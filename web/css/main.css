@@ -225,12 +225,11 @@
 .recommend-box .text-area .btn-list .btn:first-child {margin-top:0;}
 .recommend-box .text-area .btn-list .btn span {
 	display:inline-block;
-	padding-right:26px;
+	padding:16px 26px 16px 0;
 	background:url(../images/icon/btn_link05.png) no-repeat 100% 50%;
 	color:#fff;
 	font-size:18px;
 	font-weight:900;
-	line-height:60px;
 }
 .recommend-box .text-area .btn-list .btn:hover span {
 	padding-right:34px;
@@ -285,6 +284,7 @@
 	opacity:0;
 }
 .recommend-box .product-list .product-item .title {
+	padding:0 20px;
 	font-size:20px;
 	font-weight:900;
 }
@@ -293,6 +293,7 @@
 	left:0;
 	right:0;
 	bottom:100px;
+	padding:0 20px;
 	font-size:16px;
 }
 .recommend-box .product-list .product-item .btn {
@@ -300,15 +301,19 @@
 	position:absolute;
 	left:50%;
 	bottom:45px;
-	width:120px;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+	min-width:120px;
 	height:35px;
-	margin-left:-60px;
+	padding:0 19px;
 	box-sizing:border-box;
 	border-radius:4px;
 	border:1px solid #b3b3b3;
 	color:#4c4c4c;
 	text-align:center;
 	line-height:33px;
+	white-space:nowrap;
 }
 
 /* on */
