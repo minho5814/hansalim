@@ -150,7 +150,13 @@
 .loan-box .searth-box .board th {padding-left:40px;}
 .loan-box .searth-box .board th:first-child {padding-left:0;}
 .loan-box .searth-box .board td {padding-right:0;}
-.loan-box .searth-box .board .unit-area .unit-text {right:68px;}
+.loan-box .searth-box .board .unit-area .unit-text {
+	position:inherit;
+	top:inherit;
+	right:inherit;
+	margin-top:0;
+	margin-left:20px;
+}
 .loan-box .searth-box .result-area {
 	margin:12px 0 0;
 	padding-bottom:27px;
