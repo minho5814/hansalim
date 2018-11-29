@@ -1068,10 +1068,11 @@ body,
 .gnb-area .gnb-list .gnb-item .gnb-depth .depth .title {
 	display:block;
 	position:relative;
-	padding:6px 18px 6px 0;
+	padding:6px 0 6px 0;
 	color:#111;
 	font-weight:600;
 }
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth a.title {padding-right:18px;}
 .gnb-area .gnb-list .gnb-item .gnb-depth .depth a.title:after {
 	content:'';
 	position:absolute;
@@ -2201,10 +2202,6 @@ body,
 	height:40px;
 	padding:15px 0;
 	text-align:left;
-}
-.searth-box .board th label {
-	display:inline-block;
-	padding:9px 0;
 }
 .searth-box .board td input[type=text],
 .searth-box .board td input[type=number],

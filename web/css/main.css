@@ -238,10 +238,6 @@
 	font-size:18px;
 	font-weight:900;
 }
-.recommend-box .text-area .btn-list .btn:hover span {
-	padding-right:34px;
-	transition:all .5s;
-}/* hover */
 .recommend-box .text-area .btn-list .btn span:before {
 	content:'';
 	position:absolute;
