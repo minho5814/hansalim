@@ -176,7 +176,9 @@
 $(window).scroll(function(){
 	var winTop = $(window).scrollTop();
 	if(winTop == 0){
-		$('.loan-wrap .fix-tab').removeClass('fix');
+		$('.header, .loan-wrap .fix-tab').removeClass('fix');
+	}else{
+		$('.header, .loan-wrap .fix-tab').addClass('fix');
 	}
 });
 </script>
