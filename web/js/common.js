@@ -7,7 +7,7 @@ $(document).ready(function(){
 			$(this).removeClass('en').text('ENGLISH');
 			$('.wrapper').removeClass('leng-english');
 		}else{
-			$(this).addClass('en').text('VIETNAM');
+			$(this).addClass('en').text('Tiếng Việt');
 			$('.wrapper').addClass('leng-english');
 		}
 	});
