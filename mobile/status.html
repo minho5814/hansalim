@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
 	-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>롯데카드 작업현황판</title>
+	<title>롯데카드 모바일 작업현황판</title>
 
 	<style type="text/css">
 		body,div,h1,h2,th,td {margin:0;padding:0;color:#333;font-size:12px;line-height:1.5;font-family:'돋움',dotum,sans-serif;}
@@ -15,7 +15,9 @@
 		a:focus {color:#e92e1a;text-decoration:underline;}
 		a:active {text-decoration:underline;}
 
-		.header h1 {margin:10px 10px 0;font-size:20px;color:#000;}
+		.header h1 {overflow:hidden;margin:10px 10px 0;font-size:20px;color:#000;}
+		.btnUrl {float:right;color:#666;padding:0 20px;font-size:15px;border:1px solid #999;line-height:28px;}
+		.btnUrl:hover {background-color:#eee;text-decoration:none;}
 
 		#total {margin:0 50px 10px 0;color:#999;font-size:15px;text-align:right;}
 		#total .comple {color:#000;}
@@ -26,14 +28,8 @@
 		.title {height:30px;padding:0 10px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background-color:#ddd;line-height:30px;cursor:pointer;}
 		.title span {font-weight:normal;}
 
-		.stat-text {
-			padding:20px 20px 0;
-		}
-		.stat-text span {
-			display:inline-block;
-			padding:5px 10px;
-			margin-right:10px;
-		}
+		.stat-text {padding:20px 20px 0;}
+		.stat-text span {display:inline-block;padding:5px 10px;margin-right:10px;}
 
 		table {width:100%;border-collapse:collapse;border-spacing:0;}
 		table tr:hover {background-color:#fafafa;}
@@ -80,7 +76,7 @@
 
 <body>
 <div class="header">
-	<h1>롯데카드 작업현황 (2018-10-22) ｜ front_v1.00 [ 작업완료 : ☆ ] - [ 검수완료 : ★ ]</h1>
+	<h1>롯데카드 모바일 작업현황 (2018-10-22) ｜ front_v1.00 [ 작업완료 : ☆ ] <a href="../web/status.html" class="btnUrl">웹 현황판 바로가기 →</a></h1>
 	<div class="stat-text">
 		<span style="background-color:#f2f9c1;">진행중</span><span class="IngLen">0</span>
 	</div>
