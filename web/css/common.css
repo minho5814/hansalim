@@ -2554,6 +2554,11 @@ body,
 .login-box:first-child {margin-top:0;}
 .login-box.on {margin-top:60px;}/* on */
 
+.login-box .error-text {
+	color:#d93e5f;
+	margin-top:10px;
+}
+
 .login-box .form-area {
 	position:relative;
 	padding-right:110px;

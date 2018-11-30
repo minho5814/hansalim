@@ -548,5 +548,6 @@ function formArea(){
 		});
 		var moreWid = Math.max.apply(Math , boxArray);
 		$item.closest('.form-item').css('padding-left', moreWid + 20);
+		$item.closest('.login-box').find('.error-text').css('padding-left', moreWid + 20);
 	});
 }
