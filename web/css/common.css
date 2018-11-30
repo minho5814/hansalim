@@ -119,7 +119,7 @@ select {
 	영어일경우
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .en-block {display:none;}
-.leng-english .en-block {display:block;}
+.leng-english .en-block {display:table-column-group;}
 .leng-english .vt-block  {display:none;}
 
 
