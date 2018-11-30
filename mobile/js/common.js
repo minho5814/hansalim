@@ -271,48 +271,7 @@ $(window).on('load', function(){
 });
 
 $(window).scroll(function(){
-	var winTop = $(window).scrollTop();
-	var headH = $('.header').outerHeight();
-
-	/* 스크롤다운시 해더 */
-	if(winTop == 0){
-		$('.header').removeClass('fix');
-	}else{
-		$('.header').addClass('fix');
-	}
-
-	/* 타이틀 스크롤시 고정 */
-	$('.s-title-area').each(function(){
-		if($(this).closest('.wrapper').hasClass('scroll-type2')){
-			if(winTop == 0){
-				$('.header, .s-title-area').removeClass('fix');
-			}else{
-				$('.header, .s-title-area').addClass('fix');
-			}
-		}else{
-			var titTop =  $('.s-title-area').offset().top;
-			if(winTop > titTop - headH){
-				$('.header, .s-title-area').addClass('fix');
-			}else{
-				$('.header, .s-title-area').removeClass('fix');
-			}
-		}
-	});
-
-	/* 소팅 영역 고정 */
-	$('.scroll-fix-tab').each(function(){
-		var sotTop =  $(this).offset().top;
-		var hei = $(this).find('.fix-tab').outerHeight();
-
-		$(this).css({'height':hei});
-		if(winTop > sotTop - headH){
-			$(this).find('.fix-tab').addClass('fix').css({'top':headH});
-		}else{
-			$(this).find('.fix-tab').removeClass('fix').removeAttr('style');
-		}
-	});
-
-	toolLayer();// 툴팁 레이어 위치 조정
+	scrollEvent();// 스크롤 이벤트
 });
 
 /* 리사이징 */
@@ -401,3 +360,50 @@ function app(){
 	});
 }
 */
+
+
+/* 스크롤 이벤트 */
+function scrollEvent(){
+	var winTop = $(window).scrollTop();
+	var headH = $('.header').outerHeight();
+
+	/* 스크롤다운시 해더 */
+	if(winTop == 0){
+		$('.header').removeClass('fix');
+	}else{
+		$('.header').addClass('fix');
+	}
+
+	/* 타이틀 스크롤시 고정 */
+	$('.s-title-area').each(function(){
+		if($(this).closest('.wrapper').hasClass('scroll-type2')){
+			if(winTop == 0){
+				$('.header, .s-title-area').removeClass('fix');
+			}else{
+				$('.header, .s-title-area').addClass('fix');
+			}
+		}else{
+			var titTop =  $('.s-title-area').offset().top;
+			if(winTop > titTop - headH){
+				$('.header, .s-title-area').addClass('fix');
+			}else{
+				$('.header, .s-title-area').removeClass('fix');
+			}
+		}
+	});
+
+	/* 소팅 영역 고정 */
+	$('.scroll-fix-tab').each(function(){
+		var sotTop =  $(this).offset().top;
+		var hei = $(this).find('.fix-tab').outerHeight();
+
+		$(this).css({'height':hei});
+		if(winTop > sotTop - headH){
+			$(this).find('.fix-tab').addClass('fix').css({'top':headH});
+		}else{
+			$(this).find('.fix-tab').removeClass('fix').removeAttr('style');
+		}
+	});
+
+	toolLayer();// 툴팁 레이어 위치 조정
+}
