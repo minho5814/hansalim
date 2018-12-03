@@ -126,9 +126,9 @@ body,
 	font-size:15px;
 }
 
-.top-visual-area :-ms-input-placeholder {color:rgba(255,255,255,.2);}
-.top-visual-area ::-webkit-input-placeholder {color:rgba(255,255,255,.2);}
-.top-visual-area ::-moz-placeholder {color:rgba(255,255,255,.2);}
+.top-visual-area :-ms-input-placeholder {color:rgba(255,255,255,.5);}
+.top-visual-area ::-webkit-input-placeholder {color:rgba(255,255,255,.5);}
+.top-visual-area ::-moz-placeholder {color:rgba(255,255,255,.5);}
 
 .top-visual-area .card-box .aligin-right {
 	margin-top:5px;
