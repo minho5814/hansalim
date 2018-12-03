@@ -367,3 +367,61 @@
 
 /* 푸터 */
 .footer {margin-top:60px;}
+
+
+
+
+/* 레이어팝업 */
+.full-popup .popup {
+	overflow:hidden;
+	margin-top: 0 !important;
+	top: 20px;
+	bottom: 20px;
+}
+.full-popup.layer-popup .popup .title-area {
+	margin-top:-20px;
+}
+
+.full-popup .btn-search-open {
+	width:100%;
+	border-radius:10px;
+	background-color:#f7f7f7;
+	text-align:center;
+}
+.full-popup .btn-search-open .text {
+	display:inline-block;
+	padding:19px 45px 19px 0;
+	background:url(../images/icon/btn_open.png) no-repeat 99% 50%;
+	color:#111;
+}
+
+.full-popup .popup .scroll-cont2 {
+	overflow-y:auto;
+	position:absolute;
+	left:0;
+	right:0;
+	top:100px;
+	bottom:110px;
+	padding:30px 80px 60px;
+}
+
+.full-popup .popup .btn-bottom-area {
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	height:110px;
+	margin: 0;
+	padding-top:30px;
+	box-sizing:border-box;
+	box-shadow:0 0 22px 2px rgba(0,0,0,.1);
+	background-color:#fff;
+}
+.full-popup .popup .btn-bottom-area .btn-text {
+	min-width:150px;
+	height:50px;
+	line-height:50px;
+}
+.full-popup .popup .btn-bottom-area .btn-text.type1 {
+	line-height:48px;
+}

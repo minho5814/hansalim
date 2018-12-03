@@ -445,7 +445,7 @@
 					</div>
 				</div>
 				<div class="btn-area">
-					<button type="button" class="btn-text type1">예상상환스케줄</button>
+					<button type="button" class="btn-text type1 btn-popup" layer-name="Popup01">예상상환스케줄</button>
 					<button type="button" class="btn-text btn-recommend">추천상품보기</button>
 				</div>
 			</div>
@@ -663,6 +663,247 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- 레이어 팝업 (예상상환스케줄) -->
+<div class="layer-popup full-popup" layer-name="Popup01">
+	<div class="dimmed"></div>
+	<div class="popup" style="width:1024px;">
+		<button type="button" class="btn-close popClose">Close</button>
+		<div class="title-area">
+			<h1 class="p-title">예상상환스케줄</h1>
+		</div>
+		<div class="scroll-cont2">
+			<button type="button" class="btn-search-open"><span class="text">상환스케줄 다시 계산하기</span></button>
+			<div class="searth-box">
+				<div class="board">
+					<table>
+						<colgroup class="vt-block">
+							<col style="width:200px;">
+							<col>
+						</colgroup>
+						<!-- english -->
+						<colgroup class="en-block">
+							<col style="width:200px;">
+							<col>
+						</colgroup>
+						<!-- // english -->
+						<tbody>
+							<tr>
+								<th scope="row"><label for="Product">대출신청상품</label></th>
+								<td>
+									<select id="Product" class="styled1 full">
+										<option>대출신청상품을 선택하세요</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Price">신청금액</label></th>
+								<td>
+									<div class="unit-area">
+										<input type="text" id="Price"><span class="unit-text">VND</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Month">대출기간</label></th>
+								<td>
+									<select id="Month" class="styled1 full">
+										<option>대출기간선택</option>
+										<option>6 개월</option>
+										<option>12 개월</option>
+										<option>24 개월</option>
+										<option>36 개월</option>
+										<option>48 개월</option>
+										<option>60 개월</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Interest">적용이자율(연)</label></th>
+								<td>
+									<div class="unit-area">
+										<input type="text" id="Interest"><span class="unit-text">%</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Date01">대출일</label></th>
+								<td>
+									<input type="text" id="Date01" class="datepicker" placeholder="dd.mm.yy" value="05.11.2018" readonly>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Date02">최초상환일</label></th>
+								<td>
+									<input type="text" id="Date02" class="datepicker" placeholder="dd.mm.yy" value="05.11.2018" readonly>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="info-text">상환방법 : 원리금균등상환</div>
+				</div>
+				<div class="btn-area">
+					<button type="button" class="btn-text type1 btn-popup" layer-name="Popup01">초기화</button>
+					<a href="../loan/Web-05.06.01.html" class="btn-text">계산하기</a>
+				</div>
+			</div>
+
+			<div class="board-data1">
+				<div class="board">
+					<table>
+						<colgroup>
+							<col style="width:20%;">
+							<col style="width:20%;">
+							<col style="width:20%;">
+							<col style="width:20%;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">
+									<span class="label">1회차</span><br>
+									27. 10. 2018
+								</th>
+								<td>
+									상환원금
+									<div class="price">1,000,000 VND</div>
+								</td>
+								<td>
+									상환이자
+									<div class="price">5,000 VND</div>
+								</td>
+								<td>
+									이자율
+									<div class="price">5.95%</div>
+								</td>
+								<td>
+									상환 후 잔액
+									<div class="price">4,000,000 VND</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">
+									<span class="label">2회차</span><br>
+									27. 10. 2018
+								</th>
+								<td>
+									상환원금
+									<div class="price">1,000,000 VND</div>
+								</td>
+								<td>
+									상환이자
+									<div class="price">5,000 VND</div>
+								</td>
+								<td>
+									이자율
+									<div class="price">5.95%</div>
+								</td>
+								<td>
+									상환 후 잔액
+									<div class="price">4,000,000 VND</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">
+									<span class="label">3회차</span><br>
+									27. 10. 2018
+								</th>
+								<td>
+									상환원금
+									<div class="price">1,000,000 VND</div>
+								</td>
+								<td>
+									상환이자
+									<div class="price">5,000 VND</div>
+								</td>
+								<td>
+									이자율
+									<div class="price">5.95%</div>
+								</td>
+								<td>
+									상환 후 잔액
+									<div class="price">4,000,000 VND</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">
+									<span class="label">4회차</span><br>
+									27. 10. 2018
+								</th>
+								<td>
+									상환원금
+									<div class="price">1,000,000 VND</div>
+								</td>
+								<td>
+									상환이자
+									<div class="price">5,000 VND</div>
+								</td>
+								<td>
+									이자율
+									<div class="price">5.95%</div>
+								</td>
+								<td>
+									상환 후 잔액
+									<div class="price">4,000,000 VND</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">
+									<span class="label">5회차</span><br>
+									27. 10. 2018
+								</th>
+								<td>
+									상환원금
+									<div class="price">1,000,000 VND</div>
+								</td>
+								<td>
+									상환이자
+									<div class="price">5,000 VND</div>
+								</td>
+								<td>
+									이자율
+									<div class="price">5.95%</div>
+								</td>
+								<td>
+									상환 후 잔액
+									<div class="price">0 VND</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!-- 결과 없음 -->
+			<div class="no-result">조회된 결과가 없습니다.</div>
+			<!-- // 결과 없음 -->
+		</div>
+		<div class="btn-bottom-area">
+			<button type="button" class="btn-text type1 popClose">대출시뮬레이션</button>
+			<button type="button" class="btn-text popClose">즉시대출접수</button>
+		</div>
+	</div>
+</div>
+
+<div class="layer-popup" layer-name="Popup02">
+	<div class="dimmed"></div>
+	<div class="popup">
+		<button type="button" class="btn-close popClose">Close</button>
+		<div class="cont complated">
+			<div class="icon-text">
+				<strong>요청하신 대출접수</strong>가<br>
+				정상 처리되었습니다.
+			</div>
+			고객님의 정확한 대출 신청을 도와드리기 위해,<br>
+			콜센터 전문상담원이 24시간 이내에 연락을 드리도록 하겠습니다.<br>
+			고맙습니다.
+		</div>
+		<div class="btn-bottom-area">
+			<button type="button" class="btn-text popClose">돌아가기</button>
 		</div>
 	</div>
 </div>
