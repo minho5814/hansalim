@@ -54,10 +54,9 @@ $(document).ready(function(){
 		$('html').attr('class', bg);
 	});
 
-	/*
+	/* ------------------------------------------------------------------------------------------------------------------
 		전체메뉴
-	*/
-
+	------------------------------------------------------------------------------------------------------------------ */
 	// 스크롤 디자인
 	$('.all-menu-layer .inner-box').each(function(){
 		var allH = $(this).closest('.all-menu-layer').outerHeight();
@@ -72,6 +71,7 @@ $(document).ready(function(){
 		$(this).next('div').addClass('handle-box');
 	});
 
+	// 열기/닫기
 	$('.btn-allmenu').click(function(){
 		allMenu();// 전체메뉴 리사이징시 스크롤 생성
 		if($(this).hasClass('close')){
@@ -161,6 +161,7 @@ $(document).ready(function(){
 	});
 
 	/* 패밀리사이트, 언어 */
+	// 열기
 	$('.leng-select .btn').click(function(){
 		if($(this).closest('.leng-select').hasClass('on')){
 			$(this).removeAttr('style');
@@ -172,7 +173,7 @@ $(document).ready(function(){
 			$(this).closest('.leng-select').addClass('on');
 		}
 	});
-
+	// 닫기
 	$(document).mouseup(function(e){
 		var select = $('.leng-select');
 		if (!select.is(e.target) && select.has(e.target).length === 0){
