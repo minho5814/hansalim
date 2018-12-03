@@ -105,7 +105,7 @@ body,
 .top-visual-area .card-box .write-box {
 	overflow:hidden;
 	margin-top:10px;
-	background-color:rgba(17,17,17,.4);
+	background-color:rgba(17,17,17,.5);
 }
 .top-visual-area .card-box .write-box .box {
 	float:left;
