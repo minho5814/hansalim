@@ -256,9 +256,9 @@ body,
 }
 .box-menu-area .menu-item.item09 .text:before {
 	top:15px;
-	width: 35px;
-	height: 35px;
-	background-position: -163px -16px;
+	width:35px;
+	height:35px;
+	background-position:-163px -16px;
 }
 .box-menu-area .menu-item.item10 .text:before {
 	top:18px;
@@ -341,9 +341,7 @@ body,
 ============================================================================================ */
 html.login ,
 .login body,
-.login .wrapper {
-	background-color:#fff;
-}
+.login .wrapper {background-color:#fff;}
 
 /* 상단 정보 출력 영역 */
 .top-info-area {
@@ -475,62 +473,6 @@ html.login ,
 	.box-menu-area .menu-item .text {padding-top:45px;}
 	.box-menu-area .menu-item .text:before {margin-top:-8px;}
 }
-
-/* 높이 640px 이하 
-@media only screen and (max-height:620px) {
-	/* 상단 슬라이드 영역 *
-	.top-visual-area .swiper-slide {
-		padding-left:15px;
-		padding-right:15px;
-	}
-	.top-visual-area .card-box {max-height:160px;}
-	.top-visual-area .card-box .box-inner .title {font-size:18px;}
-	.top-visual-area .card-box .box-inner .text {font-size:12px;}
-	.top-visual-area .card-box .write-box .label {font-size:11px;}
-	.top-visual-area .card-box .write-box input[type=text],
-	.top-visual-area .card-box .write-box input[type=number],
-	.top-visual-area .card-box .write-box input[type=tel] {font-size:13px;}
-
-	.top-info-area .photo-area {
-		width:40px;
-		height:40px;
-	}
-	.top-info-area .t-title {
-		margin-top:10px;
-		font-size:20px;
-	}
-	.top-info-area .amount-area {margin-top:5px;}
-	.top-info-area .amount-area .text {font-size:13px;}
-	.top-info-area .amount-area .link-price {font-size:15px;}
-	.top-info-area .amount-area .link-price .price {font-size:28px;}
-	.top-info-area .text-area {
-		margin-top:15px;
-		font-size:13px;
-	}
-	.top-info-area .payment-total {margin-top:15px;}
-	.top-info-area .payment-total .item {font-size:13px;}
-
-	/* 빠른 메뉴 *
-	.quick-menu:before {
-		right:5px;
-		width:80px;
-		height:78px;
-	}
-	.quick-menu .menu-item {
-		height:40px;
-		font-size:15px;
-		line-height:40px;
-	}
-	.sign-box-area .sign-box .text {font-size:13px;}
-	.sign-box-area .sign-box .link-sign {font-size:13px;}
-	.sign-box-area .sign-box .btn-sign {font-size:12px;}
-
-	/* 박스 메뉴 영역 *
-	.box-menu-area .menu-item {height:100px;}
-	.box-menu-area .menu-item .text {padding-top:45px;}
-	.box-menu-area .menu-item .text:before {margin-top:-8px;}
-}
-*/
 
 
 /* 대출 시물레이션 팝업 */

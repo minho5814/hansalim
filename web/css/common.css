@@ -4,7 +4,7 @@
 	Font
 ============================================================================================ */
 /* Light */
-@font-face{
+@font-face {
 	font-family:noto;
 	font-style:normal;
 	font-weight:400;
@@ -15,7 +15,7 @@
 	url('font/NotoSansCJKkr-Light.ttf') format('truetype');
 }
 /* Regular */
-@font-face{
+@font-face {
 	font-family:noto;
 	font-style:normal;
 	font-weight:600;
@@ -26,7 +26,7 @@
 	url('font/NotoSansCJKkr-Regular.ttf') format('truetype');
 }
 /* Medium */
-@font-face{
+@font-face {
 	font-family:noto;
 	font-style:normal;
 	font-weight:900;
@@ -120,7 +120,7 @@ select {
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .en-block {display:none;}
 .leng-english .en-block {display:table-column-group;}
-.leng-english .vt-block  {display:none;}
+.leng-english .vt-block {display:none;}
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -129,7 +129,18 @@ select {
 /* 마진 */
 .mgA0 {margin:0 !important;}
 .mgT0 {margin-top:0 !important;}
+.mgT5 {margin-top:5px !important;}
+.mgT10 {margin-top:10px !important;}
+.mgT15 {margin-top:15px !important;}
+.mgT20 {margin-top:20px !important;}
+.mgT25 {margin-top:25px !important;}
 .mgT30 {margin-top:30px !important;}
+.mgT35 {margin-top:35px !important;}
+.mgT40 {margin-top:40px !important;}
+.mgT45 {margin-top:45px !important;}
+.mgT50 {margin-top:50px !important;}
+.mgT55 {margin-top:55px !important;}
+.mgT60 {margin-top:60px !important;}
 .mgT65 {margin-top:65px !important;}
 
 /* 패딩 */
@@ -653,7 +664,7 @@ input.false-form {
 	font-size:14px;
 }
 
-table .btn-text  {
+table .btn-text {
 	min-width:auto;
 	height:32px;
 	margin-left:9px;
@@ -1214,9 +1225,7 @@ body,
 	display:none;
 	top:-10px;
 }
-.scroll .header .breadcrumbs .btn-allmenu {
-	display:block;
-}
+.scroll .header .breadcrumbs .btn-allmenu {display:block;}
 
 .header .page-title-area {
 	background-color:rgba(255,255,255,.98);
@@ -1429,9 +1438,7 @@ body,
 	width:8px;
 	background-color:#c1c1c1;
 }
-.all-menu-layer .enscroll-track .handle div {
-	display:none;
-}
+.all-menu-layer .enscroll-track .handle div {display:none;}
 
 .sub-text-area {
 	margin-top:-26px;
@@ -1459,9 +1466,7 @@ body,
 	top:0;
 	background:linear-gradient(to right, #a2027d , #dd0042) no-repeat 0 0;
 }
-.bgColor1.scroll .header .breadcrumbs {
-	background:url(../images/bg/bg_header01.png) no-repeat 100% 50%;
-}
+.bgColor1.scroll .header .breadcrumbs {background:url(../images/bg/bg_header01.png) no-repeat 100% 50%;}
 .scroll .header .page-title-area {box-shadow:2px 3px 8px rgba(0,0,0,.1);}
 .scroll .header .page-title-area .page-title {
 	height:85px;
@@ -1498,7 +1503,7 @@ body,
 .bgColor2 .gnb-area .gnb-list .gnb-item .item:before {background-color:#94e6a8;}
 .bgColor2 .header .head-inner .utill .link:first-child {color:#7dc3c3;}
 .bgColor2 .gnb-area .gnb-list .gnb-item.on .item,
-.bgColor2 .gnb-area .gnb-list .gnb-item.active .item{color:#fff;}/* on */
+.bgColor2 .gnb-area .gnb-list .gnb-item.active .item {color:#fff;}/* on */
 .bgColor2 .header .breadcrumbs .crumb-item.on .crumb,
 .bgColor2 .header .breadcrumbs .crumb-item .menu-list .menu-item .list .link:hover {color:#27393d;}/* hover */
 .bgColor2.scroll .header .head-fix-box {background:#18a5b6 url(../images/bg/bg_header02.png) no-repeat 100% 50%;}
@@ -1532,7 +1537,7 @@ body,
 .bgColor3 .gnb-area .gnb-list .gnb-item .item:before {background-color:#b4a6f5;}
 .bgColor3 .header .head-inner .utill .link:first-child {color:#8fa4d1;}
 .bgColor3 .gnb-area .gnb-list .gnb-item.on .item,
-.bgColor3 .gnb-area .gnb-list .gnb-item.active .item{color:#fff;}/* on */
+.bgColor3 .gnb-area .gnb-list .gnb-item.active .item {color:#fff;}/* on */
 .bgColor3 .header .breadcrumbs .crumb-item.on .crumb,
 .bgColor3 .header .breadcrumbs .crumb-item .menu-list .menu-item .list .link:hover {color:#27393d;}/* hover */
 .bgColor3.scroll .header .head-fix-box {background:#4b589c url(../images/bg/bg_header03.png) no-repeat 100% 50%;}
@@ -2427,16 +2432,12 @@ body,
 }
 .view-edit-cont .img-area:first-child {margin-top:0;}
 
-.view-edit-cont .view-list {
-	color:#777;
-}
+.view-edit-cont .view-list {color:#777;}
 .view-edit-cont .view-list .title {
 	margin-top:12px;
 	font-weight:600;
 }
-.view-edit-cont .view-list .text {
-	
-}
+.view-edit-cont .view-list .text {}
 .view-edit-cont .view-list .f-color {color:#999;}
 .view-edit-cont .view-list .logo-list {
 	overflow:hidden;
@@ -2917,9 +2918,7 @@ body,
 	margin:30px 0 40px;
 	text-align:center;
 }
-.photo-change-area + .board-list1 {
-	margin-top:60px;
-}
+.photo-change-area + .board-list1 {margin-top:60px;}
 .photo-change-area .photo-change {
 	display:block;
 	position:relative;
@@ -3167,7 +3166,7 @@ body,
 	font-size:18px;
 	font-weight:400;
 }
-.mypage-cont .infor-box .infor-list .infor-item.ty2{
+.mypage-cont .infor-box .infor-list .infor-item.ty2 {
 	width:50%;
 	height:65px;
 	padding:18px 34px 18px 30px;
@@ -3297,7 +3296,7 @@ body,
 	font-weight:900;
 }
 
-.status-slider .bx-controls { margin-top:5px;}
+.status-slider .bx-controls {margin-top:5px;}
 .status-slider .bx-pager {
 	display:inline-block;
 	overflow:hidden;
@@ -3699,7 +3698,7 @@ body,
 	text-align:left;
 	cursor:pointer;
 }
-.point-list .item-point .btn-tog:before{
+.point-list .item-point .btn-tog:before {
 	content:'';
 	overflow:hidden;
 	position:absolute;
@@ -3743,7 +3742,7 @@ body,
 /* ============================================================================================
 	기타
 ============================================================================================ */
-/* 서비스접속에러 (Web-10.05.1.html) */
+/* 에러 (Web-10.05.1.html, Web-10.05.2.html) */
 .error-page {padding:235px 0 125px;}
 .error-page .error-content {text-align:center;}
 .error-page .error-content .img-area {font-size:0;}
@@ -3758,9 +3757,6 @@ body,
 	color:#111;
 	font-size:18px;
 }
-
-/* 페이지링크에러 (Web-10.05.2.html) */
-
 
 /* ============================================================================================
 	레이어팝업

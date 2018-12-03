@@ -429,9 +429,7 @@ button {-webkit-tap-highlight-color:transparent;}
 	float:left;
 	width:50%;
 }
-.btn-list.type2 .btn-item {
-	position:relative;
-}
+.btn-list.type2 .btn-item {position:relative;}
 .btn-list.type2 .btn-item:before {
 	content:'';
 	position:absolute;
@@ -688,8 +686,8 @@ input[type=radio]:checked + label {
 .sorting-box .btn {
 	float:left;
 	border-radius:25px;
-	color: #333;
-	font-size: 15px;
+	color:#333;
+	font-size:15px;
 	line-height:30px;
 	-webkit-transition:all .3s;
 	-ms-transition:all .3s;
@@ -1855,9 +1853,7 @@ body,
 	border-radius:50%;
 	background-color:#ff82a1;
 }
-.menu-wrap .top-info-box .user-info .photo img {
-	width:100%;
-}
+.menu-wrap .top-info-box .user-info .photo img {width:100%;}
 .menu-wrap .top-info-box .user-info .text-area {
 	position:absolute;
 	left:85px;
@@ -2507,9 +2503,9 @@ body,
 
 .signin-slide .fingerprint-area .info-text {
 	margin-top:5px;
-	font-size: 10px;
-	font-weight: 600;
-	line-height: 1.2;
+	font-size:10px;
+	font-weight:600;
+	line-height:1.2;
 }
 .signin-slide .fingerprint-area .info-text.error {color:#d93e5f;}
 
@@ -2911,7 +2907,7 @@ body,
 	width:19px;
 	height:17px;
 	background-image:url(../images/common/sprite_icon.png);
-	background-repeat: no-repeat;
+	background-repeat:no-repeat;
 	background-size:250px;
 }
 .join-certify .certify-list .item.certify1:before {background-position:-94px -273px;}
@@ -3762,9 +3758,7 @@ body,
 	font-weight:400;
 	line-height:1.5;
 }
-.complete-area.type02:before {
-	background-position:0 -271px;
-}
+.complete-area.type02:before {background-position:0 -271px;}
 
 /* 대출프로세스 (MA-05.04.html) */
 .loan-process {
@@ -4250,7 +4244,7 @@ body,
 	width:115px;
 	height:115px;
 }
-.fingerprint-box .fingerprint-area p{
+.fingerprint-box .fingerprint-area p {
 	color:#111;
 	font-size:16px;
 	font-weight:600;
