@@ -47,7 +47,7 @@ blockquote, q {quotes:none;}
 blockquote:before, blockquote:after,q:before, q:after {content:'';content:none;}
 input,select,textarea,button {vertical-align:middle;outline:0;}
 button {border:0 none;background-color:transparent;cursor:pointer;}
-body,th,td,input,select,textarea,button,select {font-family:noto;font-size:15px;line-height:1.5;color:#333;letter-spacing:-0.4px;}
+body,th,td,input,select,textarea,button,select {font-family:'noto', sans-serif;font-size:15px;line-height:1.5;color:#333;letter-spacing:-0.4px;}
 body {overflow-x:hidden;width:100%;-webkit-user-select:none;word-break:keep-all;}
 input[type=submit] {-webkit-border-radius:0;border:0;border-radius:0;-webkit-appearance:none;}
 h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:100%;}
@@ -1396,6 +1396,9 @@ input[type=radio]:checked + label {
 	font-weight:900;
 }
 
+/* 340px 이하 */
+@media only screen and (max-width:340px) {}
+
 /* ============================================================================================
 	기타
 ============================================================================================ */
@@ -2700,6 +2703,20 @@ body,
 	color:#111;
 	font-weight:900;
 }
+
+/* 340px 이하 */
+@media only screen and (max-width:340px) {
+	.signin-slide .sns-area {
+		margin:0 -20px 0 -25px;
+	}
+	.signin-slide .sns-area .sns-item {margin-left:10px;}
+	.signin-slide .sns-area .sns-item:first-child {margin-left:0;}
+	.signin-slide .utill-menu .item {
+		font-size:12px;
+		padding:0 10px;
+	}
+}
+
 
 /* 비빌번호변경 (02.01.01.3.html) */
 .notice-bg {

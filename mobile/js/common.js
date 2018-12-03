@@ -369,10 +369,10 @@ function scrollEvent(){
 
 	/* 스크롤다운시 해더 */
 	if(winTop > 0){
-		$('html').removeClass('scroll');
+		$('html').addClass('scroll');
 		$('.header').removeClass('fix');
 	}else{
-		$('html').addClass('scroll');
+		$('html').removeClass('scroll');
 		$('.header').addClass('fix');
 	}
 
