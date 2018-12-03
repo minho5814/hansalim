@@ -1457,6 +1457,8 @@ body,
 	padding-bottom:35px;
 }
 
+.scroll .container {padding-top:55px !important;}
+
 .content {padding:0 20px;}
 .content.pd-type1 {padding-top:20px;}
 .content.text-type {padding:20px;}

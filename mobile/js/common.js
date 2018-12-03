@@ -368,9 +368,11 @@ function scrollEvent(){
 	var headH = $('.header').outerHeight();
 
 	/* 스크롤다운시 해더 */
-	if(winTop == 0){
+	if(winTop > 0){
+		$('html').removeClass('scroll');
 		$('.header').removeClass('fix');
 	}else{
+		$('html').addClass('scroll');
 		$('.header').addClass('fix');
 	}
 
