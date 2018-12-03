@@ -2735,7 +2735,6 @@ body,
 .login-box.type2 {padding:60px 280px 70px;}
 .login-box .find-title-area {
 	margin-top:-10px;
-	padding-bottom:30px;
 	text-align:center;
 }
 .login-box .find-title-area .f-title {
@@ -2753,6 +2752,9 @@ body,
 	color:#4c4c4c;
 	font-size:17px;
 }
+.login-box .find-idpw-box,
+.login-box .form-area,
+.login-box .form-area2 {padding-top:30px;}
 
 /* 비밀번호찾기 > 비밀번호변경 (Web-02.01.01.1.4.html) */
 .login-box.type2 {padding:60px 280px 70px;}
