@@ -671,23 +671,26 @@
 $(document).ready(function(){
 	/* 상단 슬라이더 */
 	$('.top-visual-slider').each(function(){
-		VisualSlider = $(this).find('.bxslider').bxSlider({
-			auto:true,
-			autoHover:false,
-			autoControls:true,
-			pause:7000,
-			speed:700,
-			onSlideBefore:function(){
-				$('.top-visual-slider .slide-item .text-area .title').css({'margin-left':'50px','opacity':'0'});
-				$('.top-visual-slider .slide-item .text-area .text').css({'margin-left':'50px','opacity':'0'});
-			},
-			onSlideAfter:function(){
-				motionTxt();
-			}
-		});
-		// 버튼 순서 바꾸기
-		$(this).find('.bx-pager').appendTo('.bx-controls');
-		$(this).find('.bx-controls-auto').appendTo('.bx-controls');
+		var len = $(this).find('.slide-item').length;
+		if(len > 1){
+			VisualSlider = $(this).find('.bxslider').bxSlider({
+				auto:true,
+				autoHover:false,
+				autoControls:true,
+				pause:7000,
+				speed:700,
+				onSlideBefore:function(){
+					$('.top-visual-slider .slide-item .text-area .title').css({'margin-left':'50px','opacity':'0'});
+					$('.top-visual-slider .slide-item .text-area .text').css({'margin-left':'50px','opacity':'0'});
+				},
+				onSlideAfter:function(){
+					motionTxt();
+				}
+			});
+			// 버튼 순서 바꾸기
+			$(this).find('.bx-pager').appendTo('.bx-controls');
+			$(this).find('.bx-controls-auto').appendTo('.bx-controls');
+		}
 	});
 	motionTxt();
 
