@@ -24,6 +24,7 @@
 .top-visual-slider {position:relative;}
 .top-visual-slider .slide-item {
 	overflow:hidden;
+	position:relative;
 	height:446px;
 }
 .top-visual-slider .slide-item .img-area {
