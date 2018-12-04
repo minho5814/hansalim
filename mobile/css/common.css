@@ -969,6 +969,7 @@ input[type=radio]:checked + label {
 .box-list3 .box-item .price-area .link-area {
 	overflow:hidden;
 	margin-top:10px;
+	margin-right:-10px;
 }
 .box-list3 .box-item .price-area .link-area .link-type1 {
 	float:left;
