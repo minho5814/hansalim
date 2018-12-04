@@ -3521,9 +3521,9 @@ body,
 .loan-wrap .shadow-box .price-area .price {
 	display:inline-block;
 	position:relative;
-	padding-right:35px;
+	padding-right:40px;
 	font-size:40px;
-	font-weight:900;
+	font-weight:600;
 	line-height:1.1;
 }
 .loan-wrap .shadow-box .price-area .price .unit {
