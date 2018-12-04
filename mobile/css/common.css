@@ -4242,6 +4242,13 @@ body,
 	margin-top:20px;
 	padding:0 20px;
 }
+.pin-cont .info-text {
+	margin-top:28px;
+	color:#5d30a6;
+	font-size:19px;
+	font-weight:900;
+	text-align:center;
+}
 
 /* 지문인증등록 (MA-09.02.03.html) */
 .fingerprint-box {	margin-top:20px;}
