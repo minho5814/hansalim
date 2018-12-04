@@ -2334,8 +2334,12 @@ body,
 .box-list-wrap1 .btn-area {margin-bottom:10px;}
 
 .thumb-list1 {
-	margin:-60px 0 0 -35px;
 	width:1050px;
+	margin:-60px 0 0 -35px;
+}
+.box-list .thumb-list1 {
+	width:100%;
+	margin:0;
 }
 .btn-top-area + .thumb-list1 {margin-top:-45px;}
 .thumb-list1:after {
