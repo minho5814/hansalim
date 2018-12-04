@@ -1735,7 +1735,11 @@ body,
 	color:#fff;
 	*/
 }
-.footer .foot-bottom .right-menu {float:right;}
+.footer .foot-bottom .right-menu {
+	float:right;
+	position:relative;
+	padding-right:170px;
+}
 .footer .foot-bottom .right-menu:after {
 	content:'';
 	display:block;
@@ -1743,12 +1747,18 @@ body,
 }
 .footer .foot-bottom .sns-list {
 	float:left;
-	margin-left:40px;
 	font-size:0;
 	line-height:0;
 }
 .footer .foot-bottom .sns-list .item {margin-left:14px;}
 .footer .foot-bottom .sns-list .item:first-child {margin-left:0;}
+
+.footer .foot-bottom .right-menu .leng-select {
+	position:absolute;
+	right:0;
+	top:0;
+	margin-left:0px;
+}
 
 /* ============================================================================================
 	MY (마이페이지)

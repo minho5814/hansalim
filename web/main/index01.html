@@ -634,32 +634,32 @@
 					<a href="#" class="item">회사소개</a>
 				</div>
 				<div class="leng-select">
-					<button type="button" class="btn">FAMILY SITE</button>
+					<button type="button" class="btn">ENGLISH</button>
 					<div class="layer">
-						<a href="http://www.lotte.co.kr/global/en/main.do" target="_blank" class="leng">LOTTE GROUP</a>
-						<a href="https://www.lotteshopping.com.vn/" target="_blank" class="leng">LOTTE DEPARTMENT STORE</a>
-						<a href="http://www.lottemart.com.vn/" target="_blank" class="leng">LOTTE MART</a>
-						<a href="http://www.lottecinemavn.com/LCHS/index.aspx" target="_blank" class="leng">LOTTE CINEMA</a>
-						<a href="https://www.lottehotel.com/hanoi-hotel/vi.html" target="_blank" class="leng">LOTTE HOTEL</a>
-						<a href="http://www.llive.vn/index.do" target="_blank" class="leng">LOTTE DATVIET HOMESHOPPING</a>
-						<a href="http://www.lotteria.vn/" target="_blank" class="leng">LOTTERIA</a>
-						<a href="https://www.lpoint.com.vn/WebContent/main.aspx" target="_blank" class="leng">L.POINT</a>
+						<a href="#" class="leng on">ENGLISH</a>
+						<a href="#" class="leng">VIETNAM</a>
 					</div>
 				</div>
 
 				<div class="right-menu">
-					<div class="leng-select">
-						<button type="button" class="btn">ENGLISH</button>
-						<div class="layer">
-							<a href="#" class="leng on">ENGLISH</a>
-							<a href="#" class="leng">VIETNAM</a>
-						</div>
-					</div>
 					<div class="sns-list">
 						<a href="#" class="item"><img src="../images/icon/icon_sns01.png" alt="Zalo"></a>
 						<a href="#" class="item"><img src="../images/icon/icon_sns02.png" alt="facebook"></a>
 						<a href="#" class="item"><img src="../images/icon/icon_sns03.png" alt="Google"></a>
 						<a href="#" class="item"><img src="../images/icon/icon_sns04.png" alt="kakao talk"></a>
+					</div>
+					<div class="leng-select">
+						<button type="button" class="btn">FAMILY SITE</button>
+						<div class="layer">
+							<a href="http://www.lotte.co.kr/global/en/main.do" target="_blank" class="leng">LOTTE GROUP</a>
+							<a href="https://www.lotteshopping.com.vn/" target="_blank" class="leng">LOTTE DEPARTMENT STORE</a>
+							<a href="http://www.lottemart.com.vn/" target="_blank" class="leng">LOTTE MART</a>
+							<a href="http://www.lottecinemavn.com/LCHS/index.aspx" target="_blank" class="leng">LOTTE CINEMA</a>
+							<a href="https://www.lottehotel.com/hanoi-hotel/vi.html" target="_blank" class="leng">LOTTE HOTEL</a>
+							<a href="http://www.llive.vn/index.do" target="_blank" class="leng">LOTTE DATVIET HOMESHOPPING</a>
+							<a href="http://www.lotteria.vn/" target="_blank" class="leng">LOTTERIA</a>
+							<a href="https://www.lpoint.com.vn/WebContent/main.aspx" target="_blank" class="leng">L.POINT</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -753,7 +753,42 @@
 				<button type="button" class="btn-search-close"><span class="text">접기</span></button>
 			</div>
 
+			<div class="result-list">
+				<h2 class="c-title">계산결과</h2>
+				<ul class="list">
+					<li class="item">
+						<div class="left">대출상품</div>
+						<div class="right">직장인대출</div>
+					</li>
+					<li class="item">
+						<div class="left">신청금액</div>
+						<div class="right">5,000 VND</div>
+					</li>
+					<li class="item">
+						<div class="left">대출기간</div>
+						<div class="right">24개월</div>
+					</li>
+					<li class="item">
+						<div class="left">적용이자율(연)</div>
+						<div class="right">4.95%</div>
+					</li>
+					<li class="item">
+						<div class="left">대출일</div>
+						<div class="right">2018.11.30</div>
+					</li>
+					<li class="item">
+						<div class="left">최초상환일</div>
+						<div class="right">2018.11.30</div>
+					</li>
+					<li class="item">
+						<div class="left">상환방법</div>
+						<div class="right">원리금균등상환</div>
+					</li>
+				</ul>
+			</div>
+
 			<div class="board-data1">
+				<h2 class="c-title">예상상환상세내역</h2>
 				<div class="board">
 					<table>
 						<colgroup>
@@ -945,6 +980,14 @@ $(document).ready(function(){
 				$(this).addClass('on');
 			});
 		});
+	});
+
+	/* 예상상환스케줄 팝업 */
+	$('.btn-search-open').click(function(){
+		$('.full-popup .searth-box').slideDown(100);
+	});
+	$('.btn-search-close').click(function(){
+		$('.full-popup .searth-box').slideUp(100);
 	});
 });
 
