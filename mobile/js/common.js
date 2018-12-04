@@ -374,10 +374,10 @@ function scrollEvent(){
 	/* 스크롤다운시 해더 */
 	if(winTop > 0){
 		$('html').addClass('scroll');
-		$('.header').removeClass('fix');
+		$('.header').addClass('fix');
 	}else{
 		$('html').removeClass('scroll');
-		$('.header').addClass('fix');
+		$('.header').removeClass('fix');
 	}
 
 	/* 타이틀 스크롤시 고정 */
