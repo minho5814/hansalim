@@ -863,6 +863,10 @@ input[type=radio]:checked + label {
 	z-index:5;
 	width:100%;
 }
+.thumb-list1 .thumb-item .text-area {
+	overflow:hidden;
+	margin-right:-10px;
+}
 .thumb-list1 .thumb-item .text-area .t-title {
 	padding-top:7px;
 	font-size:17px;

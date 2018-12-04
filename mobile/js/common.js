@@ -262,12 +262,16 @@ $(document).ready(function(){
 	$('.tooltip-layer .btn-close').click(function(){
 		$(this).closest('.tooltip-layer').hide();
 	});
+
+	scrollEvent();// 스크롤 이벤트
 });
 
 
 $(window).on('load', function(){
 	/* 화면 로드시 노출되는 팝업 */
 	$('.loadPopup').addClass('show');
+
+	scrollEvent();// 스크롤 이벤트
 });
 
 $(window).scroll(function(){
