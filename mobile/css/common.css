@@ -2092,15 +2092,7 @@ body,
 	top:311px;
 	bottom:0;
 }
-.menu-wrap .menu-tab-cont.my-menu:before {
-	content:'';
-	position:absolute;
-	left:0;
-	top:0;
-	bottom:0;
-	width:300px;
-	background-color:#fff;
-}
+.menu-wrap .menu-tab-cont.my-menu {background-color:#fff;}
 .menu-wrap .menu-tab-cont.on {display:block;}
 .menu-wrap .menu-list-box {padding:0 0 0 145px;}
 .menu-wrap .menu-list-box .left-menu {

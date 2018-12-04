@@ -336,6 +336,18 @@ body,
 	line-height:25px;
 }
 
+/* 340px 이하 */
+@media only screen and (max-width:340px) {
+	.sign-box-area .text,
+	.sign-box-area .link-sign {font-size:14px;}
+	.sign-box-area .btn-sign {
+		margin-left:4px;
+		padding:0 8px;
+		font-size:12px;
+	}
+	
+}
+
 /* ============================================================================================
 	로그인 후
 ============================================================================================ */

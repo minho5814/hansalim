@@ -394,6 +394,25 @@
 	background:url(../images/icon/btn_open.png) no-repeat 99% 50%;
 	color:#111;
 }
+.full-popup .btn-search-close {
+	width:100%;
+	text-align:center;
+}
+.full-popup .btn-search-close .text {
+	display:inline-block;
+	padding:19px 45px 19px 0;
+	background:url(../images/icon/btn_close05.png) no-repeat 99% 50%;
+	color:#111;
+}
+
+.full-popup .searth-box {display:none;}
+.full-popup .searth-box .board {
+	width:545px;
+}
+.full-popup .searth-box .board td {
+	padding-right:40px;
+}
+.full-popup .searth-box .board .unit-area {margin-right:-40px;}
 
 .full-popup .popup .scroll-cont2 {
 	overflow-y:auto;
@@ -417,11 +436,11 @@
 	box-shadow:0 0 22px 2px rgba(0,0,0,.1);
 	background-color:#fff;
 }
-.full-popup .popup .btn-bottom-area .btn-text {
+.full-popup .popup .btn-text {
 	min-width:150px;
 	height:50px;
 	line-height:50px;
 }
-.full-popup .popup .btn-bottom-area .btn-text.type1 {
+.full-popup .popup .btn-text.type1 {
 	line-height:48px;
 }
