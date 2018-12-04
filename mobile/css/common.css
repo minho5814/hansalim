@@ -866,11 +866,10 @@ input[type=radio]:checked + label {
 .thumb-list1 .thumb-item .text-area {
 	overflow:hidden;
 	margin-right:-10px;
+	font-weight:600;
 }
 .thumb-list1 .thumb-item .text-area .t-title {
-	padding-top:7px;
 	font-size:17px;
-	font-weight:900;
 	line-height:1.2;
 }
 .thumb-list1 .thumb-item .text-area .date {
@@ -878,7 +877,6 @@ input[type=radio]:checked + label {
 	margin-right:-10px;
 	color:#737373;
 	font-size:13px;
-	font-weight:600;
 }
 
 /* 박스 리스트 */
