@@ -611,11 +611,16 @@ input[type=radio]:checked + label {
 	float:left;
 	position:relative;
 	width:50%;
+	height:60px;
 	box-sizing:border-box;
 	border-bottom:1px solid #dadada;
 	font-size:17px;
 	font-weight:600;
 	text-align:center;
+	line-height:60px;
+}
+.tab-list1.fix .tab-item {
+	height:50px;
 	line-height:50px;
 }
 .tab-list1 .tab-item.on {
@@ -631,6 +636,15 @@ input[type=radio]:checked + label {
 	height:3px;
 	background-color:#e60039;
 }
+.tab-list1 .tab-item .c-text {
+	position:absolute;
+	left:0;
+	right:0;
+	top:50%;
+	transform:translateY(-50%);
+	line-height:1.2;
+}
+
 .tab-wrap .tab-cont {display:none;}
 .tab-wrap .tab-cont.on {display:block;}
 
@@ -966,6 +980,7 @@ input[type=radio]:checked + label {
 	line-height:1.4;
 }
 .box-list3 .box-item .price-area .price .unit {
+	margin-left:4px;
 	font-size:15px;
 	font-weight:400;
 }
