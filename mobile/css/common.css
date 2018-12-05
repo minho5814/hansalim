@@ -976,7 +976,7 @@ input[type=radio]:checked + label {
 }
 .box-list3 .box-item .price-area .price {
 	font-size:25px;
-	font-weight:900;
+	font-weight:600;
 	line-height:1.4;
 }
 .box-list3 .box-item .price-area .price .unit {
@@ -1760,6 +1760,11 @@ body,
 	line-height:16px;
 }
 
+@media only screen and (max-width:340px) {
+	.top-visual-box .text-area {bottom:20%;}
+	.top-visual-box .text-area .title {font-size:22px;}
+}
+
 /* 스크롤시 변환 되는 해더와 타이틀 */
 .header.fix {
 	border-bottom:1px solid #e5e5e5;
@@ -1795,11 +1800,19 @@ body,
 	border-bottom:1px solid #e6e6e6;
 }
 .detail-page .header .h-title {
+	position:absolute;
+	left:0;
+	right:0;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	padding:0 40px;
 	color:#111;
 	font-size:17px;
 	font-weight:900;
 	text-align:center;
-	line-height:55px;
+	line-height:1.2;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------

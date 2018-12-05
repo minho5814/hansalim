@@ -1680,12 +1680,15 @@ body,
 }
 .footer .foot-bottom .utill-menu .item:first-child {padding-left:0;}
 .footer .foot-bottom .utill-menu .item:first-child:before {display:none;}
+.leng-select {
+	display:inline-block;
+	position:relative;
+}
 .footer .foot-bottom .leng-select {
 	float:left;
-	position:relative;
 	margin-left:5px;
 }
-.footer .foot-bottom .leng-select .btn {
+.leng-select .btn {
 	min-width:130px;
 	height:30px;
 	padding:0 10px;
@@ -1699,12 +1702,12 @@ body,
 	text-align:left;
 	line-height:28px;
 }
-.footer .foot-bottom .leng-select.on .btn {
+.leng-select.on .btn {
 	border-color:#111;
 	background-color:#fff;
 	background-image:url(../images/icon/icon_leng_on.png);
 }/* on */
-.footer .foot-bottom .leng-select .layer {
+.leng-select .layer {
 	display:none;
 	position:absolute;
 	left:0;
@@ -1716,8 +1719,8 @@ body,
 	border-bottom:0;
 	background-color:#fff;
 }
-.footer .foot-bottom .leng-select.on .layer {display:block;}/* on */
-.footer .foot-bottom .leng-select .layer .leng {
+.leng-select.on .layer {display:block;}/* on */
+.leng-select .layer .leng {
 	display:block;
 	margin-top:5px;
 	padding:5px 10px;
@@ -1727,9 +1730,9 @@ body,
 	line-height:18px;
 	white-space:nowrap;
 }
-.footer .foot-bottom .leng-select .layer .leng:first-child {margin-top:0;}
-.footer .foot-bottom .leng-select .layer .leng:hover {background-color:#eee;}
-.footer .foot-bottom .leng-select .layer .leng.on {
+.leng-select .layer .leng:first-child {margin-top:0;}
+.leng-select .layer .leng:hover {background-color:#eee;}
+.leng-select .layer .leng.on {
 	/*
 	background-color:#503799;
 	color:#fff;
@@ -3773,6 +3776,90 @@ body,
 	color:#111;
 	font-size:18px;
 }
+
+/* 오픈안내 */
+.fullpage-wrap {
+	min-width:1005px;
+	padding:0 10px;
+	box-sizing:border-box;
+}
+.fullpage-wrap .inner-box {
+	width:100%;
+	max-width:1024px;
+	margin:0 auto;
+	
+	box-sizing:border-box;
+}
+.fullpage-wrap .text-cont {
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:120px;
+	min-width:1005px;
+	background:url(../images/img/img_fullpage.jpg) no-repeat 50% 50%;
+	background-size:cover;
+}
+.fullpage-wrap .text-cont .inner-box {
+	position:absolute;
+	left:50%;
+	top:26%;
+	width:1005px;
+	margin-left:-502px;
+	padding:0 10px;
+	box-sizing:border-box;
+	color:#111;
+	font-weight:600;
+}
+.fullpage-wrap .text-cont .inner-box .text1 {
+	font-size:38px;
+}
+.fullpage-wrap .text-cont .inner-box .text2 {
+	margin-top:8px;
+	font-size:42px;
+	line-height:1.2;
+}
+.fullpage-wrap .text-cont .inner-box .text3 {
+	margin-top:28px;
+	font-size:18px;
+}
+.fullpage-footer {
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	height:120px;
+	min-width:1005px;
+	padding:0 10px;
+	box-sizing:border-box;
+	background-color:#f7f7f7;
+}
+.fullpage-footer .inner-box {
+	position:relative;
+	height:120px;
+}
+.fullpage-footer .inner-box:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.fullpage-footer .address {
+	position:absolute;
+	left:0;
+	top:50%;
+	margin-top:-25px;
+	color:#555;
+	font-size:13px;
+	font-weight:600;
+	line-height:25px;
+}
+.fullpage-footer .leng-select {
+	position:absolute;
+	right:0;
+	top:50%;
+	margin-top:-15px;
+}
+.fullpage-footer .address {}
 
 /* ============================================================================================
 	레이어팝업
