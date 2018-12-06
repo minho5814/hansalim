@@ -1708,6 +1708,7 @@ body,
 .top-visual-box {
 	position:relative;
 	margin-top:-55px;
+	text-shadow:0px 0px 20px rgba(0,0,0,1);
 }
 .top-visual-box .visual-img {
 	display:block;
