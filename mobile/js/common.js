@@ -5,6 +5,12 @@ $(document).ready(function(){
 		window.open('about:blank','_self').self.close(); // IE에서 묻지 않고 창 닫기
 	});
 
+	/* 페이지 타이틀 영역 태그 생성 */
+	$('.s-title-area').each(function(){
+		var tit = $(this).text();
+		$(this).html('<div class="s-title"><span class="text">' + tit + '</span></div>');
+	});
+
 
 	/*
 		전체 메뉴 영역
