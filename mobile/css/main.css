@@ -563,8 +563,30 @@ html.login ,
 .item1 .drag-slider-wrap .ui-slider-range {background-image:url(../images/main/bg_bar01.png);}
 .item2 .drag-slider-wrap .ui-slider-range {background-image:url(../images/main/bg_bar02.png);}
 
+.loan-simulation-wrap .price-area {
+	margin-top:20px;
+	color:#111;
+	font-size:13px;
+	text-align:center;
+}
+.loan-simulation-wrap .price-area .price {
+	display:inline-block;
+	position:relative;
+	padding-right:40px;
+	font-size:35px;
+	font-weight:600;
+	line-height:1.2;
+}
+.loan-simulation-wrap .price-area .price .unit {
+	position:absolute;
+	right:0;
+	bottom:5px;
+	font-size:18px;
+	font-weight:400;
+}
+
 .loan-simulation-wrap .text-area {
-	margin-top:23px;
+	margin-top:10px;
 	text-align:center;
 }
 .loan-simulation-wrap .text-area .title {
