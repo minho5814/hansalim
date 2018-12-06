@@ -1782,6 +1782,7 @@ body,
 	z-index:55;
 	height:55px;
 	padding:0;
+	text-align:center;
 }
 .s-title-area.fix .s-title .text {
 	position:absolute;
@@ -1813,7 +1814,7 @@ body,
 	padding:0 40px;
 	color:#111;
 	font-size:17px;
-	font-weight:900;
+	font-weight:600;
 	text-align:center;
 	line-height:1.2;
 }
@@ -3668,7 +3669,7 @@ body,
 	padding-left:125px;
 	color:#737373;
 	font-size:14px;
-	font-weight:900;
+	font-weight:600;
 	text-align:right;
 }
 .loan-list-wrap .call-info .call-list .item:first-child {margin-top:0;}
