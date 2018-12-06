@@ -1708,7 +1708,6 @@ body,
 .top-visual-box {
 	position:relative;
 	margin-top:-55px;
-	text-shadow:0px 0px 20px rgba(0,0,0,1);
 }
 .top-visual-box .visual-img {
 	display:block;
@@ -1736,6 +1735,7 @@ body,
 	left:20px;
 	bottom:18%;
 	color:#fff;
+	text-shadow:0px 0px 20px rgba(0,0,0,1);
 }
 .top-visual-box .text-area .title {
 	font-size:25px;
@@ -3663,6 +3663,7 @@ body,
 	background:url(../images/common/sprite_icon.png) no-repeat -164px -98px;
 	background-size:250px;
 }
+
 .loan-list-wrap .call-info .call-list {margin-top:15px;}
 .loan-list-wrap .call-info .call-list .item {
 	position:relative;
@@ -3693,6 +3694,11 @@ body,
 	height:12px;
 	background:url(../images/common/sprite_icon.png) no-repeat -182px 0;
 	background-size:250px;
+}
+
+/* 340px 이하 */
+@media only screen and (max-width:340px) {
+	.loan-list-wrap .call-info .call-list .item {letter-spacing:-1px;}
 }
 
 .loan-step-list {position:relative;}
