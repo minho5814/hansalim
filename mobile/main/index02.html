@@ -107,6 +107,13 @@
 
 <script>
 $(document).ready(function(){
+	/* 스크롤 막기 */
+	$(document).on('scroll touchmove mousewheel', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		return false;
+	});
+
 	/* 상단 비주얼 슬라이드 */
 	var swiper = new Swiper('.top-visual-area .swiper-container', {
 		pagination: {
