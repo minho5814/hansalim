@@ -6,9 +6,9 @@ $(document).ready(function(){
 	});
 
 	/* 페이지 타이틀 영역 태그 생성 */
-	$('.s-title-area').each(function(){
+	$('.s-title-area .s-title').each(function(){
 		var tit = $(this).text();
-		$(this).html('<div class="s-title"><span class="text">' + tit + '</span></div>');
+		$(this).html('<span class="text">' + tit + '</span>');
 	});
 
 

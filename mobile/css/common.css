@@ -3844,6 +3844,17 @@ body,
 	text-indent:-15px;
 }
 
+.result-price-box .price-area .price {
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+.result-price-box .price-area .price .unit {
+	margin-left: 4px;
+	font-size: 15px;
+	font-weight: 400;
+}
+
 /* ============================================================================================
 	이벤트
 ============================================================================================ */
