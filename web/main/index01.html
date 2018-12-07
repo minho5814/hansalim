@@ -990,6 +990,16 @@ $(document).ready(function(){
 	$('.btn-search-close').click(function(){
 		$('.full-popup .searth-box').slideUp(100);
 	});
+
+	/* 예상상환스케줄 팝업 스크롤 */
+	$('.full-popup .scroll-cont2').scroll(function(){
+		var sTop = $(this).scrollTop();
+		if(sTop == 0){
+			$(this).closest('.popup').removeClass('scroll');
+		}else{
+			$(this).closest('.popup').addClass('scroll');
+		}
+	});
 });
 
 $(window).scroll(function(){

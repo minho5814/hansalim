@@ -3904,6 +3904,7 @@ body,
 	position:absolute;
 	right:20px;
 	top:20px;
+	z-index:5;
 	width:60px;
 	height:60px;
 	background:url(../images/icon/btn_close04.png) no-repeat 50% 50%;
