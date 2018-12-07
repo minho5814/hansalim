@@ -16,8 +16,13 @@ body,
 
 /* Container */
 .container {
-	padding-top:0;
-	padding-bottom:0;
+	overflow:hidden;
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	padding:0;
 }
 
 /* 상단 슬라이드 영역 */
