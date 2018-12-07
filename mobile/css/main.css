@@ -17,6 +17,7 @@ body,
 /* Container */
 .container {
 	overflow:hidden;
+	overflow-y:auto;
 	position:fixed;
 	left:0;
 	right:0;
@@ -33,6 +34,7 @@ body,
 	background-size:100%;
 }
 .top-visual-area .swiper-container {
+	min-height:260px;
 	padding-bottom:40px;
 	box-sizing:border-box;
 }
