@@ -220,6 +220,23 @@ $(document).ready(function(){
 		$('.btn-switch[layer-name=' + name + ']').addClass('on');
 	});
 
+	/* 하단 고정버튼 영역 넓이 설정 */
+	$('.bottom-fixed-area').each(function(){
+		$(this).find('.btn-item').each(function(){
+			var len = $(this).text().length;
+			$(this).attr('data', len);
+		});
+
+		var $item = $(this).find('.btn-item');
+		var itemArray = $item.map(function(){
+			return $(this).text().length;
+		});
+		var moreHei = Math.max.apply(Math, itemArray);
+
+		$(this).find('.btn-item').css({'width':'45%'});
+		$(this).find('.btn-item[data=' + moreHei + ']').css({'width':'55%'});
+	});
+
 	/* 레이어팝업 */
 	popup();
 	$('.btn-popup').click(function(){
