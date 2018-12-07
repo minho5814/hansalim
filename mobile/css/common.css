@@ -445,7 +445,7 @@ button {-webkit-tap-highlight-color:transparent;}
 }
 .btn-list.type2 .btn-item:first-child:before {display:none;}
 
-.btn-list .btn-item.one {width:100%;}
+.btn-list .btn-item.one {width:100% !important;}
 
 /* 버튼 클릭시 색상 변환 */
 .btn-text:active {background-color:#111;}

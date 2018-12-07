@@ -233,8 +233,11 @@ $(document).ready(function(){
 		});
 		var moreHei = Math.max.apply(Math, itemArray);
 
-		$(this).find('.btn-item').css({'width':'45%'});
-		$(this).find('.btn-item[data=' + moreHei + ']').css({'width':'55%'});
+		if($(this).find('.type2 .btn-item[data=' + moreHei + ']').length == 1){
+			$(this).find('.type2 .btn-item').css({'width':'45%'});
+			$(this).find('.type2 .btn-item[data=' + moreHei + ']').css({'width':'55%'});
+			$(this).find('.btn-item.one').css({'width':'100%'});
+		}
 	});
 
 	/* 레이어팝업 */
