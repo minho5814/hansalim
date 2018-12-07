@@ -1468,7 +1468,7 @@ input[type=radio]:checked + label {
 ============================================================================================ */
 html,
 body,
-.wrapper {}
+.wrapper {-webkit-overflow-scrolling:touch}
 
 .container {
 	padding-top:55px;
