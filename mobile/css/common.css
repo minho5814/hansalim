@@ -1425,6 +1425,7 @@ input[type=radio]:checked + label {
 	padding-left:9px;
 	background-color:#f1f1f1;
 }
+/* 로카 캐릭터 삭제
 .quick-menu:before {
 	content:'';
 	position:absolute;
@@ -1435,6 +1436,7 @@ input[type=radio]:checked + label {
 	background:url(../images/main/img_loca.png) no-repeat 0 0;
 	background-size:100% 100%;
 }
+*/
 .quick-menu:after {
 	content:'';
 	display:block;
