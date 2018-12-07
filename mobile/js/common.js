@@ -255,16 +255,6 @@ $(document).ready(function(){
 		popup();
 	});
 
-	/* 레이어팝업 스크롤 다운시 */
-	$('.layer-popup .popup .pop-cont').scroll(function(){
-		var popTop = $(this).scrollTop();
-		if(popTop > 0){
-			$(this).closest('.popup').addClass('scroll');
-		}else{
-			$(this).closest('.popup').removeClass('scroll');
-		}
-	});
-
 	/* 툴팁 레이어 */
 	toolLayer();// 툴팁 레이어 위치 조정
 	$('.btn-tool').click(function(){
@@ -357,6 +347,16 @@ function popup(){
 		}else{
 			var padg = (winH - popH) / 2;
 			$(this).removeClass('h-full');
+		}
+	});
+
+	/* 레이어팝업 스크롤 다운시 */
+	$('.layer-popup .popup .pop-cont').scroll(function(){
+		var popTop = $(this).scrollTop();
+		if(popTop > 0){
+			$(this).closest('.popup').addClass('scroll');
+		}else{
+			$(this).closest('.popup').removeClass('scroll');
 		}
 	});
 }
