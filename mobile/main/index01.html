@@ -83,6 +83,13 @@
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>
+			<div class="btn-num-area">
+				<div class="number">
+					<span class="ing">1</span>/<span class="all"></span>
+				</div>
+				<button type="button" class="btn-auto start">Start</button>
+				<button type="button" class="btn-auto stop">Stop</button>
+			</div>
 		</div>
 
 		<div class="fix-bottom-area">
@@ -225,6 +232,32 @@ $(document).ready(function(){
 			el: '.top-visual-area .swiper-pagination',
 			clickable: true,
 		},
+		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
+	});
+
+	$('.top-visual-area').each(function(){
+		var len = $(this).find('.swiper-pagination-bullet').length;
+		$(this).find('.number .all').text(len);
+	});
+
+	swiper.on('slideChange', function () {
+		var idx = $('.top-visual-area .swiper-pagination-bullet-active').index();
+		$('.top-visual-area .number .ing').text(idx + 1);
+	});
+
+	$('.top-visual-area .btn-auto').click(function(){
+		$(this).hide();
+		if($(this).hasClass('stop')){
+			$('.btn-auto.start').show();
+			swiper.autoplay.stop();
+		}else{
+			$('.btn-auto.stop').show();
+			swiper.autoplay.start();
+		}
 	});
 
 	resizeMid();

@@ -1085,6 +1085,8 @@ body,
 .gnb-area .gnb-list .gnb-item .gnb-depth .depth:first-child:after {left:83.33333333333333%;}
 .gnb-area .gnb-list .gnb-item .gnb-depth .depth:nth-child(2):before {left:16.66666666666667%;margin-left:-1px;}
 
+.gnb-area .gnb-list .gnb-item .gnb-depth .depth a:hover {text-decoration:underline;}
+
 .gnb-area .gnb-list .gnb-item .gnb-depth .depth .title {
 	display:block;
 	position:relative;
@@ -1390,7 +1392,7 @@ body,
 	font-size:20px;
 	font-weight:900;
 }
-.all-menu-layer .menu-box .list-area {}
+.all-menu-layer .menu-box .list-area a.title:hover .txt {text-decoration:underline;}
 .all-menu-layer .menu-box .list-area .title {
 	display:block;
 	position:relative;

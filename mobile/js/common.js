@@ -167,7 +167,11 @@ $(document).ready(function(){
 	/* 데이트피커 */
 	$('.date-form').each(function(){
 		var data = $(this).attr('data-name');
-		$('body').append('<div class="popup-datepicker" data-name="' + data + '"><div class="dimmed"></div><div class="datepicker"></div></div>');
+		if($(this).hasClass('afterDis')){
+			$('body').append('<div class="popup-datepicker" data-name="' + data + '"><div class="dimmed"></div><div class="datepicker afterDis"></div></div>');
+		}else{
+			$('body').append('<div class="popup-datepicker" data-name="' + data + '"><div class="dimmed"></div><div class="datepicker"></div></div>');
+		}
 	});
 	$('.date-form').focus(function(){
 		var data = $(this).attr('data-name');
@@ -175,21 +179,40 @@ $(document).ready(function(){
 	});
 	$('.datepicker').each(function(){
 		var data = $(this).closest('.popup-datepicker').attr('data-name');
-		$(this).datepicker({
-			yearRange: '1900:2030',// 연도 법위
-			changeMonth: true,
-			changeYear: true,
-			firstDay: 0,
-			//altField: '.date-form[data-name=' + data + ']',
-			dateFormat: 'dd.mm.yy',
-			showOtherMonths: true,
-			monthNames : ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
-			monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
-			onSelect: function(dateText, inst) {
-				$('.popup-datepicker').hide();
-				$('.date-form[data-name=' + data + ']').val(dateText);
-			}
-		});
+		if($(this).hasClass('afterDis')){
+			$(this).datepicker({
+				yearRange: '1900:2030',// 연도 법위
+				changeMonth: true,
+				changeYear: true,
+				firstDay: 0,
+				//altField: '.date-form[data-name=' + data + ']',
+				dateFormat: 'dd.mm.yy',
+				showOtherMonths: true,
+				monthNames : ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+				monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+				onSelect: function(dateText, inst) {
+					$('.popup-datepicker').hide();
+					$('.date-form[data-name=' + data + ']').val(dateText);
+				},
+				maxDate:'0',
+			});
+		}else{
+			$(this).datepicker({
+				yearRange: '1900:2030',// 연도 법위
+				changeMonth: true,
+				changeYear: true,
+				firstDay: 0,
+				//altField: '.date-form[data-name=' + data + ']',
+				dateFormat: 'dd.mm.yy',
+				showOtherMonths: true,
+				monthNames : ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+				monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+				onSelect: function(dateText, inst) {
+					$('.popup-datepicker').hide();
+					$('.date-form[data-name=' + data + ']').val(dateText);
+				}
+			});
+		}
 		$(this).find('td').removeClass('ui-datepicker-current-day');
 	});
 	$('.popup-datepicker .dimmed').click(function(){

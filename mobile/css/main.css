@@ -28,6 +28,7 @@ body,
 
 /* 상단 슬라이드 영역 */
 .top-visual-area {
+	position:relative;
 	background-image:url(../images/bg/bg_main_top.png), linear-gradient(#e3003b, #a80377);
 	background-repeat:no-repeat;
 	background-position:0 0;
@@ -159,6 +160,38 @@ body,
 	background:url(../images/common/sprite_icon.png) no-repeat 0 0;
 	background-size:250px;
 }
+
+.top-visual-area .btn-num-area {
+	position:absolute;
+	left:25px;
+	bottom:8px;
+	z-index:5;
+	font-size:0;
+}
+.top-visual-area .btn-num-area .number {
+	display:inline-block;
+	color:#fff;
+	font-size:14px;
+	line-height:25px;
+}
+.top-visual-area .btn-num-area .btn-auto {
+	display:none;
+	width:25px;
+	height:25px;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-size:9px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.top-visual-area .btn-num-area .btn-auto.start {background-image:url(../images/main/btn_start.png);}
+.top-visual-area .btn-num-area .btn-auto.stop {display:inline-block;background-image:url(../images/main/btn_stop.png);}
+.top-visual-area .btn-num-area {}
+.top-visual-area {}
+.top-visual-area {}
+.top-visual-area {}
+.top-visual-area {}
 
 /* 박스 메뉴 영역 */
 .box-menu-area {
