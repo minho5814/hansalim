@@ -20,7 +20,7 @@
 			margin:0 auto;
 		}
 		.STitle {
-			font-size:20px;
+			font-size:18px;
 			font-weight:600;
 			padding:20px 0;
 		}
@@ -144,9 +144,10 @@
 
 	<table>
 		<colgroup>
-			<col style="width:33%;">
+			<col style="width:25%;">
+			<col style="width:25%;">
+			<col style="width:25%;">
 			<col>
-			<col style="width:33%;">
 		</colgroup>
 		<tbody>
 			<tr>
@@ -160,7 +161,11 @@
 				</td>
 				<td>
 					<div class="STitle">* 오늘날짜 표시</div>
-					<input type="text" class="datepicker today afterDis" placeholder="dd.mm.yy" readonly>
+					<input type="text" class="datepicker today" placeholder="dd.mm.yy" readonly>
+				</td>
+				<td>
+					<div class="STitle">* 오늘날짜 이후 선택 불가</div>
+					<input type="text" class="datepicker afterDis" placeholder="dd.mm.yy" readonly>
 				</td>
 			</tr>
 			<tr>
@@ -176,17 +181,18 @@
 					<div class="STitle">* 6개월전 날짜 표시</div>
 					<input type="text" class="datepicker month-6 afterDis" placeholder="dd.mm.yy" readonly>
 				</td>
+				<td></td>
 			</tr>
 		</tbody>
 	</table>
 
 	<div class="InfoText">
 		- 특정날짜 표시 : value값으로 입력<br>
+		- 오늘날짜 이후 선택 불가 : .datepicker 태그에 class=&quot;afterDis&quot; 추가<br>
 		- 오늘날짜 표시 : .datepicker 태그에 class=&quot;today&quot; 추가<br>
 		- 1개월전 날짜 표시 : .datepicker 태그에 class=&quot;month-1&quot; 추가<br>
-		- 3개월 오늘날짜 표시 : .datepicker 태그에 class=&quot;month-3&quot; 추가<br>
-		- 6개월 오늘날짜 표시 : .datepicker 태그에 class=&quot;month-6&quot; 추가<br>
-		- 오늘날짜 이후 선택 불가 : .datepicker 태그에 class=&quot;afterDis&quot; 추가
+		- 3개월전 오늘날짜 표시 : .datepicker 태그에 class=&quot;month-3&quot; 추가<br>
+		- 6개월전 오늘날짜 표시 : .datepicker 태그에 class=&quot;month-6&quot; 추가
 	</div>
 
 
