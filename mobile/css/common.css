@@ -4850,7 +4850,7 @@ body,
 .app-guide .img-area img {
 	display:inline-block;
 	width:100%;
-	max-width:375px;
+	max-width:500px;
 }
 
 /* 에러페이지 (MA-10.05.1.html) */
