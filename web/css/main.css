@@ -410,7 +410,9 @@
 	color:#111;
 }
 .full-popup .btn-search-close {
-	width:100%;
+	display:block;
+	margin:0 auto;
+	padding:0 30px;
 	text-align:center;
 }
 .full-popup .btn-search-close .text {
