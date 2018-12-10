@@ -391,10 +391,7 @@ body,
 		top:47%;
 		max-height:150px;
 	}
-	.top-visual-area .card-box .box-inner .title {
-		padding-top:10px;
-		font-size:18px;
-	}
+	.top-visual-area .card-box .box-inner .title {padding-top:10px;}
 	.top-visual-area .card-box .box-inner .text {margin-top:0;}
 	.top-visual-area .card-box .write-box {margin-top:5px;}
 	.top-visual-area .card-box .write-box .box {padding:4px 0 4px 4px;}
