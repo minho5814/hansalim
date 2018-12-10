@@ -234,10 +234,11 @@ $(document).ready(function(){
 	/* ------------------------------------------------------------------------------------------------------------------
 		데이트피커
 	------------------------------------------------------------------------------------------------------------------ */
+	/*
 	$('.datepicker').each(function(){
 		var data = $(this).closest('.popup-datepicker').attr('data-name');
 		if(!$(this).hasClass('afterDis')){
-			/* 기본 */
+			// 기본
 			$(this).datepicker({
 				yearRange: '1900:2030',// 연도 법위
 				changeMonth: true,
@@ -253,7 +254,7 @@ $(document).ready(function(){
 				},
 			});
 		}else{
-			/* 오늘날짜 이후 선택금지 */
+			// 오늘날짜 이후 선택금지
 			$(this).datepicker({
 				yearRange: '1900:',// 연도 법위
 				changeMonth: true,
@@ -269,6 +270,7 @@ $(document).ready(function(){
 
 		$(this).find('td').removeClass('ui-datepicker-current-day');
 	});
+	*/
 
 	monthData();
 
@@ -452,6 +454,42 @@ function month06(){
 }
 
 function monthData(){
+	$('.datepicker').each(function(){
+		var data = $(this).closest('.popup-datepicker').attr('data-name');
+		if(!$(this).hasClass('afterDis')){
+			// 기본
+			$(this).datepicker({
+				yearRange: '1900:2030',// 연도 법위
+				changeMonth: true,
+				changeYear: true,
+				firstDay: 0,
+				//altField: '.date-form[data-name=' + data + ']',
+				dateFormat: 'dd.mm.yy',
+				showOtherMonths: true,
+				monthNames : ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+				monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+				onSelect: function(dateText, inst) {
+					
+				},
+			});
+		}else{
+			// 오늘날짜 이후 선택금지
+			$(this).datepicker({
+				yearRange: '1900:',// 연도 법위
+				changeMonth: true,
+				changeYear: true,
+				firstDay: 0,
+				dateFormat: 'dd.mm.yy',
+				showOtherMonths: true,
+				monthNames : ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+				monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+				maxDate:'0',
+			});
+		}
+
+		$(this).find('td').removeClass('ui-datepicker-current-day');
+	});
+
 	/* 오늘 */
 	$('.today').each(function(){
 		$(this).val(today());
