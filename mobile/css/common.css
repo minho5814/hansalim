@@ -2061,7 +2061,15 @@ body,
 	line-height:28px;
 }
 
-.menu-wrap .menu-content:before {
+.menu-wrap .menu-content {
+	overflow-y:auto;
+	position:absolute;
+	left:0;
+	right:0;
+	top:311px;
+	bottom:0;
+}
+.menu-wrap .menu-tab-wrap:before {
 	content:'';
 	position:absolute;
 	left:0;
@@ -2130,15 +2138,7 @@ body,
 .menu-wrap .menu-tab-wrap .menu-tab .item.on {color:#c80040;}
 .menu-wrap .menu-tab-wrap .menu-tab .item.on:before {background-color:#c80040;}
 
-.menu-wrap .menu-tab-cont {
-	display:none;
-	overflow-y:auto;
-	position:absolute;
-	left:0;
-	right:0;
-	top:311px;
-	bottom:0;
-}
+.menu-wrap .menu-tab-cont {display:none;}
 .menu-wrap .menu-tab-cont.my-menu {background-color:#fff;}
 .menu-wrap .menu-tab-cont.on {display:block;}
 .menu-wrap .menu-list-box {padding:0 0 0 145px;}
