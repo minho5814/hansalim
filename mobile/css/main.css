@@ -377,7 +377,7 @@ body,
 @media only screen and (max-width:340px) {
 	.top-visual-area .swiper-container {min-height:260px;}
 	.sign-box-area .text,
-	.sign-box-area .link-sign {font-size:14px;}
+	.sign-box-area .link-sign {font-size:12px;}
 	.sign-box-area .btn-sign {
 		margin-left:4px;
 		padding:0 8px;
