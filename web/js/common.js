@@ -255,6 +255,7 @@ $(document).ready(function(){
 		}else{
 			/* 오늘날짜 이후 선택금지 */
 			$(this).datepicker({
+				yearRange: '1900:',// 연도 법위
 				changeMonth: true,
 				changeYear: true,
 				firstDay: 0,
