@@ -2869,6 +2869,9 @@ body,
 	font-weight:900;
 	text-align:center;
 }
+.phone-certify .send-box .number:-ms-input-placeholder {font-size:24px;font-weight:400;}
+.phone-certify .send-box .number::-webkit-input-placeholder {font-size:24px;font-weight:400;}
+.phone-certify .send-box .number::-moz-placeholder {font-size:24px;font-weight:400;}
 .phone-certify .send-box .btn-send {
 	height:40px;
 	padding:0 20px;
