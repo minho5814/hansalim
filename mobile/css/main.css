@@ -68,8 +68,8 @@ body,
 	box-shadow:0px 0px 11px 4px rgba(0,0,0,.3);
 	background-color:#ffdb3f;
 	background-repeat:no-repeat;
-	background-position:0 0;
-	background-size:cover;
+	background-position:50% 50% !important;
+	background-size:cover !important;
 }
 .top-visual-area .card-box.box1 {
 	background-image:url(../images/main/bg_visual05.png);
