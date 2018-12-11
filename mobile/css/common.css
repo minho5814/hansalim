@@ -4817,7 +4817,13 @@ body,
 .app-guide,
 .app-guide body {height:100%;}
 
-.app-guide .header {}
+.app-guide .s-title-area {
+	position:absolute;
+	left:0;
+	top:70px;
+	z-index:5;
+	margin-top:0;
+}
 
 .app-guide .swiper-container {
 	width: 100%;
@@ -4826,15 +4832,28 @@ body,
 	text-align:center;
 }
 .app-guide .swiper-wrapper {display:block;}
+.app-guide .swiper-slide:first-child:before {
+	content:'';
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	height:170px;
+	background-color:#fff;
+}
 .app-guide .swiper-slide:nth-child(odd) {
 	background-color:#f1f1f1;
 }
 .app-guide .a-title {
+	position:relative;
+	z-index:5;
 	padding:95px 10px 0;
 	font-size:20px;
 	font-weight:600;
+	text-shadow:0 0 1px #fff;
 	line-height:1.4;
 }
+.app-guide .swiper-slide:first-child .a-title {padding-top:210px;}
 .app-guide .text-area {
 	padding:7px 10px 0;
 	font-size:13px;

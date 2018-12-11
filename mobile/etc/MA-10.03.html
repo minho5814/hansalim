@@ -20,6 +20,10 @@
 	<!-- a href="#" class="btn-lang">EN</a -->
 </div>
 
+<div class="s-title-area hid-type">
+	<h2 class="s-title"><span class="text">APP guideline</span></h2>
+</div>
+
 <div class="swiper-container">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
@@ -68,10 +72,25 @@
 
 <script>
 $(document).ready(function(){
+	// 첫번째 컨텐츠에 타이틀 복사
+	$('.swiper-slide:first-child').each(function(){
+		var clon = $('.s-title-area').html();
+		console.log(clon);
+		$(this).prepend('<div class="s-title-area">' + clon + '</div>');
+	});
+
 	var swiper = new Swiper('.swiper-container', {
 		direction: 'vertical',
 		slidesPerView: 1,
 		mousewheel: true,
+	});
+
+	swiper.on('transitionStart', function () {
+		if($('.swiper-slide:first-child').hasClass('swiper-slide-active')){
+			$('.s-title-area').removeClass('fix');
+		}else{
+			$('.s-title-area').addClass('fix');
+		}
 	});
 });
 </script>
