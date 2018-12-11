@@ -991,6 +991,13 @@ $(document).ready(function(){
 		$('.full-popup .searth-box').slideUp(100);
 	});
 
+	// 달력 인풋 포커스시 'on' 추가 (선택된 필드 찾기)
+	$('.full-popup .datepicker').focus(function(){
+		$(this).addClass('on');
+	}).blur(function(){
+		$(this).removeClass('on');
+	});
+
 	/* 예상상환스케줄 팝업 스크롤 */
 	$('.full-popup .scroll-cont2').scroll(function(){
 		var sTop = $(this).scrollTop();
@@ -998,6 +1005,22 @@ $(document).ready(function(){
 			$(this).closest('.popup').removeClass('scroll');
 		}else{
 			$(this).closest('.popup').addClass('scroll');
+		}
+
+		// 데이트피커 선택된 필드를 찾아 달력 레이어 팝업스크롤에 맞게 따라다니기
+		if($(this).find('.searth-box .datepicker').hasClass('on')){
+			var dTop = $(this).find('.searth-box .datepicker.on').offset().top;
+			var dHei = $(this).find('.searth-box .datepicker.on').outerHeight();
+			var wTop = $(window).scrollTop();
+			var posT = dTop - wTop + dHei;
+
+			$('.ui-datepicker').css('top', posT);
+
+			if(posT < 120){
+				$('.ui-datepicker').hide();
+			}else{
+				$('.ui-datepicker').show();
+			}
 		}
 	});
 });
