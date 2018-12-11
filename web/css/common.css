@@ -3480,9 +3480,9 @@ body,
 .ceo-visual .box-inner {
 	position:relative;
 	width:1000px;
-	height:434px;
+	min-height:435px;
 	margin:0 auto;
-	padding:196px 0 104px;
+	padding:180px 0 50px;
 	box-sizing:border-box;
 }
 .ceo-visual .visual-text {}
@@ -3498,19 +3498,24 @@ body,
 	line-height:25px;
 }
 .ceo-visual .visual-text .name-box {
-	margin-top:20px;
-	color:#908f95;
-	font-size:18px;
+	position:absolute;
+	left:0;
+	bottom:35px;
+	color:#111;
+	font-size:16px;
 	font-weight:600;
+	line-height:44px;
 }
 .ceo-visual .visual-text .name-box .name {
 	display:inline-block;
 	margin-left:15px;
+	font-size:0;
 	vertical-align:middle;
+	line-height:0;
 }
 .ceo-visual .visual-img {
 	position:absolute;
-	right:72px;
+	right:-30px;
 	bottom:0;
 }
 .ceo-visual .visual-img img {vertical-align:top;}
