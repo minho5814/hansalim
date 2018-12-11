@@ -39,6 +39,7 @@ body,
 	box-sizing:border-box;
 }
 .top-visual-area .swiper-slide {
+	overflow:inherit;
 	height:100%;
 	padding:65px 25px 0;
 	box-sizing:border-box;
@@ -375,6 +376,17 @@ body,
 
 /* 340px 이하 */
 @media only screen and (max-width:340px) {
+	.top-visual-area .swiper-container {min-height:260px;}
+	.sign-box-area .text,
+	.sign-box-area .link-sign {font-size:12px;}
+	.sign-box-area .btn-sign {
+		margin-left:4px;
+		padding:0 8px;
+		font-size:12px;
+	}
+}
+/* height:550px 이하 */
+@media only screen and (max-height:550px) {
 	.top-visual-area .swiper-container {min-height:260px;}
 	.sign-box-area .text,
 	.sign-box-area .link-sign {font-size:12px;}
