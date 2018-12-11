@@ -1724,7 +1724,7 @@ body,
 }
 .top-visual-box .s-title-area .text {
 	width:280px;
-	height:50px;
+	min-height:50px;
 	margin-top:25px;
 }
 .top-visual-box .s-title-area .text img {width:100%;}
@@ -1797,6 +1797,7 @@ body,
 	transform:translateY(-50%);
 	width:auto;
 	height:auto;
+	min-height:auto;
 	margin-top:0;
 	color:#111;
 	font-size:17px;
@@ -3113,13 +3114,25 @@ body,
 	롯데카드소개
 ============================================================================================ */
 /* CEO인사말 (MA-04.01.html) */
+.ceo-box {
+	min-height:290px;
+	background-color:#f0f0f8;
+}
+.ceo-box .visual-img {
+	position:absolute;
+	width:100%;
+	max-width:350px;
+	right:0;
+	bottom:0;
+}
+
 .ceo-box .s-title-area {margin-top:20px;}
 .ceo-box .text.type2 {
 	height:17px;
-	margin-top:21px;
-	color:#8b8a90;
+	margin-top:10px;
+	color:#111;
 	font-size:10px;
-	font-weight:400;
+	font-weight:600;
 }
 .ceo-box .text.type2 .name {
 	display:inline-block;
