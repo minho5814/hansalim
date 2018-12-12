@@ -75,7 +75,6 @@ $(document).ready(function(){
 	// 첫번째 컨텐츠에 타이틀 복사
 	$('.swiper-slide:first-child').each(function(){
 		var clon = $('.s-title-area').html();
-		console.log(clon);
 		$(this).prepend('<div class="s-title-area">' + clon + '</div>');
 	});
 
