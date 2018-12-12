@@ -308,7 +308,7 @@ $(document).ready(function(){
 		popup();
 	});
 
-	$('.layer-popup .popClose').click(function(){
+	$(document).on('click', '.layer-popup .popClose', function(){
 		$('html, body').removeAttr('style');
 		$(this).closest('.layer-popup').removeClass('show');
 		popup();
