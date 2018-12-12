@@ -126,8 +126,6 @@ $(document).ready(function(){
 		},
 	});
 
-	resizeMid();
-
 	$('input').focus(function(){
 		$('.top-visual-area .card-box').each(function(){
 			var hei = $(this).outerHeight();
@@ -153,17 +151,6 @@ $(document).ready(function(){
 		}
 	});
 });
-
-$(window).load(function(){
-	resizeMid();
-});
-
-function resizeMid(){
-	var winH = $(window).height();
-	var btmH = $('.fix-bottom-area').outerHeight();
-
-	$('.top-visual-area .swiper-container').css({'height':winH - btmH});
-}
 </script>
 </body>
 

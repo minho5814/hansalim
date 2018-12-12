@@ -395,6 +395,11 @@ $(document).ready(function(){
 		});
 	}
 
+	setTimeout(function(){
+		var hei = $('.top-visual-area').outerHeight();
+		$('.top-visual-area').css({'height':hei});
+	}, 500);
+
 	/* 상단 비주얼 슬라이드 */
 	var swiper = new Swiper('.top-visual-area .swiper-container', {
 		pagination: {
@@ -428,8 +433,6 @@ $(document).ready(function(){
 			swiper.autoplay.start();
 		}
 	});
-
-	resizeMid();
 
 	$('input').focus(function(){
 		$('.top-visual-area .card-box').each(function(){
@@ -483,18 +486,6 @@ $(document).ready(function(){
 		}
 	});
 });
-
-$(window).load(function(){
-	resizeMid();
-});
-
-function resizeMid(){
-	var winH = $(window).height();
-	var btmH = $('.fix-bottom-area').outerHeight();
-
-	$('.top-visual-area .swiper-container').css({'height':winH - btmH});
-}
-
 
 /* 숫자 세자리 콤마 */
 function commaNum(num) {

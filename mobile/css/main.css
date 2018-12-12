@@ -29,6 +29,12 @@ body,
 /* 상단 슬라이드 영역 */
 .top-visual-area {
 	position:relative;
+	height:-webkit-calc(100% - 317px);
+	height:moz-calc(100% - 317px);
+	height:calc(100% - 317px);
+	min-height:230px;
+	padding-top:55px;
+	box-sizing:border-box;
 	background-image:url(../images/bg/bg_main_top.png), linear-gradient(#e3003b, #a80377);
 	background-repeat:no-repeat;
 	background-position:0 0;
@@ -41,19 +47,10 @@ body,
 .top-visual-area .swiper-slide {
 	overflow:inherit;
 	height:100%;
-	padding:65px 25px 0;
+	padding:0 25px;
 	box-sizing:border-box;
 }
 .top-visual-area .swiper-slide.type2 {padding-top:110px;}
-/*
-.top-visual-area .card-box {
-	position:relative;
-	height:195px;
-	border-radius:5px;
-	background-color:#bc396e;
-	box-shadow:0px 0px 16px 4px rgba(0,0,0,.3);
-}
-*/
 .top-visual-area .card-box {
 	position:absolute;
 	left:25px;
@@ -63,8 +60,8 @@ body,
 	-ms-transform:translateY(-50%);
 	transform:translateY(-50%);
 	height:100%;
+	max-height:200px;
 	max-height:195px;
-	margin-top:32px;
 	border-radius:5px;
 	box-shadow:0px 0px 11px 4px rgba(0,0,0,.3);
 	background-color:#ffdb3f;
@@ -186,11 +183,6 @@ body,
 }
 .top-visual-area .btn-num-area .btn-auto.start {background-image:url(../images/main/btn_start.png);}
 .top-visual-area .btn-num-area .btn-auto.stop {display:inline-block;background-image:url(../images/main/btn_stop.png);}
-.top-visual-area .btn-num-area {}
-.top-visual-area {}
-.top-visual-area {}
-.top-visual-area {}
-.top-visual-area {}
 
 /* 박스 메뉴 영역 */
 .box-menu-area {
@@ -376,41 +368,54 @@ body,
 
 /* 340px 이하 */
 @media only screen and (max-width:340px) {
-	.top-visual-area .swiper-container {min-height:260px;}
-	.sign-box-area .text,
-	.sign-box-area .link-sign {font-size:12px;}
-	.sign-box-area .btn-sign {
-		margin-left:4px;
-		padding:0 8px;
-		font-size:12px;
+	.top-visual-area .card-box .box-inner .title {
+		font-size:16px;
+		line-height:20px;
 	}
-}
-/* height:550px 이하 */
-@media only screen and (max-height:550px) {
-	.top-visual-area .swiper-container {min-height:260px;}
-	.sign-box-area .text,
-	.sign-box-area .link-sign {font-size:12px;}
-	.sign-box-area .btn-sign {
-		margin-left:4px;
-		padding:0 8px;
-		font-size:12px;
-	}
-}
-
-/* 아이폰 6/7/8 대응 */
-@media only screen and (min-width:374px) and (max-height:560px) {
-	.top-visual-area .card-box {
-		top:47%;
-		max-height:150px;
-	}
-	.top-visual-area .card-box .box-inner .title {padding-top:10px;}
-	.top-visual-area .card-box .box-inner .text {margin-top:0;}
+	.top-visual-area .card-box .box-inner .text {font-size: 12px;}
 	.top-visual-area .card-box .write-box {margin-top:5px;}
-	.top-visual-area .card-box .write-box .box {padding:4px 0 4px 4px;}
-	.top-visual-area .card-box .aligin-right {margin-top:2px;}
+	.top-visual-area .card-box .write-box .box {
+		padding-top:4px;
+		padding-bottom:6px;
+	}
+	.top-visual-area .card-box .write-box .label {
+		font-size:12px;
+		white-space:nowrap;
+	}
+	.top-visual-area .card-box .write-box input[type=text],
+	.top-visual-area .card-box .write-box input[type=number],
+	.top-visual-area .card-box .write-box input[type=tel] {font-size:12px;}
+	.top-visual-area .card-box .aligin-right .link {font-size:15px;}
+}
 
-	.box-menu-area .menu-item {height:100px;}
-	.box-menu-area .menu-item .text {padding-top:50px;}
+/* 높이 550px 이하 */
+@media only screen and (max-height:550px) {
+	.top-visual-area .card-box {
+		top:0;
+		bottom:0;
+		-webkit-transform:translateY(0);
+		-ms-transform:translateY(0);
+		transform:translateY(0);
+	}
+	
+	.top-visual-area .card-box .box-inner .title {
+		font-size:16px;
+		line-height:20px;
+	}
+	.top-visual-area .card-box .box-inner .text {font-size: 12px;}
+	.top-visual-area .card-box .write-box {margin-top:5px;}
+	.top-visual-area .card-box .write-box .box {
+		padding-top:4px;
+		padding-bottom:6px;
+	}
+	.top-visual-area .card-box .write-box .label {
+		font-size:12px;
+		white-space:nowrap;
+	}
+	.top-visual-area .card-box .write-box input[type=text],
+	.top-visual-area .card-box .write-box input[type=number],
+	.top-visual-area .card-box .write-box input[type=tel] {font-size:12px;}
+	.top-visual-area .card-box .aligin-right .link {font-size:15px;}
 }
 
 /* ============================================================================================
@@ -494,63 +499,6 @@ html.login ,
 .top-info-area .payment-total .item strong {font-weight:600;}
 .top-info-area .payment-total .item .title {float:left;}
 .top-info-area .payment-total .item .price {float:right;}
-
-
-/* 340px 이하 */
-@media only screen and (max-width:340px) {
-	/* 상단 슬라이드 영역 */
-	.top-visual-area .swiper-slide {
-		padding-left:15px;
-		padding-right:15px;
-	}
-	.top-visual-area .card-box {max-height:160px;}
-	.top-visual-area .card-box .box-inner .title {font-size:18px;}
-	.top-visual-area .card-box .box-inner .text {font-size:12px;}
-	.top-visual-area .card-box .write-box .label {font-size:11px;}
-	.top-visual-area .card-box .write-box input[type=text],
-	.top-visual-area .card-box .write-box input[type=number],
-	.top-visual-area .card-box .write-box input[type=tel] {font-size:13px;}
-
-	.top-info-area .photo-area {
-		width:40px;
-		height:40px;
-	}
-	.top-info-area .t-title {
-		margin-top:10px;
-		font-size:20px;
-	}
-	.top-info-area .amount-area {margin-top:5px;}
-	.top-info-area .amount-area .text {font-size:13px;}
-	.top-info-area .amount-area .link-price {font-size:15px;}
-	.top-info-area .amount-area .link-price .price {font-size:28px;}
-	.top-info-area .text-area {
-		margin-top:15px;
-		font-size:13px;
-	}
-	.top-info-area .payment-total {margin-top:15px;}
-	.top-info-area .payment-total .item {font-size:13px;}
-
-	/* 빠른 메뉴 */
-	.quick-menu:before {
-		right:5px;
-		width:80px;
-		height:78px;
-	}
-	.quick-menu .menu-item {
-		height:40px;
-		font-size:15px;
-		line-height:40px;
-	}
-	.sign-box-area .sign-box .text {font-size:13px;}
-	.sign-box-area .sign-box .link-sign {font-size:13px;}
-	.sign-box-area .sign-box .btn-sign {font-size:12px;}
-
-	/* 박스 메뉴 영역 */
-	.box-menu-area .menu-item {height:100px;}
-	.box-menu-area .menu-item .text {padding-top:45px;}
-	.box-menu-area .menu-item .text:before {margin-top:-8px;}
-}
-
 
 /* 대출 시물레이션 팝업 */
 .loan-simulation-wrap {padding:30px 20px 20px;}
