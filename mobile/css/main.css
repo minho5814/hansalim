@@ -32,7 +32,7 @@ body,
 	height:-webkit-calc(100% - 317px);
 	height:moz-calc(100% - 317px);
 	height:calc(100% - 317px);
-	min-height:230px;
+	min-height:260px;
 	padding-top:55px;
 	box-sizing:border-box;
 	background-image:url(../images/bg/bg_main_top.png), linear-gradient(#e3003b, #a80377);
@@ -41,6 +41,7 @@ body,
 	background-size:100%;
 }
 .top-visual-area .swiper-container {
+	overflow:inherit;
 	padding-bottom:40px;
 	box-sizing:border-box;
 }
@@ -386,6 +387,14 @@ body,
 	.top-visual-area .card-box .write-box input[type=number],
 	.top-visual-area .card-box .write-box input[type=tel] {font-size:12px;}
 	.top-visual-area .card-box .aligin-right .link {font-size:15px;}
+
+	.sign-box-area .text {font-size:12px;}
+	.sign-box-area .link-sign {font-size:12px;}
+	.sign-box-area .btn-sign {
+		margin-left:4px;
+		padding:0 8px;
+		font-size:12px;
+	}
 }
 
 /* 높이 550px 이하 */
@@ -419,7 +428,7 @@ body,
 	.top-visual-area .card-box .aligin-right .link {font-size:15px;}
 }
 */
-
+/* 상단 슬라이드 */
 .minimum .top-visual-area .card-box {
 	top:0;
 	bottom:0;
@@ -446,6 +455,14 @@ body,
 .minimum .top-visual-area .card-box .write-box input[type=number],
 .minimum .top-visual-area .card-box .write-box input[type=tel] {font-size:12px;}
 .minimum .top-visual-area .card-box .aligin-right .link {font-size:15px;}
+/* 하단 고정영역 */
+.minimum .quick-menu .menu-item {
+	height:40px;
+	font-size:15px;
+	line-height:40px;
+}
+.minimum .box-menu-area .menu-item {height:100px;}
+.minimum .box-menu-area .menu-item .text {top:47%;}
 
 /* ============================================================================================
 	로그인 후
@@ -453,6 +470,8 @@ body,
 html.login ,
 .login body,
 .login .wrapper {background-color:#fff;}
+
+.login .top-visual-area {min-height:310px;}
 
 /* 상단 정보 출력 영역 */
 .top-info-area {
@@ -639,4 +658,22 @@ html.login ,
 	margin-top:10px;
 	color:#737373;
 	font-size:14px;
+}
+
+/* 높이 670px 이하 */
+@media only screen and (max-height:670px) {
+	.top-info-area {margin-top:0;}
+	.top-info-area .t-title {
+		margin-top:10px;
+		font-size:20px;
+	}
+	.top-info-area .amount-area {margin-top:0;}
+	.top-info-area .amount-area .text {font-size:13px;}
+	.top-info-area .amount-area .link-price {font-size:15px;}
+	.top-info-area .amount-area .link-price .price {font-size:28px;}
+	.top-info-area .text-area {
+		margin-top:15px;
+		font-size:13px;
+	}
+	.top-info-area .payment-total {margin-top:12px;}
 }
