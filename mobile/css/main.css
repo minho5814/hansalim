@@ -369,6 +369,14 @@ body,
 
 /* 340px 이하 */
 @media only screen and (max-width:340px) {
+	.top-visual-area .card-box {
+		left:15px;
+		right:15px;
+	}
+	.top-visual-area .card-box .box-inner {
+		left:15px;
+		right:15px;
+	}
 	.top-visual-area .card-box .box-inner .title {
 		font-size:16px;
 		line-height:20px;
