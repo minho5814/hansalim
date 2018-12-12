@@ -118,6 +118,11 @@ $(document).ready(function(){
 		});
 	}
 
+	/* 해상도 높이가 570px 이하일경우 */
+	if(winH < 570){
+		$('html').addClass('minimum');
+	}
+
 	/* 상단 비주얼 슬라이드 */
 	var swiper = new Swiper('.top-visual-area .swiper-container', {
 		pagination: {

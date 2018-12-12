@@ -395,6 +395,11 @@ $(document).ready(function(){
 		});
 	}
 
+	/* 해상도 높이가 570px 이하일경우 */
+	if(winH < 570){
+		$('html').addClass('minimum');
+	}
+
 	setTimeout(function(){
 		var hei = $('.top-visual-area').outerHeight();
 		$('.top-visual-area').css({'height':hei});

@@ -389,6 +389,7 @@ body,
 }
 
 /* 높이 550px 이하 */
+/*
 @media only screen and (max-height:570px) {
 	.top-visual-area .card-box {
 		top:0;
@@ -417,6 +418,34 @@ body,
 	.top-visual-area .card-box .write-box input[type=tel] {font-size:12px;}
 	.top-visual-area .card-box .aligin-right .link {font-size:15px;}
 }
+*/
+
+.minimum .top-visual-area .card-box {
+	top:0;
+	bottom:0;
+	-webkit-transform:translateY(0);
+	-ms-transform:translateY(0);
+	transform:translateY(0);
+}
+
+.minimum .top-visual-area .card-box .box-inner .title {
+	font-size:16px;
+	line-height:20px;
+}
+.minimum .top-visual-area .card-box .box-inner .text {font-size: 12px;}
+.minimum .top-visual-area .card-box .write-box {margin-top:5px;}
+.minimum .top-visual-area .card-box .write-box .box {
+	padding-top:4px;
+	padding-bottom:6px;
+}
+.minimum .top-visual-area .card-box .write-box .label {
+	font-size:12px;
+	white-space:nowrap;
+}
+.minimum .top-visual-area .card-box .write-box input[type=text],
+.minimum .top-visual-area .card-box .write-box input[type=number],
+.minimum .top-visual-area .card-box .write-box input[type=tel] {font-size:12px;}
+.minimum .top-visual-area .card-box .aligin-right .link {font-size:15px;}
 
 /* ============================================================================================
 	로그인 후
