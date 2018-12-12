@@ -545,6 +545,9 @@ $(document).ready(function(){
 	roIdx = 0;
 	$('.btn-rotate').click(function(){
 		roIdx ++;
+		if(roIdx == 4){
+			roIdx = 0;
+		}
 		$(this).closest('.photo-change-area').find('.img-area img').css({'transform':'rotate(' + 90 * roIdx + 'deg)'});
 	});
 });

@@ -124,6 +124,12 @@ $(document).ready(function(){
 	roIdx = 0;
 	$('.btn-rotate').click(function(){
 		roIdx ++;
+		if(roIdx == 4){
+			roIdx = 0;
+		}
+
+		console.log(roIdx);
+
 		$(this).closest('.personal-info-area').find('.img-area img').css({'transform':'rotate(' + 90 * roIdx + 'deg)'});
 	});
 });
