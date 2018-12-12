@@ -2141,6 +2141,15 @@ body,
 
 .menu-wrap .menu-tab-cont {display:none;}
 .menu-wrap .menu-tab-cont.my-menu {background-color:#fff;}
+.menu-wrap .menu-tab-cont.my-menu:before {
+	content:'';
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color:#fff;
+}
 .menu-wrap .menu-tab-cont.on {display:block;}
 .menu-wrap .menu-list-box {padding:0 0 0 145px;}
 .menu-wrap .menu-list-box .left-menu {

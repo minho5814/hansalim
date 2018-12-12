@@ -389,7 +389,7 @@ body,
 }
 
 /* 높이 550px 이하 */
-@media only screen and (max-height:550px) {
+@media only screen and (max-height:570px) {
 	.top-visual-area .card-box {
 		top:0;
 		bottom:0;
