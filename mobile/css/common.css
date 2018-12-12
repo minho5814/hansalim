@@ -3019,6 +3019,11 @@ body,
 	line-height:0;
 }
 .personal-info-area .img-change .img-area img {width:100%;}
+.personal-info-area .img-change.trans .img-area img {
+	-webkit-transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	transform:rotate(90deg);
+}
 .personal-info-area .img-change .icon-camera {
 	position:absolute;
 	right:0;
