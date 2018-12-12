@@ -367,12 +367,16 @@
 	<div class="container">
 		<div class="content">
 			<div class="photo-change-area">
-				<div class="photo-change"><!-- class="trans" 추가시 이미지 시계방향으로 90도 회전 -->
+				<div class="photo-change">
 					<div class="img-area">
 						<img src="../images/img/img_nouser.jpg" alt="">
 					</div>
 					<input type="file">
 				</div>
+
+				<!-- 임시 버튼 -->
+				<button type="button" class="btn-rotate">이미지회전</button>
+
 				<div class="name">김*카</div>
 			</div>
 
@@ -534,6 +538,17 @@
 	</div>
 	<!-- //푸터 -->
 </div>
+
+<script>
+$(document).ready(function(){
+	/* 이미지 회전 */
+	roIdx = 0;
+	$('.btn-rotate').click(function(){
+		roIdx ++;
+		$(this).closest('.photo-change-area').find('.img-area img').css({'transform':'rotate(' + 90 * roIdx + 'deg)'});
+	});
+});
+</script>
 </body>
 
 </html>

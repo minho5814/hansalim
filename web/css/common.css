@@ -2968,11 +2968,6 @@ body,
 	width:100%;
 	height:100%;
 }
-.photo-change-area .photo-change.trans .img-area img {
-	-webkit-transform:rotate(90deg);
-	-ms-transform:rotate(90deg);
-	transform:rotate(90deg);
-}
 .photo-change-area .photo-change input[type=file] {
 	position:absolute;
 	left:0;
