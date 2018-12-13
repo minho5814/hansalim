@@ -126,7 +126,11 @@ $(document).ready(function(){
 	/* 상단 슬라이드 높이 */
 	$('.top-visual-area').each(function(){
 		var btmH = $('.fix-bottom-area').outerHeight();
-		$(this).css({'height':'-webkit-calc(100% - ' + btmH + 'px)', 'height':'moz-calc(100% - ' + btmH + 'px)',  'height':'calc(100% - ' + btmH + 'px)'});
+		$(this).css({
+			'height':'-webkit-calc(100% - ' + btmH + 'px)',
+			'height':'moz-calc(100% - ' + btmH + 'px)',
+			'height':'calc(100% - ' + btmH + 'px)'
+		});
 	});
 
 	setTimeout(function(){
