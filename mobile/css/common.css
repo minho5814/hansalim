@@ -4639,6 +4639,17 @@ body,
 	padding:3px 3px 20px;
 	background-color:#fff;
 }
+/* 360px 이상 */
+@media only screen and (min-width:360px) {
+	.popup-datepicker .datepicker {
+		width:320px;
+		left:50%;
+		right:inherit;
+		-webkit-transform:translate(-50%,-50%);
+		-ms-transform:translate(-50%,-50%);
+		transform:translate(-50%,-50%);
+	}
+}
 .popup-datepicker .ui-datepicker-header {
 	position:relative;
 	padding:6px 0;
