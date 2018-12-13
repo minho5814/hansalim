@@ -4637,6 +4637,7 @@ body,
 	transform:translateY(-50%);
 	max-width:320px;
 	padding:3px 3px 20px;
+	box-sizing:border-box;
 	background-color:#fff;
 }
 /* 360px 이상 */
