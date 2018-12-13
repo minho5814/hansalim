@@ -16,8 +16,15 @@
 			font-weight:900;
 		}
 		.Title div {
+			overflow:hidden;
 			width:1000px;
 			margin:0 auto;
+		}
+		.Title span {
+			float:right;
+			font-size:17px;
+			font-weight:400;
+			line-height:42px;
 		}
 		.STitle {
 			font-size:18px;
@@ -47,9 +54,9 @@
 </head>
 
 <body>
-<div class="Title"><div>텍스트</div></div>
+<div class="Title"><div>텍스트<span>* 버튼을 클릭하면 코드 복사</span></div></div>
 
-<div class="BoxWrap">
+<div class="BoxWrap copyBox">
 	<div class="bgColor1">
 		<div class="STitle">* 기본 버튼</div>
 
@@ -76,8 +83,8 @@
 	</div>
 </div>
 
-<div class="Title"><div>텍스트 + 아이콘</div></div>
-<div class="BoxWrap">
+<div class="Title"><div>텍스트 + 아이콘<span>* 버튼을 클릭하면 코드 복사</span></div></div>
+<div class="BoxWrap copyBox">
 	<div class="STitle">* 게시판 테이블용</div>
 
 	<a href="#" class="btn-icon-text icon1">이용내역 확인서</a>
@@ -219,6 +226,29 @@
 	<a href="#" class="btn-text">대출 신청</a>
 </div>
 <!-- // 하단 고정 버튼 -->
+
+
+<script>
+$(document).ready(function(){
+	$('.copyBox [class^=btn-te], .copyBox [class^=btn-i]').each(function(){
+		$(this).attr('href', '#btn');
+
+		$(this).wrap('<div class="codeCopy" style="display:inline-block;"></div>');
+		copyHtml = $(this).closest('.codeCopy').html();
+
+		$(this).closest('.codeCopy').each(function(){
+			$(this).append('<textarea style="position:fixed;left:-9999px;top:-9999px;font-size:0;text-indent:-9999px;line-height:0;opacity:0;">' + copyHtml + '</textarea>');
+		});
+	});
+
+	$('.copyBox [class^=btn-te], .copyBox [class^=btn-i]').click(function(){
+		var codeBox = $(this).closest('.codeCopy').find('textarea');
+		codeBox.select();
+		document.execCommand('Copy');
+		alert('Copy completed');
+	});
+});
+</script>
 </body>
 
 </html>

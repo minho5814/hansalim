@@ -4696,6 +4696,7 @@ body,
 	font-size:12px;
 	font-weight:400;
 }
+.popup-datepicker .ui-datepicker-header .ui-datepicker-title select + select {margin-left:2px;}
 .popup-datepicker .ui-datepicker-header .ui-datepicker-title select.ui-datepicker-month {width:60px;}
 .popup-datepicker .ui-datepicker-calendar {margin-top:10px;}
 .popup-datepicker .ui-datepicker-calendar thead th {
