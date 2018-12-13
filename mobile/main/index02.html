@@ -123,15 +123,7 @@ $(document).ready(function(){
 		$('html').addClass('minimum');
 	}
 
-	/* 상단 슬라이드 높이 */
-	$('.top-visual-area').each(function(){
-		var btmH = $('.fix-bottom-area').outerHeight();
-		$(this).css({
-			'height':'-webkit-calc(100% - ' + btmH + 'px)',
-			'height':'moz-calc(100% - ' + btmH + 'px)',
-			'height':'calc(100% - ' + btmH + 'px)'
-		});
-	});
+	resizeMid();// 상단 슬라이드 높이
 
 	setTimeout(function(){
 		var hei = $('.top-visual-area').outerHeight();
@@ -171,6 +163,27 @@ $(document).ready(function(){
 		}
 	});
 });
+
+$(window).load(function(){
+	resizeMid();// 상단 슬라이드 높이
+});
+
+/* 상단 슬라이드 높이 */
+function resizeMid(){
+	$('.top-visual-area').each(function(){
+		var btmH = $('.fix-bottom-area').outerHeight();
+		$(this).css({
+			'height':'-webkit-calc(100% - ' + btmH + 'px)',
+			'height':'moz-calc(100% - ' + btmH + 'px)',
+			'height':'calc(100% - ' + btmH + 'px)'
+		});
+	});
+
+	setTimeout(function() {
+		var hei = $('.top-visual-area').outerHeight();
+		$('.top-visual-area').css({'height': hei});
+	}, 500);
+}
 </script>
 </body>
 
