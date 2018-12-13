@@ -131,12 +131,17 @@ $(document).ready(function(){
 	}, 500);
 
 	/* 상단 비주얼 슬라이드 */
-	var swiper = new Swiper('.top-visual-area .swiper-container', {
+	var loginSwiper = new Swiper('.login .top-visual-area .swiper-container', {
 		pagination: {
-			el: '.top-visual-area .swiper-pagination',
+			el: '.login .top-visual-area .swiper-pagination',
 			clickable: true,
 		},
 	});
+
+	/* 슬라이드 초기화
+	loginSwiper.destroy();
+	$('.swiper-pagination').attr('class', 'swiper-pagination').html('');
+	*/
 
 	$('input').focus(function(){
 		$('.top-visual-area .card-box').each(function(){

@@ -429,6 +429,11 @@ $(document).ready(function(){
 		var idx = $('.top-visual-area .swiper-pagination-bullet-active').index();
 		$('.top-visual-area .number .ing').text(idx + 1);
 	});
+	/* 슬라이드 초기화
+	swiper.destroy();
+	$('.swiper-pagination').attr('class', 'swiper-pagination').html('');
+	$('.btn-num-area').remove();
+	*/
 
 	$('.top-visual-area .btn-auto').click(function(){
 		$(this).hide();
