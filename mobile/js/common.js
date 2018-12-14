@@ -319,7 +319,7 @@ $(window).scroll(function(){
 
 /* 리사이징 */
 $(window).resize(function(){
-	popup();// 레이어팝업
+	//popup();// 레이어팝업
 	share();// 공유하기 레이어 높이 설정
 });
 
