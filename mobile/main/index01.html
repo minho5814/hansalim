@@ -388,7 +388,7 @@ $(document).ready(function(){
 	var winH = $(window).height();
 	/* 해상도 높이가 550px 이상일경우 스크롤 방지 */
 	if(winH > 550){
-		$('.container').on('scroll touchmove mousewheel', function(event) {
+		$('.container').on('scroll touchmove mousewheel', function(event){
 			event.preventDefault();
 			event.stopPropagation();
 			return false;
@@ -425,7 +425,7 @@ $(document).ready(function(){
 		$(this).find('.number .all').text(len);
 	});
 
-	swiper.on('slideChange', function () {
+	swiper.on('slideChange', function(){
 		var idx = $('.top-visual-area .swiper-pagination-bullet-active').index();
 		$('.top-visual-area .number .ing').text(idx + 1);
 	});
@@ -462,13 +462,13 @@ $(document).ready(function(){
 		step: 100,
 		range: "min",
 		create: function(){
-			for (i=0; i<handle1.length; i++){
+			for(i=0; i<handle1.length; i++){
 				handle1.text($(this).slider('value') + 'K');
 				handle1.eq(i).text(commaNum(handle1.eq(i).text()));
 			}
 		},
 		slide: function( event, ui){
-			for (i=0; i<handle1.length; i++){
+			for(i=0; i<handle1.length; i++){
 				handle1.text(ui.value + 'K');
 				handle1.eq(i).text(commaNum(handle1.eq(i).text()));
 			}
@@ -504,15 +504,15 @@ $(window).load(function(){
 });
 
 /* 숫자 세자리 콤마 */
-function commaNum(num) {
+function commaNum(num){
 	var len, point, str;
 	num = num + "";
 	point = num.length % 4
 	len = num.length;
 
 	str = num.substring(0, point);
-	while (point < len) {
-		if (str != "") str += ",";
+	while(point < len){
+		if(str != "") str += ",";
 		str += num.substring(point, point + 4);
 		point += 4;
 	}
@@ -530,7 +530,7 @@ function resizeMid(){
 		});
 	});
 
-	setTimeout(function() {
+	setTimeout(function(){
 		var hei = $('.top-visual-area').outerHeight();
 		$('.top-visual-area').css({'height':hei});
 	}, 500);

@@ -559,8 +559,19 @@ function accordion(){
 		var wid = $(this).outerWidth() - len;
 		$(this).closest('.btn-tog').css({'padding-left':wid});
 	});
-}
 
+	/*
+	$('.sortingChange .accordion-list1').each(function(){
+		var $box = $(this).find('.value-text');
+		var boxArray = $box.map(function(){
+			return $(this).outerWidth();
+		});
+		var moreHei = Math.max.apply(Math, boxArray);
+		console.log(moreHei);
+		$(this).find('.btn-tog').css('padding-left', moreHei);
+	});
+	*/
+}
 
 
 
