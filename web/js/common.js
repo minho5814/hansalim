@@ -562,13 +562,12 @@ function accordion(){
 
 	/* 왼쪽 분류 같은 넓이로 설정할 경우
 	$('.sortingChange .accordion-list1').each(function(){
-		var $box = $(this).find('.value-text');
-		var boxArray = $box.map(function(){
+		var $list = $(this).find('.value-text');
+		var boxArray = $list.map(function(){
 			return $(this).outerWidth();
 		});
-		var moreHei = Math.max.apply(Math, boxArray);
-		console.log(moreHei);
-		$(this).find('.btn-tog').css('padding-left', moreHei);
+		var moreWid = Math.max.apply(Math, boxArray);
+		$(this).find('.btn-tog').css('padding-left', moreWid);
 	});
 	*/
 }
