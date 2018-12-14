@@ -560,7 +560,7 @@ function accordion(){
 		$(this).closest('.btn-tog').css({'padding-left':wid});
 	});
 
-	/*
+	/* 왼쪽 분류 같은 넓이로 설정할 경우
 	$('.sortingChange .accordion-list1').each(function(){
 		var $box = $(this).find('.value-text');
 		var boxArray = $box.map(function(){
