@@ -2655,6 +2655,7 @@ body,
 	display:inline-block;
 }
 
+.signin-content .event-slide {padding-bottom:10px;}
 .signin-content .event-slide .page-play-stop {
 	overflow:hidden;
 	padding:0 20px 0 25px;
@@ -2735,6 +2736,12 @@ body,
 
 .signin-content .botton-menu {
 	overflow:hidden;
+	position:fixed;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:50;
+	background-color:#f1f1f1;
 	padding:0 10px;
 }
 .signin-content .botton-menu .link {
