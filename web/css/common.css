@@ -3896,7 +3896,68 @@ body,
 	top:50%;
 	margin-top:-15px;
 }
-.fullpage-footer .address {}
+
+/* 약관 */
+.policy-cont .policy-title {
+	text-align:center;
+	font-size:16px;
+}
+.policy-cont .title {
+	margin:40px 0 10px;
+	color:#111;
+	font-size:18px;
+	font-weight:600;
+}
+.policy-cont .cont {padding-left:20px;}
+.policy-cont .list1 {margin:10px 0;}
+.policy-cont .list1 > li {
+	margin-left:15px;
+	text-indent:-15px;
+}
+.policy-cont .list2 {margin:10px 0;}
+.policy-cont .list2 > li {
+	position:relative;
+	padding-left:15px;
+}
+.policy-cont .list2 > li:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:15px;
+	width:2px;
+	height:2px;
+	border-radius:50%;
+	background-color:#555;
+}
+
+.policy-cont .list3 {margin:5px 0;}
+.policy-cont .list3 > li {
+	margin-left:8px;
+	text-indent:-8px;
+}
+
+.policy-cont .list4 {margin:5px 0;}
+.policy-cont .list4 > li {
+	margin-left:18px;
+	text-indent:-18px;
+}
+
+.policy-cont .bull1 {
+	position:relative;
+	padding-left:15px;
+	margin-left:0;
+	text-indent:0;
+}
+.policy-cont .bull1:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:9px;
+	width:4px;
+	height:4px;
+	border-radius:50%;
+	background-color:#555;
+}
 
 /* ============================================================================================
 	레이어팝업

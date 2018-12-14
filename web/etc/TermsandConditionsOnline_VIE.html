@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en" class="bgColor2">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Lotte Finance Vietnam</title>
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.1.12.1.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/plugin_set.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<div class="head-inner">
+			<h1 class="h-logo"><a href="../main/index01.html">LOTTE CARD</a></h1>
+			<div class="utill">
+				<a href="../member/Web-02.01.01.html" class="link">로그인</a>
+				<a href="../member/Web-02.02.02.html" class="link">회원가입</a>
+				<!-- 간편회원가입
+				<a href="../member/Web-02.02.01.html" class="link">회원가입</a>
+				-->
+				<a href="#" class="btn-leng">ENGLISH</a>
+			</div>
+
+			<!-- GNB (메뉴) -->
+			<div class="gnb-close"></div>
+			<div class="gnb-area">
+				<div class="gnb-list">
+					<!-- MY -->
+					<div class="gnb-item" data="bgColor1">
+						<span class="item">MY</span>
+						<div class="gnb-depth">
+							<div class="depth-inner">
+								<div class="depth">
+									<a href="#" class="title">MY 한눈에 보기</a>
+								</div>
+								<div class="depth">
+									<span class="title">대출이용내역</span>
+									<div class="list">
+										<a href="../mypage/Web-03.02.01.html" class="link">이용내역조회</a>
+										<a href="../mypage/Web-03.02.02.html" class="link">신청내역조회</a>
+									</div>
+								</div>
+								<div class="depth">
+									<span class="title">카드이용내역</span>
+									<div class="list">
+										<a href="#" class="link">이용내역조회</a>
+										<a href="#" class="link">카드발급조회</a>
+										<a href="#" class="link">내카드설정</a>
+										<a href="#" class="link">카드분실신고</a>
+									</div>
+								</div>
+								<div class="depth">
+									<a href="../mypage/Web-03.04.01.html" class="title">이벤트참여내역</a>
+								</div>
+								<div class="depth">
+									<a href="../mypage/Web-03.05.01.html" class="title">상담내역</a>
+								</div>
+								<div class="depth">
+									<span class="title">나의정보관리</span>
+									<div class="list">
+										<a href="#" class="link">보유카드조회</a>
+										<a href="#" class="link">명세서수령방법변경</a>
+										<a href="#" class="link">결제정보변경</a>
+										<a href="../member/Web-02.03.03.1.html" class="link">개인정보변경</a>
+										<!-- 간편회원
+										<a href="../member/Web-02.03.03.2.html" class="link">개인정보변경</a>
+										-->
+										<a href="../member/Web-02.03.05.html" class="link">온라인회원탈퇴</a>
+										<a href="#" class="link">카드해지신청</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 금융 -->
+					<div class="gnb-item active" data="bgColor2">
+						<span class="item">금융</span>
+						<div class="gnb-depth">
+							<div class="depth-inner">
+								<div class="depth">
+									<a href="../loan/Web-05.01.01.html" class="title">대출상품</a>
+								</div>
+								<div class="depth">
+									<a href="#" class="title">대출약관안내</a>
+								</div>
+								<div class="depth">
+									<a href="#" class="title">대출프로세스안내</a>
+								</div>
+								<div class="depth">
+									<a href="#" class="title">비대면대출신청</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 카드 -->
+					<div class="gnb-item" data="bgColor1">
+						<a href="#" class="item">카드</a>
+					</div>
+					<!-- 이벤트 -->
+					<div class="gnb-item" data="bgColor3">
+						<span class="item">이벤트</span>
+						<div class="gnb-depth">
+							<div class="depth-inner">
+								<div class="depth">
+									<a href="../event/Web-07.01.01.html" class="title">진행이벤트</a>
+								</div>
+								<div class="depth">
+									<a href="../event/Web-07.02.01.html" class="title">지난이벤트</a>
+								</div>
+								<div class="depth">
+									<a href="../event/Web-07.03.01.html" class="title">이벤트당첨확인</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 고객센터 -->
+					<div class="gnb-item" data="bgColor1">
+						<span class="item">고객센터</span>
+						<div class="gnb-depth">
+							<div class="depth-inner">
+								<div class="depth">
+									<a href="../customer/Web-08.01.01.html" class="title">공지사항</a>
+								</div>
+								<div class="depth">
+									<a href="../customer/Web-08.02.01.html" class="title">FAQ</a>
+								</div>
+								<div class="depth">
+									<a href="../customer/Web-08.03.01.html" class="title">고객상담</a>
+								</div>
+								<div class="depth">
+									<span class="title">정책안내</span>
+									<div class="list">
+										<a href="#" class="link">개인정보처리방침</a>
+										<a href="#" class="link">서비스이용약관</a>
+									</div>
+								</div>
+								<div class="depth">
+									<a href="../customer/Web-08.04.html" class="title">지점안내</a>
+								</div>
+								<div class="depth">
+									<span class="title">이용안내</span>
+									<div class="list">
+										<a href="#" class="link">Web이용안내</a>
+										<a href="#" class="link">App이용안내</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 회사소개 -->
+					<div class="gnb-item" data="bgColor1">
+						<span class="item">회사소개</span>
+						<div class="gnb-depth">
+							<div class="depth-inner">
+								<div class="depth">
+									<a href="../company/Web-04.01.html" class="title">CEO인사말</a>
+								</div>
+								<div class="depth">
+									<span class="title">롯데소개</span>
+									<div class="list">
+										<a href="../company/Web-04.02.01.html" class="link">롯데카드소개</a>
+										<a href="../company/Web-04.02.02.html" class="link">Lotte Finance 소개</a>
+									</div>
+								</div>
+								<div class="depth">
+									<a href="../company/Web-04.03.html" class="title">회사연혁</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // GNB (메뉴) -->
+
+			<button type="button" class="btn-allmenu"><span class="icon">All Menu</span></button>
+		</div>
+
+		<!-- 전체메뉴 -->
+		<div class="menu-dimmed"></div>
+		<div class="all-menu-layer">
+			<div class="inner-box">
+				<!-- MY -->
+				<div class="menu-box">
+					<div class="b-title">MY</div>
+					<div class="list-area">
+						<a href="#" class="title"><em class="txt">MY한눈에보기</em></a>
+					</div>
+					<div class="list-area">
+						<span class="title"><em class="txt">대출이용내역</em></span>
+						<div class="list">
+							<a href="../mypage/Web-03.02.01.html" class="link">이용내역조회</a>
+							<a href="../mypage/Web-03.02.02.html" class="link">신청내역조회</a>
+						</div>
+					</div>
+					<div class="list-area">
+						<span class="title"><em class="txt">카드이용내역</em></span>
+						<div class="list">
+							<a href="#" class="link">이용내역조회</a>
+							<a href="#" class="link">카드발급조회</a>
+							<a href="#" class="link">내카드설정</a>
+							<a href="#" class="link">카드분실신고</a>
+						</div>
+					</div>
+					<div class="list-area">
+						<a href="#" class="title"><em class="txt">MY한눈에보기</em></a>
+					</div>
+					<div class="list-area">
+						<a href="../mypage/Web-03.04.01.html" class="title"><em class="txt">이벤트참여내역</em></a>
+					</div>
+					<div class="list-area">
+						<a href="../mypage/Web-03.05.01.html" class="title"><em class="txt">상담내역</em></a>
+					</div>
+					<div class="list-area">
+						<span class="title"><em class="txt">나의정보관리</em></span>
+						<div class="list">
+							<a href="../member/Web-02.03.05.html" class="link">온라인회원탈퇴</a>
+							<a href="#" class="link">카드해지신청</a>
+							<a href="#" class="link">보유카드조회</a>
+							<a href="#" class="link">명세서수령방법변경</a>
+							<a href="#" class="link">결제정보변경</a>
+							<a href="../member/Web-02.03.03.1.html" class="link">개인정보변경</a>
+							<!-- 간편회원
+							<a href="../member/Web-02.03.03.2.html" class="link">개인정보변경</a>
+							-->
+							<a href="../member/Web-02.03.05.html" class="link">온라인회원탈퇴</a>
+							<a href="#" class="link">카드해지신청</a>
+						</div>
+					</div>
+				</div>
+				<!-- 금융 -->
+				<div class="menu-box">
+					<div class="b-title">금융</div>
+					<div class="list-area">
+						<a href="../loan/Web-05.01.01.html" class="title"><em class="txt">대출상품</em></a>
+					</div>
+					<div class="list-area">
+						<a href="#" class="title"><em class="txt">대출약관안내</em></a>
+					</div>
+					<div class="list-area">
+						<a href="#" class="title"><em class="txt">대출프로세스안내</em></a>
+					</div>
+					<div class="list-area">
+						<a href="#" class="title"><em class="txt">비대면대출신청</em></a>
+					</div>
+				</div>
+				<!-- 카드 -->
+				<div class="menu-box">
+					<div class="b-title">카드</div>
+				</div>
+				<!-- 이벤트 -->
+				<div class="menu-box">
+					<div class="b-title">이벤트</div>
+					<div class="list-area">
+						<a href="../event/Web-07.01.01.html" class="title"><em class="txt">진행이벤트</em></a>
+					</div>
+					<div class="list-area">
+						<a href="../event/Web-07.02.01.html" class="title"><em class="txt">지난이벤트</em></a>
+					</div>
+					<div class="list-area">
+						<a href="../event/Web-07.03.01.html" class="title"><em class="txt">이벤트당첨확인</em></a>
+					</div>
+				</div>
+				<!-- 고객센터 -->
+				<div class="menu-box">
+					<div class="b-title">고객센터</div>
+					<div class="list-area">
+						<a href="../customer/Web-08.01.01.html" class="title"><em class="txt">공지사항</em></a>
+					</div>
+					<div class="list-area">
+						<a href="../customer/Web-08.02.01.html" class="title"><em class="txt">FAQ</em></a>
+					</div>
+					<div class="list-area">
+						<a href="../customer/Web-08.03.01.html" class="title"><em class="txt">고객상담</em></a>
+					</div>
+					<div class="list-area">
+						<span class="title"><em class="txt">정책안내</em></span>
+						<div class="list">
+							<a href="#" class="link">개인정보처리방침</a>
+							<a href="#" class="link">서비스이용약관</a>
+						</div>
+					</div>
+					<div class="list-area">
+						<a href="../customer/Web-08.04.html" class="title"><em class="txt">지점안내</em></a>
+					</div>
+					<div class="list-area">
+						<span class="title"><em class="txt">이용안내</em></span>
+						<div class="list">
+							<a href="#" class="link">Web이용안내</a>
+							<a href="#" class="link">App이용안내</a>
+						</div>
+					</div>
+				</div>
+				<!-- 회사소개 -->
+				<div class="menu-box">
+					<div class="b-title">회사소개</div>
+					<div class="list-area">
+						<a href="../company/Web-04.01.html" class="title"><em class="txt">CEO인사말</em></a>
+					</div>
+					<div class="list-area">
+						<span class="title"><em class="txt">롯데소개</em></span>
+						<div class="list">
+							<a href="../company/Web-04.02.01.html" class="link">롯데카드소개</a>
+							<a href="../company/Web-04.02.02.html" class="link">Lotte Finance 소개</a>
+						</div>
+					</div>
+					<div class="list-area">
+						<a href="../company/Web-04.03.html" class="title"><em class="txt">회사연혁</em></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 전체메뉴 -->
+
+		<!-- 스크롤시 고정 영역 -->
+		<div class="head-fix-box">
+			<div class="breadcrumbs">
+				<div class="crumb-item">
+					<a href="../main/index01.html" class="crumb">Home</a>
+				</div>
+				<div class="crumb-item">
+					<span class="crumb">금융</span>
+					<div class="menu-list">
+						<div class="menu-item">
+							<span class="title">MY</span>
+							<div class="list">
+								<a href="#" class="link">MY 한눈에 보기</a>
+								<a href="../mypage/Web-03.02.01.html" class="link">이용내역조회</a>
+								<a href="#" class="link">카드이용내역</a>
+								<a href="../mypage/Web-03.04.01.html" class="link">이벤트참여내역</a>
+								<a href="../mypage/Web-03.05.01.html" class="link">상담내역</a>
+								<a href="#" class="link">나의정보관리</a>
+							</div>
+						</div>
+						<div class="menu-item">
+							<span class="title">금융</span>
+							<div class="list">
+								<a href="../loan/Web-05.01.01.html" class="link">대출상품</a>
+								<a href="#" class="link">대출약관안내</a>
+								<a href="#" class="link">대출프로세스안내</a>
+								<a href="#" class="link">비대면대출신청</a>
+							</div>
+						</div>
+						<div class="menu-item">
+							<span class="title">카드</span>
+						</div>
+						<div class="menu-item">
+							<span class="title">이벤트</span>
+							<div class="list">
+								<a href="../event/Web-07.01.01.html" class="link">진행이벤트</a>
+								<a href="../event/Web-07.02.01.html" class="link">지난이벤트</a>
+								<a href="../event/Web-07.03.01.html" class="link">이벤트당첨확인</a>
+							</div>
+						</div>
+						<div class="menu-item">
+							<span class="title">고객센터</span>
+							<div class="list">
+								<a href="../customer/Web-08.01.01.html" class="link">공지사항</a>
+								<a href="../customer/Web-08.02.01.html" class="link">FAQ</a>
+								<a href="../customer/Web-08.03.01.html" class="link">고객상담</a>
+								<a href="#" class="link">정책안내</a>
+								<a href="../customer/Web-08.04.html" class="link">지점안내</a>
+								<a href="#" class="link">이용안내</a>
+							</div>
+						</div>
+						<div class="menu-item">
+							<span class="title">회사소개</span>
+							<div class="list">
+								<a href="../company/Web-04.01.html" class="link">CEO인사말</a>
+								<a href="../company/Web-04.02.01.html" class="link">회사개요</a>
+								<a href="../company/Web-04.03.html" class="link">회사연혁</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="crumb-item no-link">
+					<span class="crumb">Điều Kiện Và Điều Khoản Sử Dụng Dịch Vụ Trực Tuyến</span>
+				</div>
+			</div>
+
+			<div class="page-title-area no-link">
+				<div class="inner-box">
+					<h2 class="page-title">Điều Kiện Và Điều Khoản Sử Dụng Dịch Vụ Trực Tuyến</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 컨텐츠 영역 -->
+	<div class="container">
+		<div class="content">
+
+
+			<!-- 어드민 등록 영역 -->
+			<div class="policy-cont">
+				<div class="policy-title">[Lotte Finance]</div>&quot;
+
+				<h3 class="title">Điều 1: Điều kiện sử dụng:</h3>
+				<div class="cont">
+					Để khai thác thông tin và sử dụng dịch vụ trực tuyến trên trang thông tin điện tử của Lotte Finance, Quý khách đồng ý với các điều khoản sử dụng bên dưới. Xin vui lòng đọc kỹ các điều kiện và điều khoản này trước khi sử dụng trang thông tin điện tử của Lotte Finance.
+				</div>
+
+				<h3 class="title">Điều 2: Định Nghĩa</h3>
+				<div class="cont">
+					<ol class="list1">
+						<li>① &quot;chúng tôi&quot;, &quot;của chúng tôi&quot;, &quot;chúng ta&quot;, &quot;công ty&quot; &quot;Lotte Finance&quot; là chỉ Công ty Tài chính trách nhiệm hữu hạn một thành viên Lotte Việt Nam (sau đây được gọi là &quot;công ty&quot;).</li>
+						<li>② &quot;Kênh (Channel)&quot; là chỉ trang chủ của công ty hoặc trang web/kênh di động do công ty trực tiếp vận hành.</li>
+						<li>③ &quot;Dịch vụ&quot; là chỉ dịch vụ trực tuyến (bao gồm dịch vụ internet không dây), dịch vụ di động (ứng dụng, web di động v.v…) được cung cấp trong kênh (channel) của công ty.</li>
+						<li>④ &quot;Thành viên đơn giản&quot; là chỉ người đã đăng ký sử dụng dịch vụ với công ty thông qua quy trình xác thực SNS (dịch vụ mạng xã hội) được công ty phê duyệt để sử dụng dịch vụ do kênh (channel) cung cấp theo quy định của điều kiện điều khoản sử dụng dịch vụ.</li>
+						<li>⑤ &quot;Thành viên chính thức&quot; là chỉ người đã đăng ký sử dụng dịch vụ với công ty thông qua quy trình xác thực bằng mã số tài chính được công ty cung cấp (số đăng ký vay, số hợp đồng vay, số thẻ tín dụng) và được công ty phê duyệt để sử dụng dịch vụ do kênh (channel) cung cấp theo quy định của điều kiện và điều khoản sử dụng dịch vụ. </li>
+						<li>⑥ &quot;Thành viên&quot; là chỉ thành viên đơn giản và thành viên chính thức, là người đã đăng ký sử dụng dịch vụ với công ty thông qua quy trình tạo ID và mật khẩu để sử dụng dịch vụ do kênh (Channel) cung cấp theo quy định của điều kiện điều khoản sử dụng.</li>
+						<li>⑦ &quot;ID thành viên&quot; là chỉ các ký tự nhận dạng do thành viên tự tạo ra theo các tiêu chí nhất định do công ty đặt ra cho mục đích xác định thành viên và đăng ký sử dụng dịch vụ của thành viên.</li>
+						<li>⑧ &quot;Mật khẩu (password)&quot; là chỉ ký tự mã hóa do thành viên tự tạo ra theo các tiêu chí nhất định do công ty đặt ra để đảm bảo tính bảo mật của thành viên và bảo mật thông tin được cung cấp từ dịch vụ của công ty.</li>
+						<li>⑨ &quot;Tài chính&quot; là chỉ các khoản vay hoặc các khoản vay trả góp mà thành viên đã ký kết hợp đồng với công ty thông qua quy trình do công ty quy định.</li>
+						<li>⑩ &quot;Thẻ&quot; là chỉ thẻ tín dụng do công ty phát hành cho thành viên thông qua quy trình do công ty quy định.</li>
+						<li>⑪ &quot;Số PIN&quot; là chỉ số nhận dạng cá nhân được cấp cho người sử dụng đã được ủy quyền truy cập dịch vụ.</li>
+						<li>⑫ &quot;Thông tin sinh trắc học&quot; là chỉ thông tin về các đặc điểm thể chất hoặc hành vi như dấu vân tay, khuôn mặt, mống mắt, tĩnh mạch, giọng nói, chữ ký, v.v. để xác thực một cá nhân.</li>
+						<li>⑬ &quot;Mật khẩu OTP SMS&quot; là chỉ mật khẩu dùng một lần được gửi từ công ty đến số điện thoại đã đăng ký của khách hàng cho dịch vụ.</li>
+						<li>⑭ &quot;Token&quot; là chỉ thiết bị được sử dụng để tạo mật khẩu dùng một lần dựa trên kết nối với máy tính mà khách hàng đang thao tác.</li>
+						<li>⑮ &quot;Tin nhắn PUSH&quot; là chỉ tin nhắn được gửi bởi công ty đến một thiết bị đầu cuối truyền thông di động (sau đây gọi là &quot;thiết bị đầu cuối&quot;) như điện thoại thông minh, bằng cách sử dụng chức năng thông tin dữ liệu của dịch vụ thông báo trên điện thoại thông minh.</li>
+						<li>16. &quot;Dịch vụ nhắn tin PUSH&quot; là chỉ dịch vụ mà công ty gửi thông tin đến thiết bị đầu cuối của thành viên để thông báo cho thành viên.</li>
+						<li>17. &quot;Đại lý&quot; là chỉ các doanh nghiệp hoặc công ty cá thể cung cấp dịch vụ bán hàng hoặc dịch vụ hàng hóa thông qua giao dịch sử dụng thẻ với các thành viên thẻ theo nội dung hợp đồng với công ty.</li>
+						<li>18. &quot;Xác thực bản thân&quot; là chỉ phương tiện xác thực do công ty cung cấp để xác thực thành viên và bảo mật dịch vụ trực tuyến ngoài ID thành viên và mật khẩu, như xác thực SNS, xác thực mật khẩu SMS OTP, xác thực bằng số sản phẩm tài chính, xác thực sinh trắc học, v.v...</li>
+						<li>19. &quot;Thông tin xác thực&quot; là chỉ mật khẩu, số xác thực, thông tin sinh trắc học được dùng trong phương tiện xác thực như ID thành viên, mật khẩu, xác thực bản thân. </li>
+						<li>20. &quot;Ngày làm việc&quot; là chỉ ngày công ty thực hiện các hoạt động kinh doanh thông thường tại nơi làm việc.</li>
+						<li>21. &quot;Chuyển tiền&quot; là chỉ việc chuyển tiền vào tài khoản giữa khách hàng với công ty.</li>
+					</ol>
+				</div>
+
+				<h3 class="title">Điều 3: Loại dịch vụ và phạm vi áp dụng</h3>
+				<div class="cont">
+					Các điều khoản này áp dụng cho việc sử dụng và quy trình của tất cả các dịch vụ được cung cấp trực tuyến bởi công ty và áp dụng cả các điều khoản cần thiết khác. Tuy nhiên, nếu có các điều khoản riêng biệt trên kênh (channel) liên quan, thì các điều khoản riêng biệt đó sẽ được áp dụng trước tiên.
+					<ol class="list1">
+						<li>① Dịch vụ được cung cấp khác nhau (phân biệt) giữa thành viên đơn giản và thành viên chính thức.</li>
+						<li>② Mỗi thành viên gồm thành viên đơn giản và thành viên chính thức quản lý riêng ID thành viên và mật khẩu, và việc sử dụng dịch vụ và thông tin thành viên của từng thành viên không giống nhau.</li>
+						<li>③ Các hướng dẫn liên quan đến việc sử dụng kênh (channel) của thành viên đơn giản đều phải tuân theo điều khoản điều kiện sử dụng dịch vụ.</li>
+						<li>④ Các hướng dẫn liên quan đến việc sử dụng dịch vụ tài chính của thành viên chính thức đều phải tuân theo các điều khoản sử dụng của thành viên tài chính (sản phẩm vay, vay trả góp).</li>
+						<li>⑤ Các hướng dẫn liên quan đến việc sử dụng thẻ của thành viên chính thức đều phải tuân theo các điều khoản sử dụng của thành viên thẻ (thành viên cá nhân, thành viên công ty).</li>
+						<li>⑥ Các hướng dẫn liên quan đến việc sử dụng dịch vụ của đại lý đều phải tuân theo các điều khoản quy định của công ty và tổ chức thẻ có liên quan.</li>
+						<li>
+							⑦ Công ty cung cấp các loại dịch vụ cho các thành viên như sau:
+							<ul class="list4">
+								<li>(a) Dịch vụ tài chính trực tuyến (tra cứu sản phẩm vay và từng loại sản phẩm vay trả góp/ dịch vụ sử dụng và dịch vụ cung cấp thông tin)</li>
+								<li>(b) Dịch vụ thẻ trực tuyến (tra cứu thẻ tín dụng/ dịch vụ sử dụng và dịch vụ cung cấp thông tin)</li>
+								<li>(c) Dịch vụ ứng dụng (App) trên di động (tra cứu sản phẩm tài chính và từng loại thẻ liên quan/ dịch vụ sử dụng và dịch vụ cung cấp thông tin)</li>
+								<li>(d) Dịch vụ ứng dụng (App) trên di động (tra cứu sản phẩm tài chính và từng loại thẻ liên quan/ dịch vụ sử dụng và dịch vụ cung cấp thông tin)</li>
+							</ul>
+						</li>
+						<li>⑧ Công ty cung cấp các loại dịch vụ cho đại lý như sau: Dịch vụ trực tuyến đại lý (tra cứu từng đại lý/ dịch vụ ưu đãi của đại lý)</li>
+						<li>⑨ Trong các dịch vụ đã đưa ra của công ty, người sử dụng có thể bị giới hạn một vài dịch vụ do sự cố từ phía công ty.</li>
+					</ol>
+				</div>
+
+				<h3 class="title">Điều 4: Dịch vụ ứng dụng (App) di động</h3>
+				<div class="cont">
+					<ol class="list1">
+						<li>① Thành viên có thể tải xuống ứng dụng do công ty phát triển từ cửa hàng ứng dụng di động (play store) do công ty chỉ định. Thành viên có thể xem thông tin cửa hàng ứng dụng dành cho thiết bị di động do công ty chỉ định và phương thức tải xuống trên trang chủ của công ty.</li>
+						<li>② Thành viên có thể sử dụng dịch vụ ứng dụng di động sau khi đã thực hiện đúng quy trình xác thực bản thân (danh tính) theo phương pháp mà công ty yêu cầu.</li>
+						<li>③ Công ty có thể gửi tin nhắn PUSH thông qua ứng dụng (App) di động cho những thành viên đã đồng ý với mục đồng ý thỏa thuận về thu thập và sử dụng thông tin (tín dụng) cá nhân.</li>
+						<li>④ Nhiều tin nhắn giống nhau có thể được gửi nhiều lần đến thành viên thông qua dịch vụ gửi tin nhắn PUSH tùy thuộc vào môi trường máy chủ phát tin nhắn hoặc hỗ trợ Hệ điều hành (OS) của máy chủ.</li>
+						<li>
+							⑤ Thành viên có thể đăng ký từ chối nhận tin nhắn PUSH thông qua trang mạng hoặc ứng dụng. Tuy nhiên, ngay cả khi thành viên đã đăng ký từ chối nhận tin nhắn PUSH, nhưng công ty vẫn có thể gửi tin nhắn PUSH trong các trường hợp sau:
+							<ul class="list4">
+								<li>(a) Thành viên đã đăng ký nhận thông báo (hóa đơn) thanh toán bằng điện thoại thông minh + email;</li>
+								<li>(b) Công ty cần thực hiện khảo sát;</li>
+								<li>(c) Công ty cung cấp các ưu đãi cá nhân;</li>
+								<li>(d) Công ty cần thông báo nội dung thay đổi về hạn mức sử dụng, dịch vụ, điều khoản điều kiện quy định mà công ty xem là cần thiết;</li>
+								<li>(e) Bất kỳ trường hợp nào mà công ty xem là cần thiết.</li>
+							</ul>
+						</li>
+					</ol>
+				</div>
+
+				<h3 class="title">Điều 5: Thời gian sử dụng dịch vụ và thời gian hạn chế</h3>
+				<div class="cont">
+					<ol class="list1">
+						<li>① Thời gian sử dụng dịch vụ của kênh bình thường là 24 giờ một ngày, bảy ngày một tuần, không có ngày nghỉ. Tuy nhiên, tùy thuộc vào loại và nội dung của một số dịch vụ riêng biệt của kênh có thể được quy định thời gian sử dụng khác.</li>
+						<li>② Vì những lý do bất khả kháng như trong trường hợp bị lỗi mạng, phát triển nâng cấp dịch vụ, kiểm tra định kỳ, việc cung cấp dịch vụ có thể bị hạn chế hoặc gián đoạn trong một khoảng thời gian nhất định.</li>
+						<li>③ Trường hợp công ty có ý định hạn chế việc sử dụng dịch vụ, công ty sẽ thông báo đến người sử dụng bằng e-mail, điện thoại, văn bản, tin nhắn SMS, tin nhắn Push, v.v... về nội dung hạn chế, lý do, ngày và giờ hạn chế. Tuy nhiên, điều này sẽ không áp dụng trong trường hợp công ty thừa nhận rằng cần thiết đình chỉ việc sử dụng dịch vụ khẩn cấp.</li>
+						<li>④ Công ty cho triển khai sử dụng dịch vụ kênh (channel) trên các môi trường di động, môi trường máy vi tính đa dạng (hệ điều hành máy tính, trình duyệt internet, hệ điều hành di động, trình duyệt internet trên di động) của khách hàng, nhưng tùy theo các phiên bản cập nhật, các trình duyệt internet di động, các hệ điều hành di động mà việc sử dụng dịch vụ có thể bị hạn chế.</li>
+						<li>⑤ Công ty có thể cung cấp thông tin thay đổi dịch vụ bằng thông báo cho thành viên về nội dung của dịch vụ sẽ được thay đổi và ngày cung cấp theo phương thức quy định tại khoản (3) điều 1②<br>(6) Theo khoản (2) của Điều này, trong trường hợp ngừng (gián đoạn) dịch vụ, thì công ty sẽ thông báo cho người sử dụng theo phương pháp được quy định tại khoản (3) điều 1② Tuy nhiên, nếu công ty, vì lý do bất khả kháng (lỗi của người vận hành, lỗi của đĩa lưu trữ, hoặc hệ thống bị sập, v.v...) phải ngừng dịch vụ mà không thể thông báo trước, thì công ty có thể thông báo ngay sau khi đã khắc phục được vấn đề.</li>
+					</ol>
+				</div>
+
+				<h3 class="title">Điều 6: Thiết lập hợp đồng sử dụng</h3>
+				<div class="cont">
+					<ol class="list1">
+						<li>① Hợp đồng sử dụng được thiết lập khi khách hàng muốn trở thành thành viên (sau đây gọi là &quot;người đăng ký&quot;) điền đầy đủ thông tin theo mẫu do công ty quy định để đăng ký làm thành viên và đồng ý tất cả các điều khoản, điều kiện sử dụng dịch vụ và được công ty chấp thuận.</li>
+						<li>
+							② Sau khi đăng ký thành viên trong khoản ① của Điều này, người đăng ký có thể chọn phương thức truy cập/sử dụng dịch vụ. Tuy nhiên, ngay cả khi người đăng ký đã chọn phương thức (a), công ty cũng có thể cho phép thành viên truy cập/sử dụng dịch vụ theo phương thức (b).
+							<ul class="list4">
+								<li>(a) Phương thức đăng nhập bằng ID/mật khẩu là khi đăng ký gia nhập thành viên, người dùng sẽ tạo ID/mật khẩu để đăng ký thành viên với công ty.</li>
+								<li>(b) Phương thức đăng nhập bằng xác thực bản thân (cá nhân) do công ty cung cấp mà không cần phải tạo ID/mật khẩu.</li>
+							</ul>
+						</li>
+						<li>③ Theo khoản ② của Điều này về đăng ký thành viên, người đăng ký phải trực tiếp nhập chính xác các thông tin mà công ty yêu cầu, phải trực tiếp thực hiện xác thực bản thân thông qua sử dụng các phương tiện chứng thực do công ty cung cấp. Tuy nhiên, khách hàng không được đăng ký thông tin của người khác, hoặc đăng ký thông tin không chính xác, hoặc tiết lộ thông tin xác thực cho người khác biết.</li>
+						<li>④ Công ty quản lý các thông tin được tạo ra khi đăng ký thành viên của khách hàng như là ID, mật khẩu và thông tin cá nhân của thành viên, đồng thời công ty có thể yêu cầu thành viên cung cấp bổ sung thêm các thông tin cá nhân khác để phục vụ cho mục đích xác thực khách hàng. .</li>
+						<li>⑤ Công ty được quyền chất vấn tư cách tham gia thành viên của người sử dụng; khách hàng có nguyện vọng muốn đăng ký thành viên phải đồng ý với nội dung về điều khoản điều kiện cơ bản và các điều khoản điều kiện sử dụng dịch vụ khác được do công ty cung cấp.</li>
+						<li>⑥ Đại lý có tư cách đại lý của công ty kể từ ngày đăng ký thành công, và có nghĩa vụ cung cấp chính xác thông tin đại lý mà công ty yêu cầu.</li>
+					</ol>
+				</div>
+
+				<h3 class="title">Điều 7: Đăng ký sử dụng dịch vụ</h3>
+				<div class="cont">
+					<ol class="list1">
+						<li>① Khi thành viên truy cập hoặc sử dụng dịch vụ, thành viên phải nhập thông tin chính xác theo quy định tại khoản ④ Điều 6 và công ty có quyền xem xét xem thông tin đó có đúng với thông tin đăng ký của thành viên hay không.</li>
+						<li>
+							② Công ty có thể bảo lưu hoặc không chấp nhận việc đăng ký trong các trường hợp sau
+							<ul class="list4">
+								<li>(a) Không có chỗ trống để dùng trong thiết bị</li>
+								<li>(b) Trường hợp có vấn đề về mặt kỹ thuật</li>
+								<li>(c) Trường hợp có vấn đề về bảo mật</li>
+								<li>(d) Trường hợp công ty cho là cần thiết.</li>
+							</ul>
+						</li>
+						<li>
+							③ Công ty có quyền chấp nhận hoặc từ chối việc đăng ký sử dụng nếu rơi vào 1 trong các trường hợp sau
+							<ul class="list4">
+								<li>(a) Trường hợp tên đăng ký không phải là tên thật của thành viên</li>
+								<li>(b) Trường hợp đăng ký bằng tên của người khác</li>
+								<li>(c) Trường hợp điền thông tin đăng ký bị sai</li>
+								<li>(d) Trường hợp đăng ký nhằm mục đích làm trái thuần phong mỹ tục hoặc đạo đức xã hội</li>
+								<li>(e) Trường hợp không đáp ứng được các yêu cầu sử dụng khác do công ty đưa ra</li>
+							</ul>
+						</li>
+						<li>
+							Các hạng mục cần điền vào khi đăng ký thành viên.
+							<ul class="list4">
+								<li>
+									(a) Trường hợp thành viên cá nhân/thành viên doanh nghiệp
+									<p class="bull1">Số đăng ký tài chính (số đăng ký vay, số hợp đồng vay, số thẻ), số CMND, tên, địa chỉ E-mail, ID thành viên, mật khẩu, địa chỉ nhà, số điện thoại di động, địa chỉ nơi làm việc, số điện thoại nơi làm việc, bộ phận chức vụ, ngày kỷ niệm (sinh nhật hoặc ngày đặc biệt khác của cá nhân).</p>
+								</li>
+								<li>
+									(b) Trường hợp thành viên đại lý (doanh nghiệp)
+									<p class="bull1">Số đại lý, số đăng ký kinh doanh, số tài khoản, ID người sử dụng, mật khẩu, số điện thoại di động, địa chỉ E-mail</p>
+								</li>
+							</ul>
+						</li>
+					</ol>
+				</div>
+
+				<h3 class="title">Điều 8: Quyền và nghĩa vụ của khách hàng</h3>
+				<div class="cont">
+					<ol class="list1">
+						<li>① Thành viên tự chịu trách nhiệm quản lý ID và mật khẩu của mình. Thành viên không được quyền cho thuê hoặc chuyển nhượng ID và mật khẩu của thành viên cho bên thứ ba. Thành viên phải chịu toàn bộ trách nhiệm về việc lộ ID và mật khẩu của mình trong quá trình quản lý.</li>
+						<li>② Nếu thành viên sử dụng ID thành viên của mình không đúng quy trình thì thành viên phải thay đổi ngay mật khẩu của mình và thông báo ngay cho công ty.</li>
+						<li>③ Thành viên phải tuân thủ nghiêm ngặt các quy định, luật liên quan, nội dung hướng dẫn sử dụng dịch vụ, và nội dung cần chú ý theo hướng dẫn của công ty.</li>
+						<li>④ Khi thay đổi thông tin cá nhân, thành viên phải thông báo ngay cho công ty không chậm trễ bằng cách sửa đổi hoặc bổ sung thông tin cho công ty thông qua Internet.</li>
+						<li>⑤ Thành viên không được sử dụng dịch vụ để thực hiện các hoạt động kinh doanh mà không có sự chấp thuận trước của công ty và nếu trường hợp đó xảy ra thì công ty sẽ không chịu trách nhiệm về kết quả hoạt động kinh doanh cũng như hậu quả phát sinh từ hoạt động kinh doanh vi phạm hợp đồng của thành viên</li>
+						<li>⑥ Trách nhiệm quản lý thông tin xác thực là trách nhiệm của mỗi thành viên đó. Thành viên không được cho thuê hoặc chuyển nhượng thông tin xác thực cho bên thứ ba hoặc thực hiện bất kỳ hành vi tương tự nào.</li>
+						<li>⑦ Khi thông tin xác thực được sử dụng không đúng quy trình, thành viên phải thay đổi ngay thông tin xác thực và thông báo cho công ty.</li>
+						<li>⑧ Khách hàng không thể huỷ, thay đổi, phủ nhận, thoái thác bất kỳ giao dịch nào đã thực hiện bằng ID và Mật khẩu, hoặc bằng các phương thức xác thực hợp lệ của Công ty. Khách hàng đồng ý rằng các dữ liệu lưu giữ bởi công ty sẽ là bằng chứng xác thực về việc giao dịch của Khách hàng, trừ khi Khách hàng có căn cứ cụ thể xác định dữ liệu đó thiếu chính xác.</li>
+					</ol>
+				</div>
+
+				<h3 class="title">Điều 9: Quyền và nghĩa vụ của công ty</h3>
+				<div class="cont">
+					<ol class="list1">
+						<li>① Công ty sẽ đảm bảo cung cấp dịch vụ cho người đăng ký sử dụng, và người đăng ký có thể bắt đầu sử dụng dịch vụ sau ngày đăng ký, trừ khi có trường hợp đặc biệt xảy ra.</li>
+						<li>② Công ty có nghĩa vụ cung cấp dịch vụ liên tục và ổn định như quy định trong các điều khoản điều kiện sử dụng, trừ khi có những trường hợp đặc biệt như kiểm tra hệ thống định kỳ, nâng cấp hệ thống, bị ngắt kết nối hoặc trường hợp bất khả kháng khác.</li>
+						<li>③ Công ty thu thập thông tin cần thiết để có thể cung cấp dịch vụ cho thành viên. Công ty không được phép tiết lộ thông tin cá nhân của người sử dụng cho người khác mà không có sự đồng ý của người sử dụng. Tuy nhiên, ngoại trừ trường hợp được sự cho phép từ pháp luật.</li>
+						<li>④ Công ty được cung cấp thông tin cá nhân của người sử dụng khi công ty đã thông báo đến người sử dụng về những vấn đề liên quan đến việc cung cấp thông tin (nội dung của người nhận, mục đích cung cấp, nội dung thông tin cung cấp) và được thành viên chấp nhận. Thành viên có thể rút lại sự đồng ý cung cấp thông tin cá nhân của mình bất cứ lúc nào.</li>
+						<li>⑤ Thành viên có thể xem thông tin cá nhân của mình bất kỳ lúc nào và có thể yêu cầu công ty hoặc người quản lý thông tin sửa thông tin sai. Nếu yêu cầu sửa thông tin từ thành viên được gửi đến, thì thông tin cá nhân đó sẽ không được sử dụng cho đến khi nó đã được sửa xong.</li>
+						<li>⑥ Công ty sẽ chịu trách nhiệm về bất kỳ tổn thất thực tế đã phát sinh cho người sử dụng do lỗi của Công ty về việc bị rò rỉ, đánh cấp, lộ thông tin cần bảo mật của thẻ tín dụng, tài khoản ngân hàng, thông tin cá nhân của thành viên</li>
+						<li>⑦ Nếu xác định được thông tin cá nhân của thành viên mà bên thứ ba nhận được có nguồn gốc từ công ty, trừ trường hợp công ty cung cấp thông tin đó cho bên thứ ba theo quy định của pháp luật và/hoặc theo quy định tại Hợp đồng vay, thì công ty phải tiêu hủy ngay thông tin cá nhân bị lộ của thành viên đó</li>
+					</ol>
+				</div>
+
+				<h3 class="title">Điều 10 Rủi ro và xử lý rủi ro</h3>
+				<div class="cont">
+					<ol class="list1">
+						<li>① Không bên nào phải chịu trách nhiệm đối với bất kỳ bên nào về bất kỳ sự chậm trễ hoặc gián đoạn nào trong việc thực hiện nghĩa vụ của mình theo các điều khoản sử dụng này trong trường hợp có lệnh khẩn cấp của chính phủ, các biện pháp tư pháp của chính phủ, quy định khẩn cấp, hành vi phá hoại, bạo loạn, hành vi khủng bố.</li>
+						<li>② Công ty không chịu trách nhiệm về bất kỳ sự phá hủy nào do hỏa hoạn, hỏng hóc điện, phần cứng máy tính hoặc phần mềm máy tính bị hư hỏng, sự chậm trễ trong việc giao thiết bị, sự trì hoản của bên thứ ba hoặc gián đoạn hoạt động ngoài tầm kiểm soát.</li>
+						<li>③ Công ty sẽ hỗ trợ thành viên phục hồi dữ liệu (trong phạm vi Công ty có lưu trữ dữ liệu của thành viên), trong trường hợp hệ thống máy tính của thành viên đó gặp vấn đề nghiêm trọng, bị hư hỏng hoàn toàn, hoặc hư hỏng một phần nhưng không phải lỗi do thành viên và công ty.</li>
+						<li>④ Khi sử dụng dịch vụ trực tuyến, thành viên thừa nhận đã biết, nhận thức rõ về các khả năng xảy ra tổn thất có thể gặp phải trong quá trình sử dụng dịch vụ trực tuyến, bao gồm nhưng không giới hạn ở các rủi ro công nghệ, rủi ro kỹ thuật, trục trặc mạng tin học, lỗi phát sinh trong hệ thống máy móc, thiết bị, sự gian lận, giả mạo, cẩu thả, nhầm lẫn bởi con người trong việc sử dụng mật khẩu, thiết bị bảo mật, thẩm quyền giao dịch. Trừ những trường hợp thuộc trách nhiệm của công ty theo quy định tại Điều khoản Điều kiện này, thành viên thừa nhận và chấp nhận tất cả các rủi ro này, tự chịu trách nhiệm đối với bất kỳ sự cố, thiệt hại nào phát sinh và miễn cho công ty bất kỳ nghĩa vụ nào liên quan.</li>
+					</ol>
+				</div>
+
+				<h3 class="title">Điều 11 Miễn trừ</h3>
+				<div class="cont">
+					Công ty sẽ không chịu trách nhiệm đối với bất kỳ thiệt hại trực tiếp hoặc gián tiếp nào do thành viên gây ra hoặc do bất kỳ lý do nào sau đây phát sinh từ việc sử dụng dịch vụ:
+					<ol class="list1">
+						<li>① Trường hợp dịch vụ bị gián đoạn, bị ngưng cung cấp do sự cố về lỗi của thiết bị viễn thông, lỗi đường truyền hoặc là lỗi giao dịch phát sinh từ máy tính.</li>
+						<li>② Trường hợp thành viên làm rò rỉ &quot;thông tin xác thực&quot; cho bên thứ ba do sự so suất của thành viên.</li>
+						<li>③ Trường hợp do lỗi vận hành hoặc lỗi xử lý giao dịch của máy tính.</li>
+						<li>④ Trường hợp do yêu cầu chỉ thị của chính phủ, cơ quan nhà nước hoặc cơ quan có thẩm quyền khác.</li>
+						<li>⑤ Trường hợp do các lý do bất khả kháng khác như thiên tai, …</li>
+						<li>
+							⑥ Trường hợp phát sinh các tình huống sau trong ứng dụng dành cho thiết bị di động
+							<ul class="list4">
+								<li>(a) Trường hợp thành viên cung cấp thiết bị di động đã cài ứng dụng cho bên thứ 3 với mục đích cho thuê hoặc chuyển nhượng</li>
+								<li>(b) Trường hợp thành viên làm rò rỉ thông tin cá nhân quan trọng như ID, mật khẩu, mật khẩu thẻ của ứng dụng cho bên thứ ba</li>
+								<li>(c) Trường hợp thành viên tiết lộ số điện thoại di động của mình cho bên thứ 3 biết hoặc bên thứ 3 (không có thẩm quyền) có thể sử dụng điện thoại của thành viên để thực hiện các giao dịch tài chính.</li>
+								<li>(d) Trường hợp thiệt hại phát sinh do thành viên tài xuống và sử dụng ứng dụng theo phương pháp khác không đúng với phương pháp do công ty cung cấp.</li>
+								<li>(e) Trường hợp thành viên sử dụng hệ điều hành (OS) của điện thoại đã bị chỉnh sửa, đã thay đổi các chương trình hỗ trợ sử dụng dịch vụ (vô hiệu hóa chức năng bảo mật), thay đổi phần mềm gây ra lỗi trong quá trình xử lý giao dịch</li>
+								<li>(f) Trường hợp dịch vụ do công ty cung cấp bị xóa hoặc gián đoạn do chính sách quản lý điều hành kho ứng dụng (App store) của công ty cung cấp dịch vụ viễn thông, công ty cung cấp hệ điều hành (OS) hoặc công ty sản xuất điện thoại.</li>
+							</ul>
+						</li>
+					</ol>
+				</div>
+
+				<h3 class="title">Điều 12: Chuyển nhượng quyền sử dụng dịch vụ</h3>
+				<div class="cont">
+					<ol class="list1">
+						<li>① Thành viên không được phép cho thuê hoặc chuyển nhượng quyền sử dụng dịch vụ cho bên thứ ba.</li>
+						<li>② Thành viên không được phép cung cấp tất cả các nội dung thông tin sử dụng dịch vụ do công ty cung cấp và các quyền liên quan thuộc về công ty cho bên thứ ba khi chưa có sự đồng ý của công ty</li>
+					</ol>
+				</div>
+
+				<h3 class="title"></h3>
+				<div class="cont">
+					<ol class="list1">
+						<li>① Công ty có thể thay đổi, sửa đổi hoặc bổ sung cho các điều kiện, điều khoản, sử dụng dịch vụ và gửi thông báo trên bảng thông báo của kênh (channel), trong trường hợp thành viên không đồng ý với nội dung thay đổi này, thì thành viên có thể chấm dứt sử dụng dịch vụ. </li>
+						<li>② Nội dung của các điều kiện, điều khoản này sẽ có hiệu lực bằng cách đăng trên màn hình thông báo của dịch vụ kênh (channel) do công ty cung cấp hoặc gửi thông báo cho thành viên theo những hình thức khác, mà không cần các quy định đặc biệt nào khác.</li>
+						<li>
+							③ Công ty có thể thay đổi bất kỳ hoặc tất cả các điều kiện, điều khoản này vì bất kỳ lý do khách quan hay vì lý do quan trọng nào ảnh hưởng đến kinh doanh hoặc bất kỳ lý do hợp lý nào khác được coi là cần thiết và trong trường hợp này công ty sẽ thông báo đến thành viên theo các phương pháp sau.
+							<ul class="list4">
+								<li>(a) Đăng lên kênh chính thức của công ty</li>
+								<li>(b) Gửi đến thành viên qua địa chỉ email đã được đăng ký</li>
+								<li>(c) Gửi đến địa chỉ liên lạc đã đăng ký của thành viên</li>
+								<li>(d) Đăng lên và cung cấp thông tin tại các chi nhánh và nơi giao dịch của công ty</li>
+								<li>(e) Gửi đến số điện thoại đã đăng ký của thành viên</li>
+							</ul>
+						</li>
+						<li>④ Các điều kiện, điều khoản được thay đổi theo các phương pháp như trên sẽ có hiệu lực đối với các thành viên hiện tại. Nếu thành viên tiếp tục sử dụng dịch vụ sau khi nhận được thông báo thay đổi, thì thành viên đó được xem là đã đồng ý với các thay đổi.</li>
+						<li>⑤ Nếu các tính năng mới của dịch vụ tài chính trên kênh được công ty bổ sung và được các thành viên sử dụng, thì các điều kiện, điều khoản này sẽ tiếp tục có hiệu lực ràng buộc đối với cả công ty và thành viên.</li>
+					</ol>
+				</div>
+
+				<h3 class="title">Điều 14: Thời hạn cung cấp dịch vụ và thời hạn chấm dứt cung cấp dịch vụ</h3>
+				<div class="cont">
+					<ol class="list1">
+						<li>① Khách hàng có thể sử dụng dịch vụ kể từ ngày đăng ký của Khách hàng được công ty chấp nhận.</li>
+						<li>② Thành viên có thể hủy bỏ hoặc chấm dứt việc sử dụng dịch vụ tài chính trên kênh (channel) bất kỳ lúc nào bằng cách gửi yêu cầu cho công ty theo các phương thức mà công ty hướng dẫn. </li>
+						<li>③ Tuy nhiên, ngay cả khi dịch vụ bị chấm dứt hay là thành viên yêu cầu chấm dứt, thì thành viên phải tuân thủ các điều kiện, điều khoản sử dụng này trong phạm vi quyền và nghĩa vụ của khách hàng trong thời gian sử dụng dịch vụ.</li>
+						<li>
+							④ Công ty có thể ngay lập tức ngừng cung cấp dịch vụ cho khách hàng mà không cần thông báo trước trong các trường hợp sau:
+							<ul class="list4">
+								<li>(a) Trường hợp phát hiện thành viên đã vi phạm các quy định, điều khoản, luật liên quan đến việc sử dụng dịch vụ.</li>
+								<li>(b) Trường hợp phát hiện thành viên sử dụng dịch vụ không hợp lý hoặc là không đúng với mục đích sử dụng của dịch vụ.</li>
+								<li>(c) Trường hợp phát hiện thành viên bị tước tư cách thành viên thẻ tín dụng hoặc là bị khủng hoảng tín dụng (có nợ không trả được)</li>
+								<li>(d) Trường hợp phát hiện thành viên có bất kỳ hành động nào liên quan đến hành vi tội phạm.</li>
+								<li>(e) Trường hợp phát hiện thành viên sử dụng dịch vụ nhằm mục đích cản trở lợi ích công cộng.</li>
+								<li>(f) Trường hợp phát hiện &quot;thông tin xác thực&quot; hoặc là thông tin bảo mật của thành viên đã bị lộ hoặc đã bị bên thứ ba đánh cắp sử dụng.</li>
+								<li>(g) Trường hợp phát hiện thành viên gây cản trở, trở ngại đến vận hành của dịch vụ.</li>
+								<li>(h) Trường hợp phát hiện máy tính sử dụng dịch vụ của thành viên có chương trình vi-rút gây phá hủy thông tin, thiệt hại thiết bị cơ sở truyền thông.</li>
+								<li>(i) Trường hợp phát hiện thành viên đăng tải nội dung khiêu dâm hoặc liên kết với các trang mạng khiêu dâm lên màn hình thông báo của dịch vụ.</li>
+								<li>(j) Trường hợp công ty xét thấy không thể cung cấp thêm bất kỳ dịch vụ nào vì thành viên vi phạm quy định của công ty hoặc luật liên quan khác.</li>
+							</ul>
+						</li>
+					</ol>
+				</div>
+
+				<h3 class="title">Điều 15: Trách nhiệm đối với trang mạng liên kết</h3>
+				<div class="cont">
+					<ol class="list1">
+						<li>① Công ty có thể cung cấp cho thành viên đường dẫn đến các trang mạng hoặc thông tin liên kết được vận hành bởi các công ty khác. Trong trường hợp này, công ty không có quyền kiểm soát các trang mạng bên ngoài đó, cho nên công ty không thể bảo đảm cũng như chịu trách nhiệm về tính hữu ích của các dịch vụ hoặc dữ liệu được cung cấp.</li>
+						<li>② Thành viên chấp nhận và đồng ý rằng công ty không chịu trách nhiệm về mọi thiệt hại hoặc tổn thất phát sinh từ việc liên quan đến tính trung thực của dữ liệu hoặc dịch vụ từ các trang mạng liên kết bên ngoài.</li>
+					</ol>
+				</div>
+
+				<h3 class="title">Điều 16: Giới hạn sử dụng và hạn chế bản quyền</h3>
+				<div class="cont">
+					<ol class="list1">
+						<li>① Bản quyền và quyền sở hữu trí tuệ khác liên quan đến màn hình của kênh (cụm từ và thiết kế) do công ty tạo ra hoàn toàn thuộc về công ty.</li>
+						<li>② Người dùng không được sử dụng những thông tin thu được từ việc sử dụng dịch vụ trên kênh của công ty vào mục đích thương mại hoặc được sử dụng bởi bên thứ ba bằng cách sao chép, gửi tin, xuất bản, phân phối, phát sóng hoặc bằng phương thức khác mà không có sự đồng ý trước của công ty.</li>
+					</ol>
+				</div>
+
+				<h3 class="title">Điều 17: Trách nhiệm vi phạm điều khoản</h3>
+				<div class="cont">
+					Công ty và thành viên sẽ tự chịu mọi trách nhiệm đối với mọi vi phạm các điều kiện, điều khoản này , và có nghĩa vụ bồi thường không chậm trễ cho bên kia đối với thiệt hai do lỗi của mình gây ra.
+				</div>
+
+				<h3 class="title">Điều 18. Cam kết thực hiện và giải quyết tranh chấp</h3>
+				<div class="cont">
+					<ol class="list1">
+						<li>① Thành viên cam kết đọc, hiểu và tuân thủ nghiêm chỉnh các điều khoản và điều kiện của hợp đồng này kể cả các nội dung sửa đổi, bổ sung, đính kèm (nếu có). Ngoài ra, đối với các giao dịch thông qua dịch vụ tài chính trên kênh (channel) của công ty, Khách hàng phải tuân thủ các điều khoản của hợp đồng dịch vụ tương ứng.</li>
+						<li>② Trong trường hợp có tranh chấp trong quá trình thực hiện, các bên sẽ giải quyết tranh chấp thông qua thương lượng hoặc hòa giải. Trong trường hợp các bên không giải quyết được tranh chấp thông qua thương lương hoặc hòa giải, thì các bên có quyền khởi kiện tại Trung tâm Trọng tài Quốc tế Việt Nam (VIAC) theo Quy tắc tố tụng trọng tài của Trung tâm này để giải quyết tranh chấp.</li>
+					</ol>
+				</div>
+
+				<h3 class="title">Điều 19 Luật áp dụng</h3>
+				<div class="cont">
+					Các điều khoản và điều kiện này được hiểu và áp dụng theo luật pháp và các quy định hiện hành tại Việt Nam. Các điều khoản và điều kiện được lập bằng bằng tiếng Việt và tiếng Anh. Nếu phiên bản tiếng Anh và tiếng Việt có sự khác nhau, phiên bản tiếng Việt sẽ được ưu tiên áp dụng.
+				</div>
+			</div>
+			<!-- // 어드민 등록 영역 -->
+
+
+		</div>
+	</div>
+	<!-- // 컨텐츠 영역 -->
+
+	<!-- 푸터 -->
+	<div class="footer">
+		<div class="inner-box">
+			<div class="info-area">
+				<div class="customer-call">고객상담전화 1588-8100</div>
+				<ul class="list">
+					<li><strong>대출접수시간</strong> : 365일 (24시간)</li>
+					<li><strong>대출금입금시간</strong> : 09:00~18:00(영업일)</li>
+					<li><strong>대출상담시간</strong> : 09:00~18:00(영업일)</li>
+				</ul>
+				<address>롯데파이낸스 주소 노출 영역</address>
+				<div class="licensee">사업자</div>
+				<div class="copyright">COPYRIGHT© LOTTE FINANCE CO.,LTD. ALL RIGHTS RESERVED.</div>
+			</div>
+
+			<div class="notice-list">
+				<h3 class="title">[공지사항]</h3>
+				<div class="list">
+					<a href="../customer/Web-08.01.02.html" class="item">최신 등록된 공지 제목이 노출됩니다 ‘최신 등록된 공지 제목’이 노출됩니다.</a>
+					<a href="../customer/Web-08.01.02.html" class="item">최신 등록된 공지 제목이 노출됩니다.</a>
+					<a href="../customer/Web-08.01.02.html" class="item">노출수는 최대 5개까지로 제한합니다.</a>
+					<a href="../customer/Web-08.01.02.html" class="item">제목 클릭 시 상세 공지사항 페이지로 이동합니다. 노출수는 최대 5개까지로 제한합니다.</a>
+					<a href="../customer/Web-08.01.02.html" class="item">제목이 길 경우 말줄임표로 표기됩니다. 제목이 길 경우 말줄임표로 표기됩니다. 제목이 길 경우 말줄임표로 표기됩니다. 제목이 길 경우 말줄임표로 표기됩니다. 제목이 길 경우 말줄임표로 표기됩니다.</a>
+				</div>
+			</div>
+
+			<div class="foot-bottom">
+				<div class="utill-menu">
+					<a href="#" class="item">개인정보보호정책</a>
+					<a href="#" class="item">서비스이용약관</a>
+					<a href="#" class="item">회사소개</a>
+				</div>
+				<div class="leng-select">
+					<button type="button" class="btn">ENGLISH</button>
+					<div class="layer">
+						<a href="#" class="leng on">ENGLISH</a>
+						<a href="#" class="leng">VIETNAM</a>
+					</div>
+				</div>
+
+				<div class="right-menu">
+					<div class="sns-list">
+						<a href="#" class="item"><img src="../images/icon/icon_sns01.png" alt="Zalo"></a>
+						<a href="#" class="item"><img src="../images/icon/icon_sns02.png" alt="facebook"></a>
+						<a href="#" class="item"><img src="../images/icon/icon_sns03.png" alt="Google"></a>
+						<a href="#" class="item"><img src="../images/icon/icon_sns04.png" alt="kakao talk"></a>
+					</div>
+					<div class="leng-select">
+						<button type="button" class="btn">FAMILY SITE</button>
+						<div class="layer">
+							<a href="http://www.lotte.co.kr/global/en/main.do" target="_blank" class="leng">LOTTE GROUP</a>
+							<a href="https://www.lotteshopping.com.vn/" target="_blank" class="leng">LOTTE DEPARTMENT STORE</a>
+							<a href="http://www.lottemart.com.vn/" target="_blank" class="leng">LOTTE MART</a>
+							<a href="http://www.lottecinemavn.com/LCHS/index.aspx" target="_blank" class="leng">LOTTE CINEMA</a>
+							<a href="https://www.lottehotel.com/hanoi-hotel/vi.html" target="_blank" class="leng">LOTTE HOTEL</a>
+							<a href="http://www.llive.vn/index.do" target="_blank" class="leng">LOTTE DATVIET HOMESHOPPING</a>
+							<a href="http://www.lotteria.vn/" target="_blank" class="leng">LOTTERIA</a>
+							<a href="https://www.lpoint.com.vn/WebContent/main.aspx" target="_blank" class="leng">L.POINT</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //푸터 -->
+
+	<!-- 하단 고정 영역 -->
+	<div class="fix-btm-area">
+		<a href="../loan/Web-05.01.02.html" class="btn-text">확인</a>
+	</div>
+	<!-- // 하단 고정 영역 -->
+</div>
+
+
+<!-- 레이어 팝업 (초기화) -->
+<div class="layer-popup" layer-name="Popup01">
+	<div class="dimmed"></div>
+	<div class="popup" style="width:450px;">
+		<button type="button" class="btn-close popClose">Close</button>
+		<div class="cont">
+			작성하신 예상상환스케줄 정보를<br>
+			초기화하시겠습니까?<br>
+			초기화를 진행하시면 작성하신 내용은 삭제됩니다.
+		</div>
+		<div class="btn-bottom-area">
+			<button type="button" class="btn-text type1 popClose">취소</button>
+			<button type="button" class="btn-text popClose btn-popup" layer-name="Popup02">확인</button>
+		</div>
+	</div>
+</div>
+<!-- 레이어 팝업 (초기화 확인) -->
+<div class="layer-popup" layer-name="Popup02">
+	<div class="dimmed"></div>
+	<div class="popup" style="width:450px;">
+		<button type="button" class="btn-close popClose">Close</button>
+		<div class="cont">
+			예상상환스케줄 정보가<br>
+			초기화되었습니다.
+		</div>
+		<div class="btn-bottom-area">
+			<button type="button" class="btn-text popClose">확인</button>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
